@@ -1,0 +1,372 @@
+{
+  "version": "iot_sensitivity_v1_20261027",
+  "registered_unix": 1793029290.064188,
+  "seed": 0,
+  "datasets": [
+    "RSITMD",
+    "CapERA"
+  ],
+  "additional_datasets": [
+    "GeoText-1652",
+    "UAVReason"
+  ],
+  "methods": {
+    "proposed_fu_guard_cliperase": "Proposed",
+    "heuristic_ova": "H-OVA",
+    "separate_aircomp_periodic": "S-AC",
+    "aircomp_ofdma_periodic": "AC-OF",
+    "sequential_digital_periodic": "S-OF+"
+  },
+  "cases": [
+    {
+      "id": "baseline",
+      "axis": null,
+      "value": null
+    },
+    {
+      "id": "bandwidth_0p25",
+      "axis": "bandwidth",
+      "value": 0.25
+    },
+    {
+      "id": "bandwidth_0p5",
+      "axis": "bandwidth",
+      "value": 0.5
+    },
+    {
+      "id": "bandwidth_2",
+      "axis": "bandwidth",
+      "value": 2
+    },
+    {
+      "id": "bandwidth_4",
+      "axis": "bandwidth",
+      "value": 4
+    },
+    {
+      "id": "downlink_0p25",
+      "axis": "downlink",
+      "value": 0.25
+    },
+    {
+      "id": "downlink_0p5",
+      "axis": "downlink",
+      "value": 0.5
+    },
+    {
+      "id": "downlink_2",
+      "axis": "downlink",
+      "value": 2
+    },
+    {
+      "id": "downlink_4",
+      "axis": "downlink",
+      "value": 4
+    },
+    {
+      "id": "power_0p08",
+      "axis": "power",
+      "value": 0.08
+    },
+    {
+      "id": "power_0p16",
+      "axis": "power",
+      "value": 0.16
+    },
+    {
+      "id": "power_0p64",
+      "axis": "power",
+      "value": 0.64
+    },
+    {
+      "id": "power_1p28",
+      "axis": "power",
+      "value": 1.28
+    },
+    {
+      "id": "network_cap_0p01",
+      "axis": "network_cap",
+      "value": 0.01
+    },
+    {
+      "id": "network_cap_0p025",
+      "axis": "network_cap",
+      "value": 0.025
+    },
+    {
+      "id": "network_cap_0p05",
+      "axis": "network_cap",
+      "value": 0.05
+    },
+    {
+      "id": "network_cap_0p2",
+      "axis": "network_cap",
+      "value": 0.2
+    },
+    {
+      "id": "channel_gain_m12",
+      "axis": "channel_gain",
+      "value": -12
+    },
+    {
+      "id": "channel_gain_m6",
+      "axis": "channel_gain",
+      "value": -6
+    },
+    {
+      "id": "channel_gain_6",
+      "axis": "channel_gain",
+      "value": 6
+    },
+    {
+      "id": "channel_gain_12",
+      "axis": "channel_gain",
+      "value": 12
+    },
+    {
+      "id": "request_bursts_3",
+      "axis": "request_bursts",
+      "value": 3
+    },
+    {
+      "id": "request_bursts_5",
+      "axis": "request_bursts",
+      "value": 5
+    },
+    {
+      "id": "request_bursts_15",
+      "axis": "request_bursts",
+      "value": 15
+    },
+    {
+      "id": "request_bursts_45",
+      "axis": "request_bursts",
+      "value": 45
+    },
+    {
+      "id": "fu_steps_1",
+      "axis": "fu_steps",
+      "value": 1
+    },
+    {
+      "id": "fu_steps_3",
+      "axis": "fu_steps",
+      "value": 3
+    },
+    {
+      "id": "fu_steps_7",
+      "axis": "fu_steps",
+      "value": 7
+    },
+    {
+      "id": "fu_steps_9",
+      "axis": "fu_steps",
+      "value": 9
+    },
+    {
+      "id": "speed_2p5",
+      "axis": "speed",
+      "value": 2.5
+    },
+    {
+      "id": "speed_3p75",
+      "axis": "speed",
+      "value": 3.75
+    },
+    {
+      "id": "speed_7p5",
+      "axis": "speed",
+      "value": 7.5
+    },
+    {
+      "id": "speed_10",
+      "axis": "speed",
+      "value": 10
+    },
+    {
+      "id": "frequency_0p75",
+      "axis": "frequency",
+      "value": 0.75
+    },
+    {
+      "id": "frequency_1",
+      "axis": "frequency",
+      "value": 1
+    },
+    {
+      "id": "frequency_2",
+      "axis": "frequency",
+      "value": 2
+    },
+    {
+      "id": "frequency_3",
+      "axis": "frequency",
+      "value": 3
+    },
+    {
+      "id": "collection_slot_0p625",
+      "axis": "collection_slot",
+      "value": 0.625
+    },
+    {
+      "id": "collection_slot_1p25",
+      "axis": "collection_slot",
+      "value": 1.25
+    },
+    {
+      "id": "collection_slot_5",
+      "axis": "collection_slot",
+      "value": 5
+    },
+    {
+      "id": "collection_slot_10",
+      "axis": "collection_slot",
+      "value": 10
+    }
+  ],
+  "axes": {
+    "bandwidth": {
+      "label": "Uplink bandwidth (MHz)",
+      "values": [
+        0.25,
+        0.5,
+        1,
+        2,
+        4
+      ],
+      "baseline": 1
+    },
+    "downlink": {
+      "label": "Downlink rate (Mbit/s)",
+      "values": [
+        0.25,
+        0.5,
+        1,
+        2,
+        4
+      ],
+      "baseline": 1
+    },
+    "power": {
+      "label": "UAV peak power (W)",
+      "values": [
+        0.08,
+        0.16,
+        0.32,
+        0.64,
+        1.28
+      ],
+      "baseline": 0.32
+    },
+    "network_cap": {
+      "label": "Network TX budget (J)",
+      "values": [
+        0.01,
+        0.025,
+        0.05,
+        0.1,
+        0.2
+      ],
+      "baseline": 0.1
+    },
+    "channel_gain": {
+      "label": "Channel gain offset (dB)",
+      "values": [
+        -12,
+        -6,
+        0,
+        6,
+        12
+      ],
+      "baseline": 0
+    },
+    "request_bursts": {
+      "label": "FU release groups",
+      "values": [
+        3,
+        5,
+        9,
+        15,
+        45
+      ],
+      "baseline": 9
+    },
+    "fu_steps": {
+      "label": "FU steps per request",
+      "values": [
+        1,
+        3,
+        5,
+        7,
+        9
+      ],
+      "baseline": 5
+    },
+    "speed": {
+      "label": "Cruise speed (m/s)",
+      "values": [
+        2.5,
+        3.75,
+        5,
+        7.5,
+        10
+      ],
+      "baseline": 5
+    },
+    "frequency": {
+      "label": "CPU frequency (GHz)",
+      "values": [
+        0.75,
+        1,
+        1.5,
+        2,
+        3
+      ],
+      "baseline": 1.5
+    },
+    "collection_slot": {
+      "label": "IoT slot duration (s)",
+      "values": [
+        0.625,
+        1.25,
+        2.5,
+        5,
+        10
+      ],
+      "baseline": 2.5
+    }
+  },
+  "arms_per_pair": 410,
+  "total_requested_arms": 820,
+  "input_sha256": {
+    "results/iot_uav_remoteclip_v4_event_mission/rsitmd_seed0/plan.json": "96c37b9737359ca13e01486d5aa3f40a4a7f42aa85b774bd6f41bca8608da3ca",
+    "results/iot_uav_remoteclip_v4_event_mission/rsitmd_seed0/requests.json": "26fe7ad1d9d2ddfa9a8096c186e21e99e4eead50005f4f1933f4566bb31ce740",
+    "results/iot_uav_remoteclip_v4_event_mission/rsitmd_seed0/feature_cache/features.pt": "00b14688cd1de3c21c522bcdca2a2a9a81785b594f9e24824389472e78772342",
+    "results/iot_uav_remoteclip_v4_event_mission/rsitmd_seed0/initial20/final.pt": "e96f172aa9c633c8dbc2e39bdf4f0865430b68da78e66b5a27ad22b90a7d035c",
+    "results/iot_uav_remoteclip_v4_event_mission/rsitmd_seed0/proxy20/final.pt": "f4618f9add2ea230d7a243b0e613f827239c858f9fdb2fc4cac99c369c0e8b32",
+    "results/iot_uav_remoteclip_v4_event_mission/rsitmd_seed0/reference200/final.pt": "06499fe4048b5f83b13aa0cc257c071c826b44941737b1ea1e3d20985ac42e24",
+    "results/iot_uav_remoteclip_v4_event_mission/capera_seed0/plan.json": "52fb0899a1f65eccaeda6128ce74f91b20a274fd44b9ac890c1084fdf45677bc",
+    "results/iot_uav_remoteclip_v4_event_mission/capera_seed0/requests.json": "43aef7a7893b338e7c877d6dc1ce9869848744e726d6a5f3ec1d4288708725cf",
+    "results/iot_uav_remoteclip_v4_event_mission/capera_seed0/feature_cache/features.pt": "6745e1576b1eb3787b77b064dfb55a959bb7a8a5d5a34b2f996e27167d23d1c7",
+    "results/iot_uav_remoteclip_v4_event_mission/capera_seed0/initial20/final.pt": "162fa849a6c73356dff1be5dd647bccc513086c6a605800cac36669182e862fe",
+    "results/iot_uav_remoteclip_v4_event_mission/capera_seed0/proxy20/final.pt": "f99608ea9111051795889cb5f3cf565a59b9bbc204f7d38a9a5cfe24505bd102",
+    "results/iot_uav_remoteclip_v4_event_mission/capera_seed0/reference200/final.pt": "851b460262378f081ec0f65beacc6239482e7e2bc67a688f93e99526305b2bf8"
+  },
+  "source_sha256": {
+    "tools/iot_sensitivity_v1/report.py": "e3d330b90075238504f47af69de2c2e28f0a0be06344b7e70e37089a29c5e135",
+    "tools/iot_sensitivity_v1/worker.py": "5b0ecf59aa102d94f511f76aee66e8e61913c2024a6b67223222da4e2cc80590",
+    "tools/iot_sensitivity_v1/heuristic.py": "b89f96b8490ac2c97b673467c87adf443647f31f8ac9d2a693fd02a258da7179",
+    "tools/iot_sensitivity_v1/campaign.py": "9893d0e5042fd6b6f56fb339f918383bf463e36a6ad36aa3275f1fec554c9a80",
+    "tools/iot_sensitivity_v1/common.py": "5575dfcd1775ce806ba606d9d1b79fa804db2318395c77efa94de7017caae4eb",
+    "tools/iot_sensitivity_v1/prepare_extra.py": "05abb4b199f5a33e349fe3a506f1152702512a8e5375a25b0b663188d11feee7",
+    "tools/iot_sensitivity_v1/acquire.py": "eb08384a0ac472ae3426fe873afc85b43106ad5476f6db9c9e44dbc4a790848c"
+  },
+  "authorization": "User requested overnight 10-axis sweeps, a Proposed-matched heuristic head/OVA ablation, separate FL/FU and mission completion delays, and two additional UAV VLM datasets.",
+  "comparison": "One-factor, paired seed0, fixed 200 FL and same 45 requests. H-OVA shares every Proposed learning/FU setting; centroid head + uniform inverse noise scale replace optimized head and SOCP.",
+  "initialization": "Conditional post-initialization sensitivity: shared cold embeddings, initial20, proxy20 and reporting-only reference200 per dataset. No baseline final learned checkpoint reused. Prefix radio costs remain reference-condition costs; CPU/downlink changes recost prefix operations.",
+  "propagation": "Bandwidth sweep keeps noise PSD fixed by normalizing channel amplitude by sqrt(B/1MHz). Gain sweep scales all h by 10^(offset/20). Other geometry held fixed.",
+  "delays": "FL/FU completion is takeoff to final work broadcast, including preceding movement/collection. Mission also includes return. Total also includes preflight initialization. Active service and occupied uplink additionally reported.",
+  "failure_policy": "Infeasible radio or collection points remain gaps, all raw partial records retained. No successful-run retries or outcome-based adjustment.",
+  "source_campaign": "results/iot_uav_remoteclip_v4_event_mission",
+  "additional_data_policy": "User explicitly authorized other VLM datasets if unavailable. Official GeoText-1652 drone views (ECCV2024, also used by ACM MM2025 HCCM; Google Earth virtual drone views) and UAVReason captions on real UAVScenes RGB (ICCV2025 imagery; caption extension is a2026 preprint). Fixed subsets for system sensitivity, not full official benchmark reproduction. Native3/1 captions, no duplication. ERA/UDV original captions obtained but Baidu images unavailable; AeroCaps gated, not used."
+}

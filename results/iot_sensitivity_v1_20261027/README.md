@@ -1,0 +1,15 @@
+# UAV energy and completion-delay sensitivity
+
+Five paired methods: Proposed, H-OVA, S-AC, AC-OF, S-OF+. H-OVA shares Proposed learning and FU objectives; it uses the UAV nearest the formation centroid as head and uniform inverse receive-noise allocation. Both enforce the same reconstruction-error, power, user-energy and network-energy limits. S-OF+ retains the previously authorized network-cap-overrun fallback.
+
+Ten one-factor axes, five points each, with one shared baseline: 41 scenarios per dataset, 205 method runs per dataset, 820 requested runs for four datasets. Seed0, 200 FL updates (20 before takeoff), 45 unchanged deletion requests. These are modeled energy/delay results from real visual-language replay on a synthetic mission. The additional datasets are fixed GeoText-1652 and UAVReason subsets; see dataset_sources.json for sources and limits. No guarantee that a new dataset converges better.
+
+FL/FU completion delay runs from takeoff to the final required update and broadcast; it includes earlier collection and inter-region travel. Mission delay additionally includes the full return leg. Total delay additionally includes common preflight feature construction and initialization. Active FL/FU service time, uplink occupancy and individual FU request latency are separate metrics. A hover-time reduction reduces mission delay by the same amount when the flight route and other phases are fixed.
+
+The shared initial/proxy/reference checkpoints are fixed within each dataset. Radio parameter sweeps vary the adaptation phase conditional on that initialization; recorded baseline prefix radio costs are retained. CPU frequency and downlink changes recost prefix operations. Bandwidth changes rescale normalized channels to keep noise power spectral density fixed. Cruise-speed changes retain formation geometry; IoT-slot changes recalculate required ground power and circuit energy at fixed payload and association. The shortest IoT slot can be infeasible; failed points are recorded as gaps.
+
+Original native caption counts are retained (GeoText3, UAVReason1, historical datasets5). Metric positive indices and cold text-encoding energy follow the actual caption count. No caption duplication. GeoText validation is building-disjoint; UAVReason validation is run-disjoint. Official tests are untouched. Mean recall is a validation diagnostic, not an official leaderboard result.
+
+Each completed five-point sweep produces 1x2 energy, FL/FU completion, mission delay, total delay, FU latency, active service, hover energy, communication energy, RF energy, uplink time, loss and mR figures. Raw baseline loss/mR convergence is also exported. No smoothing, confidence intervals, numeric labels on curves, or gray captions. Missing values are never replaced by zero. CSV/status files accompany the figures.
+
+Run with `.venv/bin/python tools/iot_sensitivity_v1/campaign.py`. It resumes only terminal arms, preserves interrupted/failed attempts, and publishes only explicit code/figure/report paths to ckim48/ck_ova. Raw images, feature tensors, model checkpoints, credentials and unrelated workspace files are excluded.

@@ -1,0 +1,1078 @@
+{
+  "passed": true,
+  "all41_schedules": [
+    {
+      "case": "baseline",
+      "schedules": [
+        {
+          "parallel": true,
+          "duration": 0.184448,
+          "mission_end_s": 1098.0086937293536
+        },
+        {
+          "parallel": true,
+          "duration": 3.0,
+          "mission_end_s": 1604.8080537293563
+        },
+        {
+          "parallel": false,
+          "duration": 0.184448,
+          "mission_end_s": 1106.308853729353
+        },
+        {
+          "parallel": false,
+          "duration": 3.0,
+          "mission_end_s": 1739.808053729356
+        }
+      ],
+      "collection_feasible": true
+    },
+    {
+      "case": "bandwidth_0p25",
+      "schedules": [
+        {
+          "parallel": true,
+          "duration": 0.245888,
+          "mission_end_s": 1109.0678937293585
+        },
+        {
+          "parallel": true,
+          "duration": 3.0,
+          "mission_end_s": 1604.8080537293563
+        },
+        {
+          "parallel": false,
+          "duration": 0.245888,
+          "mission_end_s": 1120.1328537293593
+        },
+        {
+          "parallel": false,
+          "duration": 3.0,
+          "mission_end_s": 1739.808053729356
+        }
+      ],
+      "collection_feasible": true
+    },
+    {
+      "case": "bandwidth_0p5",
+      "schedules": [
+        {
+          "parallel": true,
+          "duration": 0.204928,
+          "mission_end_s": 1101.6950937293554
+        },
+        {
+          "parallel": true,
+          "duration": 3.0,
+          "mission_end_s": 1604.8080537293563
+        },
+        {
+          "parallel": false,
+          "duration": 0.204928,
+          "mission_end_s": 1110.9168537293554
+        },
+        {
+          "parallel": false,
+          "duration": 3.0,
+          "mission_end_s": 1739.808053729356
+        }
+      ],
+      "collection_feasible": true
+    },
+    {
+      "case": "bandwidth_2",
+      "schedules": [
+        {
+          "parallel": true,
+          "duration": 0.174208,
+          "mission_end_s": 1096.1654937293583
+        },
+        {
+          "parallel": true,
+          "duration": 3.0,
+          "mission_end_s": 1604.8080537293563
+        },
+        {
+          "parallel": false,
+          "duration": 0.174208,
+          "mission_end_s": 1104.0048537293587
+        },
+        {
+          "parallel": false,
+          "duration": 3.0,
+          "mission_end_s": 1739.808053729356
+        }
+      ],
+      "collection_feasible": true
+    },
+    {
+      "case": "bandwidth_4",
+      "schedules": [
+        {
+          "parallel": true,
+          "duration": 0.16908800000000002,
+          "mission_end_s": 1095.2438937293546
+        },
+        {
+          "parallel": true,
+          "duration": 3.0,
+          "mission_end_s": 1604.8080537293563
+        },
+        {
+          "parallel": false,
+          "duration": 0.16908800000000002,
+          "mission_end_s": 1102.8528537293541
+        },
+        {
+          "parallel": false,
+          "duration": 3.0,
+          "mission_end_s": 1739.808053729356
+        }
+      ],
+      "collection_feasible": true
+    },
+    {
+      "case": "downlink_0p25",
+      "schedules": [
+        {
+          "parallel": true,
+          "duration": 0.184448,
+          "mission_end_s": 1098.0086937293536
+        },
+        {
+          "parallel": true,
+          "duration": 3.0,
+          "mission_end_s": 1604.8080537293563
+        },
+        {
+          "parallel": false,
+          "duration": 0.184448,
+          "mission_end_s": 1106.308853729353
+        },
+        {
+          "parallel": false,
+          "duration": 3.0,
+          "mission_end_s": 1739.808053729356
+        }
+      ],
+      "collection_feasible": true
+    },
+    {
+      "case": "downlink_0p5",
+      "schedules": [
+        {
+          "parallel": true,
+          "duration": 0.184448,
+          "mission_end_s": 1098.0086937293536
+        },
+        {
+          "parallel": true,
+          "duration": 3.0,
+          "mission_end_s": 1604.8080537293563
+        },
+        {
+          "parallel": false,
+          "duration": 0.184448,
+          "mission_end_s": 1106.308853729353
+        },
+        {
+          "parallel": false,
+          "duration": 3.0,
+          "mission_end_s": 1739.808053729356
+        }
+      ],
+      "collection_feasible": true
+    },
+    {
+      "case": "downlink_2",
+      "schedules": [
+        {
+          "parallel": true,
+          "duration": 0.184448,
+          "mission_end_s": 1098.0086937293536
+        },
+        {
+          "parallel": true,
+          "duration": 3.0,
+          "mission_end_s": 1604.8080537293563
+        },
+        {
+          "parallel": false,
+          "duration": 0.184448,
+          "mission_end_s": 1106.308853729353
+        },
+        {
+          "parallel": false,
+          "duration": 3.0,
+          "mission_end_s": 1739.808053729356
+        }
+      ],
+      "collection_feasible": true
+    },
+    {
+      "case": "downlink_4",
+      "schedules": [
+        {
+          "parallel": true,
+          "duration": 0.184448,
+          "mission_end_s": 1098.0086937293536
+        },
+        {
+          "parallel": true,
+          "duration": 3.0,
+          "mission_end_s": 1604.8080537293563
+        },
+        {
+          "parallel": false,
+          "duration": 0.184448,
+          "mission_end_s": 1106.308853729353
+        },
+        {
+          "parallel": false,
+          "duration": 3.0,
+          "mission_end_s": 1739.808053729356
+        }
+      ],
+      "collection_feasible": true
+    },
+    {
+      "case": "power_0p08",
+      "schedules": [
+        {
+          "parallel": true,
+          "duration": 0.184448,
+          "mission_end_s": 1098.0086937293536
+        },
+        {
+          "parallel": true,
+          "duration": 3.0,
+          "mission_end_s": 1604.8080537293563
+        },
+        {
+          "parallel": false,
+          "duration": 0.184448,
+          "mission_end_s": 1106.308853729353
+        },
+        {
+          "parallel": false,
+          "duration": 3.0,
+          "mission_end_s": 1739.808053729356
+        }
+      ],
+      "collection_feasible": true
+    },
+    {
+      "case": "power_0p16",
+      "schedules": [
+        {
+          "parallel": true,
+          "duration": 0.184448,
+          "mission_end_s": 1098.0086937293536
+        },
+        {
+          "parallel": true,
+          "duration": 3.0,
+          "mission_end_s": 1604.8080537293563
+        },
+        {
+          "parallel": false,
+          "duration": 0.184448,
+          "mission_end_s": 1106.308853729353
+        },
+        {
+          "parallel": false,
+          "duration": 3.0,
+          "mission_end_s": 1739.808053729356
+        }
+      ],
+      "collection_feasible": true
+    },
+    {
+      "case": "power_0p64",
+      "schedules": [
+        {
+          "parallel": true,
+          "duration": 0.184448,
+          "mission_end_s": 1098.0086937293536
+        },
+        {
+          "parallel": true,
+          "duration": 3.0,
+          "mission_end_s": 1604.8080537293563
+        },
+        {
+          "parallel": false,
+          "duration": 0.184448,
+          "mission_end_s": 1106.308853729353
+        },
+        {
+          "parallel": false,
+          "duration": 3.0,
+          "mission_end_s": 1739.808053729356
+        }
+      ],
+      "collection_feasible": true
+    },
+    {
+      "case": "power_1p28",
+      "schedules": [
+        {
+          "parallel": true,
+          "duration": 0.184448,
+          "mission_end_s": 1098.0086937293536
+        },
+        {
+          "parallel": true,
+          "duration": 3.0,
+          "mission_end_s": 1604.8080537293563
+        },
+        {
+          "parallel": false,
+          "duration": 0.184448,
+          "mission_end_s": 1106.308853729353
+        },
+        {
+          "parallel": false,
+          "duration": 3.0,
+          "mission_end_s": 1739.808053729356
+        }
+      ],
+      "collection_feasible": true
+    },
+    {
+      "case": "network_cap_0p01",
+      "schedules": [
+        {
+          "parallel": true,
+          "duration": 0.184448,
+          "mission_end_s": 1098.0086937293536
+        },
+        {
+          "parallel": true,
+          "duration": 3.0,
+          "mission_end_s": 1604.8080537293563
+        },
+        {
+          "parallel": false,
+          "duration": 0.184448,
+          "mission_end_s": 1106.308853729353
+        },
+        {
+          "parallel": false,
+          "duration": 3.0,
+          "mission_end_s": 1739.808053729356
+        }
+      ],
+      "collection_feasible": true
+    },
+    {
+      "case": "network_cap_0p025",
+      "schedules": [
+        {
+          "parallel": true,
+          "duration": 0.184448,
+          "mission_end_s": 1098.0086937293536
+        },
+        {
+          "parallel": true,
+          "duration": 3.0,
+          "mission_end_s": 1604.8080537293563
+        },
+        {
+          "parallel": false,
+          "duration": 0.184448,
+          "mission_end_s": 1106.308853729353
+        },
+        {
+          "parallel": false,
+          "duration": 3.0,
+          "mission_end_s": 1739.808053729356
+        }
+      ],
+      "collection_feasible": true
+    },
+    {
+      "case": "network_cap_0p05",
+      "schedules": [
+        {
+          "parallel": true,
+          "duration": 0.184448,
+          "mission_end_s": 1098.0086937293536
+        },
+        {
+          "parallel": true,
+          "duration": 3.0,
+          "mission_end_s": 1604.8080537293563
+        },
+        {
+          "parallel": false,
+          "duration": 0.184448,
+          "mission_end_s": 1106.308853729353
+        },
+        {
+          "parallel": false,
+          "duration": 3.0,
+          "mission_end_s": 1739.808053729356
+        }
+      ],
+      "collection_feasible": true
+    },
+    {
+      "case": "network_cap_0p2",
+      "schedules": [
+        {
+          "parallel": true,
+          "duration": 0.184448,
+          "mission_end_s": 1098.0086937293536
+        },
+        {
+          "parallel": true,
+          "duration": 3.0,
+          "mission_end_s": 1604.8080537293563
+        },
+        {
+          "parallel": false,
+          "duration": 0.184448,
+          "mission_end_s": 1106.308853729353
+        },
+        {
+          "parallel": false,
+          "duration": 3.0,
+          "mission_end_s": 1739.808053729356
+        }
+      ],
+      "collection_feasible": true
+    },
+    {
+      "case": "channel_gain_m12",
+      "schedules": [
+        {
+          "parallel": true,
+          "duration": 0.184448,
+          "mission_end_s": 1098.0086937293536
+        },
+        {
+          "parallel": true,
+          "duration": 3.0,
+          "mission_end_s": 1604.8080537293563
+        },
+        {
+          "parallel": false,
+          "duration": 0.184448,
+          "mission_end_s": 1106.308853729353
+        },
+        {
+          "parallel": false,
+          "duration": 3.0,
+          "mission_end_s": 1739.808053729356
+        }
+      ],
+      "collection_feasible": true
+    },
+    {
+      "case": "channel_gain_m6",
+      "schedules": [
+        {
+          "parallel": true,
+          "duration": 0.184448,
+          "mission_end_s": 1098.0086937293536
+        },
+        {
+          "parallel": true,
+          "duration": 3.0,
+          "mission_end_s": 1604.8080537293563
+        },
+        {
+          "parallel": false,
+          "duration": 0.184448,
+          "mission_end_s": 1106.308853729353
+        },
+        {
+          "parallel": false,
+          "duration": 3.0,
+          "mission_end_s": 1739.808053729356
+        }
+      ],
+      "collection_feasible": true
+    },
+    {
+      "case": "channel_gain_6",
+      "schedules": [
+        {
+          "parallel": true,
+          "duration": 0.184448,
+          "mission_end_s": 1098.0086937293536
+        },
+        {
+          "parallel": true,
+          "duration": 3.0,
+          "mission_end_s": 1604.8080537293563
+        },
+        {
+          "parallel": false,
+          "duration": 0.184448,
+          "mission_end_s": 1106.308853729353
+        },
+        {
+          "parallel": false,
+          "duration": 3.0,
+          "mission_end_s": 1739.808053729356
+        }
+      ],
+      "collection_feasible": true
+    },
+    {
+      "case": "channel_gain_12",
+      "schedules": [
+        {
+          "parallel": true,
+          "duration": 0.184448,
+          "mission_end_s": 1098.0086937293536
+        },
+        {
+          "parallel": true,
+          "duration": 3.0,
+          "mission_end_s": 1604.8080537293563
+        },
+        {
+          "parallel": false,
+          "duration": 0.184448,
+          "mission_end_s": 1106.308853729353
+        },
+        {
+          "parallel": false,
+          "duration": 3.0,
+          "mission_end_s": 1739.808053729356
+        }
+      ],
+      "collection_feasible": true
+    },
+    {
+      "case": "request_bursts_3",
+      "schedules": [
+        {
+          "parallel": true,
+          "duration": 0.184448,
+          "mission_end_s": 1098.0086937293536
+        },
+        {
+          "parallel": true,
+          "duration": 3.0,
+          "mission_end_s": 1604.8080537293563
+        },
+        {
+          "parallel": false,
+          "duration": 0.184448,
+          "mission_end_s": 1100.7754137293534
+        },
+        {
+          "parallel": false,
+          "duration": 3.0,
+          "mission_end_s": 1649.808053729356
+        }
+      ],
+      "collection_feasible": true
+    },
+    {
+      "case": "request_bursts_5",
+      "schedules": [
+        {
+          "parallel": true,
+          "duration": 0.184448,
+          "mission_end_s": 1098.0086937293536
+        },
+        {
+          "parallel": true,
+          "duration": 3.0,
+          "mission_end_s": 1604.8080537293563
+        },
+        {
+          "parallel": false,
+          "duration": 0.184448,
+          "mission_end_s": 1102.6198937293534
+        },
+        {
+          "parallel": false,
+          "duration": 3.0,
+          "mission_end_s": 1679.808053729356
+        }
+      ],
+      "collection_feasible": true
+    },
+    {
+      "case": "request_bursts_15",
+      "schedules": [
+        {
+          "parallel": true,
+          "duration": 0.184448,
+          "mission_end_s": 1098.0086937293536
+        },
+        {
+          "parallel": true,
+          "duration": 3.0,
+          "mission_end_s": 1604.8080537293563
+        },
+        {
+          "parallel": false,
+          "duration": 0.184448,
+          "mission_end_s": 1111.8422937293526
+        },
+        {
+          "parallel": false,
+          "duration": 3.0,
+          "mission_end_s": 1829.808053729356
+        }
+      ],
+      "collection_feasible": true
+    },
+    {
+      "case": "request_bursts_45",
+      "schedules": [
+        {
+          "parallel": true,
+          "duration": 0.184448,
+          "mission_end_s": 1098.0086937293536
+        },
+        {
+          "parallel": true,
+          "duration": 3.0,
+          "mission_end_s": 1604.8080537293563
+        },
+        {
+          "parallel": false,
+          "duration": 0.184448,
+          "mission_end_s": 1139.5094937293504
+        },
+        {
+          "parallel": false,
+          "duration": 3.0,
+          "mission_end_s": 2279.8080537293563
+        }
+      ],
+      "collection_feasible": true
+    },
+    {
+      "case": "fu_steps_1",
+      "schedules": [
+        {
+          "parallel": true,
+          "duration": 0.184448,
+          "mission_end_s": 1098.0086937293536
+        },
+        {
+          "parallel": true,
+          "duration": 3.0,
+          "mission_end_s": 1604.8080537293563
+        },
+        {
+          "parallel": false,
+          "duration": 0.184448,
+          "mission_end_s": 1099.6687257293536
+        },
+        {
+          "parallel": false,
+          "duration": 3.0,
+          "mission_end_s": 1631.808053729356
+        }
+      ],
+      "collection_feasible": true
+    },
+    {
+      "case": "fu_steps_3",
+      "schedules": [
+        {
+          "parallel": true,
+          "duration": 0.184448,
+          "mission_end_s": 1098.0086937293536
+        },
+        {
+          "parallel": true,
+          "duration": 3.0,
+          "mission_end_s": 1604.8080537293563
+        },
+        {
+          "parallel": false,
+          "duration": 0.184448,
+          "mission_end_s": 1102.9887897293534
+        },
+        {
+          "parallel": false,
+          "duration": 3.0,
+          "mission_end_s": 1685.808053729356
+        }
+      ],
+      "collection_feasible": true
+    },
+    {
+      "case": "fu_steps_7",
+      "schedules": [
+        {
+          "parallel": true,
+          "duration": 0.184448,
+          "mission_end_s": 1098.0086937293536
+        },
+        {
+          "parallel": true,
+          "duration": 3.0,
+          "mission_end_s": 1604.8080537293563
+        },
+        {
+          "parallel": false,
+          "duration": 0.184448,
+          "mission_end_s": 1109.628917729353
+        },
+        {
+          "parallel": false,
+          "duration": 3.0,
+          "mission_end_s": 1793.808053729356
+        }
+      ],
+      "collection_feasible": true
+    },
+    {
+      "case": "fu_steps_9",
+      "schedules": [
+        {
+          "parallel": true,
+          "duration": 0.184448,
+          "mission_end_s": 1098.0086937293536
+        },
+        {
+          "parallel": true,
+          "duration": 3.0,
+          "mission_end_s": 1604.8080537293563
+        },
+        {
+          "parallel": false,
+          "duration": 0.184448,
+          "mission_end_s": 1112.9489817293525
+        },
+        {
+          "parallel": false,
+          "duration": 3.0,
+          "mission_end_s": 1847.808053729356
+        }
+      ],
+      "collection_feasible": true
+    },
+    {
+      "case": "speed_2p5",
+      "schedules": [
+        {
+          "parallel": true,
+          "duration": 0.184448,
+          "mission_end_s": 2112.816747458709
+        },
+        {
+          "parallel": true,
+          "duration": 3.0,
+          "mission_end_s": 2619.6161074587126
+        },
+        {
+          "parallel": false,
+          "duration": 0.184448,
+          "mission_end_s": 2121.116907458708
+        },
+        {
+          "parallel": false,
+          "duration": 3.0,
+          "mission_end_s": 2754.6161074587126
+        }
+      ],
+      "collection_feasible": true
+    },
+    {
+      "case": "speed_3p75",
+      "schedules": [
+        {
+          "parallel": true,
+          "duration": 0.184448,
+          "mission_end_s": 1436.2780449724714
+        },
+        {
+          "parallel": true,
+          "duration": 3.0,
+          "mission_end_s": 1943.077404972475
+        },
+        {
+          "parallel": false,
+          "duration": 0.184448,
+          "mission_end_s": 1444.5782049724705
+        },
+        {
+          "parallel": false,
+          "duration": 3.0,
+          "mission_end_s": 2078.077404972475
+        }
+      ],
+      "collection_feasible": true
+    },
+    {
+      "case": "speed_7p5",
+      "schedules": [
+        {
+          "parallel": true,
+          "duration": 0.184448,
+          "mission_end_s": 759.7393424862349
+        },
+        {
+          "parallel": true,
+          "duration": 3.0,
+          "mission_end_s": 1266.5387024862375
+        },
+        {
+          "parallel": false,
+          "duration": 0.184448,
+          "mission_end_s": 768.0395024862343
+        },
+        {
+          "parallel": false,
+          "duration": 3.0,
+          "mission_end_s": 1401.5387024862375
+        }
+      ],
+      "collection_feasible": true
+    },
+    {
+      "case": "speed_10",
+      "schedules": [
+        {
+          "parallel": true,
+          "duration": 0.184448,
+          "mission_end_s": 590.6046668646766
+        },
+        {
+          "parallel": true,
+          "duration": 3.0,
+          "mission_end_s": 1097.4040268646781
+        },
+        {
+          "parallel": false,
+          "duration": 0.184448,
+          "mission_end_s": 598.9048268646761
+        },
+        {
+          "parallel": false,
+          "duration": 3.0,
+          "mission_end_s": 1232.4040268646781
+        }
+      ],
+      "collection_feasible": true
+    },
+    {
+      "case": "frequency_0p75",
+      "schedules": [
+        {
+          "parallel": true,
+          "duration": 0.184448,
+          "mission_end_s": 1098.0086937293536
+        },
+        {
+          "parallel": true,
+          "duration": 3.0,
+          "mission_end_s": 1604.8080537293563
+        },
+        {
+          "parallel": false,
+          "duration": 0.184448,
+          "mission_end_s": 1106.308853729353
+        },
+        {
+          "parallel": false,
+          "duration": 3.0,
+          "mission_end_s": 1739.808053729356
+        }
+      ],
+      "collection_feasible": true
+    },
+    {
+      "case": "frequency_1",
+      "schedules": [
+        {
+          "parallel": true,
+          "duration": 0.184448,
+          "mission_end_s": 1098.0086937293536
+        },
+        {
+          "parallel": true,
+          "duration": 3.0,
+          "mission_end_s": 1604.8080537293563
+        },
+        {
+          "parallel": false,
+          "duration": 0.184448,
+          "mission_end_s": 1106.308853729353
+        },
+        {
+          "parallel": false,
+          "duration": 3.0,
+          "mission_end_s": 1739.808053729356
+        }
+      ],
+      "collection_feasible": true
+    },
+    {
+      "case": "frequency_2",
+      "schedules": [
+        {
+          "parallel": true,
+          "duration": 0.184448,
+          "mission_end_s": 1098.0086937293536
+        },
+        {
+          "parallel": true,
+          "duration": 3.0,
+          "mission_end_s": 1604.8080537293563
+        },
+        {
+          "parallel": false,
+          "duration": 0.184448,
+          "mission_end_s": 1106.308853729353
+        },
+        {
+          "parallel": false,
+          "duration": 3.0,
+          "mission_end_s": 1739.808053729356
+        }
+      ],
+      "collection_feasible": true
+    },
+    {
+      "case": "frequency_3",
+      "schedules": [
+        {
+          "parallel": true,
+          "duration": 0.184448,
+          "mission_end_s": 1098.0086937293536
+        },
+        {
+          "parallel": true,
+          "duration": 3.0,
+          "mission_end_s": 1604.8080537293563
+        },
+        {
+          "parallel": false,
+          "duration": 0.184448,
+          "mission_end_s": 1106.308853729353
+        },
+        {
+          "parallel": false,
+          "duration": 3.0,
+          "mission_end_s": 1739.808053729356
+        }
+      ],
+      "collection_feasible": true
+    },
+    {
+      "case": "collection_slot_0p625",
+      "schedules": [
+        {
+          "parallel": true,
+          "duration": 0.184448,
+          "mission_end_s": 1060.5086937293536
+        },
+        {
+          "parallel": true,
+          "duration": 3.0,
+          "mission_end_s": 1567.3080537293563
+        },
+        {
+          "parallel": false,
+          "duration": 0.184448,
+          "mission_end_s": 1068.808853729353
+        },
+        {
+          "parallel": false,
+          "duration": 3.0,
+          "mission_end_s": 1702.308053729356
+        }
+      ],
+      "collection_feasible": false
+    },
+    {
+      "case": "collection_slot_1p25",
+      "schedules": [
+        {
+          "parallel": true,
+          "duration": 0.184448,
+          "mission_end_s": 1073.0086937293536
+        },
+        {
+          "parallel": true,
+          "duration": 3.0,
+          "mission_end_s": 1579.8080537293563
+        },
+        {
+          "parallel": false,
+          "duration": 0.184448,
+          "mission_end_s": 1081.308853729353
+        },
+        {
+          "parallel": false,
+          "duration": 3.0,
+          "mission_end_s": 1714.808053729356
+        }
+      ],
+      "collection_feasible": true
+    },
+    {
+      "case": "collection_slot_5",
+      "schedules": [
+        {
+          "parallel": true,
+          "duration": 0.184448,
+          "mission_end_s": 1148.0086937293536
+        },
+        {
+          "parallel": true,
+          "duration": 3.0,
+          "mission_end_s": 1654.808053729356
+        },
+        {
+          "parallel": false,
+          "duration": 0.184448,
+          "mission_end_s": 1156.308853729353
+        },
+        {
+          "parallel": false,
+          "duration": 3.0,
+          "mission_end_s": 1789.808053729356
+        }
+      ],
+      "collection_feasible": true
+    },
+    {
+      "case": "collection_slot_10",
+      "schedules": [
+        {
+          "parallel": true,
+          "duration": 0.184448,
+          "mission_end_s": 1248.0086937293527
+        },
+        {
+          "parallel": true,
+          "duration": 3.0,
+          "mission_end_s": 1754.808053729356
+        },
+        {
+          "parallel": false,
+          "duration": 0.184448,
+          "mission_end_s": 1256.308853729352
+        },
+        {
+          "parallel": false,
+          "duration": 3.0,
+          "mission_end_s": 1889.808053729356
+        }
+      ],
+      "collection_feasible": true
+    }
+  ],
+  "native_caption_metric_checks": [
+    1,
+    3,
+    5
+  ],
+  "baseline_matches_frozen_v4": true,
+  "H_OVA_actual_200FL_45_requests_completed": true
+}

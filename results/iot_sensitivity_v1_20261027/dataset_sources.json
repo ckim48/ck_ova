@@ -1,0 +1,34 @@
+{
+  "GeoText-1652": {
+    "official": "https://github.com/MultimodalGeo/GeoText-1652",
+    "download": "https://huggingface.co/datasets/truemanv5666/GeoText1652_Dataset",
+    "release_paper": "ECCV 2024, https://arxiv.org/abs/2311.12751",
+    "related_top_tier_use": "HCCM, ACM MM 2025, https://doi.org/10.1145/3746027.3755489",
+    "images": "University-1652 Google Earth virtual drone views; only image-N.jpeg drone view files; exclude satellite and ground photos",
+    "protocol": "4 views per701 official training buildings;64 entire buildings held out;2804 images,3 original captions each; official test untouched",
+    "downloaded_annotation_sha256": {
+      "train.json": "2631ef057b0db32515ae0dcc3cf8f27c4f786b9f9a5ff282ed3a1f256fc24194",
+      "selection.json": "a779d27754a17231ba811437112f0afdc11f373ec85ec1345d851a1e30020dcb"
+    }
+  },
+  "UAVReason": {
+    "official": "https://github.com/JT-Sun/UAVReason",
+    "download": "https://huggingface.co/datasets/jarvissun/UAVReason_vqa",
+    "image_source": "https://github.com/sijieaaa/UAVScenes",
+    "image_download": "https://huggingface.co/datasets/sijieaaa/UAVScenes",
+    "release_paper": "Caption extension: arXiv2604.05377,2026 preprint. Imagery: UAVScenes, ICCV2025, arXiv2507.22412",
+    "images": "Actual Hikvision UAV RGB images from MARS-LVIG/UAVScenes; original pixels, no synthetic weather",
+    "captions": "Released machine-enriched scene captions; one native caption, not human-ground-truth or IEEE Transactions publication claim",
+    "protocol": "160 evenly spaced frames per14 train runs +128 each from2 held-out train runs;2496 total, official test unused; run-disjoint validation, not guaranteed geographic-disjoint",
+    "downloaded_annotation_sha256": {
+      "train.jsonl": "6064bc7b584dcef09f073c87f583199acdcce1e188c536ec30e035c00dc0cbb0",
+      "test.jsonl": "37f9d2830579ad6595f1abc865b0c7647339f7271a7af6da23168daa7f5c4690",
+      "selection.json": "b272fd2c28a1ca3e0ba393f19610c60a349379680386e45e71fdfebf7a9103c6"
+    }
+  },
+  "not_used": {
+    "ERA-DIT and UDV-DIT": "IEEE TGRS2024 VCSR. Official captions downloaded; Baidu original image download requests failed. No replacement images assigned these names.",
+    "AeroCaps": "WACV2025; official HF dataset is manually gated; not downloaded."
+  },
+  "scope": "Paired system sensitivity on predeclared subsets. Not reproduction of full benchmark or original paper architectures. User authorized alternate VLM datasets when original downloads unavailable."
+}
