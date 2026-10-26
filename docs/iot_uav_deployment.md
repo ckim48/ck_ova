@@ -1,5 +1,19 @@
 # IoT-driven UAV deployment and VLM evaluation
 
+## Completion-driven mission revision
+
+The user identified the fixed minimum residence as preventing communication savings from affecting mission completion. `tools/iot_event_mission_v1/` implements a separate scenario in `results/iot_uav_remoteclip_v4_event_mission/`. Each region performs its unchanged 10-second ground collection, 36 FL updates and all assigned five-step FU requests, then departs immediately. The route, formation, flight speeds, data partitions and request ordinals are unchanged. All eight adaptation arms are rerun from the same hash-checked initial/proxy/reference checkpoints; previous comparison-arm results are not reused.
+
+The live mission clock now advances through maximum per-device computation time, uplink and complete model broadcast for each transaction. The queues observe this full time, so periodic decisions and model updates can differ from the former uplink-only clock. FU completion includes the fifth step's broadcast to all UAVs. Flight and collection also advance time; the complete return route is retained. Energy accounting uses the resulting actual hover durations once, with no 60-second floor and no second addition of compute or downlink time. S-OF+ retains the authorized network-energy overrun policy and all other radio limits.
+
+Independent preflight replays check fast and slow service, 36 FL updates in each of five regions, all 225 FU request-steps, correct uplink-only counters, departure/arrival continuity and return travel. A separate numerical fixture checks compute/uplink/downlink timing and that collection and hover are charged once. The request process still follows FL-round triggers and has no active deadline; this revision does not by itself establish exogenous-load capacity or deadline compliance.
+
+## Audit of earlier request service times
+
+`tools/iot_fu_service_audit_v1/audit.py` verifies all 360 dataset/method/request records against their transmitting transactions. Results are in `results/iot_fu_service_audit_v1/`. The earlier request clock includes queue wait and uplink, but excludes compute and downlink. CapERA mean procedural latency was 0.1024/0.1547/1.0536/2.0025 seconds for Proposed/S-AC/AC-OF/S-OF+. A diagnostic that preserves the exact old processing order and adds declared compute/broadcast costs gives 3.3834/5.1117/6.0105/5.8661 seconds. These added-cost estimates do not re-evaluate the scheduler and must not be presented as new end-to-end simulation results.
+
+All methods completed the same 45 requests in nine bursts; no burst overlapped the next and maximum pending requests were five. Therefore this workload does not measure maximum sustainable throughput. Requests have null active deadlines; archived old-calendar deadlines are not applicable. At five-step completion, 41/36/36/39 CapERA requests respectively met the existing KL<=0.01 reference-similarity diagnostic. Procedural completion and reference similarity are distinct, and neither certifies deletion. The source hashes, per-request timing, p95 values, quality diagnostics and observed radio-work efficiency are preserved in the audit artifacts.
+
 ## Latest global-IoT scenario
 
 The latest rendering is `python tools/plot_mission_map_cluster.py`. It overlays five translucent snapshot enclosures and ten identity-preserving, piecewise-linear UAV paths including return. Numeric labels 1–5 indicate visit order; there are no textual captions, legends or axis names. Axis ticks remain in ground metres, including both endpoints. Blue stars are UAV positions, red stars are planning heads, and pale orange circles are IoT devices. Ellipses are visual grouping only, not modeled coverage. All positions match the registered deployment; the plotting update does not change the experiment.
