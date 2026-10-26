@@ -100,7 +100,7 @@ def main():
                         bottom=.015 if clean_snapshots else .12, wspace=.045)
     axes[0].imshow(image, extent=limits, origin='upper', zorder=0)
     ax = axes[1]
-    ax.set_facecolor('#fafbf9')
+    ax.set_facecolor('#f8faf7')
     for element in osm['elements']:
         geometry = element.get('geometry')
         if element['type'] != 'way' or not geometry:
@@ -114,15 +114,15 @@ def main():
         water = tags.get('natural') == 'water' or tags.get('waterway') == 'riverbank'
         leisure = tags.get('leisure') in {'park', 'garden', 'nature_reserve', 'pitch'}
         if closed and (water or leisure):
-            ax.add_patch(Polygon(xy, facecolor='#dcebf0' if water else '#edf1e8',
-                                 edgecolor='#c7dbe1' if water else '#e0e6da', lw=.35, zorder=1))
+            ax.add_patch(Polygon(xy, facecolor='#cbdfe7' if water else '#e2ebda',
+                                 edgecolor='#a9c5cf' if water else '#c7d5bd', lw=.35, zorder=1))
         if tags.get('waterway') in {'river', 'stream', 'canal'}:
-            ax.plot(*xy.T, color='#d0e3e9', lw=1.7, zorder=1)
+            ax.plot(*xy.T, color='#98bfce', lw=2.0, zorder=1)
         road = tags.get('highway')
         if road:
             road_width = {'primary': 1.7, 'secondary': 1.4, 'tertiary': 1.1,
                           'residential': .8, 'service': .55}.get(road, .35)
-            ax.plot(*xy.T, color='#e0e3df', lw=road_width + .4, zorder=2)
+            ax.plot(*xy.T, color='#b8c1ba', lw=road_width + .5, zorder=2)
             ax.plot(*xy.T, color='white', lw=road_width, zorder=2)
 
     deployment = None
