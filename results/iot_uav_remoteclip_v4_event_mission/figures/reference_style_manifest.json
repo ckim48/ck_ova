@@ -1,0 +1,216 @@
+{
+  "reference": "User attachment plot_zone_pred_1x2.py (2026-10-26)",
+  "figure_size_inches": [
+    10.2,
+    5.4
+  ],
+  "colors": [
+    "#4C72B0",
+    "#DD8452",
+    "#55A868",
+    "#8172B3"
+  ],
+  "font_points": 14,
+  "grid": "dotted",
+  "full_frame": true,
+  "bar_value_labels": false,
+  "input_sha256": {
+    "protocol.json": "b2b911e9df1b05d3a1b46fa95f2012f19a65fd33bbba7e43a48db37f243ed2b3",
+    "figures/metrics.json": "6e3670978d48987481b5bdd9faec321af2b04a609ac2e94b1a7dbb9046a5efd9",
+    "figures/metrics.csv": "361c84380bb8ede310a94630dfbd49ca82afbc88a5a04edd7eb5ce324e33d0e4"
+  },
+  "source": "tools/plot_event_mission_reference_style.py",
+  "source_sha256": "046eb0eb32b422c814c2f98027bd8eaa101642409117b300f961ef49e0384f19",
+  "rendered": [
+    {
+      "metric": "loss",
+      "panel_size_inches": [
+        [
+          3.912931034482759,
+          3.9129310344827593
+        ],
+        [
+          3.9129310344827584,
+          3.9129310344827593
+        ]
+      ],
+      "ylim": [
+        [
+          0,
+          2.5
+        ],
+        [
+          0,
+          6.0
+        ]
+      ],
+      "bar_annotations": 0,
+      "files": [
+        {
+          "file": "loss_1x2.png",
+          "sha256": "d59e0678be6dd26b8a3dc256868eef45b5c66b1a56103fd03ae7037df9c26e8a"
+        },
+        {
+          "file": "loss_1x2.pdf",
+          "sha256": "65c6eb70b8a496bab17fcfd7831ef3c2b9d4f41b0278b71923bb2b63fa4c5245"
+        },
+        {
+          "file": "loss_1x2.svg",
+          "sha256": "b84ad3d80ab004b8704b955e16762b17fb6b6a3bfb087cb3d11c11b23b969a02"
+        }
+      ]
+    },
+    {
+      "metric": "total_energy_j",
+      "panel_size_inches": [
+        [
+          3.912931034482759,
+          3.9129310344827593
+        ],
+        [
+          3.9129310344827584,
+          3.9129310344827593
+        ]
+      ],
+      "ylim": [
+        [
+          0,
+          2500.0
+        ],
+        [
+          0,
+          2500.0
+        ]
+      ],
+      "bar_annotations": 0,
+      "files": [
+        {
+          "file": "total_energy_1x2.png",
+          "sha256": "03b0107ec46d5394668156da2c85dc1eb3cb33bae4b5e3467c711e586fc67220"
+        },
+        {
+          "file": "total_energy_1x2.pdf",
+          "sha256": "ce92cef7ef3193f6240e6ec1275006c3bae79c1a9cdfb6b3796ec1911a31fdc4"
+        },
+        {
+          "file": "total_energy_1x2.svg",
+          "sha256": "a1a539680ea1cf87ce718e8ef4015742cbda2dbee724d34b1fe6be62d5ef6af8"
+        }
+      ]
+    },
+    {
+      "metric": "total_delay_s",
+      "panel_size_inches": [
+        [
+          3.912931034482759,
+          3.9129310344827593
+        ],
+        [
+          3.9129310344827584,
+          3.9129310344827593
+        ]
+      ],
+      "ylim": [
+        [
+          0,
+          3000.0
+        ],
+        [
+          0,
+          3000.0
+        ]
+      ],
+      "bar_annotations": 0,
+      "files": [
+        {
+          "file": "total_delay_1x2.png",
+          "sha256": "8822c77da2f26fad54a8228a32fc57366f44151e4f476de3863248dc068cb826"
+        },
+        {
+          "file": "total_delay_1x2.pdf",
+          "sha256": "77fe003720a0358b4a35f491369eed06e9121cc35b2f0ef94a0ad22dba568cba"
+        },
+        {
+          "file": "total_delay_1x2.svg",
+          "sha256": "cf6e921030015dde02aaede2300a63823d079db3d3aadd37fe1dee5df8105107"
+        }
+      ]
+    },
+    {
+      "metric": "FU_mean_completion_latency_s",
+      "panel_size_inches": [
+        [
+          3.912931034482759,
+          3.9129310344827593
+        ],
+        [
+          3.9129310344827584,
+          3.9129310344827593
+        ]
+      ],
+      "ylim": [
+        [
+          0,
+          7.0
+        ],
+        [
+          0,
+          7.0
+        ]
+      ],
+      "bar_annotations": 0,
+      "files": [
+        {
+          "file": "fu_completion_latency_1x2.png",
+          "sha256": "000f04a6c86fc60eecab4697d5288a77e7cc8ff6e5776fc65bd6170a80d4d62f"
+        },
+        {
+          "file": "fu_completion_latency_1x2.pdf",
+          "sha256": "f24ffbd64688c02f0ebc8b3133e4d38b636b83b8003bdeb5669cdc31fc5629bb"
+        },
+        {
+          "file": "fu_completion_latency_1x2.svg",
+          "sha256": "76135b1dcf2008e768bf3fb496931945ac2dd104d2eaf681ef62bec226bda0a9"
+        }
+      ]
+    },
+    {
+      "metric": "energy_hover_j",
+      "panel_size_inches": [
+        [
+          3.912931034482759,
+          3.9129310344827593
+        ],
+        [
+          3.9129310344827584,
+          3.9129310344827593
+        ]
+      ],
+      "ylim": [
+        [
+          0,
+          800.0
+        ],
+        [
+          0,
+          800.0
+        ]
+      ],
+      "bar_annotations": 0,
+      "files": [
+        {
+          "file": "hover_energy_1x2.png",
+          "sha256": "97f757fa3068f4ec0f978e7a32cbbc0607fdab6fb302d2e68bdccb1c23447c61"
+        },
+        {
+          "file": "hover_energy_1x2.pdf",
+          "sha256": "79914c4b88a322076a5820c4c3d3398f84e09732b66ceae8c6d663dfa6e43588"
+        },
+        {
+          "file": "hover_energy_1x2.svg",
+          "sha256": "188fb3f6f63f3fe1a86dce0a0c2f813492ba752a59dc8d0f3e180cbf9a50814f"
+        }
+      ]
+    }
+  ]
+}
