@@ -1074,5 +1074,14 @@
     5
   ],
   "baseline_matches_frozen_v4": true,
-  "H_OVA_actual_200FL_45_requests_completed": true
+  "H_OVA_actual_200FL_45_requests_completed": true,
+  "all_eight_original_arms_exactly_match_frozen_v4": {
+    "metrics": [
+      "total_energy_j",
+      "mission_delay_s",
+      "loss",
+      "mR"
+    ],
+    "max_absolute_difference": 0.0
+  }
 }
