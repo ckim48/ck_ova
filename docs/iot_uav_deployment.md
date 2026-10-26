@@ -1,5 +1,15 @@
 # IoT-driven UAV deployment and VLM evaluation
 
+## Latest five-region scenario
+
+The user requested a wider five-region route after reviewing the four-region figure. The four-region training process was stopped with its records preserved. `tools/iot_uav_deployment_v2_five_sites/` creates an independent five-region deployment: Government Complex Forest Park B, Hanbat Arboretum East, Expo Science Park, Gapcheon West Bank Cycleway, and Mannyeon Neighborhood Park, anchored to cached OSM ways. There are 40 declared IoT devices per region (200 total) and the same ten UAVs across all regions. Optimized centroid spans are approximately 1.40 km east–west and 1.42 km north–south, with a 4.59 km closed centroid route.
+
+`python tools/plot_mission_map_reference.py --mode iot --five-sites` draws the latest square 1×2 map. Add `--download` once for its separate satellite cache. The viewport covers all UAV/IoT positions plus padding and is rounded to 2000×2000 ground metres; ticks include both 0 and 2000 on both axes. The circles/stars/head colors match the accepted reference design. This initial export shows planning heads; actual new-run heads require the five-region learning experiment to finish.
+
+The five-region acquisition, power, head enumeration and continuous transition separation checks passed. The new learning schedule retains 180 post-prefix FL updates, distributed as 36 updates at each region, with the same total of 45 deletion requests and five FU steps per request. Geometry and learning artifacts use distinct versioned directories; no four-region result is relabeled as a five-region result.
+
+## Earlier four-region implementation
+
 The map now models a reason for UAV positions: receiving data from declared ground IoT devices. It uses four mapped service regions, the same ten UAVs over time, and 40 synthetic ground devices per region. The IoT locations and packet demands are generated with seed 48 before optimization. They are not surveyed locations. Real CapERA/RSITMD media remain a logical VLM replay; the datasets do not geolocate these IoT devices.
 
 ## Deployment model

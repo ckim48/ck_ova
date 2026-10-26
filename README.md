@@ -5,6 +5,8 @@
 
 ## 최신 작업 — 2026-10-26
 
+- **최신 5지역·광역 동선 지도**: [PNG](results/figures/mission_satellite_iot_uav_planned_1x2_five_sites_reference_square.png), [PDF](results/figures/mission_satellite_iot_uav_planned_1x2_five_sites_reference_square.pdf). 200개 IoT, UAV 10대, 5개 방문 지역을 사용한다. X·Y축 모두 0–2000 m와 양 끝 눈금을 표시한다. 중심 이동 경로는 약 4.59 km이며 head는 계획용 선택이다.
+- 사용자 요청으로 4지역 실행은 기록을 보존해 중단했다. 5지역 배치·채널은 `results/iot_uav_deployment_v2_five_sites/`에 있으며 새 비교 실험은 별도 경로에서 재실행한다. 이 지도 커밋은 학습 결과 완료를 의미하지 않는다.
 - **IoT 기반 UAV 배치**: [1×2 PNG](results/figures/mission_satellite_iot_uav_planned_1x2.png), [PDF](results/figures/mission_satellite_iot_uav_planned_1x2.pdf). 원은 가상 지상 IoT, 별은 최적화된 UAV, 금색 별은 계획 단계의 head다. 범례 외 설명 글씨는 생략했다.
 - 참고 디자인을 적용한 큰 버전: [PNG](results/figures/mission_satellite_iot_uav_planned_1x2_reference_large.png), [PDF](results/figures/mission_satellite_iot_uav_planned_1x2_reference_large.pdf). 파란 UAV 별, 주황 IoT 원, 붉은 head, 상단 공통 범례와 미터 좌표축을 사용하며 원래 버전과 좌표·head는 같다.
 - **높이를 늘린 정사각형 패널 버전**: [PNG](results/figures/mission_satellite_iot_uav_planned_1x2_reference_square.png), [PDF](results/figures/mission_satellite_iot_uav_planned_1x2_reference_square.pdf). 남북 표시 범위를 넓혔으며 지리 좌표의 가로·세로 비율은 유지한다.

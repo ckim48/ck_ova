@@ -8,8 +8,10 @@ import sys
 
 source_path=Path(__file__).with_name('plot_mission_map.py')
 source=source_path.read_text()
-square='--square' in sys.argv
-if square:sys.argv.remove('--square')
+five_sites='--five-sites' in sys.argv
+if five_sites:sys.argv.remove('--five-sites')
+square='--square' in sys.argv or five_sites
+if '--square' in sys.argv:sys.argv.remove('--square')
 
 
 def replace(old,new,count=1):
@@ -57,6 +59,23 @@ if square:
     replace("stem.name+'_reference_large'", "stem.name+'_reference_square'")
     replace("visual_variant='reference_large',figure_size_inches=[9.4,4.2]",
             "visual_variant='reference_square',figure_size_inches=[9.4,5.5],square_panels=True,viewport_change='Expanded north/south bounds; imagery and coordinates retain equal spatial scale'")
+
+if five_sites:
+    replace('left=.065, right=.985, top=.87', 'left=.065, right=.97, top=.87')
+    replace("default=ROOT/'results/iot_uav_deployment_v1'", "default=ROOT/'results/iot_uav_deployment_v2_five_sites'")
+    replace("spec = read_json(MISSION / 'mission_spec.json')",
+            "frame_mission=args.deployment if args.mode=='iot' else MISSION\n    spec = read_json(frame_mission / 'mission_spec.json')")
+    replace("with (MISSION / 'trajectory.csv').open() as handle:",
+            "with (frame_mission / 'trajectory.csv').open() as handle:")
+    replace("center = (points.min(axis=0) + points.max(axis=0)) / 2",
+            "if args.mode=='iot':\n        ground=np.array([point for site in read_json(args.deployment/'deployment.json')['sites'] for point in site['iot_positions_xy_m']])\n        projection=spec['projection']\n        ground_lat=projection['lat0']+np.degrees(ground[:,1]/projection['R_m'])\n        ground_lon=projection['lon0']+np.degrees(ground[:,0]/(projection['R_m']*math.cos(math.radians(projection['lat0']))))\n        points=np.vstack([points,mercator(ground_lat,ground_lon)])\n    center = (points.min(axis=0) + points.max(axis=0)) / 2")
+    replace("width = np.ptp(points[:, 0]) + 360 * scale",
+            "width = math.ceil((max(np.ptp(points[:,0]),np.ptp(points[:,1]))/scale+200)/500)*500*scale")
+    replace("cache = MAP / 'satellite_mission_square_1x2'", "cache = MAP / 'satellite_iot_five_sites_square_1x2'")
+    replace("tick_x = np.arange(0, (limits[1]-limits[0])/scale, 300.)", "tick_x = np.arange(0, (limits[1]-limits[0])/scale+.01, 500.)")
+    replace("tick_y = np.arange(0, (limits[3]-limits[2])/scale, 300.)", "tick_y = np.arange(0, (limits[3]-limits[2])/scale+.01, 500.)")
+    replace("stem.name+'_reference_square'", "stem.name+'_five_sites_reference_square'")
+    replace("visual_variant='reference_square'", "visual_variant='five_sites_reference_square',axis_tick_policy='Both endpoints included; 500m intervals'")
 
 if __name__=='__main__':
     if '--mode' not in sys.argv:sys.argv.extend(['--mode','iot'])

@@ -1,0 +1,164 @@
+{
+  "passed": true,
+  "unix": 1793011630.5133154,
+  "optimization": {
+    "initial_objective_j": 0.11523104579887816,
+    "final_objective_j": 0.08031336222211656,
+    "trace": [
+      {
+        "iteration": 0,
+        "objective_j": 0.08650341084503611,
+        "position_step_accepted": true,
+        "solver_success": true,
+        "solver_message": "Optimization terminated successfully",
+        "solver_iterations": 56,
+        "heads_zero_based": [
+          1,
+          1,
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "iteration": 1,
+        "objective_j": 0.08100943698500422,
+        "position_step_accepted": true,
+        "solver_success": true,
+        "solver_message": "Optimization terminated successfully",
+        "solver_iterations": 45,
+        "heads_zero_based": [
+          1,
+          1,
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "iteration": 2,
+        "objective_j": 0.08037584042542718,
+        "position_step_accepted": true,
+        "solver_success": true,
+        "solver_message": "Optimization terminated successfully",
+        "solver_iterations": 34,
+        "heads_zero_based": [
+          1,
+          1,
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "iteration": 3,
+        "objective_j": 0.08031462469345889,
+        "position_step_accepted": true,
+        "solver_success": true,
+        "solver_message": "Optimization terminated successfully",
+        "solver_iterations": 31,
+        "heads_zero_based": [
+          1,
+          1,
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "iteration": 4,
+        "objective_j": 0.08031336222211656,
+        "position_step_accepted": true,
+        "solver_success": true,
+        "solver_message": "Optimization terminated successfully",
+        "solver_iterations": 17,
+        "heads_zero_based": [
+          1,
+          1,
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "iteration": 5,
+        "objective_j": 0.08031336222211656,
+        "position_step_accepted": true,
+        "solver_success": true,
+        "solver_message": "Optimization terminated successfully",
+        "solver_iterations": 1,
+        "heads_zero_based": [
+          1,
+          1,
+          2,
+          2,
+          2
+        ]
+      }
+    ],
+    "head_candidate_energy_j": [
+      [
+        0.009439735668018754,
+        0.0037115989564826387,
+        0.005609764602040612,
+        0.008491183002472619,
+        0.006460607982328827,
+        0.006846286049871929,
+        0.006585438961870991,
+        0.007498020088289812,
+        0.004952508154529835,
+        0.008098490529986629
+      ],
+      [
+        0.009901352699477586,
+        0.0034479437957098107,
+        0.005051735787944788,
+        0.006683720401541703,
+        0.009387735396563839,
+        0.009674093909940607,
+        0.0053142606704366605,
+        0.006943936361075225,
+        0.005171714057675852,
+        0.006804549761842806
+      ],
+      [
+        0.00878745787174423,
+        0.007254484545145416,
+        0.003865997016283973,
+        0.006244034407466345,
+        0.006350073710340728,
+        0.008344777774607341,
+        0.004632361782898048,
+        0.006424957144777936,
+        0.0053255750224089505,
+        0.010546835146139587
+      ],
+      [
+        0.005084016193848508,
+        0.007902812349569518,
+        0.0029222543222806683,
+        0.004872579489030811,
+        0.007540792709951072,
+        0.005752858704245072,
+        0.0067871477583322055,
+        0.004705015532191161,
+        0.008143415704331138,
+        0.004292789638461718
+      ],
+      [
+        0.007035139869378857,
+        0.003668848987641259,
+        0.002802895830651191,
+        0.007760667806300211,
+        0.0061967558189019506,
+        0.006818145692863113,
+        0.0072637105198426815,
+        0.003405213777001269,
+        0.004904232584261523,
+        0.004634905977078468
+      ]
+    ],
+    "minimum_flight_separation_m": 21.999999992155434
+  },
+  "scope": "Geometry planning complete; new FL/FU model evaluation is a separate run."
+}
