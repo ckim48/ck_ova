@@ -48,6 +48,10 @@ def fetch_json(url):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--download', action='store_true')
+    parser.add_argument('--mode', choices=['snapshots', 'schematic'], default='snapshots')
+    parser.add_argument('--transactions', type=Path,
+                        default=ROOT / 'results/overnight_energy_v2/uav_single_model_two_dataset_v1/rsitmd_seed0/proposed_fu_guard_cliperase/transactions',
+                        help='Actual transaction records used to select the first transmitted update per site.')
     args = parser.parse_args()
     spec = read_json(MISSION / 'mission_spec.json')
     with (MISSION / 'trajectory.csv').open() as handle:
@@ -89,8 +93,10 @@ def main():
 
     plt.rcParams.update({'font.family': 'serif', 'font.size': 8,
                          'pdf.fonttype': 42, 'svg.fonttype': 'none'})
-    fig, axes = plt.subplots(1, 2, figsize=(7.16, 2.86))
-    fig.subplots_adjust(left=.012, right=.988, top=.985, bottom=.12, wspace=.045)
+    clean_snapshots = args.mode == 'snapshots'
+    fig, axes = plt.subplots(1, 2, figsize=(7.16, 2.54 if clean_snapshots else 2.86))
+    fig.subplots_adjust(left=.012, right=.988, top=.985,
+                        bottom=.015 if clean_snapshots else .12, wspace=.045)
     axes[0].imshow(image, extent=limits, origin='upper', zorder=0)
     ax = axes[1]
     ax.set_facecolor('#fafbf9')
@@ -130,6 +136,35 @@ def main():
         footprints.append(projected)
         centers.append(projected.mean(axis=0))
     centers = np.array(centers)
+    snapshots = []
+    if args.mode == 'snapshots':
+        first_by_site = {}
+        for path in sorted(args.transactions.glob('*.json')):
+            record = read_json(path)
+            if record['radio']['status'] != 'feasible' or record['radio']['uplink_s'] <= 0:
+                continue
+            site = int(record['site'])
+            if site not in first_by_site or record['start_s'] < first_by_site[site][1]['start_s']:
+                first_by_site[site] = (path, record)
+        assert set(first_by_site) == set(range(len(spec['stops']))), 'All four sites require actual transactions'
+        for site, stop in enumerate(spec['stops']):
+            path, record = first_by_site[site]
+            head = int(record['radio']['head'])
+            assert 0 <= head < 10
+            assert stop['start_s'] <= record['start_s'] < record['end_s'] <= stop['end_s']
+            # The prescribed positions are constant throughout each hover window.
+            hover_rows = [r for r in rows if r['phase'] == 'inspection_hover' and int(r['site']) == site]
+            assert {int(r['uav']) for r in hover_rows} == set(range(10))
+            for row in hover_rows:
+                assert np.allclose([float(row['east_m']), float(row['north_m'])],
+                                   stop['positions_xy_m'][int(row['uav'])], atol=1e-6)
+            snapshots.append(dict(site=site, time_s=record['start_s'], end_s=record['end_s'],
+                                  head_uav_zero_based=head, display_head='U'+str(head+1),
+                                  source=str(path.relative_to(ROOT)),
+                                  source_sha256=hashlib.sha256(path.read_bytes()).hexdigest(),
+                                  selection='Earliest feasible positive-duration transmission at this site',
+                                  kind=record['kind'], sequence=record['sequence'],
+                                  positions_xy_m=stop['positions_xy_m']))
     display_footprints = []
     for index, center in enumerate(centers):
         rng = np.random.default_rng(480 + index)
@@ -142,15 +177,34 @@ def main():
         offsets = np.column_stack([np.cos(angles), np.sin(angles)]) * radii[:, None]
         offsets -= offsets.mean(axis=0)
         display_footprints.append(center + offsets * scale)
+    if args.mode == 'snapshots':
+        display_footprints = footprints
     route = np.vstack([centers, centers[:1]])
     route_color = '#163a50'
     ax.plot(*route.T, color='white', lw=2.8, solid_capstyle='round', zorder=4)
-    ax.plot(*route.T, color=route_color, lw=1.1, solid_capstyle='round', zorder=4)
+    ax.plot(*route.T, color=route_color, lw=.8 if snapshots else 1.1,
+            linestyle=(0, (3, 3)) if snapshots else '-', solid_capstyle='round', zorder=4)
     for a, b in zip(route, route[1:]):
         ax.annotate('', xy=a+.60*(b-a), xytext=a+.46*(b-a),
                     arrowprops=dict(arrowstyle='-|>', color=route_color,
                                     lw=1.1, mutation_scale=8), zorder=6)
     for number, (footprint, center) in enumerate(zip(display_footprints, centers), 1):
+        if snapshots:
+            shot = snapshots[number-1]
+            head = shot['head_uav_zero_based']
+            ax.scatter(*footprint.T, s=49, facecolors='#e9f4f1', edgecolors='#4d9690',
+                       linewidths=.65, zorder=7)
+            ax.scatter(*footprint[head], s=85, facecolors='white', edgecolors='#cf942e',
+                       linewidths=.85, zorder=8)
+            ax.scatter(*footprint[head], s=49, facecolors='#fff1d9', edgecolors='#cf942e',
+                       linewidths=.65, zorder=9)
+            for uav, xy in enumerate(footprint):
+                ax.annotate(str(uav+1), xy=xy, xytext=(0, -.15),
+                            textcoords='offset points',
+                            color='#8e5910' if uav == head else '#205e5a',
+                            fontsize=4.6, fontfamily='DejaVu Sans',
+                            ha='center', va='center', fontweight='normal', zorder=10)
+            continue
         ax.scatter(*footprint.T, s=19, facecolors='#64ada6', edgecolors='white',
                    linewidths=.8, zorder=7)
         ax.text(*center, str(number), color=route_color, ha='center', va='center',
@@ -163,6 +217,8 @@ def main():
         panel.set_aspect('equal'); panel.set_xticks([]); panel.set_yticks([])
         for spine in panel.spines.values():
             spine.set_linewidth(.55); spine.set_color('#252525')
+        if clean_snapshots:
+            continue
         color = 'white' if panel is axes[0] else '#222222'
         stroke = [pe.withStroke(linewidth=2, foreground='#333333')] if panel is axes[0] else []
         arrow = panel.annotate('N', xy=(.06, .95), xytext=(.06, .82), xycoords='axes fraction',
@@ -177,12 +233,19 @@ def main():
         text = panel.text(x+length/2, y+.018*(limits[3]-limits[2]), '200 m',
                           color=color, ha='center', fontsize=7, zorder=12)
         text.set_path_effects(stroke)
-    axes[0].set_xlabel('(a) Satellite imagery', fontsize=10, labelpad=6)
-    axes[1].set_xlabel('(b) Swarm trajectory', fontsize=10, labelpad=6)
+    if not clean_snapshots:
+        axes[0].set_xlabel('(a) Satellite imagery', fontsize=10, labelpad=6)
+        axes[1].set_xlabel('(b) Swarm trajectory', fontsize=10, labelpad=6)
+    else:
+        labels = [t.get_text() for panel in axes for t in panel.texts if t.get_text()]
+        assert sorted(labels) == sorted([str(i) for i in range(1,11)]*4)
     OUT.mkdir(parents=True, exist_ok=True)
-    stem = OUT / 'mission_satellite_swarm_cluster_1x2'
+    stem = OUT / ('mission_satellite_uav_snapshots_1x2' if snapshots else 'mission_satellite_swarm_cluster_1x2')
     for extension in ['png', 'pdf', 'svg']:
         fig.savefig(stem.with_suffix('.' + extension), dpi=450, facecolor='white')
+        if extension == 'svg':
+            svg = stem.with_suffix('.svg')
+            svg.write_text('\n'.join(line.rstrip() for line in svg.read_text().splitlines())+'\n')
     plt.close(fig)
     metadata = dict(
         layout='1 x 2', uav_count=10, mission_stops=len(spec['stops']),
@@ -192,13 +255,16 @@ def main():
         osm_attribution='© OpenStreetMap contributors',
         osm_copyright_url='https://www.openstreetmap.org/copyright',
         extent_epsg3857=limits, route_offsets_applied=False,
-        representation='Recorded swarm-centroid route; schematic dispersed circular UAV markers at each stop',
-        marker_positions_are_schematic=True,
-        marker_layout='Ten dots per stop, staggered inner and outer radii with deterministic jitter; recentered to the recorded centroid. These are not measured or simulated individual positions.',
+        representation=('Four time-separated simulation snapshots with actual recorded formations and selected heads' if snapshots else 'Recorded swarm-centroid route; schematic dispersed circular UAV markers at each stop'),
+        marker_positions_are_schematic=not bool(snapshots),
+        marker_layout=('Exact prescribed hover positions, validated against trajectory.csv; not real-world flight telemetry' if snapshots else 'Ten dots per stop, staggered inner and outer radii with deterministic jitter; recentered to the recorded centroid. These are not measured or simulated individual positions.'),
+        snapshot_records=snapshots,
+        id_convention='Figure U1–U10 correspond to logged user indices 0–9',
+        head_semantics='Head of the selected individual transmission, not a fixed head for the whole region; different sites show the same ten UAVs at different times',
         centroid_route_epsg3857=route.tolist(),
         formation_positions_epsg3857=[f.tolist() for f in footprints],
         display_positions_epsg3857=[f.tolist() for f in display_footprints],
-        plot_style='IEEE double-column width; no footer captions or individual UAV legend',
+        plot_style=('IEEE double-column width; UAV IDs only, sans-serif numerals; no explanatory text, panel captions, north labels or scale labels' if clean_snapshots else 'IEEE double-column width; no footer captions or individual UAV legend'),
     )
     stem.with_suffix('.json').write_text(json.dumps(metadata, indent=2, ensure_ascii=False))
     print('Created:', stem.with_suffix('.png'))

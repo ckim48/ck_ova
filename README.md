@@ -5,8 +5,9 @@
 
 ## 최신 작업 — 2026-10-26
 
-- 위성사진 / UAV 군집 이동 경로 1×2: [PNG](results/figures/mission_satellite_swarm_cluster_1x2.png), [PDF](results/figures/mission_satellite_swarm_cluster_1x2.pdf), [SVG](results/figures/mission_satellite_swarm_cluster_1x2.svg).
-- 오른쪽 UAV 점은 군집을 보여주기 위한 도식 배치이며, 군집 중심과 이동 경로는 저장된 임무 좌표를 사용한다. 원래 시뮬레이션의 개별 UAV 좌표는 변경하지 않았다.
+- 위성사진 / 지역별 UAV 스냅샷 1×2: [PNG](results/figures/mission_satellite_uav_snapshots_1x2.png), [PDF](results/figures/mission_satellite_uav_snapshots_1x2.pdf), [SVG](results/figures/mission_satellite_uav_snapshots_1x2.svg).
+- 스냅샷은 완료된 기존 RSITMD·Proposed 실험의 지역별 첫 전송을 사용한다. 개별 UAV는 저장된 시뮬레이션 좌표에 표시하며 당시 선택된 head를 강조한다. U1–U10은 로그의 인덱스 0–9에 대응한다. 네 지역은 동일한 열 대의 서로 다른 시점이며 실제 비행 실측은 아니다.
+- 이전 [군집 도식](results/figures/mission_satellite_swarm_cluster_1x2.png)도 보존했다. 해당 도식의 분산된 점 배치는 시각화용이며 시뮬레이션 좌표를 변경한 결과가 아니다.
 - 실제 UAV 영상·문장 데이터 CapERA와 RSITMD를 RemoteCLIP으로 비교하는 새 실험 코드는 `tools/uav_real_vlm_v1/`에 있다. 현재 실행 중이며 이 커밋은 새 비교 결과가 완료됐다는 의미가 아니다.
 - 총에너지는 통신 + 연산 + 비행의 명시적 시나리오 모델로 계산한다. 장비 실측 에너지가 아니다. 자세한 입력과 실행 조건은 [새 실험 안내](docs/uav_remoteclip_capera.md)를 참고한다.
 

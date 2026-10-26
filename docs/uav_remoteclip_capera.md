@@ -4,9 +4,13 @@ This snapshot adds the current experiment implementation and the completed missi
 
 ## Mission figure
 
-`tools/plot_mission_map.py` generates `results/figures/mission_satellite_swarm_cluster_1x2.{png,pdf,svg,json}`. The left panel uses cached Esri satellite imagery and the right uses OpenStreetMap geometry over the same extent. Attribution and image provenance are retained in the companion JSON.
+`tools/plot_mission_map.py` defaults to `results/figures/mission_satellite_uav_snapshots_1x2.{png,pdf,svg,json}`. The left panel uses cached Esri satellite imagery and the right uses OpenStreetMap geometry over the same extent. Attribution and image provenance are retained in the companion JSON.
 
-The recorded four swarm centroids and their route are preserved. The ten circular UAV markers at each stop use a deterministic dispersed schematic layout to avoid the visual impression of a two-row convoy. These display positions are not individual simulated positions. Both original formation positions and schematic positions are recorded in the JSON; the simulation inputs are unchanged.
+The four snapshots select the earliest feasible positive-duration transmission at each region in the completed historical RSITMD/Proposed run (`uav_single_model_two_dataset_v1`), not the ongoing RemoteCLIP/CapERA experiment. Actual prescribed hover positions are checked against every matching row of `trajectory.csv`. The selected head is read from each transaction's `radio.head`; golden double circles highlight it. Display IDs U1–U10 map to logged indices 0–9. Regions show the same ten UAVs at different times, not forty simultaneous UAVs or fixed regional heads. These are simulation records, not flight telemetry. A different completed run can be supplied with `--transactions PATH`.
+
+The clean figure shows only UAV numbers, with light circular markers and sans-serif numerals. Region/time/head text, panel captions and compass/scale labels are omitted; times and all provenance remain in the companion JSON. The recorded formations are two rows of five, rotated and spaced differently at each site. This is a prescribed simulation geometry, not a claim that real UAV swarms must fly in two rows.
+
+The earlier schematic is preserved as `mission_satellite_swarm_cluster_1x2` and can be regenerated with `--mode schematic`. Its recorded four swarm centroids and route are preserved, but its ten circular UAV markers at each stop use a deterministic dispersed schematic layout. Those display positions are not individual simulated positions. Both original formation positions and schematic positions are recorded in its JSON; the simulation inputs are unchanged.
 
 Regeneration requires the local `results/overnight_energy_v2/korea_mission_v1/{mission_spec.json,trajectory.csv}` and `data/korea_mission_daejeon_v1/` map/imagery cache. Run `python tools/plot_mission_map.py`; `--download` refreshes the satellite cache.
 
