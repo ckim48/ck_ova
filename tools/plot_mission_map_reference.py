@@ -8,8 +8,10 @@ import sys
 
 source_path=Path(__file__).with_name('plot_mission_map.py')
 source=source_path.read_text()
-five_sites='--five-sites' in sys.argv
-if five_sites:sys.argv.remove('--five-sites')
+global_iot='--global-iot' in sys.argv
+if global_iot:sys.argv.remove('--global-iot')
+five_sites='--five-sites' in sys.argv or global_iot
+if '--five-sites' in sys.argv:sys.argv.remove('--five-sites')
 square='--square' in sys.argv or five_sites
 if '--square' in sys.argv:sys.argv.remove('--square')
 
@@ -76,6 +78,12 @@ if five_sites:
     replace("tick_y = np.arange(0, (limits[3]-limits[2])/scale, 300.)", "tick_y = np.arange(0, (limits[3]-limits[2])/scale+.01, 500.)")
     replace("stem.name+'_reference_square'", "stem.name+'_five_sites_reference_square'")
     replace("visual_variant='reference_square'", "visual_variant='five_sites_reference_square',axis_tick_policy='Both endpoints included; 500m intervals'")
+
+if global_iot:
+    replace("default=ROOT/'results/iot_uav_deployment_v2_five_sites'", "default=ROOT/'results/iot_uav_deployment_v3_global_iot'")
+    replace("cache = MAP / 'satellite_iot_five_sites_square_1x2'", "cache = MAP / 'satellite_iot_global_five_sites_square_1x2'")
+    replace("stem.name+'_five_sites_reference_square'", "stem.name+'_global_iot_five_sites_reference_square'")
+    replace("visual_variant='five_sites_reference_square'", "visual_variant='global_iot_five_sites_reference_square'")
 
 if __name__=='__main__':
     if '--mode' not in sys.argv:sys.argv.extend(['--mode','iot'])

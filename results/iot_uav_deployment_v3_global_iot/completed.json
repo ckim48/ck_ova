@@ -1,0 +1,149 @@
+{
+  "passed": true,
+  "unix": 1793012396.6424167,
+  "optimization": {
+    "initial_objective_j": 1.1325249229607088,
+    "final_objective_j": 0.39627420812956327,
+    "trace": [
+      {
+        "iteration": 0,
+        "objective_j": 0.4555037279655738,
+        "position_step_accepted": true,
+        "solver_success": true,
+        "solver_message": "Optimization terminated successfully",
+        "solver_iterations": 84,
+        "heads_zero_based": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "iteration": 1,
+        "objective_j": 0.409121448160562,
+        "position_step_accepted": true,
+        "solver_success": true,
+        "solver_message": "Optimization terminated successfully",
+        "solver_iterations": 79,
+        "heads_zero_based": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "iteration": 2,
+        "objective_j": 0.39946913216039015,
+        "position_step_accepted": true,
+        "solver_success": true,
+        "solver_message": "Optimization terminated successfully",
+        "solver_iterations": 57,
+        "heads_zero_based": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "iteration": 3,
+        "objective_j": 0.39627420812956327,
+        "position_step_accepted": true,
+        "solver_success": true,
+        "solver_message": "Optimization terminated successfully",
+        "solver_iterations": 28,
+        "heads_zero_based": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "iteration": 4,
+        "objective_j": 0.39627420812956327,
+        "position_step_accepted": true,
+        "solver_success": true,
+        "solver_message": "Optimization terminated successfully",
+        "solver_iterations": 1,
+        "heads_zero_based": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      }
+    ],
+    "head_candidate_energy_j": [
+      [
+        0.11654087512911177,
+        0.07249767961347628,
+        0.04221712451250686,
+        0.08273512993996027,
+        0.11990830269832733,
+        0.08674292874649338,
+        0.0746085196185639,
+        0.060343049586104244,
+        0.04690149365474964,
+        0.08871389875804553
+      ],
+      [
+        0.07854185132088776,
+        0.029454662780349236,
+        0.02384094973469612,
+        0.04758277305053049,
+        0.04790250135653644,
+        0.06513836345963588,
+        0.02960600859789651,
+        0.034557418460872895,
+        0.037531391056268515,
+        0.06877386906499453
+      ],
+      [
+        0.07874918538908243,
+        0.03919352782454943,
+        0.03359686728593434,
+        0.06766313905250426,
+        0.12236664189809528,
+        0.07690693083091853,
+        0.07683417279526478,
+        0.05063398526997805,
+        0.04439396433267848,
+        0.06898007786648362
+      ],
+      [
+        0.07481344543884434,
+        0.0440065412607665,
+        0.034895022542785835,
+        0.09391837420274557,
+        0.0667158377611322,
+        0.07836228996118695,
+        0.06694249536642173,
+        0.04804029308923453,
+        0.07965546643314267,
+        0.1009071002885314
+      ],
+      [
+        0.09422073552121948,
+        0.08405483292448665,
+        0.033672497274355,
+        0.05960778970539409,
+        0.08784453610029647,
+        0.06584191131456342,
+        0.04267733402117699,
+        0.043272784272236284,
+        0.04246383321928181,
+        0.09091145217180761
+      ]
+    ],
+    "minimum_flight_separation_m": 29.633321924119716
+  },
+  "scope": "Geometry planning complete; new FL/FU model evaluation is a separate run."
+}
