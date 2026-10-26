@@ -26,6 +26,8 @@ env MPLCONFIGDIR=/tmp/ova_ck_mpl .venv/bin/python tools/plot_mission_map.py --mo
 
 The left panel is satellite imagery; the right shows IoT circles, UAV stars, a gold head star and a compact legend. Thin lines show device associations. Positions come from optimization, with no decorative jitter. `mission_satellite_iot_uav_planned_1x2` uses nominal planning heads. After each completed Proposed run, the runner writes `mission_satellite_iot_uav_actual_heads_1x2` from the first actual positive-duration transmission in each region. The last completed dataset supplies that actual-head view; the companion JSON identifies its source records and hashes.
 
+An additional reference-style export is available via `python tools/plot_mission_map_reference.py --mode iot`. It keeps the same data while increasing the canvas to 9.4×4.2 inches, using blue UAV stars, orange IoT circles, red head stars, black marker outlines, metric axes and a shared top legend. The dashed red head ring is only visual emphasis, not a modeled coverage boundary. The separate script does not alter registered numerical experiment code.
+
 ## New experiment
 
 `tools/iot_vlm_v1/experiment.py` runs fresh RSITMD and CapERA evaluations with the same registered RemoteCLIP/adapters, data partitions, four methods, 200 FL rounds and 45 five-step FU requests as the base campaign. The new geometry and channel matrices are common to all arms. Neither the earlier two-row results nor nominal planning-head costs are relabeled as new method results.

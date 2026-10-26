@@ -6,6 +6,7 @@
 ## 최신 작업 — 2026-10-26
 
 - **IoT 기반 UAV 배치**: [1×2 PNG](results/figures/mission_satellite_iot_uav_planned_1x2.png), [PDF](results/figures/mission_satellite_iot_uav_planned_1x2.pdf). 원은 가상 지상 IoT, 별은 최적화된 UAV, 금색 별은 계획 단계의 head다. 범례 외 설명 글씨는 생략했다.
+- 참고 디자인을 적용한 큰 버전: [PNG](results/figures/mission_satellite_iot_uav_planned_1x2_reference_large.png), [PDF](results/figures/mission_satellite_iot_uav_planned_1x2_reference_large.pdf). 파란 UAV 별, 주황 IoT 원, 붉은 head, 상단 공통 범례와 미터 좌표축을 사용하며 원래 버전과 좌표·head는 같다.
 - IoT 수요를 기준으로 위치·연결·계획용 head를 번갈아 최적화하고, 새 위치에서 채널을 다시 생성했다. 공통 배치에서 네 방법을 비교하는 새 실행은 `tools/iot_vlm_v1/`와 `results/iot_uav_remoteclip_v1/`를 사용한다. 실제 FL/FU head는 전송마다 다시 선택한다. [모델·검증·실행 안내](docs/iot_uav_deployment.md).
 - 위성사진 / 지역별 UAV 스냅샷 1×2: [PNG](results/figures/mission_satellite_uav_snapshots_1x2.png), [PDF](results/figures/mission_satellite_uav_snapshots_1x2.pdf), [SVG](results/figures/mission_satellite_uav_snapshots_1x2.svg).
 - 스냅샷은 완료된 기존 RSITMD·Proposed 실험의 지역별 첫 전송을 사용한다. 개별 UAV는 저장된 시뮬레이션 좌표에 표시하며 당시 선택된 head를 강조한다. U1–U10은 로그의 인덱스 0–9에 대응한다. 네 지역은 동일한 열 대의 서로 다른 시점이며 실제 비행 실측은 아니다.
