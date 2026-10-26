@@ -3,6 +3,15 @@
 첨부 원고의 Hybrid NOMA–AirComp 및 교차모달 결합 업데이트를 검증하는 실험 프로젝트.
 원고 사본은 `manuscript/original.tex`에 있으며 마지막 개행만 추가했다.
 
+## 최신 작업 — 2026-10-26
+
+- 위성사진 / UAV 군집 이동 경로 1×2: [PNG](results/figures/mission_satellite_swarm_cluster_1x2.png), [PDF](results/figures/mission_satellite_swarm_cluster_1x2.pdf), [SVG](results/figures/mission_satellite_swarm_cluster_1x2.svg).
+- 오른쪽 UAV 점은 군집을 보여주기 위한 도식 배치이며, 군집 중심과 이동 경로는 저장된 임무 좌표를 사용한다. 원래 시뮬레이션의 개별 UAV 좌표는 변경하지 않았다.
+- 실제 UAV 영상·문장 데이터 CapERA와 RSITMD를 RemoteCLIP으로 비교하는 새 실험 코드는 `tools/uav_real_vlm_v1/`에 있다. 현재 실행 중이며 이 커밋은 새 비교 결과가 완료됐다는 의미가 아니다.
+- 총에너지는 통신 + 연산 + 비행의 명시적 시나리오 모델로 계산한다. 장비 실측 에너지가 아니다. 자세한 입력과 실행 조건은 [새 실험 안내](docs/uav_remoteclip_capera.md)를 참고한다.
+
+아래 내용은 이전 실험의 기록이다.
+
 ## 현재 상태
 
 - 실제 실행: CPU 통신 시뮬레이션, 합성 데이터 100라운드 학습/삭제 실험, 수치 검증.
