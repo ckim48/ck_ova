@@ -1,0 +1,275 @@
+{
+  "reference": "User plot_zone_pred_1x2.py and blue/orange/red/green hatched-bar image (2026-10-26)",
+  "figure_size_inches": [
+    7.4,
+    3.7350000000000003
+  ],
+  "colors": [
+    "#4C72B0",
+    "#EFAA54",
+    "#D65A50",
+    "#66B366"
+  ],
+  "hatches": [
+    "//",
+    "\\\\",
+    "xx",
+    ".."
+  ],
+  "panel_height_width_ratio": 0.9,
+  "height_change_from_previous_version_percent": -10,
+  "font_points": 14,
+  "grid": "dotted",
+  "full_frame": true,
+  "shared_top_legend": true,
+  "dataset_labels_below_panels": true,
+  "total_energy_display_limits_kJ": [
+    1800.0,
+    2300.0
+  ],
+  "zero_baseline_comparison": "total_energy_full_scale_1x2",
+  "bar_value_labels": false,
+  "input_sha256": {
+    "protocol.json": "b2b911e9df1b05d3a1b46fa95f2012f19a65fd33bbba7e43a48db37f243ed2b3",
+    "figures/metrics.json": "6e3670978d48987481b5bdd9faec321af2b04a609ac2e94b1a7dbb9046a5efd9",
+    "figures/metrics.csv": "361c84380bb8ede310a94630dfbd49ca82afbc88a5a04edd7eb5ce324e33d0e4"
+  },
+  "source": "tools/plot_event_mission_reference_style.py",
+  "source_sha256": "f35251db2110a0f3f0ab4ece84367b590cbad6587fa82c8152ee3a38feb6b3d0",
+  "rendered": [
+    {
+      "metric": "loss",
+      "panel_size_inches": [
+        [
+          2.7361344537815127,
+          2.4625210084033613
+        ],
+        [
+          2.7361344537815127,
+          2.4625210084033613
+        ]
+      ],
+      "ylim": [
+        [
+          0.0,
+          2.5
+        ],
+        [
+          0.0,
+          6.0
+        ]
+      ],
+      "bar_annotations": 0,
+      "truncated_axis_marked": false,
+      "files": [
+        {
+          "file": "loss_1x2.png",
+          "sha256": "23a8c0470f2101dc012a8d681927ce24c15217c03fb0fd66bef574fbe0b826df"
+        },
+        {
+          "file": "loss_1x2.pdf",
+          "sha256": "025aa71604aa0d3c9c278016a1c03ff73b5d7d8afd61b375d6eccd00f4870e49"
+        },
+        {
+          "file": "loss_1x2.svg",
+          "sha256": "1309eea17a07d1711708f95202caac743462fed0c622162ffcf2082962e58774"
+        }
+      ]
+    },
+    {
+      "metric": "total_energy_j",
+      "panel_size_inches": [
+        [
+          2.7361344537815127,
+          2.4625210084033613
+        ],
+        [
+          2.7361344537815127,
+          2.4625210084033613
+        ]
+      ],
+      "ylim": [
+        [
+          1800.0,
+          2300.0
+        ],
+        [
+          1800.0,
+          2300.0
+        ]
+      ],
+      "bar_annotations": 0,
+      "truncated_axis_marked": true,
+      "files": [
+        {
+          "file": "total_energy_1x2.png",
+          "sha256": "e83c87e364fbf74dbc65b6f33eb58a1ae02d8ce065120b8cdd06989371c09f89"
+        },
+        {
+          "file": "total_energy_1x2.pdf",
+          "sha256": "f376550d09f810d591fd5271ed97da2064ae2ffce6114347ff86ed1b4fd497d2"
+        },
+        {
+          "file": "total_energy_1x2.svg",
+          "sha256": "c2a253aeee18440abcb158fb347a0c4d1f890777dbc9d0dd875c48c4c2979690"
+        }
+      ]
+    },
+    {
+      "metric": "total_delay_s",
+      "panel_size_inches": [
+        [
+          2.7361344537815127,
+          2.4625210084033613
+        ],
+        [
+          2.7361344537815127,
+          2.4625210084033613
+        ]
+      ],
+      "ylim": [
+        [
+          0.0,
+          3000.0
+        ],
+        [
+          0.0,
+          3000.0
+        ]
+      ],
+      "bar_annotations": 0,
+      "truncated_axis_marked": false,
+      "files": [
+        {
+          "file": "total_delay_1x2.png",
+          "sha256": "0dcdc5720b5daae5693cc276faa13993fded5330b97f13402239da6d4efe454f"
+        },
+        {
+          "file": "total_delay_1x2.pdf",
+          "sha256": "24d208a5777720f81c1b39d9a4b4cde2ac7f10e4499f6050e1ad0c61746fa45c"
+        },
+        {
+          "file": "total_delay_1x2.svg",
+          "sha256": "e60374e283e4590831c1d05348862b4c742b323248a8b9055506d756f5078cb3"
+        }
+      ]
+    },
+    {
+      "metric": "FU_mean_completion_latency_s",
+      "panel_size_inches": [
+        [
+          2.7361344537815127,
+          2.4625210084033613
+        ],
+        [
+          2.7361344537815127,
+          2.4625210084033613
+        ]
+      ],
+      "ylim": [
+        [
+          0.0,
+          7.0
+        ],
+        [
+          0.0,
+          7.0
+        ]
+      ],
+      "bar_annotations": 0,
+      "truncated_axis_marked": false,
+      "files": [
+        {
+          "file": "fu_completion_latency_1x2.png",
+          "sha256": "7d54b903fa659007a11d77ecc87d12a31ca33862279dfa35db6d9caa5d5fcea9"
+        },
+        {
+          "file": "fu_completion_latency_1x2.pdf",
+          "sha256": "22e58686107ee2aab6acf916d5183e0bece2dc763c17d422f6e7f11a3740cf28"
+        },
+        {
+          "file": "fu_completion_latency_1x2.svg",
+          "sha256": "ed9f4cb0494d9c84ef5d0d8f890d921ee35632eb5d0cfc9d4da557a27100e662"
+        }
+      ]
+    },
+    {
+      "metric": "energy_hover_j",
+      "panel_size_inches": [
+        [
+          2.7361344537815127,
+          2.4625210084033613
+        ],
+        [
+          2.7361344537815127,
+          2.4625210084033613
+        ]
+      ],
+      "ylim": [
+        [
+          0.0,
+          800.0
+        ],
+        [
+          0.0,
+          800.0
+        ]
+      ],
+      "bar_annotations": 0,
+      "truncated_axis_marked": false,
+      "files": [
+        {
+          "file": "hover_energy_1x2.png",
+          "sha256": "7f60560acd9234a42b85a3a5426cc3ca2907910f6cce65ff2bea9c263b1f6602"
+        },
+        {
+          "file": "hover_energy_1x2.pdf",
+          "sha256": "d6409fee6f7c47d25d6740a494dca6379388fbc115427e99070d0bbdfcbb8525"
+        },
+        {
+          "file": "hover_energy_1x2.svg",
+          "sha256": "da1145806c94555dce870b0adc29580f32bc5ec94ee7e9eea990adc47c2467f0"
+        }
+      ]
+    },
+    {
+      "metric": "total_energy_j",
+      "panel_size_inches": [
+        [
+          2.7361344537815127,
+          2.4625210084033613
+        ],
+        [
+          2.7361344537815127,
+          2.4625210084033613
+        ]
+      ],
+      "ylim": [
+        [
+          0.0,
+          2500.0
+        ],
+        [
+          0.0,
+          2500.0
+        ]
+      ],
+      "bar_annotations": 0,
+      "truncated_axis_marked": false,
+      "files": [
+        {
+          "file": "total_energy_full_scale_1x2.png",
+          "sha256": "cfd7368a0de1ca1974ed809cc0421656a147d04d90b760c9dbcc1bd45e811f87"
+        },
+        {
+          "file": "total_energy_full_scale_1x2.pdf",
+          "sha256": "c21e40d2e4bf933c89c93aa014af50875429c4c8620221c9c2426f53b2482046"
+        },
+        {
+          "file": "total_energy_full_scale_1x2.svg",
+          "sha256": "b8eb79293582367d7728b6ff139d0df7ba579204281e94ef436d7df05c537749"
+        }
+      ]
+    }
+  ]
+}

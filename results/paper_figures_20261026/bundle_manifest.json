@@ -1,0 +1,123 @@
+{
+  "campaign": "results/iot_uav_remoteclip_v4_event_mission",
+  "protocol_sha256": "b2b911e9df1b05d3a1b46fa95f2012f19a65fd33bbba7e43a48db37f243ed2b3",
+  "registered_sources_unchanged": true,
+  "sources": {
+    "tools/build_paper_figures_20261026.py": "2817a35b70f3780c0ae1ffff54f3a9c71d367a39dcc3d1f2e30b58a4ef3ea31d",
+    "tools/plot_event_mission_reference_style.py": "f35251db2110a0f3f0ab4ece84367b590cbad6587fa82c8152ee3a38feb6b3d0",
+    "tools/plot_mission_map_visible_clusters.py": "a23160251102f5e43c13c2093714c277dd15f74b3152d3d01784d669e84fb039",
+    "tools/plot_mission_map_cluster.py": "b83a84692b6d6aabf37a93c077be7fadd7db35f2d4d3ee0ab7045fe8de7aa414",
+    "tools/plot_mission_map_reference.py": "83567f153d675cf2510cc9b59b82f5bb79c742d4015121547d40c1e7a0fd877f"
+  },
+  "bar_height_reduction_percent": 10,
+  "map_figure_size_inches": [
+    10.4,
+    5.35
+  ],
+  "curves_final_values_verified": true,
+  "actual_head_timing_verified": true,
+  "curve_evaluation_counts": [
+    {
+      "dataset": "RSITMD",
+      "method": "proposed_fu_guard_cliperase",
+      "evaluations": 47,
+      "first_FL_round": 5,
+      "last_FL_round": 200,
+      "repeated_FL_round_evaluations": 0
+    },
+    {
+      "dataset": "RSITMD",
+      "method": "separate_aircomp_periodic",
+      "evaluations": 49,
+      "first_FL_round": 5,
+      "last_FL_round": 200,
+      "repeated_FL_round_evaluations": 1
+    },
+    {
+      "dataset": "RSITMD",
+      "method": "aircomp_ofdma_periodic",
+      "evaluations": 49,
+      "first_FL_round": 5,
+      "last_FL_round": 200,
+      "repeated_FL_round_evaluations": 1
+    },
+    {
+      "dataset": "RSITMD",
+      "method": "sequential_digital_periodic",
+      "evaluations": 49,
+      "first_FL_round": 5,
+      "last_FL_round": 200,
+      "repeated_FL_round_evaluations": 1
+    },
+    {
+      "dataset": "CapERA",
+      "method": "proposed_fu_guard_cliperase",
+      "evaluations": 47,
+      "first_FL_round": 5,
+      "last_FL_round": 200,
+      "repeated_FL_round_evaluations": 0
+    },
+    {
+      "dataset": "CapERA",
+      "method": "separate_aircomp_periodic",
+      "evaluations": 49,
+      "first_FL_round": 5,
+      "last_FL_round": 200,
+      "repeated_FL_round_evaluations": 1
+    },
+    {
+      "dataset": "CapERA",
+      "method": "aircomp_ofdma_periodic",
+      "evaluations": 49,
+      "first_FL_round": 5,
+      "last_FL_round": 200,
+      "repeated_FL_round_evaluations": 1
+    },
+    {
+      "dataset": "CapERA",
+      "method": "sequential_digital_periodic",
+      "evaluations": 49,
+      "first_FL_round": 5,
+      "last_FL_round": 200,
+      "repeated_FL_round_evaluations": 1
+    }
+  ],
+  "files": {
+    "README.txt": "cda4346260aec5ed13f8920403af2cedbb0d5d8f0016551b1a73fc0604990339",
+    "convergence_manifest.json": "f9a5840f1cf43993cf6e1ab92be513778ae630ff58d18974e2ce18849652cc76",
+    "convergence_samples.csv": "acc262e46550d69cbd24138eedda2d2db28229464ffb35da0c219f67c8c22922",
+    "fu_completion_latency_1x2.pdf": "22e58686107ee2aab6acf916d5183e0bece2dc763c17d422f6e7f11a3740cf28",
+    "fu_completion_latency_1x2.png": "7d54b903fa659007a11d77ecc87d12a31ca33862279dfa35db6d9caa5d5fcea9",
+    "fu_completion_latency_1x2.svg": "ed9f4cb0494d9c84ef5d0d8f890d921ee35632eb5d0cfc9d4da557a27100e662",
+    "hover_energy_1x2.pdf": "d6409fee6f7c47d25d6740a494dca6379388fbc115427e99070d0bbdfcbb8525",
+    "hover_energy_1x2.png": "7f60560acd9234a42b85a3a5426cc3ca2907910f6cce65ff2bea9c263b1f6602",
+    "hover_energy_1x2.svg": "da1145806c94555dce870b0adc29580f32bc5ec94ee7e9eea990adc47c2467f0",
+    "hover_energy_audit.csv": "a5d6055041b06ac7e5a838a9e3e42b021e5ad74d17e2c670b8ac28f50db16c86",
+    "hover_energy_audit.json": "a570f6a755ccb1e88975d11dfb1353b30fbbb85278a102dbea51e3db96c487f9",
+    "loss_1x2.pdf": "025aa71604aa0d3c9c278016a1c03ff73b5d7d8afd61b375d6eccd00f4870e49",
+    "loss_1x2.png": "23a8c0470f2101dc012a8d681927ce24c15217c03fb0fd66bef574fbe0b826df",
+    "loss_1x2.svg": "1309eea17a07d1711708f95202caac743462fed0c622162ffcf2082962e58774",
+    "loss_convergence_1x2.pdf": "59a3b8d796142799e3fc42970e01b21eb95b33cd9ee8cea01534c22854f0b770",
+    "loss_convergence_1x2.png": "fb691b6a49ab131abcf431424ed4edb26df206df008eb83d0c54a2f1d1ac981c",
+    "loss_convergence_1x2.svg": "f5ab633c2733141110f2f3b12dac6b924a04916c560f933b971435e5fb131eb2",
+    "metrics.csv": "5bf8807a9f6d20d90bcd738b2c9faee446b4f949458c61f60a21ff3bf9d3efa4",
+    "metrics.json": "6e3670978d48987481b5bdd9faec321af2b04a609ac2e94b1a7dbb9046a5efd9",
+    "mission_map_1x2.json": "7640ece65de486773e4c90c7fa032c1d68b60b98573e95fe08f293655c05d287",
+    "mission_map_1x2.pdf": "b53da26bef29546f73e8de21019826f34c428cdc00e6d7ced6652006fa400422",
+    "mission_map_1x2.png": "95e5d2558fb36506c111059a7af702d9df2d84c58a6d31cc697b2ef570e42cc8",
+    "mission_map_1x2.svg": "5a6b63674e92c17530cb97a8964f2aa6adb5c29b569b1856c0576693d5a0b61a",
+    "mr_convergence_1x2.pdf": "c11dbd3e18c3dde7a3964b565110d29c23cd131bd7d02621ce3a5f0b2fc6d2ff",
+    "mr_convergence_1x2.png": "656710ce7dc32e75836e46e7cf8f0ecf319ee8f805f0b8ffd930057c130eb4e7",
+    "mr_convergence_1x2.svg": "e201c628cf69a087215873fdac9f0e62d8479799106050b8f077f5f0940f40e2",
+    "reference_style_manifest.json": "42974890e02d0ed5b02cf3973644cf82891c0cf483d759bf1c07f3863825cab7",
+    "total_delay_1x2.pdf": "24d208a5777720f81c1b39d9a4b4cde2ac7f10e4499f6050e1ad0c61746fa45c",
+    "total_delay_1x2.png": "0dcdc5720b5daae5693cc276faa13993fded5330b97f13402239da6d4efe454f",
+    "total_delay_1x2.svg": "e60374e283e4590831c1d05348862b4c742b323248a8b9055506d756f5078cb3",
+    "total_energy_1x2.pdf": "f376550d09f810d591fd5271ed97da2064ae2ffce6114347ff86ed1b4fd497d2",
+    "total_energy_1x2.png": "e83c87e364fbf74dbc65b6f33eb58a1ae02d8ce065120b8cdd06989371c09f89",
+    "total_energy_1x2.svg": "c2a253aeee18440abcb158fb347a0c4d1f890777dbc9d0dd875c48c4c2979690",
+    "total_energy_full_scale_1x2.pdf": "c21e40d2e4bf933c89c93aa014af50875429c4c8620221c9c2426f53b2482046",
+    "total_energy_full_scale_1x2.png": "cfd7368a0de1ca1974ed809cc0421656a147d04d90b760c9dbcc1bd45e811f87",
+    "total_energy_full_scale_1x2.svg": "b8eb79293582367d7728b6ff139d0df7ba579204281e94ef436d7df05c537749"
+  }
+}

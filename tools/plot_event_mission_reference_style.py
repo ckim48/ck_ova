@@ -1,7 +1,7 @@
 """Restyle completed mission results without changing registered experiments.
 
 Uses plot_zone_pred_1x2.py typography and the user's hatched-bar reference.
-Panels are square on a modestly wider 7.4-inch canvas. The main total-energy
+Panels retain their width with 10% less height on a 7.4-inch canvas. The main total-energy
 view has a marked nonzero lower limit; a zero-baseline version is also saved.
 """
 import argparse
@@ -22,7 +22,8 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT = ROOT / "results/iot_uav_remoteclip_v4_event_mission"
 COLORS = ["#4C72B0", "#EFAA54", "#D65A50", "#66B366"]
 HATCHES = ["//", "\\\\", "xx", ".."]
-FIGSIZE = (7.4, 4.15)
+FIGSIZE = (7.4, 4.15 * 0.9)
+PANEL_ASPECT = 0.9
 ENERGY_LIMITS = (1800.0, 2300.0)
 CHARTS = [
     ("loss", "Retained loss", 1.0, "loss", 0.5),
@@ -122,7 +123,7 @@ def plot(rows, protocol, output):
             ax.set_ylim(ymin, ymax)
             ax.yaxis.set_major_locator(MultipleLocator(step))
             ax.set_ylabel(ylabel, labelpad=6)
-            ax.set_box_aspect(1)
+            ax.set_box_aspect(PANEL_ASPECT)
             ax.set_axisbelow(True)
             ax.grid(True, axis="y", linestyle=":", zorder=0)
             ax.tick_params(direction="out", pad=3)
@@ -137,7 +138,7 @@ def plot(rows, protocol, output):
         panel_sizes = []
         for ax in axes:
             box = ax.get_window_extent()
-            assert math.isclose(box.width, box.height, abs_tol=1e-6)
+            assert math.isclose(box.height / box.width, PANEL_ASPECT, abs_tol=1e-6)
             panel_sizes.append([box.width / fig.dpi, box.height / fig.dpi])
         legend_box = legend.get_window_extent()
         assert legend_box.x0 >= 0 and legend_box.x1 <= fig.bbox.width
@@ -219,10 +220,13 @@ def energy_audit(campaign, rows, protocol, output):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--campaign", type=Path, default=DEFAULT)
+    parser.add_argument("--output", type=Path)
     args = parser.parse_args()
     campaign = args.campaign.resolve()
-    output = campaign / "figures"
-    paths = [campaign / "protocol.json", output / "metrics.json", output / "metrics.csv"]
+    output = args.output.resolve() if args.output else campaign / "figures"
+    output.mkdir(parents=True, exist_ok=True)
+    paths = [campaign / "protocol.json", campaign / "figures/metrics.json",
+             campaign / "figures/metrics.csv"]
     before = {str(path.relative_to(campaign)): sha(path) for path in paths}
     protocol, metrics = read(paths[0]), read(paths[1])
     assert not metrics["missing"] and len(metrics["rows"]) == 8
@@ -232,6 +236,8 @@ def main():
     save_json(output / "reference_style_manifest.json", {
         "reference": "User plot_zone_pred_1x2.py and blue/orange/red/green hatched-bar image (2026-10-26)",
         "figure_size_inches": FIGSIZE, "colors": COLORS, "hatches": HATCHES,
+        "panel_height_width_ratio": PANEL_ASPECT,
+        "height_change_from_previous_version_percent": -10,
         "font_points": 14, "grid": "dotted", "full_frame": True,
         "shared_top_legend": True, "dataset_labels_below_panels": True,
         "total_energy_display_limits_kJ": ENERGY_LIMITS,
@@ -240,7 +246,7 @@ def main():
         "source": str(Path(__file__).resolve().relative_to(ROOT)),
         "source_sha256": sha(Path(__file__)), "rendered": rendered,
     })
-    print(json.dumps({"figures": len(rendered), "square_panels": True,
+    print(json.dumps({"figures": len(rendered), "panel_height_width_ratio": PANEL_ASPECT,
                       "bar_value_labels": False, "unchanged_experiment_inputs": True,
                       "CapERA_energy_audit": [r for r in audit if r["dataset"] == "CapERA"]}, indent=2))
 
