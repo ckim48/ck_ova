@@ -1,0 +1,19 @@
+history_weighted_v6: separate algorithmic CPU candidate
+
+Reason
+Final-reference evaluation finds a nonzero gap even for coupled ideal communication. The original FU rule uses the current cosine-decayed eta_U times request-share beta, independent of the previous SGD coefficients of deleted samples. The frozen sample schedule provides a local coefficient ledger without a final-reference oracle.
+
+Change
+For sample z at UAV u, store c_z(k)=sum_{s<k:z in batch_u,s} eta_L(s)*alpha_u(s)/|batch_u,s|. At a request, estimate sum_{z in D_f} c_z(k)*grad f(theta_k;z) with the SAME uniform no-replacement minibatch: |D_f|/b * sum_{z in minibatch} c_z*grad f. Apply the original P cross-modal preconditioner once. Do not apply eta_U or beta again. This is a first-order approximation using current gradients, not exact reversal of nonlinear SGD, prior unlearning, or indirect influence. Original files/manuscript/results are preserved.
+
+CPU gate currently launched
+Use the legacy theta90, real canonical round91 batch and actual weighted gradients. Reconstruct old U with frozen source and require relative error<1e-4. Reuse existing before-step/old-ideal-step predictions and the same frozen 200 utility validation/200 forget samples. Evaluate only two new vectors: retained-only ideal step and history-weighted ideal step. Compare outputs to the frozen final retraining reference without selecting coefficients from that reference. Unit checks prove finite-population unbiasedness of the estimator and consistency under microbatching/unit weights. A successful software check is not a task-quality result.
+
+No automatic promotion
+This pilot is CPU and one step from a legacy state. Final-reference probabilities were cached on GPU; pilot predictions use CPU. Retention and forget-reference changes must be inspected together. If the candidate is poor, preserve that outcome and do not launch GPU training merely to improve a desired ranking.
+
+Possible next radio gate, not launched by this protocol
+Only after actual generated updates and task checks exist, compare Hybrid, Mixed and the full seven-fraction phase-time grid on EXACTLY the same weighted L/U vectors, channels, total time, power/battery limits and RMS budget. Any variable bit-depth metadata must count toward payload and quantization error must count in the same bound for Hybrid and phase. Never give full private gradients or reference outputs to an optimizer for free. Ledger/weighted-gradient computation and extra control costs remain uncalibrated; modeled communication energy is not total UAV energy. A more aggressive FU rule must demonstrate retention/forget quality before its radio feasibility can support a paper claim.
+
+Existing GPU work
+PUF, retain-only and burst_v3 retain their previously approved sources/settings/order. No history_weighted_v6 GPU experiment is queued. No new long experiment may start after noon KST.

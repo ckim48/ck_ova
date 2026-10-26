@@ -1,0 +1,19 @@
+__pycache__/
+*.py[cod]
+.venv/
+data/
+checkpoints/
+
+# Local caches, agent metadata, and push staging repository.
+.cache/
+.agents/
+.codex/
+.git-push-ready/
+
+# Generated experiment weights, intermediate arrays, and packaged exports.
+# Keep source code, configurations, metrics, logs, reports, and figures.
+/results/**/*.pt
+/results/**/*.npz
+/results/**/*.zip
+/results/**/*.pid
+/results/**/*.lock

@@ -1,0 +1,42 @@
+Lossless quantized-unlearning stream: CPU diagnostic v4
+
+Motivation: digital U transmission accounts for roughly 95--99% of expected
+Hybrid communication energy in the saved round. Encode the ORIGINAL 8-bit
+quantized integers and float32 scales losslessly. This changes payload size,
+not U quantization accuracy. A fallback raw-packed representation and zlib
+representations are compared; all actual header and checksum bytes count.
+Three tests cover exact original-quantizer reconstruction at 2/4/6/8/12/16
+bits, zero payload, packet truncation and dimension mismatch. Real round-trip
+checks pass on all active clients in the saved round.
+
+Protocol change: a client-wide stream is evenly split into ordered byte
+fragments across the M wireless blocks. Digital fragments are no longer tied
+to the same U coordinate block; the head reconstructs all U only after the
+round. The original final model update already occurs after all blocks. This
+is an explicit new protocol, not a silent change to the existing manuscript.
+Original quantization bounds and decoded U are retained exactly.
+
+Before head/power design, each active client reports its compressed stream
+length in 32 extra control bits. The CPU audit charges a serialized broadcast
+at the allowed maximum RF power over the weakest peer link (ideal channel
+coding), counts control time and TX energy, and conservatively reserves the
+largest client control-TX energy from every UAV battery budget. Hybrid and
+phase separation use the SAME codec and length signaling. Mixed AirComp has
+no digital stream and pays no unnecessary length signaling. Original total
+communication deadline, peak power, battery and RMS envelopes remain in force.
+
+Unmeasured costs: codec computation on UAV hardware and extra control RX
+circuitry. Host encoding/decoding timings are reported as host timings only,
+never converted to UAV Joules. The audit reports radio-plus-control-TX energy
+and a break-even allowance for missing costs versus the uncoded setting.
+It does NOT declare an end-to-end winner or insert these points into the
+completed full-training energy frontier. A deployable comparison must account
+for those costs and their delay. No free full-gradient geometry is assumed.
+
+Prespecified CPU grid: 8-bit original quantization; original relative envelope
+0.2 first, followed by stricter 0.1 and the previous loose candidate 0.6.
+Hybrid and phase (all seven fractions) receive the same payload, quantization,
+time/power/battery limits and joint-power solver. Saved strongest Mixed cases
+remain visible. All failures remain visible. Only after evidence and costs are
+validated should any new GPU trajectory be considered. Existing GPU queues,
+including burst_joint_v3, remain untouched at this stage.

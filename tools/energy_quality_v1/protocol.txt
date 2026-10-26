@@ -1,0 +1,90 @@
+Energy-first evaluation protocol, version 1 (2026-10-21 KST)
+
+Question: Among completed, protocol-compatible configurations, which use the
+least modeled communication energy at a specified retained-task and forgetting
+quality? Do not presume that Hybrid dominates phase-separated or mixed AirComp.
+
+Primary energy: cumulative communication-energy upper bound in joules.
+Secondary energy: expected waveform energy under the implemented independent
+zero-mean-codeword model. Neither is measured RF, GPU, flight or local-training
+energy. Report total time and feasible/failed rounds alongside both energies.
+
+Final quality audit:
+* Freeze evaluation IDs before reading model predictions, identically for all
+  methods. Split the original training validation pool into disjoint utility and
+  attack-nonmember pools. Class-match the forget/nonmember attack cohorts.
+* Evaluate utility validation, retained training, deleted training and held-out
+  test samples. Report losses and accuracies. Retained accuracy alone does not
+  establish successful forgetting; a high forget loss is not the objective.
+* Compare final output distributions with the final retraining reference using
+  KL(reference || candidate), total variation, prediction disagreement and signed
+  loss difference, especially on fixed deleted samples.
+* Audit a predefined negative-loss membership score on deleted vs class-matched
+  held-out samples; report ROC-AUC and its absolute gap to the reference. This is
+  one empirical attack, not a privacy guarantee. Pretraining exposure is unknown.
+* The existing retraining run excludes the final deletion set from all past
+  rounds, so it is a final-time reference only. It is not an online gold standard.
+
+Selection:
+* Report the observed Pareto frontier in communication energy, utility-validation
+  loss and forget-cohort output KL to the reference. This is an observed frontier
+  over evaluated points, not a theoretical or continuously optimized frontier.
+* Quality thresholds must be stated before using results for selection. None are
+  silently imposed in v1. Optional explicit CLI thresholds are validation loss,
+  forget KL and loss-attack AUC gap on validation nonmembers; all three must be
+  supplied to select the lowest observed qualifying energy configuration.
+* Test metrics are audit-only and do not participate in frontier or selection.
+* Ideal-link energies are zero by assumption; ideal-link methods are reference
+  or algorithmic controls and never compete for physical energy efficiency.
+* Exclude incomplete/incompatible runs from final quality frontiers. Preserve
+  their failure status in the report. Verify config, source and schedule hashes,
+  final checkpoint round and shared initialization.
+
+Radio diagnosis:
+* Reuse saved actual CLIP updates from the CPU reconstruction of legacy round 91.
+  This is a diagnostic, not current-trajectory or complete training replay.
+* Compare Hybrid, analog/digital phase separation and summed-update AirComp on
+  identical updates, channels, absolute update-error tolerance and total time.
+* Prespecify relative tolerances 0.1/0.2/0.4 and 4/12 receive initializations.
+  Keep quantization, power, delay, update rule and physical constraints fixed.
+  Preserve every attempted case, including failed searches. Inspect energy and
+  analytic update RMSE together, rather than choosing favorable successful cases.
+* Quantized U-component error is meaningful only when U is separately exposed;
+  do not invent a separate U estimate for summed-update AirComp.
+* The existing phase-separated comparator uses a fixed 50/50 analog/digital
+  split and NOMA within the digital phase. It is not fully optimized OMA/TDMA.
+
+Execution:
+The current training queue remains unchanged. New evaluation code lives in a
+separate tools/energy_quality_v1 folder. The final GPU audit starts only after
+that queue exits; unfinished/failed methods remain listed without invented
+metrics. A separate CPU radio diagnosis may run during the queue.
+
+Follow-on work after these diagnostics: evaluate matched quality curves across
+communication budgets/tolerances, optimize phase-separated time allocation,
+check learned-data exposure and deletion adequacy, and repeat over at least the
+five planned seeds. Do not change the learning algorithm only for one transport
+or introduce separate L/U requirements without labeling the changed problem.
+
+Commands from the project root (server Linux shell):
+  .venv/bin/python tools/energy_quality_v1/energy_quality.py --project "$PWD" --summary-only
+  .venv/bin/python tools/energy_quality_v1/run_audits.py radio --project "$PWD"
+  .venv/bin/python tools/energy_quality_v1/run_audits.py quality --project "$PWD" --wait-pid QUEUE_PID --with-q6-variant
+  PYTHONPATH="$PWD:$PWD/tools/energy_quality_v1" .venv/bin/python -m unittest discover -s tools/energy_quality_v1 -p test_energy_quality.py -v
+
+Optional threshold arguments belong to energy_quality.py: --validation-loss-max
+(cross entropy in nats), --forget-kl-max (nats), --attack-gap-max (absolute AUC
+difference). Predefine all three on validation evidence before selection. A run
+with no thresholds produces an observed frontier and no winner.
+
+Exploratory precision extension (after radio diagnosis, before task audit):
+* A digital-only necessary-energy screen evaluates 2/4/6/8-bit payloads on the
+  saved updates. A separate joint Hybrid check evaluates 4/6/8 bits at unchanged
+  absolute error and time budgets. These are radio diagnostics, not task results.
+* Queue one additional 100-round coupled/Hybrid run with quantization_bits=6,
+  after the original queue exits and before the final GPU quality audit. Keep
+  all other training, schedule, source and physical parameters identical.
+* Treat this as an exploratory configuration selected using radio evidence, not
+  as a prespecified confirmatory result. Compare to the same final retraining
+  reference and frozen evaluation cohorts. Do not infer preserved forgetting
+  quality from total-update RMSE alone. Keep a failed run as failed.

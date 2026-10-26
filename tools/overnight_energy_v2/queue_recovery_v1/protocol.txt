@@ -1,0 +1,34 @@
+Queue recovery v1, 2026-10-21 around 03:15 KST
+
+Observed failure: the original comparison supervisor and its uncoupled child
+are absent; uncoupled logs stop at round57, with no traceback or completed/
+failed manifest finalization. The last original queue status covers only the
+first four outcomes. No specific termination cause is established. Current
+q6 training was started by the already-approved quality helper after the
+original supervisor vanished. Do not interrupt or duplicate that active job.
+
+Recovery order: q6 and its initial cached audit finish; then unchanged original
+training code runs the final retained-data retraining reference first, coupled
+ideal, and PUF comparator. Run the same final-quality audit, reusing already
+verified prediction caches. Then release the idle retain-only helper, followed
+by the existing burst_joint_v3 campaign. Only after that campaign, and before
+noon, may a fresh uncoupled restart run in uncoupled_hybrid_restart_v1. Preserve
+the old57-round output and original manifest bytes in the interruption record;
+mark its status interrupted so it is never mistaken for active or complete.
+
+The idle retain-only and burst controllers are temporarily SIGSTOP-held during
+essential recovery so they cannot race the missing-comparison queue when the
+old audit helper exits. Their PIDs stay stable for the existing downstream
+waits. The repair supervisor releases both after essential recovery/in finally,
+and a separately detached PID-identity guard also releases both if the repair
+supervisor disappears. No active GPU
+child is stopped. All new training starts check the noon cutoff. The original
+source hashes, protocol, manuscript and raw model/log results are preserved.
+
+The restart is from the initial model, not a claim of exact checkpoint resume.
+Its separate output and interruption ledger remain visible. Include both the
+interrupted original and completed restart in the recovered quality view.
+No incomplete or ideal zero-energy reference is an energy-ranking competitor.
+Current reference-dependent quality remains pending until the reference is
+complete and evaluated. Failure recovery is operational, not experimental
+evidence favoring any method.

@@ -1,0 +1,38 @@
+Joint-power AO diagnostic v3
+
+Motivation. The original solver optimizes analog amplitudes with the previous
+digital powers fixed, then replaces digital powers by the componentwise SIC
+minimum. At a subsequent iteration, tight digital decoding constraints can
+restrict the analog interference level. Optimizing both amplitudes together
+at a fixed receive vector permits coordinated movement of that level and the
+required digital powers. This is a numerical improvement within the original
+physical problem, not a relaxation of its peak, battery, decoding or error
+constraints.
+
+Change. wireless_joint_v3.py is an isolated copy of immutable wireless.py.
+Inside improve(), conic_step(receiver, digital) becomes conic_step(receiver).
+The latter joint SOCP was already used for the original initialization. The
+same receive weighted-median update, initial receiver grid and iteration cap
+are retained. The minimum SIC powers are restored after each joint solve.
+An independent test checks SINR, energy accounting, peak/battery constraints,
+RMS envelope and nonincreasing energy, including nonzero residual SIC.
+
+Fairness. Apply the joint update to Hybrid, phase-separated transmission and
+mixed AirComp. Preserve original feasible incumbents for every setting and
+select the lower energy; joint paths need not beat every old local solution.
+Same legacy-round updates/channels, total symbol budget, peak power, overhead,
+quantizers and error budget within each setting. Phase split uses all seven
+original grid fractions; its digital phase continues to use NOMA. Full TDMA
+and globally optimal time allocation are not claimed.
+
+Grid fixed before solving: bits 8,6; relative RMS tolerance 0.2,0.6; phase
+fractions 0.125,0.25,0.375,0.5,0.625,0.75,0.875. The two tolerances represent
+the original protocol and an earlier CPU regime candidate, not test-set
+selection. All cases, failed searches, old and new energies remain visible.
+
+Interpretation. One CPU-reconstructed round is a solver diagnostic only.
+The conservative envelope and conditional Gaussian expected error do not
+establish retained utility or unlearning. A later full sequential training
+run and final retained-retraining reference are required for those claims.
+The original training code, manuscript, results and running GPU queue remain
+unchanged. No assertion of global convergence or global optimality is made.

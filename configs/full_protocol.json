@@ -1,0 +1,33 @@
+{
+  "status": "partially_implemented_cuda_benchmark_not_executed",
+  "datasets": ["CIFAR-100", "EuroSAT-RGB"],
+  "model": "CLIP ViT-B/16",
+  "frozen_encoders": true,
+  "trainable": ["visual_deep_prompts", "text_deep_prompts", "logit_scale"],
+  "prompt_tokens_per_layer": 2,
+  "prompt_layers": 8,
+  "users": 10,
+  "dirichlet_alpha": 0.1,
+  "initial_learning_rounds": 50,
+  "total_rounds": 100,
+  "initial_data_fraction": 0.8,
+  "arrival_rounds": [51, 100],
+  "request_rounds": [51, 61, 71, 81, 91],
+  "requesting_users": 2,
+  "delete_fraction_of_previously_used_undeleted_samples": 0.5,
+  "batch_size": 32,
+  "local_sgd_steps": 1,
+  "momentum": 0.0,
+  "initial_learning_rate": 0.0035,
+  "schedule": "cosine",
+  "seeds": [0, 1, 2, 3, 4],
+  "unresolved": [
+    "CUDA device exposure in current execution environment",
+    "EuroSAT loader and dataset split",
+    "full-scale deep-prompt CLIP CUDA resource and numerical validation",
+    "original-paper baseline integration",
+    "validation-only choice of kappa and communication tolerance",
+    "coherence time and metadata accounting at full prompt dimension",
+    "retraining and membership-inference evaluation"
+  ]
+}

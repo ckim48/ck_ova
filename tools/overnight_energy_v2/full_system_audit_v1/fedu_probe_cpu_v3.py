@@ -1,0 +1,62 @@
+"""Numerical audit only. Does not manufacture a missing FedU IAF loss."""
+from pathlib import Path
+import sys,json,time,fcntl,traceback
+ROOT=Path(__file__).resolve().parents[3]
+sys.path[:0]=[str(ROOT/'tools/overnight_energy_v2/full_system_baselines_v1'),str(ROOT)]
+import run_memprune as run
+import numpy as np
+
+
+def main():
+    import torch
+    from train import Engine
+    from clip_model import DeepPromptCLIP
+    from dataset import RetrievalData
+    from objectives import contrastive
+    dest=run.OUT/'fedu_source_probe_cpu_v3';dest.mkdir(exist_ok=True)
+    plan=json.loads((run.core.SOURCE/'plan.json').read_text())
+    records=json.loads((run.core.SOURCE/'records.json').read_text());rec=records[20]
+    torch.set_num_threads(2)
+    engine=object.__new__(Engine);engine.data=RetrievalData();engine.plan=plan;engine.device=torch.device('cpu')
+    engine.model=DeepPromptCLIP.from_local_checkpoint(ROOT/'checkpoints/clip-vit-base-patch16',prompt_layers=8,prompt_tokens=2,checkpoint_layers=False).eval()
+    engine.teacher=None;engine.teacher_images={};engine.teacher_texts={}
+    theta=run.core.load_theta(run.PREFIX/'round_020.pt',engine.device)
+    user=next(u for u,f in enumerate(rec['forget']) if len(f)>=4)
+    ids=rec['retained'][user][:4];cids=engine.data.training_caption_ids(ids,21)
+    def loss(x):
+        im,tx,s=engine.features(x,ids,cids);ix=torch.tensor(ids,device=engine.device)
+        return contrastive(im,tx,s,ix,ix)
+    def hvp(vec):
+        x=theta.detach().requires_grad_(True);g=torch.autograd.grad(loss(x),x,create_graph=True)[0]
+        result=torch.autograd.grad(g@vec,x)[0].detach();result[-1]=0;return result
+    torch.manual_seed(821);direction=torch.randn_like(theta);direction[-1]=0;direction/=direction.norm()
+    exact=hvp(direction);errors=[]
+    for eps in [.01,.003,.001]:
+        gs=[]
+        for sign in [-1,1]:
+            x=(theta+sign*eps*direction).detach().requires_grad_(True)
+            g=torch.autograd.grad(loss(x),x)[0].detach();g[-1]=0;gs.append(g)
+        fd=(gs[1]-gs[0])/(2*eps)
+        errors.append(dict(epsilon=eps,relative_error=float((exact-fd).norm()/exact.norm().clamp_min(1e-15))))
+    gf,_=engine.gradient(theta,rec['forget'][user][:4],21)
+    v=gf.clone();history=[]
+    for k in range(9):
+        product=hvp(v)
+        norm=float(v.double().norm());residual=float((product-gf).double().norm()/gf.double().norm().clamp_min(1e-15))
+        finite=bool(np.isfinite(norm) and np.isfinite(residual) and torch.isfinite(product).all())
+        history.append(dict(iteration=k,norm=norm if np.isfinite(norm) else None,
+            relative_linear_residual=residual if np.isfinite(residual) else None,finite=finite))
+        if not finite:break
+        v=gf+v-product
+    result=dict(status='numerical_diagnostic_completed',neumann_overflow_detected=not history[-1]['finite'],user=user,training_only_batches=True,
+        hvp_finite_difference=errors,unmodified_neumann_recurrence=history,
+        full_fedu_training_launched=False,ranking_permitted=False,
+        source_gap='Paper Eq.(7) defines L_IAF using argmin rather than a differentiable scalar; Eq.(10) needs its gradient. No official code found to resolve how Eq.(6) enters it. No arbitrary surrogate substituted.',
+        caveat='One local contrastive-loss Hessian probe; convergence or divergence here is not a theorem about all FedU settings.')
+    run.core.write(dest/'diagnostics.json',result);print(json.dumps(result),flush=True)
+
+
+if __name__=='__main__':
+    try:main()
+    except Exception as e:
+        run.core.write(run.OUT/'fedu_source_probe_cpu_v3/failure.json',dict(error=repr(e),ranking_permitted=False));traceback.print_exc();raise

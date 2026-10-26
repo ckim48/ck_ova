@@ -1,0 +1,48 @@
+Request-round energy/quality experiment: burst_joint_v3
+
+Physical and application motivation. Most per-round energy is spent at the
+five unlearning request rounds. Fixed-update CPU diagnostics indicate that the
+original relative RMS error envelope 0.2 is energy-expensive; a common 0.6
+envelope can put Hybrid slightly below the optimized phase comparator while
+leaving the single-step VLM predictions nearly unchanged. Mixed AirComp still
+has the lowest energy and showed no worse output fidelity in that pilot. The
+purpose is to test these observations over complete trajectories, including
+this strong baseline, rather than assert Hybrid superiority.
+
+Protocol difference. Preserve the original 0.2 relative envelope in all
+learning-only rounds. Use relative envelope 0.6 when the unlearning update is
+nonzero, identically for Hybrid, mixed AirComp and phase separation. The
+reference norm is the learning-update norm bound for EVERY mode, before any
+mixing. Keep 8-bit quantization, original canonical schedule, initial model,
+local gradients/coupling/learning rate, 100 rounds, symbol budget, peak power,
+battery limits, SIC, and energy accounting. This is a changed communication
+protocol; it does not silently replace or extend the original results.
+
+Solver. Apply the isolated joint analog/digital SOCP update at each fixed
+receiver to all architectures. In learning-only rounds, use the same exact
+canonical AirComp path for all modes. At request rounds, phase separation
+optimizes the analog fraction over 0.125/0.25/0.375/0.5/0.625/0.75/0.875 at
+each head; digital users still use NOMA. This is not a globally optimal OMA
+or TDMA claim. The analog minimum fraction satisfies L_A >= d.
+
+Provenance and scheduling. Reuse the unchanged run_clip_federated.execute
+training loop via a runtime transport substitution in a separately versioned
+wrapper. A sidecar is written before training and completed/failed manifests
+include hashes of the wrapper, adapter, joint solver and dependencies. The
+original source files and comparison queue remain untouched. Wait for the
+existing GPU queue, 6-bit follow-up, quality audit and retain-only control.
+Then sequentially train Hybrid, mixed AirComp and optimized phase. No second
+GPU process or overwriting. Check the noon deadline before EACH new training
+run; already-started trajectories can finish and receive final evaluation.
+An unstarted or failed comparator must be reported explicitly and cannot be
+used to claim energy superiority.
+
+Evaluation. Use the existing frozen validation/retained/forget/class-matched
+nonmember/test cohorts. Reuse verified final retained-retraining predictions;
+new trajectories receive the same numeric evaluator. Report utility loss,
+forget output KL/TV/prediction disagreement to that reference, loss-attack
+AUC gap, request delivery, completion, and cumulative communication-energy
+bound and random-codeword expected energy. Test metrics are reporting only.
+The fixed mode order and config do not change in response to test metrics.
+No task-threshold winner, deletion guarantee or multi-seed significance is
+claimed. Flight and model-computation energy are outside this radio model.
