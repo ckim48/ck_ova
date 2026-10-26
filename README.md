@@ -5,6 +5,7 @@
 
 ## 최신 작업 — 2026-10-26
 
+- **실험 복구 중**: 전역 IoT 실행은 RSITMD의 S-OF 전송 사전 검사와 CapERA의 마지막 영상 프레임 탐색 오류로 비교 전에 중단됐다. 실패 기록은 그대로 보존했다. `tools/iot_vlm_recovery_v1/launch.py`로 별도 복구 실행을 시작했으며 상태는 `results/iot_uav_remoteclip_v3_recovery/status.json`에 저장된다. 완료된 RSITMD 공통 초기 학습만 해시 확인 후 재사용하고, CapERA는 동일 8개 프레임을 순서대로 디코딩한다. 전송 상한은 완화하지 않으며 방법별 실패를 독립적으로 기록한다. 아직 Proposed 성능 우위를 뒷받침하는 완료된 비교는 없다.
 - **최신 반투명 군집·개별 이동선 지도**: [PNG](results/figures/mission_satellite_iot_uav_planned_1x2_global_iot_five_sites_reference_square_cluster_motion.png), [PDF](results/figures/mission_satellite_iot_uav_planned_1x2_global_iot_five_sites_reference_square_cluster_motion.pdf). 동일한 UAV 10대의 5개 방문 시점을 반투명 군집으로 표시하고, UAV별 이동선을 이어 그렸다. 숫자 1–5는 방문 순서이며 빨간 별은 계획용 head다. 그림 안의 설명·범례·축 이름은 생략했다. 군집 외곽선은 시각적 묶음이며 통신 커버리지가 아니다.
 - **최신 전역 IoT 분포·5구역 지도**: [PNG](results/figures/mission_satellite_iot_uav_planned_1x2_global_iot_five_sites_reference_square.png), [PDF](results/figures/mission_satellite_iot_uav_planned_1x2_global_iot_five_sites_reference_square.pdf). 가상 IoT 200개를 실제 도로망 전반에 먼저 분산하고, 그 수요로부터 5개 수집 구역·UAV 배치·계획용 head를 정했다. 10×10 공간 격자 모두에 IoT가 포함되며 X·Y축 양 끝은 0–2000 m다. 별들은 같은 UAV 10대의 5개 시점 배치다.
 - 이전 5지역·광역 동선 지도: [PNG](results/figures/mission_satellite_iot_uav_planned_1x2_five_sites_reference_square.png), [PDF](results/figures/mission_satellite_iot_uav_planned_1x2_five_sites_reference_square.pdf). 이 버전은 방문 지역 주변의 IoT 생성 방식이며 최신 전역 분포 버전으로 대체했다.
