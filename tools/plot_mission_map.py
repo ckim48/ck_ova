@@ -17,6 +17,7 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import matplotlib.patheffects as pe
 from matplotlib.patches import Polygon
+from matplotlib.lines import Line2D
 import numpy as np
 from PIL import Image
 
@@ -48,9 +49,9 @@ def fetch_json(url):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--download', action='store_true')
-    parser.add_argument('--mode', choices=['snapshots', 'schematic'], default='snapshots')
+    parser.add_argument('--mode', choices=['snapshots', 'schematic', 'iot'], default='snapshots')
+    parser.add_argument('--deployment', type=Path, default=ROOT/'results/iot_uav_deployment_v1')
     parser.add_argument('--transactions', type=Path,
-                        default=ROOT / 'results/overnight_energy_v2/uav_single_model_two_dataset_v1/rsitmd_seed0/proposed_fu_guard_cliperase/transactions',
                         help='Actual transaction records used to select the first transmitted update per site.')
     args = parser.parse_args()
     spec = read_json(MISSION / 'mission_spec.json')
@@ -93,7 +94,7 @@ def main():
 
     plt.rcParams.update({'font.family': 'serif', 'font.size': 8,
                          'pdf.fonttype': 42, 'svg.fonttype': 'none'})
-    clean_snapshots = args.mode == 'snapshots'
+    clean_snapshots = args.mode in ['snapshots', 'iot']
     fig, axes = plt.subplots(1, 2, figsize=(7.16, 2.54 if clean_snapshots else 2.86))
     fig.subplots_adjust(left=.012, right=.988, top=.985,
                         bottom=.015 if clean_snapshots else .12, wspace=.045)
@@ -124,6 +125,12 @@ def main():
             ax.plot(*xy.T, color='#e0e3df', lw=road_width + .4, zorder=2)
             ax.plot(*xy.T, color='white', lw=road_width, zorder=2)
 
+    deployment = None
+    if args.mode == 'iot':
+        deployment = read_json(args.deployment/'deployment.json')
+        spec = read_json(args.deployment/'mission_spec.json')
+        with (args.deployment/'trajectory.csv').open() as handle:
+            rows = list(csv.DictReader(handle))
     # Keep recorded centroids and route; schematic markers communicate a swarm
     # rather than claiming that the simulated two-row formation changed.
     footprints, centers = [], []
@@ -137,7 +144,9 @@ def main():
         centers.append(projected.mean(axis=0))
     centers = np.array(centers)
     snapshots = []
-    if args.mode == 'snapshots':
+    if args.mode == 'snapshots' or (deployment and args.transactions):
+        if args.transactions is None:
+            args.transactions = ROOT/'results/overnight_energy_v2/uav_single_model_two_dataset_v1/rsitmd_seed0/proposed_fu_guard_cliperase/transactions'
         first_by_site = {}
         for path in sorted(args.transactions.glob('*.json')):
             record = read_json(path)
@@ -165,6 +174,11 @@ def main():
                                   selection='Earliest feasible positive-duration transmission at this site',
                                   kind=record['kind'], sequence=record['sequence'],
                                   positions_xy_m=stop['positions_xy_m']))
+    elif deployment:
+        snapshots = [dict(site=s['site'],time_s=s['time_s'],head_uav_zero_based=s['head_zero_based'],
+                          display_head='U'+str(s['head_zero_based']+1),
+                          head_kind='nominal_packet_planning_head_not_FL_FU_result',
+                          positions_xy_m=s['uav_positions_xy_m']) for s in deployment['sites']]
     display_footprints = []
     for index, center in enumerate(centers):
         rng = np.random.default_rng(480 + index)
@@ -177,8 +191,19 @@ def main():
         offsets = np.column_stack([np.cos(angles), np.sin(angles)]) * radii[:, None]
         offsets -= offsets.mean(axis=0)
         display_footprints.append(center + offsets * scale)
-    if args.mode == 'snapshots':
+    if clean_snapshots:
         display_footprints = footprints
+    if deployment:
+        for s, footprint in zip(deployment['sites'],footprints):
+            ground=np.array(s['iot_positions_xy_m'])
+            lat=p['lat0']+np.degrees(ground[:,1]/p['R_m'])
+            lon=p['lon0']+np.degrees(ground[:,0]/(p['R_m']*math.cos(math.radians(p['lat0']))))
+            projected_ground=mercator(lat,lon)
+            for node,uav in zip(projected_ground,s['association_zero_based']):
+                ax.plot([node[0],footprint[uav,0]],[node[1],footprint[uav,1]],
+                        color='#5d9d98',lw=.3,alpha=.5,zorder=3)
+            ax.scatter(*projected_ground.T,s=5,facecolors='#91aaa8',edgecolors='white',
+                       linewidths=.25,zorder=5)
     route = np.vstack([centers, centers[:1]])
     route_color = '#163a50'
     ax.plot(*route.T, color='white', lw=2.8, solid_capstyle='round', zorder=4)
@@ -192,6 +217,12 @@ def main():
         if snapshots:
             shot = snapshots[number-1]
             head = shot['head_uav_zero_based']
+            if deployment:
+                ax.scatter(*footprint.T,marker='*',s=65,facecolors='#278c83',edgecolors='white',
+                           linewidths=.55,zorder=7)
+                ax.scatter(*footprint[head],marker='*',s=110,facecolors='#e6a13d',edgecolors='#895608',
+                           linewidths=.6,zorder=9)
+                continue
             ax.scatter(*footprint.T, s=49, facecolors='#e9f4f1', edgecolors='#4d9690',
                        linewidths=.65, zorder=7)
             ax.scatter(*footprint[head], s=85, facecolors='white', edgecolors='#cf942e',
@@ -236,11 +267,20 @@ def main():
     if not clean_snapshots:
         axes[0].set_xlabel('(a) Satellite imagery', fontsize=10, labelpad=6)
         axes[1].set_xlabel('(b) Swarm trajectory', fontsize=10, labelpad=6)
-    else:
+    elif not deployment:
         labels = [t.get_text() for panel in axes for t in panel.texts if t.get_text()]
         assert sorted(labels) == sorted([str(i) for i in range(1,11)]*4)
+    if deployment:
+        handles=[Line2D([],[],marker='o',linestyle='none',markersize=3.3,color='#91aaa8',label='IoT'),
+                 Line2D([],[],marker='*',linestyle='none',markersize=6.5,color='#278c83',label='UAV'),
+                 Line2D([],[],marker='*',linestyle='none',markersize=7,color='#e6a13d',markeredgecolor='#895608',markeredgewidth=.5,label='Head')]
+        ax.legend(handles=handles,loc='upper right',ncol=3,frameon=True,
+                  facecolor='white',edgecolor='none',framealpha=.95,
+                  fontsize=6.5,handlelength=.8,handletextpad=.45,columnspacing=1.2,borderpad=.6)
     OUT.mkdir(parents=True, exist_ok=True)
     stem = OUT / ('mission_satellite_uav_snapshots_1x2' if snapshots else 'mission_satellite_swarm_cluster_1x2')
+    if deployment:
+        stem=OUT/('mission_satellite_iot_uav_actual_heads_1x2' if args.transactions else 'mission_satellite_iot_uav_planned_1x2')
     for extension in ['png', 'pdf', 'svg']:
         fig.savefig(stem.with_suffix('.' + extension), dpi=450, facecolor='white')
         if extension == 'svg':
@@ -249,8 +289,8 @@ def main():
     plt.close(fig)
     metadata = dict(
         layout='1 x 2', uav_count=10, mission_stops=len(spec['stops']),
-        trajectory_source=str((MISSION/'trajectory.csv').relative_to(ROOT)),
-        trajectory_sha256=hashlib.sha256((MISSION/'trajectory.csv').read_bytes()).hexdigest(),
+        trajectory_source=str(((args.deployment if deployment else MISSION)/'trajectory.csv').relative_to(ROOT)),
+        trajectory_sha256=hashlib.sha256(((args.deployment if deployment else MISSION)/'trajectory.csv').read_bytes()).hexdigest(),
         mission_semantics=spec['semantics'], imagery=imagery,
         osm_attribution='© OpenStreetMap contributors',
         osm_copyright_url='https://www.openstreetmap.org/copyright',
@@ -266,6 +306,13 @@ def main():
         display_positions_epsg3857=[f.tolist() for f in display_footprints],
         plot_style=('IEEE double-column width; UAV IDs only, sans-serif numerals; no explanatory text, panel captions, north labels or scale labels' if clean_snapshots else 'IEEE double-column width; no footer captions or individual UAV legend'),
     )
+    if deployment:
+        metadata.update(representation='IoT circles, optimized UAV stars and selected head; actual ground coordinates are synthetic scenario inputs.',
+                        deployment_source=str((args.deployment/'deployment.json').relative_to(ROOT)),
+                        deployment_sha256=hashlib.sha256((args.deployment/'deployment.json').read_bytes()).hexdigest(),
+                        head_source='actual FL/FU transactions' if args.transactions else 'nominal packet planning objective; not a learned FL/FU result',
+                        marker_layout='UAV coordinates are optimizer outputs, IoT coordinates are predeclared synthetic demand; no decorative position jitter',
+                        plot_style='IEEE double-column width; IoT/UAV/head legend only, no explanatory labels')
     stem.with_suffix('.json').write_text(json.dumps(metadata, indent=2, ensure_ascii=False))
     print('Created:', stem.with_suffix('.png'))
 

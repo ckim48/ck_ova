@@ -5,10 +5,12 @@
 
 ## 최신 작업 — 2026-10-26
 
+- **IoT 기반 UAV 배치**: [1×2 PNG](results/figures/mission_satellite_iot_uav_planned_1x2.png), [PDF](results/figures/mission_satellite_iot_uav_planned_1x2.pdf). 원은 가상 지상 IoT, 별은 최적화된 UAV, 금색 별은 계획 단계의 head다. 범례 외 설명 글씨는 생략했다.
+- IoT 수요를 기준으로 위치·연결·계획용 head를 번갈아 최적화하고, 새 위치에서 채널을 다시 생성했다. 공통 배치에서 네 방법을 비교하는 새 실행은 `tools/iot_vlm_v1/`와 `results/iot_uav_remoteclip_v1/`를 사용한다. 실제 FL/FU head는 전송마다 다시 선택한다. [모델·검증·실행 안내](docs/iot_uav_deployment.md).
 - 위성사진 / 지역별 UAV 스냅샷 1×2: [PNG](results/figures/mission_satellite_uav_snapshots_1x2.png), [PDF](results/figures/mission_satellite_uav_snapshots_1x2.pdf), [SVG](results/figures/mission_satellite_uav_snapshots_1x2.svg).
 - 스냅샷은 완료된 기존 RSITMD·Proposed 실험의 지역별 첫 전송을 사용한다. 개별 UAV는 저장된 시뮬레이션 좌표에 표시하며 당시 선택된 head를 강조한다. U1–U10은 로그의 인덱스 0–9에 대응한다. 네 지역은 동일한 열 대의 서로 다른 시점이며 실제 비행 실측은 아니다.
 - 이전 [군집 도식](results/figures/mission_satellite_swarm_cluster_1x2.png)도 보존했다. 해당 도식의 분산된 점 배치는 시각화용이며 시뮬레이션 좌표를 변경한 결과가 아니다.
-- 실제 UAV 영상·문장 데이터 CapERA와 RSITMD를 RemoteCLIP으로 비교하는 새 실험 코드는 `tools/uav_real_vlm_v1/`에 있다. 현재 실행 중이며 이 커밋은 새 비교 결과가 완료됐다는 의미가 아니다.
+- 실제 UAV 영상·문장 데이터 CapERA와 RSITMD를 RemoteCLIP으로 비교하는 기본 구현은 `tools/uav_real_vlm_v1/`에 있다. 그 초기 실행은 중단되어 보존했고, 새 IoT 배치 실험은 별도 경로에서 처음부터 실행한다. 이 커밋은 새 비교 결과가 완료됐다는 의미가 아니다.
 - 총에너지는 통신 + 연산 + 비행의 명시적 시나리오 모델로 계산한다. 장비 실측 에너지가 아니다. 자세한 입력과 실행 조건은 [새 실험 안내](docs/uav_remoteclip_capera.md)를 참고한다.
 
 아래 내용은 이전 실험의 기록이다.

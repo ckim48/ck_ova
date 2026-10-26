@@ -1,6 +1,6 @@
 # UAV video-language experiment and mission figure
 
-This snapshot adds the current experiment implementation and the completed mission figure. The new RSITMD/CapERA comparison is running; its final metrics and energy charts are not included in this snapshot.
+This snapshot adds the base experiment implementation and mission figures. Its first RemoteCLIP run stopped during initial training and is preserved without final metrics. The active successor uses [IoT-driven deployment](iot_uav_deployment.md) and a separate output directory; final comparison metrics are produced by that campaign.
 
 ## Mission figure
 
