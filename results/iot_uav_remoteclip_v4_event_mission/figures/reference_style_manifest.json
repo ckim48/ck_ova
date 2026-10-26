@@ -1,18 +1,31 @@
 {
-  "reference": "User attachment plot_zone_pred_1x2.py (2026-10-26)",
+  "reference": "User plot_zone_pred_1x2.py and blue/orange/red/green hatched-bar image (2026-10-26)",
   "figure_size_inches": [
-    10.2,
-    5.4
+    7.4,
+    4.15
   ],
   "colors": [
     "#4C72B0",
-    "#DD8452",
-    "#55A868",
-    "#8172B3"
+    "#EFAA54",
+    "#D65A50",
+    "#66B366"
+  ],
+  "hatches": [
+    "//",
+    "\\\\",
+    "xx",
+    ".."
   ],
   "font_points": 14,
   "grid": "dotted",
   "full_frame": true,
+  "shared_top_legend": true,
+  "dataset_labels_below_panels": true,
+  "total_energy_display_limits_kJ": [
+    1800.0,
+    2300.0
+  ],
+  "zero_baseline_comparison": "total_energy_full_scale_1x2",
   "bar_value_labels": false,
   "input_sha256": {
     "protocol.json": "b2b911e9df1b05d3a1b46fa95f2012f19a65fd33bbba7e43a48db37f243ed2b3",
@@ -20,43 +33,44 @@
     "figures/metrics.csv": "361c84380bb8ede310a94630dfbd49ca82afbc88a5a04edd7eb5ce324e33d0e4"
   },
   "source": "tools/plot_event_mission_reference_style.py",
-  "source_sha256": "046eb0eb32b422c814c2f98027bd8eaa101642409117b300f961ef49e0384f19",
+  "source_sha256": "9e0f82c5f26edceef017b4932cb8b57f592eb31ec184b705bbeb24989884c1df",
   "rendered": [
     {
       "metric": "loss",
       "panel_size_inches": [
         [
-          3.912931034482759,
-          3.9129310344827593
+          2.7361344537815127,
+          2.7361344537815127
         ],
         [
-          3.9129310344827584,
-          3.9129310344827593
+          2.7361344537815127,
+          2.7361344537815127
         ]
       ],
       "ylim": [
         [
-          0,
+          0.0,
           2.5
         ],
         [
-          0,
+          0.0,
           6.0
         ]
       ],
       "bar_annotations": 0,
+      "truncated_axis_marked": false,
       "files": [
         {
           "file": "loss_1x2.png",
-          "sha256": "d59e0678be6dd26b8a3dc256868eef45b5c66b1a56103fd03ae7037df9c26e8a"
+          "sha256": "f4bc9106fb70103c1022943a85a627d480f0d767b5d56fc341669588991588ea"
         },
         {
           "file": "loss_1x2.pdf",
-          "sha256": "65c6eb70b8a496bab17fcfd7831ef3c2b9d4f41b0278b71923bb2b63fa4c5245"
+          "sha256": "f595d8209de0a4242c9e28a8f0ae6d8eb5475026ed39638342777116b1f47cac"
         },
         {
           "file": "loss_1x2.svg",
-          "sha256": "b84ad3d80ab004b8704b955e16762b17fb6b6a3bfb087cb3d11c11b23b969a02"
+          "sha256": "e65baf469807634f51b6f901b120b36e3ab74ada7bd9a553b14266b07a2a94c0"
         }
       ]
     },
@@ -64,37 +78,38 @@
       "metric": "total_energy_j",
       "panel_size_inches": [
         [
-          3.912931034482759,
-          3.9129310344827593
+          2.7361344537815127,
+          2.7361344537815127
         ],
         [
-          3.9129310344827584,
-          3.9129310344827593
+          2.7361344537815127,
+          2.7361344537815127
         ]
       ],
       "ylim": [
         [
-          0,
-          2500.0
+          1800.0,
+          2300.0
         ],
         [
-          0,
-          2500.0
+          1800.0,
+          2300.0
         ]
       ],
       "bar_annotations": 0,
+      "truncated_axis_marked": true,
       "files": [
         {
           "file": "total_energy_1x2.png",
-          "sha256": "03b0107ec46d5394668156da2c85dc1eb3cb33bae4b5e3467c711e586fc67220"
+          "sha256": "b221384ddf29927295779d262213d7cb0571c56234739bc4ff70ffe93e8a5606"
         },
         {
           "file": "total_energy_1x2.pdf",
-          "sha256": "ce92cef7ef3193f6240e6ec1275006c3bae79c1a9cdfb6b3796ec1911a31fdc4"
+          "sha256": "b579d79e7136795b55b6332328ccaa3f36abe15daa5fc2275804c65d5a8bf64c"
         },
         {
           "file": "total_energy_1x2.svg",
-          "sha256": "a1a539680ea1cf87ce718e8ef4015742cbda2dbee724d34b1fe6be62d5ef6af8"
+          "sha256": "60d659eac9e37ad69670b0cedf84ffbd15771903c9d0e1e269c2a8cb0f5c8b4b"
         }
       ]
     },
@@ -102,37 +117,38 @@
       "metric": "total_delay_s",
       "panel_size_inches": [
         [
-          3.912931034482759,
-          3.9129310344827593
+          2.7361344537815127,
+          2.7361344537815127
         ],
         [
-          3.9129310344827584,
-          3.9129310344827593
+          2.7361344537815127,
+          2.7361344537815127
         ]
       ],
       "ylim": [
         [
-          0,
+          0.0,
           3000.0
         ],
         [
-          0,
+          0.0,
           3000.0
         ]
       ],
       "bar_annotations": 0,
+      "truncated_axis_marked": false,
       "files": [
         {
           "file": "total_delay_1x2.png",
-          "sha256": "8822c77da2f26fad54a8228a32fc57366f44151e4f476de3863248dc068cb826"
+          "sha256": "10bedf72aedf096409f04d6e036b0f0bae729a73a35decfba5c73536d2adce26"
         },
         {
           "file": "total_delay_1x2.pdf",
-          "sha256": "77fe003720a0358b4a35f491369eed06e9121cc35b2f0ef94a0ad22dba568cba"
+          "sha256": "eb58573b4651cb2a62d13796b536296f1ff6e1bd226f09f0fbed4d74c31aa859"
         },
         {
           "file": "total_delay_1x2.svg",
-          "sha256": "cf6e921030015dde02aaede2300a63823d079db3d3aadd37fe1dee5df8105107"
+          "sha256": "bfec2350fca02144f5b0225ca18e2132ecb3a368e8f746cb654aab4c20969569"
         }
       ]
     },
@@ -140,37 +156,38 @@
       "metric": "FU_mean_completion_latency_s",
       "panel_size_inches": [
         [
-          3.912931034482759,
-          3.9129310344827593
+          2.7361344537815127,
+          2.7361344537815127
         ],
         [
-          3.9129310344827584,
-          3.9129310344827593
+          2.7361344537815127,
+          2.7361344537815127
         ]
       ],
       "ylim": [
         [
-          0,
+          0.0,
           7.0
         ],
         [
-          0,
+          0.0,
           7.0
         ]
       ],
       "bar_annotations": 0,
+      "truncated_axis_marked": false,
       "files": [
         {
           "file": "fu_completion_latency_1x2.png",
-          "sha256": "000f04a6c86fc60eecab4697d5288a77e7cc8ff6e5776fc65bd6170a80d4d62f"
+          "sha256": "df70c2827771dfcc338775e262af3cba3626d9b2ac0dcde4d1af5bfb365f3fa7"
         },
         {
           "file": "fu_completion_latency_1x2.pdf",
-          "sha256": "f24ffbd64688c02f0ebc8b3133e4d38b636b83b8003bdeb5669cdc31fc5629bb"
+          "sha256": "d6f5fcb31ab681f6bc085f1e1d5f5c1c8965b93d224f6d3cb011f1aa1e7dff65"
         },
         {
           "file": "fu_completion_latency_1x2.svg",
-          "sha256": "76135b1dcf2008e768bf3fb496931945ac2dd104d2eaf681ef62bec226bda0a9"
+          "sha256": "8bfb64eaf3ec04e49334e9e4b6e66db56accc78069c295cd2f91c1133325cf8d"
         }
       ]
     },
@@ -178,37 +195,77 @@
       "metric": "energy_hover_j",
       "panel_size_inches": [
         [
-          3.912931034482759,
-          3.9129310344827593
+          2.7361344537815127,
+          2.7361344537815127
         ],
         [
-          3.9129310344827584,
-          3.9129310344827593
+          2.7361344537815127,
+          2.7361344537815127
         ]
       ],
       "ylim": [
         [
-          0,
+          0.0,
           800.0
         ],
         [
-          0,
+          0.0,
           800.0
         ]
       ],
       "bar_annotations": 0,
+      "truncated_axis_marked": false,
       "files": [
         {
           "file": "hover_energy_1x2.png",
-          "sha256": "97f757fa3068f4ec0f978e7a32cbbc0607fdab6fb302d2e68bdccb1c23447c61"
+          "sha256": "5448a50a699b1944d6fd9e49cc3892f9c7d425766e2f66cb2eeb33cefa130557"
         },
         {
           "file": "hover_energy_1x2.pdf",
-          "sha256": "79914c4b88a322076a5820c4c3d3398f84e09732b66ceae8c6d663dfa6e43588"
+          "sha256": "9ec28bb27c1e2500661a9b9fa6fb208b59965dd24f8edc4f3086ece31dccf8f8"
         },
         {
           "file": "hover_energy_1x2.svg",
-          "sha256": "188fb3f6f63f3fe1a86dce0a0c2f813492ba752a59dc8d0f3e180cbf9a50814f"
+          "sha256": "514f7befe6f81892add0e4671b054d22efc1be3c7514e52b25325c8163f34c7b"
+        }
+      ]
+    },
+    {
+      "metric": "total_energy_j",
+      "panel_size_inches": [
+        [
+          2.7361344537815127,
+          2.7361344537815127
+        ],
+        [
+          2.7361344537815127,
+          2.7361344537815127
+        ]
+      ],
+      "ylim": [
+        [
+          0.0,
+          2500.0
+        ],
+        [
+          0.0,
+          2500.0
+        ]
+      ],
+      "bar_annotations": 0,
+      "truncated_axis_marked": false,
+      "files": [
+        {
+          "file": "total_energy_full_scale_1x2.png",
+          "sha256": "481f74f5e80df2a52de90c0eb96a86dbcfe0e20573be23668ea13afb3ca99ec0"
+        },
+        {
+          "file": "total_energy_full_scale_1x2.pdf",
+          "sha256": "c3aa08644422f18187129b18ecb56bf453f75a106905e9111784e907965fc16b"
+        },
+        {
+          "file": "total_energy_full_scale_1x2.svg",
+          "sha256": "13c86257d8930c5674ca53b56299ae8f220f761c8e767f4b88af09b03c453d1f"
         }
       ]
     }

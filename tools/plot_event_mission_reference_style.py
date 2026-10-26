@@ -1,7 +1,8 @@
 """Restyle completed mission results without changing registered experiments.
 
-Uses the user's plot_zone_pred_1x2.py palette, serif typography, dotted grid,
-and full frame. Each panel is square; bar values and in-panel notes are omitted.
+Uses plot_zone_pred_1x2.py typography and the user's hatched-bar reference.
+Panels are square on a modestly wider 7.4-inch canvas. The main total-energy
+view has a marked nonzero lower limit; a zero-baseline version is also saved.
 """
 import argparse
 import csv
@@ -14,19 +15,24 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
+from matplotlib.patches import Patch
 from matplotlib.ticker import MultipleLocator
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT = ROOT / "results/iot_uav_remoteclip_v4_event_mission"
-COLORS = ["#4C72B0", "#DD8452", "#55A868", "#8172B3"]
-FIGSIZE = (10.2, 5.4)
+COLORS = ["#4C72B0", "#EFAA54", "#D65A50", "#66B366"]
+HATCHES = ["//", "\\\\", "xx", ".."]
+FIGSIZE = (7.4, 4.15)
+ENERGY_LIMITS = (1800.0, 2300.0)
 CHARTS = [
     ("loss", "Retained loss", 1.0, "loss", 0.5),
     ("total_energy_j", "Total energy (kJ)", 1000.0, "total_energy", 500.0),
     ("total_delay_s", "Total delay (s)", 1.0, "total_delay", 500.0),
-    ("FU_mean_completion_latency_s", "Mean FU completion latency (s)",
+    ("FU_mean_completion_latency_s", "Mean FU latency (s)",
      1.0, "fu_completion_latency", 1.0),
     ("energy_hover_j", "Hovering energy (kJ)", 1000.0, "hover_energy", 100.0),
+    ("total_energy_j", "Total energy (kJ)", 1000.0,
+     "total_energy_full_scale", 500.0),
 ]
 
 
@@ -55,8 +61,23 @@ def configure():
         "grid.color": "#C4C4C4", "lines.linewidth": 1.6,
         "xtick.major.width": 0.9, "ytick.major.width": 0.9,
         "xtick.major.size": 3.0, "ytick.major.size": 3.0,
-        "legend.frameon": False, "savefig.pad_inches": 0.08,
+        "legend.fontsize": 14, "legend.frameon": False,
+        "legend.handlelength": 2.0, "legend.handletextpad": 0.45,
+        "legend.columnspacing": 1.1, "hatch.linewidth": 0.65,
+        "savefig.bbox": "tight", "savefig.pad_inches": 0.02,
     })
+
+
+def mark_truncated_axis(ax):
+    """Double slashes on both vertical frame edges mark the omitted baseline."""
+    for x in [0, 1]:
+        for y in [0.014, 0.034]:
+            xs = [x - 0.012, x + 0.012]
+            ys = [y - 0.009, y + 0.009]
+            ax.plot(xs, ys, transform=ax.transAxes, color="white", lw=3.5,
+                    clip_on=False, zorder=6)
+            ax.plot(xs, ys, transform=ax.transAxes, color="black", lw=0.9,
+                    clip_on=False, zorder=7)
 
 
 def plot(rows, protocol, output):
@@ -67,39 +88,59 @@ def plot(rows, protocol, output):
     rendered = []
     for key, ylabel, scale, name, tick_step in CHARTS:
         fig, axes = plt.subplots(1, 2, figsize=FIGSIZE)
-        fig.subplots_adjust(left=0.095, right=0.985, bottom=0.16,
-                            top=0.91, wspace=0.32)
+        fig.subplots_adjust(left=0.105, right=0.985, bottom=0.15,
+                            top=0.84, wspace=0.38)
         common_max = max(r[key] / scale for r in rows)
         limits = []
+        zoom_energy = name == "total_energy"
+        handles = [Patch(facecolor=c, edgecolor="black", linewidth=0.75,
+                         hatch=h, label=label)
+                   for c, h, label in zip(COLORS, HATCHES, labels.values())]
+        legend = fig.legend(handles=handles, ncol=4, loc="upper center",
+                            bbox_to_anchor=(0.5, 1.0))
         for ax, dataset in zip(axes, datasets):
             subset = {r["method"]: r for r in rows if r["dataset"] == dataset}
             values = np.array([subset[m][key] / scale for m in labels])
             assert np.all(np.isfinite(values)) and np.all(values >= 0)
-            ax.bar(range(4), values, width=0.58, color=COLORS,
-                   edgecolor=COLORS, linewidth=0.9, zorder=3)
-            ax.set_xticks(range(4), list(labels.values()))
+            bars = ax.bar(range(4), values, width=0.66, color=COLORS,
+                          edgecolor="black", linewidth=0.75, zorder=3)
+            for bar, hatch in zip(bars, HATCHES):
+                bar.set_hatch(hatch)
+            # The shared legend names the four methods, in bar order.
+            ax.set_xticks([])
             ax.set_xlim(-0.6, 3.6)
-            # All bar axes start at zero. Use a common scale where meaningful.
+            # Actual totals remain unchanged; only the displayed range differs.
             ymax = float(values.max()) if key == "loss" else common_max
             step = 1.0 if key == "loss" and ymax >= 4 else tick_step
             ymax = math.ceil(ymax * 1.07 / step) * step
-            ax.set_ylim(0, ymax)
+            ymin = 0.0
+            if zoom_energy:
+                ymin, ymax = ENERGY_LIMITS
+                step = 100.0
+                assert np.all(values > ymin) and np.all(values < ymax)
+                mark_truncated_axis(ax)
+            ax.set_ylim(ymin, ymax)
             ax.yaxis.set_major_locator(MultipleLocator(step))
-            ax.set_ylabel(ylabel, labelpad=9)
-            ax.set_title(dataset, pad=10)
+            ax.set_ylabel(ylabel, labelpad=6)
             ax.set_box_aspect(1)
             ax.set_axisbelow(True)
             ax.grid(True, axis="y", linestyle=":", zorder=0)
-            ax.tick_params(direction="out", pad=6)
+            ax.tick_params(direction="out", pad=3)
             assert not ax.texts  # No values on/above bars or stray annotations.
             assert np.allclose([p.get_height() for p in ax.patches], values)
-            limits.append([0, ymax])
+            limits.append([ymin, ymax])
         fig.canvas.draw()
+        for ax, letter, dataset in zip(axes, ["a", "b"], datasets):
+            box = ax.get_position()
+            fig.text((box.x0 + box.x1) / 2, 0.04, f"({letter}) {dataset}",
+                     ha="center", va="bottom", fontsize=14)
         panel_sizes = []
         for ax in axes:
             box = ax.get_window_extent()
             assert math.isclose(box.width, box.height, abs_tol=1e-6)
             panel_sizes.append([box.width / fig.dpi, box.height / fig.dpi])
+        legend_box = legend.get_window_extent()
+        assert legend_box.x0 >= 0 and legend_box.x1 <= fig.bbox.width
         files = []
         for extension in ["png", "pdf", "svg"]:
             path = output / f"{name}_1x2.{extension}"
@@ -109,7 +150,8 @@ def plot(rows, protocol, output):
                                           path.read_text().splitlines()) + "\n")
             files.append({"file": path.name, "sha256": sha(path)})
         rendered.append({"metric": key, "panel_size_inches": panel_sizes,
-                         "ylim": limits, "bar_annotations": 0, "files": files})
+                         "ylim": limits, "bar_annotations": 0,
+                         "truncated_axis_marked": zoom_energy, "files": files})
         plt.close(fig)
     return rendered
 
@@ -188,9 +230,12 @@ def main():
     audit = energy_audit(campaign, metrics["rows"], protocol, output)
     assert before == {str(path.relative_to(campaign)): sha(path) for path in paths}
     save_json(output / "reference_style_manifest.json", {
-        "reference": "User attachment plot_zone_pred_1x2.py (2026-10-26)",
-        "figure_size_inches": FIGSIZE, "colors": COLORS,
+        "reference": "User plot_zone_pred_1x2.py and blue/orange/red/green hatched-bar image (2026-10-26)",
+        "figure_size_inches": FIGSIZE, "colors": COLORS, "hatches": HATCHES,
         "font_points": 14, "grid": "dotted", "full_frame": True,
+        "shared_top_legend": True, "dataset_labels_below_panels": True,
+        "total_energy_display_limits_kJ": ENERGY_LIMITS,
+        "zero_baseline_comparison": "total_energy_full_scale_1x2",
         "bar_value_labels": False, "input_sha256": before,
         "source": str(Path(__file__).resolve().relative_to(ROOT)),
         "source_sha256": sha(Path(__file__)), "rendered": rendered,
