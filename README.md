@@ -5,6 +5,7 @@
 
 ## 최신 작업 — 2026-10-26
 
+- **최신 반투명 군집·개별 이동선 지도**: [PNG](results/figures/mission_satellite_iot_uav_planned_1x2_global_iot_five_sites_reference_square_cluster_motion.png), [PDF](results/figures/mission_satellite_iot_uav_planned_1x2_global_iot_five_sites_reference_square_cluster_motion.pdf). 동일한 UAV 10대의 5개 방문 시점을 반투명 군집으로 표시하고, UAV별 이동선을 이어 그렸다. 숫자 1–5는 방문 순서이며 빨간 별은 계획용 head다. 그림 안의 설명·범례·축 이름은 생략했다. 군집 외곽선은 시각적 묶음이며 통신 커버리지가 아니다.
 - **최신 전역 IoT 분포·5구역 지도**: [PNG](results/figures/mission_satellite_iot_uav_planned_1x2_global_iot_five_sites_reference_square.png), [PDF](results/figures/mission_satellite_iot_uav_planned_1x2_global_iot_five_sites_reference_square.pdf). 가상 IoT 200개를 실제 도로망 전반에 먼저 분산하고, 그 수요로부터 5개 수집 구역·UAV 배치·계획용 head를 정했다. 10×10 공간 격자 모두에 IoT가 포함되며 X·Y축 양 끝은 0–2000 m다. 별들은 같은 UAV 10대의 5개 시점 배치다.
 - 이전 5지역·광역 동선 지도: [PNG](results/figures/mission_satellite_iot_uav_planned_1x2_five_sites_reference_square.png), [PDF](results/figures/mission_satellite_iot_uav_planned_1x2_five_sites_reference_square.pdf). 이 버전은 방문 지역 주변의 IoT 생성 방식이며 최신 전역 분포 버전으로 대체했다.
 - 사용자 요청으로 4지역 실행은 기록을 보존해 중단했다. 5지역 배치·채널은 `results/iot_uav_deployment_v2_five_sites/`에 있으며 새 비교 실험은 별도 경로에서 재실행한다. 이 지도 커밋은 학습 결과 완료를 의미하지 않는다.

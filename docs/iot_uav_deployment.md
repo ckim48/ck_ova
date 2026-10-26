@@ -2,6 +2,8 @@
 
 ## Latest global-IoT scenario
 
+The latest rendering is `python tools/plot_mission_map_cluster.py`. It overlays five translucent snapshot enclosures and ten identity-preserving, piecewise-linear UAV paths including return. Numeric labels 1–5 indicate visit order; there are no textual captions, legends or axis names. Axis ticks remain in ground metres, including both endpoints. Blue stars are UAV positions, red stars are planning heads, and pale orange circles are IoT devices. Ellipses are visual grouping only, not modeled coverage. All positions match the registered deployment; the plotting update does not change the experiment.
+
 `tools/iot_uav_deployment_v3_global_iot/` corrects the earlier assumption that devices are generated near preselected stops. It first samples 200 synthetic infrastructure sensors on cached OSM road, footway and cycleway geometry throughout the map, with spatial stratification across a 10×10 grid and at least 18 m device separation. All 100 spatial cells are represented. These are declared simulated devices, not measured infrastructure.
 
 Only after generating the global device positions and packet demands does the method determine five balanced 40-device collection zones. Alternating balanced assignment and weighted centroids defines the coarse zones, and enumeration of the 24 closed tours from a fixed start chooses the shortest centroid tour. Ten UAV positions and a nominal planning head are then optimized per zone, with a 450 m allowed radius and the existing power/separation constraints. All 200 device IDs are preserved across partitioning. UAV identity is maintained throughout the five transitions, including return.
