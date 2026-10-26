@@ -28,6 +28,8 @@ The left panel is satellite imagery; the right shows IoT circles, UAV stars, a g
 
 An additional reference-style export is available via `python tools/plot_mission_map_reference.py --mode iot`. It keeps the same data while increasing the canvas to 9.4×4.2 inches, using blue UAV stars, orange IoT circles, red head stars, black marker outlines, metric axes and a shared top legend. The dashed red head ring is only visual emphasis, not a modeled coverage boundary. The separate script does not alter registered numerical experiment code.
 
+Add `--square` for a 9.4×5.5-inch canvas with square map panels. This expands the north/south viewport rather than stretching the map. The square satellite image has a separate cache; add `--download` once to populate it. The updated IoT circles use a lighter orange fill and muted outlines. UAV positions, device positions and heads remain identical across the visual variants.
+
 ## New experiment
 
 `tools/iot_vlm_v1/experiment.py` runs fresh RSITMD and CapERA evaluations with the same registered RemoteCLIP/adapters, data partitions, four methods, 200 FL rounds and 45 five-step FU requests as the base campaign. The new geometry and channel matrices are common to all arms. Neither the earlier two-row results nor nominal planning-head costs are relabeled as new method results.

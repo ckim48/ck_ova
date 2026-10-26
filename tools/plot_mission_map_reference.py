@@ -1,13 +1,15 @@
 """Larger paper-style visual variant; reuse the registered map's exact geometry.
 
 Only plot styling/output names are replaced. No model, head or position changes.
-Run: python tools/plot_mission_map_reference.py --mode iot
+Run: python tools/plot_mission_map_reference.py --mode iot [--square]
 """
 from pathlib import Path
 import sys
 
 source_path=Path(__file__).with_name('plot_mission_map.py')
 source=source_path.read_text()
+square='--square' in sys.argv
+if square:sys.argv.remove('--square')
 
 
 def replace(old,new,count=1):
@@ -45,6 +47,16 @@ new="""        handles=[Line2D([],[],marker='*',linestyle='none',markersize=12,c
 replace(old,new)
 replace("    for extension in ['png', 'pdf', 'svg']:", "    stem=stem.with_name(stem.name+'_reference_large')\n    for extension in ['png', 'pdf', 'svg']:")
 replace("    stem.with_suffix('.json').write_text", "    metadata.update(visual_variant='reference_large',figure_size_inches=[9.4,4.2],axis_units='Local ground metres from displayed lower-left corner, using the mission latitude scale',head_ring='Marker emphasis only, not a communication coverage radius',palette=dict(iot='#f3c77f',uav='#3a78b5',head='#df6249'),plot_style='Larger serif paper layout, black marker outlines, shared top legend and metric axes')\n    stem.with_suffix('.json').write_text")
+
+if square:
+    replace('height = width * 1280 / 1800','height = width')
+    replace("cache = MAP / 'satellite_mission_1x2'", "cache = MAP / 'satellite_mission_square_1x2'")
+    replace("size='1800,1280'", "size='1800,1800'")
+    replace('figsize=(9.4, 4.2)','figsize=(9.4, 5.5)')
+    replace('top=.84, bottom=.20, wspace=.22','top=.87, bottom=.16, wspace=.22')
+    replace("stem.name+'_reference_large'", "stem.name+'_reference_square'")
+    replace("visual_variant='reference_large',figure_size_inches=[9.4,4.2]",
+            "visual_variant='reference_square',figure_size_inches=[9.4,5.5],square_panels=True,viewport_change='Expanded north/south bounds; imagery and coordinates retain equal spatial scale'")
 
 if __name__=='__main__':
     if '--mode' not in sys.argv:sys.argv.extend(['--mode','iot'])
