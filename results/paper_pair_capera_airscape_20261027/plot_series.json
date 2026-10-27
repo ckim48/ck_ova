@@ -3120,6 +3120,3126 @@
     ]
   },
   {
+    "figure": "downlink_total_energy_j_1x2",
+    "dataset": "CapERA",
+    "method": "proposed_fu_guard_cliperase",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      2448.4289622332158,
+      2052.2608553276064,
+      1854.1768018748123,
+      1755.1347751484097,
+      1705.6137617852128
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_total_energy_j_1x2",
+    "dataset": "CapERA",
+    "method": "heuristic_ova",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      2465.352894327748,
+      2069.1847874221526,
+      1871.1007339693524,
+      1772.0587072429537,
+      1722.5376938797492
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_total_energy_j_1x2",
+    "dataset": "CapERA",
+    "method": "separate_aircomp_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      2649.123796658413,
+      2153.3856064248002,
+      1905.5165113080095,
+      1781.5819637496056,
+      1719.6146899704095
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_total_energy_j_1x2",
+    "dataset": "CapERA",
+    "method": "aircomp_ofdma_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      2662.778032482519,
+      2167.0398422489056,
+      1919.170747132117,
+      1795.236199573713,
+      1733.2689257945174
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_total_energy_j_1x2",
+    "dataset": "CapERA",
+    "method": "sequential_digital_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      3002.5734491178023,
+      2506.8352588841935,
+      2258.9661637673844,
+      2135.0316162089966,
+      2073.0643424297873
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_total_energy_j_1x2",
+    "dataset": "AirScape",
+    "method": "proposed_fu_guard_cliperase",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      2447.391081650916,
+      2051.2229747453075,
+      1853.138921292513,
+      1754.0968945661093,
+      1704.5758812029133
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_total_energy_j_1x2",
+    "dataset": "AirScape",
+    "method": "heuristic_ova",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      2459.4798523372983,
+      2063.3117454316957,
+      1865.2276919788999,
+      1766.1856652524998,
+      1716.6646518892976
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_total_energy_j_1x2",
+    "dataset": "AirScape",
+    "method": "separate_aircomp_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      2648.0854566652697,
+      2152.3472664316573,
+      1904.4781713148675,
+      1780.543623756463,
+      1718.576349977267
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_total_energy_j_1x2",
+    "dataset": "AirScape",
+    "method": "aircomp_ofdma_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      2661.3943118239827,
+      2165.6561215903685,
+      1917.787026473579,
+      1793.852478915175,
+      1731.8852051359793
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_total_energy_j_1x2",
+    "dataset": "AirScape",
+    "method": "sequential_digital_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      3001.1901410527807,
+      2505.451950819173,
+      2257.582855702363,
+      2133.6483081439737,
+      2071.681034364765
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_FL_FU_completion_delay_s_1x2",
+    "dataset": "CapERA",
+    "method": "proposed_fu_guard_cliperase",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      1291.6995444173901,
+      1056.897368417385,
+      939.4962804173884,
+      880.7957364173869,
+      851.4454644173888
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_FL_FU_completion_delay_s_1x2",
+    "dataset": "CapERA",
+    "method": "heuristic_ova",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      1301.7347444173852,
+      1066.9325684173875,
+      949.5314804173875,
+      890.8309364173881,
+      861.4806644173854
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_FL_FU_completion_delay_s_1x2",
+    "dataset": "CapERA",
+    "method": "separate_aircomp_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      1410.6784935373914,
+      1116.8478375373838,
+      969.9325095373894,
+      896.4748455373871,
+      859.7460135373893
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_FL_FU_completion_delay_s_1x2",
+    "dataset": "CapERA",
+    "method": "aircomp_ofdma_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      1418.7680935373905,
+      1124.9374375373825,
+      978.0221095373892,
+      904.564445537387,
+      867.8356135373895
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_FL_FU_completion_delay_s_1x2",
+    "dataset": "CapERA",
+    "method": "sequential_digital_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      1620.2294644173933,
+      1326.3988084173884,
+      1179.483480417383,
+      1106.0258164173902,
+      1069.2969844173845
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_FL_FU_completion_delay_s_1x2",
+    "dataset": "AirScape",
+    "method": "proposed_fu_guard_cliperase",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      1291.6959433507238,
+      1056.8937673507187,
+      939.492679350722,
+      880.79213535072,
+      851.4418633507223
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_FL_FU_completion_delay_s_1x2",
+    "dataset": "AirScape",
+    "method": "heuristic_ova",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      1298.8639433507203,
+      1064.0617673507188,
+      946.6606793507214,
+      887.9601353507211,
+      858.6098633507199
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_FL_FU_completion_delay_s_1x2",
+    "dataset": "AirScape",
+    "method": "separate_aircomp_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      1410.674656950724,
+      1116.8440009507165,
+      969.9286729507227,
+      896.47100895072,
+      859.7421769507225
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_FL_FU_completion_delay_s_1x2",
+    "dataset": "AirScape",
+    "method": "aircomp_ofdma_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      1418.5594569507246,
+      1124.7288009507163,
+      977.8134729507227,
+      904.3558089507202,
+      867.6269769507228
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_FL_FU_completion_delay_s_1x2",
+    "dataset": "AirScape",
+    "method": "sequential_digital_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      1620.0210633507268,
+      1326.1904073507224,
+      1179.2750793507164,
+      1105.8174153507227,
+      1069.0885833507175
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_mission_delay_s_1x2",
+    "dataset": "CapERA",
+    "method": "proposed_fu_guard_cliperase",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      1538.1037141026927,
+      1303.3015381026876,
+      1185.9004501026911,
+      1127.1999061026895,
+      1097.8496341026914
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_mission_delay_s_1x2",
+    "dataset": "CapERA",
+    "method": "heuristic_ova",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      1548.1389141026877,
+      1313.33673810269,
+      1195.93565010269,
+      1137.2351061026907,
+      1107.8848341026878
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_mission_delay_s_1x2",
+    "dataset": "CapERA",
+    "method": "separate_aircomp_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      1657.082663222694,
+      1363.2520072226864,
+      1216.336679222692,
+      1142.8790152226898,
+      1106.1501832226918
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_mission_delay_s_1x2",
+    "dataset": "CapERA",
+    "method": "aircomp_ofdma_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      1665.1722632226931,
+      1371.341607222685,
+      1224.4262792226918,
+      1150.9686152226896,
+      1114.239783222692
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_mission_delay_s_1x2",
+    "dataset": "CapERA",
+    "method": "sequential_digital_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      1866.6336341026959,
+      1572.802978102691,
+      1425.8876501026855,
+      1352.4299861026927,
+      1315.701154102687
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_mission_delay_s_1x2",
+    "dataset": "AirScape",
+    "method": "proposed_fu_guard_cliperase",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      1538.1001130360264,
+      1303.2979370360213,
+      1185.8968490360246,
+      1127.1963050360225,
+      1097.846033036025
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_mission_delay_s_1x2",
+    "dataset": "AirScape",
+    "method": "heuristic_ova",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      1545.268113036023,
+      1310.4659370360214,
+      1193.064849036024,
+      1134.3643050360238,
+      1105.0140330360225
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_mission_delay_s_1x2",
+    "dataset": "AirScape",
+    "method": "separate_aircomp_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      1657.0788266360266,
+      1363.248170636019,
+      1216.3328426360254,
+      1142.8751786360226,
+      1106.146346636025
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_mission_delay_s_1x2",
+    "dataset": "AirScape",
+    "method": "aircomp_ofdma_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      1664.9636266360271,
+      1371.1329706360189,
+      1224.2176426360252,
+      1150.7599786360229,
+      1114.0311466360254
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_mission_delay_s_1x2",
+    "dataset": "AirScape",
+    "method": "sequential_digital_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      1866.4252330360293,
+      1572.594577036025,
+      1425.679249036019,
+      1352.2215850360253,
+      1315.49275303602
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_total_delay_s_1x2",
+    "dataset": "CapERA",
+    "method": "proposed_fu_guard_cliperase",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      2405.586628236024,
+      2118.3146922360197,
+      1974.678724236026,
+      1902.8607402360235,
+      1866.951748236023
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_total_delay_s_1x2",
+    "dataset": "CapERA",
+    "method": "heuristic_ova",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      2415.621828236019,
+      2128.3498922360222,
+      1984.713924236025,
+      1912.8959402360247,
+      1876.986948236019
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_total_delay_s_1x2",
+    "dataset": "CapERA",
+    "method": "separate_aircomp_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      2524.565577356025,
+      2178.265161356019,
+      2005.114953356027,
+      1918.5398493560238,
+      1875.252297356023
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_total_delay_s_1x2",
+    "dataset": "CapERA",
+    "method": "aircomp_ofdma_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      2532.6551773560245,
+      2186.354761356017,
+      2013.2045533560267,
+      1926.6294493560235,
+      1883.3418973560233
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_total_delay_s_1x2",
+    "dataset": "CapERA",
+    "method": "sequential_digital_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      2734.116548236027,
+      2387.8161322360233,
+      2214.6659242360206,
+      2128.090820236027,
+      2084.8032682360185
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_total_delay_s_1x2",
+    "dataset": "AirScape",
+    "method": "proposed_fu_guard_cliperase",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      2482.999563574691,
+      2195.7276275746867,
+      2052.091659574693,
+      1980.27367557469,
+      1944.3646835746895
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_total_delay_s_1x2",
+    "dataset": "AirScape",
+    "method": "heuristic_ova",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      2490.1675635746874,
+      2202.895627574687,
+      2059.2596595746923,
+      1987.441675574691,
+      1951.5326835746873
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_total_delay_s_1x2",
+    "dataset": "AirScape",
+    "method": "separate_aircomp_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      2601.9782771746914,
+      2255.6778611746845,
+      2082.5276531746936,
+      1995.95254917469,
+      1952.6649971746897
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_total_delay_s_1x2",
+    "dataset": "AirScape",
+    "method": "aircomp_ofdma_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      2609.8630771746916,
+      2263.5626611746843,
+      2090.4124531746934,
+      2003.8373491746902,
+      1960.54979717469
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_total_delay_s_1x2",
+    "dataset": "AirScape",
+    "method": "sequential_digital_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      2811.324683574694,
+      2465.0242675746904,
+      2291.874059574687,
+      2205.2989555746926,
+      2162.0114035746847
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_FU_mean_completion_latency_s_1x2",
+    "dataset": "CapERA",
+    "method": "proposed_fu_guard_cliperase",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      13.221432130370385,
+      6.662712130370341,
+      3.383352130370349,
+      1.7436721303703715,
+      0.9238321303703885
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_FU_mean_completion_latency_s_1x2",
+    "dataset": "CapERA",
+    "method": "heuristic_ova",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      13.869965463703718,
+      7.31124546370374,
+      4.03188546370373,
+      2.392205463703725,
+      1.5723654637036784
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_FU_mean_completion_latency_s_1x2",
+    "dataset": "CapERA",
+    "method": "separate_aircomp_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      15.865115685925968,
+      7.994651685925966,
+      4.059419685925953,
+      2.091803685925945,
+      1.1079956859259334
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_FU_mean_completion_latency_s_1x2",
+    "dataset": "CapERA",
+    "method": "aircomp_ofdma_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      16.76396013037032,
+      8.893496130370282,
+      4.958264130370363,
+      2.9906481303703685,
+      2.006840130370389
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_FU_mean_completion_latency_s_1x2",
+    "dataset": "CapERA",
+    "method": "sequential_digital_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      17.89031689481482,
+      10.019852894814742,
+      6.084620894814786,
+      4.1170048948148645,
+      3.133196894814825
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_FU_mean_completion_latency_s_1x2",
+    "dataset": "AirScape",
+    "method": "proposed_fu_guard_cliperase",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      13.221032011851895,
+      6.662312011851893,
+      3.3829520118518577,
+      1.7432720118518161,
+      0.9234320118518536
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_FU_mean_completion_latency_s_1x2",
+    "dataset": "AirScape",
+    "method": "heuristic_ova",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      13.735307567407434,
+      7.1765875674074096,
+      3.897227567407388,
+      2.2575475674074146,
+      1.4377075674073998
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_FU_mean_completion_latency_s_1x2",
+    "dataset": "AirScape",
+    "method": "separate_aircomp_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      15.864689398518484,
+      7.994225398518498,
+      4.058993398518542,
+      2.0913773985184907,
+      1.1075693985185018
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_FU_mean_completion_latency_s_1x2",
+    "dataset": "AirScape",
+    "method": "aircomp_ofdma_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      16.740778287407448,
+      8.870314287407396,
+      4.935082287407416,
+      2.967466287407393,
+      1.9836582874074287
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_FU_mean_completion_latency_s_1x2",
+    "dataset": "AirScape",
+    "method": "sequential_digital_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      17.8489567762963,
+      9.978492776296314,
+      6.04326077629629,
+      4.07564477629628,
+      3.091836776296269
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_FL_FU_active_service_s_1x2",
+    "dataset": "CapERA",
+    "method": "proposed_fu_guard_cliperase",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      473.2956603733366,
+      238.49348437333128,
+      121.09239637333478,
+      62.39185237333328,
+      33.041580373335094
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_FL_FU_active_service_s_1x2",
+    "dataset": "CapERA",
+    "method": "heuristic_ova",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      483.33086037333135,
+      248.52868437333382,
+      131.12759637333372,
+      72.42705237333439,
+      43.076780373331715
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_FL_FU_active_service_s_1x2",
+    "dataset": "CapERA",
+    "method": "separate_aircomp_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      592.2746094933376,
+      298.4439534933301,
+      151.52862549333565,
+      78.07096149333343,
+      41.34212949333559
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_FL_FU_active_service_s_1x2",
+    "dataset": "CapERA",
+    "method": "aircomp_ofdma_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      600.3642094933367,
+      306.5335534933289,
+      159.6182254933355,
+      86.16056149333323,
+      49.43172949333569
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_FL_FU_active_service_s_1x2",
+    "dataset": "CapERA",
+    "method": "sequential_digital_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      801.8255803733398,
+      507.99492437333464,
+      361.0795963733292,
+      287.62193237333634,
+      250.89310037333075
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_FL_FU_active_service_s_1x2",
+    "dataset": "AirScape",
+    "method": "proposed_fu_guard_cliperase",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      473.2920593066702,
+      238.48988330666504,
+      121.08879530666836,
+      62.38825130666628,
+      33.037979306668575
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_FL_FU_active_service_s_1x2",
+    "dataset": "AirScape",
+    "method": "heuristic_ova",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      480.46005930666666,
+      245.6578833066651,
+      128.25679530666767,
+      69.55625130666743,
+      40.20597930666625
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_FL_FU_active_service_s_1x2",
+    "dataset": "AirScape",
+    "method": "separate_aircomp_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      592.2707729066702,
+      298.44011690666264,
+      151.52478890666896,
+      78.06712490666634,
+      41.33829290666876
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_FL_FU_active_service_s_1x2",
+    "dataset": "AirScape",
+    "method": "aircomp_ofdma_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      600.1555729066708,
+      306.32491690666257,
+      159.409588906669,
+      85.95192490666646,
+      49.2230929066691
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_FL_FU_active_service_s_1x2",
+    "dataset": "AirScape",
+    "method": "sequential_digital_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      801.6171793066733,
+      507.7865233066687,
+      360.8711953066627,
+      287.41353130666914,
+      250.6846993066638
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_energy_hover_j_1x2",
+    "dataset": "CapERA",
+    "method": "proposed_fu_guard_cliperase",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      881.700858163035,
+      486.0826718206259,
+      288.27357864943184,
+      189.36903206382925,
+      139.9167587710323
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_energy_hover_j_1x2",
+    "dataset": "CapERA",
+    "method": "heuristic_ova",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      898.609166643026,
+      502.99098030063016,
+      305.18188712943004,
+      206.27734054383112,
+      156.8250672510266
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_energy_hover_j_1x2",
+    "dataset": "CapERA",
+    "method": "separate_aircomp_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      1082.1684895353244,
+      587.0932172409119,
+      339.5555810937213,
+      215.78676302011746,
+      153.90235398332115
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_energy_hover_j_1x2",
+    "dataset": "CapERA",
+    "method": "aircomp_ofdma_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      1095.798656575323,
+      600.72338428091,
+      353.185748133721,
+      229.41693006011718,
+      167.53252102332132
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_energy_hover_j_1x2",
+    "dataset": "CapERA",
+    "method": "sequential_digital_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      1435.2409203710401,
+      940.1656480766317,
+      692.6280119294224,
+      568.8591938558344,
+      506.97478481902505
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_energy_hover_j_1x2",
+    "dataset": "AirScape",
+    "method": "proposed_fu_guard_cliperase",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      881.6947907258086,
+      486.07660438339997,
+      288.2675112122056,
+      189.362964626602,
+      139.9106913338059
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_energy_hover_j_1x2",
+    "dataset": "AirScape",
+    "method": "heuristic_ova",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      893.7721539258025,
+      498.1539675834,
+      300.3448744122044,
+      201.44032782660398,
+      151.98805453380197
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_energy_hover_j_1x2",
+    "dataset": "AirScape",
+    "method": "separate_aircomp_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      1082.1620252704488,
+      587.0867529760359,
+      339.5491168288466,
+      215.78029875524211,
+      153.89588971844617
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_energy_hover_j_1x2",
+    "dataset": "AirScape",
+    "method": "aircomp_ofdma_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      1095.4471247904498,
+      600.3718524960358,
+      352.8342163488466,
+      229.06539827524236,
+      167.18098923844678
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_energy_hover_j_1x2",
+    "dataset": "AirScape",
+    "method": "sequential_digital_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      1434.8897854138138,
+      939.8145131194061,
+      692.2768769721961,
+      568.5080588986069,
+      506.62364986179784
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_energy_communication_j_1x2",
+    "dataset": "CapERA",
+    "method": "proposed_fu_guard_cliperase",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      1162.3375623637362,
+      612.416999163737,
+      337.45671756373616,
+      199.97657676373632,
+      131.23650636373628
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_energy_communication_j_1x2",
+    "dataset": "CapERA",
+    "method": "heuristic_ova",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      1172.9435769057552,
+      623.0230137057562,
+      348.06273210575597,
+      210.582591305756,
+      141.84252090575598
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_energy_communication_j_1x2",
+    "dataset": "CapERA",
+    "method": "separate_aircomp_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      1389.0730178315437,
+      726.155078631543,
+      394.6961090315435,
+      228.9666242315434,
+      146.10188183154332
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_energy_communication_j_1x2",
+    "dataset": "CapERA",
+    "method": "aircomp_ofdma_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      1409.0970019391489,
+      746.1790627391515,
+      414.7200931391512,
+      248.99060833915115,
+      166.1258659391509
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_energy_communication_j_1x2",
+    "dataset": "CapERA",
+    "method": "sequential_digital_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      1661.5257589452106,
+      998.607819745208,
+      667.1488501452073,
+      501.419365345208,
+      418.5546229452084
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_energy_communication_j_1x2",
+    "dataset": "AirScape",
+    "method": "proposed_fu_guard_cliperase",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      1162.4392465602068,
+      612.518683360207,
+      337.5584017602064,
+      200.07826096020614,
+      131.33819056020627
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_energy_communication_j_1x2",
+    "dataset": "AirScape",
+    "method": "heuristic_ova",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      1170.2627329483544,
+      620.3421697483534,
+      345.3818881483535,
+      207.90174734835352,
+      139.1616769483535
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_energy_communication_j_1x2",
+    "dataset": "AirScape",
+    "method": "separate_aircomp_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      1389.1156322201937,
+      726.1976930201942,
+      394.738723420194,
+      229.00923862019408,
+      146.14449622019401
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_energy_communication_j_1x2",
+    "dataset": "AirScape",
+    "method": "aircomp_ofdma_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      1408.9288709316957,
+      746.0109317316987,
+      414.5519621316979,
+      248.82247733169788,
+      165.9577349316977
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_energy_communication_j_1x2",
+    "dataset": "AirScape",
+    "method": "sequential_digital_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      1661.3698804193484,
+      998.4519412193456,
+      666.9929716193454,
+      501.26348681934604,
+      418.3987444193466
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_adaptation_RF_energy_j_1x2",
+    "dataset": "CapERA",
+    "method": "proposed_fu_guard_cliperase",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      0.4295771126266076,
+      0.4295771126266076,
+      0.4295771126266076,
+      0.4295771126266076,
+      0.4295771126266076
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_adaptation_RF_energy_j_1x2",
+    "dataset": "CapERA",
+    "method": "heuristic_ova",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      0.6293622023334999,
+      0.6293622023334999,
+      0.6293622023334999,
+      0.6293622023334999,
+      0.6293622023334999
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_adaptation_RF_energy_j_1x2",
+    "dataset": "CapERA",
+    "method": "separate_aircomp_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      0.3662633263590792,
+      0.3662633263590792,
+      0.3662633263590792,
+      0.3662633263590792,
+      0.3662633263590792
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_adaptation_RF_energy_j_1x2",
+    "dataset": "CapERA",
+    "method": "aircomp_ofdma_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      4.543297764021763,
+      4.543297764021763,
+      4.543297764021763,
+      4.543297764021763,
+      4.543297764021763
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_adaptation_RF_energy_j_1x2",
+    "dataset": "CapERA",
+    "method": "sequential_digital_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      22.381746716142153,
+      22.381746716142153,
+      22.381746716142153,
+      22.381746716142153,
+      22.381746716142153
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_adaptation_RF_energy_j_1x2",
+    "dataset": "AirScape",
+    "method": "proposed_fu_guard_cliperase",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      0.44785303502810797,
+      0.44785303502810797,
+      0.44785303502810797,
+      0.44785303502810797,
+      0.44785303502810797
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_adaptation_RF_energy_j_1x2",
+    "dataset": "AirScape",
+    "method": "heuristic_ova",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      0.6772732708796326,
+      0.6772732708796326,
+      0.6772732708796326,
+      0.6772732708796326,
+      0.6772732708796326
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_adaptation_RF_energy_j_1x2",
+    "dataset": "AirScape",
+    "method": "separate_aircomp_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      0.3638648160237941,
+      0.3638648160237941,
+      0.3638648160237941,
+      0.3638648160237941,
+      0.3638648160237941
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_adaptation_RF_energy_j_1x2",
+    "dataset": "AirScape",
+    "method": "aircomp_ofdma_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      4.538818365050143,
+      4.538818365050143,
+      4.538818365050143,
+      4.538818365050143,
+      4.538818365050143
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_adaptation_RF_energy_j_1x2",
+    "dataset": "AirScape",
+    "method": "sequential_digital_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      22.38155568572746,
+      22.38155568572746,
+      22.38155568572746,
+      22.38155568572746,
+      22.38155568572746
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_uplink_s_1x2",
+    "dataset": "CapERA",
+    "method": "proposed_fu_guard_cliperase",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      3.6659200000000083,
+      3.6659200000000083,
+      3.6659200000000083,
+      3.6659200000000083,
+      3.6659200000000083
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_uplink_s_1x2",
+    "dataset": "CapERA",
+    "method": "heuristic_ova",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      13.70112,
+      13.70112,
+      13.70112,
+      13.70112,
+      13.70112
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_uplink_s_1x2",
+    "dataset": "CapERA",
+    "method": "separate_aircomp_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      4.58752000000001,
+      4.58752000000001,
+      4.58752000000001,
+      4.58752000000001,
+      4.58752000000001
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_uplink_s_1x2",
+    "dataset": "CapERA",
+    "method": "aircomp_ofdma_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      12.677119999999965,
+      12.677119999999965,
+      12.677119999999965,
+      12.677119999999965,
+      12.677119999999965
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_uplink_s_1x2",
+    "dataset": "CapERA",
+    "method": "sequential_digital_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      214.13888000000026,
+      214.13888000000026,
+      214.13888000000026,
+      214.13888000000026,
+      214.13888000000026
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_uplink_s_1x2",
+    "dataset": "AirScape",
+    "method": "proposed_fu_guard_cliperase",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      3.6659200000000083,
+      3.6659200000000083,
+      3.6659200000000083,
+      3.6659200000000083,
+      3.6659200000000083
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_uplink_s_1x2",
+    "dataset": "AirScape",
+    "method": "heuristic_ova",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      10.83391999999999,
+      10.83391999999999,
+      10.83391999999999,
+      10.83391999999999,
+      10.83391999999999
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_uplink_s_1x2",
+    "dataset": "AirScape",
+    "method": "separate_aircomp_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      4.58752000000001,
+      4.58752000000001,
+      4.58752000000001,
+      4.58752000000001,
+      4.58752000000001
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_uplink_s_1x2",
+    "dataset": "AirScape",
+    "method": "aircomp_ofdma_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      12.472319999999964,
+      12.472319999999964,
+      12.472319999999964,
+      12.472319999999964,
+      12.472319999999964
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_uplink_s_1x2",
+    "dataset": "AirScape",
+    "method": "sequential_digital_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      213.93408000000022,
+      213.93408000000022,
+      213.93408000000022,
+      213.93408000000022,
+      213.93408000000022
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_loss_1x2",
+    "dataset": "CapERA",
+    "method": "proposed_fu_guard_cliperase",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      5.360688209533691,
+      5.360688209533691,
+      5.360688209533691,
+      5.360688209533691,
+      5.360688209533691
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_loss_1x2",
+    "dataset": "CapERA",
+    "method": "heuristic_ova",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      5.360715389251709,
+      5.360715389251709,
+      5.360715389251709,
+      5.360715389251709,
+      5.360715389251709
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_loss_1x2",
+    "dataset": "CapERA",
+    "method": "separate_aircomp_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      5.448007583618164,
+      5.448007583618164,
+      5.448007583618164,
+      5.448007583618164,
+      5.448007583618164
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_loss_1x2",
+    "dataset": "CapERA",
+    "method": "aircomp_ofdma_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      5.448009967803955,
+      5.448009967803955,
+      5.448009967803955,
+      5.448009967803955,
+      5.448009967803955
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_loss_1x2",
+    "dataset": "CapERA",
+    "method": "sequential_digital_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      5.359580039978027,
+      5.359580039978027,
+      5.359580039978027,
+      5.359580039978027,
+      5.359580039978027
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_loss_1x2",
+    "dataset": "AirScape",
+    "method": "proposed_fu_guard_cliperase",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      5.553146839141846,
+      5.553146839141846,
+      5.553146839141846,
+      5.553146839141846,
+      5.553146839141846
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_loss_1x2",
+    "dataset": "AirScape",
+    "method": "heuristic_ova",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      5.55317497253418,
+      5.55317497253418,
+      5.55317497253418,
+      5.55317497253418,
+      5.55317497253418
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_loss_1x2",
+    "dataset": "AirScape",
+    "method": "separate_aircomp_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      5.6070661544799805,
+      5.6070661544799805,
+      5.6070661544799805,
+      5.6070661544799805,
+      5.6070661544799805
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_loss_1x2",
+    "dataset": "AirScape",
+    "method": "aircomp_ofdma_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      5.6070685386657715,
+      5.6070685386657715,
+      5.6070685386657715,
+      5.6070685386657715,
+      5.6070685386657715
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_loss_1x2",
+    "dataset": "AirScape",
+    "method": "sequential_digital_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      5.5524773597717285,
+      5.5524773597717285,
+      5.5524773597717285,
+      5.5524773597717285,
+      5.5524773597717285
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_mR_1x2",
+    "dataset": "CapERA",
+    "method": "proposed_fu_guard_cliperase",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      16.901041691501934,
+      16.901041691501934,
+      16.901041691501934,
+      16.901041691501934,
+      16.901041691501934
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_mR_1x2",
+    "dataset": "CapERA",
+    "method": "heuristic_ova",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      16.835937524835266,
+      16.835937524835266,
+      16.835937524835266,
+      16.835937524835266,
+      16.835937524835266
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_mR_1x2",
+    "dataset": "CapERA",
+    "method": "separate_aircomp_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      16.40625006208817,
+      16.40625006208817,
+      16.40625006208817,
+      16.40625006208817,
+      16.40625006208817
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_mR_1x2",
+    "dataset": "CapERA",
+    "method": "aircomp_ofdma_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      16.40625006208817,
+      16.40625006208817,
+      16.40625006208817,
+      16.40625006208817,
+      16.40625006208817
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_mR_1x2",
+    "dataset": "CapERA",
+    "method": "sequential_digital_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      16.901041691501934,
+      16.901041691501934,
+      16.901041691501934,
+      16.901041691501934,
+      16.901041691501934
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_mR_1x2",
+    "dataset": "AirScape",
+    "method": "proposed_fu_guard_cliperase",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      13.671875,
+      13.671875,
+      13.671875,
+      13.671875,
+      13.671875
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_mR_1x2",
+    "dataset": "AirScape",
+    "method": "heuristic_ova",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      13.671875,
+      13.671875,
+      13.671875,
+      13.671875,
+      13.671875
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_mR_1x2",
+    "dataset": "AirScape",
+    "method": "separate_aircomp_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      13.541666666666666,
+      13.541666666666666,
+      13.541666666666666,
+      13.541666666666666,
+      13.541666666666666
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_mR_1x2",
+    "dataset": "AirScape",
+    "method": "aircomp_ofdma_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      13.541666666666666,
+      13.541666666666666,
+      13.541666666666666,
+      13.541666666666666,
+      13.541666666666666
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
+    "figure": "downlink_mR_1x2",
+    "dataset": "AirScape",
+    "method": "sequential_digital_periodic",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "y": [
+      13.671875,
+      13.671875,
+      13.671875,
+      13.671875,
+      13.671875
+    ],
+    "status": [
+      "completed",
+      "completed",
+      "completed",
+      "completed",
+      "completed"
+    ]
+  },
+  {
     "figure": "loss_convergence_1x2",
     "dataset": "CapERA",
     "method": "proposed_fu_guard_cliperase",
