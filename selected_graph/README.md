@@ -1,6 +1,6 @@
 # Selected graphs
 
-Six figures only, each exported as PNG, PDF and SVG. Left: CapERA. Right: AirScape. Methods: Proposed, FM-CM, S-AC, AC-OF, S-OF. The figures use the established style, regular endpoint ticks and matched decimal precision. No point-value labels. Bandwidth figures explicitly mark radio-infeasible conditions with a cross and a separate status legend.
+Six primary figures, each exported as PNG, PDF and SVG. Left: CapERA. Right: AirScape. Methods: Proposed, FM-CM, S-AC, AC-OF, S-OF. The figures use the established style, regular endpoint ticks and matched decimal precision. No point-value labels. Bandwidth figures explicitly mark radio-infeasible conditions with a cross and a separate status legend.
 
 | No. | x axis | y axis | Preview |
 |---|---|---|---|
@@ -36,3 +36,7 @@ S-OF is a new measured serial digital OFDMA baseline using the same existing saf
 S-OF and S-OF+ inherit the previously authorized soft network-TX-cap fallback; overruns are recorded. The analog arms retain their original hard network cap. Per-user power/energy, deadline and error checks remain enforced. See the [protocol and quality audit](../results/baseline_fairness_v1_20261027/README.md) for component definitions, forgetting diagnostics and all ten new outcomes. No hyperparameter was selected based on these results.
 
 **FM-CM** is Proposed with the retained contrastive RM coefficient in its FU objective set from 1 to 0. FM and CM retain their coefficients of 3. Standard FL learning, sampled data, teacher construction, LR schedule, joint transport, FU guard and optimized head/resources are unchanged. RM remains a logged diagnostic with zero gradient contribution; retained features are still needed by CM. The existing MAC model does not count the separate contrastive-matrix/softmax arithmetic for either method. It is a learning-component ablation of the adopted CLIPErase-inspired objective, not an independent published baseline. Its measured curve is retained regardless of rank. See the [learning-component audit](../results/learning_ablation_v1_20261027/README.md) for the gradient check, all ten conditions and retention/forgetting tradeoffs.
+
+## FU evaluation supplement
+
+The original loss already includes the effect of FL and FU updates on retained queries. Two additional figures show the common forget-set KL metric from the same models: [round](07_round_forget_kl_1x2.png) and [time](08_time_forget_kl_1x2.png). See [metric definitions and audit](FU_METRICS.md). The original six figures are unchanged.

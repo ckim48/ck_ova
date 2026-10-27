@@ -1,0 +1,11 @@
+dataset,method,evaluation_points,transaction_kinds,nonzero_transmitted_FU_transactions,local_FU_steps,retained_curve_matches_same_post_update_evaluations,first_recorded_round,final_forget_KL,final_retained_loss
+CapERA,proposed_fu_guard_cliperase,43,"{'fl': 135, 'joint': 45}",45,225,True,25,0.0026667111087590456,5.360688209533691
+CapERA,joint_fm_cm_no_rm,43,"{'fl': 135, 'joint': 45}",45,225,True,25,0.00021286302944645286,5.4501495361328125
+CapERA,separate_aircomp_periodic,45,"{'fl': 180, 'fu': 45}",45,225,True,25,7.74453510530293e-05,5.448007583618164
+CapERA,aircomp_ofdma_periodic,45,"{'fl': 180, 'fu': 45}",45,225,True,25,7.745518814772367e-05,5.448009967803955
+CapERA,sequential_digital_proxy,45,"{'fl': 180, 'fu': 45}",45,225,True,25,7.732235826551914e-05,5.448010444641113
+AirScape,proposed_fu_guard_cliperase,41,"{'fl': 135, 'joint': 45}",45,225,True,25,0.0017540504923090339,5.553146839141846
+AirScape,joint_fm_cm_no_rm,41,"{'fl': 135, 'joint': 45}",45,225,True,25,0.00027471521752886474,5.601607322692871
+AirScape,separate_aircomp_periodic,45,"{'fl': 180, 'fu': 45}",45,225,True,25,0.00030383578268811107,5.6070661544799805
+AirScape,aircomp_ofdma_periodic,45,"{'fl': 180, 'fu': 45}",45,225,True,25,0.0003039345028810203,5.6070685386657715
+AirScape,sequential_digital_proxy,45,"{'fl': 180, 'fu': 45}",45,225,True,25,0.0003053857071790844,5.607100009918213
