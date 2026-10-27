@@ -1,0 +1,64 @@
+{
+  "rows": [
+    {
+      "dataset": "CapERA",
+      "first": "separate_aircomp_periodic",
+      "second": "aircomp_ofdma_periodic",
+      "parameters_exactly_equal": false,
+      "parameter_difference_L2": 0.00021181603235016598,
+      "difference_relative_to_first_adaptation_percent": 0.10168451841124937
+    },
+    {
+      "dataset": "CapERA",
+      "first": "separate_aircomp_periodic",
+      "second": "sequential_digital_proxy",
+      "parameters_exactly_equal": false,
+      "parameter_difference_L2": 0.007413503160463707,
+      "difference_relative_to_first_adaptation_percent": 3.5589303144240327
+    },
+    {
+      "dataset": "CapERA",
+      "first": "aircomp_ofdma_periodic",
+      "second": "sequential_digital_proxy",
+      "parameters_exactly_equal": false,
+      "parameter_difference_L2": 0.007410385125207404,
+      "difference_relative_to_first_adaptation_percent": 3.557443952445288
+    },
+    {
+      "dataset": "AirScape",
+      "first": "separate_aircomp_periodic",
+      "second": "aircomp_ofdma_periodic",
+      "parameters_exactly_equal": false,
+      "parameter_difference_L2": 0.0002708766737312511,
+      "difference_relative_to_first_adaptation_percent": 0.15687630288268378
+    },
+    {
+      "dataset": "AirScape",
+      "first": "separate_aircomp_periodic",
+      "second": "sequential_digital_proxy",
+      "parameters_exactly_equal": false,
+      "parameter_difference_L2": 0.0068041247751132895,
+      "difference_relative_to_first_adaptation_percent": 3.940560567172596
+    },
+    {
+      "dataset": "AirScape",
+      "first": "aircomp_ofdma_periodic",
+      "second": "sequential_digital_proxy",
+      "parameters_exactly_equal": false,
+      "parameter_difference_L2": 0.0068003814585555974,
+      "difference_relative_to_first_adaptation_percent": 3.9384851641065826
+    }
+  ],
+  "source_sha256": {
+    "results/baseline_fairness_v1_20261027/cases/baseline/capera_seed0/initial20/final.pt": "162fa849a6c73356dff1be5dd647bccc513086c6a605800cac36669182e862fe",
+    "results/baseline_fairness_v1_20261027/cases/baseline/capera_seed0/separate_aircomp_periodic/final.pt": "af638389ca9db9d8087185e8f56713f69fe157b75bd5b1002afec255a372e8e4",
+    "results/baseline_fairness_v1_20261027/cases/baseline/capera_seed0/aircomp_ofdma_periodic/final.pt": "189e4eef4830924fde0e6b28b1cc2299aeebb8e024872992fb694e03aeb7941c",
+    "results/baseline_fairness_v1_20261027/cases/baseline/capera_seed0/sequential_digital_proxy/final.pt": "d8dd07030b45e55a68ef71f0310633663e7e978a909ac0d5466100f728a29f43",
+    "results/baseline_fairness_v1_20261027/cases/baseline/airscape_seed0/initial20/final.pt": "895ef7ee6583ff9f634aea691dda30b6a982e028de8189681e76ab81b6e92950",
+    "results/baseline_fairness_v1_20261027/cases/baseline/airscape_seed0/separate_aircomp_periodic/final.pt": "6c4cf54bc56438846be8ab3f4c02dad7df573cabc8fadce153e247ad2ff23761",
+    "results/baseline_fairness_v1_20261027/cases/baseline/airscape_seed0/aircomp_ofdma_periodic/final.pt": "91bf2d78fb9fa645cff65c7b874b06c628867d5205bcdce5c7bca854e41312a0",
+    "results/baseline_fairness_v1_20261027/cases/baseline/airscape_seed0/sequential_digital_proxy/final.pt": "a4f36ae9bf1cd90970a482d5fd99f6c66ca69274f15df3b5b945ca003968d79a"
+  },
+  "definition": "Euclidean difference of the 20,480 trained adapter coordinates, divided by first model minus shared warm20. The frozen logit-scale coordinate is excluded.",
+  "explanation": "These independently simulated models differ, but shared objective/sampling/LR and tight transport-error bounds yield very similar retrieval rankings. Equal discrete Recall values do not imply identical models."
+}

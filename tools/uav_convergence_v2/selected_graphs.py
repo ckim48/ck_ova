@@ -135,6 +135,8 @@ def generate(comparison="main"):
     from baseline_fairness import MAIN, OUT, CHECKED, OLD, NEW
     from common import METHODS as original_methods
     from report import COLORS, MARKERS, STYLES
+    COLORS, MARKERS, STYLES = list(COLORS), list(MARKERS), list(STYLES)
+    COLORS.append("#4C9F9F"); MARKERS.append("h"); STYLES.append((0, (3, 1, 1, 1)))
     if comparison == "main":
         assert read(OUT / "finished.json")["passed"]
         METHODS, DEST, chart.SOURCE = MAIN, ROOT / "selected_graph", OUT
@@ -142,6 +144,12 @@ def generate(comparison="main"):
     elif comparison == "ablation":
         METHODS = {m: original_methods[m] for m in ["proposed_fu_guard_cliperase", "heuristic_ova", OLD]}
         DEST, chart.SOURCE, indices = ROOT / "ablation_graph", CHECKED, [0, 1, 4]
+    elif comparison == "guard_ablation":
+        import guard_ablation as guard_study
+        assert read(guard_study.OUT / "finished.json")["passed"]
+        METHODS = {m: original_methods[m] for m in ["proposed_fu_guard_cliperase", "heuristic_ova", OLD]}
+        METHODS[guard_study.NEW] = guard_study.LABEL
+        DEST, chart.SOURCE, indices = ROOT / "ablation_graph", guard_study.OUT, [0, 1, 4, 5]
     else:
         assert comparison == "legacy"
         METHODS, DEST, chart.SOURCE = original_methods, ROOT / "results/selected_graph_legacy_20261027", CHECKED
@@ -156,6 +164,9 @@ def generate(comparison="main"):
                "tools/uav_convergence_v2/time_energy_report.py": sha(ROOT / "tools/uav_convergence_v2/time_energy_report.py")}
     if comparison == "main":
         for path in [OUT / "protocol.json", OUT / "verification.json", Path(__file__).with_name("baseline_fairness.py")]:
+            sources[str(path.relative_to(ROOT))] = sha(path)
+    if comparison == "guard_ablation":
+        for path in [guard_study.OUT / "protocol.json", guard_study.OUT / "verification.json", Path(guard_study.__file__)]:
             sources[str(path.relative_to(ROOT))] = sha(path)
     trajectories = {(d, m): chart.convergence(d, m, sources) for d in DATASETS for m in METHODS}
     initial = {}
@@ -260,8 +271,8 @@ def generate(comparison="main"):
         source_sha256=sources, energy_scope="FL/FU service communication + computing + hovering only",
         time_scope="Active mission FL/FU service, including scheduling waits; excludes travel, collection and preflight preparation",
         assumption="The duplicated time-loss item 4 is interpreted as time-mR, completing the round/time by loss/mR set.",
-        status="Completed simulation records, including the registered new S-OF in the main view; plotting preserves raw measurements"))
-    lines = ["# " + ("Matched-objective ablations" if comparison == "ablation" else "Selected graphs"), "", "Six figures only, each exported as PNG, PDF and SVG. "
+        status="Completed simulation records; plotting preserves raw measurements"))
+    lines = ["# " + ("Matched-objective ablations" if comparison in ["ablation", "guard_ablation"] else "Selected graphs"), "", "Six figures only, each exported as PNG, PDF and SVG. "
         f"Left: CapERA. Right: AirScape. Methods: {', '.join(METHODS.values())}. The figures use the established style, regular endpoint ticks "
         "and matched decimal precision. No point-value labels. Bandwidth figures explicitly mark "
         "radio-infeasible conditions with a cross and a separate status legend.", "",
@@ -316,9 +327,9 @@ def generate(comparison="main"):
             "The analog arms retain their original hard network cap. Per-user power/energy, deadline and error checks remain enforced. "
             "See the [protocol and quality audit](../results/baseline_fairness_v1_20261027/README.md) for component definitions, "
             "forgetting diagnostics and all ten new outcomes. No hyperparameter was selected based on these results.", ""]
-    elif comparison == "ablation":
+    elif comparison in ["ablation", "guard_ablation"]:
         lines += ["## Interpretation", "",
-            "All three methods use the same CLIPErase-inspired FM/RM/CM FU objective, model and workload. "
+            "All displayed methods use the same CLIPErase-inspired FM/RM/CM FU objective, model and workload. "
             "H-OVA replaces optimized head/resource allocation with a centroid head/uniform allocation heuristic. "
             "S-OF+ executes FL/FU serially through digital OFDMA with optimized head/tones. "
             "These matched-objective controls are retained to isolate head/allocation and transport/scheduling effects; "
@@ -326,6 +337,13 @@ def generate(comparison="main"):
             "S-OF+ retains its previously authorized soft network-cap fallback, while Proposed/H-OVA keep hard caps.", "",
             "AirScape H-OVA at 4 MHz is radio-infeasible and remains explicitly marked; no energy or delay is fabricated. "
             "The [main comparison](../selected_graph/README.md) additionally reports the new safe-proxy S-OF baseline.", ""]
+        if comparison == "guard_ablation":
+            lines += ["**NG-OVA** removes only Proposed's FU-relative noise guard, retaining the existing joint component-noise "
+                "budget, optimized head/resources, objective and parallel scheduler. It is a project-defined component ablation, "
+                "not an independent published algorithm. All five bandwidth conditions were registered before the new outcomes. "
+                "A curve is not moved or interpolated to occupy an intermediate rank. See the "
+                "[guard ablation audit](../results/guard_ablation_v1_20261027/README.md) for all measured outcomes and the "
+                "diagnostic explaining the overlap of the existing proxy-objective baselines.", ""]
     (DEST / "README.md").write_text("\n".join(lines))
     print(dict(figures=len(figures), series=len(series), ledger_rows=len(ledgers),
                baseline=[r for r in ledgers if r["bandwidth_MHz"] == 1 and r["method"] == "proposed_fu_guard_cliperase"]), flush=True)
@@ -333,5 +351,5 @@ def generate(comparison="main"):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--comparison", choices=["main", "ablation", "legacy"], default="main")
+    parser.add_argument("--comparison", choices=["main", "ablation", "guard_ablation", "legacy"], default="main")
     generate(parser.parse_args().comparison)

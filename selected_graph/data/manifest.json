@@ -113,11 +113,11 @@
         },
         {
           "file": "01_round_fl_loss_1x2.pdf",
-          "sha256": "38f7c31fc1a3b07ca135a934072fa1c2543373c95d99e4910d8cdb8a5745c587"
+          "sha256": "10076c4f320a357285c20ae72c29ca17abbb3015ae545a764bbc56ce5384eac4"
         },
         {
           "file": "01_round_fl_loss_1x2.svg",
-          "sha256": "182524e3a987a59f053c0cc86c1ed45a55c162a94bffd7399ef40a356d3e6944"
+          "sha256": "06641edece167b53acdc44918ab2c08ce19fe435a1d282f4b9faf2d875a861e9"
         }
       ],
       "status_markers": []
@@ -221,11 +221,11 @@
         },
         {
           "file": "02_round_mr_1x2.pdf",
-          "sha256": "858390d6e12992f05759f5514f37d1e8a153309c0e6ee68f52b595c36e61a573"
+          "sha256": "8bbfa9ddc48cceca0c966e7afd0d64dba49ae71b451294de755688f46b1599ca"
         },
         {
           "file": "02_round_mr_1x2.svg",
-          "sha256": "6835e3195977892a436fa59b94ccf6863966f9bed2a690fbd37ac8d61c5b806f"
+          "sha256": "243d516123c6a1489e94ea2bbdc6fc43e4ae65d707df13bf1d98cf8b55d70c41"
         }
       ],
       "status_markers": []
@@ -329,11 +329,11 @@
         },
         {
           "file": "03_time_fl_loss_1x2.pdf",
-          "sha256": "cb589a31759edad47d382c6b8b79b3bbd72b2876932300f1a7ea64c72b3a8ab5"
+          "sha256": "68452f25dabfc0824a90f608565a841a2da03461499d9a57e69be1bc935f80d5"
         },
         {
           "file": "03_time_fl_loss_1x2.svg",
-          "sha256": "b9e27662754fe3a37f02feacd1ab33d432c1769555576ff8da4f8d67144a422f"
+          "sha256": "83810bdded8e64cca9d9f9b4fec66e4f40840e5fe1c7ed0f426e4d048ccc308c"
         }
       ],
       "status_markers": []
@@ -437,11 +437,11 @@
         },
         {
           "file": "04_time_mr_1x2.pdf",
-          "sha256": "2f12123157373e064ec64967f9a20f0c9c151312a58f600b434164ce5df2ec73"
+          "sha256": "a7f7bd871b84e19394e0e04b9c689ec712412c50600473eafbe3d8bca20f3f87"
         },
         {
           "file": "04_time_mr_1x2.svg",
-          "sha256": "1013e7e7b140fcd02b847235f65d4133cbbfeb21ed02b8b2d6933fa08488d5bb"
+          "sha256": "09efe2fca618788c43b0f9e10ca2a4fc808c94ff2fff7700675807277d9ddd8a"
         }
       ],
       "status_markers": []
@@ -555,11 +555,11 @@
         },
         {
           "file": "05_bandwidth_total_energy_1x2.pdf",
-          "sha256": "d587c5b3c1a3358c5adc6f1affc9f65c4dc52f991f0d3bb22df1551afca4324a"
+          "sha256": "3f08256a0ffbaf27beb53a93a51e6752f68045628be6395608bfce44b94261a5"
         },
         {
           "file": "05_bandwidth_total_energy_1x2.svg",
-          "sha256": "96a017344d5d565eb36d3fd51b4bedaaa7cb3144edce0eeb37b05ec86cbf9099"
+          "sha256": "6af6baea30ca6538e45de876fad9ba2ccdf5fc20dc6fda8718312a6f9ceaa56e"
         }
       ],
       "status_markers": []
@@ -661,11 +661,11 @@
         },
         {
           "file": "06_bandwidth_delay_1x2.pdf",
-          "sha256": "5ee653a8e8b84f4fd58ef7e2a0041402fb49622a4dd9fcba74f71d49acc81cf6"
+          "sha256": "00ce0c3beb1d5aa019238a5515a8ac70f2f422ccd6e9d54b32e844423fdfed56"
         },
         {
           "file": "06_bandwidth_delay_1x2.svg",
-          "sha256": "9572a2b9a9eae9fd1d598e9727d0bc83e941546ba897cbfa0b484571da232127"
+          "sha256": "cd96dbfb4bd708dccc26a376949526c67707c0ab9b901c5fec1b8f0724a86be7"
         }
       ],
       "status_markers": []
@@ -673,7 +673,7 @@
   ],
   "comparison": "main",
   "source_sha256": {
-    "tools/uav_convergence_v2/selected_graphs.py": "82356cfb5b884368270052536bcc1b1a90115765c765f9d6e32517ebdfebe1b6",
+    "tools/uav_convergence_v2/selected_graphs.py": "5dce2e80122de349049871a5cb70496ff8ec2af3361abb256e875b7903656752",
     "tools/uav_real_vlm_v1/energy.py": "ed3d27a04b38de1991533b199782ad056a61c20a2148bb345c8b187706f1a004",
     "tools/uav_convergence_v2/time_energy_report.py": "0fa0d4e46e0518c0ab458792cce72b7a3f58ccb497a1b3dd3937f72c445dd70a",
     "results/baseline_fairness_v1_20261027/protocol.json": "bef67571c425fa1a01761aa418bf04c1a10626d52f631332377a56497af80884",
@@ -18312,5 +18312,5 @@
   "energy_scope": "FL/FU service communication + computing + hovering only",
   "time_scope": "Active mission FL/FU service, including scheduling waits; excludes travel, collection and preflight preparation",
   "assumption": "The duplicated time-loss item 4 is interpreted as time-mR, completing the round/time by loss/mR set.",
-  "status": "Completed simulation records, including the registered new S-OF in the main view; plotting preserves raw measurements"
+  "status": "Completed simulation records; plotting preserves raw measurements"
 }

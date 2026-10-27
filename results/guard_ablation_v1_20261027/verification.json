@@ -1,0 +1,108 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "case": "baseline",
+      "dataset": "CapERA",
+      "status": "completed",
+      "wall_seconds": 42.08438205718994,
+      "transactions": 180,
+      "joint_transactions": 45,
+      "epsilon_ratio_min": 1.2885120980877915,
+      "epsilon_ratio_max": 1.6471607363111385
+    },
+    {
+      "case": "baseline",
+      "dataset": "AirScape",
+      "status": "completed",
+      "wall_seconds": 27.234262704849243,
+      "transactions": 180,
+      "joint_transactions": 45,
+      "epsilon_ratio_min": 1.2565626412140989,
+      "epsilon_ratio_max": 1.7669010783198908
+    },
+    {
+      "case": "bandwidth_0p25",
+      "dataset": "CapERA",
+      "status": "completed",
+      "wall_seconds": 41.08240032196045,
+      "transactions": 180,
+      "joint_transactions": 45,
+      "epsilon_ratio_min": 1.2885121056107474,
+      "epsilon_ratio_max": 1.6471607668942938
+    },
+    {
+      "case": "bandwidth_0p25",
+      "dataset": "AirScape",
+      "status": "completed",
+      "wall_seconds": 26.114970445632935,
+      "transactions": 180,
+      "joint_transactions": 45,
+      "epsilon_ratio_min": 1.256562863662732,
+      "epsilon_ratio_max": 1.7669021484018317
+    },
+    {
+      "case": "bandwidth_0p5",
+      "dataset": "CapERA",
+      "status": "completed",
+      "wall_seconds": 40.99679207801819,
+      "transactions": 180,
+      "joint_transactions": 45,
+      "epsilon_ratio_min": 1.2885120972754778,
+      "epsilon_ratio_max": 1.6471607194293165
+    },
+    {
+      "case": "bandwidth_0p5",
+      "dataset": "AirScape",
+      "status": "completed",
+      "wall_seconds": 25.504429578781128,
+      "transactions": 180,
+      "joint_transactions": 45,
+      "epsilon_ratio_min": 1.2565628438818328,
+      "epsilon_ratio_max": 1.7669021396106537
+    },
+    {
+      "case": "bandwidth_2",
+      "dataset": "CapERA",
+      "status": "completed",
+      "wall_seconds": 40.64323973655701,
+      "transactions": 180,
+      "joint_transactions": 45,
+      "epsilon_ratio_min": 1.2885114900757824,
+      "epsilon_ratio_max": 1.647157554961411
+    },
+    {
+      "case": "bandwidth_2",
+      "dataset": "AirScape",
+      "status": "completed",
+      "wall_seconds": 25.781450033187866,
+      "transactions": 180,
+      "joint_transactions": 45,
+      "epsilon_ratio_min": 1.256561749982219,
+      "epsilon_ratio_max": 1.7668968005754297
+    },
+    {
+      "case": "bandwidth_4",
+      "dataset": "CapERA",
+      "status": "completed",
+      "wall_seconds": 40.56341552734375,
+      "transactions": 180,
+      "joint_transactions": 45,
+      "epsilon_ratio_min": 1.2885084698988316,
+      "epsilon_ratio_max": 1.647184062876923
+    },
+    {
+      "case": "bandwidth_4",
+      "dataset": "AirScape",
+      "status": "completed",
+      "wall_seconds": 26.8084077835083,
+      "transactions": 180,
+      "joint_transactions": 45,
+      "epsilon_ratio_min": 1.2565676218359407,
+      "epsilon_ratio_max": 1.766892861136631
+    }
+  ],
+  "outcomes": {
+    "completed": 10
+  }
+}
