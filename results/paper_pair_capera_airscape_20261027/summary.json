@@ -4,14 +4,14 @@
     "AirScape"
   ],
   "seed": 0,
-  "terminal_arms": 210,
+  "terminal_arms": 250,
   "expected_arms": 410,
   "status_counts": {
-    "completed": 192,
-    "incomplete_no_feasible_radio_design": 17,
+    "completed": 230,
+    "incomplete_no_feasible_radio_design": 19,
     "failed": 1
   },
-  "figure_count": 62,
+  "figure_count": 74,
   "figures": [
     {
       "name": "bandwidth_total_energy_j_1x2",
@@ -22,11 +22,11 @@
         },
         {
           "file": "figures/bandwidth_total_energy_j_1x2.pdf",
-          "sha256": "1482f84cb162c0c6a837d1d8a693c63849515d47474a3bc8f2b7bedbe2ab7840"
+          "sha256": "7abcb42996fae4d93f47c952b23929e8680aebe5390b3713352a1b9abf2aa85a"
         },
         {
           "file": "figures/bandwidth_total_energy_j_1x2.svg",
-          "sha256": "72c04da35909fa7c1f8f69df3d311cecbdee51ebaa1c07b33efa669da6531b65"
+          "sha256": "94091011ea1d2e2b615ea456134a6c3f7219a9e0314889d0595f9459b2a0a369"
         }
       ]
     },
@@ -39,11 +39,11 @@
         },
         {
           "file": "figures/bandwidth_FL_FU_completion_delay_s_1x2.pdf",
-          "sha256": "e86eba8f9c4d9e1affe71e423b32726e7160b81176a1a8d4e6a0df079c4120d3"
+          "sha256": "c286647ffacd1ff1d552dd1e59f79d767d7bf5753e7eb385d42777b003298394"
         },
         {
           "file": "figures/bandwidth_FL_FU_completion_delay_s_1x2.svg",
-          "sha256": "fbbef7032243a94a6c4c22bccf8855295de2b2f7db5ebe52a12dd6e4a0f40cdb"
+          "sha256": "fb948571d037393d6a133d763fd042dbfb8377ae2fbc7a3c65a67ba6b1842b16"
         }
       ]
     },
@@ -56,11 +56,11 @@
         },
         {
           "file": "figures/bandwidth_mission_delay_s_1x2.pdf",
-          "sha256": "d9aa9f88c28bf98cd1de0303a0f403bab8f5c0904385127ce5fed998ce8fdd12"
+          "sha256": "9eae486d38eb6323ea71dddc53ab40078b4657db2bb521f1bd8a3c4c9daca710"
         },
         {
           "file": "figures/bandwidth_mission_delay_s_1x2.svg",
-          "sha256": "3687ac8cac99826e9cb939f569c08be75fba49a1f1e3dfe7882c6e3e2b428e91"
+          "sha256": "67c06ecb17019af259f73b3cb3abb9906adee133697b488dd6818eb32620abcd"
         }
       ]
     },
@@ -73,11 +73,11 @@
         },
         {
           "file": "figures/bandwidth_total_delay_s_1x2.pdf",
-          "sha256": "e3f775ee94214b74428bb30aa8e491d7ddebb8fbcc6d99dd28286eca048cf631"
+          "sha256": "2aaf831ebaaa5c2d5fc5dc4666400528f2ce80c77d77cadecee6e0b25c2194b6"
         },
         {
           "file": "figures/bandwidth_total_delay_s_1x2.svg",
-          "sha256": "22c3e8e0a3face59acea7a81ba7c407f5eade1fefd32025ea9cd78571c4669af"
+          "sha256": "50a5e436e59840c15fb6f2f8634c23d20da34a0c1668683dfd2556c66eeb1897"
         }
       ]
     },
@@ -90,11 +90,11 @@
         },
         {
           "file": "figures/bandwidth_FU_mean_completion_latency_s_1x2.pdf",
-          "sha256": "0bef4d6b6d3b890afd4b66bcef3ea56cbdae5859f39863af6bdb107fa4790821"
+          "sha256": "d60ff9bb9b06ad595df1da6f0b85e5e5b7a26bf33f79037627a04c5550cfdac4"
         },
         {
           "file": "figures/bandwidth_FU_mean_completion_latency_s_1x2.svg",
-          "sha256": "b62da768ca794ef4ff49c52ec3078af16988e40056ee00f0c21e5d6dc1c61984"
+          "sha256": "14e229befceea5a3baf3ee8a6785ff8a1df3c90997aea134ce26d03ee3c603b1"
         }
       ]
     },
@@ -107,11 +107,11 @@
         },
         {
           "file": "figures/bandwidth_FL_FU_active_service_s_1x2.pdf",
-          "sha256": "87cd2d268673723d8c407903f0d3bf32cd8694bf2394820883b159062425bdb4"
+          "sha256": "38a115c95437c54e51b272cc87e98aff6746a061dd53b5854f9073b95a7d4438"
         },
         {
           "file": "figures/bandwidth_FL_FU_active_service_s_1x2.svg",
-          "sha256": "00be3d6eaefecda1ccd6c49e586027add9cb603b661ffb0698d3a7ffabc7be6d"
+          "sha256": "8bb6182e3cb59fa448e252f25a5c42bc164c459193c93cf7da6b1c92b7d59fcb"
         }
       ]
     },
@@ -124,11 +124,11 @@
         },
         {
           "file": "figures/bandwidth_energy_hover_j_1x2.pdf",
-          "sha256": "d100689fddc822b98f6c3c85b45f1690c5d25399359dfdd097c4dc99d6337ddb"
+          "sha256": "b9ff82b69d92264967cb92f0922999bd5739c20bbfca976826435a8835868c58"
         },
         {
           "file": "figures/bandwidth_energy_hover_j_1x2.svg",
-          "sha256": "918f6caab0e3f2613e2e02fc8eba4a01681d426cd6d2c7001d5a92151f701dfd"
+          "sha256": "83c01c278c8f496fe521ede0fff8d3dca42b8a7a3fdac598bbe1368ac3bf64e4"
         }
       ]
     },
@@ -141,11 +141,11 @@
         },
         {
           "file": "figures/bandwidth_energy_communication_j_1x2.pdf",
-          "sha256": "db8e67b55ce13059a79a87d285b624b7c9d1384b73906806846951991d03bc0d"
+          "sha256": "008652abc5ac133c0df14590dc66e765fa630af5341ef0d445c2bf4729015f25"
         },
         {
           "file": "figures/bandwidth_energy_communication_j_1x2.svg",
-          "sha256": "3d7c57d0bc0eabed31dd16438a2fc219f65dcb702dfe018c0f754d0b10923e05"
+          "sha256": "c9d60ce6dbb975bae96d3a9317ffd7b0f47a7658a1b29376c845e477aa14d120"
         }
       ]
     },
@@ -158,11 +158,11 @@
         },
         {
           "file": "figures/bandwidth_adaptation_RF_energy_j_1x2.pdf",
-          "sha256": "acdccf42b9de354b55192cb56a5142fca036bb641c203ef81a76928d1bbe3c20"
+          "sha256": "579ed412edaa9a3cf0decf9a558481225de34dd8d52957197eab28f489f3a8ef"
         },
         {
           "file": "figures/bandwidth_adaptation_RF_energy_j_1x2.svg",
-          "sha256": "ef7b4bf2d302b7520cec83a13bca1097703be69163685bb61291b838910ac505"
+          "sha256": "0cf8fcabdaa9d82f405fb9503f9d8708308bd45c35478ac135b2956f48f5b1d9"
         }
       ]
     },
@@ -175,11 +175,11 @@
         },
         {
           "file": "figures/bandwidth_uplink_s_1x2.pdf",
-          "sha256": "829d85103e3572c464998be12bccf1ee8504a8b8bb10a6fb580f8e5a985fc681"
+          "sha256": "8a24ecfc4ea1b1d294ed147b7dd771d14d725bd3aeff67948c30100f2869cb1e"
         },
         {
           "file": "figures/bandwidth_uplink_s_1x2.svg",
-          "sha256": "8ed976c0d5c13938d3d4c305c461098776ab6dbce13b31b21514174a15c638d7"
+          "sha256": "4f00d3e8a714fc9c89d89402ad1ac6759f455cec5be855866f5f88870ce253ec"
         }
       ]
     },
@@ -192,11 +192,11 @@
         },
         {
           "file": "figures/bandwidth_loss_1x2.pdf",
-          "sha256": "a442628eb83c2b107fa74c4f73ed5905534d1bbb9ed37bbacc82ad91db99ca9f"
+          "sha256": "64e6f16c7e076d6fb7680246a2c4ae7c04f3d0310a29cf712835b61293a4de45"
         },
         {
           "file": "figures/bandwidth_loss_1x2.svg",
-          "sha256": "aacb6b8f104eeca6cc9cf1733852ae0508102d0d6e2f11d8a7e7a54c2c481730"
+          "sha256": "a4d0ca5a445116029013fbbb3a83477ccc9da2c79f92258a6f6f895275cd2e96"
         }
       ]
     },
@@ -209,11 +209,11 @@
         },
         {
           "file": "figures/bandwidth_mR_1x2.pdf",
-          "sha256": "caf3853c304173bbd3c1978b54682b3a08257673b6050651000522bc6abae4f5"
+          "sha256": "839c9d2f0c0609d0ea42ca12634156438eb72f4d120df629b94a58f472b8f5dc"
         },
         {
           "file": "figures/bandwidth_mR_1x2.svg",
-          "sha256": "975f3bd9fe11ee8cd63eccab8870cd1e52447165e862ba729650f04f9369e6da"
+          "sha256": "614cd5849f983d7a19c66904ef4fe572061280488b2a7beedf2328feac2824fd"
         }
       ]
     },
@@ -226,11 +226,11 @@
         },
         {
           "file": "figures/downlink_total_energy_j_1x2.pdf",
-          "sha256": "553b0ae0c8886d0ca4f59764fcf593498577f7a79d4f846d793c5978a87160fc"
+          "sha256": "8dce4891d25963ec36d33ce4814462098abe42fd746f8dd4a4e7c08a11ea9195"
         },
         {
           "file": "figures/downlink_total_energy_j_1x2.svg",
-          "sha256": "143e76c3caa55fb87b360c2b6e98cba5bfaa10c3a3e329537e99cc42d591233e"
+          "sha256": "04c248bf08b8369156d31ff071e6abb0166bb7502d02282a73529b2adc320a64"
         }
       ]
     },
@@ -243,11 +243,11 @@
         },
         {
           "file": "figures/downlink_FL_FU_completion_delay_s_1x2.pdf",
-          "sha256": "a8325f8c1111577b77cc3f5a2aed36e98186a55329cd55f076d9c9b7cdff0b1d"
+          "sha256": "9c03a78e28f10620321c11c0a0e651cb6a679584d325c403afddfe239eceea68"
         },
         {
           "file": "figures/downlink_FL_FU_completion_delay_s_1x2.svg",
-          "sha256": "a82553e7f39673a23fd41d306854bf7614bde328d065a6ac6c376464a1e4246d"
+          "sha256": "a47f67cb9f5c81eac2d2949e751deda62211bfc9a62b21b18ab734ca6b052dc8"
         }
       ]
     },
@@ -260,11 +260,11 @@
         },
         {
           "file": "figures/downlink_mission_delay_s_1x2.pdf",
-          "sha256": "2b2bf963fe3ae22f602d7734a5f9bba44047a9280c84d819ae1adac058051783"
+          "sha256": "8a702c0ecdcf553bfee896e24e117580ed6de012181d0fc986f139e9e8c3d825"
         },
         {
           "file": "figures/downlink_mission_delay_s_1x2.svg",
-          "sha256": "3f3fbacb91ca8272982f39d662065da0d4b43e0f6f864bc79bd043a5a3bc7076"
+          "sha256": "9e598f6dc51d7604d52b5ebf21bebc4f58c95ac3809d84ca50c2ce6a9a09d075"
         }
       ]
     },
@@ -277,11 +277,11 @@
         },
         {
           "file": "figures/downlink_total_delay_s_1x2.pdf",
-          "sha256": "db7d15f0e5cf17dfb51affff66888b21b7f2ea77fdbce53d935c689f2f6a3a61"
+          "sha256": "20e56c70ec58402f62f2ac5a5ee33ba8b4d313b4770cb06c5eb709e655204527"
         },
         {
           "file": "figures/downlink_total_delay_s_1x2.svg",
-          "sha256": "0dc04724789ac96a5d89b16eb08a64b36c8a5fc9f01993df37e3cb736266e8f7"
+          "sha256": "8be1bd38d09cf133219b22ff0546ce3c2193b5c1c55dab15942ad73cc3527469"
         }
       ]
     },
@@ -294,11 +294,11 @@
         },
         {
           "file": "figures/downlink_FU_mean_completion_latency_s_1x2.pdf",
-          "sha256": "e145f08c0ed28dde09be68e7d0ce246a3e6e57d5d332a4b606f14418e03319d9"
+          "sha256": "0688bd27a11c8db2f1ad506bb05e20c8ed5c7ef80e66f71141612f2c5df47a80"
         },
         {
           "file": "figures/downlink_FU_mean_completion_latency_s_1x2.svg",
-          "sha256": "4e069e093f36ef83160a689ae31c19dd3cf85c13ba4db69ede024943879f090d"
+          "sha256": "93aa9689ce8522411739bb88293deb544e2b51c3dc82099e0d633a69e28e501f"
         }
       ]
     },
@@ -311,11 +311,11 @@
         },
         {
           "file": "figures/downlink_FL_FU_active_service_s_1x2.pdf",
-          "sha256": "aa2be9ea07beb132400425538175595153ec138255a78a0ddca9da24fbbc0311"
+          "sha256": "f9ced442a15b28180144f5d639950e36ef078731440401bcbd803b3f87a45ceb"
         },
         {
           "file": "figures/downlink_FL_FU_active_service_s_1x2.svg",
-          "sha256": "2e63f50530a3624924c355dc495478bd8852e2e9868571c2a19662116739f831"
+          "sha256": "8d8207bd34ce0095ca81cddb3713ee72c19b1bfffd68e1305b0615e418aa89ec"
         }
       ]
     },
@@ -328,11 +328,11 @@
         },
         {
           "file": "figures/downlink_energy_hover_j_1x2.pdf",
-          "sha256": "5f3a7a908e4914608b7705b87e35c695421bcc5e5fe72b7926a0f4ff84b514e3"
+          "sha256": "15493cf6bb9b1290fbdf9ec9c41ae9b1b9fcac12f86d87d4eef46984a7da01e4"
         },
         {
           "file": "figures/downlink_energy_hover_j_1x2.svg",
-          "sha256": "12bb4bbefe62a63bb2e24cbc8eb0823fd103a7bf0a76c19879f945f9eba49141"
+          "sha256": "b120ea1f9f91e855cc48aabea15c6f38659efffb2b74054bb73b165269cae58d"
         }
       ]
     },
@@ -345,11 +345,11 @@
         },
         {
           "file": "figures/downlink_energy_communication_j_1x2.pdf",
-          "sha256": "7dad781b41e99a6b0162b741311337fc032d60026c070f52635569a42a2f8d60"
+          "sha256": "b17e84df6bca7c752db31f801321099f376bdc9c566cfe1700aea2945bd2338e"
         },
         {
           "file": "figures/downlink_energy_communication_j_1x2.svg",
-          "sha256": "68c9a2307b901375279aa4f69bb095259d9ea3732353699b8043e057b39c41a4"
+          "sha256": "88152dab1a523545ccdfa6c644b9a5ef80c7993d76697712c28b4856190267ce"
         }
       ]
     },
@@ -362,11 +362,11 @@
         },
         {
           "file": "figures/downlink_adaptation_RF_energy_j_1x2.pdf",
-          "sha256": "ad4de40dbe11e9bcd9e362803e203686f220f6784bcba35d028bf9cff6e42114"
+          "sha256": "2877683354c86283c37dfd4e990690e4e67564c581cb8be606bef326a0bab661"
         },
         {
           "file": "figures/downlink_adaptation_RF_energy_j_1x2.svg",
-          "sha256": "5b10ba7b652ab8dfc5d15b1e207d1c6b5f5d00c83b611dcdb2a3e511bbc65b35"
+          "sha256": "dfdcf5b33072424104fcc42f18098a3ce9838257b4ef86bf3fff93c712bcacf6"
         }
       ]
     },
@@ -379,11 +379,11 @@
         },
         {
           "file": "figures/downlink_uplink_s_1x2.pdf",
-          "sha256": "04d59bf996b00947e76284b3ee1be35e6de83857c1820bd7d5b106646cd972df"
+          "sha256": "1b8048df525bad1c3bb71aa691423a06806bc29ceb786d2f6eed327d1775bc55"
         },
         {
           "file": "figures/downlink_uplink_s_1x2.svg",
-          "sha256": "acb5eb13a84a1612cd5e89cff401887b5a4d70b6d9545dae28387049bc7aeb7d"
+          "sha256": "7d8a506537420453b840ce0e34b24d63414557fb2469e556773d444683df1142"
         }
       ]
     },
@@ -396,11 +396,11 @@
         },
         {
           "file": "figures/downlink_loss_1x2.pdf",
-          "sha256": "eeca31e7573aff4c64109218a5593080cb062151f1878a052629515659a37e84"
+          "sha256": "1b2f128dc3c69392323e8a304fcc980f5593baa7ab6d10d02c5539bde5a4f4e3"
         },
         {
           "file": "figures/downlink_loss_1x2.svg",
-          "sha256": "3110f7ab59ea72f9f43374a3d86f7bb8023ea48a5143082aa2793f4363233b24"
+          "sha256": "687c5a64cfa58dc569410d532a2aae02a48a441bea53b038669007648fa2fdc1"
         }
       ]
     },
@@ -413,11 +413,11 @@
         },
         {
           "file": "figures/downlink_mR_1x2.pdf",
-          "sha256": "66e3dd9e3577811491ed344638419bd44351cc5a5c3d7d14cd516f1cc8b34d11"
+          "sha256": "8eb9e58e636d3db68afec748fd0ffed6d7257c4b9143700459cf978af2b3f68d"
         },
         {
           "file": "figures/downlink_mR_1x2.svg",
-          "sha256": "f3f33d37cb8032bd17d2bcc68c9b65235fcbb65069e3d8b4deed2bc3d35f7ad1"
+          "sha256": "94bfad621d2712fd6c40156c58591004ece4076f649c581d77d4674ab028351c"
         }
       ]
     },
@@ -430,11 +430,11 @@
         },
         {
           "file": "figures/power_total_energy_j_1x2.pdf",
-          "sha256": "0676b749caa595ea4d96c05f2536e2234f9f2a4b9fbf9fd0eb1ca80f3902ba63"
+          "sha256": "628c686dad7cc729fdbb6f7b4374b469478727f6f77a1ab04d5630c448de4cb8"
         },
         {
           "file": "figures/power_total_energy_j_1x2.svg",
-          "sha256": "297e7b9bbcbf822fba1b2b10f4135fe3d0f206e26858d96bf8e59a03b03dc081"
+          "sha256": "464f4b30eface86b3af39e1704f58ccda3ca8b91a62e4a52a7d70fc32e28549d"
         }
       ]
     },
@@ -447,11 +447,11 @@
         },
         {
           "file": "figures/power_FL_FU_completion_delay_s_1x2.pdf",
-          "sha256": "72cfe59a77f8897234cd02b190d4ce1290990e197940c6f229a33cb2ac8f95fc"
+          "sha256": "daaf9b73049246dfd634e7521f3be9d17cd255390d786103692e003a4d329961"
         },
         {
           "file": "figures/power_FL_FU_completion_delay_s_1x2.svg",
-          "sha256": "aa19403fbe5b309fd9c45a913da6180d9dcd9b58a6134c1447619b8312d518b9"
+          "sha256": "b72a3f62ea3f9e65481d7896e6ae8854629fd8aa156e1f6c377e24424c595a32"
         }
       ]
     },
@@ -464,11 +464,11 @@
         },
         {
           "file": "figures/power_mission_delay_s_1x2.pdf",
-          "sha256": "bcfde16b39025d6a321f92c01a43c894392561f025a6b7a222b5d44ef220134f"
+          "sha256": "20f37a6932b3a2cfa6e398e1df41efae4044604f46dd0d09abd3b466d6b21fb4"
         },
         {
           "file": "figures/power_mission_delay_s_1x2.svg",
-          "sha256": "3dc8a8a1ff2495146be655e2f6094b86cd3122c5ac6398f3fc8f7050f1396c8e"
+          "sha256": "37f61ec2e0351536f05c14977cc239438db3186e542a6c78c4a1e0ece6b11337"
         }
       ]
     },
@@ -481,11 +481,11 @@
         },
         {
           "file": "figures/power_total_delay_s_1x2.pdf",
-          "sha256": "8e71c453cd3482d94acfd0188ad9bb0e618cebff116b93597170bb10c42a493e"
+          "sha256": "3674c176c81f97ee2dad8b99147b24ba5e2410c014487703084879d5750c1f9e"
         },
         {
           "file": "figures/power_total_delay_s_1x2.svg",
-          "sha256": "78e7413444a917bf99a92c0bb368f836bb7fb548dd62a206bb98509f8ff4d42d"
+          "sha256": "3274471719625bfcde0d3f2dab2f1cac6eca24c3464b6cabb3deab5e14ecacfb"
         }
       ]
     },
@@ -498,11 +498,11 @@
         },
         {
           "file": "figures/power_FU_mean_completion_latency_s_1x2.pdf",
-          "sha256": "73e066b109ac284ce5167221f301b7a4d26daf618b54deef942ff9b0bfa75ca2"
+          "sha256": "ca060fea1e88cb095865c0c6582c117ed511cdfbb5658c09d6910098202bebb3"
         },
         {
           "file": "figures/power_FU_mean_completion_latency_s_1x2.svg",
-          "sha256": "90d5929da58e0250b179e94b4ee63b98df406e0ce11bc76b0e8b531f20ca322d"
+          "sha256": "6da19b4d3b81df43a68dfe200f3dbde81464ae4f608dfb19f01d83c9501be140"
         }
       ]
     },
@@ -515,11 +515,11 @@
         },
         {
           "file": "figures/power_FL_FU_active_service_s_1x2.pdf",
-          "sha256": "dafb700bbfe4ff929aefa94ed04c180acc0a0df59e8c6c0e1463c2694a2dc789"
+          "sha256": "8d89626aea97bc9dcab4ec03d6b38597b5034aad55de6805ce159cbcdf5fd441"
         },
         {
           "file": "figures/power_FL_FU_active_service_s_1x2.svg",
-          "sha256": "eb9e68a270a2c3a7814ff1c29abc2074d772ad21055c0f1000d29b5ca852f697"
+          "sha256": "191ef330155949d43a3e7d3550a06317a8383be49af945e45e13b3e1ca264744"
         }
       ]
     },
@@ -532,11 +532,11 @@
         },
         {
           "file": "figures/power_energy_hover_j_1x2.pdf",
-          "sha256": "e1fd2108205867d20ecf89833b09d5b326a08879a8a6f0a313595731357685be"
+          "sha256": "b7be5d535426ab047303d0ae45032d5cb15beed62a8fb447013774c4b127f78f"
         },
         {
           "file": "figures/power_energy_hover_j_1x2.svg",
-          "sha256": "1a00fe039c1a8d7c0ea8cf6cac3531f64249cff2735147f28a9e157afb16c240"
+          "sha256": "2229f1aa5a0635c46d59ab13bbfca690bcc1ad4e1341e0b838e415731fb25532"
         }
       ]
     },
@@ -549,11 +549,11 @@
         },
         {
           "file": "figures/power_energy_communication_j_1x2.pdf",
-          "sha256": "b9cc340fce26d3e00b02d03942dff57aba23d9cee5e79ee97b0b9e3cd7ab660f"
+          "sha256": "71da414e4ceea0e0324e81c680d2175bf01ee26b58dafe71486f6497ed188ceb"
         },
         {
           "file": "figures/power_energy_communication_j_1x2.svg",
-          "sha256": "ada6a343ba109d11c13ab55224c2ac8aad670e7da87315a0521d4a59c38426c8"
+          "sha256": "84aa934b48e71ff6d5cb19d85d24096c7c35a2295cb806db899be0ea4c74ef8c"
         }
       ]
     },
@@ -566,11 +566,11 @@
         },
         {
           "file": "figures/power_adaptation_RF_energy_j_1x2.pdf",
-          "sha256": "14976f72590f2b76a0802bf7e9049ea70b90e6f404b4095c6596f7d8ba2cb492"
+          "sha256": "b99100380a3f3a9ba2307570b47a86407365d0e9b44c9089abf6a67d83aab603"
         },
         {
           "file": "figures/power_adaptation_RF_energy_j_1x2.svg",
-          "sha256": "03ae3bcc2582908d4a946909a4d2c4298f09af41b44ff30ec52676bc3f55d807"
+          "sha256": "2b25a9a69d25beab45d438ff15032c6deefcab10c15a3c2b773604900f9d3f91"
         }
       ]
     },
@@ -583,11 +583,11 @@
         },
         {
           "file": "figures/power_uplink_s_1x2.pdf",
-          "sha256": "8a7a401fe30a578d2066e8a6bbbcf47f2ead190c48e7cbb8f69ca657aee1add7"
+          "sha256": "defd7491ff0137865b276dc67a36a3e308ff71b42c29afe5970a5c2aedaf3c63"
         },
         {
           "file": "figures/power_uplink_s_1x2.svg",
-          "sha256": "d85959febe473bb8014795758bd2ff43b6abdb5f27f474415b15196b904bf2fc"
+          "sha256": "5d832ed6d2054cc811474bb9d5df3d8b4cf334f4645449a5a8c71949f15511be"
         }
       ]
     },
@@ -600,11 +600,11 @@
         },
         {
           "file": "figures/power_loss_1x2.pdf",
-          "sha256": "065150b4915896ecdd2bf953986075fb71c9450b6428bf676e557db45f544754"
+          "sha256": "28f71efbf9eb90eb2c831a66ba26232f74680bd12bae134734b2ea84255f66ae"
         },
         {
           "file": "figures/power_loss_1x2.svg",
-          "sha256": "bb906f62ff3de11c2a3c3b9b01e156f55c719d6c906b68a542b1d66ef5ffae71"
+          "sha256": "cb93e8c93c7058888438dd7962c7dc1ef94c91c64f7823f6533357b04c368f68"
         }
       ]
     },
@@ -617,11 +617,11 @@
         },
         {
           "file": "figures/power_mR_1x2.pdf",
-          "sha256": "a030d7fccf6f85bd6e375cff0bd810a60e26fbcc6ad5696f719889fc9bf386ac"
+          "sha256": "6146ab64d5e909403cecc36f8add66204616f57c215773caff7adf8dcb18766f"
         },
         {
           "file": "figures/power_mR_1x2.svg",
-          "sha256": "bb79ef2eeaefc35d4e76ab1b50abf7dedac7440179f42e4245cf1d1b8776f694"
+          "sha256": "2c96197fa4a690e43c8ae7215ce20ba19341076ffb64855956dbc9310cef311c"
         }
       ]
     },
@@ -634,11 +634,11 @@
         },
         {
           "file": "figures/network_cap_total_energy_j_1x2.pdf",
-          "sha256": "7072b834fe069b9878cb8a20fce91ec87d259229a90532725177ed8eb5b02604"
+          "sha256": "0022572d7dc399f3adf958e93117a713ccfc3afad97acf4a3ddac1a947e4ffdd"
         },
         {
           "file": "figures/network_cap_total_energy_j_1x2.svg",
-          "sha256": "93c326c9ea2bee03e6d41860419187029311e6a2ce726355c36cc35eaceef06f"
+          "sha256": "ab63910ee5cbae7d5ceb21eb5ad65fb9961999abc2bca617bd4a25c0f607dfe1"
         }
       ]
     },
@@ -651,11 +651,11 @@
         },
         {
           "file": "figures/network_cap_FL_FU_completion_delay_s_1x2.pdf",
-          "sha256": "d08b09505e0189d03bb8ddd088404881ec9bf9f7079167c555870f1c9a4c897d"
+          "sha256": "b701f8668d62493f0496bd0bce8bb39ecc0a4bb588d64db797dbd95758f09064"
         },
         {
           "file": "figures/network_cap_FL_FU_completion_delay_s_1x2.svg",
-          "sha256": "d662b4d487b90e30a8e6bb988b3ee54246faf47288e165ff7fad596e722019a0"
+          "sha256": "e159e878ca42817e3536aa62192a045643f943dacab76b2d2156fa598c42d18c"
         }
       ]
     },
@@ -668,11 +668,11 @@
         },
         {
           "file": "figures/network_cap_mission_delay_s_1x2.pdf",
-          "sha256": "d3c09b72513107b6f18190a226e81a775f51a2d34d607952ff0c0f6bf8aa23bf"
+          "sha256": "de3cec91d1bd5eb81a136fe865de22a6ae6ac75b97a39499dfd1b2d1d898ae4a"
         },
         {
           "file": "figures/network_cap_mission_delay_s_1x2.svg",
-          "sha256": "a6acb1627933a755ab7ebe76d04dd2d85ae7e6ca02903416a59dde911c9ff532"
+          "sha256": "01e992f49bfa32eaca8fb99948ba9091e21c93d0ec6ce43601f24df446c301a5"
         }
       ]
     },
@@ -685,11 +685,11 @@
         },
         {
           "file": "figures/network_cap_total_delay_s_1x2.pdf",
-          "sha256": "a1a79ddaff07153f741a382d8105bfa92d8e3347b16cb038982c208a317d55eb"
+          "sha256": "a7859aa961ef90d0447c49a4891a7f48d4afdaf76da067f824c292dc01bbcdff"
         },
         {
           "file": "figures/network_cap_total_delay_s_1x2.svg",
-          "sha256": "6dcb289e2e7c827626f004737730a168664a94feb0c0e3c2f8161736b68cda09"
+          "sha256": "0c47efc0d4fe20dabdd0db2c2d9a56d9f36c88abc4503a49922e154b7f3a4553"
         }
       ]
     },
@@ -702,11 +702,11 @@
         },
         {
           "file": "figures/network_cap_FU_mean_completion_latency_s_1x2.pdf",
-          "sha256": "59976a5b860efdd14c4891ae72dcd994e0a3dd8478bcbe9d136e2b01b9e73252"
+          "sha256": "45b3fc40ae38b80e9bdca75984c81bc53bd452b92a9669f0ef9ee7bcd3e85ab2"
         },
         {
           "file": "figures/network_cap_FU_mean_completion_latency_s_1x2.svg",
-          "sha256": "5c9baa6e557cc62c0560a809d7459059bd40b0af0661ed3914bf3b669b218f3e"
+          "sha256": "f72ad50b8feab3a299c8abfedd5df8d8819a0e0e5ac61ea26ab4a0ad3b1702ba"
         }
       ]
     },
@@ -719,11 +719,11 @@
         },
         {
           "file": "figures/network_cap_FL_FU_active_service_s_1x2.pdf",
-          "sha256": "8d758b2d824eb139ee8bd40efc25412b2ebcc9014b02773d28873c12b16d3230"
+          "sha256": "7961290a2c7814d79a3fde0cf06fe03d3b991f2948fe0f552caedb1370fa7100"
         },
         {
           "file": "figures/network_cap_FL_FU_active_service_s_1x2.svg",
-          "sha256": "252619820a436800c74e675cc633e359540ef051ce4c36da122b95312cb1c4cf"
+          "sha256": "81f9b386fa947f22b417e1c193910a66c0fde003dff0c414598ce7b401c9d08d"
         }
       ]
     },
@@ -736,11 +736,11 @@
         },
         {
           "file": "figures/network_cap_energy_hover_j_1x2.pdf",
-          "sha256": "3cdfbfee846c8dd4695d62d1f2959c00e14f13dd7f8d8e4bf770af67584bbad1"
+          "sha256": "92b7bfa21a266fa1f48c986b6365a5636aa8b1f7a58fd4cac21bd5239645921a"
         },
         {
           "file": "figures/network_cap_energy_hover_j_1x2.svg",
-          "sha256": "b5662609cb7790772fe0de6fadf62fef6355b9d5a71cfe74e4528a79dedb13cf"
+          "sha256": "e5ede039f9c6f326863afc482601f1ee7028bead204d1add2e6023d527b35a27"
         }
       ]
     },
@@ -753,11 +753,11 @@
         },
         {
           "file": "figures/network_cap_energy_communication_j_1x2.pdf",
-          "sha256": "268dfcbd4913c0f2a85364ece08e4bd71d610a57d70ca1a9264022fd5dd406d8"
+          "sha256": "1a2f28b509d4175fed3ff464655a01470cbf1075f1a68d78455504cd870c2fa9"
         },
         {
           "file": "figures/network_cap_energy_communication_j_1x2.svg",
-          "sha256": "5f4035c1dba4d6f4f5b611f72d7ee45b559c8bd4560bc7e5abc2eb67f6b4bb83"
+          "sha256": "d82d6ad3f6daa72f1fc433ecd9d86846013b7bef96d8fc8e092b34cd203ab598"
         }
       ]
     },
@@ -770,11 +770,11 @@
         },
         {
           "file": "figures/network_cap_adaptation_RF_energy_j_1x2.pdf",
-          "sha256": "1db4c0eace9b0dd171351c2838bd86a171d386dea062fbcaee8516bf23044b4b"
+          "sha256": "94f6a378338128bafccaf880768a4193d3d98210a1d465ee2205a3ad58c8f482"
         },
         {
           "file": "figures/network_cap_adaptation_RF_energy_j_1x2.svg",
-          "sha256": "d9c7e3a1b82786d3bf908bcec1ba0291604f029db0402a333efb446bb55e5771"
+          "sha256": "a084a161afb4b0981b9db20d7effdaf16f5fb9af5d8172bb9222b23e229075af"
         }
       ]
     },
@@ -787,11 +787,11 @@
         },
         {
           "file": "figures/network_cap_uplink_s_1x2.pdf",
-          "sha256": "50ce52d8367460b54f04198026d5a94cdaf6971b773118d3db37f198eea4bc14"
+          "sha256": "e5e68ee364ea1eafc3b948b5854e1d21b7fb686280055a952dff2cd4d37490a7"
         },
         {
           "file": "figures/network_cap_uplink_s_1x2.svg",
-          "sha256": "b5d8b7c529f35c08fe1d38968c12e2940d8ea723b1b4e58c3142353b17fdce6b"
+          "sha256": "afa1d03a2974178dd9144e49dae33639d1abcd8bb9a862e8e8900cf3f2db0721"
         }
       ]
     },
@@ -804,11 +804,11 @@
         },
         {
           "file": "figures/network_cap_loss_1x2.pdf",
-          "sha256": "4c616771972ccf4652956e4a120eb7bba18c6cb1488cd97cd5794ee1f8761fd3"
+          "sha256": "bb67ed820e8770ad743576675ade08f3c8c1826284d4f6d4baedd7f5be84569e"
         },
         {
           "file": "figures/network_cap_loss_1x2.svg",
-          "sha256": "4e4db46dc5abbeebf65de30a0198367417cda02f5b190d50d00fa6f56a94f425"
+          "sha256": "1519e9ee14e8f796bceadfdf93bea5762406e1e91028da3eb197322b0f5e33ce"
         }
       ]
     },
@@ -821,11 +821,11 @@
         },
         {
           "file": "figures/network_cap_mR_1x2.pdf",
-          "sha256": "e028d529ac72f3621320c251d75d3c305e9c9e5276c22e9cb803e235973367bc"
+          "sha256": "e30aac6a74bf4f72f8de54f16e046ab27bcccc4cec10b6bd0f1a61d706b0f158"
         },
         {
           "file": "figures/network_cap_mR_1x2.svg",
-          "sha256": "c1d82885b432002fe1f350d5470363d4fd2c872333b38dfc0051ac1a786d946f"
+          "sha256": "daaada014ead9ac4e700b8d5553363fa20648c7ad8e423a5689a6271ed11f06f"
         }
       ]
     },
@@ -838,11 +838,11 @@
         },
         {
           "file": "figures/channel_gain_total_energy_j_1x2.pdf",
-          "sha256": "d3e2010092f85be3461a6e843d27ff793eb9db4fc3bdebbf300cc4e64e871168"
+          "sha256": "c6cf147bcb0a9102c62ece5145ef41aa063f1b51ff7f3abf36183af71ccdd2c4"
         },
         {
           "file": "figures/channel_gain_total_energy_j_1x2.svg",
-          "sha256": "a898865410fdccc449fd10740accaf0832ea2c26f5d73c0e268c0ff27c5ee8a6"
+          "sha256": "15c83d415843e70c44b491e9d28df4834a068a6dc5e7f5840ba7d4edae38aca9"
         }
       ]
     },
@@ -855,11 +855,11 @@
         },
         {
           "file": "figures/channel_gain_FL_FU_completion_delay_s_1x2.pdf",
-          "sha256": "0b7afa24509bbb7801a08e514419af7c24985ea781572764a4e5dfc6f1a29834"
+          "sha256": "8a25ad1a374b4264903607205a6d6b2561f6b18840bb375a4e6bfc448409e1d2"
         },
         {
           "file": "figures/channel_gain_FL_FU_completion_delay_s_1x2.svg",
-          "sha256": "a16611aed97020317861e45b92bffb0efbdad94b973d1f82c14042d98795edb6"
+          "sha256": "73e9052a020397347f9f2cb8c9fa02dd4fa1fd9c2a26388f7aa4399c288889a3"
         }
       ]
     },
@@ -872,11 +872,11 @@
         },
         {
           "file": "figures/channel_gain_mission_delay_s_1x2.pdf",
-          "sha256": "67ef93614e1a4b6e15921d66b9447f53f8a8e3abfaa63fbf14c9510d08770839"
+          "sha256": "3c8a1af5561e2459ed2d4b6594f6d3808e3c12da3bb8a445fb58aeca8cf6d530"
         },
         {
           "file": "figures/channel_gain_mission_delay_s_1x2.svg",
-          "sha256": "7ace49d0a905fa604de237cea41f9927ba7608bf9357dcc37850eb3c202f581a"
+          "sha256": "055e4ee3c7d31c04f0c9919f10c4820b1224be259c534dfc3dca7d0623433d79"
         }
       ]
     },
@@ -889,11 +889,11 @@
         },
         {
           "file": "figures/channel_gain_total_delay_s_1x2.pdf",
-          "sha256": "da03528a676eb65f0ac70fad387eeafbf65b7f64fc63602b4d2d52346d54fb76"
+          "sha256": "3bb3a838508a83db1ef18098157c730986c78f467173355efe25a0cd213330e0"
         },
         {
           "file": "figures/channel_gain_total_delay_s_1x2.svg",
-          "sha256": "96359f78acbad227bd51fb52588448abff3b71d2241f527c173e6d386d1c65ef"
+          "sha256": "8a61a8b6aea1e2f41f97112a6b5ea426739c4c762d3e8b02dcd711466416818d"
         }
       ]
     },
@@ -906,11 +906,11 @@
         },
         {
           "file": "figures/channel_gain_FU_mean_completion_latency_s_1x2.pdf",
-          "sha256": "56043cc30404359eaf0bb3e7baee93ae97d2e8a5f47c738655391a0852c0a5fa"
+          "sha256": "20dac866e72f34305a1e95206d8c6e7b327a34e08ea54b4f4c0abc12a9181b55"
         },
         {
           "file": "figures/channel_gain_FU_mean_completion_latency_s_1x2.svg",
-          "sha256": "deaf9171b792efae3f1da752acc34ba1a4e6997a0cfd721743d9eace45bda13a"
+          "sha256": "f225c5ac56d0fe4ba422deb72228ad43fd4bdb082504ebc7dbd04a9a370d3267"
         }
       ]
     },
@@ -923,11 +923,11 @@
         },
         {
           "file": "figures/channel_gain_FL_FU_active_service_s_1x2.pdf",
-          "sha256": "abe3dc80cf54861b917ccd16a7280ccf6b0ef361600d6edcd4b776a9874e6d93"
+          "sha256": "66d59696a0d09fab03958773b0184b5220b4b8bfcbcae4c5981fd15148ce5c64"
         },
         {
           "file": "figures/channel_gain_FL_FU_active_service_s_1x2.svg",
-          "sha256": "4937d37fd9efb9c868409c389e05eca229e3eee8a1a8bf4ba712a62939438ac4"
+          "sha256": "1034d5094c50be0f477b0d2237056ff860a89cd00f3671cc546de0beaab80fe5"
         }
       ]
     },
@@ -940,11 +940,11 @@
         },
         {
           "file": "figures/channel_gain_energy_hover_j_1x2.pdf",
-          "sha256": "d8a409dea6c8a2d9d8d896091dc2c11dd2d22e4decb73018f267c1550daec020"
+          "sha256": "4eaec74a6d7db680b6aece240850ac368999368838d330100a920fffcf33d4b2"
         },
         {
           "file": "figures/channel_gain_energy_hover_j_1x2.svg",
-          "sha256": "a056aab22dcf86265136e42e7e3a2d4a6cea9276a5b21420da257152d76cbc01"
+          "sha256": "38c30296e9cd94a988e5a9dd715ff8cb43be3fb80ca18dbd32df88bb3ba25857"
         }
       ]
     },
@@ -957,11 +957,11 @@
         },
         {
           "file": "figures/channel_gain_energy_communication_j_1x2.pdf",
-          "sha256": "7bee0dab077efa465ea5deb1419b88bbd71d864a6744cb2a2dfd1139a00807e8"
+          "sha256": "19c436022dc3f80067470e985bea5388ef6a394bd9efaf66d2b650d9fde51065"
         },
         {
           "file": "figures/channel_gain_energy_communication_j_1x2.svg",
-          "sha256": "03c5517e59bf7534c9f366fdeb91f26ea193797db9f68974c45fc6cec81776a1"
+          "sha256": "1c4e095a5f905920b8d7fc5c5aed6cca9b89801102904d1da4d20c532d353fed"
         }
       ]
     },
@@ -974,11 +974,11 @@
         },
         {
           "file": "figures/channel_gain_adaptation_RF_energy_j_1x2.pdf",
-          "sha256": "5ce4a952b8da38bcc70b38fc01a42fbba1e1b9dabe1977e655e34b7fd5c23b9a"
+          "sha256": "c14df5feeb34b24a2bdae58536ca9f3050add7b94f8de95a1fc87c8bec5e0b0c"
         },
         {
           "file": "figures/channel_gain_adaptation_RF_energy_j_1x2.svg",
-          "sha256": "40a48e16fe71d3d0f3aa0c4db9baa5a52cb52c868cee0c5db8e6562076c557a0"
+          "sha256": "74c914657509a2b380605b0598cabb16fc6b71a96b9a90ee78f323c2ca0e4bb9"
         }
       ]
     },
@@ -991,11 +991,11 @@
         },
         {
           "file": "figures/channel_gain_uplink_s_1x2.pdf",
-          "sha256": "432427813c15115914c1bb0df22b474e3eaa7fc1075dd1f867d3072728f62dec"
+          "sha256": "9d733eb0cfd10711b131d563b77d6ea81e7dd7fe5f8b383a5dfb0092caab9367"
         },
         {
           "file": "figures/channel_gain_uplink_s_1x2.svg",
-          "sha256": "3d8b27c6a267502800e41d1ce110ad4e8f7ced1f9bdd6dab6c7a96f21b0cf84d"
+          "sha256": "c997c2b16c2e68c6b196047428d1bf6850b97f5e040a4d4cb5ae62087aea2706"
         }
       ]
     },
@@ -1008,11 +1008,11 @@
         },
         {
           "file": "figures/channel_gain_loss_1x2.pdf",
-          "sha256": "f8911f9e9217606ff15012f10d88faa8f8a563736175ca9dab7e9b888c7303ea"
+          "sha256": "e09f340b2e89ff21ab8d648e622ac2726e98bae239e6bf51dd53dfa062f0a126"
         },
         {
           "file": "figures/channel_gain_loss_1x2.svg",
-          "sha256": "a7dd61f98774b37fbbe6dba82ba65edb8b8db13daf3b12710d5906b7800c9a61"
+          "sha256": "060b4565d65183b3ed973d1c060f762975d0a86bacdcdccb9006447044749d71"
         }
       ]
     },
@@ -1025,11 +1025,215 @@
         },
         {
           "file": "figures/channel_gain_mR_1x2.pdf",
-          "sha256": "97cd3297e8b2f82724b2edb23bde42611c986385e118067da17cad7d14ac94dd"
+          "sha256": "8a465fcec9bb798356fd11137051c6b254b762bdf6646d984b6f8ac65156aa16"
         },
         {
           "file": "figures/channel_gain_mR_1x2.svg",
-          "sha256": "56e010611c60c87e110b4222f9d93fdb60e99fe770c1cd928c0cd4e6f5039dd1"
+          "sha256": "171d6e065c58dd2a2f3fff7e5c67514d2cab9770d1278e60ec15c9d05f13703d"
+        }
+      ]
+    },
+    {
+      "name": "request_bursts_total_energy_j_1x2",
+      "files": [
+        {
+          "file": "figures/request_bursts_total_energy_j_1x2.png",
+          "sha256": "82af483fe058aeb97f7b4087a3d11a1e747a6f361fe593b48f542b4318a2d39f"
+        },
+        {
+          "file": "figures/request_bursts_total_energy_j_1x2.pdf",
+          "sha256": "2738a1ec867d9ee790c032ae2a04fcbd66b8462381e5020038e697bb617bb278"
+        },
+        {
+          "file": "figures/request_bursts_total_energy_j_1x2.svg",
+          "sha256": "23be1165669200c02edd76ea3f3099a2327d309d45a18336201605f1a828d594"
+        }
+      ]
+    },
+    {
+      "name": "request_bursts_FL_FU_completion_delay_s_1x2",
+      "files": [
+        {
+          "file": "figures/request_bursts_FL_FU_completion_delay_s_1x2.png",
+          "sha256": "f89d4250b70fa37bd037332b1ab00f8babe8b164bddb439d02f1a47aadff5122"
+        },
+        {
+          "file": "figures/request_bursts_FL_FU_completion_delay_s_1x2.pdf",
+          "sha256": "96979e794332fccc4a382fe6fbfe8494a1e39b04d65e9b723eff4d7758619613"
+        },
+        {
+          "file": "figures/request_bursts_FL_FU_completion_delay_s_1x2.svg",
+          "sha256": "47c33b937d89fd9c1afe27da5459aff33b4420ffff100cd11dd9ebe587487253"
+        }
+      ]
+    },
+    {
+      "name": "request_bursts_mission_delay_s_1x2",
+      "files": [
+        {
+          "file": "figures/request_bursts_mission_delay_s_1x2.png",
+          "sha256": "fd49073fbb939b758bc5fbe2b4799e35b8516a0093199a0e9d6227ce4e49c4da"
+        },
+        {
+          "file": "figures/request_bursts_mission_delay_s_1x2.pdf",
+          "sha256": "eeeff9958616e1da4882fd0179a31f10cd3bb61bba9284c6f2484461ce40409a"
+        },
+        {
+          "file": "figures/request_bursts_mission_delay_s_1x2.svg",
+          "sha256": "12db531e6927e8f06481b47a72a1665b0829c5db18999dcd33c6dd35bc105589"
+        }
+      ]
+    },
+    {
+      "name": "request_bursts_total_delay_s_1x2",
+      "files": [
+        {
+          "file": "figures/request_bursts_total_delay_s_1x2.png",
+          "sha256": "e1e05841df1b563e68c4388351f630f01aebe8be2e8dd24fc32f5ee9ced038c9"
+        },
+        {
+          "file": "figures/request_bursts_total_delay_s_1x2.pdf",
+          "sha256": "e0e7e02603f8ccfe7f0c4d44c0a53ba6f7a7fb60e3df3de38292746e61025724"
+        },
+        {
+          "file": "figures/request_bursts_total_delay_s_1x2.svg",
+          "sha256": "5ab44db251ac17a310d7568ab24c000de287a1721ebd0c19e789f1e60dcf6e67"
+        }
+      ]
+    },
+    {
+      "name": "request_bursts_FU_mean_completion_latency_s_1x2",
+      "files": [
+        {
+          "file": "figures/request_bursts_FU_mean_completion_latency_s_1x2.png",
+          "sha256": "20d4456793fc07c0f7b31091c26318257fab1b89e4a55f4a6c68eb35accfcd37"
+        },
+        {
+          "file": "figures/request_bursts_FU_mean_completion_latency_s_1x2.pdf",
+          "sha256": "8098986dd9d1fcdc3fe6db45b9b71f5177ed5216e424ed8689baad6767be6233"
+        },
+        {
+          "file": "figures/request_bursts_FU_mean_completion_latency_s_1x2.svg",
+          "sha256": "7bebe13ec2690480b1cb1b6955229b05a561fdb88036dfa3d2efe19b1af39468"
+        }
+      ]
+    },
+    {
+      "name": "request_bursts_FL_FU_active_service_s_1x2",
+      "files": [
+        {
+          "file": "figures/request_bursts_FL_FU_active_service_s_1x2.png",
+          "sha256": "619b96973d02815d53602da5d940c2298b01df3469e8dd56cd962ec6fd57045d"
+        },
+        {
+          "file": "figures/request_bursts_FL_FU_active_service_s_1x2.pdf",
+          "sha256": "fce96bb40590d80b9c4854d7881114c4ad699828714e934bdd600d6535ef8181"
+        },
+        {
+          "file": "figures/request_bursts_FL_FU_active_service_s_1x2.svg",
+          "sha256": "78e5be4d2fbac0801c466d0d1bc0d448cac7099c4fe6956f6a2d640977aaf0c3"
+        }
+      ]
+    },
+    {
+      "name": "request_bursts_energy_hover_j_1x2",
+      "files": [
+        {
+          "file": "figures/request_bursts_energy_hover_j_1x2.png",
+          "sha256": "dc76e081227f9526e86bc62897e25990daccf795c9c8679b469faffc3e9599df"
+        },
+        {
+          "file": "figures/request_bursts_energy_hover_j_1x2.pdf",
+          "sha256": "501cf3cd316288ae394a0e92f101764f2e387997b9e9c3c0489d55381c50f486"
+        },
+        {
+          "file": "figures/request_bursts_energy_hover_j_1x2.svg",
+          "sha256": "ced760e1b5573911e28ebda07a96c5a30d6cd98e1f0a73496ed6d5d0ad9c766f"
+        }
+      ]
+    },
+    {
+      "name": "request_bursts_energy_communication_j_1x2",
+      "files": [
+        {
+          "file": "figures/request_bursts_energy_communication_j_1x2.png",
+          "sha256": "40397910825174b736906cc1c2315b248916125a5a7b27759a65beb743ace23f"
+        },
+        {
+          "file": "figures/request_bursts_energy_communication_j_1x2.pdf",
+          "sha256": "6ea287f7ef6f0036a1351f729a9cf23cf0d156b93096ec21da1d0615b1f8edd2"
+        },
+        {
+          "file": "figures/request_bursts_energy_communication_j_1x2.svg",
+          "sha256": "df7943fe8dc77fa817119bb3d3eb11857a64150fdb1836efcf97af336186504f"
+        }
+      ]
+    },
+    {
+      "name": "request_bursts_adaptation_RF_energy_j_1x2",
+      "files": [
+        {
+          "file": "figures/request_bursts_adaptation_RF_energy_j_1x2.png",
+          "sha256": "16581e1c323fce075503b29186e1febbb44e8b32e78ed49ac5a95f9cbf406482"
+        },
+        {
+          "file": "figures/request_bursts_adaptation_RF_energy_j_1x2.pdf",
+          "sha256": "5d65414206dd98e3e026374dfff630370dedd40a5efd7a91aa5c7d1af4eab018"
+        },
+        {
+          "file": "figures/request_bursts_adaptation_RF_energy_j_1x2.svg",
+          "sha256": "fdf3e47c6d328358507e913096909ddb7ff6eea042ed8a3d2756d6f9ac7d4617"
+        }
+      ]
+    },
+    {
+      "name": "request_bursts_uplink_s_1x2",
+      "files": [
+        {
+          "file": "figures/request_bursts_uplink_s_1x2.png",
+          "sha256": "9d15cab4362fc1849b4d3d761d8c2cb26352ffc4cfa8d3dfb764e94770a24cb9"
+        },
+        {
+          "file": "figures/request_bursts_uplink_s_1x2.pdf",
+          "sha256": "b3b0008c0f9c5273505f572c87fb7421fb9353993e56f1dbcd90bb777eda0327"
+        },
+        {
+          "file": "figures/request_bursts_uplink_s_1x2.svg",
+          "sha256": "4dc342aeaa2cbb019611a15629641dc68aa020ce89c0a076af020bc0d3030f0d"
+        }
+      ]
+    },
+    {
+      "name": "request_bursts_loss_1x2",
+      "files": [
+        {
+          "file": "figures/request_bursts_loss_1x2.png",
+          "sha256": "ab132eec9265dbba0adfc7cbde8fada00773add69b280064b6041bed6fe5a0a2"
+        },
+        {
+          "file": "figures/request_bursts_loss_1x2.pdf",
+          "sha256": "fe5ec8ec135e248f75860186c6d820d38919f4f61472a98c0fa584a679ffe195"
+        },
+        {
+          "file": "figures/request_bursts_loss_1x2.svg",
+          "sha256": "6bb258d95dc404073cd8a16a26b6a0f201980bd25e76046bee9d6c5637512974"
+        }
+      ]
+    },
+    {
+      "name": "request_bursts_mR_1x2",
+      "files": [
+        {
+          "file": "figures/request_bursts_mR_1x2.png",
+          "sha256": "52e2c552e665f26f483b0c61752a21f65e3ac0808ffa5ee3d135e4ccdb8fcc0e"
+        },
+        {
+          "file": "figures/request_bursts_mR_1x2.pdf",
+          "sha256": "aeafc48a706f9200a97a7ee1313a1b026eda91355cb5c4b157e1279130833bc5"
+        },
+        {
+          "file": "figures/request_bursts_mR_1x2.svg",
+          "sha256": "81eb2efd442ce6ed82a5e3459c39e871d88a67968c9b26a764d98b701316c7ba"
         }
       ]
     },
@@ -1042,11 +1246,11 @@
         },
         {
           "file": "figures/loss_convergence_1x2.pdf",
-          "sha256": "6ce997a0c12e0040c25a207cadaf91de60074b7b1d7c3d5013384592f5b276bc"
+          "sha256": "591880a3bbbb674d672ec642ddbaf66f04f1ed3a5cdbdd12c11499181652d4e3"
         },
         {
           "file": "figures/loss_convergence_1x2.svg",
-          "sha256": "cdd9719098be153f6b94c617b51f3f9bec2ad53a8abfec554c1eebbf2452db92"
+          "sha256": "7ae55c92b46b5c1a35530426eb61e88d3a7b93dd722e718ab1f01203c21d7d2f"
         }
       ]
     },
@@ -1059,11 +1263,11 @@
         },
         {
           "file": "figures/mR_convergence_1x2.pdf",
-          "sha256": "688faf75b245f17ab56a9b72df31112ca9ffeda74397ad3cdb0049821b5d503b"
+          "sha256": "20fcdffe8cf92c29ab0eb22270f91b14ebfb07e140f999361cfc1fdcd505218f"
         },
         {
           "file": "figures/mR_convergence_1x2.svg",
-          "sha256": "5d7711c8dbe2922114a5f2ab076f1ffcdd310cd441cee36d69c1fb780392f68e"
+          "sha256": "d2ee90a0deeec97fcee3a1ddade8636f58254b446d400285ca68fdfa86e959e6"
         }
       ]
     }
@@ -1279,6 +1483,46 @@
     "results/airscape_sensitivity_v2_20261027/cases/channel_gain_12/airscape_seed0/separate_aircomp_periodic/outcome.json": "e94fc1a6fc999cc61b81fc5ead498f3442a6e368fc07655eb7d3a7318a62d575",
     "results/airscape_sensitivity_v2_20261027/cases/channel_gain_12/airscape_seed0/aircomp_ofdma_periodic/outcome.json": "4c377aa949ef7140fc63e161683b504863d0a19f62ce441ea5e37b49d8a95ae2",
     "results/airscape_sensitivity_v2_20261027/cases/channel_gain_12/airscape_seed0/sequential_digital_periodic/outcome.json": "8dd6838a7d4e33ea37c5f3711357d3e8a46266b087450783cfaacff177aaa5c5",
+    "results/airscape_sensitivity_v2_20261027/cases/request_bursts_3/capera_seed0/proposed_fu_guard_cliperase/outcome.json": "ba14c1a97e116ec5690c099326df86dfa2f14f991902d24b304cfffa0b3fe25d",
+    "results/airscape_sensitivity_v2_20261027/cases/request_bursts_3/capera_seed0/heuristic_ova/outcome.json": "84e5d238ccbcd9bc2ade85328edd80af9e2edd7b9ee4ce3f0e7db83bb29b13c4",
+    "results/airscape_sensitivity_v2_20261027/cases/request_bursts_3/capera_seed0/separate_aircomp_periodic/outcome.json": "b44d7cb2cc0917643b457753a4c8a35caf134789e14a17d5fcacf78347b8fba5",
+    "results/airscape_sensitivity_v2_20261027/cases/request_bursts_3/capera_seed0/aircomp_ofdma_periodic/outcome.json": "b3935a9c70bf40db6dedb625c7e8f5f54b6e856b3a217a1f8ff834bfb394a87d",
+    "results/airscape_sensitivity_v2_20261027/cases/request_bursts_3/capera_seed0/sequential_digital_periodic/outcome.json": "aa0f62198a5947128de3b404f1d0ec896886b5f805d2b2831a92187332accc48",
+    "results/airscape_sensitivity_v2_20261027/cases/request_bursts_3/airscape_seed0/proposed_fu_guard_cliperase/outcome.json": "0577226ca57c3eb256254e284b653c818bfdae0e44cb2949a1ff81d3c0b59375",
+    "results/airscape_sensitivity_v2_20261027/cases/request_bursts_3/airscape_seed0/heuristic_ova/outcome.json": "8d7fc02d58393156373005761e0921a3b7a9bd8d5bc3bea9b10ff80576e11870",
+    "results/airscape_sensitivity_v2_20261027/cases/request_bursts_3/airscape_seed0/separate_aircomp_periodic/outcome.json": "7c6cfb9469965ff3335fbb680e6b239dbaa9729763f0972a0ee089d540d67bc1",
+    "results/airscape_sensitivity_v2_20261027/cases/request_bursts_3/airscape_seed0/aircomp_ofdma_periodic/outcome.json": "67fff27df95cd936357e63cb50234a0ef378d317cf2f907d4321d33c6a5f639c",
+    "results/airscape_sensitivity_v2_20261027/cases/request_bursts_3/airscape_seed0/sequential_digital_periodic/outcome.json": "7cf45a64d0e563f428eded983fcfd0325f2837b3c4aa28deb7069447579a7b52",
+    "results/airscape_sensitivity_v2_20261027/cases/request_bursts_5/capera_seed0/proposed_fu_guard_cliperase/outcome.json": "06467495dc686fb5eecd7d10e378608e93c399be829e433712fa2a4281029c79",
+    "results/airscape_sensitivity_v2_20261027/cases/request_bursts_5/capera_seed0/heuristic_ova/outcome.json": "e69feb278e72930a841467a3cb31b2aae10c54688731144605e4120e9429c989",
+    "results/airscape_sensitivity_v2_20261027/cases/request_bursts_5/capera_seed0/separate_aircomp_periodic/outcome.json": "f98b6be47ecdda607d783adc4998fc15c7b3ede63ee64ee0f62528f74a66bc2d",
+    "results/airscape_sensitivity_v2_20261027/cases/request_bursts_5/capera_seed0/aircomp_ofdma_periodic/outcome.json": "ba772869cf7a502c0d9ca8a5c07592c2b5e55df302e79d6d23df3cf624710c37",
+    "results/airscape_sensitivity_v2_20261027/cases/request_bursts_5/capera_seed0/sequential_digital_periodic/outcome.json": "2cbdc0c53796045f053c7c5fa851bfdb1eb55c6dd8e22eb7169f8d2e29932d5f",
+    "results/airscape_sensitivity_v2_20261027/cases/request_bursts_5/airscape_seed0/proposed_fu_guard_cliperase/outcome.json": "7ccfad5bca7efae8caf6b6883a6e0991cb02d658e66fe5d4832a4763123b716b",
+    "results/airscape_sensitivity_v2_20261027/cases/request_bursts_5/airscape_seed0/heuristic_ova/outcome.json": "bcf81586729bd3ce44ef44fddab9fe6e0ec51b3ddfbb425a4e80c917b9fc4665",
+    "results/airscape_sensitivity_v2_20261027/cases/request_bursts_5/airscape_seed0/separate_aircomp_periodic/outcome.json": "9eff8c6640681e9f416de39e15a0d33f3a4e747abe82d163ac63236f98f20459",
+    "results/airscape_sensitivity_v2_20261027/cases/request_bursts_5/airscape_seed0/aircomp_ofdma_periodic/outcome.json": "9d26d63eb0b03e3b2a8ea24a6441946923978504ee5905a9ff88662b3875414a",
+    "results/airscape_sensitivity_v2_20261027/cases/request_bursts_5/airscape_seed0/sequential_digital_periodic/outcome.json": "d8a61c276f81a5272755cbc78db510c6ef25446e8c1042f7bb340ac6b73acf4d",
+    "results/airscape_sensitivity_v2_20261027/cases/request_bursts_15/capera_seed0/proposed_fu_guard_cliperase/outcome.json": "63b3cec201a7f90f4696e1e14106d0c117c716388cb6b8a4eb409c450a90d136",
+    "results/airscape_sensitivity_v2_20261027/cases/request_bursts_15/capera_seed0/heuristic_ova/outcome.json": "3e09da5cc5104483ed9b3b548efe860900647e2c79e5b77e890147a03835916b",
+    "results/airscape_sensitivity_v2_20261027/cases/request_bursts_15/capera_seed0/separate_aircomp_periodic/outcome.json": "6bb5bfb1272894ff4818c6354e83e604f29f5c5555bcee47b4b6dfe1a687b568",
+    "results/airscape_sensitivity_v2_20261027/cases/request_bursts_15/capera_seed0/aircomp_ofdma_periodic/outcome.json": "17a9b8cf7302983d489c8fd04e39a2b5987269e6923265cf82065b403ebbdb65",
+    "results/airscape_sensitivity_v2_20261027/cases/request_bursts_15/capera_seed0/sequential_digital_periodic/outcome.json": "66930d0e654a9689d7dbf85105cbc294bad04bc84b36d982f009140d9773efb6",
+    "results/airscape_sensitivity_v2_20261027/cases/request_bursts_15/airscape_seed0/proposed_fu_guard_cliperase/outcome.json": "fa8bba27f2c7cb8d1861b16db9041a4f13a92c704b9fec221b8a1e2bb2a10e14",
+    "results/airscape_sensitivity_v2_20261027/cases/request_bursts_15/airscape_seed0/heuristic_ova/outcome.json": "2ec7e5f20449d2287edded20936b4c67699d5c050b7cd27147634e7fa76175dd",
+    "results/airscape_sensitivity_v2_20261027/cases/request_bursts_15/airscape_seed0/separate_aircomp_periodic/outcome.json": "675985e1fe527ad0ee09f65ea063d1950f7b64453c36c791889749b26f57578f",
+    "results/airscape_sensitivity_v2_20261027/cases/request_bursts_15/airscape_seed0/aircomp_ofdma_periodic/outcome.json": "27c7705ac14c8ea570bc42642238d74318e9a1b16d7d1d72dace28b9bc0ee272",
+    "results/airscape_sensitivity_v2_20261027/cases/request_bursts_15/airscape_seed0/sequential_digital_periodic/outcome.json": "8506b2c4c856d34244d8b57ac18de22e1df02eda8cdbb59d34134156b3974d4a",
+    "results/airscape_sensitivity_v2_20261027/cases/request_bursts_45/capera_seed0/proposed_fu_guard_cliperase/outcome.json": "33dc76b5c3bf1bb0b5f92e33ca4671a484b7d79c5a1380624e2d8e396f4c3256",
+    "results/airscape_sensitivity_v2_20261027/cases/request_bursts_45/capera_seed0/heuristic_ova/outcome.json": "2e7ff03256b2c8a6b2c05f4916e53938d5b39b055d02bc040e5ff37627a02d7c",
+    "results/airscape_sensitivity_v2_20261027/cases/request_bursts_45/capera_seed0/separate_aircomp_periodic/outcome.json": "0d1e5068ee59db747199f17bd711b4e16d92107fe0ec75d97e0be2b5f6ec5f9c",
+    "results/airscape_sensitivity_v2_20261027/cases/request_bursts_45/capera_seed0/aircomp_ofdma_periodic/outcome.json": "2e6f1b568ccaf21926968b4cba02ec609fcd6526130b7d8c7171ff57daa9c419",
+    "results/airscape_sensitivity_v2_20261027/cases/request_bursts_45/capera_seed0/sequential_digital_periodic/outcome.json": "9621ee3715f6fae7ef7c40cd77cd3380bbadccee81792350fb36b4dedf3091b7",
+    "results/airscape_sensitivity_v2_20261027/cases/request_bursts_45/airscape_seed0/proposed_fu_guard_cliperase/outcome.json": "6800a34d26351234dae52027cf5cb99b92dc896fe4d0cc11909395d6afcea219",
+    "results/airscape_sensitivity_v2_20261027/cases/request_bursts_45/airscape_seed0/heuristic_ova/outcome.json": "46fe059c1214fc46dc438956373313976740c07c7521e4610548ab90a2d785e4",
+    "results/airscape_sensitivity_v2_20261027/cases/request_bursts_45/airscape_seed0/separate_aircomp_periodic/outcome.json": "7927934be0c1a0015ec29a066a13109862434555674af8896d0c88eec95e03fb",
+    "results/airscape_sensitivity_v2_20261027/cases/request_bursts_45/airscape_seed0/aircomp_ofdma_periodic/outcome.json": "13237c0974553bf1646e6d771662be9e9350ce8d31001bb0464fcd96f9523b91",
+    "results/airscape_sensitivity_v2_20261027/cases/request_bursts_45/airscape_seed0/sequential_digital_periodic/outcome.json": "e3d6cdcc8212b712471656682209134342d41111b86e28f398570e5096a37b28",
     "results/airscape_sensitivity_v2_20261027/cases/baseline/capera_seed0/initial20/rounds.json": "b26776089ef97b2499a1f20d5c30275d78cb880c1b56fca71046b4558223f55f",
     "results/airscape_sensitivity_v2_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0005.json": "3b7bdb0f0869889f93efc133c64f17ba905bdb9315790cb18a6fdbd740fd46da",
     "results/airscape_sensitivity_v2_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0010.json": "ef1f482551e82b3bbdebd2a7e8f6df999388f2a300e9adfc001402741ce855c4",
