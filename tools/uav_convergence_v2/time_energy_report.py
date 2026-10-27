@@ -14,6 +14,7 @@ ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "tools/iot_sensitivity_v1"))
 from common import read, write, sha, AXES, METHODS, case_id
 from report import configure, COLORS, MARKERS, STYLES, plt
+from matplotlib.ticker import FormatStrFormatter, MaxNLocator
 import selected_pair as style
 
 SOURCE = ROOT / "results/airscape_power_audit_v1_20261027"
@@ -100,11 +101,66 @@ def convergence(dataset, method, sources):
     return events, prefix, costs
 
 
-def draw_time(ax, x, y, number, label):
+def nice_ticks(values, padding=0., bins=4, simple=False):
+    finite = [v for v in values if v is not None and math.isfinite(v)]
+    low, high = min(finite), max(finite)
+    margin = (high - low) * padding if high > low else max(abs(low) * .05, .01)
+    steps = [1, 2, 2.5, 5, 10] if simple else [1, 1.5, 2, 2.5, 3, 4, 5, 6, 8, 10]
+    return MaxNLocator(nbins=bins, steps=steps).tick_values(
+        low - margin, high + margin).tolist()
+
+
+def tick_decimals(ticks):
+    return next(n for n in range(7)
+                if all(math.isclose(v, round(v, n), abs_tol=1e-8) for v in ticks))
+
+
+def regular_axis(ax, dimension, ticks, decimals):
+    axis = getattr(ax, dimension + "axis")
+    getattr(ax, "set_" + dimension + "lim")(ticks[0], ticks[-1])
+    getattr(ax, "set_" + dimension + "ticks")(ticks)
+    axis.set_major_formatter(FormatStrFormatter(f"%.{decimals}f"))
+    step = ticks[1] - ticks[0]
+    assert all(math.isclose(b - a, step, rel_tol=1e-10, abs_tol=1e-10)
+               for a, b in zip(ticks, ticks[1:]))
+
+
+def finish_axes(axes, y_values, decimals=None):
+    ticks = [nice_ticks(values, padding=.025, bins=5, simple=True) for values in y_values]
+    precision = max(tick_decimals(t) for t in ticks) if decimals is None else decimals
+    for ax, values in zip(axes, ticks):
+        regular_axis(ax, "y", values, precision)
+
+
+def save_figure(fig, axes, name):
+    # Record the rendered axes so endpoint, spacing and formatting are auditable.
+    settings = []
+    for ax, dataset in zip(axes, DATASETS):
+        entry = dict(dataset=dataset)
+        for dim in ["x", "y"]:
+            ticks = getattr(ax, "get_" + dim + "ticks")().tolist()
+            bounds = list(getattr(ax, "get_" + dim + "lim")())
+            if ticks:  # The energy bar chart has a categorical, unlabeled x axis.
+                assert math.isclose(ticks[0], bounds[0], abs_tol=1e-10)
+                assert math.isclose(ticks[-1], bounds[-1], abs_tol=1e-10)
+                step = ticks[1] - ticks[0]
+                assert all(math.isclose(b - a, step, abs_tol=1e-9)
+                           for a, b in zip(ticks, ticks[1:]))
+            formatter = getattr(ax, dim + "axis").get_major_formatter()
+            entry[dim] = dict(limits=bounds, ticks=ticks, labels=[formatter(t) for t in ticks])
+        settings.append(entry)
+    return dict(name=name, axes=settings, files=style.save(fig, axes, name))
+
+
+def draw_time(ax, x, y, number, label, horizon):
     # Last-observed-value steps: no claim of learning during a travel interval.
-    ax.plot(x, y, drawstyle="steps-post", color=COLORS[number], marker=MARKERS[number],
+    assert horizon >= x[-1]
+    display_x, display_y = x + [horizon], y + [y[-1]]
+    # No extra marker at the artificial display endpoint.
+    ax.plot(display_x, display_y, drawstyle="steps-post", color=COLORS[number], marker=MARKERS[number],
             mfc="white", ms=4.5, mew=1., linestyle=STYLES[number],
-            markevery=max(1, len(x) // 7), label=label)
+            markevery=list(range(0, len(x), max(1, len(x) // 7))), label=label)
+    return display_x, display_y
 
 
 def quality_times(trajectories):
@@ -165,18 +221,23 @@ def generate():
     for axis, (xlabel, values, _) in AXES.items():
         name = f"{axis}_energy_1x2"
         fig, axes = style.canvas("Energy (kJ)")
+        y_values = []
+        xticks = nice_ticks(values)
         for ax, dataset in zip(axes, DATASETS):
+            panel_y = []
             for number, (method, label) in enumerate(METHODS.items()):
                 records = [index[(case_id(axis, v), dataset, method)] for v in values]
                 y = [r["energy_j"] / 1000 if r["energy_j"] is not None else None for r in records]
                 style.curve(ax, values, [v if v is not None else math.nan for v in y], number, label)
                 series.append(dict(figure=name, dataset=dataset, method=method, x=values, y=y,
                                    status=[r["status"] for r in records]))
+                panel_y += y
             ax.set_xlabel(xlabel)
-            if axis in ["bandwidth", "downlink", "power", "network_cap", "collection_slot"]:
-                ax.set_xscale("log", base=2); ax.minorticks_off()
-            ax.set_xticks(values); ax.set_xticklabels([f"{v:g}" for v in values]); ax.set_xlim(values[0], values[-1])
-        figures.append(dict(name=name, files=style.save(fig, axes, name)))
+            # Physical x values stay unchanged; linear axes use regular numeric ticks.
+            regular_axis(ax, "x", xticks, tick_decimals(xticks))
+            y_values.append(panel_y)
+        finish_axes(axes, y_values)
+        figures.append(save_figure(fig, axes, name))
 
     trajectories = {(dataset, method): convergence(dataset, method, sources)
                     for dataset in DATASETS for method in METHODS}
@@ -184,11 +245,18 @@ def generate():
               "service": ("FL/FU service time (s)", "active_s"),
               "total": ("Total elapsed time (s)", "total_s")}
     for clock, (xlabel, field) in clocks.items():
+        starts = [p[1]["initial_points"][0]["time_s"] if clock == "total" else 0.
+                  for p in trajectories.values()]
+        ends = [p[0][-1][field] for p in trajectories.values()]
+        step = 100 if clock == "service" else 300
+        lower, upper = math.floor(min(starts) / step) * step, math.ceil(max(ends) / step) * step
+        xticks = list(range(lower, upper + 1, step))
         for metric, ylabel, scale in [("loss", "Retained loss", 1.), ("mR", "Retained mR (%)", 100.)]:
             name = f"{metric}_{clock}_time_1x2"
             fig, axes = style.canvas(ylabel)
+            y_values = []
             for ax, dataset in zip(axes, DATASETS):
-                extent = []
+                panel_y = []
                 for number, (method, label) in enumerate(METHODS.items()):
                     events, prefix, costs = trajectories[(dataset, method)]
                     x = [e[field] for e in events]
@@ -197,19 +265,18 @@ def generate():
                         initial = prefix["initial_points"]
                         x = [p["time_s"] for p in initial] + x
                         y = [p["evaluation"][metric] * scale for p in initial] + y
-                    draw_time(ax, x, y, number, label)
-                    extent += x
+                    display_x, display_y = draw_time(ax, x, y, number, label, upper)
+                    panel_y += y
                     series.append(dict(figure=name, dataset=dataset, method=method, x=x, y=y,
-                                       plotting="Last-observed-value steps, no interpolation or smoothing."))
-                xmin = math.floor(min(extent) / 100) * 100 if clock == "total" else 0
-                xmax = math.ceil(max(extent) / 100) * 100
-                ax.set_xlim(xmin, xmax); ax.set_xlabel(xlabel)
-                step = 100 if clock == "service" else 300 if clock == "mission" else 250
-                interior = [tick for tick in range(math.ceil(xmin / step) * step, xmax + 1, step)
-                            if tick - xmin >= .65 * step and xmax - tick >= .65 * step]
-                ticks = sorted(set([xmin, xmax] + interior))
-                ax.set_xticks(ticks); ax.set_xticklabels([f"{v:g}" for v in ticks])
-            figures.append(dict(name=name, files=style.save(fig, axes, name)))
+                        display_x=display_x, display_y=display_y, work_completion_s=x[-1],
+                        terminal_hold_from_s=x[-1], terminal_hold_to_s=upper,
+                        plotting="Last-observed-value steps with a horizontal final-value hold through the display horizon. "
+                                 "The added endpoint is not a new measurement or additional learning."))
+                regular_axis(ax, "x", xticks, 0)
+                ax.set_xlabel(xlabel)
+                y_values.append(panel_y)
+            finish_axes(axes, y_values, decimals=2 if metric == "loss" else 1)
+            figures.append(save_figure(fig, axes, name))
 
     # User's hatched-bar style, without numeric annotations.
     name = "baseline_energy_1x2"
@@ -220,8 +287,9 @@ def generate():
             ax.bar(number, value, width=.66, color=COLORS[number], edgecolor="black", linewidth=.75,
                    hatch=["//", "++", "\\\\", "xx", ".."][number], label=label)
             series.append(dict(figure=name, dataset=dataset, method=method, x=[number], y=[value]))
-        ax.set_xticks([]); ax.set_xlim(-.6, 4.6); ax.set_ylim(0, 800)
-    figures.append(dict(name=name, files=style.save(fig, axes, name)))
+        ax.set_xticks([]); ax.set_xlim(-.6, 4.6)
+        regular_axis(ax, "y", [0, 200, 400, 600, 800], 0)
+    figures.append(save_figure(fig, axes, name))
     quality = quality_times(trajectories)
     write(DEST / "time_to_quality.json", dict(rows=quality,
         target_policy="Quarter increments from the common initial20 model toward the worst final method value. "
@@ -256,12 +324,19 @@ def generate():
         "- **Elapsed time:** from takeoff after common initial20/proxy20 preparation, includes movement and collection.",
         "- **FL/FU service time:** active service windows only; includes computation, uplink, broadcast and scheduler waits.",
         "- **Total elapsed time:** from cold feature extraction; includes initial20/proxy20 and mission movement/collection.", "",
-        "Every convergence trace ends when its final required FL/FU broadcast is complete. Return flight happens "
+        "Every measured convergence trace ends when its final required FL/FU broadcast is complete. Return flight happens "
         "after learning and is not an extra learning period. Mission and service plots begin at the common20-round "
         "initial model. Total-time plots additionally show the recorded initial20 evaluations. "
         "Step traces carry forward only the last observed metric, avoiding an artificial slope during flight. "
         "There is no smoothing, invented evaluation, change to loss/mR, or annotation text on the chart. "
-        "Different methods stop at their own actual work completion time.", "",
+        "For display, each final value is held horizontally through the common right-hand axis limit. "
+        "This tail is not evidence of further learning or convergence: a completed run can still have room to improve. "
+        "Raw x/y observations, actual completion times and separate display_x/display_y arrays are retained in `plot_series.json`. "
+        "Time-to-quality calculations use only actual observations, never the added endpoints.", "",
+        "All numeric axes include both endpoint labels with constant arithmetic tick spacing. "
+        "Parameter sweeps use linear physical coordinates; original irregularly sampled x values are not moved. "
+        "Both panels use the same decimal precision (loss: two places; mR: one). "
+        "Axis bounds, ticks and labels are saved in `summary.json`.", "",
         "| Time axis | Loss | mR |", "|---|---|---|"]
     for clock, (label, _) in clocks.items():
         lines.append(f"| {label} | [Loss](figures/loss_{clock}_time_1x2.png) | [mR](figures/mR_{clock}_time_1x2.png) |")
@@ -286,7 +361,7 @@ def publish():
     assert not call(["diff", "--cached", "--name-only"])
     paths = [Path(__file__)] + [p for p in DEST.rglob("*") if p.is_file()]
     subprocess.run(git + ["add", "--"] + [str(p.relative_to(ROOT)) for p in paths], cwd=ROOT, check=True, capture_output=True)
-    subprocess.run(git + ["commit", "-m", "Plot convergence over elapsed time and remove common travel energy"], cwd=ROOT, check=True, capture_output=True)
+    subprocess.run(git + ["commit", "-m", "Use regular endpoint ticks and retain completed convergence traces"], cwd=ROOT, check=True, capture_output=True)
     subprocess.run(git + ["push", "origin", "main"], cwd=ROOT, check=True, capture_output=True, timeout=180)
     commit = call(["rev-parse", "HEAD"])
     assert call(["ls-remote", "origin", "refs/heads/main"]).split()[0] == commit

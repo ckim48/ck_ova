@@ -1,0 +1,15 @@
+{
+  "datasets": [
+    "CapERA",
+    "AirScape"
+  ],
+  "seed": 0,
+  "initial_rounds": 200,
+  "final_round": 1000,
+  "schedule": "Rounds 1\u2013200 reproduce the original cosine schedule; rounds 201\u20131000 use fixed LR 0.001.",
+  "scope": "Ideal aggregation, FL only, no FU, no radio or mission timing; not Proposed or a method comparison.",
+  "controls": "Same features, captions, splits, gallery, partitions, initial vector and per-round batch generator. The first 200 rounds must reproduce the existing independent FL-only pilot.",
+  "interpretation": "Tests additional learning with a restarted nonzero learning rate, not the causal effect of round count alone. All checkpoints and both dataset outcomes are retained. No best-checkpoint selection.",
+  "evaluation_every_rounds": 20,
+  "source_sha256": "8aa4b7db9aae88a7048da32530a75386902e762ed8bbf298dc89f3ab4e886bde"
+}

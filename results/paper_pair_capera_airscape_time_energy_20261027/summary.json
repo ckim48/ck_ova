@@ -12,278 +12,1796 @@
   "figures": [
     {
       "name": "bandwidth_energy_1x2",
+      "axes": [
+        {
+          "dataset": "CapERA",
+          "x": {
+            "limits": [
+              0.0,
+              4.0
+            ],
+            "ticks": [
+              0.0,
+              1.0,
+              2.0,
+              3.0,
+              4.0
+            ],
+            "labels": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4"
+            ]
+          },
+          "y": {
+            "limits": [
+              200.0,
+              1000.0
+            ],
+            "ticks": [
+              200.0,
+              400.0,
+              600.0,
+              800.0,
+              1000.0
+            ],
+            "labels": [
+              "200",
+              "400",
+              "600",
+              "800",
+              "1000"
+            ]
+          }
+        },
+        {
+          "dataset": "AirScape",
+          "x": {
+            "limits": [
+              0.0,
+              4.0
+            ],
+            "ticks": [
+              0.0,
+              1.0,
+              2.0,
+              3.0,
+              4.0
+            ],
+            "labels": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4"
+            ]
+          },
+          "y": {
+            "limits": [
+              200.0,
+              1000.0
+            ],
+            "ticks": [
+              200.0,
+              400.0,
+              600.0,
+              800.0,
+              1000.0
+            ],
+            "labels": [
+              "200",
+              "400",
+              "600",
+              "800",
+              "1000"
+            ]
+          }
+        }
+      ],
       "files": [
         {
           "file": "figures/bandwidth_energy_1x2.png",
-          "sha256": "aa76a9b33b137cfdc6da4ba4f3123110c6391de9623e64d919774c1d407754df"
+          "sha256": "887b6c169b776f636c60045c9d22a6489d5a7ceada88118cd6e92bbb29c00232"
         },
         {
           "file": "figures/bandwidth_energy_1x2.pdf",
-          "sha256": "edb6f7854e699a14d26cdade5275defe02df50e3fdb4f848ed216f19d682a9c1"
+          "sha256": "197687663bf79a02cd8b873e42e2ad3e4fe6e42612a85b0c55500f5a181d2831"
         },
         {
           "file": "figures/bandwidth_energy_1x2.svg",
-          "sha256": "50917b6f9e5d4a686883019de85b3bb85cf0132dc9c20e150013a0e60d9f789f"
+          "sha256": "09d1b78802f475cd4b162de862f6367e9172580bd83ca55d337a1738a6c971b3"
         }
       ]
     },
     {
       "name": "downlink_energy_1x2",
+      "axes": [
+        {
+          "dataset": "CapERA",
+          "x": {
+            "limits": [
+              0.0,
+              4.0
+            ],
+            "ticks": [
+              0.0,
+              1.0,
+              2.0,
+              3.0,
+              4.0
+            ],
+            "labels": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4"
+            ]
+          },
+          "y": {
+            "limits": [
+              0.0,
+              1500.0
+            ],
+            "ticks": [
+              0.0,
+              500.0,
+              1000.0,
+              1500.0
+            ],
+            "labels": [
+              "0",
+              "500",
+              "1000",
+              "1500"
+            ]
+          }
+        },
+        {
+          "dataset": "AirScape",
+          "x": {
+            "limits": [
+              0.0,
+              4.0
+            ],
+            "ticks": [
+              0.0,
+              1.0,
+              2.0,
+              3.0,
+              4.0
+            ],
+            "labels": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4"
+            ]
+          },
+          "y": {
+            "limits": [
+              0.0,
+              1500.0
+            ],
+            "ticks": [
+              0.0,
+              500.0,
+              1000.0,
+              1500.0
+            ],
+            "labels": [
+              "0",
+              "500",
+              "1000",
+              "1500"
+            ]
+          }
+        }
+      ],
       "files": [
         {
           "file": "figures/downlink_energy_1x2.png",
-          "sha256": "5778e7f9c9363b73bcb89cf8ac7c473d43ef88b68a9d249476e3dcb4ea72a189"
+          "sha256": "a68be3caf789a498215fa4405677b2dc3cc07bce32a68e0681bd0f089a46f988"
         },
         {
           "file": "figures/downlink_energy_1x2.pdf",
-          "sha256": "5937f10d7f2b0084c94cdef5c87e26c5062e7e2427fdf14980121521b32554aa"
+          "sha256": "5bd808ff8d9d5a47e4ebc284b88a0b6858a3e1df07c395f9bf94a955d41e5f47"
         },
         {
           "file": "figures/downlink_energy_1x2.svg",
-          "sha256": "f5fab5b288efd520f609f2e97357272d61fa13faa0db898726b01e9ea241d10b"
+          "sha256": "44d7b17956a54fb6dd375005cffc93566e5ccedaa0c176ee50af6981284f27a6"
         }
       ]
     },
     {
       "name": "power_energy_1x2",
+      "axes": [
+        {
+          "dataset": "CapERA",
+          "x": {
+            "limits": [
+              0.0,
+              1.5000000000000002
+            ],
+            "ticks": [
+              0.0,
+              0.30000000000000004,
+              0.6000000000000001,
+              0.9000000000000001,
+              1.2000000000000002,
+              1.5000000000000002
+            ],
+            "labels": [
+              "0.0",
+              "0.3",
+              "0.6",
+              "0.9",
+              "1.2",
+              "1.5"
+            ]
+          },
+          "y": {
+            "limits": [
+              300.0,
+              800.0
+            ],
+            "ticks": [
+              300.0,
+              400.0,
+              500.0,
+              600.0,
+              700.0,
+              800.0
+            ],
+            "labels": [
+              "300",
+              "400",
+              "500",
+              "600",
+              "700",
+              "800"
+            ]
+          }
+        },
+        {
+          "dataset": "AirScape",
+          "x": {
+            "limits": [
+              0.0,
+              1.5000000000000002
+            ],
+            "ticks": [
+              0.0,
+              0.30000000000000004,
+              0.6000000000000001,
+              0.9000000000000001,
+              1.2000000000000002,
+              1.5000000000000002
+            ],
+            "labels": [
+              "0.0",
+              "0.3",
+              "0.6",
+              "0.9",
+              "1.2",
+              "1.5"
+            ]
+          },
+          "y": {
+            "limits": [
+              300.0,
+              800.0
+            ],
+            "ticks": [
+              300.0,
+              400.0,
+              500.0,
+              600.0,
+              700.0,
+              800.0
+            ],
+            "labels": [
+              "300",
+              "400",
+              "500",
+              "600",
+              "700",
+              "800"
+            ]
+          }
+        }
+      ],
       "files": [
         {
           "file": "figures/power_energy_1x2.png",
-          "sha256": "253e43a780718d6dc94965a2c8f9e9faa6d77f81ef5f667e527068a7cbcd95f3"
+          "sha256": "aa6cc9ab79dd572a6fc1ba339bacf472d5a4988e34872cc1cee9876b70310cac"
         },
         {
           "file": "figures/power_energy_1x2.pdf",
-          "sha256": "ab6503cc9626db3c07e6ab0c20bbd0a22b897bf9e694a5390549f33e3d7012da"
+          "sha256": "9a0f5c4eedaae62e6887eca823785f16bb27c750832d5a925bb6c2467c663b17"
         },
         {
           "file": "figures/power_energy_1x2.svg",
-          "sha256": "8c9e90e7b22b1ffb5f56e0272e9b0bc7fc045c8c77d5907f9bc221bbe72fa927"
+          "sha256": "86216fab53943167d5ae3c32a8e1ae5d02e07715aadd493bb9f48a5cfb860ca5"
         }
       ]
     },
     {
       "name": "network_cap_energy_1x2",
+      "axes": [
+        {
+          "dataset": "CapERA",
+          "x": {
+            "limits": [
+              0.0,
+              0.2
+            ],
+            "ticks": [
+              0.0,
+              0.05,
+              0.1,
+              0.15000000000000002,
+              0.2
+            ],
+            "labels": [
+              "0.00",
+              "0.05",
+              "0.10",
+              "0.15",
+              "0.20"
+            ]
+          },
+          "y": {
+            "limits": [
+              200.0,
+              1000.0
+            ],
+            "ticks": [
+              200.0,
+              400.0,
+              600.0,
+              800.0,
+              1000.0
+            ],
+            "labels": [
+              "200",
+              "400",
+              "600",
+              "800",
+              "1000"
+            ]
+          }
+        },
+        {
+          "dataset": "AirScape",
+          "x": {
+            "limits": [
+              0.0,
+              0.2
+            ],
+            "ticks": [
+              0.0,
+              0.05,
+              0.1,
+              0.15000000000000002,
+              0.2
+            ],
+            "labels": [
+              "0.00",
+              "0.05",
+              "0.10",
+              "0.15",
+              "0.20"
+            ]
+          },
+          "y": {
+            "limits": [
+              200.0,
+              1000.0
+            ],
+            "ticks": [
+              200.0,
+              400.0,
+              600.0,
+              800.0,
+              1000.0
+            ],
+            "labels": [
+              "200",
+              "400",
+              "600",
+              "800",
+              "1000"
+            ]
+          }
+        }
+      ],
       "files": [
         {
           "file": "figures/network_cap_energy_1x2.png",
-          "sha256": "a3ad5b54f444fab57bbc93795cdb5f9385ca0679fdaf0da4d2dcf7d37d844918"
+          "sha256": "510bf24b2ba461f08144443bdb3255659ea7aabab055335946d245e334f72eff"
         },
         {
           "file": "figures/network_cap_energy_1x2.pdf",
-          "sha256": "0d48bba38383cde43bada9b2ad67734299492fd60a30a6a7e0a2455ad7ead543"
+          "sha256": "f31ce0c9ddd2a27a418bcb5c9f10ca009cbca8e65b33963938e0629b28ddf30f"
         },
         {
           "file": "figures/network_cap_energy_1x2.svg",
-          "sha256": "fc7f191fefc7bb34375f2d07dac0442600b45c0277e72407064eed84208729e2"
+          "sha256": "ed6a8b5bc6e2c26f338b60cc14d5da903609925466108295d6a032333858eeb6"
         }
       ]
     },
     {
       "name": "channel_gain_energy_1x2",
+      "axes": [
+        {
+          "dataset": "CapERA",
+          "x": {
+            "limits": [
+              -12.0,
+              12.0
+            ],
+            "ticks": [
+              -12.0,
+              -6.0,
+              0.0,
+              6.0,
+              12.0
+            ],
+            "labels": [
+              "-12",
+              "-6",
+              "0",
+              "6",
+              "12"
+            ]
+          },
+          "y": {
+            "limits": [
+              200.0,
+              1000.0
+            ],
+            "ticks": [
+              200.0,
+              400.0,
+              600.0,
+              800.0,
+              1000.0
+            ],
+            "labels": [
+              "200",
+              "400",
+              "600",
+              "800",
+              "1000"
+            ]
+          }
+        },
+        {
+          "dataset": "AirScape",
+          "x": {
+            "limits": [
+              -12.0,
+              12.0
+            ],
+            "ticks": [
+              -12.0,
+              -6.0,
+              0.0,
+              6.0,
+              12.0
+            ],
+            "labels": [
+              "-12",
+              "-6",
+              "0",
+              "6",
+              "12"
+            ]
+          },
+          "y": {
+            "limits": [
+              200.0,
+              1000.0
+            ],
+            "ticks": [
+              200.0,
+              400.0,
+              600.0,
+              800.0,
+              1000.0
+            ],
+            "labels": [
+              "200",
+              "400",
+              "600",
+              "800",
+              "1000"
+            ]
+          }
+        }
+      ],
       "files": [
         {
           "file": "figures/channel_gain_energy_1x2.png",
-          "sha256": "96fcb711940a225f729570348faca946fe43ced9905476087da1316e191adaee"
+          "sha256": "da7c5dc1709d077a51c6def052287b7fc42aa6960fbc91d3871ac16592ae72a8"
         },
         {
           "file": "figures/channel_gain_energy_1x2.pdf",
-          "sha256": "837a7677d468da14a2b5ac8e081b42209f1f4735be07f2eeb6dea47a96fab062"
+          "sha256": "1a763089c3cf6f4f4785739334fba3516ce223d06dd4f5444698c48c990eeac6"
         },
         {
           "file": "figures/channel_gain_energy_1x2.svg",
-          "sha256": "24b6c44ce729aa805c8b05b28930da68723b41af44106cfca0624c192eea0d03"
+          "sha256": "0fd441b32c24ffabce6120029f9e63b4ae2be6657e555b91c9686e5efab5e0ed"
         }
       ]
     },
     {
       "name": "request_bursts_energy_1x2",
+      "axes": [
+        {
+          "dataset": "CapERA",
+          "x": {
+            "limits": [
+              0.0,
+              45.0
+            ],
+            "ticks": [
+              0.0,
+              15.0,
+              30.0,
+              45.0
+            ],
+            "labels": [
+              "0",
+              "15",
+              "30",
+              "45"
+            ]
+          },
+          "y": {
+            "limits": [
+              300.0,
+              800.0
+            ],
+            "ticks": [
+              300.0,
+              400.0,
+              500.0,
+              600.0,
+              700.0,
+              800.0
+            ],
+            "labels": [
+              "300",
+              "400",
+              "500",
+              "600",
+              "700",
+              "800"
+            ]
+          }
+        },
+        {
+          "dataset": "AirScape",
+          "x": {
+            "limits": [
+              0.0,
+              45.0
+            ],
+            "ticks": [
+              0.0,
+              15.0,
+              30.0,
+              45.0
+            ],
+            "labels": [
+              "0",
+              "15",
+              "30",
+              "45"
+            ]
+          },
+          "y": {
+            "limits": [
+              300.0,
+              800.0
+            ],
+            "ticks": [
+              300.0,
+              400.0,
+              500.0,
+              600.0,
+              700.0,
+              800.0
+            ],
+            "labels": [
+              "300",
+              "400",
+              "500",
+              "600",
+              "700",
+              "800"
+            ]
+          }
+        }
+      ],
       "files": [
         {
           "file": "figures/request_bursts_energy_1x2.png",
-          "sha256": "39edf80825b5d6d54beb771b0dc2787aaa4e5647e89481077c46102317a0cad7"
+          "sha256": "48c081a184506ac0901e16cf0fde845b85a39c01140fd8e26f8c4c88b5ec55ef"
         },
         {
           "file": "figures/request_bursts_energy_1x2.pdf",
-          "sha256": "e731df269cfa362986560f20df15ea5ba3f37dcf1a20051388311de8e7d77d08"
+          "sha256": "ebb1548e942575807caec4e308a768b0d9176a0848a04ced727bf93e2c5b5aa1"
         },
         {
           "file": "figures/request_bursts_energy_1x2.svg",
-          "sha256": "b5b14e604884808688026f514893ae5e72afe274050c3021521e6bb3bbbb14ec"
+          "sha256": "8bc38bdc047ef5f34d36d9c0d96eadf99370548c30d7e98e6c4c4acf0c67d755"
         }
       ]
     },
     {
       "name": "fu_steps_energy_1x2",
+      "axes": [
+        {
+          "dataset": "CapERA",
+          "x": {
+            "limits": [
+              0.0,
+              10.0
+            ],
+            "ticks": [
+              0.0,
+              2.0,
+              4.0,
+              6.0,
+              8.0,
+              10.0
+            ],
+            "labels": [
+              "0",
+              "2",
+              "4",
+              "6",
+              "8",
+              "10"
+            ]
+          },
+          "y": {
+            "limits": [
+              300.0,
+              800.0
+            ],
+            "ticks": [
+              300.0,
+              400.0,
+              500.0,
+              600.0,
+              700.0,
+              800.0
+            ],
+            "labels": [
+              "300",
+              "400",
+              "500",
+              "600",
+              "700",
+              "800"
+            ]
+          }
+        },
+        {
+          "dataset": "AirScape",
+          "x": {
+            "limits": [
+              0.0,
+              10.0
+            ],
+            "ticks": [
+              0.0,
+              2.0,
+              4.0,
+              6.0,
+              8.0,
+              10.0
+            ],
+            "labels": [
+              "0",
+              "2",
+              "4",
+              "6",
+              "8",
+              "10"
+            ]
+          },
+          "y": {
+            "limits": [
+              300.0,
+              800.0
+            ],
+            "ticks": [
+              300.0,
+              400.0,
+              500.0,
+              600.0,
+              700.0,
+              800.0
+            ],
+            "labels": [
+              "300",
+              "400",
+              "500",
+              "600",
+              "700",
+              "800"
+            ]
+          }
+        }
+      ],
       "files": [
         {
           "file": "figures/fu_steps_energy_1x2.png",
-          "sha256": "f7352c3d4c2c13abbb6164048af0bbc71cceb25721bdc66f240c1394927da5ad"
+          "sha256": "b3ec96259ffb7b98bbd5e22552a25f4720290b88e10df6a69adea0ec4d762b75"
         },
         {
           "file": "figures/fu_steps_energy_1x2.pdf",
-          "sha256": "d315ae633ef973cc7ff91e39278a2c1978e2b38c24794ccfc887f51560323f04"
+          "sha256": "47ef0934a5dbb02edac185b095728989318c2e06ff301c83aa89969068fd3d1f"
         },
         {
           "file": "figures/fu_steps_energy_1x2.svg",
-          "sha256": "245174c2b216a01004ec60b83b3376896f646b3eb2c6506577e1fc038bf35c2e"
+          "sha256": "a9c676100c1bb76150e1b7efbb74fab87db5dbbbc7c751c089908da9ba4590e9"
         }
       ]
     },
     {
       "name": "speed_energy_1x2",
+      "axes": [
+        {
+          "dataset": "CapERA",
+          "x": {
+            "limits": [
+              2.0,
+              10.0
+            ],
+            "ticks": [
+              2.0,
+              4.0,
+              6.0,
+              8.0,
+              10.0
+            ],
+            "labels": [
+              "2",
+              "4",
+              "6",
+              "8",
+              "10"
+            ]
+          },
+          "y": {
+            "limits": [
+              300.0,
+              800.0
+            ],
+            "ticks": [
+              300.0,
+              400.0,
+              500.0,
+              600.0,
+              700.0,
+              800.0
+            ],
+            "labels": [
+              "300",
+              "400",
+              "500",
+              "600",
+              "700",
+              "800"
+            ]
+          }
+        },
+        {
+          "dataset": "AirScape",
+          "x": {
+            "limits": [
+              2.0,
+              10.0
+            ],
+            "ticks": [
+              2.0,
+              4.0,
+              6.0,
+              8.0,
+              10.0
+            ],
+            "labels": [
+              "2",
+              "4",
+              "6",
+              "8",
+              "10"
+            ]
+          },
+          "y": {
+            "limits": [
+              300.0,
+              800.0
+            ],
+            "ticks": [
+              300.0,
+              400.0,
+              500.0,
+              600.0,
+              700.0,
+              800.0
+            ],
+            "labels": [
+              "300",
+              "400",
+              "500",
+              "600",
+              "700",
+              "800"
+            ]
+          }
+        }
+      ],
       "files": [
         {
           "file": "figures/speed_energy_1x2.png",
-          "sha256": "469abc418b316ddfe02d58ed3a1d8da38d00772f98214572e677bec49c0633ed"
+          "sha256": "58cf4174e8b8a5c35727837a3ede3b2ec4503c6865dcede9be53d37e512ab486"
         },
         {
           "file": "figures/speed_energy_1x2.pdf",
-          "sha256": "eaee09b369aca350ce45a36ded11163322f37dd7eb74441403c4592a07b16dee"
+          "sha256": "2f64842226c2a926f48ca378fc33761f40e81e9bc508d28d21643c465e22ba30"
         },
         {
           "file": "figures/speed_energy_1x2.svg",
-          "sha256": "df2aeb380860e876a962bc9cc55e2530d6fb4ec961bbbf3261c08465869dcde8"
+          "sha256": "36d1e64edfd33f5010d6b70703216a094d3ee00d458cd0c2e6c9217eb58afda8"
         }
       ]
     },
     {
       "name": "frequency_energy_1x2",
+      "axes": [
+        {
+          "dataset": "CapERA",
+          "x": {
+            "limits": [
+              0.6000000000000001,
+              3.0000000000000004
+            ],
+            "ticks": [
+              0.6000000000000001,
+              1.2000000000000002,
+              1.8000000000000003,
+              2.4000000000000004,
+              3.0000000000000004
+            ],
+            "labels": [
+              "0.6",
+              "1.2",
+              "1.8",
+              "2.4",
+              "3.0"
+            ]
+          },
+          "y": {
+            "limits": [
+              300.0,
+              800.0
+            ],
+            "ticks": [
+              300.0,
+              400.0,
+              500.0,
+              600.0,
+              700.0,
+              800.0
+            ],
+            "labels": [
+              "300",
+              "400",
+              "500",
+              "600",
+              "700",
+              "800"
+            ]
+          }
+        },
+        {
+          "dataset": "AirScape",
+          "x": {
+            "limits": [
+              0.6000000000000001,
+              3.0000000000000004
+            ],
+            "ticks": [
+              0.6000000000000001,
+              1.2000000000000002,
+              1.8000000000000003,
+              2.4000000000000004,
+              3.0000000000000004
+            ],
+            "labels": [
+              "0.6",
+              "1.2",
+              "1.8",
+              "2.4",
+              "3.0"
+            ]
+          },
+          "y": {
+            "limits": [
+              200.0,
+              800.0
+            ],
+            "ticks": [
+              200.0,
+              300.0,
+              400.0,
+              500.0,
+              600.0,
+              700.0,
+              800.0
+            ],
+            "labels": [
+              "200",
+              "300",
+              "400",
+              "500",
+              "600",
+              "700",
+              "800"
+            ]
+          }
+        }
+      ],
       "files": [
         {
           "file": "figures/frequency_energy_1x2.png",
-          "sha256": "5157fd40caade99f2fc8196b7ee2d3e8749e1758ec8b390b26314ea5382f80d1"
+          "sha256": "6119ead116c8f548dad15ebcaac9a90a94d9d15a58352c23b837be7cdd03149d"
         },
         {
           "file": "figures/frequency_energy_1x2.pdf",
-          "sha256": "764ea13f7e6930667898ff780bf027c1289f30088a01f42db3dcb408fb988bc8"
+          "sha256": "996c99cabd10615fa641ce6a6ba9921cb41f772bdf8eb00a8d07652ce54b748e"
         },
         {
           "file": "figures/frequency_energy_1x2.svg",
-          "sha256": "14082d09a7e712e42710bd2e6044875836d2c56f411975c37747577098f907f6"
+          "sha256": "c92c4ffd42ee1cbc64bcffae53baac244ad899425186d30d702f7712d21815c5"
         }
       ]
     },
     {
       "name": "collection_slot_energy_1x2",
+      "axes": [
+        {
+          "dataset": "CapERA",
+          "x": {
+            "limits": [
+              0.0,
+              10.0
+            ],
+            "ticks": [
+              0.0,
+              2.5,
+              5.0,
+              7.5,
+              10.0
+            ],
+            "labels": [
+              "0.0",
+              "2.5",
+              "5.0",
+              "7.5",
+              "10.0"
+            ]
+          },
+          "y": {
+            "limits": [
+              200.0,
+              1000.0
+            ],
+            "ticks": [
+              200.0,
+              400.0,
+              600.0,
+              800.0,
+              1000.0
+            ],
+            "labels": [
+              "200",
+              "400",
+              "600",
+              "800",
+              "1000"
+            ]
+          }
+        },
+        {
+          "dataset": "AirScape",
+          "x": {
+            "limits": [
+              0.0,
+              10.0
+            ],
+            "ticks": [
+              0.0,
+              2.5,
+              5.0,
+              7.5,
+              10.0
+            ],
+            "labels": [
+              "0.0",
+              "2.5",
+              "5.0",
+              "7.5",
+              "10.0"
+            ]
+          },
+          "y": {
+            "limits": [
+              200.0,
+              1000.0
+            ],
+            "ticks": [
+              200.0,
+              400.0,
+              600.0,
+              800.0,
+              1000.0
+            ],
+            "labels": [
+              "200",
+              "400",
+              "600",
+              "800",
+              "1000"
+            ]
+          }
+        }
+      ],
       "files": [
         {
           "file": "figures/collection_slot_energy_1x2.png",
-          "sha256": "4cae27b4558857b4838f8ece6325bcba3b0f7c659683d36f7a70875145055f1e"
+          "sha256": "53d4e0d14ceddf27467d4276ce72611a0190998a8154328ce920c8cc85d66b58"
         },
         {
           "file": "figures/collection_slot_energy_1x2.pdf",
-          "sha256": "a75107aa33bc3fb8c868a33e68ae3d536920598733fe6f0497dd62cba42e1bf9"
+          "sha256": "3d5f9c4ab15f741314cd82a2695533b18508f28a281d812d80ed6510167900d3"
         },
         {
           "file": "figures/collection_slot_energy_1x2.svg",
-          "sha256": "bdf1148e8b5a9db9f0b85ef702cdb93e27377eec52bba6bcb63ac5df61eead3c"
+          "sha256": "06965b5e23cc2d4477040a3a7de0dc3c0580333b9df165d803933ea1053973ad"
         }
       ]
     },
     {
       "name": "loss_mission_time_1x2",
+      "axes": [
+        {
+          "dataset": "CapERA",
+          "x": {
+            "limits": [
+              0.0,
+              1200.0
+            ],
+            "ticks": [
+              0,
+              300,
+              600,
+              900,
+              1200
+            ],
+            "labels": [
+              "0",
+              "300",
+              "600",
+              "900",
+              "1200"
+            ]
+          },
+          "y": {
+            "limits": [
+              5.300000000000001,
+              5.700000000000001
+            ],
+            "ticks": [
+              5.300000000000001,
+              5.4,
+              5.500000000000001,
+              5.6000000000000005,
+              5.700000000000001
+            ],
+            "labels": [
+              "5.30",
+              "5.40",
+              "5.50",
+              "5.60",
+              "5.70"
+            ]
+          }
+        },
+        {
+          "dataset": "AirScape",
+          "x": {
+            "limits": [
+              0.0,
+              1200.0
+            ],
+            "ticks": [
+              0,
+              300,
+              600,
+              900,
+              1200
+            ],
+            "labels": [
+              "0",
+              "300",
+              "600",
+              "900",
+              "1200"
+            ]
+          },
+          "y": {
+            "limits": [
+              5.5,
+              5.75
+            ],
+            "ticks": [
+              5.5,
+              5.55,
+              5.6,
+              5.65,
+              5.7,
+              5.75
+            ],
+            "labels": [
+              "5.50",
+              "5.55",
+              "5.60",
+              "5.65",
+              "5.70",
+              "5.75"
+            ]
+          }
+        }
+      ],
       "files": [
         {
           "file": "figures/loss_mission_time_1x2.png",
-          "sha256": "4a8bbcd741255fb44f3ba502b0683bf46b2218cd3aae901c1d7e9f1350300ac3"
+          "sha256": "0094b95baf2dd9d1cb9d08eb26227a10941a68c7a08f76a0f362ec19ab1985af"
         },
         {
           "file": "figures/loss_mission_time_1x2.pdf",
-          "sha256": "7977b460ac6766c01fd030192924e51a374e9ecbb2e78a3ce111be97e8375ec4"
+          "sha256": "da8f9c32c185d34d6cf87d984bf5e36451069ebb82865dba6cfc0d3474eff844"
         },
         {
           "file": "figures/loss_mission_time_1x2.svg",
-          "sha256": "be122250e16934c713a0e051fcea80a3e2f5c99eed493cdc735b6f0843fc0022"
+          "sha256": "03e4ab12277156ec705d93b534359117e3d3aa2d4da82307c5e3394ddb20b74c"
         }
       ]
     },
     {
       "name": "mR_mission_time_1x2",
+      "axes": [
+        {
+          "dataset": "CapERA",
+          "x": {
+            "limits": [
+              0.0,
+              1200.0
+            ],
+            "ticks": [
+              0,
+              300,
+              600,
+              900,
+              1200
+            ],
+            "labels": [
+              "0",
+              "300",
+              "600",
+              "900",
+              "1200"
+            ]
+          },
+          "y": {
+            "limits": [
+              15.0,
+              17.5
+            ],
+            "ticks": [
+              15.0,
+              15.5,
+              16.0,
+              16.5,
+              17.0,
+              17.5
+            ],
+            "labels": [
+              "15.0",
+              "15.5",
+              "16.0",
+              "16.5",
+              "17.0",
+              "17.5"
+            ]
+          }
+        },
+        {
+          "dataset": "AirScape",
+          "x": {
+            "limits": [
+              0.0,
+              1200.0
+            ],
+            "ticks": [
+              0,
+              300,
+              600,
+              900,
+              1200
+            ],
+            "labels": [
+              "0",
+              "300",
+              "600",
+              "900",
+              "1200"
+            ]
+          },
+          "y": {
+            "limits": [
+              13.0,
+              13.8
+            ],
+            "ticks": [
+              13.0,
+              13.2,
+              13.4,
+              13.6,
+              13.8
+            ],
+            "labels": [
+              "13.0",
+              "13.2",
+              "13.4",
+              "13.6",
+              "13.8"
+            ]
+          }
+        }
+      ],
       "files": [
         {
           "file": "figures/mR_mission_time_1x2.png",
-          "sha256": "fcb36010977af202aefa5a7c6361b29cd56436d6aa29e444687278340cb2e931"
+          "sha256": "98465388466b71910cb03e36afac01069436fa43bf891816d9fd9fce35939dac"
         },
         {
           "file": "figures/mR_mission_time_1x2.pdf",
-          "sha256": "41748d5b6fd833bdeaf32d47899f0ee18374fda55fe8134ce2b7c5e33cd9611f"
+          "sha256": "3e67e1d0e15e812bd115fd586fc6d675e0bbc6b08814f504d946ffd886111c19"
         },
         {
           "file": "figures/mR_mission_time_1x2.svg",
-          "sha256": "6bc058c3c476428b30cb1365cdaac4d5a63add7e417f647e966725b0edcb66fa"
+          "sha256": "49e2d19d33c580c8b2f57d2256f7e8e8ff7f3f8a883138f96338d59bc584565a"
         }
       ]
     },
     {
       "name": "loss_service_time_1x2",
+      "axes": [
+        {
+          "dataset": "CapERA",
+          "x": {
+            "limits": [
+              0.0,
+              400.0
+            ],
+            "ticks": [
+              0,
+              100,
+              200,
+              300,
+              400
+            ],
+            "labels": [
+              "0",
+              "100",
+              "200",
+              "300",
+              "400"
+            ]
+          },
+          "y": {
+            "limits": [
+              5.300000000000001,
+              5.700000000000001
+            ],
+            "ticks": [
+              5.300000000000001,
+              5.4,
+              5.500000000000001,
+              5.6000000000000005,
+              5.700000000000001
+            ],
+            "labels": [
+              "5.30",
+              "5.40",
+              "5.50",
+              "5.60",
+              "5.70"
+            ]
+          }
+        },
+        {
+          "dataset": "AirScape",
+          "x": {
+            "limits": [
+              0.0,
+              400.0
+            ],
+            "ticks": [
+              0,
+              100,
+              200,
+              300,
+              400
+            ],
+            "labels": [
+              "0",
+              "100",
+              "200",
+              "300",
+              "400"
+            ]
+          },
+          "y": {
+            "limits": [
+              5.5,
+              5.75
+            ],
+            "ticks": [
+              5.5,
+              5.55,
+              5.6,
+              5.65,
+              5.7,
+              5.75
+            ],
+            "labels": [
+              "5.50",
+              "5.55",
+              "5.60",
+              "5.65",
+              "5.70",
+              "5.75"
+            ]
+          }
+        }
+      ],
       "files": [
         {
           "file": "figures/loss_service_time_1x2.png",
-          "sha256": "705f9c6da40589f0ce1c60d0d73c06923208affa6e8b32b9723eb6d29b7d4bae"
+          "sha256": "59dc0391bba85345be24177bae56315c74d1bcbb59d171abced9ae9e54591b55"
         },
         {
           "file": "figures/loss_service_time_1x2.pdf",
-          "sha256": "d3191367f46efca84590d9ff838807f6e7e9c880d9db80de9757f9d3e20707e0"
+          "sha256": "4d8fd7290b607f96c651d63abafa6e819b21f292c7fad8ad0043fd1f55f00f3f"
         },
         {
           "file": "figures/loss_service_time_1x2.svg",
-          "sha256": "20c1fd278aa19045def5376a741250672d4534def270dc8e0bea5a6593e655b2"
+          "sha256": "c2d33ab1025e89ed48cfe359c8272bcfb5be189ca61cf2b45b4018e485d0f6b9"
         }
       ]
     },
     {
       "name": "mR_service_time_1x2",
+      "axes": [
+        {
+          "dataset": "CapERA",
+          "x": {
+            "limits": [
+              0.0,
+              400.0
+            ],
+            "ticks": [
+              0,
+              100,
+              200,
+              300,
+              400
+            ],
+            "labels": [
+              "0",
+              "100",
+              "200",
+              "300",
+              "400"
+            ]
+          },
+          "y": {
+            "limits": [
+              15.0,
+              17.5
+            ],
+            "ticks": [
+              15.0,
+              15.5,
+              16.0,
+              16.5,
+              17.0,
+              17.5
+            ],
+            "labels": [
+              "15.0",
+              "15.5",
+              "16.0",
+              "16.5",
+              "17.0",
+              "17.5"
+            ]
+          }
+        },
+        {
+          "dataset": "AirScape",
+          "x": {
+            "limits": [
+              0.0,
+              400.0
+            ],
+            "ticks": [
+              0,
+              100,
+              200,
+              300,
+              400
+            ],
+            "labels": [
+              "0",
+              "100",
+              "200",
+              "300",
+              "400"
+            ]
+          },
+          "y": {
+            "limits": [
+              13.0,
+              13.8
+            ],
+            "ticks": [
+              13.0,
+              13.2,
+              13.4,
+              13.6,
+              13.8
+            ],
+            "labels": [
+              "13.0",
+              "13.2",
+              "13.4",
+              "13.6",
+              "13.8"
+            ]
+          }
+        }
+      ],
       "files": [
         {
           "file": "figures/mR_service_time_1x2.png",
-          "sha256": "06a0ec74c1f8f49523268cfb7949436c4458e1fc28be27e51cb02cb34dca43ea"
+          "sha256": "4c93e77fad54c2d8a609bccf537bedaa378dc94fb35a60017debcbe2920d3f43"
         },
         {
           "file": "figures/mR_service_time_1x2.pdf",
-          "sha256": "f89fd027ffcc23674fb4cada1a318bfcb5330c09aa2393a7c8f11bf13467cad9"
+          "sha256": "59507bb0ab6c5167c35cdb1f848566b6a040388548b1183ed81bd30d7a23148f"
         },
         {
           "file": "figures/mR_service_time_1x2.svg",
-          "sha256": "7536f16453d50439bba61e7dbd211a41026f959c396c9db25c84bf0ae60cff99"
+          "sha256": "dfd8a3ed479c31cb3aecf27265b0eede45dedccb8290144986e225331ccac4bd"
         }
       ]
     },
     {
       "name": "loss_total_time_1x2",
+      "axes": [
+        {
+          "dataset": "CapERA",
+          "x": {
+            "limits": [
+              600.0,
+              2100.0
+            ],
+            "ticks": [
+              600,
+              900,
+              1200,
+              1500,
+              1800,
+              2100
+            ],
+            "labels": [
+              "600",
+              "900",
+              "1200",
+              "1500",
+              "1800",
+              "2100"
+            ]
+          },
+          "y": {
+            "limits": [
+              5.300000000000001,
+              5.800000000000001
+            ],
+            "ticks": [
+              5.300000000000001,
+              5.4,
+              5.500000000000001,
+              5.6000000000000005,
+              5.700000000000001,
+              5.800000000000001
+            ],
+            "labels": [
+              "5.30",
+              "5.40",
+              "5.50",
+              "5.60",
+              "5.70",
+              "5.80"
+            ]
+          }
+        },
+        {
+          "dataset": "AirScape",
+          "x": {
+            "limits": [
+              600.0,
+              2100.0
+            ],
+            "ticks": [
+              600,
+              900,
+              1200,
+              1500,
+              1800,
+              2100
+            ],
+            "labels": [
+              "600",
+              "900",
+              "1200",
+              "1500",
+              "1800",
+              "2100"
+            ]
+          },
+          "y": {
+            "limits": [
+              5.5,
+              5.8
+            ],
+            "ticks": [
+              5.5,
+              5.55,
+              5.6,
+              5.65,
+              5.7,
+              5.75,
+              5.8
+            ],
+            "labels": [
+              "5.50",
+              "5.55",
+              "5.60",
+              "5.65",
+              "5.70",
+              "5.75",
+              "5.80"
+            ]
+          }
+        }
+      ],
       "files": [
         {
           "file": "figures/loss_total_time_1x2.png",
-          "sha256": "c04fd121fce5d176d360f05f9ca06dc8f7a61baf02fb577507f01fb5b9a76493"
+          "sha256": "2411aa09125b827eef045f3c58a2e142faabc3772cd41611af1e067d30ea3062"
         },
         {
           "file": "figures/loss_total_time_1x2.pdf",
-          "sha256": "4c28dcd7684d208417c226fda22c3d75fc9f3408341f95786eae0bef0a990be4"
+          "sha256": "ffa0c368104bafefbb180cf53d886b8fa6125208c6d0ea2c7b6fbf12560565c7"
         },
         {
           "file": "figures/loss_total_time_1x2.svg",
-          "sha256": "17c2b706a0b024ad08c81b047af1c198bea821679017e00010a1c274d80c8102"
+          "sha256": "e741ea3157ba2367b9e25595b171afc4f87c4cca93ab59491f1611bdbdbd07ec"
         }
       ]
     },
     {
       "name": "mR_total_time_1x2",
+      "axes": [
+        {
+          "dataset": "CapERA",
+          "x": {
+            "limits": [
+              600.0,
+              2100.0
+            ],
+            "ticks": [
+              600,
+              900,
+              1200,
+              1500,
+              1800,
+              2100
+            ],
+            "labels": [
+              "600",
+              "900",
+              "1200",
+              "1500",
+              "1800",
+              "2100"
+            ]
+          },
+          "y": {
+            "limits": [
+              15.0,
+              17.5
+            ],
+            "ticks": [
+              15.0,
+              15.5,
+              16.0,
+              16.5,
+              17.0,
+              17.5
+            ],
+            "labels": [
+              "15.0",
+              "15.5",
+              "16.0",
+              "16.5",
+              "17.0",
+              "17.5"
+            ]
+          }
+        },
+        {
+          "dataset": "AirScape",
+          "x": {
+            "limits": [
+              600.0,
+              2100.0
+            ],
+            "ticks": [
+              600,
+              900,
+              1200,
+              1500,
+              1800,
+              2100
+            ],
+            "labels": [
+              "600",
+              "900",
+              "1200",
+              "1500",
+              "1800",
+              "2100"
+            ]
+          },
+          "y": {
+            "limits": [
+              13.0,
+              13.8
+            ],
+            "ticks": [
+              13.0,
+              13.2,
+              13.4,
+              13.6,
+              13.8
+            ],
+            "labels": [
+              "13.0",
+              "13.2",
+              "13.4",
+              "13.6",
+              "13.8"
+            ]
+          }
+        }
+      ],
       "files": [
         {
           "file": "figures/mR_total_time_1x2.png",
-          "sha256": "b3f028a5e173ed9318ef273a1f36f995365faa63bbfb72470a081f826f6c290f"
+          "sha256": "29a5df359b7e2ff149aa4a27b4971eeb103ab5e33233bb66d8bfe871bf51765c"
         },
         {
           "file": "figures/mR_total_time_1x2.pdf",
-          "sha256": "2f3f5aa6faa00eb9b03df2367991d8aa4d90efa022b7cdbaa8bc3476b7ef0fdc"
+          "sha256": "3d34d80bb9158e397b00df8ed44bed7af812fe34f71d1d7ddae9ff4e52e6a9b3"
         },
         {
           "file": "figures/mR_total_time_1x2.svg",
-          "sha256": "22acd9fae9643fbb08ba61014df446c25de453d948e5a425692f3f3873939c9e"
+          "sha256": "28e86970a4cc0c1188d8969871c21837b6c52f2f75216aca6809336fc0aa1b45"
         }
       ]
     },
     {
       "name": "baseline_energy_1x2",
+      "axes": [
+        {
+          "dataset": "CapERA",
+          "x": {
+            "limits": [
+              -0.6,
+              4.6
+            ],
+            "ticks": [],
+            "labels": []
+          },
+          "y": {
+            "limits": [
+              0.0,
+              800.0
+            ],
+            "ticks": [
+              0,
+              200,
+              400,
+              600,
+              800
+            ],
+            "labels": [
+              "0",
+              "200",
+              "400",
+              "600",
+              "800"
+            ]
+          }
+        },
+        {
+          "dataset": "AirScape",
+          "x": {
+            "limits": [
+              -0.6,
+              4.6
+            ],
+            "ticks": [],
+            "labels": []
+          },
+          "y": {
+            "limits": [
+              0.0,
+              800.0
+            ],
+            "ticks": [
+              0,
+              200,
+              400,
+              600,
+              800
+            ],
+            "labels": [
+              "0",
+              "200",
+              "400",
+              "600",
+              "800"
+            ]
+          }
+        }
+      ],
       "files": [
         {
           "file": "figures/baseline_energy_1x2.png",
@@ -291,17 +1809,17 @@
         },
         {
           "file": "figures/baseline_energy_1x2.pdf",
-          "sha256": "6559a4228259307aafc211776a105b9da9f5842965d9a2ab624369cafc8858b7"
+          "sha256": "d8a551222602ef7b1d6a54f7dbdcde8d5c1be184abc48f8637d36107b5a39308"
         },
         {
           "file": "figures/baseline_energy_1x2.svg",
-          "sha256": "156e48f84dee3f8deb121d83d6c07fb6d477e97a37070385163ef33c4fed36f1"
+          "sha256": "dc07c0b94fab43351cc92ea811e1ba23ebce530b49f24772241d25811bf5d9a2"
         }
       ]
     }
   ],
   "source_sha256": {
-    "tools/uav_convergence_v2/time_energy_report.py": "d4fc23cc3d0ee29564557b13d395b7e6b93cd3e6f7d54750fd0e1db82f2b8457",
+    "tools/uav_convergence_v2/time_energy_report.py": "0fa0d4e46e0518c0ab458792cce72b7a3f58ccb497a1b3dd3937f72c445dd70a",
     "results/airscape_power_audit_v1_20261027/cases/bandwidth_0p25/capera_seed0/proposed_fu_guard_cliperase/outcome.json": "dfe29f03856cb144d5b0585795099ba973795184828d7f1b87a11746ad4af068",
     "results/airscape_power_audit_v1_20261027/cases/bandwidth_0p25/capera_seed0/heuristic_ova/outcome.json": "f0e3c9acd92350256e7b21d866c442d5df069b09b975b11a86baa7a9613bd5a4",
     "results/airscape_power_audit_v1_20261027/cases/bandwidth_0p25/capera_seed0/separate_aircomp_periodic/outcome.json": "0373e859045fbe7616af95fb38334bdca7b33cbcddee61126767327545afab80",

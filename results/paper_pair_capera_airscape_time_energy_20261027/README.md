@@ -14,7 +14,9 @@ All times are the existing UAV/IoT simulation model, not GPU/server runtime.
 - **FL/FU service time:** active service windows only; includes computation, uplink, broadcast and scheduler waits.
 - **Total elapsed time:** from cold feature extraction; includes initial20/proxy20 and mission movement/collection.
 
-Every convergence trace ends when its final required FL/FU broadcast is complete. Return flight happens after learning and is not an extra learning period. Mission and service plots begin at the common20-round initial model. Total-time plots additionally show the recorded initial20 evaluations. Step traces carry forward only the last observed metric, avoiding an artificial slope during flight. There is no smoothing, invented evaluation, change to loss/mR, or annotation text on the chart. Different methods stop at their own actual work completion time.
+Every measured convergence trace ends when its final required FL/FU broadcast is complete. Return flight happens after learning and is not an extra learning period. Mission and service plots begin at the common20-round initial model. Total-time plots additionally show the recorded initial20 evaluations. Step traces carry forward only the last observed metric, avoiding an artificial slope during flight. There is no smoothing, invented evaluation, change to loss/mR, or annotation text on the chart. For display, each final value is held horizontally through the common right-hand axis limit. This tail is not evidence of further learning or convergence: a completed run can still have room to improve. Raw x/y observations, actual completion times and separate display_x/display_y arrays are retained in `plot_series.json`. Time-to-quality calculations use only actual observations, never the added endpoints.
+
+All numeric axes include both endpoint labels with constant arithmetic tick spacing. Parameter sweeps use linear physical coordinates; original irregularly sampled x values are not moved. Both panels use the same decimal precision (loss: two places; mR: one). Axis bounds, ticks and labels are saved in `summary.json`.
 
 | Time axis | Loss | mR |
 |---|---|---|
