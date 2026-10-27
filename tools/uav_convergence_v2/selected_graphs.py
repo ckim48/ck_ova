@@ -130,14 +130,21 @@ def save(fig, axes, name, status_markers=None):
     return dict(name=name, axes=settings, files=files, status_markers=status_markers or [])
 
 
-def generate(comparison="main"):
+def generate(comparison="learning"):
     global METHODS, DEST
     from baseline_fairness import MAIN, OUT, CHECKED, OLD, NEW
     from common import METHODS as original_methods
     from report import COLORS, MARKERS, STYLES
     COLORS, MARKERS, STYLES = list(COLORS), list(MARKERS), list(STYLES)
     COLORS.append("#4C9F9F"); MARKERS.append("h"); STYLES.append((0, (3, 1, 1, 1)))
-    if comparison == "main":
+    COLORS.append("#8C6D31"); MARKERS.append("d"); STYLES.append((0, (5, 2)))
+    if comparison == "learning":
+        import learning_ablation as learning_study
+        assert read(learning_study.OUT / "finished.json")["passed"]
+        METHODS = {learning_study.PROPOSED: "Proposed", learning_study.NEW: learning_study.LABEL}
+        METHODS.update({m: label for m, label in MAIN.items() if m != learning_study.PROPOSED})
+        DEST, chart.SOURCE, indices = ROOT / "selected_graph", learning_study.OUT, [0, 6, 2, 3, 4]
+    elif comparison == "main":
         assert read(OUT / "finished.json")["passed"]
         METHODS, DEST, chart.SOURCE = MAIN, ROOT / "selected_graph", OUT
         indices = [0, 2, 3, 4]
@@ -167,6 +174,9 @@ def generate(comparison="main"):
             sources[str(path.relative_to(ROOT))] = sha(path)
     if comparison == "guard_ablation":
         for path in [guard_study.OUT / "protocol.json", guard_study.OUT / "verification.json", Path(guard_study.__file__)]:
+            sources[str(path.relative_to(ROOT))] = sha(path)
+    if comparison == "learning":
+        for path in [learning_study.OUT / "protocol.json", learning_study.OUT / "verification.json", Path(learning_study.__file__)]:
             sources[str(path.relative_to(ROOT))] = sha(path)
     trajectories = {(d, m): chart.convergence(d, m, sources) for d in DATASETS for m in METHODS}
     initial = {}
@@ -325,7 +335,7 @@ def generate(comparison="main"):
         "All results use seed-0, 200-FL-round experiments and the unchanged validation subsets. "
         "Raw plotting arrays, service components, original/excluded totals, axis settings and source hashes "
         f"are in `data/`. Rebuild with `.venv/bin/python tools/uav_convergence_v2/selected_graphs.py --comparison {comparison}`.", ""]
-    if comparison == "main":
+    if comparison in ["main", "learning"]:
         lines += ["## Comparison scope", "",
             "S-OF is a new measured serial digital OFDMA baseline using the same existing safe-proxy FU objective as S-AC and AC-OF. "
             "S-OF+ used the CLIPErase-inspired objective shared with Proposed. The new S-OF is not a relabeling of S-OF+. "
@@ -339,6 +349,16 @@ def generate(comparison="main"):
             "The analog arms retain their original hard network cap. Per-user power/energy, deadline and error checks remain enforced. "
             "See the [protocol and quality audit](../results/baseline_fairness_v1_20261027/README.md) for component definitions, "
             "forgetting diagnostics and all ten new outcomes. No hyperparameter was selected based on these results.", ""]
+        if comparison == "learning":
+            lines += ["**FM-CM** is Proposed with the retained contrastive RM coefficient in its FU objective set from 1 to 0. "
+                "FM and CM retain their coefficients of 3. Standard FL learning, sampled data, teacher construction, LR schedule, "
+                "joint transport, FU guard and optimized head/resources are unchanged. RM remains a logged diagnostic "
+                "with zero gradient contribution; retained features are still needed by CM. The existing MAC model "
+                "does not count the separate contrastive-matrix/softmax arithmetic for either method. "
+                "It is a learning-component ablation of the adopted CLIPErase-inspired objective, not an independent "
+                "published baseline. Its measured curve is retained regardless of rank. See the "
+                "[learning-component audit](../results/learning_ablation_v1_20261027/README.md) for the gradient check, "
+                "all ten conditions and retention/forgetting tradeoffs.", ""]
     elif comparison in ["ablation", "guard_ablation"]:
         lines += ["## Interpretation", "",
             "All displayed methods use the same CLIPErase-inspired FM/RM/CM FU objective, model and workload. "
@@ -363,5 +383,5 @@ def generate(comparison="main"):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--comparison", choices=["main", "ablation", "guard_ablation", "legacy"], default="main")
+    parser.add_argument("--comparison", choices=["learning", "main", "ablation", "guard_ablation", "legacy"], default="learning")
     generate(parser.parse_args().comparison)

@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "request": "b00_u0",
+  "training_only": true,
+  "removed_component": "retained contrastive RM",
+  "full_minus_partial_equals_RM_gradient": true,
+  "removed_gradient_norm": 1.6900932788848877,
+  "residual_max_absolute": 2.2724270820617676e-07,
+  "FL_vectors_bit_identical": true,
+  "partial_weights": {
+    "retention": 0.0,
+    "forgetting": 3.0,
+    "consistency": 3.0
+  },
+  "full_objective": 4.827397346496582,
+  "partial_objective": 0.8203607201576233
+}

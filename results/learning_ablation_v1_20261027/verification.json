@@ -1,0 +1,88 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "case": "baseline",
+      "dataset": "CapERA",
+      "status": "completed",
+      "wall_seconds": 54.92414307594299,
+      "transactions": 180,
+      "verified_FU_steps": 225
+    },
+    {
+      "case": "baseline",
+      "dataset": "AirScape",
+      "status": "completed",
+      "wall_seconds": 30.286462783813477,
+      "transactions": 180,
+      "verified_FU_steps": 225
+    },
+    {
+      "case": "bandwidth_0p25",
+      "dataset": "CapERA",
+      "status": "completed",
+      "wall_seconds": 39.73969864845276,
+      "transactions": 180,
+      "verified_FU_steps": 225
+    },
+    {
+      "case": "bandwidth_0p25",
+      "dataset": "AirScape",
+      "status": "completed",
+      "wall_seconds": 25.540817737579346,
+      "transactions": 180,
+      "verified_FU_steps": 225
+    },
+    {
+      "case": "bandwidth_0p5",
+      "dataset": "CapERA",
+      "status": "completed",
+      "wall_seconds": 44.7160427570343,
+      "transactions": 180,
+      "verified_FU_steps": 225
+    },
+    {
+      "case": "bandwidth_0p5",
+      "dataset": "AirScape",
+      "status": "completed",
+      "wall_seconds": 26.38188409805298,
+      "transactions": 180,
+      "verified_FU_steps": 225
+    },
+    {
+      "case": "bandwidth_2",
+      "dataset": "CapERA",
+      "status": "completed",
+      "wall_seconds": 66.57764029502869,
+      "transactions": 180,
+      "verified_FU_steps": 225
+    },
+    {
+      "case": "bandwidth_2",
+      "dataset": "AirScape",
+      "status": "completed",
+      "wall_seconds": 34.98991417884827,
+      "transactions": 180,
+      "verified_FU_steps": 225
+    },
+    {
+      "case": "bandwidth_4",
+      "dataset": "CapERA",
+      "status": "completed",
+      "wall_seconds": 91.62722325325012,
+      "transactions": 180,
+      "verified_FU_steps": 225
+    },
+    {
+      "case": "bandwidth_4",
+      "dataset": "AirScape",
+      "status": "completed",
+      "wall_seconds": 45.09999895095825,
+      "transactions": 180,
+      "verified_FU_steps": 225
+    }
+  ],
+  "outcomes": {
+    "completed": 10
+  }
+}
