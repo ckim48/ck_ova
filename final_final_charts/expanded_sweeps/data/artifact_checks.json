@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "figures": 23,
+  "compared_arms": 126,
+  "series": 138,
+  "checks": [
+    "Every plotted point equals an independently audited ledger value",
+    "Round/time convergence endpoints equal actual final metrics and clocks",
+    "All figures have regular endpoint ticks and matching panel precision",
+    "Rendered PNG/PDF/SVG hashes and registered source hashes verified",
+    "All costs and quality tradeoffs retained without smoothing or rank selection"
+  ],
+  "source_sha256": {
+    "tools/uav_convergence_v2/workload_artifact_check.py": "70c6aee9b6910ca48e4e34d1a9b4388f90493bdb0590c5e8cbdf4685b85867b6"
+  }
+}

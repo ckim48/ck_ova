@@ -1,0 +1,7 @@
+{
+  "unix": 1793121716.2817495,
+  "source": "tools/uav_convergence_v2/workload_campaign.py",
+  "sha256": "cfedba57ed015b06a41dacf897d4894c78924a037872e6a7f863e35b3f6cb982",
+  "concurrency": 3,
+  "policy": "Parent holds exclusive GPU lock; three independent condition processes, each uses <=8 solver workers on32 available CPUs. Same source,seed and simulated clocks; GPU walltime not used for energy."
+}

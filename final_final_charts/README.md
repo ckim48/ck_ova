@@ -1,5 +1,7 @@
 # Paper-core UAV/VLM comparison
 
+**Expanded sweeps:** [23 additional 1×2 figures](expanded_sweeps/index.html) cover bandwidth, downlink rate, request grouping, FL-round budget and packet loss, with separate active/mission delay and quality checks.
+
 CapERA (left), AirScape (right). Main curves: Proposed, ISCC-P2, AFL-OTA. These are explicitly scoped transfers into the common10-UAV scenario, not complete reproductions of the cited papers.
 
 | Method | Published source | Preserved core | Explicit adaptation / omitted part |

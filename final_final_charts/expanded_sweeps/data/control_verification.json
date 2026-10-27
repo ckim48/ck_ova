@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "arms": 6,
+  "rows": [
+    {
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "final_metrics_exact": true,
+      "transaction_order_times_and_RF_identical": true,
+      "transactions": 180
+    },
+    {
+      "dataset": "CapERA",
+      "method": "iscc_p2_gaft",
+      "final_metrics_exact": true,
+      "transaction_order_times_and_RF_identical": true,
+      "transactions": 225
+    },
+    {
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "final_metrics_exact": true,
+      "transaction_order_times_and_RF_identical": true,
+      "transactions": 225
+    },
+    {
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "final_metrics_exact": true,
+      "transaction_order_times_and_RF_identical": true,
+      "transactions": 180
+    },
+    {
+      "dataset": "AirScape",
+      "method": "iscc_p2_gaft",
+      "final_metrics_exact": true,
+      "transaction_order_times_and_RF_identical": true,
+      "transactions": 225
+    },
+    {
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "final_metrics_exact": true,
+      "transaction_order_times_and_RF_identical": true,
+      "transactions": 225
+    }
+  ]
+}

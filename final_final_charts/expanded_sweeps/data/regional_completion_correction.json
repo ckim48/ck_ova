@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "affected": [
+    {
+      "case": "fl_rounds_100",
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu"
+    }
+  ],
+  "original_failure_preserved": true,
+  "identical_failed_prefix_transactions": 48,
+  "prefix_excluded_fields": [
+    "optimizer_wall_s"
+  ],
+  "exclusion_reason": "Measured host optimizer runtime is nondeterministic and excluded from modeled UAV energy/delay; every other transaction field is exactly identical.",
+  "additional_regional_FU_transactions": 1,
+  "completed_FL_rounds": 100,
+  "FU_cycles": 225,
+  "extra_transaction_duration_s": 0.6766622026666667,
+  "correction_source_sha256": "f80295ecfcec4acbab4cdffc8a9d160ac5592b71c8075eeda1f3f4d473a6375a",
+  "verification_source_sha256": {
+    "tools/uav_convergence_v2/workload_correction_audit.py": "d6f92460adeab68c4016def20b7e99ea4f94440f40891e11cd8003276ba1eff1"
+  }
+}
