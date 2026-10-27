@@ -10,7 +10,7 @@ Energy includes communication, computing and flight/hovering. FL/FU completion i
 
 Curves use raw observations, including repeated round observations and infeasible gaps. Partial convergence traces stop at their actual last evaluation. Single seed; no confidence intervals.
 
-Current terminal arms: 370/410; figures: 110/122.
+Current terminal arms: 410/410; figures: 122/122.
 
 | Axis | Energy | FL/FU completion | Mission delay | Loss | mR |
 |---|---|---|---|---|---|
@@ -23,7 +23,7 @@ Current terminal arms: 370/410; figures: 110/122.
 | FU steps per request | [Energy](figures/fu_steps_total_energy_j_1x2.png) | [FL/FU](figures/fu_steps_FL_FU_completion_delay_s_1x2.png) | [Mission](figures/fu_steps_mission_delay_s_1x2.png) | [Loss](figures/fu_steps_loss_1x2.png) | [mR](figures/fu_steps_mR_1x2.png) |
 | Cruise speed (m/s) | [Energy](figures/speed_total_energy_j_1x2.png) | [FL/FU](figures/speed_FL_FU_completion_delay_s_1x2.png) | [Mission](figures/speed_mission_delay_s_1x2.png) | [Loss](figures/speed_loss_1x2.png) | [mR](figures/speed_mR_1x2.png) |
 | CPU frequency (GHz) | [Energy](figures/frequency_total_energy_j_1x2.png) | [FL/FU](figures/frequency_FL_FU_completion_delay_s_1x2.png) | [Mission](figures/frequency_mission_delay_s_1x2.png) | [Loss](figures/frequency_loss_1x2.png) | [mR](figures/frequency_mR_1x2.png) |
-| IoT slot duration (s) | pending | pending | pending | pending | pending |
+| IoT slot duration (s) | [Energy](figures/collection_slot_total_energy_j_1x2.png) | [FL/FU](figures/collection_slot_FL_FU_completion_delay_s_1x2.png) | [Mission](figures/collection_slot_mission_delay_s_1x2.png) | [Loss](figures/collection_slot_loss_1x2.png) | [mR](figures/collection_slot_mR_1x2.png) |
 
 [loss convergence](figures/loss_convergence_1x2.png)
 
