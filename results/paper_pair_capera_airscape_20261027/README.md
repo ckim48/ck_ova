@@ -10,7 +10,7 @@ Energy includes communication, computing and flight/hovering. FL/FU completion i
 
 Curves use raw observations, including repeated round observations and infeasible gaps. Partial convergence traces stop at their actual last evaluation. Single seed; no confidence intervals.
 
-Current terminal arms: 170/410; figures: 50/122.
+Current terminal arms: 210/410; figures: 62/122.
 
 | Axis | Energy | FL/FU completion | Mission delay | Loss | mR |
 |---|---|---|---|---|---|
@@ -18,7 +18,7 @@ Current terminal arms: 170/410; figures: 50/122.
 | Downlink rate (Mbit/s) | [Energy](figures/downlink_total_energy_j_1x2.png) | [FL/FU](figures/downlink_FL_FU_completion_delay_s_1x2.png) | [Mission](figures/downlink_mission_delay_s_1x2.png) | [Loss](figures/downlink_loss_1x2.png) | [mR](figures/downlink_mR_1x2.png) |
 | UAV peak power (W) | [Energy](figures/power_total_energy_j_1x2.png) | [FL/FU](figures/power_FL_FU_completion_delay_s_1x2.png) | [Mission](figures/power_mission_delay_s_1x2.png) | [Loss](figures/power_loss_1x2.png) | [mR](figures/power_mR_1x2.png) |
 | Network TX budget (J) | [Energy](figures/network_cap_total_energy_j_1x2.png) | [FL/FU](figures/network_cap_FL_FU_completion_delay_s_1x2.png) | [Mission](figures/network_cap_mission_delay_s_1x2.png) | [Loss](figures/network_cap_loss_1x2.png) | [mR](figures/network_cap_mR_1x2.png) |
-| Channel gain offset (dB) | pending | pending | pending | pending | pending |
+| Channel gain offset (dB) | [Energy](figures/channel_gain_total_energy_j_1x2.png) | [FL/FU](figures/channel_gain_FL_FU_completion_delay_s_1x2.png) | [Mission](figures/channel_gain_mission_delay_s_1x2.png) | [Loss](figures/channel_gain_loss_1x2.png) | [mR](figures/channel_gain_mR_1x2.png) |
 | FU release groups | pending | pending | pending | pending | pending |
 | FU steps per request | pending | pending | pending | pending | pending |
 | Cruise speed (m/s) | pending | pending | pending | pending | pending |
