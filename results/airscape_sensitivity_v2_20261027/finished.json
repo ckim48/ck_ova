@@ -1,0 +1,21 @@
+{
+  "status": "finished_with_failed_arms",
+  "unix": 1793081989.6457956,
+  "report": {
+    "datasets": [
+      "CapERA",
+      "AirScape"
+    ],
+    "seed": 0,
+    "terminal_arms": 410,
+    "expected_arms": 410,
+    "status_counts": {
+      "completed": 380,
+      "incomplete_no_feasible_radio_design": 19,
+      "failed": 1,
+      "infeasible_collection_power": 10
+    },
+    "figure_count": 122,
+    "complete": true
+  }
+}
