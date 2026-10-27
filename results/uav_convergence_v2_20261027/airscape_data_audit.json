@@ -1,0 +1,165 @@
+{
+  "samples": 1792,
+  "split_counts": {
+    "train": 1536,
+    "validation": 256
+  },
+  "unique_source_groups": 1792,
+  "unique_media_sha256": 1792,
+  "unique_captions": 1754,
+  "median_tokens": 55.0,
+  "fraction_truncated": 0.020089285714285716,
+  "max_tokens": 94,
+  "decoder_verification": [
+    {
+      "source_key": "10099_WebUAV3M_train_suv_99_0.mp4",
+      "sha256": "1d924d493de3133dfd19c15c5dd0845e4cba12ea0652ee2b591fd1a4623f75e8",
+      "frame_indices": [
+        0,
+        18,
+        37,
+        55,
+        73,
+        91,
+        110,
+        128
+      ],
+      "max_pixel_difference": 0
+    },
+    {
+      "source_key": "08772_WebUAV3M_train_skiing_8_1.mp4",
+      "sha256": "309b4187609964d1bbbdcb81c4cbdca1dee77008afc57847117368d10643e61c",
+      "frame_indices": [
+        0,
+        18,
+        37,
+        55,
+        73,
+        91,
+        110,
+        128
+      ],
+      "max_pixel_difference": 0
+    },
+    {
+      "source_key": "07528_WebUAV3M_train_sedan_139_0.mp4",
+      "sha256": "ea3cbc7a904ff89360109b41cffc7977bd75759b9cbbdadb6241c4e4830af0ee",
+      "frame_indices": [
+        0,
+        18,
+        37,
+        55,
+        73,
+        91,
+        110,
+        128
+      ],
+      "max_pixel_difference": 0
+    },
+    {
+      "source_key": "06014_WebUAV3M_train_office_building_27_0.mp4",
+      "sha256": "393579cd1c9d4c8efe3badb192b987ccf98faf73491b451011ea5402b2fa363a",
+      "frame_indices": [
+        0,
+        18,
+        37,
+        55,
+        73,
+        91,
+        110,
+        128
+      ],
+      "max_pixel_difference": 0
+    },
+    {
+      "source_key": "08233_WebUAV3M_train_sightseeing_cruise_26_2.mp4",
+      "sha256": "b88547081bdca37fb779a5173f908a8814671614f9e8711f3b834500ccd64f57",
+      "frame_indices": [
+        0,
+        18,
+        37,
+        55,
+        73,
+        91,
+        110,
+        128
+      ],
+      "max_pixel_difference": 0
+    },
+    {
+      "source_key": "04425_WebUAV3M_train_dropside_truck_11_0.mp4",
+      "sha256": "e349e7f4cc9fbe495f778b9a6a27dc2f7df964ecdfe46677c2142828cbf1f475",
+      "frame_indices": [
+        0,
+        18,
+        37,
+        55,
+        73,
+        91,
+        110,
+        128
+      ],
+      "max_pixel_difference": 0
+    },
+    {
+      "source_key": "10472_WebUAV3M_train_walking_104_0.mp4",
+      "sha256": "f83a8f94a75e4e189d18129e4ce4c43231d1b503be3c65538aed53bf1f20ae79",
+      "frame_indices": [
+        0,
+        18,
+        37,
+        55,
+        73,
+        91,
+        110,
+        128
+      ],
+      "max_pixel_difference": 0
+    },
+    {
+      "source_key": "04510_WebUAV3M_train_elephant_6_0.mp4",
+      "sha256": "0d158a458ba3d33eddb28f7679e71a8b576709e4a927371661e3bcddfdd558ef",
+      "frame_indices": [
+        0,
+        18,
+        37,
+        55,
+        73,
+        91,
+        110,
+        128
+      ],
+      "max_pixel_difference": 0
+    },
+    {
+      "source_key": "07854_WebUAV3M_train_sedan_343_0.mp4",
+      "sha256": "33b6f931088d56d5fd3574f39efb3f3ca80c805a2bb2572ce0bf1fd589324867",
+      "frame_indices": [
+        0,
+        18,
+        37,
+        55,
+        73,
+        91,
+        110,
+        128
+      ],
+      "max_pixel_difference": 0
+    },
+    {
+      "source_key": "11905_WebUAV3M_train_yacht_4_0.mp4",
+      "sha256": "4d98dad818dce11b609a2bc51d552f3b2146ca95b3e06040c0a9f5c8a4f5f203",
+      "frame_indices": [
+        0,
+        18,
+        37,
+        55,
+        73,
+        91,
+        110,
+        128
+      ],
+      "max_pixel_difference": 0
+    }
+  ]
+}

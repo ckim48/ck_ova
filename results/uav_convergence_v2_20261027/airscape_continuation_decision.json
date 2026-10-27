@@ -1,0 +1,20 @@
+{
+  "decided_unix": 1793070292.552467,
+  "scope": "exploratory_followup_after_failed_strong_gain_gate",
+  "strong_gain_gate_passed": false,
+  "pilot": {
+    "status": "completed",
+    "initial_mR": 0.130859375,
+    "final_mR": 0.13541666666666666,
+    "gain_percentage_points": 0.45572916666666574,
+    "last_five_mean_mR": 0.13541666666666666,
+    "scope": "Ideal-link FL-only pilot; not Proposed or a five-method mission comparison"
+  },
+  "rationale": "Observed modest positive held-out mR change and stable late segment, and strong actual-UAV relevance from ACM MM2025. User requested a rising/converging UAV replacement and five-method ten-axis experiments. Continue to measure FU/radio behavior, without claiming the earlier stronger1.0pp criterion passed or a confirmed superior dataset.",
+  "limitations": [
+    "Post-hoc exploratory decision after pilot outcome.",
+    "All negative pilots and unchanged prospective gate retained.",
+    "One seed, validation reused for exploration; independent confirmation remains necessary.",
+    "No official test evaluation, no altered captions or training settings, no favorable checkpoint selection."
+  ]
+}

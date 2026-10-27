@@ -1,0 +1,29 @@
+{
+  "UAV-Captions": {
+    "status": "captions found in RS-LLaVA instructions; original images not publicly located",
+    "sources": [
+      "https://github.com/BigData-KSU/RS-LLaVA",
+      "http://disi.unitn.it/~melgani/datasets.html"
+    ]
+  },
+  "AeroCaps": {
+    "status": "official HF repository manually gated, not downloaded",
+    "source": "https://huggingface.co/datasets/NLIP-lab/AeroCaps"
+  },
+  "UAV-Construction": {
+    "status": "Completed fixed200-round learning-only pilot; held-out mR unchanged (5.7292% to5.7292%); unsuitable for requested rising-mR replacement.",
+    "source": "https://data.mendeley.com/datasets/4h68fmktwh/1",
+    "native_regions": 8428,
+    "unique_caption_strings": 795
+  },
+  "AirScape": {
+    "status": "Completed unchanged200-round pilot: mR13.0859% to13.5417% (+0.4557pp), stable from165. Failed prospective1.0pp strong-gain screen; exploratory five-method follow-up explicitly documented.",
+    "source": "https://huggingface.co/datasets/EmbodiedCity/AirScape-Dataset",
+    "paper": "https://doi.org/10.1145/3746027.3758180",
+    "adaptation": "Video-intention retrieval, not original world-model benchmark."
+  },
+  "UAV49k": {
+    "status": "Public image and detection-label archive; no native caption pairs found; not used.",
+    "source": "https://huggingface.co/datasets/EurekAI-Lab/UAV49k"
+  }
+}

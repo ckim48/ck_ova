@@ -1,0 +1,10 @@
+{
+  "dataset": "UAV-Construction",
+  "seed": 0,
+  "rounds": 200,
+  "change": "Dataset only; original adapter, optimizer, batch and learning-rate schedule retained.",
+  "comparison": "Ideal aggregation, FL only, no FU and no mission cost. Not a method ranking.",
+  "decision": "Assess final and late-average held-out mR improvement; do not choose a seed or smooth the curve.",
+  "selection_sha256": "80c21373a74be19344a0929e6abf6e6cfb6f413fa11326d32874c297458df159",
+  "source_sha256": "1c632385901c4cbe90f32ca204971ab75a85a76a37f29d982136d98e4f00290a"
+}

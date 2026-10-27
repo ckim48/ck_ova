@@ -1,0 +1,41 @@
+{
+  "results": {
+    "CapERA": {
+      "status": "completed",
+      "initial_mR": 0.15416666430731615,
+      "final_mR": 0.16419271131356558,
+      "gain_percentage_points": 1.0026047006249428,
+      "last_five_mean_mR": 0.16445312798023226,
+      "scope": "Ideal-link FL-only control; not Proposed or a five-method mission comparison"
+    },
+    "UAV-Construction": {
+      "status": "completed",
+      "initial_mR": 0.057291666666666664,
+      "final_mR": 0.057291666666666664,
+      "gain_percentage_points": 0.0,
+      "last_five_mean_mR": 0.057421875,
+      "scope": "Ideal-link FL-only pilot; not Proposed or a five-method mission comparison"
+    },
+    "AirScape": {
+      "status": "completed",
+      "initial_mR": 0.130859375,
+      "final_mR": 0.13541666666666666,
+      "gain_percentage_points": 0.45572916666666574,
+      "last_five_mean_mR": 0.13541666666666666,
+      "scope": "Ideal-link FL-only pilot; not Proposed or a five-method mission comparison"
+    }
+  },
+  "source_sha256": {
+    "capera_pilot/rounds.json": "86af3db6b7bb1bbd5a96c62f838186d0f875b52f972bc796826c38bffd4006b9",
+    "capera_pilot/protocol.json": "758d465e5e509d5fed1629d515fbfe27e244ef5159e7c7272f72d9798dd0e4c7",
+    "capera_pilot/finished.json": "5c63263587204b1d6c897adcba657d0045f6f0baf0472febf023ba2b40429696",
+    "construction_pilot/rounds.json": "b20e495c239ef9e69ec6079fb5b6819fb20a387c625253d2b00f9ba795ec44b7",
+    "construction_pilot/protocol.json": "2dbcbc83471a6c7f60703735efb800ab1a7fd81ca97bb1dd9010e78affdf3700",
+    "construction_pilot/finished.json": "531f929157b502473087103191daded28069e2c1eb8ec4476efae2b1203016a0",
+    "airscape_pilot/rounds.json": "c776daf55c23185c3ca3d916e42cb5b153dfae037fcc2833196d8f114e7acdb5",
+    "airscape_pilot/protocol.json": "4277f04679b688c86ae9da733a0c037bdc01d91df980e0c697277002c4854da1",
+    "airscape_pilot/finished.json": "48d2553b65e2a82103809ef30b02fe890d47f948796860c14e728c8b242d2085"
+  },
+  "scope": "Exploratory ideal-link FL-only screening. Not Proposed, not a five-method ranking.",
+  "limitation": "Different native caption counts and galleries; compare learning change within each dataset, not absolute cross-dataset difficulty. Single seed; validation is used for screening, so any selected replacement needs independent confirmation."
+}

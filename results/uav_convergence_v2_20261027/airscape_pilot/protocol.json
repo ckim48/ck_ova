@@ -1,0 +1,10 @@
+{
+  "dataset": "AirScape",
+  "seed": 0,
+  "rounds": 200,
+  "change": "Dataset only; original adapter, optimizer, batch and learning-rate schedule retained.",
+  "comparison": "Ideal aggregation, FL only, no FU and no mission cost. Not a method ranking.",
+  "decision": "Assess final and late-average held-out mR improvement; retain all pilot outcomes.",
+  "selection_sha256": "71cb86cb2c161115b50e4e3ab277676fe2855311e6d8f90cb571ad76c9dd40a0",
+  "source_sha256": "f109edc0d210998cc61ae509b08bf6cc9df25bae9ed80b4d383d7cb227d8e5c3"
+}
