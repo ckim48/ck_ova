@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "outcomes": {
+    "completed": 6,
+    "incomplete_no_feasible_radio_design": 8
+  },
+  "archived_files": 2650,
+  "figures": 6,
+  "compared_rows": 30,
+  "all_six_metrics_not_worse_than_all_existing": [],
+  "caveat": "Development-set comparison only; all six metrics include mean/worst KL, mR, MIA gap, energy and delay. No independent confirmation or deletion guarantee."
+}

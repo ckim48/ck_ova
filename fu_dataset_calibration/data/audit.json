@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "studies": [
+    {
+      "study": "fu_retrieval_alignment_v1_20261027",
+      "outcomes": {
+        "completed": 6,
+        "incomplete_no_feasible_radio_design": 8
+      },
+      "archive_files": 2650
+    },
+    {
+      "study": "fu_retrieval_refinement_v2_20261027",
+      "outcomes": {
+        "completed": 8
+      },
+      "archive_files": 3328
+    }
+  ],
+  "figures": 12,
+  "unchanged_existing_tracked_files": true,
+  "source_hashes_verified": 405,
+  "adaptive_controller_implemented": false
+}

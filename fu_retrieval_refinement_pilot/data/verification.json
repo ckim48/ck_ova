@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "outcomes": {
+    "completed": 8
+  },
+  "archived_files": 3328,
+  "figures": 4,
+  "compared_rows": 24,
+  "all_six_metrics_not_worse_than_all_existing": [],
+  "caveat": "Development-set comparison only; all six metrics include mean/worst KL, mR, MIA gap, energy and delay. No independent confirmation or deletion guarantee."
+}

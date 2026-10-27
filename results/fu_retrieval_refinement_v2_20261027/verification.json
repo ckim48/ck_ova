@@ -1,0 +1,88 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "dataset": "CapERA",
+      "method": "fu_proxy_embed_rm025",
+      "status": "completed",
+      "wall_seconds": 43.32813239097595,
+      "FL_rounds": 200,
+      "FU_steps": 225,
+      "transactions": 180,
+      "median_adaptive_weight": null
+    },
+    {
+      "dataset": "CapERA",
+      "method": "fu_proxy_embed_rm05",
+      "status": "completed",
+      "wall_seconds": 39.829792737960815,
+      "FL_rounds": 200,
+      "FU_steps": 225,
+      "transactions": 180,
+      "median_adaptive_weight": null
+    },
+    {
+      "dataset": "CapERA",
+      "method": "fu_proxy_rank_rm025",
+      "status": "completed",
+      "wall_seconds": 44.92941069602966,
+      "FL_rounds": 200,
+      "FU_steps": 225,
+      "transactions": 180,
+      "median_adaptive_weight": null
+    },
+    {
+      "dataset": "CapERA",
+      "method": "fu_proxy_rank_rm05",
+      "status": "completed",
+      "wall_seconds": 40.99253559112549,
+      "FL_rounds": 200,
+      "FU_steps": 225,
+      "transactions": 180,
+      "median_adaptive_weight": null
+    },
+    {
+      "dataset": "AirScape",
+      "method": "fu_proxy_embed_rm025",
+      "status": "completed",
+      "wall_seconds": 27.86302661895752,
+      "FL_rounds": 200,
+      "FU_steps": 225,
+      "transactions": 180,
+      "median_adaptive_weight": null
+    },
+    {
+      "dataset": "AirScape",
+      "method": "fu_proxy_embed_rm05",
+      "status": "completed",
+      "wall_seconds": 25.320728302001953,
+      "FL_rounds": 200,
+      "FU_steps": 225,
+      "transactions": 180,
+      "median_adaptive_weight": null
+    },
+    {
+      "dataset": "AirScape",
+      "method": "fu_proxy_rank_rm025",
+      "status": "completed",
+      "wall_seconds": 28.98062777519226,
+      "FL_rounds": 200,
+      "FU_steps": 225,
+      "transactions": 180,
+      "median_adaptive_weight": null
+    },
+    {
+      "dataset": "AirScape",
+      "method": "fu_proxy_rank_rm05",
+      "status": "completed",
+      "wall_seconds": 27.42240023612976,
+      "FL_rounds": 200,
+      "FU_steps": 225,
+      "transactions": 180,
+      "median_adaptive_weight": null
+    }
+  ],
+  "outcomes": {
+    "completed": 8
+  }
+}

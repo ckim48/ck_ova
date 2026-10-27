@@ -1,0 +1,10 @@
+{
+  "status": "design_only_not_implemented_or_validated",
+  "same_rule_for_both_datasets": true,
+  "loss": "3 KL(clean_proxy || current) on forget pairs + lambda_R * CE on retained pairs + 3 KL(request_teacher || current) on retained retrieval distributions",
+  "feedback": "Relative retained-loss increase on a training-only calibration minibatch against the request-start teacher, normalized by that teacher loss; smooth within the request to reduce minibatch variance.",
+  "prospective_dual_rule": "lambda_next = projection_onto_feasible_Lambda(lambda + rho * (relative_retained_loss_increase - delta))",
+  "feasibility": "Lambda contains weights for which the actual head/resource solver satisfies the unchanged TX cap, power, error and deadline constraints. Empty Lambda must remain an explicit infeasible outcome; a scheduler fallback or early stopping would be a separate method with its own accounting and quality validation.",
+  "calibration": "Choose rho/delta and initialization using separate training-only calibration episodes, with equal tuning budgets for comparison methods. Freeze them before an independent evaluation. Current validation mR/KL and reference200 must not enter the online controller.",
+  "verification_needed": "New code, cost accounting, paired seeds, independent split and matched-objective radio controls are still required. Weight optima below are descriptive development results, not parameters learned by this prospective controller."
+}

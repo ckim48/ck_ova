@@ -1,0 +1,366 @@
+{
+  "figures": [
+    {
+      "name": "01_weight_mr_1x2",
+      "axes": [
+        {
+          "dataset": "CapERA",
+          "xlabel": "Retain weight $\\lambda_R$",
+          "ylabel": "Retained mR (%)",
+          "x": {
+            "limits": [
+              0.0,
+              1.0
+            ],
+            "ticks": [
+              0.0,
+              0.25,
+              0.5,
+              0.75,
+              1.0
+            ],
+            "labels": [
+              "0.00",
+              "0.25",
+              "0.50",
+              "0.75",
+              "1.00"
+            ]
+          },
+          "y": {
+            "limits": [
+              16.55,
+              16.75
+            ],
+            "ticks": [
+              16.55,
+              16.6,
+              16.65,
+              16.700000000000003,
+              16.75
+            ],
+            "labels": [
+              "16.55",
+              "16.60",
+              "16.65",
+              "16.70",
+              "16.75"
+            ]
+          }
+        },
+        {
+          "dataset": "AirScape",
+          "xlabel": "Retain weight $\\lambda_R$",
+          "ylabel": "Retained mR (%)",
+          "x": {
+            "limits": [
+              0.0,
+              1.0
+            ],
+            "ticks": [
+              0.0,
+              0.25,
+              0.5,
+              0.75,
+              1.0
+            ],
+            "labels": [
+              "0.00",
+              "0.25",
+              "0.50",
+              "0.75",
+              "1.00"
+            ]
+          },
+          "y": {
+            "limits": [
+              13.450000000000001,
+              13.700000000000001
+            ],
+            "ticks": [
+              13.450000000000001,
+              13.500000000000002,
+              13.55,
+              13.600000000000001,
+              13.65,
+              13.700000000000001
+            ],
+            "labels": [
+              "13.45",
+              "13.50",
+              "13.55",
+              "13.60",
+              "13.65",
+              "13.70"
+            ]
+          }
+        }
+      ],
+      "files": [
+        {
+          "file": "01_weight_mr_1x2.png",
+          "sha256": "fa23a971fa027a3bd5c70b12011e4f4c8089f424c99caf3bceaade928b5966f2"
+        },
+        {
+          "file": "01_weight_mr_1x2.pdf",
+          "sha256": "00c068097c63aaf14a33b67dfe8374af178b8ba7be6b6c709f1086a6b682bf7c"
+        },
+        {
+          "file": "01_weight_mr_1x2.svg",
+          "sha256": "bcdb004ad4812cbf0bd4fb42fc8c7e391170f41f20955859ace2b8cc02939900"
+        }
+      ],
+      "status_markers": [
+        {
+          "dataset": "CapERA",
+          "method": "embed",
+          "x": 0.0,
+          "metric_y": null,
+          "axes_y_fraction": 1.025,
+          "status": "incomplete_no_feasible_radio_design"
+        },
+        {
+          "dataset": "CapERA",
+          "method": "embed",
+          "x": 0.1,
+          "metric_y": null,
+          "axes_y_fraction": 1.025,
+          "status": "incomplete_no_feasible_radio_design"
+        },
+        {
+          "dataset": "CapERA",
+          "method": "rank",
+          "x": 0.0,
+          "metric_y": null,
+          "axes_y_fraction": 1.0699999999999998,
+          "status": "incomplete_no_feasible_radio_design"
+        },
+        {
+          "dataset": "CapERA",
+          "method": "rank",
+          "x": 0.1,
+          "metric_y": null,
+          "axes_y_fraction": 1.0699999999999998,
+          "status": "incomplete_no_feasible_radio_design"
+        },
+        {
+          "dataset": "AirScape",
+          "method": "embed",
+          "x": 0.0,
+          "metric_y": null,
+          "axes_y_fraction": 1.025,
+          "status": "incomplete_no_feasible_radio_design"
+        },
+        {
+          "dataset": "AirScape",
+          "method": "embed",
+          "x": 0.1,
+          "metric_y": null,
+          "axes_y_fraction": 1.025,
+          "status": "incomplete_no_feasible_radio_design"
+        },
+        {
+          "dataset": "AirScape",
+          "method": "rank",
+          "x": 0.0,
+          "metric_y": null,
+          "axes_y_fraction": 1.0699999999999998,
+          "status": "incomplete_no_feasible_radio_design"
+        },
+        {
+          "dataset": "AirScape",
+          "method": "rank",
+          "x": 0.1,
+          "metric_y": null,
+          "axes_y_fraction": 1.0699999999999998,
+          "status": "incomplete_no_feasible_radio_design"
+        }
+      ]
+    },
+    {
+      "name": "02_weight_kl_1x2",
+      "axes": [
+        {
+          "dataset": "CapERA",
+          "xlabel": "Retain weight $\\lambda_R$",
+          "ylabel": "Forget-set KL",
+          "x": {
+            "limits": [
+              0.0,
+              1.0
+            ],
+            "ticks": [
+              0.0,
+              0.25,
+              0.5,
+              0.75,
+              1.0
+            ],
+            "labels": [
+              "0.00",
+              "0.25",
+              "0.50",
+              "0.75",
+              "1.00"
+            ]
+          },
+          "y": {
+            "limits": [
+              0.0,
+              0.002
+            ],
+            "ticks": [
+              0.0,
+              0.0005,
+              0.001,
+              0.0015,
+              0.002
+            ],
+            "labels": [
+              "0.0000",
+              "0.0005",
+              "0.0010",
+              "0.0015",
+              "0.0020"
+            ]
+          }
+        },
+        {
+          "dataset": "AirScape",
+          "xlabel": "Retain weight $\\lambda_R$",
+          "ylabel": "Forget-set KL",
+          "x": {
+            "limits": [
+              0.0,
+              1.0
+            ],
+            "ticks": [
+              0.0,
+              0.25,
+              0.5,
+              0.75,
+              1.0
+            ],
+            "labels": [
+              "0.00",
+              "0.25",
+              "0.50",
+              "0.75",
+              "1.00"
+            ]
+          },
+          "y": {
+            "limits": [
+              0.0,
+              0.0005
+            ],
+            "ticks": [
+              0.0,
+              0.0001,
+              0.00020000000000000004,
+              0.00030000000000000003,
+              0.0004,
+              0.0005
+            ],
+            "labels": [
+              "0.0000",
+              "0.0001",
+              "0.0002",
+              "0.0003",
+              "0.0004",
+              "0.0005"
+            ]
+          }
+        }
+      ],
+      "files": [
+        {
+          "file": "02_weight_kl_1x2.png",
+          "sha256": "bec708236f6116af7d1d4a00004cddbcee961d5da955e7621ef1b9322f82ad5a"
+        },
+        {
+          "file": "02_weight_kl_1x2.pdf",
+          "sha256": "431a208838d4db50ce11ed0f43ec2a1dd8cbcf6337f9fe549dd3529b7f071664"
+        },
+        {
+          "file": "02_weight_kl_1x2.svg",
+          "sha256": "537b4ae57911b093ffb7ee70107b2d65cc4961cbdf9c4cd42ae9d2db7b78f543"
+        }
+      ],
+      "status_markers": [
+        {
+          "dataset": "CapERA",
+          "method": "embed",
+          "x": 0.0,
+          "metric_y": null,
+          "axes_y_fraction": 1.025,
+          "status": "incomplete_no_feasible_radio_design"
+        },
+        {
+          "dataset": "CapERA",
+          "method": "embed",
+          "x": 0.1,
+          "metric_y": null,
+          "axes_y_fraction": 1.025,
+          "status": "incomplete_no_feasible_radio_design"
+        },
+        {
+          "dataset": "CapERA",
+          "method": "rank",
+          "x": 0.0,
+          "metric_y": null,
+          "axes_y_fraction": 1.0699999999999998,
+          "status": "incomplete_no_feasible_radio_design"
+        },
+        {
+          "dataset": "CapERA",
+          "method": "rank",
+          "x": 0.1,
+          "metric_y": null,
+          "axes_y_fraction": 1.0699999999999998,
+          "status": "incomplete_no_feasible_radio_design"
+        },
+        {
+          "dataset": "AirScape",
+          "method": "embed",
+          "x": 0.0,
+          "metric_y": null,
+          "axes_y_fraction": 1.025,
+          "status": "incomplete_no_feasible_radio_design"
+        },
+        {
+          "dataset": "AirScape",
+          "method": "embed",
+          "x": 0.1,
+          "metric_y": null,
+          "axes_y_fraction": 1.025,
+          "status": "incomplete_no_feasible_radio_design"
+        },
+        {
+          "dataset": "AirScape",
+          "method": "rank",
+          "x": 0.0,
+          "metric_y": null,
+          "axes_y_fraction": 1.0699999999999998,
+          "status": "incomplete_no_feasible_radio_design"
+        },
+        {
+          "dataset": "AirScape",
+          "method": "rank",
+          "x": 0.1,
+          "metric_y": null,
+          "axes_y_fraction": 1.0699999999999998,
+          "status": "incomplete_no_feasible_radio_design"
+        }
+      ]
+    }
+  ],
+  "source_sha256": {
+    "fu_retrieval_pilot/data/comparison.json": "f4aa678996066c1f2e093b37fe3372304deff5805acfc5516bf4817162a08cad",
+    "fu_retrieval_refinement_pilot/data/comparison.json": "6101ff798e79c695916615d91fbc664c31560cdc00f561cfabf77fcac245c6d0",
+    "tools/uav_convergence_v2/fu_retrieval_calibration_view.py": "61b4c6b2aa17bc97c7b146f894043e15cf774c189eb3f804751548df8af6983d",
+    "tools/uav_convergence_v2/fu_joint_report.py": "807d0545460b9770b6cf3fcd2312c96105f1eb49159d9ae9f442fc252f512255"
+  },
+  "combined_outcomes": 38,
+  "proposal_implemented": false
+}
