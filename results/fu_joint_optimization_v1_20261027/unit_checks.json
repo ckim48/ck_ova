@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "tests": [
+    "two-objective first-order directions including opposed/zero cases",
+    "exact-sum diagnostic preserves radio costs",
+    "local fusion removes only opposed FL component and preserves FU/nonconflicting updates"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "studies": [
+    {
+      "study": "fu_joint_optimization_v1_20261027",
+      "outcomes": {
+        "completed": 12
+      },
+      "work_attempts": 2160,
+      "local_FU_records": 2700,
+      "archive_files": 4988,
+      "figures": 6
+    },
+    {
+      "study": "fu_component_fusion_v2_20261027",
+      "outcomes": {
+        "incomplete_no_feasible_radio_design": 4
+      },
+      "work_attempts": 28,
+      "local_FU_records": 40,
+      "archive_files": 92,
+      "figures": 2
+    },
+    {
+      "study": "fu_component_existing_budget_v3_20261027",
+      "outcomes": {
+        "completed": 4
+      },
+      "work_attempts": 720,
+      "local_FU_records": 900,
+      "archive_files": 1668,
+      "figures": 2
+    }
+  ],
+  "verified_source_files": 7752,
+  "scope": "Artifact integrity and accounting audit; not a statistical or deletion guarantee.",
+  "audit_source_sha256": "aa22c6a980797540b3bac8aa1c0818355eeffe0381f06aa480190a64729b93b2"
+}

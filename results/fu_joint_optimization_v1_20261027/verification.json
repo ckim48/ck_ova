@@ -1,0 +1,128 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "dataset": "CapERA",
+      "method": "fu_balanced",
+      "status": "completed",
+      "wall_seconds": 47.82480001449585,
+      "FL_rounds": 200,
+      "FU_steps": 225,
+      "transactions": 180,
+      "median_adaptive_weight": 0.20912590555576024
+    },
+    {
+      "dataset": "CapERA",
+      "method": "fu_request_lr",
+      "status": "completed",
+      "wall_seconds": 39.88604664802551,
+      "FL_rounds": 200,
+      "FU_steps": 225,
+      "transactions": 180,
+      "median_adaptive_weight": null
+    },
+    {
+      "dataset": "CapERA",
+      "method": "fu_balanced_request_lr",
+      "status": "completed",
+      "wall_seconds": 42.920775175094604,
+      "FL_rounds": 200,
+      "FU_steps": 225,
+      "transactions": 180,
+      "median_adaptive_weight": 0.20954651713766312
+    },
+    {
+      "dataset": "CapERA",
+      "method": "fu_exact_aggregate",
+      "status": "completed",
+      "wall_seconds": 40.16617202758789,
+      "FL_rounds": 200,
+      "FU_steps": 225,
+      "transactions": 180,
+      "median_adaptive_weight": null
+    },
+    {
+      "dataset": "CapERA",
+      "method": "fu_direction_fusion",
+      "status": "completed",
+      "wall_seconds": 39.73968505859375,
+      "FL_rounds": 200,
+      "FU_steps": 225,
+      "transactions": 180,
+      "median_adaptive_weight": null
+    },
+    {
+      "dataset": "CapERA",
+      "method": "fu_balanced_request_lr_fusion",
+      "status": "completed",
+      "wall_seconds": 43.32353186607361,
+      "FL_rounds": 200,
+      "FU_steps": 225,
+      "transactions": 180,
+      "median_adaptive_weight": 0.20955120193367105
+    },
+    {
+      "dataset": "AirScape",
+      "method": "fu_balanced",
+      "status": "completed",
+      "wall_seconds": 27.65180468559265,
+      "FL_rounds": 200,
+      "FU_steps": 225,
+      "transactions": 180,
+      "median_adaptive_weight": 0.3022175802236876
+    },
+    {
+      "dataset": "AirScape",
+      "method": "fu_request_lr",
+      "status": "completed",
+      "wall_seconds": 24.59379529953003,
+      "FL_rounds": 200,
+      "FU_steps": 225,
+      "transactions": 180,
+      "median_adaptive_weight": null
+    },
+    {
+      "dataset": "AirScape",
+      "method": "fu_balanced_request_lr",
+      "status": "completed",
+      "wall_seconds": 25.003822803497314,
+      "FL_rounds": 200,
+      "FU_steps": 225,
+      "transactions": 180,
+      "median_adaptive_weight": 0.30366666590774943
+    },
+    {
+      "dataset": "AirScape",
+      "method": "fu_exact_aggregate",
+      "status": "completed",
+      "wall_seconds": 25.16376805305481,
+      "FL_rounds": 200,
+      "FU_steps": 225,
+      "transactions": 180,
+      "median_adaptive_weight": null
+    },
+    {
+      "dataset": "AirScape",
+      "method": "fu_direction_fusion",
+      "status": "completed",
+      "wall_seconds": 25.385984897613525,
+      "FL_rounds": 200,
+      "FU_steps": 225,
+      "transactions": 180,
+      "median_adaptive_weight": null
+    },
+    {
+      "dataset": "AirScape",
+      "method": "fu_balanced_request_lr_fusion",
+      "status": "completed",
+      "wall_seconds": 25.714772939682007,
+      "FL_rounds": 200,
+      "FU_steps": 225,
+      "transactions": 180,
+      "median_adaptive_weight": 0.3036890747127849
+    }
+  ],
+  "outcomes": {
+    "completed": 12
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "training_only": true,
+  "FL_vectors_bit_identical": true,
+  "variant": "fu_balanced_request_lr_fusion",
+  "original_gradient_norm": 1.666500449180603,
+  "candidate_gradient_norm": 0.38710448145866394,
+  "adaptive_weight": 0.1633832405762675,
+  "no_reference_or_validation_input": true
+}

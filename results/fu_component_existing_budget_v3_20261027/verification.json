@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "dataset": "CapERA",
+      "method": "fu_component_existing_guard",
+      "status": "completed",
+      "wall_seconds": 42.8405864238739,
+      "FL_rounds": 200,
+      "FU_steps": 225,
+      "transactions": 180,
+      "median_adaptive_weight": null
+    },
+    {
+      "dataset": "CapERA",
+      "method": "fu_component_existing_guard_request_lr",
+      "status": "completed",
+      "wall_seconds": 42.321882247924805,
+      "FL_rounds": 200,
+      "FU_steps": 225,
+      "transactions": 180,
+      "median_adaptive_weight": null
+    },
+    {
+      "dataset": "AirScape",
+      "method": "fu_component_existing_guard",
+      "status": "completed",
+      "wall_seconds": 27.199164390563965,
+      "FL_rounds": 200,
+      "FU_steps": 225,
+      "transactions": 180,
+      "median_adaptive_weight": null
+    },
+    {
+      "dataset": "AirScape",
+      "method": "fu_component_existing_guard_request_lr",
+      "status": "completed",
+      "wall_seconds": 27.526041269302368,
+      "FL_rounds": 200,
+      "FU_steps": 225,
+      "transactions": 180,
+      "median_adaptive_weight": null
+    }
+  ],
+  "outcomes": {
+    "completed": 4
+  }
+}
