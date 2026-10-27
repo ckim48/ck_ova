@@ -1,0 +1,520 @@
+{
+  "figures": [
+    {
+      "name": "downlink_energy_1x2",
+      "axes": [
+        {
+          "dataset": "CapERA",
+          "x": {
+            "limits": [
+              0.0,
+              4.0
+            ],
+            "ticks": [
+              0.0,
+              1.0,
+              2.0,
+              3.0,
+              4.0
+            ],
+            "labels": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4"
+            ]
+          },
+          "y": {
+            "limits": [
+              0.0,
+              1500.0
+            ],
+            "ticks": [
+              0.0,
+              500.0,
+              1000.0,
+              1500.0
+            ],
+            "labels": [
+              "0",
+              "500",
+              "1000",
+              "1500"
+            ]
+          }
+        },
+        {
+          "dataset": "AirScape",
+          "x": {
+            "limits": [
+              0.0,
+              4.0
+            ],
+            "ticks": [
+              0.0,
+              1.0,
+              2.0,
+              3.0,
+              4.0
+            ],
+            "labels": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4"
+            ]
+          },
+          "y": {
+            "limits": [
+              0.0,
+              1500.0
+            ],
+            "ticks": [
+              0.0,
+              500.0,
+              1000.0,
+              1500.0
+            ],
+            "labels": [
+              "0",
+              "500",
+              "1000",
+              "1500"
+            ]
+          }
+        }
+      ],
+      "files": [
+        {
+          "file": "figures/downlink_energy_1x2.png",
+          "sha256": "a68be3caf789a498215fa4405677b2dc3cc07bce32a68e0681bd0f089a46f988"
+        },
+        {
+          "file": "figures/downlink_energy_1x2.pdf",
+          "sha256": "9691955bf7b30590e6ee8957f40daaf629d9bbbd205bf50334847e68dcd8003b"
+        },
+        {
+          "file": "figures/downlink_energy_1x2.svg",
+          "sha256": "9fe695720bc1455255468b0a6817e1cb6edeca2a693ca44d2030fac993cfc598"
+        }
+      ]
+    },
+    {
+      "name": "collection_slot_energy_1x2",
+      "axes": [
+        {
+          "dataset": "CapERA",
+          "x": {
+            "limits": [
+              0.0,
+              10.0
+            ],
+            "ticks": [
+              0.0,
+              2.5,
+              5.0,
+              7.5,
+              10.0
+            ],
+            "labels": [
+              "0.0",
+              "2.5",
+              "5.0",
+              "7.5",
+              "10.0"
+            ]
+          },
+          "y": {
+            "limits": [
+              200.0,
+              1000.0
+            ],
+            "ticks": [
+              200.0,
+              400.0,
+              600.0,
+              800.0,
+              1000.0
+            ],
+            "labels": [
+              "200",
+              "400",
+              "600",
+              "800",
+              "1000"
+            ]
+          }
+        },
+        {
+          "dataset": "AirScape",
+          "x": {
+            "limits": [
+              0.0,
+              10.0
+            ],
+            "ticks": [
+              0.0,
+              2.5,
+              5.0,
+              7.5,
+              10.0
+            ],
+            "labels": [
+              "0.0",
+              "2.5",
+              "5.0",
+              "7.5",
+              "10.0"
+            ]
+          },
+          "y": {
+            "limits": [
+              200.0,
+              1000.0
+            ],
+            "ticks": [
+              200.0,
+              400.0,
+              600.0,
+              800.0,
+              1000.0
+            ],
+            "labels": [
+              "200",
+              "400",
+              "600",
+              "800",
+              "1000"
+            ]
+          }
+        }
+      ],
+      "files": [
+        {
+          "file": "figures/collection_slot_energy_1x2.png",
+          "sha256": "53d4e0d14ceddf27467d4276ce72611a0190998a8154328ce920c8cc85d66b58"
+        },
+        {
+          "file": "figures/collection_slot_energy_1x2.pdf",
+          "sha256": "9c6a08197654c8f4ab2806dddb276b09273c195ffe905f60861468206dec4e2a"
+        },
+        {
+          "file": "figures/collection_slot_energy_1x2.svg",
+          "sha256": "284c3ceccc9720aa926ef3118d960e33498dc075c02c14e63ef0252060cceccd"
+        }
+      ]
+    },
+    {
+      "name": "mR_round_controls_1x2",
+      "axes": [
+        {
+          "dataset": "CapERA",
+          "x": {
+            "limits": [
+              0.0,
+              200.0
+            ],
+            "ticks": [
+              0,
+              50,
+              100,
+              150,
+              200
+            ],
+            "labels": [
+              "0",
+              "50",
+              "100",
+              "150",
+              "200"
+            ]
+          },
+          "y": {
+            "limits": [
+              15.0,
+              17.5
+            ],
+            "ticks": [
+              15.0,
+              15.5,
+              16.0,
+              16.5,
+              17.0,
+              17.5
+            ],
+            "labels": [
+              "15.0",
+              "15.5",
+              "16.0",
+              "16.5",
+              "17.0",
+              "17.5"
+            ]
+          }
+        },
+        {
+          "dataset": "AirScape",
+          "x": {
+            "limits": [
+              0.0,
+              200.0
+            ],
+            "ticks": [
+              0,
+              50,
+              100,
+              150,
+              200
+            ],
+            "labels": [
+              "0",
+              "50",
+              "100",
+              "150",
+              "200"
+            ]
+          },
+          "y": {
+            "limits": [
+              13.0,
+              13.8
+            ],
+            "ticks": [
+              13.0,
+              13.2,
+              13.4,
+              13.6,
+              13.8
+            ],
+            "labels": [
+              "13.0",
+              "13.2",
+              "13.4",
+              "13.6",
+              "13.8"
+            ]
+          }
+        }
+      ],
+      "files": [
+        {
+          "file": "figures/mR_round_controls_1x2.png",
+          "sha256": "9a8d3cb13f0109ef59f896d0bcf364b5fec41e7ae351f515b844dcaadea08034"
+        },
+        {
+          "file": "figures/mR_round_controls_1x2.pdf",
+          "sha256": "e375f9e6315bf9bb9dc5c532e56361872685989efadad6089b23861f6f03d1b8"
+        },
+        {
+          "file": "figures/mR_round_controls_1x2.svg",
+          "sha256": "aa8b90fd39d2e75762abb3ff396fb3cec9617a146bc6f25d7fa9d507f21841c4"
+        }
+      ]
+    }
+  ],
+  "source_sha256": {
+    "results/paper_pair_capera_airscape_time_energy_20261027/metrics.json": "9346da430196d7bee1353dbc3067e634f372119d8fb55f26aca5f86826287519",
+    "results/airscape_power_audit_v1_20261027/cases/downlink_0p25/capera_seed0/proposed_fu_guard_cliperase/outcome.json": "e966c24de7736c372b8a1d0a8555e63d135eaa79bff2b64450d33bf5e9e61e63",
+    "results/airscape_power_audit_v1_20261027/cases/downlink_0p5/capera_seed0/proposed_fu_guard_cliperase/outcome.json": "b7affe6dae8769a3a881a9d52d51386bf8024aa0cddb19c425706c6f4dae0343",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/outcome.json": "e7f685c388bb60a417153e9659dcab21a5526f5d9cda3f1a6de80c4854e33710",
+    "results/airscape_power_audit_v1_20261027/cases/downlink_2/capera_seed0/proposed_fu_guard_cliperase/outcome.json": "2a8d7538b48bd48b685801c188541e0a9c5c278ac8e35ddda87c10123e9b5d9b",
+    "results/airscape_power_audit_v1_20261027/cases/downlink_4/capera_seed0/proposed_fu_guard_cliperase/outcome.json": "06a87fd972324fc15633a013389c841f8e49d390c31d7e073beb53eabb345502",
+    "results/airscape_power_audit_v1_20261027/cases/downlink_0p25/capera_seed0/heuristic_ova/outcome.json": "9415991a70a9ea1eb3833d223288fb3294424be9da984443aa7c179bd56bcd84",
+    "results/airscape_power_audit_v1_20261027/cases/downlink_0p5/capera_seed0/heuristic_ova/outcome.json": "00e3ae3976630e147c8721cda9a9eecaff553417916426c5fdfc6bfe073bfd31",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/heuristic_ova/outcome.json": "64576add5d8ab8b33537fe53bcb4a83124835991959b0254affa3df8d97222cd",
+    "results/airscape_power_audit_v1_20261027/cases/downlink_2/capera_seed0/heuristic_ova/outcome.json": "9e18ab12c02e1d21904cdeeb402dcb023d90c155a6ba66398ba535da6f3cc7f3",
+    "results/airscape_power_audit_v1_20261027/cases/downlink_4/capera_seed0/heuristic_ova/outcome.json": "4952b0aa264e449da7532174ff3f179cb47e48bb53461fa16a778b3dd2506ace",
+    "results/airscape_power_audit_v1_20261027/cases/downlink_0p25/capera_seed0/separate_aircomp_periodic/outcome.json": "8866ee4c9d67424478388597dbd62b826fed11ee4732fe0e4b54949c4704bf7b",
+    "results/airscape_power_audit_v1_20261027/cases/downlink_0p5/capera_seed0/separate_aircomp_periodic/outcome.json": "dcc8b8e86241dcbfc72a69a2ccf0c90a6e574f38d03da56ec72d3cf1d6adc6c1",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/separate_aircomp_periodic/outcome.json": "ba301d3897e0a87eb28d8c49cd404c6a961864a59a5c359027be239dbaca531a",
+    "results/airscape_power_audit_v1_20261027/cases/downlink_2/capera_seed0/separate_aircomp_periodic/outcome.json": "038459fd7ddef1987cda445c3d78c9c92d3ee95c2470b2ef950f709a3827a135",
+    "results/airscape_power_audit_v1_20261027/cases/downlink_4/capera_seed0/separate_aircomp_periodic/outcome.json": "42b49b7f16e145e7813c66019becab903a337a86a5fe6939035ef7b309db1eea",
+    "results/airscape_power_audit_v1_20261027/cases/downlink_0p25/capera_seed0/aircomp_ofdma_periodic/outcome.json": "c89d65faba0569a2e3d53dd40df65400dde39f45bd36170c838b42e2ce8234a4",
+    "results/airscape_power_audit_v1_20261027/cases/downlink_0p5/capera_seed0/aircomp_ofdma_periodic/outcome.json": "fbceafd269cbd5a82a77deaaab4bc1e51ffce78749a43444f9652e0f4c4de622",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/aircomp_ofdma_periodic/outcome.json": "507356ae19c23a8ac5af95b763a6f7775d1ac04722d81d80f23fb3fa0df20241",
+    "results/airscape_power_audit_v1_20261027/cases/downlink_2/capera_seed0/aircomp_ofdma_periodic/outcome.json": "2d435393aebe38abc0fa88ce8d01df36c6254cb7b65ea9be9f7054a708d8a7f4",
+    "results/airscape_power_audit_v1_20261027/cases/downlink_4/capera_seed0/aircomp_ofdma_periodic/outcome.json": "35ccd77e6ca49e875187f9ebbf924ea21395089b529d1efd5f4b8437101ff1ab",
+    "results/airscape_power_audit_v1_20261027/cases/downlink_0p25/capera_seed0/sequential_digital_periodic/outcome.json": "87fe44df3838456030926b1fb1cc9208caee2f4cf50741ad98ee570a3af5848d",
+    "results/airscape_power_audit_v1_20261027/cases/downlink_0p5/capera_seed0/sequential_digital_periodic/outcome.json": "3336666238d46baeb0a4b162c843955c9f923d157927d69a6c6d199a9d457b6b",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/sequential_digital_periodic/outcome.json": "447c844a5fc3ad1f7427d7cc9e1bca1151e133f1d714d1a87c10a7d912e5ba34",
+    "results/airscape_power_audit_v1_20261027/cases/downlink_2/capera_seed0/sequential_digital_periodic/outcome.json": "e4528f49f60238b883c12da212c7d66152daa6e9b56a537d70b04386def4237c",
+    "results/airscape_power_audit_v1_20261027/cases/downlink_4/capera_seed0/sequential_digital_periodic/outcome.json": "1a6f47e0f51749469930a0059e82209f3dd9baca32ccc71eb6ec5cd45404297b",
+    "results/airscape_power_audit_v1_20261027/cases/downlink_0p25/airscape_seed0/proposed_fu_guard_cliperase/outcome.json": "1ec798c9383f815c63608503d29d238a011d23dd1926a47365980b2181404d1d",
+    "results/airscape_power_audit_v1_20261027/cases/downlink_0p5/airscape_seed0/proposed_fu_guard_cliperase/outcome.json": "4910344fbbe57ee43a2ce0b749608e6206130597e38b65caf4344f8971e19c2e",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/outcome.json": "7720752fcb6747db423b2ef935dc72ade04b7c8f07443daf8f9b06636be4a804",
+    "results/airscape_power_audit_v1_20261027/cases/downlink_2/airscape_seed0/proposed_fu_guard_cliperase/outcome.json": "9c814779a5a8b0ae0727348575941084981906ab2774660793a42ff6ebf29e01",
+    "results/airscape_power_audit_v1_20261027/cases/downlink_4/airscape_seed0/proposed_fu_guard_cliperase/outcome.json": "d1af69507149f0e3a571a5db7474eb4bb69f048df8bfde645b217537264bbe3d",
+    "results/airscape_power_audit_v1_20261027/cases/downlink_0p25/airscape_seed0/heuristic_ova/outcome.json": "7d6401ffbf4642d02aa44c9c810a66df29e136ff5744f21b3f4d7b15c3928ad2",
+    "results/airscape_power_audit_v1_20261027/cases/downlink_0p5/airscape_seed0/heuristic_ova/outcome.json": "4199408eb2dc4b26bc6d0bd01a7ac6aba09e112d0075146e5c11ba21a34a07b4",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/heuristic_ova/outcome.json": "b7dad4d1c755e6f11fb33ea050f5fb2809e2275950526740a902bd8befcb8aa6",
+    "results/airscape_power_audit_v1_20261027/cases/downlink_2/airscape_seed0/heuristic_ova/outcome.json": "ca85ffb470d0cf40dcf17706e0c541813e60d12ec87d180bd0329edb4ec21912",
+    "results/airscape_power_audit_v1_20261027/cases/downlink_4/airscape_seed0/heuristic_ova/outcome.json": "d52156a42fe585872701854a5a76b185edf5b5083e3e253b6f9cb1a16ea4cdd3",
+    "results/airscape_power_audit_v1_20261027/cases/downlink_0p25/airscape_seed0/separate_aircomp_periodic/outcome.json": "309970d38326907424a9e77fa18031279e23f43030af8e029a4990c127a91c21",
+    "results/airscape_power_audit_v1_20261027/cases/downlink_0p5/airscape_seed0/separate_aircomp_periodic/outcome.json": "966762f91b715bd7b4d120502c8cc9654ab7285cffc3490cf79f8672d90f8a4b",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/separate_aircomp_periodic/outcome.json": "34eb4764943d110929a8f9e50e85096ba7b6fbf439bafc2d33a675c0d67a03da",
+    "results/airscape_power_audit_v1_20261027/cases/downlink_2/airscape_seed0/separate_aircomp_periodic/outcome.json": "a66907bd917b716bef166727e7ad48a1b45c5b049f1d82801bd1a04f86f12ca7",
+    "results/airscape_power_audit_v1_20261027/cases/downlink_4/airscape_seed0/separate_aircomp_periodic/outcome.json": "4b314dd6bada7fa2e618e4692b4e809678af0d80ef8ef33b761f27ce5bdbd694",
+    "results/airscape_power_audit_v1_20261027/cases/downlink_0p25/airscape_seed0/aircomp_ofdma_periodic/outcome.json": "58b35c74409adaa871b1946326ba004abd8bf2c293aef6f59be871bb6fb27568",
+    "results/airscape_power_audit_v1_20261027/cases/downlink_0p5/airscape_seed0/aircomp_ofdma_periodic/outcome.json": "6de585d117b7592fbf9e876583ef1aff8442f0cf54dd08d855f05581d7de170a",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/aircomp_ofdma_periodic/outcome.json": "6f764fa0ed133b193b6b3d4e3b130b2433554c89564c7007365f0bf36b024a5d",
+    "results/airscape_power_audit_v1_20261027/cases/downlink_2/airscape_seed0/aircomp_ofdma_periodic/outcome.json": "ca7b82278eb0cbc0952c1615602ace211ea4325f10beefae05506f744b45867b",
+    "results/airscape_power_audit_v1_20261027/cases/downlink_4/airscape_seed0/aircomp_ofdma_periodic/outcome.json": "d17ea926af66b3ca45945471a499ded669c21e9d7f799cbeef5a340267b98a98",
+    "results/airscape_power_audit_v1_20261027/cases/downlink_0p25/airscape_seed0/sequential_digital_periodic/outcome.json": "a839cb2c7926199028ac8f9e93fd577c753866b8ca4005fe2b542565aae66b7e",
+    "results/airscape_power_audit_v1_20261027/cases/downlink_0p5/airscape_seed0/sequential_digital_periodic/outcome.json": "21b06b371e8f4f85bf740ae177c3684a055a7b97b9b91427b58bdf72dc706c19",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/sequential_digital_periodic/outcome.json": "db604b4519eb3a370cc6bcdbf24513bba9df41374ac75162e03dbd5ffee9ea39",
+    "results/airscape_power_audit_v1_20261027/cases/downlink_2/airscape_seed0/sequential_digital_periodic/outcome.json": "d7434a002c0b0f462137ba1e7588f079c8d1de4dd9d5e4f4e57b50e67e3b44f3",
+    "results/airscape_power_audit_v1_20261027/cases/downlink_4/airscape_seed0/sequential_digital_periodic/outcome.json": "2dfa6514506a57d9922924c3014294d3b71e8fa0a54d83a10d8f093fbe5f5b53",
+    "results/airscape_power_audit_v1_20261027/cases/collection_slot_0p625/capera_seed0/proposed_fu_guard_cliperase/outcome.json": "caa94493f33ff1386b0a0e1a52c2ff202cb2ad017a11d8bd4642a0095d17345a",
+    "results/airscape_power_audit_v1_20261027/cases/collection_slot_1p25/capera_seed0/proposed_fu_guard_cliperase/outcome.json": "72d3f61232770b1ef2a7ca566487bdc91d379c6b6e77d0b8500e5b1691c60d04",
+    "results/airscape_power_audit_v1_20261027/cases/collection_slot_5/capera_seed0/proposed_fu_guard_cliperase/outcome.json": "b8d93cd389db33c71f6834e46d487cec99e7393c54ffb34b3e35f0b8383c1843",
+    "results/airscape_power_audit_v1_20261027/cases/collection_slot_10/capera_seed0/proposed_fu_guard_cliperase/outcome.json": "ca0cadd23654afd6fb41c2a79a9b9e71057d5c4cb59b30281e8872808f4f09f8",
+    "results/airscape_power_audit_v1_20261027/cases/collection_slot_0p625/capera_seed0/heuristic_ova/outcome.json": "f68dc32f5e3f49367d55bd4124944df9adad1a8052cc28eeea9535b8730c2241",
+    "results/airscape_power_audit_v1_20261027/cases/collection_slot_1p25/capera_seed0/heuristic_ova/outcome.json": "7b2d7e6098a7ffb793eac6b67ec3e6f6397c765d149696d72c6cbac80bf57adb",
+    "results/airscape_power_audit_v1_20261027/cases/collection_slot_5/capera_seed0/heuristic_ova/outcome.json": "43c7f4e23f68cfa62e768e740e77c5854d0f4ee95c3128dcd441a0687f6fc689",
+    "results/airscape_power_audit_v1_20261027/cases/collection_slot_10/capera_seed0/heuristic_ova/outcome.json": "a03ef33ec1065312da9c0b777f8962f8a59e2ec784c3c610ba065d0f5d684537",
+    "results/airscape_power_audit_v1_20261027/cases/collection_slot_0p625/capera_seed0/separate_aircomp_periodic/outcome.json": "cd08f020b36cb64bdee1442c85d7f4c4db6a85ec559a794da9bc030a0f12a247",
+    "results/airscape_power_audit_v1_20261027/cases/collection_slot_1p25/capera_seed0/separate_aircomp_periodic/outcome.json": "464ed5360561ce7706cf8992d15a02c34ff18f99213ef7b920c7673d78db760a",
+    "results/airscape_power_audit_v1_20261027/cases/collection_slot_5/capera_seed0/separate_aircomp_periodic/outcome.json": "4e55c2c1e576acc9b5983547b5ee152174bb6340ce9c9ffd51585f4ba9183335",
+    "results/airscape_power_audit_v1_20261027/cases/collection_slot_10/capera_seed0/separate_aircomp_periodic/outcome.json": "c3b442dcccbaecc600e0e1f56c745ce289015ec722aee79b9aac89e3f582d7bd",
+    "results/airscape_power_audit_v1_20261027/cases/collection_slot_0p625/capera_seed0/aircomp_ofdma_periodic/outcome.json": "b06ef0697ff6e34f3d88d3453fd02753130a82d726252e62b574437fa2ca3a0a",
+    "results/airscape_power_audit_v1_20261027/cases/collection_slot_1p25/capera_seed0/aircomp_ofdma_periodic/outcome.json": "fda2cad0b71673fbe0560b3f8d1d43bf54949c30a333bfc2b5fd7ff318925a81",
+    "results/airscape_power_audit_v1_20261027/cases/collection_slot_5/capera_seed0/aircomp_ofdma_periodic/outcome.json": "63597e82cb06fddad9bc47bdad48ee0535956b944640e2ce98f84d991e1974fe",
+    "results/airscape_power_audit_v1_20261027/cases/collection_slot_10/capera_seed0/aircomp_ofdma_periodic/outcome.json": "6aacc3e2e8e012fc2e0f8d18ae283f6ae2b4ca0f450fa4ed3234816208f0a81a",
+    "results/airscape_power_audit_v1_20261027/cases/collection_slot_0p625/capera_seed0/sequential_digital_periodic/outcome.json": "dbba76ad72a27adaeb73ec46e5c1601effda24f07a2871e156a1651d3ba9633c",
+    "results/airscape_power_audit_v1_20261027/cases/collection_slot_1p25/capera_seed0/sequential_digital_periodic/outcome.json": "06da598d04ce395b0f23da1df4ee6d5ee2e5cd08d3212a2c1e85150d583efc1b",
+    "results/airscape_power_audit_v1_20261027/cases/collection_slot_5/capera_seed0/sequential_digital_periodic/outcome.json": "65ea8247a3adf1e9a2455b64bf6d5c6517b8b443b01bb3ceb355464e0000e7e4",
+    "results/airscape_power_audit_v1_20261027/cases/collection_slot_10/capera_seed0/sequential_digital_periodic/outcome.json": "47234fff7c70b16aea6f1dcfd3b169439e5182b8cb2bad437cf614d3949c495e",
+    "results/airscape_power_audit_v1_20261027/cases/collection_slot_0p625/airscape_seed0/proposed_fu_guard_cliperase/outcome.json": "19cb3e038ae3f2f3e82935e4db049156677532ded49598900099bf58100731f6",
+    "results/airscape_power_audit_v1_20261027/cases/collection_slot_1p25/airscape_seed0/proposed_fu_guard_cliperase/outcome.json": "06e547d4c11588c7b38e5b05272aada0c34106f49fe53a7a0a141a74245cbab0",
+    "results/airscape_power_audit_v1_20261027/cases/collection_slot_5/airscape_seed0/proposed_fu_guard_cliperase/outcome.json": "3d3002bd4f9ba26f8934c1a06f937afa1a2620d4a36d4df0f4dc52c7645f6f49",
+    "results/airscape_power_audit_v1_20261027/cases/collection_slot_10/airscape_seed0/proposed_fu_guard_cliperase/outcome.json": "f799343f554d10ce21441998b7e55b3f631327b0291ff1fae4506917ce18a559",
+    "results/airscape_power_audit_v1_20261027/cases/collection_slot_0p625/airscape_seed0/heuristic_ova/outcome.json": "3424a2da70441f98a4eb357bcc9692638a759f1e65a29cbf26fa3614d3a816be",
+    "results/airscape_power_audit_v1_20261027/cases/collection_slot_1p25/airscape_seed0/heuristic_ova/outcome.json": "9d708d8810769d2e3c5e762aef1f1b57a5adc6e729a56e4449a39e1382701f72",
+    "results/airscape_power_audit_v1_20261027/cases/collection_slot_5/airscape_seed0/heuristic_ova/outcome.json": "d1f884d013b3f356c16c3f1d8e547fb2548e31c4bf86b357b2753007f87d2ca0",
+    "results/airscape_power_audit_v1_20261027/cases/collection_slot_10/airscape_seed0/heuristic_ova/outcome.json": "4d38ab35d4540345747fec48733ace45c7da627c1bbf12775b879e8824f6b7fd",
+    "results/airscape_power_audit_v1_20261027/cases/collection_slot_0p625/airscape_seed0/separate_aircomp_periodic/outcome.json": "7bbde734b45b7578133764b3bfac10c0eeb1b857f3087c0c03faf4c1d6a12e5c",
+    "results/airscape_power_audit_v1_20261027/cases/collection_slot_1p25/airscape_seed0/separate_aircomp_periodic/outcome.json": "b6453ae0218e0503081c8a31c0dfc5e4a9f28e843bd577f04e98c48939482fbe",
+    "results/airscape_power_audit_v1_20261027/cases/collection_slot_5/airscape_seed0/separate_aircomp_periodic/outcome.json": "84a703fb782ac3ccdcbe590ab0fe30bf7d3765dd282b9c84834f621c45cbca5b",
+    "results/airscape_power_audit_v1_20261027/cases/collection_slot_10/airscape_seed0/separate_aircomp_periodic/outcome.json": "21c1c73e098666a55327f6769accde2f465e7311f93f586a7a68b4ff0410d1fb",
+    "results/airscape_power_audit_v1_20261027/cases/collection_slot_0p625/airscape_seed0/aircomp_ofdma_periodic/outcome.json": "4b8da66c702b2e5b7c6474cf19f3dc37f814589955c8874ed1491fe6b79b00cb",
+    "results/airscape_power_audit_v1_20261027/cases/collection_slot_1p25/airscape_seed0/aircomp_ofdma_periodic/outcome.json": "bd8e9b72ff03aeba4f3c19fe4e1e23a2a62b2336e4b40cb0cc4a401707d0bdcf",
+    "results/airscape_power_audit_v1_20261027/cases/collection_slot_5/airscape_seed0/aircomp_ofdma_periodic/outcome.json": "82519b5654cbeb1416cc033722d30a287d78b9f0866076583538a11173f9feb8",
+    "results/airscape_power_audit_v1_20261027/cases/collection_slot_10/airscape_seed0/aircomp_ofdma_periodic/outcome.json": "9b01d287cd5066801812bdf8e93e1dda5b2f5dedd39ac2dfa429975a709efdf3",
+    "results/airscape_power_audit_v1_20261027/cases/collection_slot_0p625/airscape_seed0/sequential_digital_periodic/outcome.json": "225c152c2782c5c3feccd49099f5dcf5b273a5e2d7e8f6ab7b05922010bed4ea",
+    "results/airscape_power_audit_v1_20261027/cases/collection_slot_1p25/airscape_seed0/sequential_digital_periodic/outcome.json": "f9674acab1f26b39e81a18875fe0b4afe63510cee28bd068e278c26b574e9785",
+    "results/airscape_power_audit_v1_20261027/cases/collection_slot_5/airscape_seed0/sequential_digital_periodic/outcome.json": "af55478a30e36f41448d22c939db89df09bfbe3297768e769217dbebc57d1cc1",
+    "results/airscape_power_audit_v1_20261027/cases/collection_slot_10/airscape_seed0/sequential_digital_periodic/outcome.json": "2d1d0e79b29d81d56a9ad26f5574209afc33cb868026e60de9ac2243bc71d809",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/plan.json": "92132da504a8b90808747e03a9cb1d4933a84a2e11ca928efd542b1f0f54fd46",
+    "results/uav_convergence_v2_20261027/capera_pilot/rounds.json": "86af3db6b7bb1bbd5a96c62f838186d0f875b52f972bc796826c38bffd4006b9",
+    "results/uav_convergence_v2_20261027/capera_pilot/protocol.json": "758d465e5e509d5fed1629d515fbfe27e244ef5159e7c7272f72d9798dd0e4c7",
+    "results/iot_uav_remoteclip_v4_event_mission/capera_seed0/plan.json": "52fb0899a1f65eccaeda6128ce74f91b20a274fd44b9ac890c1084fdf45677bc",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/initial20/rounds.json": "b26776089ef97b2499a1f20d5c30275d78cb880c1b56fca71046b4558223f55f",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/reference200/rounds.json": "cf8906eeac3150807de1684e59d106e53b78037ff6f1280c0df81205ad313f15",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/reference_metrics.json": "534910428a5be11e362167d4885d146823aaa579ca7ea4dd9794926afcbfafed",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0005.json": "3b7bdb0f0869889f93efc133c64f17ba905bdb9315790cb18a6fdbd740fd46da",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0010.json": "ef1f482551e82b3bbdebd2a7e8f6df999388f2a300e9adfc001402741ce855c4",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0015.json": "0f0d18ebdd79885950685c21b6604e641dfccf537f5c356a97644d421fe4d54a",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0020.json": "9ad6f4fb8d9e9ce38dde2d12e8fcdbd2219d39eb90149fba5db3ef9c1223906e",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0025.json": "c74f8531b5f202059d5c8997646d16c0f0ca5dc145d7dc927312a792b39065a8",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0026.json": "b99639b310f74f3ebe5fe62d9a6b7034a24149cd980a2d2750380efc9cb682b6",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0030.json": "55d1428f7eba98f51e40cf2e520fc33ac71363eca314e402c1e571a7b3d61ee3",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0035.json": "c19824716fad3448a535e1915a5ba1b5f9889f1cc24bf5811f2b7924b3bed5b0",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0040.json": "965b39b97ed4881571671c62f8e8ab5c738bb5488d6512c4ffe80a5cc3a8f7b7",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0045.json": "3519db25b86578520d5938de46e60cabb5032630d4cf0149e5edb816fe687c15",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0046.json": "e048003cf0d61edbd6a1545e59c860cdfa0bccf82c87d373217199d97984fea7",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0050.json": "866097641efc7318040ad6ce1da5aaf12f14a9c9f710318b9a530ede6f85c41f",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0055.json": "958dcd5a792af0421d6d0ef22736d1ef1390842e71e37314d5e0a6bbfe3b501b",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0060.json": "d829d60463699395c1cacfcc54ff01a5b568a1980c3e6b0716d4682037b8bf42",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0062.json": "effe61e6a7e9f43b52cafce6dc977d0376212343e86e05d4ae894174d5e2d931",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0065.json": "89dfe12ec3027a93c96e6379a79d407a388b308bfed198d07ab4a6114b287e40",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0070.json": "594a0abe121b9603e2463d1cde669a2d61736a68612fc2fe76f0b5f5025a7011",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0075.json": "2fb248bc68ec5d9261f2f04551cf08b115311e5a484e52302e39d5955438303c",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0080.json": "47c94541be488f29fe8c3baf77b4c01f1eb615e0be3c5820195d39141e13ceb6",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0085.json": "27a478e7276506a88dd66fd33653653b88cb658c4c98fb804887529190023575",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0090.json": "a0729f3b6a0a136c947f4565fe46f9b66f0dc405f37f6d4c5b8bfb624ed0c91d",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0092.json": "a7a580a767f9c91ab9190d33ba8442c77943236d2c77e0cf54b6ae565a8acdc1",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0095.json": "35b0b358c831982a0a20fa4eb067523e1e18c0956335607adea115c39a97fd52",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0100.json": "05486fc93a97f7a7ea88025e621c7911f972edc8b150b648b15bf6f3dca13315",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0105.json": "2b1594095ff3ec233b9b364ac77d64a29436ae374847ed99bbdf588fe0a3772d",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0110.json": "82cf6cf6989edbc7892d3a4ba54d1f61a7ae1e68b0f1a7b63e8904998f0791b3",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0115.json": "2994311fcef960def4aab3a4711edfae44a7bd8ecdeaacd4c3426187f9f2aac8",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0118.json": "7b7da476a291e1a7f208b4bd059c8767dcedf349461aa10ddc4e5636f409aeef",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0120.json": "7d307db80fd3e4f1af5ba3d40beb29458ff229c1f032d7c927a41c5a66701296",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0125.json": "3c47359acb342ee7d70e82874617d9984c32355e0c7cab9fdd6636431a5ff684",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0130.json": "c5fc66211dd38f04bf832d7533b9a121a587a8ff8ffbd9ef9427d90dae1a48e5",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0134.json": "11b4909954729cd92471873c548c48069088e816239fa1527fdecc3a12bbb1a9",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0135.json": "a7ba75d10d217e9bf8dc46859f3ec6607e319fcde8533cb2259bab258968c579",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0140.json": "3957c34bb82d1a769e005638d917fc9db26bf9b296b134d1e76483abe946abcb",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0145.json": "ec30ba0b8377b1530c6916a5f489985c4d53356aa5d7e6ba4795adc0f3889091",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0150.json": "dc60b38700d8a2b0757e51729566477c78e3f6182e611d6d1f5eb3e8fc498800",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0155.json": "6432076f16d29e2803fbd59c269cf345b3ba90ae7add7fa8b5f2e26288202e32",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0156.json": "4ecacc4d90b0a057e0b54d81ae53531d44523f3fc3ba7ab95185d6f5c12a8348",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0160.json": "80fcdc15087404230c7948cf87a8c99ab666e92ef0995111d41aad2f2926785b",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0165.json": "63f727ee8ae40b7a026d4e8429f0fcd45a494676ad807fb9252003fff672a390",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0170.json": "1209b7695a6fbedc0b2e299f4a790059c94aa1a869f4deb74301b696bfee3210",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0175.json": "8871ae5b2cb390129f0d5dee4d196803d77e6b32f9e27a576cf2f2832803d966",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0180.json": "74a2c3b3cacaf7a64ef7a324c023ef63c790c6df54fd2d56e6fe53b11b3a9fe1",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proxy20/rounds.json": "698031143d47ba9ed587f53041e6c879c69bcf43f6b4ef87210b20ae9144da3a",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/feature_cache/manifest.json": "7f07d66d170ab1f5709a1c55d9d26853c2bf2ad31c7f527c6e478370ca260eca",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/energy_and_delay.json": "f8d9d7b1bc8ea56526e19dc2bc067111b201ff14fb674280c2c833dab30cac42",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/mission_timeline.json": "881e1c39ae3c7561d5bf42dbffd3707eb893513ca7218138a3ee1ba3427a22a2",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/service_completion.json": "74a2c3b3cacaf7a64ef7a324c023ef63c790c6df54fd2d56e6fe53b11b3a9fe1",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/plan.json": "5e856fffec7bec897b916cd31a311ad2c647498f616762cf5364810ff1ec348b",
+    "results/uav_convergence_v2_20261027/airscape_pilot/rounds.json": "c776daf55c23185c3ca3d916e42cb5b153dfae037fcc2833196d8f114e7acdb5",
+    "results/uav_convergence_v2_20261027/airscape_pilot/protocol.json": "4277f04679b688c86ae9da733a0c037bdc01d91df980e0c697277002c4854da1",
+    "results/uav_convergence_v2_20261027/airscape_pilot/plan.json": "5e856fffec7bec897b916cd31a311ad2c647498f616762cf5364810ff1ec348b",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/initial20/rounds.json": "9151b355effbe73ff26edcadbb3e5bfc68440db7b892278724e5d5f2f5f43198",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/reference200/rounds.json": "ca9dc09c2a9b23393bd248c293b332617b7981c2ad441e0b4bc33603e5c69873",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/reference_metrics.json": "00e698d4d657516c154b7362814c48d36377283558b5f9351e95d540d4371da6",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/evaluations/0005.json": "e4db1bad199f5f5c8f189a9c9d401679b9d2c1e6664b3f610d5cd9cae903717c",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/evaluations/0010.json": "e7e12ef73110b2719b0ddb329686d89b14dcebb5bc98873a7be5bc69a7a89ccb",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/evaluations/0015.json": "9876d2830b6c7ab27558675291531eb2eedcc00d4c11ac926149f9a224501306",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/evaluations/0020.json": "f7a937ed16372f907ce9b549f7defabbb817c794f37f44a41609c4709c5c3c5d",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/evaluations/0025.json": "e38b8e19aaf6f2e30f1b8fad8b88c3cbe88530fa4eeae83eb6718488957af83d",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/evaluations/0026.json": "ac681266df3f599cfb31b57043baab6c0b65c6960b9505c41432c96af4937821",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/evaluations/0030.json": "2b39f96d5055f23cd4586494b31e743cdb7fcbdbe657778ed360c05b3afc12d1",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/evaluations/0035.json": "141920d3b7333c131435ce3f8dd9a52d375be63df9ddedc0d23281a529a99113",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/evaluations/0040.json": "3094d7b744ffe38a32ed290a375a454787bacd6f558285bb3a88bdf36ace40e3",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/evaluations/0043.json": "48d3faf17f65c9390c96994f1eb7f43b68c2480fe1a69e906fc7747cbd57fb35",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/evaluations/0045.json": "4e689118f7bee0e72f613ab2e98f799f0007e518ca3ec2b0a43ac31a7cc2a453",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/evaluations/0050.json": "71f95bb036067ac7d29313ed0726835ee3f4510073eeaf6981066e785bffa2f3",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/evaluations/0055.json": "450613ed6b7ca615c56a5a7e45e796ba2717a7dac801e22b2ac7b579739a3cf0",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/evaluations/0059.json": "14790cb45dae74ae53708ecbe6b80c1924bfd0b75d615b9be84b981afcf1c688",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/evaluations/0060.json": "5f4d697d2cc20b69d11615729f39495179d495841b7a22fe18a4bd3a38021d88",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/evaluations/0065.json": "3e23c82cb6beeaca274227cd06a87169c9edaf846d2a830821d58fd3fb171c9e",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/evaluations/0070.json": "9fa742bc1bcbcf562d96c8866cbaee932d3f9e1de9f7d9f5989126bb25acc3fa",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/evaluations/0075.json": "92a62cbc91381ad5302d4c8be73afb471fc918dce2144dedde8bdb7fbf5bcd4a",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/evaluations/0080.json": "9868371b3048e6e3e79e977e5192e1f631982bf43f29eada510c79b4c0c09e2b",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/evaluations/0085.json": "8b38a9194d06c024d472c34bedd4f170eddb756aaba1e7eb4a87efbcc830eadb",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/evaluations/0090.json": "8b63d65016b2ff37f984d224728d1511d6cc25504efebf889246ee2c068098d6",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/evaluations/0095.json": "8f56be03a5a9e0d4d5561b6dcd4f3bd5ef128d50512e22f8de16014444658c35",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/evaluations/0100.json": "d0318256ee0763a822785de26f253d97b83116af0dc8218930a25e402613facf",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/evaluations/0104.json": "3034c9f4413aab2f3a82d029b5c422a09ed19e43b81b232e7e99ca46eda99116",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/evaluations/0105.json": "bde634086678ca7fd49ee8e44cbe9135be6f8e6e313b45503a43695cb12414c8",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/evaluations/0110.json": "9c96cf254151b944da2a9158e3cdb1acb1a13bb3d4b3dae055c37b6810e1e7d1",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/evaluations/0115.json": "21fa263d2dda6c71db340e6de2692faf66f91456bf6644dfe3ad65f2059e0577",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/evaluations/0120.json": "a851c856fe16bde622d0dffcbe888c98d736fb93f06069b673c2f17e787566fd",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/evaluations/0125.json": "7430b1b5b30d5f22e3b6c165cad31ec690670c77d90fc4d77f2d11e158bac1a8",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/evaluations/0130.json": "03a8aa89aeb1297cc249caae399d3a4f84a28cd502027a843bf52c88d303c694",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/evaluations/0135.json": "221a59fc661c5816d8a785926b7ab43a5da26674577b828889d5c427f3c292f8",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/evaluations/0140.json": "c9fe2a0bb1dc5a3ca4959461250b0115f6082d952b9b66c8e52a96b8435d2212",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/evaluations/0145.json": "8d58880406475fb236cbb7fe9b111370364056995569f91ea949bd223fb18a1b",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/evaluations/0149.json": "b097e6c17fc96c3c4ad3a54bc561dacaa09f8a27e0ecdc6a55a5ba71908246fd",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/evaluations/0150.json": "1497ed0e828cc2da4a98732d286e0b7006aae730670a1932f935df7f17c59841",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/evaluations/0155.json": "048ae833634e9271d14ef22e3a36a84a1b59245471d72cca0978b144ee54b30f",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/evaluations/0160.json": "1892229862ae003d5e4861b29b62fcacc35e77c977b4579ca658336e90e9172a",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/evaluations/0165.json": "db113b6b47709b94c4b30365c983af3deea459e10402619ff2dbddf36509b1e0",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/evaluations/0170.json": "82baca776005ad31d1630a08ac9cb78f3090ed678181d70c276ad912f78705e3",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/evaluations/0175.json": "f32a5f53e5e2fbb0ebb4f09126d27b7d397c2628f09bbb22b84d8306cf1cf87e",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/evaluations/0180.json": "535042e796f6ce1bc744e46b33e05c837319b79b5382297c05099065240f1e16",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proxy20/rounds.json": "df576614f637b6ed13b0d6da57b9be794457468efcc26b0f676465c414e6e59c",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/feature_cache/manifest.json": "603fa69e46292b0ffd12f32db24ef4e6a8043938442543736e2ead98e620fa81",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/energy_and_delay.json": "719404dd60b2c18a177a4260b187f23e5bc6a5dbab8f7741e66c3769ff6aba87",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/mission_timeline.json": "43b68537df4dfed60451f203f4a79e16b2ba126ed8ae200f6ca655afbcbd5acd",
+    "results/airscape_power_audit_v1_20261027/cases/baseline/airscape_seed0/proposed_fu_guard_cliperase/service_completion.json": "535042e796f6ce1bc744e46b33e05c837319b79b5382297c05099065240f1e16",
+    "tools/uav_convergence_v2/energy_mr_audit.py": "6895ea52a2f2ac3f87c40e1d9b1fbba31533a0697e1b9b9523bfe294d1c85337"
+  },
+  "policy": "Existing observations only. Select energy axes for physical sensitivity; retain every method, sample and infeasible status. No new training, metric tuning, interpolation over infeasible points or smoothing."
+}
