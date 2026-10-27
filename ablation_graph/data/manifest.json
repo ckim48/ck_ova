@@ -15,6 +15,8 @@
       "axes": [
         {
           "dataset": "CapERA",
+          "xlabel": "FL round",
+          "ylabel": "Validation loss",
           "x": {
             "limits": [
               0.0,
@@ -60,6 +62,8 @@
         },
         {
           "dataset": "AirScape",
+          "xlabel": "FL round",
+          "ylabel": "Validation loss",
           "x": {
             "limits": [
               0.0,
@@ -109,15 +113,15 @@
       "files": [
         {
           "file": "01_round_fl_loss_1x2.png",
-          "sha256": "4cf6bf834c7cab55bf85a952744ee9afc7a99b83169c046abbadd96e0f71dfac"
+          "sha256": "0476c891ccd9327416f094409f42f12886c01b8132b9b78af2bc180adab84c79"
         },
         {
           "file": "01_round_fl_loss_1x2.pdf",
-          "sha256": "b152227359b659063412674a65e8e8cc897a2c86518b11b41d668eaf36dd10a7"
+          "sha256": "1e581cd29908b9f0c175c977b4a34d25155b50ba13dfc5b7b5716b4ebe7d8c3d"
         },
         {
           "file": "01_round_fl_loss_1x2.svg",
-          "sha256": "eb21bc68c464578d623de63f43810ac12036300256f243f6e56b02f6219944a9"
+          "sha256": "1c47d54f6d4a7960e7c9d7c44aa3d4f8e309584ebd99a3903062f3bd39d08135"
         }
       ],
       "status_markers": []
@@ -127,6 +131,8 @@
       "axes": [
         {
           "dataset": "CapERA",
+          "xlabel": "FL round",
+          "ylabel": "mR (%)",
           "x": {
             "limits": [
               0.0,
@@ -172,6 +178,8 @@
         },
         {
           "dataset": "AirScape",
+          "xlabel": "FL round",
+          "ylabel": "mR (%)",
           "x": {
             "limits": [
               0.0,
@@ -217,15 +225,15 @@
       "files": [
         {
           "file": "02_round_mr_1x2.png",
-          "sha256": "7fd2e7916bcc2a779fbe0ec6656a7f3672a8077a35b8de8cfcca8a657ca37291"
+          "sha256": "08ef6bc085f1689ff945777043b64fc026b92002333f0ef1f549fbd8675b47e9"
         },
         {
           "file": "02_round_mr_1x2.pdf",
-          "sha256": "ac46d6553421980abd789951d2a1a189f42e8ebc9731f040b7af58904ae8cef4"
+          "sha256": "49186dabccfe982c201f97fbe53f72d907a1d264b6c9e9c0df9b64be8d0a1252"
         },
         {
           "file": "02_round_mr_1x2.svg",
-          "sha256": "b6377d2bba5f0b8de72dcd3e763c305a68b050847c9085c3988f896299addcc2"
+          "sha256": "042cb29a58418268d344c7a0263b514acfc6f7d1973635240bdd6601b94f3f09"
         }
       ],
       "status_markers": []
@@ -235,6 +243,8 @@
       "axes": [
         {
           "dataset": "CapERA",
+          "xlabel": "Time (s)",
+          "ylabel": "Validation loss",
           "x": {
             "limits": [
               0.0,
@@ -278,6 +288,8 @@
         },
         {
           "dataset": "AirScape",
+          "xlabel": "Time (s)",
+          "ylabel": "Validation loss",
           "x": {
             "limits": [
               0.0,
@@ -325,15 +337,15 @@
       "files": [
         {
           "file": "03_time_fl_loss_1x2.png",
-          "sha256": "4d45450fc3fdab2c6222d1d6318011ad4afa0b08fdce037da98dd416831b802e"
+          "sha256": "21fe30c29210808bd86b72101585b504f09afb6d5e4dd23d7f9dde4262302707"
         },
         {
           "file": "03_time_fl_loss_1x2.pdf",
-          "sha256": "7930513a5ebd4ce94f0c92eacbc7d0e333cb45b4426cf911d751eac0eb747bf5"
+          "sha256": "e1a595264d7644507d02e89fa1f59a2dc4cd53d19448c3be48f05755a4663587"
         },
         {
           "file": "03_time_fl_loss_1x2.svg",
-          "sha256": "29ebc9f54546e3b48e450ff4be025e097452f90c746c7de69bc905b274406d48"
+          "sha256": "f1272e703cbd21309cd917fc047639d79b4aac0daec9a61d2494e490306bb4e7"
         }
       ],
       "status_markers": []
@@ -343,6 +355,8 @@
       "axes": [
         {
           "dataset": "CapERA",
+          "xlabel": "Time (s)",
+          "ylabel": "mR (%)",
           "x": {
             "limits": [
               0.0,
@@ -388,6 +402,8 @@
         },
         {
           "dataset": "AirScape",
+          "xlabel": "Time (s)",
+          "ylabel": "mR (%)",
           "x": {
             "limits": [
               0.0,
@@ -433,15 +449,15 @@
       "files": [
         {
           "file": "04_time_mr_1x2.png",
-          "sha256": "d8cccdf359e3a6ceb95989a1fc6336b8a40ad9f6cf0bc875b7b8244e84eb5104"
+          "sha256": "58b812c74b05dc976923162fbbd611ed557ad4a199bfdd509fcb0904e8e5002a"
         },
         {
           "file": "04_time_mr_1x2.pdf",
-          "sha256": "84a471d2449e57dd46f76fd6eb6fe4d939880c17e2d969415378a1fc269d4e67"
+          "sha256": "62a8be56b7e0d58dd2ce1ae85ec344e91a29abc6c295ace57312e746dcff3c91"
         },
         {
           "file": "04_time_mr_1x2.svg",
-          "sha256": "265c771919bd23895d25a92e8e81b2a96a0b75e63f8d950fca5dc6c9dddba643"
+          "sha256": "081563ef7edd438dc5d0ff6222b9d711443e043c7509067013b25510d07cf72a"
         }
       ],
       "status_markers": []
@@ -451,20 +467,20 @@
       "axes": [
         {
           "dataset": "CapERA",
+          "xlabel": "Bandwidth (MHz)",
+          "ylabel": "Total energy (kJ)",
           "x": {
             "limits": [
-              0.0,
+              1.0,
               4.0
             ],
             "ticks": [
-              0,
               1,
               2,
               3,
               4
             ],
             "labels": [
-              "0",
               "1",
               "2",
               "3",
@@ -474,7 +490,7 @@
           "y": {
             "limits": [
               100.0,
-              800.0
+              700.0
             ],
             "ticks": [
               100.0,
@@ -483,8 +499,7 @@
               400.0,
               500.0,
               600.0,
-              700.0,
-              800.0
+              700.0
             ],
             "labels": [
               "100",
@@ -493,27 +508,26 @@
               "400",
               "500",
               "600",
-              "700",
-              "800"
+              "700"
             ]
           }
         },
         {
           "dataset": "AirScape",
+          "xlabel": "Bandwidth (MHz)",
+          "ylabel": "Total energy (kJ)",
           "x": {
             "limits": [
-              0.0,
+              1.0,
               4.0
             ],
             "ticks": [
-              0,
               1,
               2,
               3,
               4
             ],
             "labels": [
-              "0",
               "1",
               "2",
               "3",
@@ -523,7 +537,7 @@
           "y": {
             "limits": [
               100.0,
-              800.0
+              700.0
             ],
             "ticks": [
               100.0,
@@ -532,8 +546,7 @@
               400.0,
               500.0,
               600.0,
-              700.0,
-              800.0
+              700.0
             ],
             "labels": [
               "100",
@@ -542,8 +555,7 @@
               "400",
               "500",
               "600",
-              "700",
-              "800"
+              "700"
             ]
           }
         }
@@ -551,15 +563,15 @@
       "files": [
         {
           "file": "05_bandwidth_total_energy_1x2.png",
-          "sha256": "a32e75d9ad99a5e8a370d67eb9ad3c2c49938c48f4b37bd542560381ee687c8b"
+          "sha256": "55747766305f3187743ba4d3cdf727144e5f8c2cd29ea7123d6a96b6d2d3e3e3"
         },
         {
           "file": "05_bandwidth_total_energy_1x2.pdf",
-          "sha256": "e1edf43eeeee8beaaa4ac2599c4df9fc385b1488537d917b55b9ec4ff26dd6c2"
+          "sha256": "abb6412356e64e02c872ef20dce5a7b283da6c62a6ba950b60ffad5f4e7e2bc6"
         },
         {
           "file": "05_bandwidth_total_energy_1x2.svg",
-          "sha256": "2ba9b62ac180ae71cdcaed4553c95c4d1bfc2d4f70672c1e94913f46872f5860"
+          "sha256": "be94957ab90a13cf1dca4e49434714318c92f4c7432f4e729f4febb20e7adc71"
         }
       ],
       "status_markers": [
@@ -578,20 +590,20 @@
       "axes": [
         {
           "dataset": "CapERA",
+          "xlabel": "Bandwidth (MHz)",
+          "ylabel": "Delay (s)",
           "x": {
             "limits": [
-              0.0,
+              1.0,
               4.0
             ],
             "ticks": [
-              0,
               1,
               2,
               3,
               4
             ],
             "labels": [
-              "0",
               "1",
               "2",
               "3",
@@ -601,40 +613,38 @@
           "y": {
             "limits": [
               100.0,
-              500.0
+              400.0
             ],
             "ticks": [
               100.0,
               200.0,
               300.0,
-              400.0,
-              500.0
+              400.0
             ],
             "labels": [
               "100",
               "200",
               "300",
-              "400",
-              "500"
+              "400"
             ]
           }
         },
         {
           "dataset": "AirScape",
+          "xlabel": "Bandwidth (MHz)",
+          "ylabel": "Delay (s)",
           "x": {
             "limits": [
-              0.0,
+              1.0,
               4.0
             ],
             "ticks": [
-              0,
               1,
               2,
               3,
               4
             ],
             "labels": [
-              "0",
               "1",
               "2",
               "3",
@@ -644,21 +654,19 @@
           "y": {
             "limits": [
               100.0,
-              500.0
+              400.0
             ],
             "ticks": [
               100.0,
               200.0,
               300.0,
-              400.0,
-              500.0
+              400.0
             ],
             "labels": [
               "100",
               "200",
               "300",
-              "400",
-              "500"
+              "400"
             ]
           }
         }
@@ -666,15 +674,15 @@
       "files": [
         {
           "file": "06_bandwidth_delay_1x2.png",
-          "sha256": "16c4bd178c1c75eaca58277a93ff4793b1944a8b7efddebe347afea7928928d7"
+          "sha256": "c2474d7ea839b61942eaa96f3a7d4678c0559cf684cc80e6df3d43efdfc92699"
         },
         {
           "file": "06_bandwidth_delay_1x2.pdf",
-          "sha256": "cbe92784b5e01fae7d78ea158bb3168255be122418f23c5f69af443ea86dbae3"
+          "sha256": "d85d52c35e8ded35073eaa7b4ab50cfb7c3bc43bb2974ec425845a42a5f0ae0a"
         },
         {
           "file": "06_bandwidth_delay_1x2.svg",
-          "sha256": "2e5ce6ad9c17e5ad9fdc0f95a431179fb6c805f65089bf220306dbc04f84c9f8"
+          "sha256": "1e13d53bfbd6c198fe916698d189ffe1a7bbff051d8c63ffd67b568cba61ceee"
         }
       ],
       "status_markers": [
@@ -690,8 +698,29 @@
     }
   ],
   "comparison": "guard_ablation",
+  "bandwidth_display": {
+    "min_MHz": 1,
+    "max_MHz": 4,
+    "ticks_MHz": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "measured_display_points_MHz": [
+      1,
+      2,
+      4
+    ],
+    "recorded_below_display_MHz": [
+      0.25,
+      0.5
+    ],
+    "reason": "User requested bandwidth axis starting at 1 MHz; all original outcomes remain in the data files."
+  },
+  "loss_definition": "Held-out retained-query bidirectional retrieval negative log likelihood, not per-client minibatch training loss",
   "source_sha256": {
-    "tools/uav_convergence_v2/selected_graphs.py": "5dce2e80122de349049871a5cb70496ff8ec2af3361abb256e875b7903656752",
+    "tools/uav_convergence_v2/selected_graphs.py": "24ebda9f7ffc4a1172b8b0c8c9cdad250444e3324eb47e9c14ed91f22caa3870",
     "tools/uav_real_vlm_v1/energy.py": "ed3d27a04b38de1991533b199782ad056a61c20a2148bb345c8b187706f1a004",
     "tools/uav_convergence_v2/time_energy_report.py": "0fa0d4e46e0518c0ab458792cce72b7a3f58ccb497a1b3dd3937f72c445dd70a",
     "results/guard_ablation_v1_20261027/protocol.json": "9e4ffd2ba1b75fab6e9ea6ff278ab2ac93c3c55ec6a3e98fc3c6f66da14f3ddb",

@@ -109,7 +109,7 @@ def save(fig, axes, name, status_markers=None):
         fig.text((pos.x0 + pos.x1) / 2, .015, f"({chr(97+number)}) {dataset}",
                  ha="center", va="bottom", fontsize=14)
         assert not ax.texts
-        row = dict(dataset=dataset)
+        row = dict(dataset=dataset, xlabel=ax.get_xlabel(), ylabel=ax.get_ylabel())
         for dim in ["x", "y"]:
             ticks = getattr(ax, f"get_{dim}ticks")().tolist()
             limits = list(getattr(ax, f"get_{dim}lim")())
@@ -175,9 +175,9 @@ def generate(comparison="main"):
         sources[str(path.relative_to(ROOT))] = sha(path)
         initial[d] = read(path)[0]["evaluation"]["retained"]
     figures, series = [], []
-    specs = [("01_round_fl_loss_1x2", "round", "loss", "FL loss", 1.),
+    specs = [("01_round_fl_loss_1x2", "round", "loss", "Validation loss", 1.),
              ("02_round_mr_1x2", "round", "mR", "mR (%)", 100.),
-             ("03_time_fl_loss_1x2", "time", "loss", "FL loss", 1.),
+             ("03_time_fl_loss_1x2", "time", "loss", "Validation loss", 1.),
              ("04_time_mr_1x2", "time", "mR", "mR (%)", 100.)]
     horizon = math.ceil(max(p[0][-1]["active_s"] for p in trajectories.values()) / 100) * 100
     for name, domain, metric, ylabel, scale in specs:
@@ -236,11 +236,15 @@ def generate(comparison="main"):
             for number, (method, label) in enumerate(METHODS.items()):
                 records = [index[(v, dataset, method)] for v in values]
                 y = [r[metric] * scale if r["status"] == "completed" else None for r in records]
-                chart.style.curve(ax, values, [v if v is not None else math.nan for v in y], number, label)
+                visible = [(x, value) for x, value in zip(values, y) if x >= 1]
+                display_x, display_y = [p[0] for p in visible], [p[1] for p in visible]
+                assert display_x == [1, 2, 4]
+                chart.style.curve(ax, display_x, [v if v is not None else math.nan for v in display_y], number, label)
                 series.append(dict(figure=name, dataset=dataset, method=method, x=values, y=y,
+                                   display_x=display_x, display_y=display_y, display_min_bandwidth_MHz=1,
                                    status=[r["status"] for r in records]))
                 for value, record in zip(values, records):
-                    if record["status"] != "completed":
+                    if value >= 1 and record["status"] != "completed":
                         # Non-numeric status marker: x is physical bandwidth;
                         # vertical placement is an axes fraction, never a measured y.
                         ax.plot([value], [1.04], transform=ax.get_xaxis_transform(),
@@ -249,8 +253,8 @@ def generate(comparison="main"):
                                 label="_nolegend_", gid=f"infeasible_{method}_{value}")
                         status_markers.append(dict(dataset=dataset, method=method, x=value,
                             status=record["status"], axes_y_fraction=1.04, metric_y=None))
-                ys += y
-            chart.regular_axis(ax, "x", [0, 1, 2, 3, 4], 0)
+                ys += display_y
+            chart.regular_axis(ax, "x", [1, 2, 3, 4], 0)
             ax.set_xlabel("Bandwidth (MHz)")
             panel_values.append(ys)
         if metric == "total_energy_j":
@@ -268,6 +272,9 @@ def generate(comparison="main"):
         writer = csv.DictWriter(handle, fieldnames=list(ledgers[0]), lineterminator="\n")
         writer.writeheader(); writer.writerows(ledgers)
     write(DEST / "data/manifest.json", dict(datasets=DATASETS, methods=METHODS, figures=figures, comparison=comparison,
+        bandwidth_display=dict(min_MHz=1, max_MHz=4, ticks_MHz=[1, 2, 3, 4], measured_display_points_MHz=[1, 2, 4],
+            recorded_below_display_MHz=[.25, .5], reason="User requested bandwidth axis starting at 1 MHz; all original outcomes remain in the data files."),
+        loss_definition="Held-out retained-query bidirectional retrieval negative log likelihood, not per-client minibatch training loss",
         source_sha256=sources, energy_scope="FL/FU service communication + computing + hovering only",
         time_scope="Active mission FL/FU service, including scheduling waits; excludes travel, collection and preflight preparation",
         assumption="The duplicated time-loss item 4 is interpreted as time-mR, completing the round/time by loss/mR set.",
@@ -283,9 +290,11 @@ def generate(comparison="main"):
         lines.append(f"| {int(name[:2])} | {x} | {y} | [PNG]({name}.png) |")
     lines += ["", "Item 4 repeated time–FL loss in the request; it is interpreted as time–mR.", "",
         "## Exact definitions", "",
-        "**FL loss** is the saved symmetric contrastive retrieval loss on held-out retained queries, not "
+        "**Validation loss** is the saved symmetric contrastive retrieval loss on held-out retained queries, not "
         "the per-client minibatch training objective. **mR** is the average of the six video-to-text/text-to-video "
         "Recall@1, @5 and @10 scores. Original metric values are preserved.", "",
+        "The loss-axis label previously said FL loss. It now says Validation loss to match the actual saved metric. "
+        "Existing filenames are retained for compatibility; no loss values were replaced, normalized or rescaled.", "",
         "**Round plots** cover the shared initial model at round 0, common preparation through round 20, "
         "and method-specific FL/FU observations through round 200. FU updates at an unchanged FL round retain "
         "their original x coordinate. **Time plots** start at the common round-20 model; time zero begins "
@@ -301,6 +310,9 @@ def generate(comparison="main"):
         "collection and preflight costs. The original full energy ledger remains untouched. "
         "The service sum is independently reconciled against original total minus all excluded components.", "",
         "**Bandwidth** varies the UAV aggregation uplink symbol rate: 0.25, 0.5, 1, 2, 4 MHz. "
+        "At the user's request, the displayed axis starts at 1 MHz with regular ticks 1, 2, 3, 4. "
+        "The displayed measured points are 1, 2 and 4 MHz; 3 MHz is an axis tick, not an additional measurement. "
+        "The original 0.25 and 0.5 MHz outcomes remain in the ledgers and raw plotting arrays; display arrays are stored separately. "
         "This is the existing uplink bandwidth sweep, not the downlink-rate sweep. Noise and all other "
         "conditions follow the original paired sensitivity protocol. **Delay** uses exactly the active "
         "FL/FU service time defined above. All listed methods and all five bandwidth values are retained for "
