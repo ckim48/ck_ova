@@ -1,0 +1,17 @@
+{
+  "registered_unix": 1793088394.4879014,
+  "case": "channel_gain_m6",
+  "seed": 0,
+  "correction": "Candidate power tolerance tightened from2ppm to the existing receiver1ppm. The final receiver assertion, energy/error budgets and physical power limit are unchanged.",
+  "scope": "Rerun all five methods at the single failed scenario from the identical shared checkpoints. Reuse all other scenarios. Original failed run and figures remain immutable.",
+  "original_failure_sha256": "f71d46882afc3e530cbb3769427ec035b1ddd61e61610bad9c72d29a8ba6b814",
+  "original_outcomes": {
+    "proposed_fu_guard_cliperase": "dc7a461863c6dcc6a3d246599b1e848205b0e4abbd1d1dc26f341a5074b428b1",
+    "heuristic_ova": "9564438706a00a0cbaf233bd64d14194fee62c114e73d905a070aa59bfab9dad",
+    "separate_aircomp_periodic": "95e64ab2b490a42e4787a4ce7db093d579e1efa278da6d03e6d389dcb9bdf732",
+    "aircomp_ofdma_periodic": "7a3e203cf01ba56b923ae81b91449ba46ae44f53a5477c86e2b6918b0e9ab1ae",
+    "sequential_digital_periodic": "1d3cc03eb0c35d6129e49ab56c350c098b230ac81fb500a90b5a6af980749917"
+  },
+  "source_sha256": "731a12b771c63e8e258883dd3fa6c9a1df585ab9687944eef958cc6a4140e7cf",
+  "radio_source_sha256": "e83db4ba50f3a2174f29fd015deaa8d93b08f3f1a800a68e10656805d7335593"
+}

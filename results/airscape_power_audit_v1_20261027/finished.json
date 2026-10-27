@@ -1,0 +1,42 @@
+{
+  "status": "verified",
+  "unix": 1793088640.776361,
+  "verification": {
+    "passed": true,
+    "outcomes": {
+      "proposed_fu_guard_cliperase": "completed",
+      "heuristic_ova": "incomplete_no_feasible_radio_design",
+      "separate_aircomp_periodic": "completed",
+      "aircomp_ofdma_periodic": "incomplete_no_feasible_radio_design",
+      "sequential_digital_periodic": "completed"
+    },
+    "unchanged_other_methods": [
+      "heuristic_ova",
+      "separate_aircomp_periodic",
+      "aircomp_ofdma_periodic",
+      "sequential_digital_periodic"
+    ],
+    "existing_transactions_checked": 39785,
+    "rejected_numerical_candidates": 1,
+    "rejection_excess_ppm": [
+      1.9079837507707254,
+      1.9079837507707254
+    ]
+  },
+  "report": {
+    "datasets": [
+      "CapERA",
+      "AirScape"
+    ],
+    "seed": 0,
+    "terminal_arms": 410,
+    "expected_arms": 410,
+    "status_counts": {
+      "completed": 381,
+      "incomplete_no_feasible_radio_design": 19,
+      "infeasible_collection_power": 10
+    },
+    "figure_count": 122,
+    "complete": true
+  }
+}

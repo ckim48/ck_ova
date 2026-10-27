@@ -1,0 +1,21 @@
+{
+  "pid": 1499725,
+  "unix": 1793088640.7765005,
+  "stage": "terminal",
+  "report": {
+    "datasets": [
+      "CapERA",
+      "AirScape"
+    ],
+    "seed": 0,
+    "terminal_arms": 410,
+    "expected_arms": 410,
+    "status_counts": {
+      "completed": 381,
+      "incomplete_no_feasible_radio_design": 19,
+      "infeasible_collection_power": 10
+    },
+    "figure_count": 122,
+    "complete": true
+  }
+}
