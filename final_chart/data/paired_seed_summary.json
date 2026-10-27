@@ -1,0 +1,51 @@
+{
+  "rows": [
+    {
+      "dataset": "CapERA",
+      "mR_change_pp": {
+        "mean": -0.4079860738582089,
+        "min": -0.5729165549079624,
+        "max": -0.2994791915019306
+      },
+      "KL_reduction_percent": {
+        "mean": 91.17321616046767,
+        "min": 90.93454321946281,
+        "max": 91.59456403785168
+      },
+      "energy_change_percent": {
+        "mean": 0.1378963730972164,
+        "min": 0.09277317497411453,
+        "max": 0.1943133723759649
+      },
+      "delay_change_percent": {
+        "mean": 0.13740207013187197,
+        "min": 0.09230150695991313,
+        "max": 0.19377775855271562
+      }
+    },
+    {
+      "dataset": "AirScape",
+      "mR_change_pp": {
+        "mean": -0.06510416666666725,
+        "min": -0.13020833333333393,
+        "max": 0.06510416666666607
+      },
+      "KL_reduction_percent": {
+        "mean": 75.17573655347621,
+        "min": 69.24907942519793,
+        "max": 86.65425442280868
+      },
+      "energy_change_percent": {
+        "mean": 0.20359527662117127,
+        "min": 0.1584732165212932,
+        "max": 0.24305028139428586
+      },
+      "delay_change_percent": {
+        "mean": 0.20320350634963624,
+        "min": 0.15810207982103197,
+        "max": 0.2426681339555259
+      }
+    }
+  ],
+  "scope": "Three post-warm minibatch/radio seeds, paired within each dataset. Same warm20, data split, features, proxy and retrain references. Conditional robustness check, not three independent dataset/training replications or test-set inference."
+}

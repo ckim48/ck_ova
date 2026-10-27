@@ -1,0 +1,143 @@
+{
+  "passed": true,
+  "figures": 16,
+  "plot_series": 130,
+  "request_conditions": 50,
+  "quality_confirmations": 10,
+  "controller": [
+    {
+      "dataset": "CapERA",
+      "FU_steps": 225,
+      "min_weight": 0.25,
+      "max_weight": 0.5,
+      "mean_weight": 0.46799623218024267,
+      "repaired_steps": 0,
+      "actual_feedback_active": true
+    },
+    {
+      "dataset": "AirScape",
+      "FU_steps": 225,
+      "min_weight": 0.25,
+      "max_weight": 0.517071920929923,
+      "mean_weight": 0.4677876999876744,
+      "repaired_steps": 0,
+      "actual_feedback_active": true
+    }
+  ],
+  "paired_summary": [
+    {
+      "dataset": "CapERA",
+      "mR_change_pp": {
+        "mean": -0.4079860738582089,
+        "min": -0.5729165549079624,
+        "max": -0.2994791915019306
+      },
+      "KL_reduction_percent": {
+        "mean": 91.17321616046767,
+        "min": 90.93454321946281,
+        "max": 91.59456403785168
+      },
+      "energy_change_percent": {
+        "mean": 0.1378963730972164,
+        "min": 0.09277317497411453,
+        "max": 0.1943133723759649
+      },
+      "delay_change_percent": {
+        "mean": 0.13740207013187197,
+        "min": 0.09230150695991313,
+        "max": 0.19377775855271562
+      }
+    },
+    {
+      "dataset": "AirScape",
+      "mR_change_pp": {
+        "mean": -0.06510416666666725,
+        "min": -0.13020833333333393,
+        "max": 0.06510416666666607
+      },
+      "KL_reduction_percent": {
+        "mean": 75.17573655347621,
+        "min": 69.24907942519793,
+        "max": 86.65425442280868
+      },
+      "energy_change_percent": {
+        "mean": 0.20359527662117127,
+        "min": 0.1584732165212932,
+        "max": 0.24305028139428586
+      },
+      "delay_change_percent": {
+        "mean": 0.20320350634963624,
+        "min": 0.15810207982103197,
+        "max": 0.2426681339555259
+      }
+    }
+  ],
+  "files_sha256": {
+    "01_round_retained_mr_1x2.pdf": "695059e47e537d11a9f5f630350734e8e4690dbb1ccafb5c8616381e80c89921",
+    "01_round_retained_mr_1x2.png": "9c68dfaaeed4d0e934751acc0b13cc8e6490bc6cbc787a96542eb5cda050f2b3",
+    "01_round_retained_mr_1x2.svg": "9dc2c9dfa4495bdf4a4df878810e153bafb32aae2f72b5f710d8176f43794171",
+    "02_time_retained_mr_1x2.pdf": "8503e4e8f81acb63aa1928be48b4d5333520cb9fb6ef8643c1489f199a566409",
+    "02_time_retained_mr_1x2.png": "ccbc359f48c88572e1dbe54a23ccf3856c5b7454d79310d16136742d18fa044c",
+    "02_time_retained_mr_1x2.svg": "f231807b2b4744332275e770d26fbfe9982afe13a9d5e54fbb67fc3c5c5a495c",
+    "03_time_forget_kl_1x2.pdf": "3b7399efe559e281838f7c97990bfb580a06240cf43b01f18a759759852d39b5",
+    "03_time_forget_kl_1x2.png": "53de44cc5f3a0868c26063c6680aad86273600752a56acf313519262e73d1707",
+    "03_time_forget_kl_1x2.svg": "0576a7ab681e0c9f1043fc87e31488bece4a4fcf0e543b8507454bee4f0d454a",
+    "04_bandwidth_total_energy_1x2.pdf": "94fe1483f423a751a8bffef9f2d4c73680a7f35b442b1c8f257e8b27ac1e9ff7",
+    "04_bandwidth_total_energy_1x2.png": "bebd19e10f08e7315f3f30286f875cecc339a1d0552ecb1a318552cae81a3c6d",
+    "04_bandwidth_total_energy_1x2.svg": "08236f1b6d76298598b6b56bc0b7b408b8bf421353ae260bb414ae5d9f86f285",
+    "05_bandwidth_delay_1x2.pdf": "0e76e47b5238baf0f59dc19fdde7d6500f2837ea086d567d5b2ac854c933d0de",
+    "05_bandwidth_delay_1x2.png": "2f60a03439e4f7760acf1e1c80b109d02da637f2ce4bd96df456e34ec56971d4",
+    "05_bandwidth_delay_1x2.svg": "f1f00ad7ba048493f437eac30b54593b15bd42d2b699fd1c719c696699e0ac76",
+    "06_request_mean_delay_1x2.pdf": "3298bf9bdd96a979ae088b23ea822459ff4942a81663ef07a66ec58617fdf02e",
+    "06_request_mean_delay_1x2.png": "442bb25a6be71b40a8d9f6a021ac0b7bc3da04af64782c0d5e60b203251de6ab",
+    "06_request_mean_delay_1x2.svg": "4fe1c7670a027dd6e5421483ee6dfc7cf5cdb7d148fe4835b31098e6aca75669",
+    "07_request_p95_delay_1x2.pdf": "90bf2cddb34753ba4dd7099d3038e09c3e58c362a07e1b9c0be3996085505637",
+    "07_request_p95_delay_1x2.png": "740ff87854435f2499d1d448dfefa393363bc201908b6bbcd2b98bba59de4f0f",
+    "07_request_p95_delay_1x2.svg": "9c925275eaa925de28acca93679e83f77f34d5c6dea5a6312900b99490096033",
+    "08_energy_to_quality_1x2.pdf": "47b1429d449154143fc91d2c0d488db04d224c72d63b80c306c197d2a46521cb",
+    "08_energy_to_quality_1x2.png": "05a55862633ceb139d9ee94fab40089ad30dfadaab4667c5683273ad149516c6",
+    "08_energy_to_quality_1x2.svg": "599960a35fef3675749a77d80a24da20527c244e96284f0ac23dd15276f67118",
+    "09_delay_to_quality_1x2.pdf": "0eeae1c37b546d339ce25f90e78ee15f955a93779edd31f3ebf5f8559a056c3a",
+    "09_delay_to_quality_1x2.png": "abb2054dcb5ece761cada3a9102370f0202eab151d9f11ded1d9bb1d4872de39",
+    "09_delay_to_quality_1x2.svg": "e9a3e5ff3cebe57734b0ecff7f79c9fc2924b09b9685a23f56cf5cdedb40202a",
+    "README.md": "ee5a84af8ff4b2030287e1a30a7f25e17a6db2a90a64953d5980ac661a058c9d",
+    "data/common_quality_costs.csv": "3f9172b173d7794f2c8191e291ed553908bc8836b34176f3c375a2faf5be318b",
+    "data/common_quality_costs.json": "01f2b97c0b2e3b32f1c43d638eb698190aa165d53cab9ca7bcc080e1492e7600",
+    "data/controller_summary.json": "d5590b0b16976f6ff131a74e32cb85e03e62153a2b0340e3f620ff5534b9bd8c",
+    "data/final_quality.json": "4d692f07e93f8e0896fc8e7ffef5c55eb64f2b529a60bccc776ee160a6b51538",
+    "data/manifest.json": "d9c8fffd4ff183ca8136e6915cc48251b448a27869bd9688dbfd799092de0626",
+    "data/paired_seed_contrasts.csv": "1a14eaf94970d67259bc1da9b3bb1a298af1b5c3a60bc325b758798851a9d804",
+    "data/paired_seed_contrasts.json": "ac1c32b625f754b33ee77ab040619d69ce325c088cc8364f51f296f7897e82b7",
+    "data/paired_seed_metrics.csv": "cc52ed2050c8a1206ee6f711023b79af0b13984c3d91f5dbfa93259dcd8f4eac",
+    "data/paired_seed_metrics.json": "790992ae94e962bafd709a4fe1d9d2f190a4bc8c57ec32564163cd863d2b5075",
+    "data/paired_seed_summary.json": "93d964e261fd39d31e6ef69f7889959f840f4cb2d78f7e7fec782c483045500e",
+    "data/plot_series.json": "e34ce330f0a67f5c7b6112edb42ed9d920b700f67c08f8cffae177974d194192",
+    "data/request_latency.csv": "03d2c107c5e58910d0bc5122b89acb82d98efaa98cf79411c1dff7e1302355b9",
+    "data/request_latency.json": "3a041b6c56cc93a78511eb08e732c1e4f290243cd93fc336c837b7bab67ff3da",
+    "data/service_energy_delay.csv": "e859025deac8415300b75f8570ab98bca41cdbc2d2e7ae6e2dd3b0bf426259ae",
+    "data/service_energy_delay.json": "314436da3bea62f445b9d0764d5d79971cc8b07675e6a8e483ab5c9579454abf",
+    "final_quality.csv": "df910f3f71569325d19d5b24167a6aaa61609593f82d8ddf8d73359ff9aa3a1a",
+    "final_quality_table.pdf": "e8bd5a26e55188d6b3ef99f0b03ffb1dfcb6c1f887bb308575f24fce49ea29eb",
+    "final_quality_table.png": "37267066aa85d16048ad776605a631b440ca62fac62ec04e97185b2e53937f8e",
+    "final_quality_table.svg": "1e178f93e6d4908920215cb2bc9f9ecef355cf31a57767be86c5f65752914934",
+    "index.html": "c1f4f22f7cde396ac6f19a8bb526ef0e008e429e1607c395695c5bc117b8e3c7",
+    "supplementary/adaptive_retention_weight_1x2.pdf": "d872b4394d562c1ace9649cefecaabcced0af504466fb6647cf71544d861e72f",
+    "supplementary/adaptive_retention_weight_1x2.png": "5b31bd6690d6558a3898a2b5f7e863d46d8c558c1ea38d8acfc030b51aab6897",
+    "supplementary/adaptive_retention_weight_1x2.svg": "a9d1b60ada6df5ea15e783ff6f4f82964af1fb09a1421ba59ce563dd43e3be15",
+    "supplementary/adaptive_vs_previous_kl_1x2.pdf": "abbcbb98352c84eb9ed0f2f20a46f71a3c792bc896a574834faef7615760a1b8",
+    "supplementary/adaptive_vs_previous_kl_1x2.png": "783deab66ea2a9429241443bb50855d3a7551dd5a3762a19bf323601b179dced",
+    "supplementary/adaptive_vs_previous_kl_1x2.svg": "9181a9f087fa25a1fbe97ccd8849cfc1e99b836cae975ef3ce43184c34548f06",
+    "supplementary/adaptive_vs_previous_mr_1x2.pdf": "0446c3779ada7d68a8214b77d634c713126c1549b5a8d06fee5b4ab08272946f",
+    "supplementary/adaptive_vs_previous_mr_1x2.png": "d4bc4aa77704fa33eced7e62c4c25a8e32683d9466b82c5be247ade42e80d604",
+    "supplementary/adaptive_vs_previous_mr_1x2.svg": "993bb7ea81125b2552702e908dab11b875313094fed33d145d702575d9a1f6df",
+    "supplementary/round_forget_kl_1x2.pdf": "471a7920b983602a60e3d8e0f6921f284884960ef5a0828bdca82421a83b5ad4",
+    "supplementary/round_forget_kl_1x2.png": "4be9bd3433ab1918b0734c6aced1897d5221224b2016876aa327f1e941a22ecd",
+    "supplementary/round_forget_kl_1x2.svg": "710026ebd96412691c665d47fbcd0d9480084645a562c2543b6cdfc3fb13e693",
+    "supplementary/round_validation_loss_1x2.pdf": "b471224f9f94c824db5a3933c305ad567335c464441cf719f74c72bd4a8ef5d1",
+    "supplementary/round_validation_loss_1x2.png": "f28dd7b17663bfe271632b8a26f595ad872ed5b7b3eed4f60090613fd1b9fae5",
+    "supplementary/round_validation_loss_1x2.svg": "3fe54bbc2e1db41302ac68f0aae4ba40ac0fc44bfbcba26e42c18aa410f49c86",
+    "supplementary/time_validation_loss_1x2.pdf": "441d8ffeb064a0e4f1f5ba16f4b53203c1f13d9749ede61ccd1393bfb2e531df",
+    "supplementary/time_validation_loss_1x2.png": "ca1d53804c164f609a13f2e17f399643b79fc322cc1bf8ca128452836e91f329",
+    "supplementary/time_validation_loss_1x2.svg": "c3f136060230634c0d4de528473c2375f9995592ea74dea0c282d7b3976dac19"
+  }
+}

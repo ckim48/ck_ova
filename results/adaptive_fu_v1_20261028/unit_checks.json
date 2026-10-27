@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "retention_regression_increases_weight": true,
+  "forget_regression_decreases_weight": true,
+  "bounds_and_zero_feedback": true,
+  "repair_changes_only_retention_term": true,
+  "first_feasible_radio_and_state_commit": true
+}

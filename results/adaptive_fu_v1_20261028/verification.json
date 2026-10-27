@@ -1,0 +1,234 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "case": "baseline",
+      "seed": 0,
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "status": "completed",
+      "weight_min": 0.25,
+      "weight_max": 0.5,
+      "weight_mean": 0.46799623218024267,
+      "radio_repaired_steps": 0
+    },
+    {
+      "case": "baseline",
+      "seed": 0,
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "status": "completed",
+      "weight_min": 0.25,
+      "weight_max": 0.517071920929923,
+      "weight_mean": 0.4677876999876744,
+      "radio_repaired_steps": 0
+    },
+    {
+      "case": "bandwidth_2",
+      "seed": 0,
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "status": "completed",
+      "weight_min": 0.25,
+      "weight_max": 0.5,
+      "weight_mean": 0.467995792594015,
+      "radio_repaired_steps": 0
+    },
+    {
+      "case": "bandwidth_2",
+      "seed": 0,
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "status": "completed",
+      "weight_min": 0.25,
+      "weight_max": 0.5170924471677776,
+      "weight_mean": 0.4677805042279658,
+      "radio_repaired_steps": 0
+    },
+    {
+      "case": "bandwidth_4",
+      "seed": 0,
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "status": "completed",
+      "weight_min": 0.25,
+      "weight_max": 0.5,
+      "weight_mean": 0.46800108690977066,
+      "radio_repaired_steps": 0
+    },
+    {
+      "case": "bandwidth_4",
+      "seed": 0,
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "status": "completed",
+      "weight_min": 0.25,
+      "weight_max": 0.5170771035958617,
+      "weight_mean": 0.46778365898621244,
+      "radio_repaired_steps": 0
+    },
+    {
+      "case": "request_bursts_3",
+      "seed": 0,
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "status": "completed",
+      "weight_min": 0.25,
+      "weight_max": 0.5,
+      "weight_mean": 0.442933429821658,
+      "radio_repaired_steps": 0
+    },
+    {
+      "case": "request_bursts_3",
+      "seed": 0,
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "status": "completed",
+      "weight_min": 0.25,
+      "weight_max": 0.8678602203551351,
+      "weight_mean": 0.48140128650611036,
+      "radio_repaired_steps": 0
+    },
+    {
+      "case": "request_bursts_5",
+      "seed": 0,
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "status": "completed",
+      "weight_min": 0.25,
+      "weight_max": 0.5,
+      "weight_mean": 0.45753967612301344,
+      "radio_repaired_steps": 0
+    },
+    {
+      "case": "request_bursts_5",
+      "seed": 0,
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "status": "completed",
+      "weight_min": 0.25,
+      "weight_max": 0.7070636075648232,
+      "weight_mean": 0.47824752688025357,
+      "radio_repaired_steps": 0
+    },
+    {
+      "case": "request_bursts_15",
+      "seed": 0,
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "status": "completed",
+      "weight_min": 0.25,
+      "weight_max": 0.5,
+      "weight_mean": 0.46967614310684397,
+      "radio_repaired_steps": 0
+    },
+    {
+      "case": "request_bursts_15",
+      "seed": 0,
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "status": "completed",
+      "weight_min": 0.25,
+      "weight_max": 0.7312567608227553,
+      "weight_mean": 0.4837144349035107,
+      "radio_repaired_steps": 0
+    },
+    {
+      "case": "request_bursts_45",
+      "seed": 0,
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "status": "completed",
+      "weight_min": 0.25,
+      "weight_max": 0.5045504337246453,
+      "weight_mean": 0.47732263571646527,
+      "radio_repaired_steps": 0
+    },
+    {
+      "case": "request_bursts_45",
+      "seed": 0,
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "status": "completed",
+      "weight_min": 0.25,
+      "weight_max": 0.5360867749050804,
+      "weight_mean": 0.47929827543887416,
+      "radio_repaired_steps": 0
+    },
+    {
+      "case": "baseline",
+      "seed": 1,
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "status": "completed",
+      "weight_min": 0.25,
+      "weight_max": 0.5,
+      "weight_mean": 0.465358715808754,
+      "radio_repaired_steps": 0
+    },
+    {
+      "case": "baseline",
+      "seed": 1,
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "status": "completed",
+      "weight_min": 0.25,
+      "weight_max": 0.5162589747355375,
+      "weight_mean": 0.46918900036351285,
+      "radio_repaired_steps": 0
+    },
+    {
+      "case": "baseline",
+      "seed": 1,
+      "dataset": "CapERA",
+      "method": "proposed_fu_guard_cliperase",
+      "status": "completed"
+    },
+    {
+      "case": "baseline",
+      "seed": 1,
+      "dataset": "AirScape",
+      "method": "proposed_fu_guard_cliperase",
+      "status": "completed"
+    },
+    {
+      "case": "baseline",
+      "seed": 2,
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "status": "completed",
+      "weight_min": 0.25,
+      "weight_max": 0.5,
+      "weight_mean": 0.4668034123656076,
+      "radio_repaired_steps": 0
+    },
+    {
+      "case": "baseline",
+      "seed": 2,
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "status": "completed",
+      "weight_min": 0.25,
+      "weight_max": 0.5086709127470446,
+      "weight_mean": 0.4680566880399747,
+      "radio_repaired_steps": 0
+    },
+    {
+      "case": "baseline",
+      "seed": 2,
+      "dataset": "CapERA",
+      "method": "proposed_fu_guard_cliperase",
+      "status": "completed"
+    },
+    {
+      "case": "baseline",
+      "seed": 2,
+      "dataset": "AirScape",
+      "method": "proposed_fu_guard_cliperase",
+      "status": "completed"
+    }
+  ],
+  "outcomes": {
+    "completed": 22
+  }
+}

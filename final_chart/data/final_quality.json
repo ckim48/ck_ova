@@ -23,15 +23,15 @@
   },
   {
     "dataset": "CapERA",
-    "method": "proposed_fu_guard_cliperase",
+    "method": "adaptive_retrieval_fu",
     "label": "Proposed",
-    "retained_mR_percent": 16.901041691501938,
-    "retained_loss": 5.360688209533691,
-    "forget_KL": 0.0026667111087590456,
-    "worst_request_KL": 0.0036109983921051025,
-    "MIA_AUC": 0.51165771484375,
-    "MIA_orientation_free_AUC": 0.51165771484375,
-    "MIA_AUC_gap_vs_retrain": 0.003173828125
+    "retained_mR_percent": 16.328125136593975,
+    "retained_loss": 5.421569347381592,
+    "forget_KL": 0.00022414869454223663,
+    "worst_request_KL": 0.0003427685296628624,
+    "MIA_AUC": 0.51385498046875,
+    "MIA_orientation_free_AUC": 0.51385498046875,
+    "MIA_AUC_gap_vs_retrain": 0.0009765625
   },
   {
     "dataset": "CapERA",
@@ -105,15 +105,15 @@
   },
   {
     "dataset": "AirScape",
-    "method": "proposed_fu_guard_cliperase",
+    "method": "adaptive_retrieval_fu",
     "label": "Proposed",
-    "retained_mR_percent": 13.671875,
-    "retained_loss": 5.553146839141846,
-    "forget_KL": 0.0017540504923090339,
-    "worst_request_KL": 0.002268558368086815,
-    "MIA_AUC": 0.46527099609375,
-    "MIA_orientation_free_AUC": 0.53472900390625,
-    "MIA_AUC_gap_vs_retrain": 0.0025634765625
+    "retained_mR_percent": 13.541666666666666,
+    "retained_loss": 5.594877243041992,
+    "forget_KL": 0.00023409111599903554,
+    "worst_request_KL": 0.0002903542190324515,
+    "MIA_AUC": 0.468017578125,
+    "MIA_orientation_free_AUC": 0.531982421875,
+    "MIA_AUC_gap_vs_retrain": 0.00018310546875
   },
   {
     "dataset": "AirScape",

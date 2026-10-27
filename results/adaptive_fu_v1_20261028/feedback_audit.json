@@ -1,0 +1,203 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "case": "baseline",
+      "seed": 0,
+      "dataset": "CapERA",
+      "status": "completed",
+      "verified_FU_steps": 225,
+      "feedback_recomputed_from_prior_request_state": true,
+      "extra_MAC_equivalents": 451239200,
+      "repaired_steps": 0,
+      "radio_trials": 45
+    },
+    {
+      "case": "baseline",
+      "seed": 0,
+      "dataset": "AirScape",
+      "status": "completed",
+      "verified_FU_steps": 225,
+      "feedback_recomputed_from_prior_request_state": true,
+      "extra_MAC_equivalents": 402681600,
+      "repaired_steps": 0,
+      "radio_trials": 45
+    },
+    {
+      "case": "bandwidth_2",
+      "seed": 0,
+      "dataset": "CapERA",
+      "status": "completed",
+      "verified_FU_steps": 225,
+      "feedback_recomputed_from_prior_request_state": true,
+      "extra_MAC_equivalents": 451239200,
+      "repaired_steps": 0,
+      "radio_trials": 45
+    },
+    {
+      "case": "bandwidth_2",
+      "seed": 0,
+      "dataset": "AirScape",
+      "status": "completed",
+      "verified_FU_steps": 225,
+      "feedback_recomputed_from_prior_request_state": true,
+      "extra_MAC_equivalents": 402681600,
+      "repaired_steps": 0,
+      "radio_trials": 45
+    },
+    {
+      "case": "bandwidth_4",
+      "seed": 0,
+      "dataset": "CapERA",
+      "status": "completed",
+      "verified_FU_steps": 225,
+      "feedback_recomputed_from_prior_request_state": true,
+      "extra_MAC_equivalents": 451239200,
+      "repaired_steps": 0,
+      "radio_trials": 45
+    },
+    {
+      "case": "bandwidth_4",
+      "seed": 0,
+      "dataset": "AirScape",
+      "status": "completed",
+      "verified_FU_steps": 225,
+      "feedback_recomputed_from_prior_request_state": true,
+      "extra_MAC_equivalents": 402681600,
+      "repaired_steps": 0,
+      "radio_trials": 45
+    },
+    {
+      "case": "request_bursts_3",
+      "seed": 0,
+      "dataset": "CapERA",
+      "status": "completed",
+      "verified_FU_steps": 225,
+      "feedback_recomputed_from_prior_request_state": true,
+      "extra_MAC_equivalents": 451239200,
+      "repaired_steps": 0,
+      "radio_trials": 15
+    },
+    {
+      "case": "request_bursts_3",
+      "seed": 0,
+      "dataset": "AirScape",
+      "status": "completed",
+      "verified_FU_steps": 225,
+      "feedback_recomputed_from_prior_request_state": true,
+      "extra_MAC_equivalents": 402681600,
+      "repaired_steps": 0,
+      "radio_trials": 15
+    },
+    {
+      "case": "request_bursts_5",
+      "seed": 0,
+      "dataset": "CapERA",
+      "status": "completed",
+      "verified_FU_steps": 225,
+      "feedback_recomputed_from_prior_request_state": true,
+      "extra_MAC_equivalents": 451239200,
+      "repaired_steps": 0,
+      "radio_trials": 25
+    },
+    {
+      "case": "request_bursts_5",
+      "seed": 0,
+      "dataset": "AirScape",
+      "status": "completed",
+      "verified_FU_steps": 225,
+      "feedback_recomputed_from_prior_request_state": true,
+      "extra_MAC_equivalents": 402681600,
+      "repaired_steps": 0,
+      "radio_trials": 25
+    },
+    {
+      "case": "request_bursts_15",
+      "seed": 0,
+      "dataset": "CapERA",
+      "status": "completed",
+      "verified_FU_steps": 225,
+      "feedback_recomputed_from_prior_request_state": true,
+      "extra_MAC_equivalents": 451239200,
+      "repaired_steps": 0,
+      "radio_trials": 75
+    },
+    {
+      "case": "request_bursts_15",
+      "seed": 0,
+      "dataset": "AirScape",
+      "status": "completed",
+      "verified_FU_steps": 225,
+      "feedback_recomputed_from_prior_request_state": true,
+      "extra_MAC_equivalents": 402681600,
+      "repaired_steps": 0,
+      "radio_trials": 75
+    },
+    {
+      "case": "request_bursts_45",
+      "seed": 0,
+      "dataset": "CapERA",
+      "status": "completed",
+      "verified_FU_steps": 225,
+      "feedback_recomputed_from_prior_request_state": true,
+      "extra_MAC_equivalents": 451239200,
+      "repaired_steps": 0,
+      "radio_trials": 147
+    },
+    {
+      "case": "request_bursts_45",
+      "seed": 0,
+      "dataset": "AirScape",
+      "status": "completed",
+      "verified_FU_steps": 225,
+      "feedback_recomputed_from_prior_request_state": true,
+      "extra_MAC_equivalents": 402681600,
+      "repaired_steps": 0,
+      "radio_trials": 147
+    },
+    {
+      "case": "baseline",
+      "seed": 1,
+      "dataset": "CapERA",
+      "status": "completed",
+      "verified_FU_steps": 225,
+      "feedback_recomputed_from_prior_request_state": true,
+      "extra_MAC_equivalents": 451239200,
+      "repaired_steps": 0,
+      "radio_trials": 45
+    },
+    {
+      "case": "baseline",
+      "seed": 1,
+      "dataset": "AirScape",
+      "status": "completed",
+      "verified_FU_steps": 225,
+      "feedback_recomputed_from_prior_request_state": true,
+      "extra_MAC_equivalents": 402681600,
+      "repaired_steps": 0,
+      "radio_trials": 45
+    },
+    {
+      "case": "baseline",
+      "seed": 2,
+      "dataset": "CapERA",
+      "status": "completed",
+      "verified_FU_steps": 225,
+      "feedback_recomputed_from_prior_request_state": true,
+      "extra_MAC_equivalents": 451239200,
+      "repaired_steps": 0,
+      "radio_trials": 45
+    },
+    {
+      "case": "baseline",
+      "seed": 2,
+      "dataset": "AirScape",
+      "status": "completed",
+      "verified_FU_steps": 225,
+      "feedback_recomputed_from_prior_request_state": true,
+      "extra_MAC_equivalents": 402681600,
+      "repaired_steps": 0,
+      "radio_trials": 45
+    }
+  ]
+}

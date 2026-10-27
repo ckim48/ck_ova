@@ -1,0 +1,20 @@
+[
+  {
+    "dataset": "CapERA",
+    "FU_steps": 225,
+    "min_weight": 0.25,
+    "max_weight": 0.5,
+    "mean_weight": 0.46799623218024267,
+    "repaired_steps": 0,
+    "actual_feedback_active": true
+  },
+  {
+    "dataset": "AirScape",
+    "FU_steps": 225,
+    "min_weight": 0.25,
+    "max_weight": 0.517071920929923,
+    "mean_weight": 0.4677876999876744,
+    "repaired_steps": 0,
+    "actual_feedback_active": true
+  }
+]

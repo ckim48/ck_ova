@@ -1,50 +1,57 @@
-# Final paper charts
+# Final charts: adaptive retrieval FU
 
-Left: CapERA. Right: AirScape. PNG previews, PDF for publication, SVG for editing. Open [index.html](index.html) to browse the complete set. Main methods: Proposed, FM-CM, S-AC, AC-OF, S-OF.
+Updated 2026-10-28. Left: CapERA. Right: AirScape. [Browse figures](index.html). Proposed now uses the automatic retention-weight controller in every current primary figure. Comparators keep their recorded objectives, data and physical constraints.
+
+| Dataset | mR change (pp) | KL reduction (%) | Energy change (%) | Delay change (%) |
+|---|---:|---:|---:|---:|
+| CapERA | -0.573 | 91.59 | +0.093 | +0.092 |
+| AirScape | -0.130 | 86.65 | +0.243 | +0.243 |
+
+Changes above are against previous Proposed at 1 MHz, seed 0. Lower KL is better; a negative mR change is a loss of utility. The automatic controller substantially reduces retrain-distance in this development experiment but does not improve both evaluation metrics simultaneously. It is a new tradeoff, not evidence of universal superiority. All paired seed outcomes and all sweep conditions are retained.
+
+## Figures
 
 | Figure | Content | Files |
 |---|---|---|
-| 01_round_retained_mr_1x2 | Retained mR versus FL rounds | [PNG](01_round_retained_mr_1x2.png) · [PDF](01_round_retained_mr_1x2.pdf) · [SVG](01_round_retained_mr_1x2.svg) |
-| 02_time_retained_mr_1x2 | Retained mR versus active service time | [PNG](02_time_retained_mr_1x2.png) · [PDF](02_time_retained_mr_1x2.pdf) · [SVG](02_time_retained_mr_1x2.svg) |
+| 01_round_retained_mr_1x2 | Retained mR (%) versus FL rounds | [PNG](01_round_retained_mr_1x2.png) · [PDF](01_round_retained_mr_1x2.pdf) · [SVG](01_round_retained_mr_1x2.svg) |
+| 02_time_retained_mr_1x2 | Retained mR (%) versus active service time | [PNG](02_time_retained_mr_1x2.png) · [PDF](02_time_retained_mr_1x2.pdf) · [SVG](02_time_retained_mr_1x2.svg) |
 | 03_time_forget_kl_1x2 | Forget-set KL versus active service time | [PNG](03_time_forget_kl_1x2.png) · [PDF](03_time_forget_kl_1x2.pdf) · [SVG](03_time_forget_kl_1x2.svg) |
-| 04_bandwidth_total_energy_1x2 | Total service energy versus bandwidth | [PNG](04_bandwidth_total_energy_1x2.png) · [PDF](04_bandwidth_total_energy_1x2.pdf) · [SVG](04_bandwidth_total_energy_1x2.svg) |
-| 05_bandwidth_delay_1x2 | FL/FU service delay versus bandwidth | [PNG](05_bandwidth_delay_1x2.png) · [PDF](05_bandwidth_delay_1x2.pdf) · [SVG](05_bandwidth_delay_1x2.svg) |
+| 04_bandwidth_total_energy_1x2 | Total energy (kJ) versus bandwidth | [PNG](04_bandwidth_total_energy_1x2.png) · [PDF](04_bandwidth_total_energy_1x2.pdf) · [SVG](04_bandwidth_total_energy_1x2.svg) |
+| 05_bandwidth_delay_1x2 | Delay (s) versus bandwidth | [PNG](05_bandwidth_delay_1x2.png) · [PDF](05_bandwidth_delay_1x2.pdf) · [SVG](05_bandwidth_delay_1x2.svg) |
 | 06_request_mean_delay_1x2 | Mean FU request delay | [PNG](06_request_mean_delay_1x2.png) · [PDF](06_request_mean_delay_1x2.pdf) · [SVG](06_request_mean_delay_1x2.svg) |
 | 07_request_p95_delay_1x2 | 95th-percentile FU request delay | [PNG](07_request_p95_delay_1x2.png) · [PDF](07_request_p95_delay_1x2.pdf) · [SVG](07_request_p95_delay_1x2.svg) |
 | 08_energy_to_quality_1x2 | Energy to the common quality target | [PNG](08_energy_to_quality_1x2.png) · [PDF](08_energy_to_quality_1x2.pdf) · [SVG](08_energy_to_quality_1x2.svg) |
 | 09_delay_to_quality_1x2 | Time to the common quality target | [PNG](09_delay_to_quality_1x2.png) · [PDF](09_delay_to_quality_1x2.pdf) · [SVG](09_delay_to_quality_1x2.svg) |
 | final_quality_table | Final quality and reference models | [PNG](final_quality_table.png) · [PDF](final_quality_table.pdf) · [SVG](final_quality_table.svg) |
+| supplementary/adaptive_retention_weight_1x2 | Automatic retention weight: mean and range across active requests | [PNG](supplementary/adaptive_retention_weight_1x2.png) · [PDF](supplementary/adaptive_retention_weight_1x2.pdf) · [SVG](supplementary/adaptive_retention_weight_1x2.svg) |
+| supplementary/adaptive_vs_previous_kl_1x2 | Forget-set KL: adaptive versus previous Proposed | [PNG](supplementary/adaptive_vs_previous_kl_1x2.png) · [PDF](supplementary/adaptive_vs_previous_kl_1x2.pdf) · [SVG](supplementary/adaptive_vs_previous_kl_1x2.svg) |
+| supplementary/adaptive_vs_previous_mr_1x2 | Retained mR (%): adaptive versus previous Proposed | [PNG](supplementary/adaptive_vs_previous_mr_1x2.png) · [PDF](supplementary/adaptive_vs_previous_mr_1x2.pdf) · [SVG](supplementary/adaptive_vs_previous_mr_1x2.svg) |
+| supplementary/round_forget_kl_1x2 | Forget-set KL versus FL rounds | [PNG](supplementary/round_forget_kl_1x2.png) · [PDF](supplementary/round_forget_kl_1x2.pdf) · [SVG](supplementary/round_forget_kl_1x2.svg) |
+| supplementary/round_validation_loss_1x2 | Validation loss versus FL rounds | [PNG](supplementary/round_validation_loss_1x2.png) · [PDF](supplementary/round_validation_loss_1x2.pdf) · [SVG](supplementary/round_validation_loss_1x2.svg) |
+| supplementary/time_validation_loss_1x2 | Validation loss versus active service time | [PNG](supplementary/time_validation_loss_1x2.png) · [PDF](supplementary/time_validation_loss_1x2.pdf) · [SVG](supplementary/time_validation_loss_1x2.svg) |
 
-## Definitions and comparisons
+## Automatic rule and evaluation
 
-Retained mR evaluates models after both FL and FU updates. Forget-set KL compares their retrieval distributions with the final retained-set retrain. Early KL also reflects FL progress and future requests. The curves do not sum the different training objectives or certify deletion. The full-RM Proposed has better retained utility in these records, while FM-CM and safe-proxy methods have smaller final forget-set KL. MIA is a descriptive fixed loss-score attack on 128 members and 128 nonmembers; the table reports its absolute AUC gap to retrain, not a proof of privacy. Raw and orientation-free AUC, validation loss and worst-request KL are retained in final_quality.csv.
+The FU objective is 3 KL_forget(proxy20 || current) + lambda_R CE_retain + 3 KL_retain(request-start teacher || current). At each request step, the rule compares relative retained CE change against the request teacher with relative forget proxy-KL change against the first request step. Their clipped difference is smoothed with EMA 0.5. The previous weight is multiplied by exp(0.5 EMA), bounded to [0.25, 1], with each request initialized at 0.5. If the resulting radio design is infeasible, the rule tries bounded weight floors 0.5 and 1 and stops at the first feasible design; all attempts are logged. No physical constraint is relaxed. Both datasets use exactly the same constants and code.
 
-The Pre-FU reference is the shared round-20 model, evaluated again without modifying its checkpoint. It is explicitly not a 200-round no-unlearning baseline. Retrain is the existing round-200 model trained without the final forgotten-data union. Its self-KL and MIA gap are zero by definition.
+Training retained CE and proxy KL are surrogates for held-out mR and final retrain KL. Validation mR/KL, the reference200 model and dataset names are never controller inputs. No guarantee that lowering either training surrogate improves its evaluation metric is implied. The clean proxy20 inherits the existing offline assumption that the final forget cohort is known before the mission. This is not a solution for an unknown future deletion cohort. The design follows earlier development results; there is no independent test-set selection claim.
 
-Time and energy cover active FL/FU service, including computation, uplink, broadcasts and queue waits. Energy sums communication, computing and hovering across ten UAVs; travel, collection and preflight are excluded. Time is modeled UAV service time, not GPU wall time. These are single-seed validation results; no cross-seed confidence interval is implied. End-of-training values in time plots are held to the shared display horizon without claiming additional learning.
+Retained mR averages R@1, R@5 and R@10 in both retrieval directions. Loss is common held-out retained retrieval negative log likelihood after both FL and FU updates. Forget-set KL is KL(reference200 || candidate), averaged over both directions. It starts at the first recorded observation, round 25; no round-0 KL is invented. Early KL also reflects FL progress and future requests. These metrics and the MIA AUC gap are empirical diagnostics, not a deletion or privacy certificate. The Pre-FU table row is shared round20, not a 200-round no-FU control. Retrain is the retained-set round200 reference.
 
-Bandwidth axes show 1–4 MHz with measurements at 1, 2, 4 MHz. The tick at 3 is not another run; 0.25/0.5 MHz outcomes remain in the data. S-OF retains the previously authorized soft network TX cap with overruns recorded; analog methods retain hard caps.
+## Costs and comparisons
 
-## Request-load experiment
+Total energy sums active FL/FU communication, computing and hovering across ten UAVs. Travel, collection and preflight preparation are excluded. Time is modeled active service time including scheduling waits, not GPU wall time. Extra controller computations, retrieval matrices, teacher forwards and the extra retained backward are charged. Vector repair is conservatively precharged. As for existing methods, resource-optimizer wall time has no calibrated UAV energy model; radio trial counts are disclosed.
 
-The x axis is requests per release: 1, 3, 5, 9, 15, corresponding to 45, 15, 9, 5, 3 release groups. All conditions retain the same 45 requests, 225 local FU steps and 200 total FL rounds. Releases are triggered by FL progress, not a fixed wall-clock arrival rate. Changing group count also changes the release-round/site distribution according to the original schedule. Thus this is the existing burst-schedule sensitivity, not a sweep of total requests or independent Poisson arrival rates.
+Primary charts use post-warm seed0. The supplement reports paired seeds 0, 1, 2 for adaptive and previous Proposed. Only minibatch and radio randomness change; warm20, split, feature cache, proxy20 and reference200 are shared. These are conditional robustness checks, not independent training/split replicates. All methods retain 200 FL rounds and 225 FU steps across 45 requests. The comparison changes both the FU objective and its controller; it does not isolate the causal effect of adaptive weighting from the objective change.
 
-Each request delay is final-broadcast completion minus actual arrival. The mean and empirical 95th percentile are computed across all 45 requests, including waits. The 95th percentile is not a confidence interval. These curves measure prescribed-step completion, not time to a quality/deletion guarantee. Final retained mR, mean/worst KL and the quality-confirmation flag for every load condition are included in data/request_latency.json and CSV. Original Proposed/S-AC/AC-OF runs are reused, and the missing 16 FM-CM/S-OF runs are added without tuning. All 50 main-method conditions are retained: {'completed': 50}.
+Bandwidth measurements are at 1, 2 and 4 MHz; the tick at 3 is not another measurement. Request-load points are 1, 3, 5, 9 and 15 requests per release, with the same 45 requests and original FL-triggered release schedule. Mean and 95th-percentile request delay run from arrival to final broadcast. S-OF retains its previously authorized soft TX cap with overruns recorded; analog methods keep hard caps. Corrected nonzero head-local broadcasts are used in the affected serial single-request conditions.
 
-A cost-accounting defect was identified in the single-request condition: a nonzero head-local FU update had no uplink and was incorrectly assigned no aggregate broadcast. The six affected S-AC/AC-OF/S-OF arms (two datasets) were rerun with broadcasts required for nonzero decoded updates, using the existing 0.655872 s broadcast duration and power coefficients. The final request curves use those corrected runs. True zero updates still require no broadcast. An audit of all 50 main-method burst arms found no other affected conditions. Earlier raw outcomes are preserved; curves were not repaired by shifting values. The baseline/bandwidth charts are unaffected. Correction protocol, verification and raw records are in ../results/final_broadcast_fix_v1_20261027.
+The common target remains all 45 requests complete, retained mR >=95% of reference200, mean and worst-request KL <=0.01, confirmed at three distinct consecutive evaluated rounds. See data/common_quality_costs.csv for observed confirmations. This broad acceptance criterion is not a claim that methods have equal quality. Time curves hold their last measured value to the common display horizon without extra training.
 
-## Common quality target
+## Previous figures and reproducibility
 
-The criterion was already defined in the original simulation: all 45 requests complete, retained mR at least 95% of the same dataset's retrain mR, mean forget KL at most 0.01, worst-request KL at most 0.01, confirmed at three distinct consecutive evaluated FL rounds. No threshold was chosen to separate the methods in this report. The cost charts use the 1 MHz baseline and the confirmation time, including those confirmation observations. Costs are independently rebuilt from the recorded transactions up to that time and use the same service-energy scope.
+The complete previous final_chart is preserved byte-for-byte in [the archive](../final_chart_archive/20261028_before_adaptive/README.md), including all original radio ablations and the AirScape H-OVA 4 MHz infeasibility. Those radio ablations belong to the previous objective and are not relabeled as the new Proposed. [The previous Git revision](https://github.com/ckim48/ck_ova/tree/3f6316351d7247e1424053329be4e2f8bdc83b31/final_chart) preserves original relative paths.
 
-For these ten baseline arms, confirmation occurs at round 200, coinciding with the fixed-workload completion. Consequently the target-cost bars equal the corresponding 1 MHz service totals; they verify a common acceptance condition and do not establish an additional speedup. The first passing observation (round 190) is also retained in the data. Passing this empirical criterion is not a formal deletion guarantee, and does not mean all methods have identical quality.
+The frozen protocol, outcome summaries, feedback verification and source mapping are in [results/adaptive_fu_v1_20261028](../results/adaptive_fu_v1_20261028). Numerical plot arrays and hashes are in data/. Raw records, checkpoints, runner log and the verified raw archive remain local in that results directory and are not included in the GitHub publication. The local raw archive omits shared feature caches/checkpoints already referenced by the original experiment; it is not a standalone dataset release.
 
-## Supplementary figures
-
-The supplementary folder retains round/time validation loss, round forget-set KL, and all six matched-objective radio ablation figures (Proposed/H-OVA/S-OF+/NG-OVA). The original AirScape H-OVA 4 MHz infeasibility stays marked. These controls distinguish transport/head effects from differences in the FU objective. No earlier figure or outcome was overwritten.
-
-## Data and reproduction
-
-Numerical plot arrays, request latencies, quality targets, components, axes and hashes are in data/. The new raw runs are archived under ../results/final_request_sweep_v1_20261027, with the protocol, verification and source hashes. A module-import failure before any new experiment began was preserved along with its pre-correction protocol; only import ordering was corrected. Existing shared features and checkpoints remain in their original locations.
-
-Run `.venv/bin/python tools/uav_convergence_v2/final_request_sweep.py run`, `.venv/bin/python tools/uav_convergence_v2/final_reference_audit.py`, then `.venv/bin/python tools/uav_convergence_v2/final_broadcast_fix.py`, then `.venv/bin/python tools/uav_convergence_v2/final_charts.py`.
+Run `.venv/bin/python tools/uav_convergence_v2/adaptive_fu.py run`, then `.venv/bin/python tools/uav_convergence_v2/adaptive_final_charts.py build` and `... adaptive_final_charts.py publish`.

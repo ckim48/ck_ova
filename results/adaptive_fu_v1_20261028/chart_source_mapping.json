@@ -1,0 +1,562 @@
+[
+  {
+    "case": "baseline",
+    "dataset": "CapERA",
+    "method": "adaptive_retrieval_fu",
+    "label": "Proposed",
+    "source": "results/adaptive_fu_v1_20261028/cases/baseline/capera_seed0/adaptive_retrieval_fu",
+    "status": "completed"
+  },
+  {
+    "case": "baseline",
+    "dataset": "CapERA",
+    "method": "joint_fm_cm_no_rm",
+    "label": "FM-CM",
+    "source": "results/learning_ablation_v1_20261027/cases/baseline/capera_seed0/joint_fm_cm_no_rm",
+    "status": "completed"
+  },
+  {
+    "case": "baseline",
+    "dataset": "CapERA",
+    "method": "separate_aircomp_periodic",
+    "label": "S-AC",
+    "source": "results/iot_sensitivity_v1_20261027/cases/baseline/capera_seed0/separate_aircomp_periodic",
+    "status": "completed"
+  },
+  {
+    "case": "baseline",
+    "dataset": "CapERA",
+    "method": "aircomp_ofdma_periodic",
+    "label": "AC-OF",
+    "source": "results/iot_sensitivity_v1_20261027/cases/baseline/capera_seed0/aircomp_ofdma_periodic",
+    "status": "completed"
+  },
+  {
+    "case": "baseline",
+    "dataset": "CapERA",
+    "method": "sequential_digital_proxy",
+    "label": "S-OF",
+    "source": "results/baseline_fairness_v1_20261027/cases/baseline/capera_seed0/sequential_digital_proxy",
+    "status": "completed"
+  },
+  {
+    "case": "baseline",
+    "dataset": "AirScape",
+    "method": "adaptive_retrieval_fu",
+    "label": "Proposed",
+    "source": "results/adaptive_fu_v1_20261028/cases/baseline/airscape_seed0/adaptive_retrieval_fu",
+    "status": "completed"
+  },
+  {
+    "case": "baseline",
+    "dataset": "AirScape",
+    "method": "joint_fm_cm_no_rm",
+    "label": "FM-CM",
+    "source": "results/learning_ablation_v1_20261027/cases/baseline/airscape_seed0/joint_fm_cm_no_rm",
+    "status": "completed"
+  },
+  {
+    "case": "baseline",
+    "dataset": "AirScape",
+    "method": "separate_aircomp_periodic",
+    "label": "S-AC",
+    "source": "results/airscape_sensitivity_v2_20261027/cases/baseline/airscape_seed0/separate_aircomp_periodic",
+    "status": "completed"
+  },
+  {
+    "case": "baseline",
+    "dataset": "AirScape",
+    "method": "aircomp_ofdma_periodic",
+    "label": "AC-OF",
+    "source": "results/airscape_sensitivity_v2_20261027/cases/baseline/airscape_seed0/aircomp_ofdma_periodic",
+    "status": "completed"
+  },
+  {
+    "case": "baseline",
+    "dataset": "AirScape",
+    "method": "sequential_digital_proxy",
+    "label": "S-OF",
+    "source": "results/baseline_fairness_v1_20261027/cases/baseline/airscape_seed0/sequential_digital_proxy",
+    "status": "completed"
+  },
+  {
+    "case": "bandwidth_2",
+    "dataset": "CapERA",
+    "method": "adaptive_retrieval_fu",
+    "label": "Proposed",
+    "source": "results/adaptive_fu_v1_20261028/cases/bandwidth_2/capera_seed0/adaptive_retrieval_fu",
+    "status": "completed"
+  },
+  {
+    "case": "bandwidth_2",
+    "dataset": "CapERA",
+    "method": "joint_fm_cm_no_rm",
+    "label": "FM-CM",
+    "source": "results/learning_ablation_v1_20261027/cases/bandwidth_2/capera_seed0/joint_fm_cm_no_rm",
+    "status": "completed"
+  },
+  {
+    "case": "bandwidth_2",
+    "dataset": "CapERA",
+    "method": "separate_aircomp_periodic",
+    "label": "S-AC",
+    "source": "results/iot_sensitivity_v1_20261027/cases/bandwidth_2/capera_seed0/separate_aircomp_periodic",
+    "status": "completed"
+  },
+  {
+    "case": "bandwidth_2",
+    "dataset": "CapERA",
+    "method": "aircomp_ofdma_periodic",
+    "label": "AC-OF",
+    "source": "results/iot_sensitivity_v1_20261027/cases/bandwidth_2/capera_seed0/aircomp_ofdma_periodic",
+    "status": "completed"
+  },
+  {
+    "case": "bandwidth_2",
+    "dataset": "CapERA",
+    "method": "sequential_digital_proxy",
+    "label": "S-OF",
+    "source": "results/baseline_fairness_v1_20261027/cases/bandwidth_2/capera_seed0/sequential_digital_proxy",
+    "status": "completed"
+  },
+  {
+    "case": "bandwidth_2",
+    "dataset": "AirScape",
+    "method": "adaptive_retrieval_fu",
+    "label": "Proposed",
+    "source": "results/adaptive_fu_v1_20261028/cases/bandwidth_2/airscape_seed0/adaptive_retrieval_fu",
+    "status": "completed"
+  },
+  {
+    "case": "bandwidth_2",
+    "dataset": "AirScape",
+    "method": "joint_fm_cm_no_rm",
+    "label": "FM-CM",
+    "source": "results/learning_ablation_v1_20261027/cases/bandwidth_2/airscape_seed0/joint_fm_cm_no_rm",
+    "status": "completed"
+  },
+  {
+    "case": "bandwidth_2",
+    "dataset": "AirScape",
+    "method": "separate_aircomp_periodic",
+    "label": "S-AC",
+    "source": "results/airscape_sensitivity_v2_20261027/cases/bandwidth_2/airscape_seed0/separate_aircomp_periodic",
+    "status": "completed"
+  },
+  {
+    "case": "bandwidth_2",
+    "dataset": "AirScape",
+    "method": "aircomp_ofdma_periodic",
+    "label": "AC-OF",
+    "source": "results/airscape_sensitivity_v2_20261027/cases/bandwidth_2/airscape_seed0/aircomp_ofdma_periodic",
+    "status": "completed"
+  },
+  {
+    "case": "bandwidth_2",
+    "dataset": "AirScape",
+    "method": "sequential_digital_proxy",
+    "label": "S-OF",
+    "source": "results/baseline_fairness_v1_20261027/cases/bandwidth_2/airscape_seed0/sequential_digital_proxy",
+    "status": "completed"
+  },
+  {
+    "case": "bandwidth_4",
+    "dataset": "CapERA",
+    "method": "adaptive_retrieval_fu",
+    "label": "Proposed",
+    "source": "results/adaptive_fu_v1_20261028/cases/bandwidth_4/capera_seed0/adaptive_retrieval_fu",
+    "status": "completed"
+  },
+  {
+    "case": "bandwidth_4",
+    "dataset": "CapERA",
+    "method": "joint_fm_cm_no_rm",
+    "label": "FM-CM",
+    "source": "results/learning_ablation_v1_20261027/cases/bandwidth_4/capera_seed0/joint_fm_cm_no_rm",
+    "status": "completed"
+  },
+  {
+    "case": "bandwidth_4",
+    "dataset": "CapERA",
+    "method": "separate_aircomp_periodic",
+    "label": "S-AC",
+    "source": "results/iot_sensitivity_v1_20261027/cases/bandwidth_4/capera_seed0/separate_aircomp_periodic",
+    "status": "completed"
+  },
+  {
+    "case": "bandwidth_4",
+    "dataset": "CapERA",
+    "method": "aircomp_ofdma_periodic",
+    "label": "AC-OF",
+    "source": "results/iot_sensitivity_v1_20261027/cases/bandwidth_4/capera_seed0/aircomp_ofdma_periodic",
+    "status": "completed"
+  },
+  {
+    "case": "bandwidth_4",
+    "dataset": "CapERA",
+    "method": "sequential_digital_proxy",
+    "label": "S-OF",
+    "source": "results/baseline_fairness_v1_20261027/cases/bandwidth_4/capera_seed0/sequential_digital_proxy",
+    "status": "completed"
+  },
+  {
+    "case": "bandwidth_4",
+    "dataset": "AirScape",
+    "method": "adaptive_retrieval_fu",
+    "label": "Proposed",
+    "source": "results/adaptive_fu_v1_20261028/cases/bandwidth_4/airscape_seed0/adaptive_retrieval_fu",
+    "status": "completed"
+  },
+  {
+    "case": "bandwidth_4",
+    "dataset": "AirScape",
+    "method": "joint_fm_cm_no_rm",
+    "label": "FM-CM",
+    "source": "results/learning_ablation_v1_20261027/cases/bandwidth_4/airscape_seed0/joint_fm_cm_no_rm",
+    "status": "completed"
+  },
+  {
+    "case": "bandwidth_4",
+    "dataset": "AirScape",
+    "method": "separate_aircomp_periodic",
+    "label": "S-AC",
+    "source": "results/airscape_sensitivity_v2_20261027/cases/bandwidth_4/airscape_seed0/separate_aircomp_periodic",
+    "status": "completed"
+  },
+  {
+    "case": "bandwidth_4",
+    "dataset": "AirScape",
+    "method": "aircomp_ofdma_periodic",
+    "label": "AC-OF",
+    "source": "results/airscape_sensitivity_v2_20261027/cases/bandwidth_4/airscape_seed0/aircomp_ofdma_periodic",
+    "status": "completed"
+  },
+  {
+    "case": "bandwidth_4",
+    "dataset": "AirScape",
+    "method": "sequential_digital_proxy",
+    "label": "S-OF",
+    "source": "results/baseline_fairness_v1_20261027/cases/bandwidth_4/airscape_seed0/sequential_digital_proxy",
+    "status": "completed"
+  },
+  {
+    "case": "request_bursts_3",
+    "dataset": "CapERA",
+    "method": "adaptive_retrieval_fu",
+    "label": "Proposed",
+    "source": "results/adaptive_fu_v1_20261028/cases/request_bursts_3/capera_seed0/adaptive_retrieval_fu",
+    "status": "completed"
+  },
+  {
+    "case": "request_bursts_3",
+    "dataset": "CapERA",
+    "method": "joint_fm_cm_no_rm",
+    "label": "FM-CM",
+    "source": "results/final_request_sweep_v1_20261027/cases/request_bursts_3/capera_seed0/joint_fm_cm_no_rm",
+    "status": "completed"
+  },
+  {
+    "case": "request_bursts_3",
+    "dataset": "CapERA",
+    "method": "separate_aircomp_periodic",
+    "label": "S-AC",
+    "source": "results/iot_sensitivity_v1_20261027/cases/request_bursts_3/capera_seed0/separate_aircomp_periodic",
+    "status": "completed"
+  },
+  {
+    "case": "request_bursts_3",
+    "dataset": "CapERA",
+    "method": "aircomp_ofdma_periodic",
+    "label": "AC-OF",
+    "source": "results/iot_sensitivity_v1_20261027/cases/request_bursts_3/capera_seed0/aircomp_ofdma_periodic",
+    "status": "completed"
+  },
+  {
+    "case": "request_bursts_3",
+    "dataset": "CapERA",
+    "method": "sequential_digital_proxy",
+    "label": "S-OF",
+    "source": "results/final_request_sweep_v1_20261027/cases/request_bursts_3/capera_seed0/sequential_digital_proxy",
+    "status": "completed"
+  },
+  {
+    "case": "request_bursts_3",
+    "dataset": "AirScape",
+    "method": "adaptive_retrieval_fu",
+    "label": "Proposed",
+    "source": "results/adaptive_fu_v1_20261028/cases/request_bursts_3/airscape_seed0/adaptive_retrieval_fu",
+    "status": "completed"
+  },
+  {
+    "case": "request_bursts_3",
+    "dataset": "AirScape",
+    "method": "joint_fm_cm_no_rm",
+    "label": "FM-CM",
+    "source": "results/final_request_sweep_v1_20261027/cases/request_bursts_3/airscape_seed0/joint_fm_cm_no_rm",
+    "status": "completed"
+  },
+  {
+    "case": "request_bursts_3",
+    "dataset": "AirScape",
+    "method": "separate_aircomp_periodic",
+    "label": "S-AC",
+    "source": "results/airscape_sensitivity_v2_20261027/cases/request_bursts_3/airscape_seed0/separate_aircomp_periodic",
+    "status": "completed"
+  },
+  {
+    "case": "request_bursts_3",
+    "dataset": "AirScape",
+    "method": "aircomp_ofdma_periodic",
+    "label": "AC-OF",
+    "source": "results/airscape_sensitivity_v2_20261027/cases/request_bursts_3/airscape_seed0/aircomp_ofdma_periodic",
+    "status": "completed"
+  },
+  {
+    "case": "request_bursts_3",
+    "dataset": "AirScape",
+    "method": "sequential_digital_proxy",
+    "label": "S-OF",
+    "source": "results/final_request_sweep_v1_20261027/cases/request_bursts_3/airscape_seed0/sequential_digital_proxy",
+    "status": "completed"
+  },
+  {
+    "case": "request_bursts_5",
+    "dataset": "CapERA",
+    "method": "adaptive_retrieval_fu",
+    "label": "Proposed",
+    "source": "results/adaptive_fu_v1_20261028/cases/request_bursts_5/capera_seed0/adaptive_retrieval_fu",
+    "status": "completed"
+  },
+  {
+    "case": "request_bursts_5",
+    "dataset": "CapERA",
+    "method": "joint_fm_cm_no_rm",
+    "label": "FM-CM",
+    "source": "results/final_request_sweep_v1_20261027/cases/request_bursts_5/capera_seed0/joint_fm_cm_no_rm",
+    "status": "completed"
+  },
+  {
+    "case": "request_bursts_5",
+    "dataset": "CapERA",
+    "method": "separate_aircomp_periodic",
+    "label": "S-AC",
+    "source": "results/iot_sensitivity_v1_20261027/cases/request_bursts_5/capera_seed0/separate_aircomp_periodic",
+    "status": "completed"
+  },
+  {
+    "case": "request_bursts_5",
+    "dataset": "CapERA",
+    "method": "aircomp_ofdma_periodic",
+    "label": "AC-OF",
+    "source": "results/iot_sensitivity_v1_20261027/cases/request_bursts_5/capera_seed0/aircomp_ofdma_periodic",
+    "status": "completed"
+  },
+  {
+    "case": "request_bursts_5",
+    "dataset": "CapERA",
+    "method": "sequential_digital_proxy",
+    "label": "S-OF",
+    "source": "results/final_request_sweep_v1_20261027/cases/request_bursts_5/capera_seed0/sequential_digital_proxy",
+    "status": "completed"
+  },
+  {
+    "case": "request_bursts_5",
+    "dataset": "AirScape",
+    "method": "adaptive_retrieval_fu",
+    "label": "Proposed",
+    "source": "results/adaptive_fu_v1_20261028/cases/request_bursts_5/airscape_seed0/adaptive_retrieval_fu",
+    "status": "completed"
+  },
+  {
+    "case": "request_bursts_5",
+    "dataset": "AirScape",
+    "method": "joint_fm_cm_no_rm",
+    "label": "FM-CM",
+    "source": "results/final_request_sweep_v1_20261027/cases/request_bursts_5/airscape_seed0/joint_fm_cm_no_rm",
+    "status": "completed"
+  },
+  {
+    "case": "request_bursts_5",
+    "dataset": "AirScape",
+    "method": "separate_aircomp_periodic",
+    "label": "S-AC",
+    "source": "results/airscape_sensitivity_v2_20261027/cases/request_bursts_5/airscape_seed0/separate_aircomp_periodic",
+    "status": "completed"
+  },
+  {
+    "case": "request_bursts_5",
+    "dataset": "AirScape",
+    "method": "aircomp_ofdma_periodic",
+    "label": "AC-OF",
+    "source": "results/airscape_sensitivity_v2_20261027/cases/request_bursts_5/airscape_seed0/aircomp_ofdma_periodic",
+    "status": "completed"
+  },
+  {
+    "case": "request_bursts_5",
+    "dataset": "AirScape",
+    "method": "sequential_digital_proxy",
+    "label": "S-OF",
+    "source": "results/final_request_sweep_v1_20261027/cases/request_bursts_5/airscape_seed0/sequential_digital_proxy",
+    "status": "completed"
+  },
+  {
+    "case": "request_bursts_15",
+    "dataset": "CapERA",
+    "method": "adaptive_retrieval_fu",
+    "label": "Proposed",
+    "source": "results/adaptive_fu_v1_20261028/cases/request_bursts_15/capera_seed0/adaptive_retrieval_fu",
+    "status": "completed"
+  },
+  {
+    "case": "request_bursts_15",
+    "dataset": "CapERA",
+    "method": "joint_fm_cm_no_rm",
+    "label": "FM-CM",
+    "source": "results/final_request_sweep_v1_20261027/cases/request_bursts_15/capera_seed0/joint_fm_cm_no_rm",
+    "status": "completed"
+  },
+  {
+    "case": "request_bursts_15",
+    "dataset": "CapERA",
+    "method": "separate_aircomp_periodic",
+    "label": "S-AC",
+    "source": "results/iot_sensitivity_v1_20261027/cases/request_bursts_15/capera_seed0/separate_aircomp_periodic",
+    "status": "completed"
+  },
+  {
+    "case": "request_bursts_15",
+    "dataset": "CapERA",
+    "method": "aircomp_ofdma_periodic",
+    "label": "AC-OF",
+    "source": "results/iot_sensitivity_v1_20261027/cases/request_bursts_15/capera_seed0/aircomp_ofdma_periodic",
+    "status": "completed"
+  },
+  {
+    "case": "request_bursts_15",
+    "dataset": "CapERA",
+    "method": "sequential_digital_proxy",
+    "label": "S-OF",
+    "source": "results/final_request_sweep_v1_20261027/cases/request_bursts_15/capera_seed0/sequential_digital_proxy",
+    "status": "completed"
+  },
+  {
+    "case": "request_bursts_15",
+    "dataset": "AirScape",
+    "method": "adaptive_retrieval_fu",
+    "label": "Proposed",
+    "source": "results/adaptive_fu_v1_20261028/cases/request_bursts_15/airscape_seed0/adaptive_retrieval_fu",
+    "status": "completed"
+  },
+  {
+    "case": "request_bursts_15",
+    "dataset": "AirScape",
+    "method": "joint_fm_cm_no_rm",
+    "label": "FM-CM",
+    "source": "results/final_request_sweep_v1_20261027/cases/request_bursts_15/airscape_seed0/joint_fm_cm_no_rm",
+    "status": "completed"
+  },
+  {
+    "case": "request_bursts_15",
+    "dataset": "AirScape",
+    "method": "separate_aircomp_periodic",
+    "label": "S-AC",
+    "source": "results/airscape_sensitivity_v2_20261027/cases/request_bursts_15/airscape_seed0/separate_aircomp_periodic",
+    "status": "completed"
+  },
+  {
+    "case": "request_bursts_15",
+    "dataset": "AirScape",
+    "method": "aircomp_ofdma_periodic",
+    "label": "AC-OF",
+    "source": "results/airscape_sensitivity_v2_20261027/cases/request_bursts_15/airscape_seed0/aircomp_ofdma_periodic",
+    "status": "completed"
+  },
+  {
+    "case": "request_bursts_15",
+    "dataset": "AirScape",
+    "method": "sequential_digital_proxy",
+    "label": "S-OF",
+    "source": "results/final_request_sweep_v1_20261027/cases/request_bursts_15/airscape_seed0/sequential_digital_proxy",
+    "status": "completed"
+  },
+  {
+    "case": "request_bursts_45",
+    "dataset": "CapERA",
+    "method": "adaptive_retrieval_fu",
+    "label": "Proposed",
+    "source": "results/adaptive_fu_v1_20261028/cases/request_bursts_45/capera_seed0/adaptive_retrieval_fu",
+    "status": "completed"
+  },
+  {
+    "case": "request_bursts_45",
+    "dataset": "CapERA",
+    "method": "joint_fm_cm_no_rm",
+    "label": "FM-CM",
+    "source": "results/final_request_sweep_v1_20261027/cases/request_bursts_45/capera_seed0/joint_fm_cm_no_rm",
+    "status": "completed"
+  },
+  {
+    "case": "request_bursts_45",
+    "dataset": "CapERA",
+    "method": "separate_aircomp_periodic",
+    "label": "S-AC",
+    "source": "results/final_broadcast_fix_v1_20261027/cases/request_bursts_45/capera_seed0/separate_aircomp_periodic",
+    "status": "completed"
+  },
+  {
+    "case": "request_bursts_45",
+    "dataset": "CapERA",
+    "method": "aircomp_ofdma_periodic",
+    "label": "AC-OF",
+    "source": "results/final_broadcast_fix_v1_20261027/cases/request_bursts_45/capera_seed0/aircomp_ofdma_periodic",
+    "status": "completed"
+  },
+  {
+    "case": "request_bursts_45",
+    "dataset": "CapERA",
+    "method": "sequential_digital_proxy",
+    "label": "S-OF",
+    "source": "results/final_broadcast_fix_v1_20261027/cases/request_bursts_45/capera_seed0/sequential_digital_proxy",
+    "status": "completed"
+  },
+  {
+    "case": "request_bursts_45",
+    "dataset": "AirScape",
+    "method": "adaptive_retrieval_fu",
+    "label": "Proposed",
+    "source": "results/adaptive_fu_v1_20261028/cases/request_bursts_45/airscape_seed0/adaptive_retrieval_fu",
+    "status": "completed"
+  },
+  {
+    "case": "request_bursts_45",
+    "dataset": "AirScape",
+    "method": "joint_fm_cm_no_rm",
+    "label": "FM-CM",
+    "source": "results/final_request_sweep_v1_20261027/cases/request_bursts_45/airscape_seed0/joint_fm_cm_no_rm",
+    "status": "completed"
+  },
+  {
+    "case": "request_bursts_45",
+    "dataset": "AirScape",
+    "method": "separate_aircomp_periodic",
+    "label": "S-AC",
+    "source": "results/final_broadcast_fix_v1_20261027/cases/request_bursts_45/airscape_seed0/separate_aircomp_periodic",
+    "status": "completed"
+  },
+  {
+    "case": "request_bursts_45",
+    "dataset": "AirScape",
+    "method": "aircomp_ofdma_periodic",
+    "label": "AC-OF",
+    "source": "results/final_broadcast_fix_v1_20261027/cases/request_bursts_45/airscape_seed0/aircomp_ofdma_periodic",
+    "status": "completed"
+  },
+  {
+    "case": "request_bursts_45",
+    "dataset": "AirScape",
+    "method": "sequential_digital_proxy",
+    "label": "S-OF",
+    "source": "results/final_broadcast_fix_v1_20261027/cases/request_bursts_45/airscape_seed0/sequential_digital_proxy",
+    "status": "completed"
+  }
+]
