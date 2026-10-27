@@ -1,0 +1,88 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "case": "baseline",
+      "dataset": "CapERA",
+      "status": "completed",
+      "wall_seconds": 90.78113079071045,
+      "transactions": 225,
+      "cap_overruns": 36
+    },
+    {
+      "case": "baseline",
+      "dataset": "AirScape",
+      "status": "completed",
+      "wall_seconds": 13.907542705535889,
+      "transactions": 225,
+      "cap_overruns": 36
+    },
+    {
+      "case": "bandwidth_0p25",
+      "dataset": "CapERA",
+      "status": "completed",
+      "wall_seconds": 78.05863618850708,
+      "transactions": 225,
+      "cap_overruns": 179
+    },
+    {
+      "case": "bandwidth_0p25",
+      "dataset": "AirScape",
+      "status": "completed",
+      "wall_seconds": 13.899494409561157,
+      "transactions": 225,
+      "cap_overruns": 179
+    },
+    {
+      "case": "bandwidth_0p5",
+      "dataset": "CapERA",
+      "status": "completed",
+      "wall_seconds": 85.9390881061554,
+      "transactions": 225,
+      "cap_overruns": 143
+    },
+    {
+      "case": "bandwidth_0p5",
+      "dataset": "AirScape",
+      "status": "completed",
+      "wall_seconds": 13.991906881332397,
+      "transactions": 225,
+      "cap_overruns": 143
+    },
+    {
+      "case": "bandwidth_2",
+      "dataset": "CapERA",
+      "status": "completed",
+      "wall_seconds": 70.5614984035492,
+      "transactions": 225,
+      "cap_overruns": 36
+    },
+    {
+      "case": "bandwidth_2",
+      "dataset": "AirScape",
+      "status": "completed",
+      "wall_seconds": 13.843847751617432,
+      "transactions": 225,
+      "cap_overruns": 36
+    },
+    {
+      "case": "bandwidth_4",
+      "dataset": "CapERA",
+      "status": "completed",
+      "wall_seconds": 52.749715089797974,
+      "transactions": 225,
+      "cap_overruns": 36
+    },
+    {
+      "case": "bandwidth_4",
+      "dataset": "AirScape",
+      "status": "completed",
+      "wall_seconds": 13.856459379196167,
+      "transactions": 225,
+      "cap_overruns": 36
+    }
+  ],
+  "outcomes": {
+    "completed": 10
+  }
+}

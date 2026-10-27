@@ -1,5 +1,6 @@
 """Six requested 1x2 figures, using actual mission FL/FU service ledgers."""
 import csv
+import argparse
 import importlib.util
 import math
 from pathlib import Path
@@ -93,7 +94,7 @@ def service_ledger(directory, method, parameters, prefix, sources):
 
 
 def save(fig, axes, name, status_markers=None):
-    fig.legend(*axes[0].get_legend_handles_labels(), ncol=5, loc="upper center",
+    fig.legend(*axes[0].get_legend_handles_labels(), ncol=len(METHODS), loc="upper center",
                bbox_to_anchor=(.5, 1.), fontsize=12, handlelength=1.6, columnspacing=.75)
     if status_markers:
         methods = list(dict.fromkeys(r["method"] for r in status_markers))
@@ -122,17 +123,40 @@ def save(fig, axes, name, status_markers=None):
     for extension in ["png", "pdf", "svg"]:
         path = DEST / f"{name}.{extension}"
         fig.savefig(path, dpi=350, bbox_inches="tight")
+        if extension == "svg":
+            path.write_text("\n".join(line.rstrip() for line in path.read_text().splitlines()) + "\n")
         files.append(dict(file=path.name, sha256=sha(path)))
     chart.plt.close(fig)
     return dict(name=name, axes=settings, files=files, status_markers=status_markers or [])
 
 
-def generate():
+def generate(comparison="main"):
+    global METHODS, DEST
+    from baseline_fairness import MAIN, OUT, CHECKED, OLD, NEW
+    from common import METHODS as original_methods
+    from report import COLORS, MARKERS, STYLES
+    if comparison == "main":
+        assert read(OUT / "finished.json")["passed"]
+        METHODS, DEST, chart.SOURCE = MAIN, ROOT / "selected_graph", OUT
+        indices = [0, 2, 3, 4]
+    elif comparison == "ablation":
+        METHODS = {m: original_methods[m] for m in ["proposed_fu_guard_cliperase", "heuristic_ova", OLD]}
+        DEST, chart.SOURCE, indices = ROOT / "ablation_graph", CHECKED, [0, 1, 4]
+    else:
+        assert comparison == "legacy"
+        METHODS, DEST, chart.SOURCE = original_methods, ROOT / "results/selected_graph_legacy_20261027", CHECKED
+        indices = list(range(5))
+    for attribute, values in [("COLORS", COLORS), ("MARKERS", MARKERS), ("STYLES", STYLES)]:
+        setattr(chart, attribute, [values[i] for i in indices])
+        setattr(chart.style, attribute, [values[i] for i in indices])
     DEST.mkdir(exist_ok=True)
     chart.configure()
     sources = {str(Path(__file__).relative_to(ROOT)): sha(Path(__file__)),
                "tools/uav_real_vlm_v1/energy.py": sha(ROOT / "tools/uav_real_vlm_v1/energy.py"),
                "tools/uav_convergence_v2/time_energy_report.py": sha(ROOT / "tools/uav_convergence_v2/time_energy_report.py")}
+    if comparison == "main":
+        for path in [OUT / "protocol.json", OUT / "verification.json", Path(__file__).with_name("baseline_fairness.py")]:
+            sources[str(path.relative_to(ROOT))] = sha(path)
     trajectories = {(d, m): chart.convergence(d, m, sources) for d in DATASETS for m in METHODS}
     initial = {}
     for d in DATASETS:
@@ -225,19 +249,20 @@ def generate():
             chart.finish_axes(axes, panel_values, decimals=0)
         figures.append(save(fig, axes, name, status_markers))
 
-    assert len(figures) == 6 and len(series) == 60 and len(ledgers) == 50
+    assert len(figures) == 6 and len(series) == 6 * len(DATASETS) * len(METHODS)
+    assert len(ledgers) == len(values) * len(DATASETS) * len(METHODS)
     write(DEST / "data/plot_series.json", series)
     write(DEST / "data/service_energy_delay.json", ledgers)
     with (DEST / "data/service_energy_delay.csv").open("w", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=list(ledgers[0]))
+        writer = csv.DictWriter(handle, fieldnames=list(ledgers[0]), lineterminator="\n")
         writer.writeheader(); writer.writerows(ledgers)
-    write(DEST / "data/manifest.json", dict(datasets=DATASETS, methods=METHODS, figures=figures,
+    write(DEST / "data/manifest.json", dict(datasets=DATASETS, methods=METHODS, figures=figures, comparison=comparison,
         source_sha256=sources, energy_scope="FL/FU service communication + computing + hovering only",
         time_scope="Active mission FL/FU service, including scheduling waits; excludes travel, collection and preflight preparation",
         assumption="The duplicated time-loss item 4 is interpreted as time-mR, completing the round/time by loss/mR set.",
-        status="Existing completed simulation records, re-accounted and plotted; no retraining or raw measurement changes"))
-    lines = ["# Selected graphs", "", "Six figures only, each exported as PNG, PDF and SVG. "
-        "Left: CapERA. Right: AirScape. All five existing methods use the established style, regular endpoint ticks "
+        status="Completed simulation records, including the registered new S-OF in the main view; plotting preserves raw measurements"))
+    lines = ["# " + ("Matched-objective ablations" if comparison == "ablation" else "Selected graphs"), "", "Six figures only, each exported as PNG, PDF and SVG. "
+        f"Left: CapERA. Right: AirScape. Methods: {', '.join(METHODS.values())}. The figures use the established style, regular endpoint ticks "
         "and matched decimal precision. No point-value labels. Bandwidth figures explicitly mark "
         "radio-infeasible conditions with a cross and a separate status legend.", "",
         "| No. | x axis | y axis | Preview |", "|---|---|---|---|"]
@@ -267,19 +292,46 @@ def generate():
         "**Bandwidth** varies the UAV aggregation uplink symbol rate: 0.25, 0.5, 1, 2, 4 MHz. "
         "This is the existing uplink bandwidth sweep, not the downlink-rate sweep. Noise and all other "
         "conditions follow the original paired sensitivity protocol. **Delay** uses exactly the active "
-        "FL/FU service time defined above. All five methods and five bandwidth values are retained for "
-        "both datasets: 49 completed outcomes and one radio-infeasible outcome (AirScape, H-OVA, 4 MHz). "
-        "That condition is shown at 4 MHz with a purple cross above the upper plot edge and the legend "
-        "`Infeasible (H-OVA)`. Its vertical placement is fixed at 104% of the axes height, outside the data area, and does not "
+        "FL/FU service time defined above. All listed methods and all five bandwidth values are retained for "
+        f"both datasets: {sum(r['status'] == 'completed' for r in ledgers)} completed outcomes and "
+        f"{sum(r['status'] != 'completed' for r in ledgers)} infeasible outcomes. "
+        "Infeasible conditions, when present, are shown by a cross above the upper plot edge and a separate legend. "
+        "Its vertical placement is fixed at 104% of the axes height, outside the data area, and does not "
         "encode an energy/delay value. The original missing metric remains null; no value is filled "
         "or extrapolated. Marker metadata is stored separately in `data/manifest.json`.", "",
-        "All results use the existing seed-0, 200-FL-round experiments and validation subsets. "
+        "All results use seed-0, 200-FL-round experiments and the unchanged validation subsets. "
         "Raw plotting arrays, service components, original/excluded totals, axis settings and source hashes "
-        "are in `data/`. Rebuild with `.venv/bin/python tools/uav_convergence_v2/selected_graphs.py`.", ""]
+        f"are in `data/`. Rebuild with `.venv/bin/python tools/uav_convergence_v2/selected_graphs.py --comparison {comparison}`.", ""]
+    if comparison == "main":
+        lines += ["## Comparison scope", "",
+            "S-OF is a new measured serial digital OFDMA baseline using the same existing safe-proxy FU objective as S-AC and AC-OF. "
+            "S-OF+ used the CLIPErase-inspired objective shared with Proposed. The new S-OF is not a relabeling of S-OF+. "
+            "Only the FU objective changes between these two digital controls; optimized digital head/tones and all physical limits remain intact. "
+            "This main comparison therefore compares whole systems, including the objective difference. "
+            "It cannot by itself attribute a learning-quality difference to parallel transmission.", "",
+            "[Matched-objective ablations](../ablation_graph/README.md) retain Proposed, H-OVA and S-OF+ with their original outcomes, "
+            "including the AirScape H-OVA 4 MHz infeasibility. H-OVA isolates the head/allocation heuristic; "
+            "S-OF+ is the same-objective serial digital control. Similar round-based utility is expected when their objectives match.", "",
+            "S-OF and S-OF+ inherit the previously authorized soft network-TX-cap fallback; overruns are recorded. "
+            "The analog arms retain their original hard network cap. Per-user power/energy, deadline and error checks remain enforced. "
+            "See the [protocol and quality audit](../results/baseline_fairness_v1_20261027/README.md) for component definitions, "
+            "forgetting diagnostics and all ten new outcomes. No hyperparameter was selected based on these results.", ""]
+    elif comparison == "ablation":
+        lines += ["## Interpretation", "",
+            "All three methods use the same CLIPErase-inspired FM/RM/CM FU objective, model and workload. "
+            "H-OVA replaces optimized head/resource allocation with a centroid head/uniform allocation heuristic. "
+            "S-OF+ executes FL/FU serially through digital OFDMA with optimized head/tones. "
+            "These matched-objective controls are retained to isolate head/allocation and transport/scheduling effects; "
+            "similar retained loss/mR does not invalidate an energy/delay advantage. "
+            "S-OF+ retains its previously authorized soft network-cap fallback, while Proposed/H-OVA keep hard caps.", "",
+            "AirScape H-OVA at 4 MHz is radio-infeasible and remains explicitly marked; no energy or delay is fabricated. "
+            "The [main comparison](../selected_graph/README.md) additionally reports the new safe-proxy S-OF baseline.", ""]
     (DEST / "README.md").write_text("\n".join(lines))
     print(dict(figures=len(figures), series=len(series), ledger_rows=len(ledgers),
                baseline=[r for r in ledgers if r["bandwidth_MHz"] == 1 and r["method"] == "proposed_fu_guard_cliperase"]), flush=True)
 
 
 if __name__ == "__main__":
-    generate()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--comparison", choices=["main", "ablation", "legacy"], default="main")
+    generate(parser.parse_args().comparison)
