@@ -1,0 +1,211 @@
+{
+  "registered_unix": 1793118428.324144,
+  "methods": {
+    "iscc_p2_gaft": "ISCC-P2",
+    "uav_afl_ota_gaft": "AFL-OTA"
+  },
+  "datasets": [
+    "CapERA",
+    "AirScape"
+  ],
+  "axes": {
+    "bandwidth": {
+      "label": "Uplink bandwidth (MHz)",
+      "values": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "base": 1,
+      "kind": "training"
+    },
+    "downlink": {
+      "label": "Downlink rate (Mbit/s)",
+      "values": [
+        0.25,
+        0.5,
+        1,
+        2,
+        4
+      ],
+      "base": 1,
+      "kind": "training"
+    },
+    "frequency": {
+      "label": "CPU frequency (GHz)",
+      "values": [
+        0.75,
+        1,
+        1.5,
+        2,
+        3
+      ],
+      "base": 1.5,
+      "kind": "training"
+    },
+    "fu_steps": {
+      "label": "FU cycles per request",
+      "values": [
+        1,
+        3,
+        5,
+        7,
+        9
+      ],
+      "base": 5,
+      "kind": "training"
+    },
+    "batch": {
+      "label": "FL batch-size cap",
+      "values": [
+        8,
+        16,
+        32,
+        64,
+        128
+      ],
+      "base": 16,
+      "kind": "training"
+    }
+  },
+  "cases": [
+    {
+      "id": "baseline",
+      "axis": null,
+      "value": null
+    },
+    {
+      "id": "bandwidth_2",
+      "axis": "bandwidth",
+      "value": 2
+    },
+    {
+      "id": "bandwidth_3",
+      "axis": "bandwidth",
+      "value": 3
+    },
+    {
+      "id": "bandwidth_4",
+      "axis": "bandwidth",
+      "value": 4
+    },
+    {
+      "id": "bandwidth_5",
+      "axis": "bandwidth",
+      "value": 5
+    },
+    {
+      "id": "downlink_0p25",
+      "axis": "downlink",
+      "value": 0.25
+    },
+    {
+      "id": "downlink_0p5",
+      "axis": "downlink",
+      "value": 0.5
+    },
+    {
+      "id": "downlink_2",
+      "axis": "downlink",
+      "value": 2
+    },
+    {
+      "id": "downlink_4",
+      "axis": "downlink",
+      "value": 4
+    },
+    {
+      "id": "frequency_0p75",
+      "axis": "frequency",
+      "value": 0.75
+    },
+    {
+      "id": "frequency_1",
+      "axis": "frequency",
+      "value": 1
+    },
+    {
+      "id": "frequency_2",
+      "axis": "frequency",
+      "value": 2
+    },
+    {
+      "id": "frequency_3",
+      "axis": "frequency",
+      "value": 3
+    },
+    {
+      "id": "fu_steps_1",
+      "axis": "fu_steps",
+      "value": 1
+    },
+    {
+      "id": "fu_steps_3",
+      "axis": "fu_steps",
+      "value": 3
+    },
+    {
+      "id": "fu_steps_7",
+      "axis": "fu_steps",
+      "value": 7
+    },
+    {
+      "id": "fu_steps_9",
+      "axis": "fu_steps",
+      "value": 9
+    },
+    {
+      "id": "batch_8",
+      "axis": "batch",
+      "value": 8
+    },
+    {
+      "id": "batch_32",
+      "axis": "batch",
+      "value": 32
+    },
+    {
+      "id": "batch_64",
+      "axis": "batch",
+      "value": 64
+    },
+    {
+      "id": "batch_128",
+      "axis": "batch",
+      "value": 128
+    }
+  ],
+  "sampling_seed": 0,
+  "new_training_arms": 84,
+  "user_approved_transfer": "Keep current10-UAV/data/routes, transfer core algorithms and explicitly state adaptations.",
+  "ISCC_P2": {
+    "citation": "Tang et al., IEEE TWC24(4):2647-2662,2025",
+    "doi": "https://doi.org/10.1109/TWC.2024.3523381",
+    "paper": "https://arxiv.org/abs/2306.02990",
+    "code": "https://github.com/TheaSherlock/ISCC-UAV",
+    "preserved": "Equal-client single-step aggregation Eq.(4), full digital FDMA Eq.(8), exact fixed-batch/position P2 Eq.(24) via bisection. Transmissions begin when each local compute finishes.",
+    "changed": "Cached aerial video-text retrieval replaces radar human motion classification. q_s=1 because common cached data already collected; no artificial sensor failures. Same externally prescribed batch caps and200FL. Fixed nominal site head replaces ground server. Full32-bit20480-coordinate adapter upload plus64metadata bits.",
+    "omitted": "Not full BBPO: no P3 batch optimization using unknown VLM convex-loss constants, no P4 sensing/position optimization, no optimal-round search. Named ISCC-P2, not BBPO."
+  },
+  "AFL_OTA": {
+    "citation": "Zhai et al., IEEE TWC24(3):2358-2372,2025",
+    "doi": "https://doi.org/10.1109/TWC.2024.3520501",
+    "paper": "https://arxiv.org/abs/2403.06653",
+    "preserved": "Alg.1 cached gradients from last received model, all currently ready devices selected, equal-client average Eq.(8)-(10), mean/variance normalization and complex packing Eq.(11)-(16), computation overlaps communication; selected devices receive global model and start next local gradient.",
+    "changed": "Existing UAVs act as clients and nominal site head as server. All-ready selection and unbiased channel inversion with analytic coherent repetition replace Alg.2 joint trajectory/device/transceiver optimizer. No invented fixed staleness delay or restricted participation quota; actual modeled compute availability determines selection. All-peer broadcast circuit accounting is kept for consistency.",
+    "omitted": "Not reproduction of paper joint optimizer or its convergence guarantee. No tuned staleness bound. Error-free mean/variance metadata assumption from paper retained, with zero modeled overhead; listed limitation."
+  },
+  "common_FU": {
+    "source": "https://github.com/CSIPlab/SLUG/blob/main/src/clip/unlearn/GAFT.py",
+    "reference": "https://proceedings.mlr.press/v267/cai25f.html",
+    "rule": "Per request cycle: descend positive image-text cosine, then retained symmetric contrastive CE from updated local model; communicate net two-step delta. Same common SGD cosine LR, retain batch16 and native captions. No clean proxy/request teacher/adaptive controller/Proposed guard.",
+    "adaptation": "Paper baselines are FL-only; GAFT extension is ours and shared across both. Two optimizer substeps per FU cycle, both charged. Not original full-model AdamW implementation.",
+    "cache_safety": "On any new deletion arrival, discard all cached FL updates and drain uninterruptible computations. Every FU uses current model, broadcasts to all, and invalidates stale caches. Never reapply a pre-deletion cache."
+  },
+  "fairness": "Same feature cache, warm20, requests,200FL,45requests and prescribed FU cycles, data partitions, route, channels, compute/propulsion constants. ISCC/AFL equal-device weighting follows papers; Proposed sample weighting retained. All outcomes kept, single development seed. Learned objectives differ, so not isolated communication comparison. Prior clean proxy gives Proposed additional planned-cohort knowledge; disclose.",
+  "limits": "Fixed32-bit payload; Pmax hard. For paper protocols, network energy/update-energy/round-deadline are reported QoS limits, not grounds to erase a completed workload. Record all exceedances. User previously authorized continuing beyond caps. No physical power relaxation. No hardware-calibrated resource-solver time.",
+  "accounting": "Active FL/FU communication+executed compute+hover, excluding travel/collection/preflight. FL cached jobs billed when created, even if discarded. Pipeline critical path uses actual ready times. Common9TX/1RX uplink circuit accounting and9-peer broadcasts. Shared frozen-encoder cache; adapter-only in-mission costs, not full VLM training.",
+  "publication": "Code, charts, plot arrays and aggregate summaries only. Raw samples/checkpoints/logs local."
+}

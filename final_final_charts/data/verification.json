@@ -1,0 +1,857 @@
+{
+  "passed": true,
+  "complete": true,
+  "compared_arms": 126,
+  "rows": [
+    {
+      "case": "baseline",
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "inputs_match": true
+    },
+    {
+      "case": "baseline",
+      "dataset": "CapERA",
+      "method": "iscc_p2_gaft",
+      "inputs_match": true
+    },
+    {
+      "case": "baseline",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "inputs_match": true,
+      "max_model_version_lag": 0,
+      "local_jobs": 1980
+    },
+    {
+      "case": "baseline",
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "inputs_match": true
+    },
+    {
+      "case": "baseline",
+      "dataset": "AirScape",
+      "method": "iscc_p2_gaft",
+      "inputs_match": true
+    },
+    {
+      "case": "baseline",
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "inputs_match": true,
+      "max_model_version_lag": 0,
+      "local_jobs": 1970
+    },
+    {
+      "case": "bandwidth_2",
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "inputs_match": true
+    },
+    {
+      "case": "bandwidth_2",
+      "dataset": "CapERA",
+      "method": "iscc_p2_gaft",
+      "inputs_match": true
+    },
+    {
+      "case": "bandwidth_2",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "inputs_match": true,
+      "max_model_version_lag": 0,
+      "local_jobs": 1980
+    },
+    {
+      "case": "bandwidth_2",
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "inputs_match": true
+    },
+    {
+      "case": "bandwidth_2",
+      "dataset": "AirScape",
+      "method": "iscc_p2_gaft",
+      "inputs_match": true
+    },
+    {
+      "case": "bandwidth_2",
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "inputs_match": true,
+      "max_model_version_lag": 0,
+      "local_jobs": 1970
+    },
+    {
+      "case": "bandwidth_3",
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "inputs_match": true
+    },
+    {
+      "case": "bandwidth_3",
+      "dataset": "CapERA",
+      "method": "iscc_p2_gaft",
+      "inputs_match": true
+    },
+    {
+      "case": "bandwidth_3",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "inputs_match": true,
+      "max_model_version_lag": 0,
+      "local_jobs": 1980
+    },
+    {
+      "case": "bandwidth_3",
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "inputs_match": true
+    },
+    {
+      "case": "bandwidth_3",
+      "dataset": "AirScape",
+      "method": "iscc_p2_gaft",
+      "inputs_match": true
+    },
+    {
+      "case": "bandwidth_3",
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "inputs_match": true,
+      "max_model_version_lag": 0,
+      "local_jobs": 1970
+    },
+    {
+      "case": "bandwidth_4",
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "inputs_match": true
+    },
+    {
+      "case": "bandwidth_4",
+      "dataset": "CapERA",
+      "method": "iscc_p2_gaft",
+      "inputs_match": true
+    },
+    {
+      "case": "bandwidth_4",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "inputs_match": true,
+      "max_model_version_lag": 0,
+      "local_jobs": 1980
+    },
+    {
+      "case": "bandwidth_4",
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "inputs_match": true
+    },
+    {
+      "case": "bandwidth_4",
+      "dataset": "AirScape",
+      "method": "iscc_p2_gaft",
+      "inputs_match": true
+    },
+    {
+      "case": "bandwidth_4",
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "inputs_match": true,
+      "max_model_version_lag": 0,
+      "local_jobs": 1970
+    },
+    {
+      "case": "bandwidth_5",
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "inputs_match": true
+    },
+    {
+      "case": "bandwidth_5",
+      "dataset": "CapERA",
+      "method": "iscc_p2_gaft",
+      "inputs_match": true
+    },
+    {
+      "case": "bandwidth_5",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "inputs_match": true,
+      "max_model_version_lag": 0,
+      "local_jobs": 1980
+    },
+    {
+      "case": "bandwidth_5",
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "inputs_match": true
+    },
+    {
+      "case": "bandwidth_5",
+      "dataset": "AirScape",
+      "method": "iscc_p2_gaft",
+      "inputs_match": true
+    },
+    {
+      "case": "bandwidth_5",
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "inputs_match": true,
+      "max_model_version_lag": 0,
+      "local_jobs": 1970
+    },
+    {
+      "case": "downlink_0p25",
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "inputs_match": true
+    },
+    {
+      "case": "downlink_0p25",
+      "dataset": "CapERA",
+      "method": "iscc_p2_gaft",
+      "inputs_match": true
+    },
+    {
+      "case": "downlink_0p25",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "inputs_match": true,
+      "max_model_version_lag": 0,
+      "local_jobs": 1980
+    },
+    {
+      "case": "downlink_0p25",
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "inputs_match": true
+    },
+    {
+      "case": "downlink_0p25",
+      "dataset": "AirScape",
+      "method": "iscc_p2_gaft",
+      "inputs_match": true
+    },
+    {
+      "case": "downlink_0p25",
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "inputs_match": true,
+      "max_model_version_lag": 0,
+      "local_jobs": 1970
+    },
+    {
+      "case": "downlink_0p5",
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "inputs_match": true
+    },
+    {
+      "case": "downlink_0p5",
+      "dataset": "CapERA",
+      "method": "iscc_p2_gaft",
+      "inputs_match": true
+    },
+    {
+      "case": "downlink_0p5",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "inputs_match": true,
+      "max_model_version_lag": 0,
+      "local_jobs": 1980
+    },
+    {
+      "case": "downlink_0p5",
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "inputs_match": true
+    },
+    {
+      "case": "downlink_0p5",
+      "dataset": "AirScape",
+      "method": "iscc_p2_gaft",
+      "inputs_match": true
+    },
+    {
+      "case": "downlink_0p5",
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "inputs_match": true,
+      "max_model_version_lag": 0,
+      "local_jobs": 1970
+    },
+    {
+      "case": "downlink_2",
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "inputs_match": true
+    },
+    {
+      "case": "downlink_2",
+      "dataset": "CapERA",
+      "method": "iscc_p2_gaft",
+      "inputs_match": true
+    },
+    {
+      "case": "downlink_2",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "inputs_match": true,
+      "max_model_version_lag": 0,
+      "local_jobs": 1980
+    },
+    {
+      "case": "downlink_2",
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "inputs_match": true
+    },
+    {
+      "case": "downlink_2",
+      "dataset": "AirScape",
+      "method": "iscc_p2_gaft",
+      "inputs_match": true
+    },
+    {
+      "case": "downlink_2",
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "inputs_match": true,
+      "max_model_version_lag": 0,
+      "local_jobs": 1970
+    },
+    {
+      "case": "downlink_4",
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "inputs_match": true
+    },
+    {
+      "case": "downlink_4",
+      "dataset": "CapERA",
+      "method": "iscc_p2_gaft",
+      "inputs_match": true
+    },
+    {
+      "case": "downlink_4",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "inputs_match": true,
+      "max_model_version_lag": 0,
+      "local_jobs": 1980
+    },
+    {
+      "case": "downlink_4",
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "inputs_match": true
+    },
+    {
+      "case": "downlink_4",
+      "dataset": "AirScape",
+      "method": "iscc_p2_gaft",
+      "inputs_match": true
+    },
+    {
+      "case": "downlink_4",
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "inputs_match": true,
+      "max_model_version_lag": 0,
+      "local_jobs": 1970
+    },
+    {
+      "case": "frequency_0p75",
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "inputs_match": true
+    },
+    {
+      "case": "frequency_0p75",
+      "dataset": "CapERA",
+      "method": "iscc_p2_gaft",
+      "inputs_match": true
+    },
+    {
+      "case": "frequency_0p75",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "inputs_match": true,
+      "max_model_version_lag": 0,
+      "local_jobs": 1980
+    },
+    {
+      "case": "frequency_0p75",
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "inputs_match": true
+    },
+    {
+      "case": "frequency_0p75",
+      "dataset": "AirScape",
+      "method": "iscc_p2_gaft",
+      "inputs_match": true
+    },
+    {
+      "case": "frequency_0p75",
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "inputs_match": true,
+      "max_model_version_lag": 0,
+      "local_jobs": 1970
+    },
+    {
+      "case": "frequency_1",
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "inputs_match": true
+    },
+    {
+      "case": "frequency_1",
+      "dataset": "CapERA",
+      "method": "iscc_p2_gaft",
+      "inputs_match": true
+    },
+    {
+      "case": "frequency_1",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "inputs_match": true,
+      "max_model_version_lag": 0,
+      "local_jobs": 1980
+    },
+    {
+      "case": "frequency_1",
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "inputs_match": true
+    },
+    {
+      "case": "frequency_1",
+      "dataset": "AirScape",
+      "method": "iscc_p2_gaft",
+      "inputs_match": true
+    },
+    {
+      "case": "frequency_1",
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "inputs_match": true,
+      "max_model_version_lag": 0,
+      "local_jobs": 1970
+    },
+    {
+      "case": "frequency_2",
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "inputs_match": true
+    },
+    {
+      "case": "frequency_2",
+      "dataset": "CapERA",
+      "method": "iscc_p2_gaft",
+      "inputs_match": true
+    },
+    {
+      "case": "frequency_2",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "inputs_match": true,
+      "max_model_version_lag": 0,
+      "local_jobs": 1980
+    },
+    {
+      "case": "frequency_2",
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "inputs_match": true
+    },
+    {
+      "case": "frequency_2",
+      "dataset": "AirScape",
+      "method": "iscc_p2_gaft",
+      "inputs_match": true
+    },
+    {
+      "case": "frequency_2",
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "inputs_match": true,
+      "max_model_version_lag": 0,
+      "local_jobs": 1970
+    },
+    {
+      "case": "frequency_3",
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "inputs_match": true
+    },
+    {
+      "case": "frequency_3",
+      "dataset": "CapERA",
+      "method": "iscc_p2_gaft",
+      "inputs_match": true
+    },
+    {
+      "case": "frequency_3",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "inputs_match": true,
+      "max_model_version_lag": 0,
+      "local_jobs": 1980
+    },
+    {
+      "case": "frequency_3",
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "inputs_match": true
+    },
+    {
+      "case": "frequency_3",
+      "dataset": "AirScape",
+      "method": "iscc_p2_gaft",
+      "inputs_match": true
+    },
+    {
+      "case": "frequency_3",
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "inputs_match": true,
+      "max_model_version_lag": 0,
+      "local_jobs": 1970
+    },
+    {
+      "case": "fu_steps_1",
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "inputs_match": true
+    },
+    {
+      "case": "fu_steps_1",
+      "dataset": "CapERA",
+      "method": "iscc_p2_gaft",
+      "inputs_match": true
+    },
+    {
+      "case": "fu_steps_1",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "inputs_match": true,
+      "max_model_version_lag": 0,
+      "local_jobs": 1980
+    },
+    {
+      "case": "fu_steps_1",
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "inputs_match": true
+    },
+    {
+      "case": "fu_steps_1",
+      "dataset": "AirScape",
+      "method": "iscc_p2_gaft",
+      "inputs_match": true
+    },
+    {
+      "case": "fu_steps_1",
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "inputs_match": true,
+      "max_model_version_lag": 0,
+      "local_jobs": 1970
+    },
+    {
+      "case": "fu_steps_3",
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "inputs_match": true
+    },
+    {
+      "case": "fu_steps_3",
+      "dataset": "CapERA",
+      "method": "iscc_p2_gaft",
+      "inputs_match": true
+    },
+    {
+      "case": "fu_steps_3",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "inputs_match": true,
+      "max_model_version_lag": 0,
+      "local_jobs": 1980
+    },
+    {
+      "case": "fu_steps_3",
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "inputs_match": true
+    },
+    {
+      "case": "fu_steps_3",
+      "dataset": "AirScape",
+      "method": "iscc_p2_gaft",
+      "inputs_match": true
+    },
+    {
+      "case": "fu_steps_3",
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "inputs_match": true,
+      "max_model_version_lag": 0,
+      "local_jobs": 1960
+    },
+    {
+      "case": "fu_steps_7",
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "inputs_match": true
+    },
+    {
+      "case": "fu_steps_7",
+      "dataset": "CapERA",
+      "method": "iscc_p2_gaft",
+      "inputs_match": true
+    },
+    {
+      "case": "fu_steps_7",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "inputs_match": true,
+      "max_model_version_lag": 0,
+      "local_jobs": 1980
+    },
+    {
+      "case": "fu_steps_7",
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "inputs_match": true
+    },
+    {
+      "case": "fu_steps_7",
+      "dataset": "AirScape",
+      "method": "iscc_p2_gaft",
+      "inputs_match": true
+    },
+    {
+      "case": "fu_steps_7",
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "inputs_match": true,
+      "max_model_version_lag": 0,
+      "local_jobs": 1970
+    },
+    {
+      "case": "fu_steps_9",
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "inputs_match": true
+    },
+    {
+      "case": "fu_steps_9",
+      "dataset": "CapERA",
+      "method": "iscc_p2_gaft",
+      "inputs_match": true
+    },
+    {
+      "case": "fu_steps_9",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "inputs_match": true,
+      "max_model_version_lag": 0,
+      "local_jobs": 1980
+    },
+    {
+      "case": "fu_steps_9",
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "inputs_match": true
+    },
+    {
+      "case": "fu_steps_9",
+      "dataset": "AirScape",
+      "method": "iscc_p2_gaft",
+      "inputs_match": true
+    },
+    {
+      "case": "fu_steps_9",
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "inputs_match": true,
+      "max_model_version_lag": 0,
+      "local_jobs": 1970
+    },
+    {
+      "case": "batch_8",
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "inputs_match": true
+    },
+    {
+      "case": "batch_8",
+      "dataset": "CapERA",
+      "method": "iscc_p2_gaft",
+      "inputs_match": true
+    },
+    {
+      "case": "batch_8",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "inputs_match": true,
+      "max_model_version_lag": 0,
+      "local_jobs": 1980
+    },
+    {
+      "case": "batch_8",
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "inputs_match": true
+    },
+    {
+      "case": "batch_8",
+      "dataset": "AirScape",
+      "method": "iscc_p2_gaft",
+      "inputs_match": true
+    },
+    {
+      "case": "batch_8",
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "inputs_match": true,
+      "max_model_version_lag": 0,
+      "local_jobs": 1970
+    },
+    {
+      "case": "batch_32",
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "inputs_match": true
+    },
+    {
+      "case": "batch_32",
+      "dataset": "CapERA",
+      "method": "iscc_p2_gaft",
+      "inputs_match": true
+    },
+    {
+      "case": "batch_32",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "inputs_match": true,
+      "max_model_version_lag": 1,
+      "local_jobs": 1707
+    },
+    {
+      "case": "batch_32",
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "inputs_match": true
+    },
+    {
+      "case": "batch_32",
+      "dataset": "AirScape",
+      "method": "iscc_p2_gaft",
+      "inputs_match": true
+    },
+    {
+      "case": "batch_32",
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "inputs_match": true,
+      "max_model_version_lag": 0,
+      "local_jobs": 1970
+    },
+    {
+      "case": "batch_64",
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "inputs_match": true
+    },
+    {
+      "case": "batch_64",
+      "dataset": "CapERA",
+      "method": "iscc_p2_gaft",
+      "inputs_match": true
+    },
+    {
+      "case": "batch_64",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "inputs_match": true,
+      "max_model_version_lag": 1,
+      "local_jobs": 1013
+    },
+    {
+      "case": "batch_64",
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "inputs_match": true
+    },
+    {
+      "case": "batch_64",
+      "dataset": "AirScape",
+      "method": "iscc_p2_gaft",
+      "inputs_match": true
+    },
+    {
+      "case": "batch_64",
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "inputs_match": true,
+      "max_model_version_lag": 1,
+      "local_jobs": 1556
+    },
+    {
+      "case": "batch_128",
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "inputs_match": true
+    },
+    {
+      "case": "batch_128",
+      "dataset": "CapERA",
+      "method": "iscc_p2_gaft",
+      "inputs_match": true
+    },
+    {
+      "case": "batch_128",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "inputs_match": true,
+      "max_model_version_lag": 1,
+      "local_jobs": 1013
+    },
+    {
+      "case": "batch_128",
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "inputs_match": true
+    },
+    {
+      "case": "batch_128",
+      "dataset": "AirScape",
+      "method": "iscc_p2_gaft",
+      "inputs_match": true
+    },
+    {
+      "case": "batch_128",
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "inputs_match": true,
+      "max_model_version_lag": 1,
+      "local_jobs": 1027
+    }
+  ],
+  "source_sha256": {
+    "tools/uav_convergence_v2/paper_uav_audit.py": "5d4a323276615705bcbf7cabc85bea6d7428f6b9fcb19007769575cefa8ab037"
+  },
+  "checks": [
+    "All methods share byte-identical plans/requests/features/warm/reference inputs per condition",
+    "Registered source and inherited data hashes unchanged",
+    "Plot ledger agrees with executed jobs and actual critical-path clocks",
+    "Every applied async cache is ready and no pre-FU cache is reused",
+    "Paper transports respect power and analytical error bounds; QoS overruns retained"
+  ]
+}

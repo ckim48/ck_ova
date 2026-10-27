@@ -1,0 +1,134 @@
+[
+  {
+    "dataset": "CapERA",
+    "sampling_seed": 0,
+    "method": "adaptive_retrieval_fu",
+    "retained_mR_percent": 16.328125136593975,
+    "forget_KL": 0.00022414869454223663,
+    "worst_request_KL": 0.0003427685296628624,
+    "MIA_AUC_gap": 0.0009765625,
+    "energy_kJ": 204.45056402545694,
+    "delay_s": 121.20416648000125
+  },
+  {
+    "dataset": "CapERA",
+    "sampling_seed": 0,
+    "method": "proposed_fu_guard_cliperase",
+    "retained_mR_percent": 16.901041691501938,
+    "forget_KL": 0.0026667111087590456,
+    "worst_request_KL": 0.0036109983921051025,
+    "MIA_AUC_gap": 0.003173828125,
+    "energy_kJ": 204.26106455063737,
+    "delay_s": 121.09239637333478
+  },
+  {
+    "dataset": "CapERA",
+    "sampling_seed": 1,
+    "method": "adaptive_retrieval_fu",
+    "retained_mR_percent": 16.471354166666664,
+    "forget_KL": 0.00024388451129198074,
+    "worst_request_KL": 0.00035440197098068893,
+    "MIA_AUC_gap": 0.0009765625,
+    "energy_kJ": 204.65794092926456,
+    "delay_s": 121.32703368000168
+  },
+  {
+    "dataset": "CapERA",
+    "sampling_seed": 1,
+    "method": "proposed_fu_guard_cliperase",
+    "retained_mR_percent": 16.822916641831398,
+    "forget_KL": 0.002690261695533991,
+    "worst_request_KL": 0.003744369838386774,
+    "MIA_AUC_gap": 0.0032958984375,
+    "energy_kJ": 204.26103442482363,
+    "delay_s": 121.0923835733352
+  },
+  {
+    "dataset": "CapERA",
+    "sampling_seed": 2,
+    "method": "adaptive_retrieval_fu",
+    "retained_mR_percent": 16.549479154249035,
+    "forget_KL": 0.0002727922110352665,
+    "worst_request_KL": 0.0003838426782749593,
+    "MIA_AUC_gap": 0.00140380859375,
+    "energy_kJ": 204.5195870504938,
+    "delay_s": 121.24510002666824
+  },
+  {
+    "dataset": "CapERA",
+    "sampling_seed": 2,
+    "method": "proposed_fu_guard_cliperase",
+    "retained_mR_percent": 16.848958345750965,
+    "forget_KL": 0.003027842380106449,
+    "worst_request_KL": 0.004097455181181431,
+    "MIA_AUC_gap": 0.00335693359375,
+    "energy_kJ": 204.26098738698866,
+    "delay_s": 121.09236992000174
+  },
+  {
+    "dataset": "AirScape",
+    "sampling_seed": 0,
+    "method": "adaptive_retrieval_fu",
+    "retained_mR_percent": 13.541666666666666,
+    "forget_KL": 0.00023409111599903554,
+    "worst_request_KL": 0.0002903542190324515,
+    "MIA_AUC_gap": 0.00018310546875,
+    "energy_kJ": 204.75143727241087,
+    "delay_s": 121.38263922666829
+  },
+  {
+    "dataset": "AirScape",
+    "sampling_seed": 0,
+    "method": "proposed_fu_guard_cliperase",
+    "retained_mR_percent": 13.671875,
+    "forget_KL": 0.0017540504923090339,
+    "worst_request_KL": 0.002268558368086815,
+    "MIA_AUC_gap": 0.0025634765625,
+    "energy_kJ": 204.25499493246562,
+    "delay_s": 121.08879530666836
+  },
+  {
+    "dataset": "AirScape",
+    "sampling_seed": 1,
+    "method": "adaptive_retrieval_fu",
+    "retained_mR_percent": 13.541666666666666,
+    "forget_KL": 0.0004025505040772259,
+    "worst_request_KL": 0.0005204407498240471,
+    "MIA_AUC_gap": 0.0001220703125,
+    "energy_kJ": 204.6824077964732,
+    "delay_s": 121.34167922666833
+  },
+  {
+    "dataset": "AirScape",
+    "sampling_seed": 1,
+    "method": "proposed_fu_guard_cliperase",
+    "retained_mR_percent": 13.671875,
+    "forget_KL": 0.0013252201024442911,
+    "worst_request_KL": 0.0016389826778322458,
+    "MIA_AUC_gap": 0.0025634765625,
+    "energy_kJ": 204.25497906416376,
+    "delay_s": 121.08879701333505
+  },
+  {
+    "dataset": "AirScape",
+    "sampling_seed": 2,
+    "method": "adaptive_retrieval_fu",
+    "retained_mR_percent": 13.541666666666666,
+    "forget_KL": 0.0004299102001823485,
+    "worst_request_KL": 0.0005645088385790586,
+    "MIA_AUC_gap": 6.103515625e-05,
+    "energy_kJ": 204.57866623497287,
+    "delay_s": 121.28024946666821
+  },
+  {
+    "dataset": "AirScape",
+    "sampling_seed": 2,
+    "method": "proposed_fu_guard_cliperase",
+    "retained_mR_percent": 13.4765625,
+    "forget_KL": 0.0013980400981381536,
+    "worst_request_KL": 0.0018192650750279427,
+    "MIA_AUC_gap": 0.00262451171875,
+    "energy_kJ": 204.25497680332782,
+    "delay_s": 121.08880554666848
+  }
+]

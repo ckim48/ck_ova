@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "figures": 16,
+  "arms": 126,
+  "series": 96,
+  "checks": [
+    "Exported sweep points equal audited per-arm metrics",
+    "Convergence endpoints equal actual final models",
+    "Time endpoints equal actual completion clocks",
+    "Uniform endpoint ticks and verified figure bytes",
+    "No unregistered plot source change"
+  ],
+  "source_sha256": {
+    "tools/uav_convergence_v2/paper_uav_artifact_check.py": "e7717ca8a99dc1da48162c67e6c4b053fb9c88b9dacb4faf20cfc6d8c103e702"
+  }
+}

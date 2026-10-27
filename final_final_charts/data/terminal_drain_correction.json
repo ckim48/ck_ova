@@ -1,0 +1,82 @@
+{
+  "passed": true,
+  "corrected_arms": 5,
+  "rows": [
+    {
+      "case": "batch_64",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "missing_terminal_wait_s": 0.00012800000001789158,
+      "original_outcome_sha256": "d3ce05963ae2c2117d79675fd345380fa08c5f5e243605276dc6bede3673bf81",
+      "source": "results/paper_uav_benchmarks_v1_20261028/cases/batch_64/capera_seed0/uav_afl_ota_gaft",
+      "corrected_source": "results/paper_uav_drain_fix_v1_20261028/cases/batch_64/capera_seed0/uav_afl_ota_gaft",
+      "bit_identical_records": {
+        "transactions": 225,
+        "work_attempts": 225,
+        "jobs": 1013
+      },
+      "final_metrics_identical": true
+    },
+    {
+      "case": "batch_64",
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "missing_terminal_wait_s": 0.0002457599999843296,
+      "original_outcome_sha256": "a16f5fa5220a9eb9ab6924e43e420e64ae85806bcafb25ce238d761fa4c1c645",
+      "source": "results/paper_uav_benchmarks_v1_20261028/cases/batch_64/airscape_seed0/uav_afl_ota_gaft",
+      "corrected_source": "results/paper_uav_drain_fix_v1_20261028/cases/batch_64/airscape_seed0/uav_afl_ota_gaft",
+      "bit_identical_records": {
+        "transactions": 225,
+        "work_attempts": 225,
+        "jobs": 1556
+      },
+      "final_metrics_identical": true
+    },
+    {
+      "case": "batch_128",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "missing_terminal_wait_s": 0.00012800000001789158,
+      "original_outcome_sha256": "a7157153717bf596b679d4a79448edc0af747a93c31da57579dc82a10fbe8787",
+      "source": "results/paper_uav_benchmarks_v1_20261028/cases/batch_128/capera_seed0/uav_afl_ota_gaft",
+      "corrected_source": "results/paper_uav_drain_fix_v1_20261028/cases/batch_128/capera_seed0/uav_afl_ota_gaft",
+      "bit_identical_records": {
+        "transactions": 225,
+        "work_attempts": 225,
+        "jobs": 1013
+      },
+      "final_metrics_identical": true
+    },
+    {
+      "case": "batch_128",
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "missing_terminal_wait_s": 0.0002457599999843296,
+      "original_outcome_sha256": "6a954359120cf2b5b5c4190ef2c4a9c06e3ed51b9f4ed989e18894ab3da6a880",
+      "source": "results/paper_uav_benchmarks_v1_20261028/cases/batch_128/airscape_seed0/uav_afl_ota_gaft",
+      "corrected_source": "results/paper_uav_drain_fix_v1_20261028/cases/batch_128/airscape_seed0/uav_afl_ota_gaft",
+      "bit_identical_records": {
+        "transactions": 225,
+        "work_attempts": 225,
+        "jobs": 1027
+      },
+      "final_metrics_identical": true
+    },
+    {
+      "case": "batch_32",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "missing_terminal_wait_s": 0.00012800000001789158,
+      "original_outcome_sha256": "77662f2e4bec61de09be886e7ff920123f267cd93abf2036e70d658f37362b17",
+      "source": "results/paper_uav_benchmarks_v1_20261028/cases/batch_32/capera_seed0/uav_afl_ota_gaft",
+      "corrected_source": "results/paper_uav_drain_fix_v1_20261028/cases/batch_32/capera_seed0/uav_afl_ota_gaft",
+      "bit_identical_records": {
+        "transactions": 225,
+        "work_attempts": 225,
+        "jobs": 1707
+      },
+      "final_metrics_identical": true
+    }
+  ],
+  "correction_source_sha256": "b7f26c72fe65ccdcf85861d0c43732db39236edfeb386515018de5040c338738"
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "dataset": "CapERA",
+    "versus": "ISCC-P2",
+    "energy_reduction_percent": 68.54424350028295,
+    "delay_reduction_percent": 68.46136161806065,
+    "mR_difference_pp": -0.5729164307316168,
+    "KL_reduction_percent": 94.08361436398219
+  },
+  {
+    "dataset": "CapERA",
+    "versus": "AFL-OTA",
+    "energy_reduction_percent": 19.15192692628711,
+    "delay_reduction_percent": 19.150008707836864,
+    "mR_difference_pp": -0.6380205973982811,
+    "KL_reduction_percent": 94.08771286470805
+  },
+  {
+    "dataset": "AirScape",
+    "versus": "ISCC-P2",
+    "energy_reduction_percent": 68.46605122317844,
+    "delay_reduction_percent": 68.38291492549172,
+    "mR_difference_pp": -0.1953125,
+    "KL_reduction_percent": 72.08291966646013
+  },
+  {
+    "dataset": "AirScape",
+    "versus": "AFL-OTA",
+    "energy_reduction_percent": 19.09181866580425,
+    "delay_reduction_percent": 19.089699738893362,
+    "mR_difference_pp": -0.1953125,
+    "KL_reduction_percent": 72.0837335679371
+  }
+]
