@@ -1,0 +1,152 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "case": "request_bursts_3",
+      "dataset": "CapERA",
+      "method": "joint_fm_cm_no_rm",
+      "status": "completed",
+      "wall_seconds": 44.985660552978516,
+      "transactions": 180,
+      "verified_FU_steps": 225
+    },
+    {
+      "case": "request_bursts_3",
+      "dataset": "CapERA",
+      "method": "sequential_digital_proxy",
+      "status": "completed",
+      "wall_seconds": 89.38283777236938,
+      "transactions": 195,
+      "verified_FU_steps": 225
+    },
+    {
+      "case": "request_bursts_3",
+      "dataset": "AirScape",
+      "method": "joint_fm_cm_no_rm",
+      "status": "completed",
+      "wall_seconds": 27.82239580154419,
+      "transactions": 180,
+      "verified_FU_steps": 225
+    },
+    {
+      "case": "request_bursts_3",
+      "dataset": "AirScape",
+      "method": "sequential_digital_proxy",
+      "status": "completed",
+      "wall_seconds": 13.177932977676392,
+      "transactions": 195,
+      "verified_FU_steps": 225
+    },
+    {
+      "case": "request_bursts_5",
+      "dataset": "CapERA",
+      "method": "joint_fm_cm_no_rm",
+      "status": "completed",
+      "wall_seconds": 48.404463052749634,
+      "transactions": 180,
+      "verified_FU_steps": 225
+    },
+    {
+      "case": "request_bursts_5",
+      "dataset": "CapERA",
+      "method": "sequential_digital_proxy",
+      "status": "completed",
+      "wall_seconds": 91.22031140327454,
+      "transactions": 205,
+      "verified_FU_steps": 225
+    },
+    {
+      "case": "request_bursts_5",
+      "dataset": "AirScape",
+      "method": "joint_fm_cm_no_rm",
+      "status": "completed",
+      "wall_seconds": 27.919275999069214,
+      "transactions": 180,
+      "verified_FU_steps": 225
+    },
+    {
+      "case": "request_bursts_5",
+      "dataset": "AirScape",
+      "method": "sequential_digital_proxy",
+      "status": "completed",
+      "wall_seconds": 13.360198736190796,
+      "transactions": 205,
+      "verified_FU_steps": 225
+    },
+    {
+      "case": "request_bursts_15",
+      "dataset": "CapERA",
+      "method": "joint_fm_cm_no_rm",
+      "status": "completed",
+      "wall_seconds": 65.90991950035095,
+      "transactions": 180,
+      "verified_FU_steps": 225
+    },
+    {
+      "case": "request_bursts_15",
+      "dataset": "CapERA",
+      "method": "sequential_digital_proxy",
+      "status": "completed",
+      "wall_seconds": 90.12783980369568,
+      "transactions": 255,
+      "verified_FU_steps": 225
+    },
+    {
+      "case": "request_bursts_15",
+      "dataset": "AirScape",
+      "method": "joint_fm_cm_no_rm",
+      "status": "completed",
+      "wall_seconds": 33.745911598205566,
+      "transactions": 180,
+      "verified_FU_steps": 225
+    },
+    {
+      "case": "request_bursts_15",
+      "dataset": "AirScape",
+      "method": "sequential_digital_proxy",
+      "status": "completed",
+      "wall_seconds": 14.381014585494995,
+      "transactions": 255,
+      "verified_FU_steps": 225
+    },
+    {
+      "case": "request_bursts_45",
+      "dataset": "CapERA",
+      "method": "joint_fm_cm_no_rm",
+      "status": "completed",
+      "wall_seconds": 106.12741565704346,
+      "transactions": 180,
+      "verified_FU_steps": 225
+    },
+    {
+      "case": "request_bursts_45",
+      "dataset": "CapERA",
+      "method": "sequential_digital_proxy",
+      "status": "completed",
+      "wall_seconds": 92.97792601585388,
+      "transactions": 405,
+      "verified_FU_steps": 225
+    },
+    {
+      "case": "request_bursts_45",
+      "dataset": "AirScape",
+      "method": "joint_fm_cm_no_rm",
+      "status": "completed",
+      "wall_seconds": 48.934640645980835,
+      "transactions": 180,
+      "verified_FU_steps": 225
+    },
+    {
+      "case": "request_bursts_45",
+      "dataset": "AirScape",
+      "method": "sequential_digital_proxy",
+      "status": "completed",
+      "wall_seconds": 16.039806365966797,
+      "transactions": 405,
+      "verified_FU_steps": 225
+    }
+  ],
+  "outcomes": {
+    "completed": 16
+  }
+}

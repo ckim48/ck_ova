@@ -1,0 +1,171 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "dataset": "CapERA",
+      "stage": "pre_FU_round20",
+      "evaluation": {
+        "retained": {
+          "i2t_R1": 0.0546875,
+          "t2i_R1": 0.03515625,
+          "i2t_R5": 0.1640625,
+          "t2i_R5": 0.171875,
+          "i2t_R10": 0.234375,
+          "t2i_R10": 0.28046876192092896,
+          "mR": 0.15677083532015482,
+          "loss": 5.678605079650879,
+          "KL_retrain_to_candidate": 0.017173657193779945,
+          "i2t_top1_disagreement": 0.1484375,
+          "t2i_top1_disagreement": 0.10468749701976776
+        },
+        "forget": {
+          "i2t_R1": 0.06477732956409454,
+          "t2i_R1": 0.05829959362745285,
+          "i2t_R5": 0.14979757368564606,
+          "t2i_R5": 0.17085020244121552,
+          "i2t_R10": 0.21862348914146423,
+          "t2i_R10": 0.25587043166160583,
+          "mR": 0.15303643668691316,
+          "loss": 5.76515531539917,
+          "KL_retrain_to_candidate": 0.01655687764286995,
+          "i2t_top1_disagreement": 0.11336032301187515,
+          "t2i_top1_disagreement": 0.11255060881376266
+        }
+      },
+      "mia": {
+        "loss_score_auc": 0.52056884765625,
+        "orientation_free_auc": 0.52056884765625,
+        "members": 128,
+        "nonmembers": 128,
+        "scope": "Descriptive fixed negative retrieval-loss attack, no learned attack/calibrated deletion guarantee"
+      },
+      "MIA_AUC_gap_vs_retrain": 0.0057373046875
+    },
+    {
+      "dataset": "CapERA",
+      "stage": "retained_set_retrain_round200",
+      "evaluation": {
+        "retained": {
+          "i2t_R1": 0.0625,
+          "t2i_R1": 0.0390625,
+          "i2t_R5": 0.16796875,
+          "t2i_R5": 0.18046875298023224,
+          "i2t_R10": 0.2421875,
+          "t2i_R10": 0.29609376192092896,
+          "mR": 0.16471354415019354,
+          "loss": 5.4418134689331055
+        },
+        "forget": {
+          "i2t_R1": 0.07287449389696121,
+          "t2i_R1": 0.06072874367237091,
+          "i2t_R5": 0.16194331645965576,
+          "t2i_R5": 0.18299594521522522,
+          "i2t_R10": 0.2267206460237503,
+          "t2i_R10": 0.276113361120224,
+          "mR": 0.1635627510646979,
+          "loss": 5.530363082885742
+        }
+      },
+      "mia": {
+        "loss_score_auc": 0.51483154296875,
+        "orientation_free_auc": 0.51483154296875,
+        "members": 128,
+        "nonmembers": 128,
+        "scope": "Descriptive fixed negative retrieval-loss attack, no learned attack/calibrated deletion guarantee"
+      },
+      "MIA_AUC_gap_vs_retrain": 0.0
+    },
+    {
+      "dataset": "AirScape",
+      "stage": "pre_FU_round20",
+      "evaluation": {
+        "retained": {
+          "i2t_R1": 0.05078125,
+          "t2i_R1": 0.046875,
+          "i2t_R5": 0.13671875,
+          "t2i_R5": 0.13671875,
+          "i2t_R10": 0.21875,
+          "t2i_R10": 0.1953125,
+          "mR": 0.130859375,
+          "loss": 5.7322492599487305,
+          "KL_retrain_to_candidate": 0.01631026156246662,
+          "i2t_top1_disagreement": 0.04296875,
+          "t2i_top1_disagreement": 0.17578125
+        },
+        "forget": {
+          "i2t_R1": 0.03072625771164894,
+          "t2i_R1": 0.013966480270028114,
+          "i2t_R5": 0.13687150180339813,
+          "t2i_R5": 0.07541899383068085,
+          "i2t_R10": 0.23184357583522797,
+          "t2i_R10": 0.1312849223613739,
+          "mR": 0.10335195530205965,
+          "loss": 5.88588809967041,
+          "KL_retrain_to_candidate": 0.01718580722808838,
+          "i2t_top1_disagreement": 0.0642458125948906,
+          "t2i_top1_disagreement": 0.24301676452159882
+        }
+      },
+      "mia": {
+        "loss_score_auc": 0.46990966796875,
+        "orientation_free_auc": 0.53009033203125,
+        "members": 128,
+        "nonmembers": 128,
+        "scope": "Descriptive fixed negative retrieval-loss attack, no learned attack/calibrated deletion guarantee"
+      },
+      "MIA_AUC_gap_vs_retrain": 0.0020751953125
+    },
+    {
+      "dataset": "AirScape",
+      "stage": "retained_set_retrain_round200",
+      "evaluation": {
+        "retained": {
+          "i2t_R1": 0.0546875,
+          "t2i_R1": 0.04296875,
+          "i2t_R5": 0.14453125,
+          "t2i_R5": 0.1484375,
+          "i2t_R10": 0.22265625,
+          "t2i_R10": 0.19921875,
+          "mR": 0.13541666666666666,
+          "loss": 5.5939788818359375
+        },
+        "forget": {
+          "i2t_R1": 0.03631284832954407,
+          "t2i_R1": 0.013966480270028114,
+          "i2t_R5": 0.14245809614658356,
+          "t2i_R5": 0.08938547223806381,
+          "i2t_R10": 0.2374301701784134,
+          "t2i_R10": 0.14804469048976898,
+          "mR": 0.11126629294206698,
+          "loss": 5.752079963684082
+        }
+      },
+      "mia": {
+        "loss_score_auc": 0.46783447265625,
+        "orientation_free_auc": 0.53216552734375,
+        "members": 128,
+        "nonmembers": 128,
+        "scope": "Descriptive fixed negative retrieval-loss attack, no learned attack/calibrated deletion guarantee"
+      },
+      "MIA_AUC_gap_vs_retrain": 0.0
+    }
+  ],
+  "source_sha256": {
+    "tools/uav_convergence_v2/final_reference_audit.py": "36554f13522188c560a5c3d2792892579ac23d5eaa05fc4072da31799f38b996",
+    "results/learning_ablation_v1_20261027/cases/baseline/capera_seed0/plan.json": "92132da504a8b90808747e03a9cb1d4933a84a2e11ca928efd542b1f0f54fd46",
+    "results/learning_ablation_v1_20261027/cases/baseline/capera_seed0/initial20/final.pt": "162fa849a6c73356dff1be5dd647bccc513086c6a605800cac36669182e862fe",
+    "results/learning_ablation_v1_20261027/cases/baseline/capera_seed0/initial20/rounds.json": "b26776089ef97b2499a1f20d5c30275d78cb880c1b56fca71046b4558223f55f",
+    "results/learning_ablation_v1_20261027/cases/baseline/capera_seed0/reference200/final.pt": "851b460262378f081ec0f65beacc6239482e7e2bc67a688f93e99526305b2bf8",
+    "results/learning_ablation_v1_20261027/cases/baseline/capera_seed0/reference_metrics.json": "534910428a5be11e362167d4885d146823aaa579ca7ea4dd9794926afcbfafed",
+    "results/learning_ablation_v1_20261027/cases/baseline/capera_seed0/reference_mia.json": "ccb4c96622e2f9f712499a7e31c4dd6717693488aafdb1dd0778f8ce917ecf05",
+    "results/learning_ablation_v1_20261027/cases/baseline/capera_seed0/feature_cache/features.pt": "6745e1576b1eb3787b77b064dfb55a959bb7a8a5d5a34b2f996e27167d23d1c7",
+    "results/learning_ablation_v1_20261027/cases/baseline/airscape_seed0/plan.json": "5e856fffec7bec897b916cd31a311ad2c647498f616762cf5364810ff1ec348b",
+    "results/learning_ablation_v1_20261027/cases/baseline/airscape_seed0/initial20/final.pt": "895ef7ee6583ff9f634aea691dda30b6a982e028de8189681e76ab81b6e92950",
+    "results/learning_ablation_v1_20261027/cases/baseline/airscape_seed0/initial20/rounds.json": "9151b355effbe73ff26edcadbb3e5bfc68440db7b892278724e5d5f2f5f43198",
+    "results/learning_ablation_v1_20261027/cases/baseline/airscape_seed0/reference200/final.pt": "3896a0b8add439c40b5692b0568c86ed893b7d73946cec31cec3823225f4d414",
+    "results/learning_ablation_v1_20261027/cases/baseline/airscape_seed0/reference_metrics.json": "00e698d4d657516c154b7362814c48d36377283558b5f9351e95d540d4371da6",
+    "results/learning_ablation_v1_20261027/cases/baseline/airscape_seed0/reference_mia.json": "400b2fdb7184319f28520de1d3302229d2478a52d81e6d25754fbd89a31ddfc6",
+    "results/learning_ablation_v1_20261027/cases/baseline/airscape_seed0/feature_cache/features.pt": "c174aee077acc2911b5b2b8a1426f8fea75f105e6f72d829d7ffbe8cbc72f587"
+  },
+  "scope": "Read-only evaluation of existing warm20 and reference200 checkpoints. Warm20 is the pre-FU reference, not a 200-round no-unlearning baseline. No training, tuning or checkpoint modification."
+}

@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "dataset": "CapERA",
+      "method": "separate_aircomp_periodic",
+      "status": "completed",
+      "correctly_charged_local_broadcasts": 225,
+      "old_mean_latency_s": 0.6774040651851935,
+      "new_mean_latency_s": 3.9567640651851863
+    },
+    {
+      "dataset": "CapERA",
+      "method": "aircomp_ofdma_periodic",
+      "status": "completed",
+      "correctly_charged_local_broadcasts": 225,
+      "old_mean_latency_s": 0.6774040651851935,
+      "new_mean_latency_s": 3.9567640651851863
+    },
+    {
+      "dataset": "CapERA",
+      "method": "sequential_digital_proxy",
+      "status": "completed",
+      "correctly_charged_local_broadcasts": 225,
+      "old_mean_latency_s": 1.8038040651851652,
+      "new_mean_latency_s": 5.083164065185171
+    },
+    {
+      "dataset": "AirScape",
+      "method": "separate_aircomp_periodic",
+      "status": "completed",
+      "correctly_charged_local_broadcasts": 225,
+      "old_mean_latency_s": 0.6771646388148327,
+      "new_mean_latency_s": 3.9565246388148143
+    },
+    {
+      "dataset": "AirScape",
+      "method": "aircomp_ofdma_periodic",
+      "status": "completed",
+      "correctly_charged_local_broadcasts": 225,
+      "old_mean_latency_s": 0.6771646388148327,
+      "new_mean_latency_s": 3.9565246388148143
+    },
+    {
+      "dataset": "AirScape",
+      "method": "sequential_digital_proxy",
+      "status": "completed",
+      "correctly_charged_local_broadcasts": 225,
+      "old_mean_latency_s": 1.8035646388147857,
+      "new_mean_latency_s": 5.08292463881479
+    }
+  ],
+  "outcomes": {
+    "completed": 6
+  }
+}

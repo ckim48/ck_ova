@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "figures": 19,
+  "exports": 57,
+  "series": 168,
+  "source_records": 37056,
+  "request_conditions": 50,
+  "corrected_conditions": 6,
+  "quality_confirmations": 10,
+  "archives": [
+    {
+      "root": "final_request_sweep_v1_20261027",
+      "records": 8172,
+      "arms": 16,
+      "sha256": "acbc1cc4278a6e503aab62bfc778ac25b0227753f90e8d750dd2e76ca2f36e12"
+    },
+    {
+      "root": "final_broadcast_fix_v1_20261027",
+      "records": 5427,
+      "arms": 6,
+      "sha256": "f124038b093d81c92e0a6ea5165eb495cbf3c73f1c66652178659f79662c0373"
+    }
+  ],
+  "manifest_sha256": "476c98e1056deb10daf314c62f1375bd8eb7eeb8453e8c8f1173357c356515b0"
+}

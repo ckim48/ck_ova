@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/home/wnlab/Documents/Codex/2026-10-20/files-pasted-by-the-user-standalone/outputs/ova_CK/tools/uav_convergence_v2/final_request_sweep.py", line 167, in <module>
+    if a.action=="case":run_case(a.case)
+                        ^^^^^^^^^^^^^^^^
+  File "/home/wnlab/Documents/Codex/2026-10-20/files-pasted-by-the-user-standalone/outputs/ova_CK/tools/uav_convergence_v2/final_request_sweep.py", line 104, in run_case
+    import worker, heuristic, event_energy
+ModuleNotFoundError: No module named 'event_energy'
+Traceback (most recent call last):
+  File "/home/wnlab/Documents/Codex/2026-10-20/files-pasted-by-the-user-standalone/outputs/ova_CK/tools/uav_convergence_v2/final_request_sweep.py", line 171, in <module>
+    for c in CASES:subprocess.run([sys.executable,str(Path(__file__)),"case","--case",c["id"]],cwd=ROOT,check=True)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wnlab/anaconda3/lib/python3.11/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/wnlab/Documents/Codex/2026-10-20/files-pasted-by-the-user-standalone/outputs/ova_CK/.venv/bin/python', '/home/wnlab/Documents/Codex/2026-10-20/files-pasted-by-the-user-standalone/outputs/ova_CK/tools/uav_convergence_v2/final_request_sweep.py', 'case', '--case', 'request_bursts_3']' returned non-zero exit status 1.
