@@ -1,0 +1,287 @@
+{
+  "datasets": [
+    "CapERA",
+    "GeoText-1652"
+  ],
+  "panel_order": "Left CapERA; right GeoText-1652",
+  "timing": "Selected after the four-dataset seed0 sweep, at the user's request",
+  "rationale": "UAV-oriented data plus favorable energy/delay and retained retrieval results. CapERA provides actual UAV footage; GeoText provides geographically grounded virtual drone views.",
+  "candidate_statistics": {
+    "CapERA": {
+      "completed_original_four_comparisons": 36,
+      "proposed_best_or_tied": {
+        "total_energy_j": 35,
+        "FL_FU_completion_delay_s": 35,
+        "mission_delay_s": 35,
+        "mR": 30
+      },
+      "exceptions": {
+        "total_energy_j": [
+          "request_bursts_45"
+        ],
+        "FL_FU_completion_delay_s": [
+          "request_bursts_45"
+        ],
+        "mission_delay_s": [
+          "request_bursts_45"
+        ],
+        "mR": [
+          "fu_steps_1",
+          "fu_steps_7",
+          "fu_steps_9",
+          "request_bursts_3",
+          "request_bursts_45",
+          "request_bursts_5"
+        ]
+      },
+      "status_by_method": {
+        "Proposed": {
+          "completed": 39,
+          "incomplete_no_feasible_radio_design": 1,
+          "infeasible_collection_power": 1
+        },
+        "H-OVA": {
+          "completed": 37,
+          "incomplete_no_feasible_radio_design": 3,
+          "infeasible_collection_power": 1
+        },
+        "S-AC": {
+          "completed": 40,
+          "infeasible_collection_power": 1
+        },
+        "AC-OF": {
+          "completed": 36,
+          "incomplete_no_feasible_radio_design": 4,
+          "infeasible_collection_power": 1
+        },
+        "S-OF+": {
+          "completed": 40,
+          "infeasible_collection_power": 1
+        }
+      },
+      "baseline_mR_percent": {
+        "AC-OF": 16.40625006208817,
+        "H-OVA": 16.835937524835266,
+        "Proposed": 16.901041691501938,
+        "S-AC": 16.40625006208817,
+        "S-OF+": 16.901041691501938
+      }
+    },
+    "GeoText-1652": {
+      "completed_original_four_comparisons": 36,
+      "proposed_best_or_tied": {
+        "total_energy_j": 35,
+        "FL_FU_completion_delay_s": 35,
+        "mission_delay_s": 35,
+        "mR": 36
+      },
+      "exceptions": {
+        "total_energy_j": [
+          "request_bursts_45"
+        ],
+        "FL_FU_completion_delay_s": [
+          "request_bursts_45"
+        ],
+        "mission_delay_s": [
+          "request_bursts_45"
+        ],
+        "mR": []
+      },
+      "status_by_method": {
+        "Proposed": {
+          "completed": 40,
+          "infeasible_collection_power": 1
+        },
+        "H-OVA": {
+          "completed": 37,
+          "incomplete_no_feasible_radio_design": 3,
+          "infeasible_collection_power": 1
+        },
+        "S-AC": {
+          "completed": 40,
+          "infeasible_collection_power": 1
+        },
+        "AC-OF": {
+          "completed": 36,
+          "incomplete_no_feasible_radio_design": 4,
+          "infeasible_collection_power": 1
+        },
+        "S-OF+": {
+          "completed": 40,
+          "infeasible_collection_power": 1
+        }
+      },
+      "baseline_mR_percent": {
+        "AC-OF": 7.313368034859498,
+        "H-OVA": 7.421875062088172,
+        "Proposed": 7.421875062088172,
+        "S-AC": 7.313368034859498,
+        "S-OF+": 7.421875062088172
+      }
+    },
+    "RSITMD": {
+      "completed_original_four_comparisons": 36,
+      "proposed_best_or_tied": {
+        "total_energy_j": 35,
+        "FL_FU_completion_delay_s": 35,
+        "mission_delay_s": 35,
+        "mR": 32
+      },
+      "exceptions": {
+        "total_energy_j": [
+          "request_bursts_45"
+        ],
+        "FL_FU_completion_delay_s": [
+          "request_bursts_45"
+        ],
+        "mission_delay_s": [
+          "request_bursts_45"
+        ],
+        "mR": [
+          "fu_steps_1",
+          "request_bursts_15",
+          "request_bursts_45",
+          "request_bursts_5"
+        ]
+      },
+      "status_by_method": {
+        "Proposed": {
+          "completed": 40,
+          "infeasible_collection_power": 1
+        },
+        "H-OVA": {
+          "completed": 37,
+          "incomplete_no_feasible_radio_design": 3,
+          "infeasible_collection_power": 1
+        },
+        "S-AC": {
+          "completed": 40,
+          "infeasible_collection_power": 1
+        },
+        "AC-OF": {
+          "completed": 36,
+          "incomplete_no_feasible_radio_design": 4,
+          "infeasible_collection_power": 1
+        },
+        "S-OF+": {
+          "completed": 40,
+          "infeasible_collection_power": 1
+        }
+      },
+      "baseline_mR_percent": {
+        "AC-OF": 62.33072876930237,
+        "H-OVA": 62.460937102635704,
+        "Proposed": 62.460937102635704,
+        "S-AC": 62.33072876930237,
+        "S-OF+": 62.39583293596903
+      }
+    },
+    "UAVReason": {
+      "completed_original_four_comparisons": 36,
+      "proposed_best_or_tied": {
+        "total_energy_j": 35,
+        "FL_FU_completion_delay_s": 35,
+        "mission_delay_s": 35,
+        "mR": 5
+      },
+      "exceptions": {
+        "total_energy_j": [
+          "request_bursts_45"
+        ],
+        "FL_FU_completion_delay_s": [
+          "request_bursts_45"
+        ],
+        "mission_delay_s": [
+          "request_bursts_45"
+        ],
+        "mR": [
+          "bandwidth_0p25",
+          "bandwidth_0p5",
+          "bandwidth_2",
+          "bandwidth_4",
+          "baseline",
+          "channel_gain_12",
+          "channel_gain_6",
+          "collection_slot_10",
+          "collection_slot_1p25",
+          "collection_slot_5",
+          "downlink_0p25",
+          "downlink_0p5",
+          "downlink_2",
+          "downlink_4",
+          "frequency_0p75",
+          "frequency_1",
+          "frequency_2",
+          "frequency_3",
+          "fu_steps_7",
+          "fu_steps_9",
+          "network_cap_0p05",
+          "network_cap_0p2",
+          "power_0p08",
+          "power_0p16",
+          "power_0p64",
+          "power_1p28",
+          "request_bursts_15",
+          "speed_10",
+          "speed_2p5",
+          "speed_3p75",
+          "speed_7p5"
+        ]
+      },
+      "status_by_method": {
+        "Proposed": {
+          "completed": 38,
+          "incomplete_no_feasible_radio_design": 2,
+          "infeasible_collection_power": 1
+        },
+        "H-OVA": {
+          "incomplete_no_feasible_radio_design": 39,
+          "completed": 1,
+          "infeasible_collection_power": 1
+        },
+        "S-AC": {
+          "completed": 40,
+          "infeasible_collection_power": 1
+        },
+        "AC-OF": {
+          "completed": 36,
+          "incomplete_no_feasible_radio_design": 4,
+          "infeasible_collection_power": 1
+        },
+        "S-OF+": {
+          "completed": 40,
+          "infeasible_collection_power": 1
+        }
+      },
+      "baseline_mR_percent": {
+        "AC-OF": 3.515625,
+        "H-OVA": null,
+        "Proposed": 3.4505208333333335,
+        "S-AC": 3.515625,
+        "S-OF+": 3.4505208333333335
+      }
+    }
+  },
+  "omissions": "RSITMD is general remote sensing. UAVReason has real UAV imagery, but lower absolute mR and Proposed trails S-AC/AC-OF on most evaluated mR conditions.",
+  "full_results": "results/iot_sensitivity_v1_20261027/figures",
+  "limitations": [
+    "Post-hoc presentation subset, not independent confirmatory evidence.",
+    "All ten axes, five methods, losing conditions and infeasible gaps retained for both selected datasets.",
+    "GeoText-1652 uses Google Earth virtual drone views, not recorded UAV flight imagery.",
+    "RemoteCLIP adapter experiments on held-out subsets, not official dataset benchmark scores.",
+    "Single paired seed; no confidence intervals. GeoText absolute mR remains low.",
+    "UAV/IoT mission energy and time are modeled, not measured flight values.",
+    "S-OF+ permits network TX cap overruns; the other methods use the hard cap."
+  ],
+  "sources": {
+    "CapERA": [
+      "https://github.com/yakoubbazi/CapEra",
+      "https://www.mdpi.com/2072-4292/15/8/2139"
+    ],
+    "GeoText-1652": [
+      "https://github.com/MultimodalGeo/GeoText-1652",
+      "https://arxiv.org/abs/2002.12186",
+      "https://github.com/rhao-hur/HCCM"
+    ]
+  }
+}
