@@ -6,6 +6,7 @@ from pathlib import Path
 
 import time_energy_report as chart
 from common import read, write, sha, METHODS, AXES, case_id
+from matplotlib.lines import Line2D
 
 ROOT = chart.ROOT
 DEST = ROOT / "selected_graph"
@@ -91,9 +92,16 @@ def service_ledger(directory, method, parameters, prefix, sources):
         travel_energy_j=costs["energy_travel_j"])
 
 
-def save(fig, axes, name):
+def save(fig, axes, name, status_markers=None):
     fig.legend(*axes[0].get_legend_handles_labels(), ncol=5, loc="upper center",
                bbox_to_anchor=(.5, 1.), fontsize=12, handlelength=1.6, columnspacing=.75)
+    if status_markers:
+        methods = list(dict.fromkeys(r["method"] for r in status_markers))
+        handles = [Line2D([], [], color=chart.COLORS[list(METHODS).index(method)],
+                          marker="x", markersize=7, markeredgewidth=1.6, linestyle="none",
+                          label=f"Infeasible ({METHODS[method]})") for method in methods]
+        fig.legend(handles=handles, ncol=len(handles), loc="upper center",
+                   bbox_to_anchor=(.5, .9), fontsize=11, handlelength=1.)
     settings = []
     for number, (ax, dataset) in enumerate(zip(axes, DATASETS)):
         pos = ax.get_position()
@@ -116,7 +124,7 @@ def save(fig, axes, name):
         fig.savefig(path, dpi=350, bbox_inches="tight")
         files.append(dict(file=path.name, sha256=sha(path)))
     chart.plt.close(fig)
-    return dict(name=name, axes=settings, files=files)
+    return dict(name=name, axes=settings, files=files, status_markers=status_markers or [])
 
 
 def generate():
@@ -187,6 +195,7 @@ def generate():
         ("06_bandwidth_delay_1x2", "delay_s", "Delay (s)", 1.)]:
         fig, axes = chart.style.canvas(ylabel)
         panel_values = []
+        status_markers = []
         for ax, dataset in zip(axes, DATASETS):
             ys = []
             for number, (method, label) in enumerate(METHODS.items()):
@@ -195,6 +204,16 @@ def generate():
                 chart.style.curve(ax, values, [v if v is not None else math.nan for v in y], number, label)
                 series.append(dict(figure=name, dataset=dataset, method=method, x=values, y=y,
                                    status=[r["status"] for r in records]))
+                for value, record in zip(values, records):
+                    if record["status"] != "completed":
+                        # Non-numeric status marker: x is physical bandwidth;
+                        # vertical placement is an axes fraction, never a measured y.
+                        ax.plot([value], [1.04], transform=ax.get_xaxis_transform(),
+                                marker="x", ms=7, mew=1.6, color=chart.COLORS[number],
+                                linestyle="none", clip_on=False, zorder=8,
+                                label="_nolegend_", gid=f"infeasible_{method}_{value}")
+                        status_markers.append(dict(dataset=dataset, method=method, x=value,
+                            status=record["status"], axes_y_fraction=1.04, metric_y=None))
                 ys += y
             chart.regular_axis(ax, "x", [0, 1, 2, 3, 4], 0)
             ax.set_xlabel("Bandwidth (MHz)")
@@ -204,7 +223,7 @@ def generate():
                 chart.regular_axis(ax, "y", chart.nice_ticks(ys, padding=.025, bins=6, simple=True), 0)
         else:
             chart.finish_axes(axes, panel_values, decimals=0)
-        figures.append(save(fig, axes, name))
+        figures.append(save(fig, axes, name, status_markers))
 
     assert len(figures) == 6 and len(series) == 60 and len(ledgers) == 50
     write(DEST / "data/plot_series.json", series)
@@ -219,7 +238,8 @@ def generate():
         status="Existing completed simulation records, re-accounted and plotted; no retraining or raw measurement changes"))
     lines = ["# Selected graphs", "", "Six figures only, each exported as PNG, PDF and SVG. "
         "Left: CapERA. Right: AirScape. All five existing methods use the established style, regular endpoint ticks "
-        "and matched decimal precision. No point-value labels or extra chart annotations.", "",
+        "and matched decimal precision. No point-value labels. Bandwidth figures explicitly mark "
+        "radio-infeasible conditions with a cross and a separate status legend.", "",
         "| No. | x axis | y axis | Preview |", "|---|---|---|---|"]
     for name, x, y in [(spec[0], "FL round" if spec[1] == "round" else "Time (s)", spec[3]) for spec in specs] + [
         ("05_bandwidth_total_energy_1x2", "Bandwidth (MHz)", "Total energy (kJ)"),
@@ -249,7 +269,10 @@ def generate():
         "conditions follow the original paired sensitivity protocol. **Delay** uses exactly the active "
         "FL/FU service time defined above. All five methods and five bandwidth values are retained for "
         "both datasets: 49 completed outcomes and one radio-infeasible outcome (AirScape, H-OVA, 4 MHz). "
-        "That point has no plotted energy/delay value; no missing point is filled or extrapolated.", "",
+        "That condition is shown at 4 MHz with a purple cross above the upper plot edge and the legend "
+        "`Infeasible (H-OVA)`. Its vertical placement is fixed at 104% of the axes height, outside the data area, and does not "
+        "encode an energy/delay value. The original missing metric remains null; no value is filled "
+        "or extrapolated. Marker metadata is stored separately in `data/manifest.json`.", "",
         "All results use the existing seed-0, 200-FL-round experiments and validation subsets. "
         "Raw plotting arrays, service components, original/excluded totals, axis settings and source hashes "
         "are in `data/`. Rebuild with `.venv/bin/python tools/uav_convergence_v2/selected_graphs.py`.", ""]

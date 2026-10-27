@@ -114,13 +114,14 @@
         },
         {
           "file": "01_round_fl_loss_1x2.pdf",
-          "sha256": "aefba0e633698dbab998a3db2e719a1095d62601c7df7c6f27566c759caa20b0"
+          "sha256": "9d42efa432a1d7907937b4020a0b674ac7727c6aea29a5d234acca715b04a9d0"
         },
         {
           "file": "01_round_fl_loss_1x2.svg",
-          "sha256": "f8bc92f96c4e52ac525d381292d38eace116549ee21ee8d4bcc4ff1f9d20e572"
+          "sha256": "c7c246071eb12b8d89f2a8ae0aa9a5da174a48f845b3136ff7582be0c8278a23"
         }
-      ]
+      ],
+      "status_markers": []
     },
     {
       "name": "02_round_mr_1x2",
@@ -221,13 +222,14 @@
         },
         {
           "file": "02_round_mr_1x2.pdf",
-          "sha256": "f047d82936a2694b114112593a2ac4e69caa27e998adb9f732654403ffd67571"
+          "sha256": "275ec28ebde32fd4bc5542e5bcc8f1b94c968eab917a9fc46bcc65e4481c657b"
         },
         {
           "file": "02_round_mr_1x2.svg",
-          "sha256": "c18ed6a82d8af0424c782eb40bcdbfaf36a55a14e73b7ac31b9df9f0a736ee4a"
+          "sha256": "477c7e0c9236cf3d20e32fc0cd67ef9ab95f57ec87773a9aee023acc70e1a585"
         }
-      ]
+      ],
+      "status_markers": []
     },
     {
       "name": "03_time_fl_loss_1x2",
@@ -328,13 +330,14 @@
         },
         {
           "file": "03_time_fl_loss_1x2.pdf",
-          "sha256": "5ccacc0afc87eeceeca07748b86597dbee95d8bc97cd2e5144a8ff3ed655340a"
+          "sha256": "427e616176687fdfb6c55114c3d3b94fb5512c2bc00ecc42158f0966ad0f51d7"
         },
         {
           "file": "03_time_fl_loss_1x2.svg",
-          "sha256": "0433af7b684510c37577aa03b372672d26aee28a30edf34da7b13f4328973f92"
+          "sha256": "7adde6079b00ae2d38b9a000b0a210d87a28fff39dd6153eb8bad0d4706cb106"
         }
-      ]
+      ],
+      "status_markers": []
     },
     {
       "name": "04_time_mr_1x2",
@@ -435,13 +438,14 @@
         },
         {
           "file": "04_time_mr_1x2.pdf",
-          "sha256": "7922e6f0aa19d7b7e4c7ba1925e67f953676045f54d4f7f5aacd29efae26877a"
+          "sha256": "a676821c09c5bdcb817dd6949659fa8d6a8f21a6c0b689b2b5516cbbfb9ca589"
         },
         {
           "file": "04_time_mr_1x2.svg",
-          "sha256": "e8badf20653b1600afdaff64dd3b8f315dfc0ab6ebd5cd357d37d63e2d8d5e05"
+          "sha256": "6ee39dc25d8a74ca44ad2778de17d7e283812f7d4b3c021422a59edc87a1674f"
         }
-      ]
+      ],
+      "status_markers": []
     },
     {
       "name": "05_bandwidth_total_energy_1x2",
@@ -548,15 +552,25 @@
       "files": [
         {
           "file": "05_bandwidth_total_energy_1x2.png",
-          "sha256": "ef11dba1a284f3516e937659c90c60e26092e91b466537e3a18fe735d6848522"
+          "sha256": "cabab1c49e03f009e6f6a3c2445a22d58d5a21838377d7fc6b231148ef635df6"
         },
         {
           "file": "05_bandwidth_total_energy_1x2.pdf",
-          "sha256": "46225bdc5c58406644b910ef5177a65aa1f461e74667425871da4d6e3d1dd77a"
+          "sha256": "9f7514c734441f73d721f6029525f1066303f9087b17cbf3fc1e9a4e2d12fc44"
         },
         {
           "file": "05_bandwidth_total_energy_1x2.svg",
-          "sha256": "ac2853e3215efc2be8bd0805be044621e2b179e4fc81b552bd839e5ab0024c3b"
+          "sha256": "e090b100fadc6cf520abb35f8b86f4040c284a9aa8d1bb1f9d8a43bf08f3801e"
+        }
+      ],
+      "status_markers": [
+        {
+          "dataset": "AirScape",
+          "method": "heuristic_ova",
+          "x": 4,
+          "status": "incomplete_no_feasible_radio_design",
+          "axes_y_fraction": 1.04,
+          "metric_y": null
         }
       ]
     },
@@ -653,21 +667,31 @@
       "files": [
         {
           "file": "06_bandwidth_delay_1x2.png",
-          "sha256": "949022b69b337f1329d7de2ec9dd83c8da4dacbab06076b07a059390c626e4ba"
+          "sha256": "44c48c8841eb6f220cc80c7b5de410d4b7927ec90244f014d4eb1f0a67dec7a9"
         },
         {
           "file": "06_bandwidth_delay_1x2.pdf",
-          "sha256": "44addea0700f4c29cd561548c5f3661e66debee8390141c6fb902c1f8a7b811a"
+          "sha256": "9055032dc8c1f115c8d45de3d22641c1193b7180bfe8c2b98c90dd04618a0f3e"
         },
         {
           "file": "06_bandwidth_delay_1x2.svg",
-          "sha256": "962e70f6bea09922609ba36f05db2feb7ad98746edc85c8ac32cc7056dd4a25f"
+          "sha256": "22a7e06fdd0c375f00fcba2cc6d7919dcb396e165d56cd7439dac2cf0309be59"
+        }
+      ],
+      "status_markers": [
+        {
+          "dataset": "AirScape",
+          "method": "heuristic_ova",
+          "x": 4,
+          "status": "incomplete_no_feasible_radio_design",
+          "axes_y_fraction": 1.04,
+          "metric_y": null
         }
       ]
     }
   ],
   "source_sha256": {
-    "tools/uav_convergence_v2/selected_graphs.py": "aa564a7b8698453a859687da4195d40b542dde0f129226b4d2081e972e7a1c2c",
+    "tools/uav_convergence_v2/selected_graphs.py": "90a41565986dc3b39b5b410c3a417c4be1e2cb19e5133c274b3ebb6734e55353",
     "tools/uav_real_vlm_v1/energy.py": "ed3d27a04b38de1991533b199782ad056a61c20a2148bb345c8b187706f1a004",
     "tools/uav_convergence_v2/time_energy_report.py": "0fa0d4e46e0518c0ab458792cce72b7a3f58ccb497a1b3dd3937f72c445dd70a",
     "results/airscape_power_audit_v1_20261027/cases/baseline/capera_seed0/proposed_fu_guard_cliperase/evaluations/0005.json": "3b7bdb0f0869889f93efc133c64f17ba905bdb9315790cb18a6fdbd740fd46da",
