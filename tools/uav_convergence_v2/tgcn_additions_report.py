@@ -19,7 +19,8 @@ prior, export, plots = current.prior, current.export, current.plots
 METHODS, DATASETS = current.METHODS, current.DATASETS
 NAMES = ['10_energy_mr_1x2', '11_fu_steps_energy_1x2',
          '12_capera_text_video_examples', '13_airscape_text_video_examples',
-         '14_capera_energy_matched_retrieval', '15_airscape_energy_matched_retrieval']
+         '14_capera_energy_matched_retrieval', '15_airscape_energy_matched_retrieval',
+         '16_combined_text_video_examples']
 ENERGY_BUDGET_KJ = 650.
 
 
@@ -138,26 +139,60 @@ def fu_metrics():
                         source=row['source'], actual_complete_workload=True, costs_recomputed=True))
     finally:
         prior.source = old_source
-    fig, axes = prior.chart.style.canvas('Total energy (kJ)')
-    panels = []
-    for ax, ds in zip(axes, DATASETS):
-        values = []
-        for i, (method, title) in enumerate(METHODS.items()):
-            y = [next(r['total_energy_j']*.001 for r in rows if (r['dataset'], r['method'], r['fu_steps_per_request']) == (ds, method, v)) for v in fu.VALUES]
-            prior.chart.style.curve(ax, fu.VALUES, y, i, title).set_markevery(1)
-            values += y
-            prior.SERIES.append(dict(figure=NAMES[1], dataset=ds, method=method, x=fu.VALUES, y=y,
-                                     metric='total_energy_j', scale=.001, axis='fu_steps'))
-        prior.chart.regular_axis(ax, 'x', fu.VALUES, 0)
-        ax.set_xlabel('FU steps per request')
-        panels.append(values)
-    prior.chart.finish_axes(axes, panels)
-    prior.save(fig, axes, NAMES[1], 'Total energy versus FU work per deletion request')
+    fu_bars(rows)
     write(DEST/'data/fu_workload_metrics.json', rows)
     prior.write_csv(DEST/'data/fu_workload_metrics.csv', rows)
     write(DEST/'data/fu_workload_protocol.json', fu.register())
     write(DEST/'data/fu_workload_controls.json', read(fu.OUT/'control_checks.json'))
     return dict(passed=True, new_arms=40, zero_change_controls=8, cases=checks)
+
+
+def fu_bars(rows):
+    """Display the two measured workload endpoints; keep all five in the CSV."""
+    from matplotlib.patches import Patch
+    levels, hatches = [1, 9], ['//', '..']
+    prior.chart.plt.rcParams['hatch.linewidth'] = .55
+    fig, axes = prior.chart.style.canvas('Total energy (kJ)')
+    values = [r['total_energy_j']*.001 for r in rows if r['fu_steps_per_request'] in levels]
+    ticks = prior.chart.nice_ticks([0., max(values)*1.03], bins=4, simple=True)
+    panels = []
+    for ax, ds in zip(axes, DATASETS):
+        for i, (method, label) in enumerate(METHODS.items()):
+            y = [next(r['total_energy_j']*.001 for r in rows if
+                 (r['dataset'], r['method'], r['fu_steps_per_request']) == (ds, method, v)) for v in levels]
+            positions = [i+(j-.5)*.37 for j in range(2)]
+            for j, value in enumerate(y):
+                ax.bar(positions[j], value, width=.33, color=current.PALETTE[i][0],
+                       edgecolor='#202020', linewidth=.65, hatch=hatches[j])
+            prior.SERIES.append(dict(figure=NAMES[1], dataset=ds, method=method,
+                kind='paired_bar', x=levels, y=y, bar_positions=positions, hatches=hatches,
+                color=current.PALETTE[i][0], metric='total_energy_j', scale=.001, axis='method'))
+        ax.set_xlim(-.55, len(METHODS)-.45)
+        ax.set_xticks(range(len(METHODS)), list(METHODS.values()))
+        ax.tick_params(axis='x', labelsize=8.5, length=0, pad=6)
+        ax.grid(False, axis='x')
+        prior.chart.regular_axis(ax, 'y', ticks, 0)
+        assert not ax.texts  # No bar-top numbers.
+        pos = ax.get_position()
+        fig.text((pos.x0+pos.x1)/2, .015, f'({chr(97+DATASETS.index(ds))}) {ds}',
+                 ha='center', va='bottom', fontsize=14)
+        panels.append(dict(dataset=ds, x=dict(kind='categorical', ticks=list(range(len(METHODS))),
+            limits=list(ax.get_xlim()), labels=list(METHODS.values())),
+            y=dict(ticks=ticks, limits=[ticks[0], ticks[-1]], labels=[str(int(v)) for v in ticks])))
+    fig.legend(handles=[Patch(facecolor='white', edgecolor='#202020', linewidth=.65,
+                   hatch=hatch, label=f'{v} '+('step' if v == 1 else 'steps')+' / request')
+                   for v, hatch in zip(levels, hatches)],
+               ncol=2, loc='upper center', bbox_to_anchor=(.5, 1.), fontsize=10,
+               handlelength=1.6, columnspacing=1.6)
+    files = []
+    for ext in ['png', 'pdf', 'svg']:
+        path = DEST/(NAMES[1]+'.'+ext)
+        fig.savefig(path, dpi=350, bbox_inches='tight')
+        files.append(dict(file=path.name, sha256=sha(path)))
+    prior.chart.plt.close(fig)
+    prior.FIGURES.append(dict(name=NAMES[1], title='Total energy: paired 1-step and 9-step FU workloads',
+        axes=panels, files=files, kind='paired_bar', steps_per_request=levels,
+        bars_per_method=2, bars_per_panel=8, bar_top_annotations=False))
 
 
 def retrieval_figures(study=retrieval, names=None, prefix='retrieval'):
@@ -247,10 +282,11 @@ def documents():
         'All45 deletion procedures finish by650kJ for every method. Before completion, points reflect concurrent FL/FU progress; they do not imply that all requests have already finished. After the original200FL/225FU workload, every method continues retained-only FL with the same restarted0.0035 learning rate. No new deletion requests arrive. Curves show the last completed evaluated model using steps-post, with markers at the same energy budgets. No interpolation or unexecuted model updates. All recorded declines are retained.', '',
         'Energy-to-target CSV requires all45 FU procedures finished; missing targets remain unreached. Procedure completion and retained mR do not certify forgetting quality. Existing P-KS common-retrain KL limitations remain; this figure is an energy/retained-utility comparison, not an equal-certified-unlearning claim.', '',
         '## 11: Total energy versus FU steps per request', '',
+        'The main figure uses two adjacent bars per algorithm: 1 versus 9 outer FU steps per request, the endpoints of the completed sweep. Method colors match the other resource plots; hatching identifies workload. Both panels use the same zero baseline, with no values above bars. All five measured workloads (1, 3, 5, 7, 9) remain in the full metrics files.', '',
         'Forty fresh executions:1/3/5/7/9 outer FU steps per request × four methods × two datasets. Same45 requests, sample cohorts, release ordinals,10UAV, five regions,200 totalFL rounds, initial models, features, learning/radio/energy coefficients. Every prescribed FU step finishes. Eight fresh five-step controls exactly reproduce original final parameter tensors, quality, transaction clocks and radio decisions.', '',
         'GA→FT comparators retain two local optimizer substeps per outer FU cycle; both are charged. More steps do not necessarily improve mR or KL, so all quality values and physical-bound exceedances accompany the energy figure. Flat Proposed curves are retained: co-aggregation may absorb additional FU work within the unchanged180 mission-FL transmissions. Parallel refers to joint FL/FU aggregation/application, not simultaneous local CPU execution.', '',
         '## 12–13: Earlier fixed-round retrieval diagnostics', '',
-        '[CapERA, 200 rounds](12_capera_text_video_examples.pdf) · [AirScape, 200 rounds](13_airscape_text_video_examples.pdf). These earlier diagnostic figures remain accessible as supporting material; the main gallery uses the selected successful examples in14–15.', '',
+        '[CapERA, 200 rounds](12_capera_text_video_examples.pdf) · [AirScape, 200 rounds](13_airscape_text_video_examples.pdf). These earlier diagnostic figures remain accessible as supporting material; the main gallery uses the combined selected examples in16.', '',
         'Evaluate the unchanged final200 checkpoints with all45 requests/225FU cycles complete, at the same workload rather than the same energy. Native captions, original gallery and cached eight-frame RemoteCLIP features are unchanged. All six recalls and validation loss are independently reproduced before selecting illustrations. A displayed image is the fourth of the same eight original sampled video frames, downsampled only to fit the figure. It is not a generated image and the task is video retrieval, not caption generation.', '',
         'Each dataset shows one selected Proposed rank advantage and one disadvantage. Prefer a top1 reversal among unique native caption strings; choose the median rank gap with caption-ID tie breaking. Full selection rules and counts are in the protocol. These two deliberately contrasting cases are not a random or representative sample. Complete retained-query rank/top3-ID tables and better/equal/worse counts prevent a favorable-only interpretation.', '',
         'Ground truth is the annotated paired video, not a judgment that every other semantically similar video is irrelevant. Green borders indicate the correct top1 video, red an incorrect top1; GT rank gives the annotated video position in the full gallery. Full native query text and media/frame hashes accompany selected cases. Long displayed queries may be explicitly abbreviated, but inference always used the original complete caption. Only derived representative-frame figures are published; raw videos/features/checkpoints stay local.', '',
@@ -258,6 +294,11 @@ def documents():
         'These use the exact last completed model within 650 kJ from the energy/mR curve. All 45 FU procedures complete. The original continuation was replayed unchanged; every evaluation/energy/time point and final parameter tensor reproduced exactly before intermediate checkpoints were used. Different completed FL counts reflect actual energy costs.', '',
         'Display revision v2 shows six different ground-truth videos per dataset in a compact six-row grid with one shared header. Every shown Proposed result has ground-truth rank 1 and improves over at least one comparator; comparator rank-1 ties are preserved. The examples were selected after evaluation for favorable outcomes and scene diversity. They illustrate successful cases and do not estimate average success, statistical superiority, or dominance over every comparator. All complete query-rank tables, paired better/equal/worse counts, checkpoints and aggregate metrics are unchanged.', '',
         'CapERA scenes: baseball, urban fire, harvesting, a crowd, swimming and a bridge. AirScape scenes: elephants, a snowy parking area, pedestrians, horses near water, a lighthouse and a road junction. Original query excerpts are shown with explicit ellipses where the repeated camera-perspective sentence or a long ending is omitted; inference used the full native caption. No generated captions or altered image content. Full captions, selection IDs, candidate counts and frame provenance accompany the figures.', '',
+        '[Earlier CapERA success-only sheet](14_capera_energy_matched_retrieval.pdf) · [Earlier AirScape success-only sheet](15_airscape_energy_matched_retrieval.pdf). These are retained for reference; figure16 is the current combined main illustration.', '',
+        '## 16: Combined examples from both datasets', '',
+        'One sheet contains four CapERA and four AirScape cases, with three Proposed top1 successes and one miss in each dataset. Successes cover urban fire, harvesting, swimming, elephants, horses near water and a road junction. The misses (flood and pagoda) reuse the original median-rank-gap disadvantage examples selected by the frozen inference protocol. This is a deliberate illustrative 3:1 mixture, not an observed success rate. Same 650 kJ checkpoints and complete native-query inference as14–15; no retraining or score changes.', '',
+        'Every method column shows its actual top1 retrieved video. The numeric GT rank is the rank of the annotated paired video in the entire gallery, not the rank of the displayed top1 image. Green means the paired video is top1, red means it is not. Similar-looking unpaired videos may still be semantically plausible. Each image is one original frame from a video scored using eight frames, so the single displayed frame cannot establish temporal understanding.', '',
+        'Interpretation: this figure illustrates retained text-to-video retrieval behavior and typical-looking confusions under a shared energy budget. The full-query mR-versus-energy curve and complete rank tables establish aggregate performance. These selected retained-data cases cannot establish forgetting quality, explain gradient causality or by themselves prove AirComp superiority. A paper caption should state the selection and budget explicitly.', '',
         'Single development seed and frozen-feature rank10 adapter study, not a full-backbone VLM hardware benchmark or statistical superiority result.', '',
         '## Reproduction', '', '```sh',
         '.venv/bin/python tools/uav_convergence_v2/tgcn_fu_workload_v1.py run',
@@ -277,7 +318,7 @@ def documents():
             a, b = text.index(marker), text.index(end)+len(end)
             text = text[:a]+text[b:]
         insert = text.index('\n')+1
-        card = ('\n'+marker+'\n[Energy–mR, FU workload and selected successful retrieval examples]('+relative+'TGCN_ADDITIONS.md). Main figures10–11 and14–15; fixed-round diagnostics12–13 remain linked.\n'+end+'\n')
+        card = ('\n'+marker+'\n[Energy–mR, paired FU-workload bars and combined retrieval examples]('+relative+'TGCN_ADDITIONS.md). Main figures10–11 and16; earlier diagnostic/success sheets12–15 remain linked.\n'+end+'\n')
         path.write_text(text[:insert]+card+text[insert:])
         path = folder/'index.html'
         text = path.read_text()
@@ -285,7 +326,7 @@ def documents():
             a, b = text.index(marker), text.index(end)+len(end)
             text = text[:a]+text[b:]
         insert = text.index('</h1>')+len('</h1>')
-        main_names = [NAMES[0], NAMES[1], NAMES[4], NAMES[5]] if folder == DEST else [NAMES[0], NAMES[4], NAMES[5]]
+        main_names = [NAMES[0], NAMES[1], NAMES[6]] if folder == DEST else [NAMES[0], NAMES[6]]
         figures = [f for f in prior.FIGURES if f['name'] in main_names]
         cards = ''.join('<section><h2>'+html.escape(f['title'])+'</h2><a href="'+relative+f['name']+'.pdf"><img loading="lazy" src="'+relative+f['name']+'.png"></a></section>' for f in figures)
         text = text[:insert]+marker+'<p><a href="'+relative+'TGCN_ADDITIONS.md">Energy efficiency and actual VLM retrieval: definitions and full numerical results</a></p>'+cards+end+text[insert:]
@@ -296,28 +337,32 @@ def main(success_only=False):
     if success_only:
         manifest = read(DEST/'data/tgcn_manifest.json')
         audit = read(DEST/'data/tgcn_audit.json')
-        kept = [f for f in manifest['figures'] if f['name'] not in NAMES[4:6]]
-        # Restyle only the selected illustrations; preserve numerical results and
-        # every existing chart/diagnostic outside14–15 byte-for-byte.
+        kept = [f for f in manifest['figures'] if f['name'] not in [NAMES[1], NAMES[6]]]
+        # Update only the FU workload display and new combined illustration.
         untouched = {item['file']: sha(DEST/item['file']) for f in kept for item in f['files']}
         numerical = {str(p.relative_to(DEST)): sha(p) for p in (DEST/'data').iterdir()
                      if p.suffix in ['.json', '.csv'] and
                      (p.name.startswith(('energy_', 'fu_workload_', 'mse_')) or
-                      p.name in ['metrics.json', 'metrics.csv', 'tgcn_plot_series.json'] or
+                      p.name in ['metrics.json', 'metrics.csv'] or
                       any(s in p.name for s in ['query_ranks', 'paired_counts', 'summary']))}
         setup()
         prior.FIGURES = kept
         prior.SOURCES = manifest['source_sha256']
+        prior.SERIES = [s for s in read(DEST/'data/tgcn_plot_series.json') if s['figure'] != NAMES[1]]
+        fu_bars(read(DEST/'data/fu_workload_metrics.json'))
         import tgcn_energy_retrieval_v1 as energy_retrieval
-        audit['energy_matched_retrieval'] = retrieval_figures(energy_retrieval, NAMES[4:6], 'retrieval_energy')
+        import tgcn_combined_examples_v3 as combined
+        audit['combined_retrieval'] = combined.render(__import__(__name__), energy_retrieval)
+        prior.FIGURES.sort(key=lambda f: f['name'])
         prior.SOURCES[str(Path(__file__).relative_to(ROOT))] = sha(Path(__file__))
         manifest.update(unix=time.time(), figures=prior.FIGURES, source_sha256=prior.SOURCES,
-                        display_revision='favorable_diverse_v2', unchanged_measurements=numerical)
+                        display_revision='combined_mixed_v3_paired_fu_bars', unchanged_measurements=numerical)
+        write(DEST/'data/tgcn_plot_series.json', prior.SERIES)
         write(DEST/'data/tgcn_manifest.json', manifest)
         write(DEST/'data/tgcn_audit.json', audit)
         assert all(sha(DEST/p) == digest for p, digest in {**untouched, **numerical}.items())
         documents()
-        print(dict(passed=True, restyled_figures=2, successful_examples=12, new_training=0), flush=True)
+        print(dict(passed=True, updated_figures=2, combined_examples=8, new_training=0), flush=True)
         return
     original = read(DEST/'data/manifest.json')
     # Keep this extension's metadata separate so all nine original figures and
@@ -327,6 +372,8 @@ def main(success_only=False):
     audits = dict(energy_utility=energy_utility(), fu_workload=fu_metrics(), retrieval=retrieval_figures())
     import tgcn_energy_retrieval_v1 as energy_retrieval
     audits['energy_matched_retrieval'] = retrieval_figures(energy_retrieval, NAMES[4:6], 'retrieval_energy')
+    import tgcn_combined_examples_v3 as combined
+    audits['combined_retrieval'] = combined.render(__import__(__name__), energy_retrieval)
     write(DEST/'data/tgcn_audit.json', dict(passed=True, **audits))
     write(DEST/'data/tgcn_plot_series.json', prior.SERIES)
     for module in [Path(__file__), Path(fu.__file__), Path(retrieval.__file__)]:
@@ -342,5 +389,5 @@ def main(success_only=False):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--success-only', action='store_true', help='Only update the compact successful-retrieval illustrations and gallery links.')
+    parser.add_argument('--display-only', '--success-only', dest='success_only', action='store_true', help='Update paired FU bars and combined retrieval examples from existing measured results.')
     main(parser.parse_args().success_only)

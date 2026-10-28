@@ -1,8 +1,10 @@
 # Downlink bandwidth, paired resource bars and comparison tables
 
 <!-- tgcn-additions -->
-[Energy–mR, FU workload and selected successful retrieval examples](TGCN_ADDITIONS.md). Main figures10–11 and14–15; fixed-round diagnostics12–13 remain linked.
+[Energy–mR, paired FU-workload bars and combined retrieval examples](TGCN_ADDITIONS.md). Main figures10–11 and16; earlier diagnostic/success sheets12–15 remain linked.
 <!-- /tgcn-additions -->
+
+
 
 
 

@@ -1,6 +1,6 @@
 {
   "complete": true,
-  "unix": 1793188543.7154896,
+  "unix": 1793191327.8316464,
   "methods": {
     "gate_select16": "Proposed",
     "iscc": "ISCC-P2",
@@ -128,28 +128,27 @@
     },
     {
       "name": "11_fu_steps_energy_1x2",
-      "title": "Total energy versus FU work per deletion request",
+      "title": "Total energy: paired 1-step and 9-step FU workloads",
       "axes": [
         {
           "dataset": "CapERA",
           "x": {
+            "kind": "categorical",
             "ticks": [
+              0,
               1,
-              3,
-              5,
-              7,
-              9
+              2,
+              3
             ],
             "limits": [
-              1.0,
-              9.0
+              -0.55,
+              3.55
             ],
             "labels": [
-              "1",
-              "3",
-              "5",
-              "7",
-              "9"
+              "Proposed",
+              "ISCC-P2",
+              "AFL-OTA",
+              "F-SalUn"
             ]
           },
           "y": {
@@ -176,23 +175,22 @@
         {
           "dataset": "AirScape",
           "x": {
+            "kind": "categorical",
             "ticks": [
+              0,
               1,
-              3,
-              5,
-              7,
-              9
+              2,
+              3
             ],
             "limits": [
-              1.0,
-              9.0
+              -0.55,
+              3.55
             ],
             "labels": [
-              "1",
-              "3",
-              "5",
-              "7",
-              "9"
+              "Proposed",
+              "ISCC-P2",
+              "AFL-OTA",
+              "F-SalUn"
             ]
           },
           "y": {
@@ -220,17 +218,25 @@
       "files": [
         {
           "file": "11_fu_steps_energy_1x2.png",
-          "sha256": "27f8e0b24b936100e0773eaff05a0f518f8bb649faca3c215003909c45ea5fee"
+          "sha256": "13a6338fe32c8e656f53230062c26451657d0f66cd919b8eff6817129b352ede"
         },
         {
           "file": "11_fu_steps_energy_1x2.pdf",
-          "sha256": "6c5ac3d6f31a3a23d4f5a381df9df7387ed99162dc91d7dd259ed5be19bd72d1"
+          "sha256": "3cd6c131b5739a653478245c6bea8270e96b335d61a6f796eefb9133a38786bb"
         },
         {
           "file": "11_fu_steps_energy_1x2.svg",
-          "sha256": "d2e406d48aae0f3eee4f1e1ca3917cde8dd27c1aa3bbfddd215811c0e89b22db"
+          "sha256": "8a3c261add3a0b38f6c10542257a7b86b7409b18aabdb86f1b5014cb3ed5dbb4"
         }
-      ]
+      ],
+      "kind": "paired_bar",
+      "steps_per_request": [
+        1,
+        9
+      ],
+      "bars_per_method": 2,
+      "bars_per_panel": 8,
+      "bar_top_annotations": false
     },
     {
       "name": "12_capera_text_video_examples",
@@ -1257,6 +1263,517 @@
       "shared_column_headers": true,
       "query_fontsize_pt": 9.6,
       "caption": "Selected successful text-to-video retrieval examples under the same 650 kJ energy budget. All shown Proposed results rank the annotated video first; comparator ties remain visible. The examples were selected for favorable outcomes and scene diversity; aggregate performance is reported over the full query set."
+    },
+    {
+      "name": "16_combined_text_video_examples",
+      "title": "CapERA and AirScape: selected retrieval examples at 650 kJ",
+      "kind": "retrieval_examples",
+      "selection_kind": "selected_successes_and_misses",
+      "axes": [],
+      "files": [
+        {
+          "file": "16_combined_text_video_examples.png",
+          "sha256": "36191b1540cdff8c6318aacb56fa77659f66b58a8bace5d4aa0d786ff0441414"
+        },
+        {
+          "file": "16_combined_text_video_examples.pdf",
+          "sha256": "f16b11f9666971309b029b6e35329b6b21ebe3bb7ce12191c13c1563395e0779"
+        },
+        {
+          "file": "16_combined_text_video_examples.svg",
+          "sha256": "e5cb74cfb991215618aaa9b41b6ead849f0e76a66f50686bfe13f9a2927cac32"
+        }
+      ],
+      "layout": [
+        {
+          "dataset": "CapERA",
+          "caption_id": 2096,
+          "category": "selected_success",
+          "row": 0,
+          "method": null,
+          "video_id": 419,
+          "ground_truth_video": 419,
+          "GT_rank": null,
+          "top1_correct": true,
+          "border_color": "#333333"
+        },
+        {
+          "dataset": "CapERA",
+          "caption_id": 2096,
+          "category": "selected_success",
+          "row": 0,
+          "method": "gate_select16",
+          "video_id": 419,
+          "ground_truth_video": 419,
+          "GT_rank": 1,
+          "top1_correct": true,
+          "border_color": "#438F56"
+        },
+        {
+          "dataset": "CapERA",
+          "caption_id": 2096,
+          "category": "selected_success",
+          "row": 0,
+          "method": "iscc",
+          "video_id": 270,
+          "ground_truth_video": 419,
+          "GT_rank": 7,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "dataset": "CapERA",
+          "caption_id": 2096,
+          "category": "selected_success",
+          "row": 0,
+          "method": "afl",
+          "video_id": 270,
+          "ground_truth_video": 419,
+          "GT_rank": 3,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "dataset": "CapERA",
+          "caption_id": 2096,
+          "category": "selected_success",
+          "row": 0,
+          "method": "salun",
+          "video_id": 270,
+          "ground_truth_video": 419,
+          "GT_rank": 7,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "dataset": "CapERA",
+          "caption_id": 2431,
+          "category": "selected_success",
+          "row": 1,
+          "method": null,
+          "video_id": 486,
+          "ground_truth_video": 486,
+          "GT_rank": null,
+          "top1_correct": true,
+          "border_color": "#333333"
+        },
+        {
+          "dataset": "CapERA",
+          "caption_id": 2431,
+          "category": "selected_success",
+          "row": 1,
+          "method": "gate_select16",
+          "video_id": 486,
+          "ground_truth_video": 486,
+          "GT_rank": 1,
+          "top1_correct": true,
+          "border_color": "#438F56"
+        },
+        {
+          "dataset": "CapERA",
+          "caption_id": 2431,
+          "category": "selected_success",
+          "row": 1,
+          "method": "iscc",
+          "video_id": 522,
+          "ground_truth_video": 486,
+          "GT_rank": 2,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "dataset": "CapERA",
+          "caption_id": 2431,
+          "category": "selected_success",
+          "row": 1,
+          "method": "afl",
+          "video_id": 522,
+          "ground_truth_video": 486,
+          "GT_rank": 2,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "dataset": "CapERA",
+          "caption_id": 2431,
+          "category": "selected_success",
+          "row": 1,
+          "method": "salun",
+          "video_id": 522,
+          "ground_truth_video": 486,
+          "GT_rank": 2,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "dataset": "CapERA",
+          "caption_id": 6635,
+          "category": "selected_success",
+          "row": 2,
+          "method": null,
+          "video_id": 1327,
+          "ground_truth_video": 1327,
+          "GT_rank": null,
+          "top1_correct": true,
+          "border_color": "#333333"
+        },
+        {
+          "dataset": "CapERA",
+          "caption_id": 6635,
+          "category": "selected_success",
+          "row": 2,
+          "method": "gate_select16",
+          "video_id": 1327,
+          "ground_truth_video": 1327,
+          "GT_rank": 1,
+          "top1_correct": true,
+          "border_color": "#438F56"
+        },
+        {
+          "dataset": "CapERA",
+          "caption_id": 6635,
+          "category": "selected_success",
+          "row": 2,
+          "method": "iscc",
+          "video_id": 1161,
+          "ground_truth_video": 1327,
+          "GT_rank": 3,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "dataset": "CapERA",
+          "caption_id": 6635,
+          "category": "selected_success",
+          "row": 2,
+          "method": "afl",
+          "video_id": 908,
+          "ground_truth_video": 1327,
+          "GT_rank": 4,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "dataset": "CapERA",
+          "caption_id": 6635,
+          "category": "selected_success",
+          "row": 2,
+          "method": "salun",
+          "video_id": 1161,
+          "ground_truth_video": 1327,
+          "GT_rank": 4,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "dataset": "CapERA",
+          "caption_id": 2165,
+          "category": "selected_miss",
+          "row": 3,
+          "method": null,
+          "video_id": 433,
+          "ground_truth_video": 433,
+          "GT_rank": null,
+          "top1_correct": true,
+          "border_color": "#333333"
+        },
+        {
+          "dataset": "CapERA",
+          "caption_id": 2165,
+          "category": "selected_miss",
+          "row": 3,
+          "method": "gate_select16",
+          "video_id": 394,
+          "ground_truth_video": 433,
+          "GT_rank": 3,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "dataset": "CapERA",
+          "caption_id": 2165,
+          "category": "selected_miss",
+          "row": 3,
+          "method": "iscc",
+          "video_id": 433,
+          "ground_truth_video": 433,
+          "GT_rank": 1,
+          "top1_correct": true,
+          "border_color": "#438F56"
+        },
+        {
+          "dataset": "CapERA",
+          "caption_id": 2165,
+          "category": "selected_miss",
+          "row": 3,
+          "method": "afl",
+          "video_id": 394,
+          "ground_truth_video": 433,
+          "GT_rank": 3,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "dataset": "CapERA",
+          "caption_id": 2165,
+          "category": "selected_miss",
+          "row": 3,
+          "method": "salun",
+          "video_id": 433,
+          "ground_truth_video": 433,
+          "GT_rank": 1,
+          "top1_correct": true,
+          "border_color": "#438F56"
+        },
+        {
+          "dataset": "AirScape",
+          "caption_id": 7,
+          "category": "selected_success",
+          "row": 4,
+          "method": null,
+          "video_id": 7,
+          "ground_truth_video": 7,
+          "GT_rank": null,
+          "top1_correct": true,
+          "border_color": "#333333"
+        },
+        {
+          "dataset": "AirScape",
+          "caption_id": 7,
+          "category": "selected_success",
+          "row": 4,
+          "method": "gate_select16",
+          "video_id": 7,
+          "ground_truth_video": 7,
+          "GT_rank": 1,
+          "top1_correct": true,
+          "border_color": "#438F56"
+        },
+        {
+          "dataset": "AirScape",
+          "caption_id": 7,
+          "category": "selected_success",
+          "row": 4,
+          "method": "iscc",
+          "video_id": 38,
+          "ground_truth_video": 7,
+          "GT_rank": 25,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "dataset": "AirScape",
+          "caption_id": 7,
+          "category": "selected_success",
+          "row": 4,
+          "method": "afl",
+          "video_id": 7,
+          "ground_truth_video": 7,
+          "GT_rank": 1,
+          "top1_correct": true,
+          "border_color": "#438F56"
+        },
+        {
+          "dataset": "AirScape",
+          "caption_id": 7,
+          "category": "selected_success",
+          "row": 4,
+          "method": "salun",
+          "video_id": 38,
+          "ground_truth_video": 7,
+          "GT_rank": 26,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "dataset": "AirScape",
+          "caption_id": 154,
+          "category": "selected_success",
+          "row": 5,
+          "method": null,
+          "video_id": 154,
+          "ground_truth_video": 154,
+          "GT_rank": null,
+          "top1_correct": true,
+          "border_color": "#333333"
+        },
+        {
+          "dataset": "AirScape",
+          "caption_id": 154,
+          "category": "selected_success",
+          "row": 5,
+          "method": "gate_select16",
+          "video_id": 154,
+          "ground_truth_video": 154,
+          "GT_rank": 1,
+          "top1_correct": true,
+          "border_color": "#438F56"
+        },
+        {
+          "dataset": "AirScape",
+          "caption_id": 154,
+          "category": "selected_success",
+          "row": 5,
+          "method": "iscc",
+          "video_id": 1283,
+          "ground_truth_video": 154,
+          "GT_rank": 4,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "dataset": "AirScape",
+          "caption_id": 154,
+          "category": "selected_success",
+          "row": 5,
+          "method": "afl",
+          "video_id": 1283,
+          "ground_truth_video": 154,
+          "GT_rank": 2,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "dataset": "AirScape",
+          "caption_id": 154,
+          "category": "selected_success",
+          "row": 5,
+          "method": "salun",
+          "video_id": 1283,
+          "ground_truth_video": 154,
+          "GT_rank": 4,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "dataset": "AirScape",
+          "caption_id": 234,
+          "category": "selected_success",
+          "row": 6,
+          "method": null,
+          "video_id": 234,
+          "ground_truth_video": 234,
+          "GT_rank": null,
+          "top1_correct": true,
+          "border_color": "#333333"
+        },
+        {
+          "dataset": "AirScape",
+          "caption_id": 234,
+          "category": "selected_success",
+          "row": 6,
+          "method": "gate_select16",
+          "video_id": 234,
+          "ground_truth_video": 234,
+          "GT_rank": 1,
+          "top1_correct": true,
+          "border_color": "#438F56"
+        },
+        {
+          "dataset": "AirScape",
+          "caption_id": 234,
+          "category": "selected_success",
+          "row": 6,
+          "method": "iscc",
+          "video_id": 168,
+          "ground_truth_video": 234,
+          "GT_rank": 36,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "dataset": "AirScape",
+          "caption_id": 234,
+          "category": "selected_success",
+          "row": 6,
+          "method": "afl",
+          "video_id": 1230,
+          "ground_truth_video": 234,
+          "GT_rank": 2,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "dataset": "AirScape",
+          "caption_id": 234,
+          "category": "selected_success",
+          "row": 6,
+          "method": "salun",
+          "video_id": 168,
+          "ground_truth_video": 234,
+          "GT_rank": 30,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "dataset": "AirScape",
+          "caption_id": 105,
+          "category": "selected_miss",
+          "row": 7,
+          "method": null,
+          "video_id": 105,
+          "ground_truth_video": 105,
+          "GT_rank": null,
+          "top1_correct": true,
+          "border_color": "#333333"
+        },
+        {
+          "dataset": "AirScape",
+          "caption_id": 105,
+          "category": "selected_miss",
+          "row": 7,
+          "method": "gate_select16",
+          "video_id": 1079,
+          "ground_truth_video": 105,
+          "GT_rank": 3,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "dataset": "AirScape",
+          "caption_id": 105,
+          "category": "selected_miss",
+          "row": 7,
+          "method": "iscc",
+          "video_id": 105,
+          "ground_truth_video": 105,
+          "GT_rank": 1,
+          "top1_correct": true,
+          "border_color": "#438F56"
+        },
+        {
+          "dataset": "AirScape",
+          "caption_id": 105,
+          "category": "selected_miss",
+          "row": 7,
+          "method": "afl",
+          "video_id": 105,
+          "ground_truth_video": 105,
+          "GT_rank": 1,
+          "top1_correct": true,
+          "border_color": "#438F56"
+        },
+        {
+          "dataset": "AirScape",
+          "caption_id": 105,
+          "category": "selected_miss",
+          "row": 7,
+          "method": "salun",
+          "video_id": 105,
+          "ground_truth_video": 105,
+          "GT_rank": 1,
+          "top1_correct": true,
+          "border_color": "#438F56"
+        }
+      ],
+      "rows": 8,
+      "rows_per_dataset": 4,
+      "shared_column_headers": true,
+      "figure_inches": [
+        8.8,
+        8.65
+      ],
+      "caption": "Selected text-to-video retrieval examples under a common 650 kJ active-energy budget, with three successes and one miss per dataset. Each method displays its top-ranked video; GT rank gives the annotated paired video rank in the full gallery. Green/red borders indicate correct/incorrect paired-video top1 retrieval. The selected mix does not estimate average success or forgetting quality."
     }
   ],
   "source_sha256": {
@@ -32052,10 +32569,11 @@
     "results/tgcn_fu_workload_v1_20261028/salun/salun/cases/fu_steps_9/airscape_seed0/iscc_p2_gaft/service_completion.json": "b7fce8f228c8db8b032febdbe308210370e75f926737be71fdb59a4dd4c9175d",
     "results/tgcn_fu_workload_v1_20261028/salun/salun/cases/fu_steps_9/airscape_seed0/iscc_p2_gaft/mia.json": "c1d8c670aedf55429fdb4ea3b7a43dde09450d1c915d0e417a41e105cb2321a2",
     "results/tgcn_fu_workload_v1_20261028/salun/salun/cases/fu_steps_9/airscape_seed0/iscc_p2_gaft/request_records.json": "b48dacfa9e2fbd9b93858778b6b899976ddf12044b57e272a536342f3f01d1e6",
-    "tools/uav_convergence_v2/tgcn_additions_report.py": "9665472a069b0f9c3c3ab0e0f847612e7016daee6dfd95cb4fbbb63c882f75a6",
+    "tools/uav_convergence_v2/tgcn_additions_report.py": "af390ba144d2d4cbf61fb75d153b98385d5021b034ffe12322a9e04af83a4352",
     "tools/uav_convergence_v2/tgcn_fu_workload_v1.py": "e2778e46d39dd8e3a3453467e37acba6e9313bdd9c76c6f43823a46b128eb5a2",
     "tools/uav_convergence_v2/tgcn_retrieval_examples_v1.py": "ca2913dd6896a3e257f27e2dfeec5cc9909f9ca3b4d107de5c89df2346536c58",
-    "tools/uav_convergence_v2/tgcn_success_examples_v2.py": "d345a150a94280df2c69ecb320af5232a3bf3e402ac2468248405b08097974da"
+    "tools/uav_convergence_v2/tgcn_success_examples_v2.py": "d345a150a94280df2c69ecb320af5232a3bf3e402ac2468248405b08097974da",
+    "tools/uav_convergence_v2/tgcn_combined_examples_v3.py": "5ada36ceca3cf2a800c398c9975952002a6ac21366376c04689d3025acbf0a1b"
   },
   "fresh_FU_workload_arms": 40,
   "original_figures": {
@@ -32093,7 +32611,7 @@
   },
   "actual_retrieval_models": 16,
   "scope": "Scientific figure extension; base manifest/metrics/artifacts unchanged.",
-  "display_revision": "favorable_diverse_v2",
+  "display_revision": "combined_mixed_v3_paired_fu_bars",
   "unchanged_measurements": {
     "data/retrieval_energy_capera_query_ranks.csv": "4d15b3698b394eb8572b68a48dd4b875848e644ee675da693fe7029b5126a6fc",
     "data/retrieval_summary.csv": "097560911d2f17c6696cc7e4bd37f28f0cfaabd702d7570af324b70435cdf4b6",
@@ -32118,7 +32636,6 @@
     "data/mse_metrics.csv": "3e561e7debba4eff459227ad901432b27a8741c830bed0339a1f9fc7fff702da",
     "data/mse_audit.json": "2c362f8451e3ddd645bc1aa9ed910cff5c0cbd82eb15e07e0e203bdf3c4e846b",
     "data/retrieval_energy_airscape_paired_counts.json": "c41d3799bcbd7d46573241f78bcffee562206d7c9b3fe4f10069b0a1d8d5978b",
-    "data/tgcn_plot_series.json": "366cd4ffc76913134e9d9e1b4de528fd6aeb7546b56e99d8ffe332ee8b11b399",
     "data/energy_utility_checkpoints.csv": "c54efa8c51cdac8d5dec56e3f87c7ee58e6d2aa1f489eeafedb611ee8a11f100",
     "data/fu_workload_protocol.json": "31f97435bf0d9666da666e38912bd6c4a725fec66a260096fb0615114076f7ef",
     "data/metrics.csv": "f68d883dc91df35e21a9f75e89863d556f4ea264814e05789b63f0960308da47",

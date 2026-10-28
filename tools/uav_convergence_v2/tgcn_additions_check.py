@@ -16,15 +16,17 @@ def check_retrieval(module, prefix, figures):
     read, sha, dest, root = report.read, report.sha, report.DEST, report.ROOT
     protocol = read(dest/'data'/(prefix+'_examples_protocol.json'))
     examples = read(dest/'data'/(prefix+'_examples.json'))
-    summaries = read(dest/'data'/(prefix+'_summary.json'))
+    mixed = protocol.get('display_selection_version') == 'combined_mixed_v3'
+    source_prefix = 'retrieval_energy' if mixed else prefix
+    summaries = read(dest/'data'/(source_prefix+'_summary.json'))
     frames = read(dest/'data'/(prefix+'_frame_provenance.json'))
     successful = protocol.get('display_selection_version') == 'favorable_diverse_v2'
-    assert len(summaries) == 8 and len(examples) == (12 if successful else 4)
+    assert len(summaries) == 8 and len(examples) == (8 if mixed else 12 if successful else 4)
     for name, digest in protocol['source_sha256'].items():
         assert sha(root/name) == digest, name
     for ds in report.DATASETS:
-        ranks = read(dest/'data'/(prefix+'_'+ds.lower()+'_query_ranks.json'))
-        pairs = read(dest/'data'/(prefix+'_'+ds.lower()+'_paired_counts.json'))
+        ranks = read(dest/'data'/(source_prefix+'_'+ds.lower()+'_query_ranks.json'))
+        pairs = read(dest/'data'/(source_prefix+'_'+ds.lower()+'_paired_counts.json'))
         data, _ = retrieval.data_for(ds)
         arm = report.current.source('baseline', ds, 'gate_select16')
         plan = read(arm.parent/'plan.json')
@@ -56,7 +58,12 @@ def check_retrieval(module, prefix, figures):
                 assert pair['equal'] == sum(v==0 for v in delta)
                 assert pair['worse'] == sum(v<0 for v in delta)
         chosen = [r for r in examples if r['dataset'] == ds]
-        if successful:
+        if mixed:
+            assert len(chosen) == len({r['ground_truth_video'] for r in chosen}) == 4
+            assert [r['caption_id'] for r in chosen] == protocol['chosen_caption_ids'][ds]
+            assert sum(r['category'] == 'selected_success' for r in chosen) == 3
+            assert sum(r['category'] == 'selected_miss' for r in chosen) == 1
+        elif successful:
             assert len(chosen) == len({r['ground_truth_video'] for r in chosen}) == 6
             assert {r['category'] for r in chosen} == {'selected_success'}
             assert [r['caption_id'] for r in chosen] == protocol['chosen_caption_ids'][ds]
@@ -72,11 +79,17 @@ def check_retrieval(module, prefix, figures):
             row = next(r for r in ranks if r['caption_id'] == case['caption_id'])
             assert all(case[k] == v for k, v in row.items())
             assert case['query'] == data.captions[case['caption_id']]
-            if successful:
+            if successful or mixed:
+                assert case['display_query'].replace('…', '').strip() in ' '.join(case['query'].split())
+            if mixed and case['category'] == 'selected_miss':
+                original = next(r for r in read(module.OUT/'examples.json') if r['dataset'] == ds and r['category'] == 'disadvantage')
+                assert row['caption_id'] == original['caption_id']
+                assert row['gate_select16_rank'] > 1
+                assert min(row[m+'_rank'] for m in report.METHODS if m != 'gate_select16') == 1
+            elif successful or mixed:
                 assert row['gate_select16_rank'] == 1
                 assert row['gate_select16_top1_video'] == row['ground_truth_video']
                 assert max(row[m+'_rank'] for m in report.METHODS if m != 'gate_select16') > 1
-                assert case['display_query'].replace('…', '').strip() in ' '.join(case['query'].split())
             else:
                 difference = min(row[m+'_rank'] for m in report.METHODS if m != 'gate_select16')-row['gate_select16_rank']
                 assert (difference > 0) == (case['category'] == 'advantage')
@@ -86,23 +99,28 @@ def check_retrieval(module, prefix, figures):
             assert sha(root/frame['file']) == frame['sha256']
             assert frame['frame_index'] == frame['training_feature_frame_indices'][3]
             assert frame['representative_frame_ordinal'] == 3 and not frame['altered_content']
-        figure = next(f for f in figures if f['name'].startswith(('12' if prefix=='retrieval' else '14') if ds=='CapERA' else ('13' if prefix=='retrieval' else '15')))
-        assert len(figure['layout']) == 5*len(chosen)
-        for item in figure['layout']:
+        figure = next(f for f in figures if f['name'] == report.NAMES[6]) if mixed else next(f for f in figures if f['name'].startswith(('12' if prefix=='retrieval' else '14') if ds=='CapERA' else ('13' if prefix=='retrieval' else '15')))
+        layout = [r for r in figure['layout'] if r['dataset'] == ds] if mixed else figure['layout']
+        assert len(layout) == 5*len(chosen)
+        for item in layout:
             case = next(c for c in chosen if c['caption_id'] == item['caption_id'])
             if item['method'] is not None:
                 assert item['video_id'] == case[item['method']+'_top1_video']
                 assert item['GT_rank'] == case[item['method']+'_rank']
             assert item['top1_correct'] == (item['video_id'] == case['ground_truth_video'])
         root_svg = ET.parse(dest/(figure['name']+'.svg')).getroot()
-        assert len(root_svg.findall('.//{http://www.w3.org/2000/svg}image')) == 5*len(chosen)
+        assert len(root_svg.findall('.//{http://www.w3.org/2000/svg}image')) == 5*(len(examples) if mixed else len(chosen))
+        if mixed:
+            assert figure['shared_column_headers'] and figure['rows'] == 8 and figure['rows_per_dataset'] == 4
+            text = (dest/(figure['name']+'.svg')).read_text()
+            assert all(label in text for label in ['CapERA', 'AirScape', 'GT rank', 'Selected retrieval examples'])
         if successful:
             assert figure['shared_column_headers'] and figure['rows'] == 6
             text = (dest/(figure['name']+'.svg')).read_text()
             assert 'Selected successful retrievals' in text
     return dict(models=8, selected_examples=len(examples), complete_query_ranks_match_full_similarity_matrices=True,
                 paired_outcomes_and_original_media_verified=True,
-                selection_kind='selected_successful_examples' if successful else 'contrasting_diagnostics')
+                selection_kind='selected_successes_and_misses' if mixed else 'selected_successful_examples' if successful else 'contrasting_diagnostics')
 
 
 def main():
@@ -111,7 +129,7 @@ def main():
     manifest = read(dest/'data/tgcn_manifest.json')
     audit = read(dest/'data/tgcn_audit.json')
     series = read(dest/'data/tgcn_plot_series.json')
-    assert manifest['complete'] and audit['passed'] and len(manifest['figures']) == 6
+    assert manifest['complete'] and audit['passed'] and len(manifest['figures']) == 7
     assert {f['name'] for f in manifest['figures']} == set(report.NAMES)
     for file, digest in manifest['original_figures'].items():
         assert sha(dest/file) == digest, file
@@ -150,7 +168,10 @@ def main():
                                 rel_tol=0., abs_tol=1e-10)
             assert recovered['evaluation']['retained']['mR']*100 == records[-1]['retained_mR_percent']
         else:
-            assert s['x'] == [1, 3, 5, 7, 9]
+            assert s['figure'] == report.NAMES[1] and s['kind'] == 'paired_bar'
+            assert s['x'] == [1, 9]
+            assert len(s['bar_positions']) == len(s['hatches']) == 2
+            assert math.isclose(s['bar_positions'][1]-s['bar_positions'][0], .37)
             assert s['y'] == [next(r['total_energy_j']*.001 for r in rows if (r['dataset'], r['method'], r['fu_steps_per_request']) == (s['dataset'], s['method'], x)) for x in s['x']]
     for figure in manifest['figures']:
         precisions = []
@@ -158,6 +179,11 @@ def main():
             precision = []
             for dim in ['x', 'y']:
                 ticks = ax[dim]['ticks']
+                if ax[dim].get('kind') == 'categorical':
+                    assert dim == 'x' and ax[dim]['labels'] == list(report.METHODS.values())
+                    assert ax[dim]['limits'][0] < ticks[0] and ax[dim]['limits'][-1] > ticks[-1]
+                    precision.append(None)
+                    continue
                 assert ax[dim]['limits'] == [ticks[0], ticks[-1]]
                 assert np.allclose(np.diff(ticks), ticks[1]-ticks[0])
                 digits = [len(t.split('.')[-1]) if '.' in t else 0 for t in ax[dim]['labels']]
@@ -166,6 +192,10 @@ def main():
             precisions.append(precision)
         if precisions:
             assert precisions[0] == precisions[1]
+        if figure['name'] == report.NAMES[1]:
+            assert figure['kind'] == 'paired_bar' and figure['steps_per_request'] == [1, 9]
+            assert figure['bars_per_method'] == 2 and figure['bars_per_panel'] == 8
+            assert not figure['bar_top_annotations']
         for item in figure['files']:
             path = dest/item['file']
             assert sha(path) == item['sha256']
@@ -178,9 +208,11 @@ def main():
                 assert all(label in text for label in report.METHODS.values())
     fixed = check_retrieval(retrieval, 'retrieval', manifest['figures'])
     matched = check_retrieval(energy_retrieval, 'retrieval_energy', manifest['figures'])
-    result = dict(passed=True, new_figures=6, fresh_FU_arms=40, exact_baseline_controls=8,
+    combined = check_retrieval(energy_retrieval, 'retrieval_combined', manifest['figures'])
+    result = dict(passed=True, new_figures=7, fresh_FU_arms=40, exact_baseline_controls=8,
         energy_budget_kJ=650, energy_checkpoint_replays_exact=True,
-        fixed_workload_retrieval=fixed, matched_energy_retrieval=matched,
+        fixed_workload_retrieval=fixed, matched_energy_retrieval=matched, combined_retrieval=combined,
+        paired_FU_workload_bars_from_measured_1_and_9_steps=True,
         original_nine_figures_unchanged=True, actual_frame_figures_only=True,
         regular_ticks_common_marker_budgets=True,
         source_sha256={str(Path(__file__).relative_to(root)): sha(Path(__file__))})
