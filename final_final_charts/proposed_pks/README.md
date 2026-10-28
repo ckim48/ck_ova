@@ -1,5 +1,7 @@
 # Proposed = P-KS: learning and resource comparisons
 
+**Parallel advantage:** [Five figures and a matched immediate-serial P-KS experiment](../parallel_advantage/README.md).
+
 The user-selected P-KS is now the only method labeled **Proposed** in this bundle. It is the unchanged proxy-KL-gated FU + half-exploration/half-loss-priority FL16 method. The previous adaptive-FU/uniform-FL Proposed is removed from these comparisons. P-KB25 is a separate experiment and is not substituted for P-KS. Historical bundles retain their original identities.
 
 Methods: Proposed (P-KS), ISCC-P2, AFL-OTA and F-SalUn. The [paper-transfer definitions](../four_methods/README.md) remain unchanged. Main line color/marker for Proposed is blue/circle. Every chart is CapERA left and AirScape right, with uniform endpoint ticks, matching panel precision, and no value labels or extra captions.

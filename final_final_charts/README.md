@@ -1,5 +1,7 @@
 # Current UAV/VLM comparison: Proposed = P-KS
 
+**Parallel advantage:** [Five figures and a matched immediate-serial P-KS experiment](parallel_advantage/README.md).
+
 **Current charts:** [P-KS as Proposed, round/time learning curves and three resource sensitivities](proposed_pks/README.md) · [Gallery](proposed_pks/index.html). The old adaptive Proposed is excluded from this current comparison. P-KB25 remains a separate candidate; its results are not relabeled as P-KS.
 
 Historical bundles retain their original identities: [KL-reference audit and bounded-learning candidates](pks_kl_repair/README.md), [earlier four-method comparison](four_methods/index.html), [learning diagnostics](learning_quality/index.html), and [earlier shared-time continuation](same_time/index.html).

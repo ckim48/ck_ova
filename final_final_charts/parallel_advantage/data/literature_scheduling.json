@@ -1,0 +1,74 @@
+[
+  {
+    "dataset": "CapERA",
+    "method": "iscc",
+    "fl": 180,
+    "fu": 45,
+    "joint": 0,
+    "broadcasts": 224,
+    "joint_FU_steps": 0,
+    "total_FU_steps": 225,
+    "active_delay_s": 384.3037388367693,
+    "queue_wait_s": 0
+  },
+  {
+    "dataset": "CapERA",
+    "method": "afl",
+    "fl": 180,
+    "fu": 45,
+    "joint": 0,
+    "broadcasts": 224,
+    "joint_FU_steps": 0,
+    "total_FU_steps": 225,
+    "active_delay_s": 149.912405113332,
+    "queue_wait_s": 0.0014745599997354475
+  },
+  {
+    "dataset": "CapERA",
+    "method": "salun",
+    "fl": 180,
+    "fu": 45,
+    "joint": 0,
+    "broadcasts": 224,
+    "joint_FU_steps": 0,
+    "total_FU_steps": 225,
+    "active_delay_s": 384.3022440352411,
+    "queue_wait_s": 0
+  },
+  {
+    "dataset": "AirScape",
+    "method": "iscc",
+    "fl": 180,
+    "fu": 45,
+    "joint": 0,
+    "broadcasts": 224,
+    "joint_FU_steps": 0,
+    "total_FU_steps": 225,
+    "active_delay_s": 383.9147060540845,
+    "queue_wait_s": 0
+  },
+  {
+    "dataset": "AirScape",
+    "method": "afl",
+    "fl": 180,
+    "fu": 45,
+    "joint": 0,
+    "broadcasts": 224,
+    "joint_FU_steps": 0,
+    "total_FU_steps": 225,
+    "active_delay_s": 150.02124430999868,
+    "queue_wait_s": 0.0013926399998922534
+  },
+  {
+    "dataset": "AirScape",
+    "method": "salun",
+    "fl": 180,
+    "fu": 45,
+    "joint": 0,
+    "broadcasts": 224,
+    "joint_FU_steps": 0,
+    "total_FU_steps": 225,
+    "active_delay_s": 383.91589854366384,
+    "queue_wait_s": 0
+  }
+]

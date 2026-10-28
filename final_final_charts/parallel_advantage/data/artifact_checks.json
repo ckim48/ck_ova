@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "figures": 5,
+  "fresh_ablation_arms": 4,
+  "identical_PKS_control_verified": true,
+  "full_workload_and_window_counts_verified": true,
+  "immediate_serial_without_waiting": true,
+  "cost_and_quality_values_preserved": true,
+  "actual_400_second_progress_preserved": true,
+  "plot_values_ticks_and_hashes_verified": true,
+  "source_sha256": {
+    "tools/uav_convergence_v2/parallel_advantage_check.py": "54fe350fe64efcf9790a8d36aa23d7ecf766c455fa51917e588abef80108939b"
+  }
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "dataset": "CapERA",
+    "method": "proposed",
+    "active_s": 399.79276820950184,
+    "FL_round": 612,
+    "FU_cycles": 225
+  },
+  {
+    "dataset": "CapERA",
+    "method": "iscc",
+    "active_s": 398.8141197726768,
+    "FL_round": 208,
+    "FU_cycles": 225
+  },
+  {
+    "dataset": "CapERA",
+    "method": "afl",
+    "active_s": 399.5899833533383,
+    "FL_round": 572,
+    "FU_cycles": 225
+  },
+  {
+    "dataset": "CapERA",
+    "method": "salun",
+    "active_s": 398.8126249711486,
+    "FL_round": 208,
+    "FU_cycles": 225
+  },
+  {
+    "dataset": "AirScape",
+    "method": "proposed",
+    "active_s": 399.78693996825314,
+    "FL_round": 612,
+    "FU_cycles": 225
+  },
+  {
+    "dataset": "AirScape",
+    "method": "iscc",
+    "active_s": 398.425086989992,
+    "FL_round": 208,
+    "FU_cycles": 225
+  },
+  {
+    "dataset": "AirScape",
+    "method": "afl",
+    "active_s": 399.49402255000473,
+    "FL_round": 572,
+    "FU_cycles": 225
+  },
+  {
+    "dataset": "AirScape",
+    "method": "salun",
+    "active_s": 398.42627947957135,
+    "FL_round": 208,
+    "FU_cycles": 225
+  }
+]
