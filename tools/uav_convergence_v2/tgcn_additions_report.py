@@ -20,7 +20,7 @@ METHODS, DATASETS = current.METHODS, current.DATASETS
 NAMES = ['10_energy_mr_1x2', '11_fu_steps_energy_1x2',
          '12_capera_text_video_examples', '13_airscape_text_video_examples',
          '14_capera_energy_matched_retrieval', '15_airscape_energy_matched_retrieval',
-         '16_combined_text_video_examples']
+         '16_combined_text_video_examples', '17_rank_outcomes_and_examples']
 ENERGY_BUDGET_KJ = 650.
 
 
@@ -286,7 +286,7 @@ def documents():
         'Forty fresh executions:1/3/5/7/9 outer FU steps per request × four methods × two datasets. Same45 requests, sample cohorts, release ordinals,10UAV, five regions,200 totalFL rounds, initial models, features, learning/radio/energy coefficients. Every prescribed FU step finishes. Eight fresh five-step controls exactly reproduce original final parameter tensors, quality, transaction clocks and radio decisions.', '',
         'GA→FT comparators retain two local optimizer substeps per outer FU cycle; both are charged. More steps do not necessarily improve mR or KL, so all quality values and physical-bound exceedances accompany the energy figure. Flat Proposed curves are retained: co-aggregation may absorb additional FU work within the unchanged180 mission-FL transmissions. Parallel refers to joint FL/FU aggregation/application, not simultaneous local CPU execution.', '',
         '## 12–13: Earlier fixed-round retrieval diagnostics', '',
-        '[CapERA, 200 rounds](12_capera_text_video_examples.pdf) · [AirScape, 200 rounds](13_airscape_text_video_examples.pdf). These earlier diagnostic figures remain accessible as supporting material; the main gallery uses the combined selected examples in16.', '',
+        '[CapERA, 200 rounds](12_capera_text_video_examples.pdf) · [AirScape, 200 rounds](13_airscape_text_video_examples.pdf). These earlier diagnostic figures remain accessible as supporting material; the main gallery uses whole-query outcomes and examples in17.', '',
         'Evaluate the unchanged final200 checkpoints with all45 requests/225FU cycles complete, at the same workload rather than the same energy. Native captions, original gallery and cached eight-frame RemoteCLIP features are unchanged. All six recalls and validation loss are independently reproduced before selecting illustrations. A displayed image is the fourth of the same eight original sampled video frames, downsampled only to fit the figure. It is not a generated image and the task is video retrieval, not caption generation.', '',
         'Each dataset shows one selected Proposed rank advantage and one disadvantage. Prefer a top1 reversal among unique native caption strings; choose the median rank gap with caption-ID tie breaking. Full selection rules and counts are in the protocol. These two deliberately contrasting cases are not a random or representative sample. Complete retained-query rank/top3-ID tables and better/equal/worse counts prevent a favorable-only interpretation.', '',
         'Ground truth is the annotated paired video, not a judgment that every other semantically similar video is irrelevant. Green borders indicate the correct top1 video, red an incorrect top1; GT rank gives the annotated video position in the full gallery. Full native query text and media/frame hashes accompany selected cases. Long displayed queries may be explicitly abbreviated, but inference always used the original complete caption. Only derived representative-frame figures are published; raw videos/features/checkpoints stay local.', '',
@@ -294,11 +294,20 @@ def documents():
         'These use the exact last completed model within 650 kJ from the energy/mR curve. All 45 FU procedures complete. The original continuation was replayed unchanged; every evaluation/energy/time point and final parameter tensor reproduced exactly before intermediate checkpoints were used. Different completed FL counts reflect actual energy costs.', '',
         'Display revision v2 shows six different ground-truth videos per dataset in a compact six-row grid with one shared header. Every shown Proposed result has ground-truth rank 1 and improves over at least one comparator; comparator rank-1 ties are preserved. The examples were selected after evaluation for favorable outcomes and scene diversity. They illustrate successful cases and do not estimate average success, statistical superiority, or dominance over every comparator. All complete query-rank tables, paired better/equal/worse counts, checkpoints and aggregate metrics are unchanged.', '',
         'CapERA scenes: baseball, urban fire, harvesting, a crowd, swimming and a bridge. AirScape scenes: elephants, a snowy parking area, pedestrians, horses near water, a lighthouse and a road junction. Original query excerpts are shown with explicit ellipses where the repeated camera-perspective sentence or a long ending is omitted; inference used the full native caption. No generated captions or altered image content. Full captions, selection IDs, candidate counts and frame provenance accompany the figures.', '',
-        '[Earlier CapERA success-only sheet](14_capera_energy_matched_retrieval.pdf) · [Earlier AirScape success-only sheet](15_airscape_energy_matched_retrieval.pdf). These are retained for reference; figure16 is the current combined main illustration.', '',
+        '[Earlier CapERA success-only sheet](14_capera_energy_matched_retrieval.pdf) · [Earlier AirScape success-only sheet](15_airscape_energy_matched_retrieval.pdf). These are retained for reference. Figure16 combines the examples; figure17 also includes the full-query rank outcome distribution.', '',
         '## 16: Combined examples from both datasets', '',
         'One sheet contains four CapERA and four AirScape cases, with three Proposed top1 successes and one miss in each dataset. Successes cover urban fire, harvesting, swimming, elephants, horses near water and a road junction. The misses (flood and pagoda) reuse the original median-rank-gap disadvantage examples selected by the frozen inference protocol. This is a deliberate illustrative 3:1 mixture, not an observed success rate. Same 650 kJ checkpoints and complete native-query inference as14–15; no retraining or score changes.', '',
         'Every method column shows its actual top1 retrieved video. The numeric GT rank is the rank of the annotated paired video in the entire gallery, not the rank of the displayed top1 image. Green means the paired video is top1, red means it is not. Similar-looking unpaired videos may still be semantically plausible. Each image is one original frame from a video scored using eight frames, so the single displayed frame cannot establish temporal understanding.', '',
         'Interpretation: this figure illustrates retained text-to-video retrieval behavior and typical-looking confusions under a shared energy budget. The full-query mR-versus-energy curve and complete rank tables establish aggregate performance. These selected retained-data cases cannot establish forgetting quality, explain gradient causality or by themselves prove AirComp superiority. A paper caption should state the selection and budget explicitly.', '',
+        '[Original examples-only combined sheet](16_combined_text_video_examples.pdf) remains available. Figure17 adds the quantitative context above the same eight cases.', '',
+        '## 17: Whole-query rank outcomes with selected examples', '',
+        'Panel (a) compares Proposed with AFL-OTA under the same 650 kJ active-energy budget using every retained text query: 1,280 CapERA queries and 256 AirScape queries. Improved means the annotated video has a smaller rank number with Proposed; tied means equal rank; worsened means a larger rank. These are paired cross-method ranks at the shared budget, not before/after training changes, Recall@1 or mR. Bar widths use unrounded counts; the percentage axis spans 0–100 at intervals of20, without numeric bar annotations.', '',
+        '| Dataset | Improved | Tied | Worsened |',
+        '| --- | ---: | ---: | ---: |',
+        '| CapERA | 599 / 1,280 (46.8%) | 287 / 1,280 (22.4%) | 394 / 1,280 (30.8%) |',
+        '| AirScape | 122 / 256 (47.7%) | 29 / 256 (11.3%) | 105 / 256 (41.0%) |', '',
+        'Panels (b–c) retain the eight selected queries, native frames and four-method top1 results from16 unchanged. The full-query bars are never computed from these selected examples. Read the Proposed and AFL-OTA GT ranks to connect a case to the corresponding outcome. A top1 miss can be a paired-rank tie: the CapERA flood case has GT rank3 for both. Green/red image borders encode top1 correctness, whereas the upper blue/gold/red segments encode improved/tied/worsened ranks.', '',
+        'The combined figure puts illustrative successes and confusions in the context of the full-query outcome distribution. It is descriptive evidence from the current single-seed study, not causal attribution to AirComp, a generalization claim, a query-independent significance test or proof of unlearning. CapERA has multiple captions per video; the denominator is text queries, not independent videos. [Exact counts and percentages](data/retrieval_rank_outcomes.csv) accompany the figure.', '',
         'Single development seed and frozen-feature rank10 adapter study, not a full-backbone VLM hardware benchmark or statistical superiority result.', '',
         '## Reproduction', '', '```sh',
         '.venv/bin/python tools/uav_convergence_v2/tgcn_fu_workload_v1.py run',
@@ -318,7 +327,7 @@ def documents():
             a, b = text.index(marker), text.index(end)+len(end)
             text = text[:a]+text[b:]
         insert = text.index('\n')+1
-        card = ('\n'+marker+'\n[Energy–mR, paired FU-workload bars and combined retrieval examples]('+relative+'TGCN_ADDITIONS.md). Main figures10–11 and16; earlier diagnostic/success sheets12–15 remain linked.\n'+end+'\n')
+        card = ('\n'+marker+'\n[Energy–mR, paired FU-workload bars and retrieval outcomes with examples]('+relative+'TGCN_ADDITIONS.md). Main figures10–11 and17; earlier example sheets12–16 remain linked.\n'+end+'\n')
         path.write_text(text[:insert]+card+text[insert:])
         path = folder/'index.html'
         text = path.read_text()
@@ -326,18 +335,19 @@ def documents():
             a, b = text.index(marker), text.index(end)+len(end)
             text = text[:a]+text[b:]
         insert = text.index('</h1>')+len('</h1>')
-        main_names = [NAMES[0], NAMES[1], NAMES[6]] if folder == DEST else [NAMES[0], NAMES[6]]
+        main_names = [NAMES[0], NAMES[1], NAMES[7]] if folder == DEST else [NAMES[0], NAMES[7]]
         figures = [f for f in prior.FIGURES if f['name'] in main_names]
         cards = ''.join('<section><h2>'+html.escape(f['title'])+'</h2><a href="'+relative+f['name']+'.pdf"><img loading="lazy" src="'+relative+f['name']+'.png"></a></section>' for f in figures)
         text = text[:insert]+marker+'<p><a href="'+relative+'TGCN_ADDITIONS.md">Energy efficiency and actual VLM retrieval: definitions and full numerical results</a></p>'+cards+end+text[insert:]
         path.write_text(text)
 
 
-def main(success_only=False):
-    if success_only:
+def main(success_only=False, integrated_only=False):
+    if success_only or integrated_only:
         manifest = read(DEST/'data/tgcn_manifest.json')
         audit = read(DEST/'data/tgcn_audit.json')
-        kept = [f for f in manifest['figures'] if f['name'] not in [NAMES[1], NAMES[6]]]
+        updated_names = [NAMES[7]] if integrated_only else [NAMES[1], NAMES[6], NAMES[7]]
+        kept = [f for f in manifest['figures'] if f['name'] not in updated_names]
         # Update only the FU workload display and new combined illustration.
         untouched = {item['file']: sha(DEST/item['file']) for f in kept for item in f['files']}
         numerical = {str(p.relative_to(DEST)): sha(p) for p in (DEST/'data').iterdir()
@@ -348,21 +358,25 @@ def main(success_only=False):
         setup()
         prior.FIGURES = kept
         prior.SOURCES = manifest['source_sha256']
-        prior.SERIES = [s for s in read(DEST/'data/tgcn_plot_series.json') if s['figure'] != NAMES[1]]
-        fu_bars(read(DEST/'data/fu_workload_metrics.json'))
+        prior.SERIES = read(DEST/'data/tgcn_plot_series.json')
         import tgcn_energy_retrieval_v1 as energy_retrieval
-        import tgcn_combined_examples_v3 as combined
-        audit['combined_retrieval'] = combined.render(__import__(__name__), energy_retrieval)
+        if not integrated_only:
+            prior.SERIES = [s for s in prior.SERIES if s['figure'] != NAMES[1]]
+            fu_bars(read(DEST/'data/fu_workload_metrics.json'))
+            import tgcn_combined_examples_v3 as combined
+            audit['combined_retrieval'] = combined.render(__import__(__name__), energy_retrieval)
+        import tgcn_integrated_outcomes_v4 as integrated
+        audit['integrated_retrieval'] = integrated.render(__import__(__name__), energy_retrieval)
         prior.FIGURES.sort(key=lambda f: f['name'])
         prior.SOURCES[str(Path(__file__).relative_to(ROOT))] = sha(Path(__file__))
         manifest.update(unix=time.time(), figures=prior.FIGURES, source_sha256=prior.SOURCES,
-                        display_revision='combined_mixed_v3_paired_fu_bars', unchanged_measurements=numerical)
+                        display_revision='integrated_outcomes_v4', unchanged_measurements=numerical)
         write(DEST/'data/tgcn_plot_series.json', prior.SERIES)
         write(DEST/'data/tgcn_manifest.json', manifest)
         write(DEST/'data/tgcn_audit.json', audit)
         assert all(sha(DEST/p) == digest for p, digest in {**untouched, **numerical}.items())
         documents()
-        print(dict(passed=True, updated_figures=2, combined_examples=8, new_training=0), flush=True)
+        print(dict(passed=True, updated_figures=len(updated_names), combined_examples=8, new_training=0), flush=True)
         return
     original = read(DEST/'data/manifest.json')
     # Keep this extension's metadata separate so all nine original figures and
@@ -374,6 +388,8 @@ def main(success_only=False):
     audits['energy_matched_retrieval'] = retrieval_figures(energy_retrieval, NAMES[4:6], 'retrieval_energy')
     import tgcn_combined_examples_v3 as combined
     audits['combined_retrieval'] = combined.render(__import__(__name__), energy_retrieval)
+    import tgcn_integrated_outcomes_v4 as integrated
+    audits['integrated_retrieval'] = integrated.render(__import__(__name__), energy_retrieval)
     write(DEST/'data/tgcn_audit.json', dict(passed=True, **audits))
     write(DEST/'data/tgcn_plot_series.json', prior.SERIES)
     for module in [Path(__file__), Path(fu.__file__), Path(retrieval.__file__)]:
@@ -390,4 +406,6 @@ def main(success_only=False):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--display-only', '--success-only', dest='success_only', action='store_true', help='Update paired FU bars and combined retrieval examples from existing measured results.')
-    main(parser.parse_args().success_only)
+    parser.add_argument('--integrated-only', action='store_true', help='Only add whole-query outcomes above the existing selected examples.')
+    args = parser.parse_args()
+    main(args.success_only, args.integrated_only)

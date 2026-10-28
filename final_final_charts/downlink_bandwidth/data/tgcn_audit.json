@@ -480,5 +480,21 @@
     "original_model_scores_unchanged": true,
     "generated_captions_or_media": false,
     "actual_video_frames": 18
+  },
+  "integrated_retrieval": {
+    "passed": true,
+    "selected_examples": 8,
+    "successes": 6,
+    "missed_top1": 2,
+    "outcome_selection_disclosed": true,
+    "original_model_scores_unchanged": true,
+    "full_query_outcomes": true,
+    "comparator": "afl",
+    "query_counts": [
+      1280,
+      256
+    ],
+    "generated_captions_or_media": false,
+    "actual_video_frames": 18
   }
 }

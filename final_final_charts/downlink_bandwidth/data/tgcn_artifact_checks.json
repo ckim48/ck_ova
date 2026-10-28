@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "new_figures": 7,
+  "new_figures": 8,
   "fresh_FU_arms": 40,
   "exact_baseline_controls": 8,
   "energy_budget_kJ": 650,
@@ -26,11 +26,19 @@
     "paired_outcomes_and_original_media_verified": true,
     "selection_kind": "selected_successes_and_misses"
   },
+  "integrated_retrieval": {
+    "models": 8,
+    "selected_examples": 8,
+    "complete_query_ranks_match_full_similarity_matrices": true,
+    "paired_outcomes_and_original_media_verified": true,
+    "selection_kind": "selected_successes_and_misses"
+  },
+  "full_query_outcome_counts_and_bar_widths_verified": true,
   "paired_FU_workload_bars_from_measured_1_and_9_steps": true,
   "original_nine_figures_unchanged": true,
   "actual_frame_figures_only": true,
   "regular_ticks_common_marker_budgets": true,
   "source_sha256": {
-    "tools/uav_convergence_v2/tgcn_additions_check.py": "6f951a6c8f3f64f923806c3ae3f52a44b097ff02d772db8fc9580e5f0a943222"
+    "tools/uav_convergence_v2/tgcn_additions_check.py": "3a82654b95c88710f8371a1ed79f37601ef5c56ab5cdb344cbba6ee643049e4a"
   }
 }

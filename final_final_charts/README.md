@@ -1,8 +1,12 @@
 # Current UAV/VLM comparison: Proposed = P-KS
 
 <!-- tgcn-additions -->
-[Energy–mR, paired FU-workload bars and combined retrieval examples](downlink_bandwidth/TGCN_ADDITIONS.md). Main figures10–11 and16; earlier diagnostic/success sheets12–15 remain linked.
+[Energy–mR, paired FU-workload bars and retrieval outcomes with examples](downlink_bandwidth/TGCN_ADDITIONS.md). Main figures10–11 and17; earlier example sheets12–16 remain linked.
 <!-- /tgcn-additions -->
+
+
+
+
 
 
 

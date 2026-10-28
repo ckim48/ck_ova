@@ -1,0 +1,7 @@
+dataset,comparator,category,count,queries,percent,budget_kJ,unit,lower_GT_rank_is_better
+CapERA,AFL-OTA,improved,599,1280,46.796875,650.0,retained text query,True
+CapERA,AFL-OTA,tied,287,1280,22.421875,650.0,retained text query,True
+CapERA,AFL-OTA,worsened,394,1280,30.78125,650.0,retained text query,True
+AirScape,AFL-OTA,improved,122,256,47.65625,650.0,retained text query,True
+AirScape,AFL-OTA,tied,29,256,11.328125,650.0,retained text query,True
+AirScape,AFL-OTA,worsened,105,256,41.015625,650.0,retained text query,True

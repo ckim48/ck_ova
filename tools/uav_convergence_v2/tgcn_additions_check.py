@@ -16,7 +16,8 @@ def check_retrieval(module, prefix, figures):
     read, sha, dest, root = report.read, report.sha, report.DEST, report.ROOT
     protocol = read(dest/'data'/(prefix+'_examples_protocol.json'))
     examples = read(dest/'data'/(prefix+'_examples.json'))
-    mixed = protocol.get('display_selection_version') == 'combined_mixed_v3'
+    integrated = protocol.get('display_selection_version') == 'integrated_outcomes_v4'
+    mixed = integrated or protocol.get('display_selection_version') == 'combined_mixed_v3'
     source_prefix = 'retrieval_energy' if mixed else prefix
     summaries = read(dest/'data'/(source_prefix+'_summary.json'))
     frames = read(dest/'data'/(prefix+'_frame_provenance.json'))
@@ -99,7 +100,7 @@ def check_retrieval(module, prefix, figures):
             assert sha(root/frame['file']) == frame['sha256']
             assert frame['frame_index'] == frame['training_feature_frame_indices'][3]
             assert frame['representative_frame_ordinal'] == 3 and not frame['altered_content']
-        figure = next(f for f in figures if f['name'] == report.NAMES[6]) if mixed else next(f for f in figures if f['name'].startswith(('12' if prefix=='retrieval' else '14') if ds=='CapERA' else ('13' if prefix=='retrieval' else '15')))
+        figure = next(f for f in figures if f['name'] == report.NAMES[7 if integrated else 6]) if mixed else next(f for f in figures if f['name'].startswith(('12' if prefix=='retrieval' else '14') if ds=='CapERA' else ('13' if prefix=='retrieval' else '15')))
         layout = [r for r in figure['layout'] if r['dataset'] == ds] if mixed else figure['layout']
         assert len(layout) == 5*len(chosen)
         for item in layout:
@@ -113,7 +114,30 @@ def check_retrieval(module, prefix, figures):
         if mixed:
             assert figure['shared_column_headers'] and figure['rows'] == 8 and figure['rows_per_dataset'] == 4
             text = (dest/(figure['name']+'.svg')).read_text()
-            assert all(label in text for label in ['CapERA', 'AirScape', 'GT rank', 'Selected retrieval examples'])
+            heading = 'Retrieval outcomes and selected examples' if integrated else 'Selected retrieval examples'
+            assert all(label in text for label in ['CapERA', 'AirScape', 'GT rank', heading])
+        if integrated:
+            previous = read(dest/'data/retrieval_combined_examples.json')
+            assert chosen == [r for r in previous if r['dataset'] == ds]
+            panel = figure['summary_panel']
+            assert panel['comparator'] == 'afl' and panel['all_queries']
+            assert panel['unit'] == 'retained_text_query' and not panel['numeric_bar_annotations']
+            assert panel['x'] == dict(ticks=[0, 20, 40, 60, 80, 100], limits=[0, 100])
+            pair = next(r for r in pairs if r['comparator'] == 'afl')
+            outcomes = read(dest/'data/retrieval_rank_outcomes.json')
+            selected_records = [r for r in outcomes if r['dataset'] == ds]
+            assert len(selected_records) == 3
+            left = 0.
+            for label, key in [('improved', 'better'), ('tied', 'equal'), ('worsened', 'worse')]:
+                row = next(r for r in selected_records if r['category'] == label)
+                bar = next(r for r in panel['bars'] if r['dataset'] == ds and r['outcome'] == label)
+                assert row['count'] == bar['count'] == pair[key]
+                assert row['queries'] == bar['total'] == len(ranks)
+                percent = 100*pair[key]/len(ranks)
+                assert row['percent'] == bar['width'] == percent
+                assert bar['left'] == left
+                left += percent
+            assert math.isclose(left, 100., abs_tol=1e-10)
         if successful:
             assert figure['shared_column_headers'] and figure['rows'] == 6
             text = (dest/(figure['name']+'.svg')).read_text()
@@ -129,7 +153,7 @@ def main():
     manifest = read(dest/'data/tgcn_manifest.json')
     audit = read(dest/'data/tgcn_audit.json')
     series = read(dest/'data/tgcn_plot_series.json')
-    assert manifest['complete'] and audit['passed'] and len(manifest['figures']) == 7
+    assert manifest['complete'] and audit['passed'] and len(manifest['figures']) == len(report.NAMES) == 8
     assert {f['name'] for f in manifest['figures']} == set(report.NAMES)
     for file, digest in manifest['original_figures'].items():
         assert sha(dest/file) == digest, file
@@ -209,9 +233,11 @@ def main():
     fixed = check_retrieval(retrieval, 'retrieval', manifest['figures'])
     matched = check_retrieval(energy_retrieval, 'retrieval_energy', manifest['figures'])
     combined = check_retrieval(energy_retrieval, 'retrieval_combined', manifest['figures'])
-    result = dict(passed=True, new_figures=7, fresh_FU_arms=40, exact_baseline_controls=8,
+    integrated = check_retrieval(energy_retrieval, 'retrieval_integrated', manifest['figures'])
+    result = dict(passed=True, new_figures=8, fresh_FU_arms=40, exact_baseline_controls=8,
         energy_budget_kJ=650, energy_checkpoint_replays_exact=True,
         fixed_workload_retrieval=fixed, matched_energy_retrieval=matched, combined_retrieval=combined,
+        integrated_retrieval=integrated, full_query_outcome_counts_and_bar_widths_verified=True,
         paired_FU_workload_bars_from_measured_1_and_9_steps=True,
         original_nine_figures_unchanged=True, actual_frame_figures_only=True,
         regular_ticks_common_marker_budgets=True,

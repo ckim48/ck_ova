@@ -22,7 +22,7 @@ GA→FT comparators retain two local optimizer substeps per outer FU cycle; both
 
 ## 12–13: Earlier fixed-round retrieval diagnostics
 
-[CapERA, 200 rounds](12_capera_text_video_examples.pdf) · [AirScape, 200 rounds](13_airscape_text_video_examples.pdf). These earlier diagnostic figures remain accessible as supporting material; the main gallery uses the combined selected examples in16.
+[CapERA, 200 rounds](12_capera_text_video_examples.pdf) · [AirScape, 200 rounds](13_airscape_text_video_examples.pdf). These earlier diagnostic figures remain accessible as supporting material; the main gallery uses whole-query outcomes and examples in17.
 
 Evaluate the unchanged final200 checkpoints with all45 requests/225FU cycles complete, at the same workload rather than the same energy. Native captions, original gallery and cached eight-frame RemoteCLIP features are unchanged. All six recalls and validation loss are independently reproduced before selecting illustrations. A displayed image is the fourth of the same eight original sampled video frames, downsampled only to fit the figure. It is not a generated image and the task is video retrieval, not caption generation.
 
@@ -38,7 +38,7 @@ Display revision v2 shows six different ground-truth videos per dataset in a com
 
 CapERA scenes: baseball, urban fire, harvesting, a crowd, swimming and a bridge. AirScape scenes: elephants, a snowy parking area, pedestrians, horses near water, a lighthouse and a road junction. Original query excerpts are shown with explicit ellipses where the repeated camera-perspective sentence or a long ending is omitted; inference used the full native caption. No generated captions or altered image content. Full captions, selection IDs, candidate counts and frame provenance accompany the figures.
 
-[Earlier CapERA success-only sheet](14_capera_energy_matched_retrieval.pdf) · [Earlier AirScape success-only sheet](15_airscape_energy_matched_retrieval.pdf). These are retained for reference; figure16 is the current combined main illustration.
+[Earlier CapERA success-only sheet](14_capera_energy_matched_retrieval.pdf) · [Earlier AirScape success-only sheet](15_airscape_energy_matched_retrieval.pdf). These are retained for reference. Figure16 combines the examples; figure17 also includes the full-query rank outcome distribution.
 
 ## 16: Combined examples from both datasets
 
@@ -47,6 +47,21 @@ One sheet contains four CapERA and four AirScape cases, with three Proposed top1
 Every method column shows its actual top1 retrieved video. The numeric GT rank is the rank of the annotated paired video in the entire gallery, not the rank of the displayed top1 image. Green means the paired video is top1, red means it is not. Similar-looking unpaired videos may still be semantically plausible. Each image is one original frame from a video scored using eight frames, so the single displayed frame cannot establish temporal understanding.
 
 Interpretation: this figure illustrates retained text-to-video retrieval behavior and typical-looking confusions under a shared energy budget. The full-query mR-versus-energy curve and complete rank tables establish aggregate performance. These selected retained-data cases cannot establish forgetting quality, explain gradient causality or by themselves prove AirComp superiority. A paper caption should state the selection and budget explicitly.
+
+[Original examples-only combined sheet](16_combined_text_video_examples.pdf) remains available. Figure17 adds the quantitative context above the same eight cases.
+
+## 17: Whole-query rank outcomes with selected examples
+
+Panel (a) compares Proposed with AFL-OTA under the same 650 kJ active-energy budget using every retained text query: 1,280 CapERA queries and 256 AirScape queries. Improved means the annotated video has a smaller rank number with Proposed; tied means equal rank; worsened means a larger rank. These are paired cross-method ranks at the shared budget, not before/after training changes, Recall@1 or mR. Bar widths use unrounded counts; the percentage axis spans 0–100 at intervals of20, without numeric bar annotations.
+
+| Dataset | Improved | Tied | Worsened |
+| --- | ---: | ---: | ---: |
+| CapERA | 599 / 1,280 (46.8%) | 287 / 1,280 (22.4%) | 394 / 1,280 (30.8%) |
+| AirScape | 122 / 256 (47.7%) | 29 / 256 (11.3%) | 105 / 256 (41.0%) |
+
+Panels (b–c) retain the eight selected queries, native frames and four-method top1 results from16 unchanged. The full-query bars are never computed from these selected examples. Read the Proposed and AFL-OTA GT ranks to connect a case to the corresponding outcome. A top1 miss can be a paired-rank tie: the CapERA flood case has GT rank3 for both. Green/red image borders encode top1 correctness, whereas the upper blue/gold/red segments encode improved/tied/worsened ranks.
+
+The combined figure puts illustrative successes and confusions in the context of the full-query outcome distribution. It is descriptive evidence from the current single-seed study, not causal attribution to AirComp, a generalization claim, a query-independent significance test or proof of unlearning. CapERA has multiple captions per video; the denominator is text queries, not independent videos. [Exact counts and percentages](data/retrieval_rank_outcomes.csv) accompany the figure.
 
 Single development seed and frozen-feature rank10 adapter study, not a full-backbone VLM hardware benchmark or statistical superiority result.
 

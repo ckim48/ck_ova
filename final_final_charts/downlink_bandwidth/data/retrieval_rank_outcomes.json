@@ -1,0 +1,68 @@
+[
+  {
+    "dataset": "CapERA",
+    "comparator": "AFL-OTA",
+    "category": "improved",
+    "count": 599,
+    "queries": 1280,
+    "percent": 46.796875,
+    "budget_kJ": 650.0,
+    "unit": "retained text query",
+    "lower_GT_rank_is_better": true
+  },
+  {
+    "dataset": "CapERA",
+    "comparator": "AFL-OTA",
+    "category": "tied",
+    "count": 287,
+    "queries": 1280,
+    "percent": 22.421875,
+    "budget_kJ": 650.0,
+    "unit": "retained text query",
+    "lower_GT_rank_is_better": true
+  },
+  {
+    "dataset": "CapERA",
+    "comparator": "AFL-OTA",
+    "category": "worsened",
+    "count": 394,
+    "queries": 1280,
+    "percent": 30.78125,
+    "budget_kJ": 650.0,
+    "unit": "retained text query",
+    "lower_GT_rank_is_better": true
+  },
+  {
+    "dataset": "AirScape",
+    "comparator": "AFL-OTA",
+    "category": "improved",
+    "count": 122,
+    "queries": 256,
+    "percent": 47.65625,
+    "budget_kJ": 650.0,
+    "unit": "retained text query",
+    "lower_GT_rank_is_better": true
+  },
+  {
+    "dataset": "AirScape",
+    "comparator": "AFL-OTA",
+    "category": "tied",
+    "count": 29,
+    "queries": 256,
+    "percent": 11.328125,
+    "budget_kJ": 650.0,
+    "unit": "retained text query",
+    "lower_GT_rank_is_better": true
+  },
+  {
+    "dataset": "AirScape",
+    "comparator": "AFL-OTA",
+    "category": "worsened",
+    "count": 105,
+    "queries": 256,
+    "percent": 41.015625,
+    "budget_kJ": 650.0,
+    "unit": "retained text query",
+    "lower_GT_rank_is_better": true
+  }
+]
