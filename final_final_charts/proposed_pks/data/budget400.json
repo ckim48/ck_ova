@@ -1,0 +1,74 @@
+[
+  {
+    "dataset": "CapERA",
+    "method": "gate_select16",
+    "label": "Proposed",
+    "checkpoint_s": 399.79276820950184,
+    "FL_round": 612,
+    "mR_percent": 24.283854042490326,
+    "loss": 4.2700066566467285
+  },
+  {
+    "dataset": "CapERA",
+    "method": "iscc",
+    "label": "ISCC-P2",
+    "checkpoint_s": 398.8141197726768,
+    "FL_round": 208,
+    "mR_percent": 17.161458109815918,
+    "loss": 5.311221599578857
+  },
+  {
+    "dataset": "CapERA",
+    "method": "afl",
+    "label": "AFL-OTA",
+    "checkpoint_s": 399.5899833533383,
+    "FL_round": 572,
+    "mR_percent": 23.893229166666664,
+    "loss": 4.389274597167969
+  },
+  {
+    "dataset": "CapERA",
+    "method": "salun",
+    "label": "F-SalUn",
+    "checkpoint_s": 398.8126249711486,
+    "FL_round": 208,
+    "mR_percent": 17.460937798023224,
+    "loss": 5.2463274002075195
+  },
+  {
+    "dataset": "AirScape",
+    "method": "gate_select16",
+    "label": "Proposed",
+    "checkpoint_s": 399.78693996825314,
+    "FL_round": 612,
+    "mR_percent": 16.796875,
+    "loss": 4.995587348937988
+  },
+  {
+    "dataset": "AirScape",
+    "method": "iscc",
+    "label": "ISCC-P2",
+    "checkpoint_s": 398.425086989992,
+    "FL_round": 208,
+    "mR_percent": 13.802083333333334,
+    "loss": 5.543696403503418
+  },
+  {
+    "dataset": "AirScape",
+    "method": "afl",
+    "label": "AFL-OTA",
+    "checkpoint_s": 399.49402255000473,
+    "FL_round": 572,
+    "mR_percent": 16.536458333333336,
+    "loss": 5.0510759353637695
+  },
+  {
+    "dataset": "AirScape",
+    "method": "salun",
+    "label": "F-SalUn",
+    "checkpoint_s": 398.42627947957135,
+    "FL_round": 208,
+    "mR_percent": 13.671875,
+    "loss": 5.513327598571777
+  }
+]

@@ -1,8 +1,12 @@
-# Paper-core UAV/VLM comparison
+# Current UAV/VLM comparison: Proposed = P-KS
 
-Latest P-KS update: [KL-reference audit, bounded-learning candidates and exact 400-second comparisons](pks_kl_repair/README.md). Original results remain available below.
+**Current charts:** [P-KS as Proposed, round/time learning curves and three resource sensitivities](proposed_pks/README.md) · [Gallery](proposed_pks/index.html). The old adaptive Proposed is excluded from this current comparison. P-KB25 remains a separate candidate; its results are not relabeled as P-KS.
 
-Latest bundles: [four literature-comparison methods and five sweeps](four_methods/index.html), [all learning diagnostics](learning_quality/index.html), and [actual additional FL at a shared time budget](same_time/index.html). The original results below remain unchanged.
+Historical bundles retain their original identities: [KL-reference audit and bounded-learning candidates](pks_kl_repair/README.md), [earlier four-method comparison](four_methods/index.html), [learning diagnostics](learning_quality/index.html), and [earlier shared-time continuation](same_time/index.html).
+
+## Historical benchmark notes
+
+The descriptions and results below refer to the earlier adaptive Proposed, not the newly selected P-KS.
 
 **Expanded sweeps:** [23 additional 1×2 figures](expanded_sweeps/index.html) cover bandwidth, downlink rate, request grouping, FL-round budget and packet loss, with separate active/mission delay and quality checks.
 
