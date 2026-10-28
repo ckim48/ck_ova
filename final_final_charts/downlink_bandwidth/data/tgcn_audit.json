@@ -1,0 +1,455 @@
+{
+  "passed": true,
+  "energy_utility": {
+    "passed": true,
+    "trajectories": [
+      {
+        "dataset": "CapERA",
+        "method": "gate_select16",
+        "verified_transactions": 413,
+        "energy_clock_and_workload": true,
+        "source": "results/learning_time_budget_v1_20261028/capera_seed0/gate_select16"
+      },
+      {
+        "dataset": "CapERA",
+        "method": "iscc",
+        "verified_transactions": 9,
+        "energy_clock_and_workload": true,
+        "source": "results/learning_time_budget_v1_20261028/capera_seed0/iscc"
+      },
+      {
+        "dataset": "CapERA",
+        "method": "afl",
+        "verified_transactions": 373,
+        "energy_clock_and_workload": true,
+        "source": "results/learning_time_budget_v1_20261028/capera_seed0/afl"
+      },
+      {
+        "dataset": "CapERA",
+        "method": "salun",
+        "verified_transactions": 9,
+        "energy_clock_and_workload": true,
+        "source": "results/learning_time_budget_v1_20261028/capera_seed0/salun"
+      },
+      {
+        "dataset": "AirScape",
+        "method": "gate_select16",
+        "verified_transactions": 413,
+        "energy_clock_and_workload": true,
+        "source": "results/learning_time_budget_v1_20261028/airscape_seed0/gate_select16"
+      },
+      {
+        "dataset": "AirScape",
+        "method": "iscc",
+        "verified_transactions": 9,
+        "energy_clock_and_workload": true,
+        "source": "results/learning_time_budget_v1_20261028/airscape_seed0/iscc"
+      },
+      {
+        "dataset": "AirScape",
+        "method": "afl",
+        "verified_transactions": 373,
+        "energy_clock_and_workload": true,
+        "source": "results/learning_time_budget_v1_20261028/airscape_seed0/afl"
+      },
+      {
+        "dataset": "AirScape",
+        "method": "salun",
+        "verified_transactions": 9,
+        "energy_clock_and_workload": true,
+        "source": "results/learning_time_budget_v1_20261028/airscape_seed0/salun"
+      }
+    ],
+    "energy_budget_kJ": 650.0,
+    "all_methods_finish_all45_FU_procedures_within_budget": true,
+    "warm20_before_energy_origin": true,
+    "extrapolated_model_updates": false
+  },
+  "fu_workload": {
+    "passed": true,
+    "new_arms": 40,
+    "zero_change_controls": 8,
+    "cases": [
+      {
+        "dataset": "CapERA",
+        "method": "gate_select16",
+        "steps": 1,
+        "shared_scenario_and_models": true,
+        "source": "results/tgcn_fu_workload_v1_20261028/gate_select16/gate_select16/cases/fu_steps_1/capera_seed0/adaptive_retrieval_fu",
+        "actual_complete_workload": true,
+        "costs_recomputed": true
+      },
+      {
+        "dataset": "CapERA",
+        "method": "iscc",
+        "steps": 1,
+        "shared_scenario_and_models": true,
+        "source": "results/tgcn_fu_workload_v1_20261028/papers/cases/fu_steps_1/capera_seed0/iscc_p2_gaft",
+        "actual_complete_workload": true,
+        "costs_recomputed": true
+      },
+      {
+        "dataset": "CapERA",
+        "method": "afl",
+        "steps": 1,
+        "shared_scenario_and_models": true,
+        "source": "results/tgcn_fu_workload_v1_20261028/papers/cases/fu_steps_1/capera_seed0/uav_afl_ota_gaft",
+        "actual_complete_workload": true,
+        "costs_recomputed": true
+      },
+      {
+        "dataset": "CapERA",
+        "method": "salun",
+        "steps": 1,
+        "shared_scenario_and_models": true,
+        "source": "results/tgcn_fu_workload_v1_20261028/salun/salun/cases/fu_steps_1/capera_seed0/iscc_p2_gaft",
+        "actual_complete_workload": true,
+        "costs_recomputed": true
+      },
+      {
+        "dataset": "AirScape",
+        "method": "gate_select16",
+        "steps": 1,
+        "shared_scenario_and_models": true,
+        "source": "results/tgcn_fu_workload_v1_20261028/gate_select16/gate_select16/cases/fu_steps_1/airscape_seed0/adaptive_retrieval_fu",
+        "actual_complete_workload": true,
+        "costs_recomputed": true
+      },
+      {
+        "dataset": "AirScape",
+        "method": "iscc",
+        "steps": 1,
+        "shared_scenario_and_models": true,
+        "source": "results/tgcn_fu_workload_v1_20261028/papers/cases/fu_steps_1/airscape_seed0/iscc_p2_gaft",
+        "actual_complete_workload": true,
+        "costs_recomputed": true
+      },
+      {
+        "dataset": "AirScape",
+        "method": "afl",
+        "steps": 1,
+        "shared_scenario_and_models": true,
+        "source": "results/tgcn_fu_workload_v1_20261028/papers/cases/fu_steps_1/airscape_seed0/uav_afl_ota_gaft",
+        "actual_complete_workload": true,
+        "costs_recomputed": true
+      },
+      {
+        "dataset": "AirScape",
+        "method": "salun",
+        "steps": 1,
+        "shared_scenario_and_models": true,
+        "source": "results/tgcn_fu_workload_v1_20261028/salun/salun/cases/fu_steps_1/airscape_seed0/iscc_p2_gaft",
+        "actual_complete_workload": true,
+        "costs_recomputed": true
+      },
+      {
+        "dataset": "CapERA",
+        "method": "gate_select16",
+        "steps": 3,
+        "shared_scenario_and_models": true,
+        "source": "results/tgcn_fu_workload_v1_20261028/gate_select16/gate_select16/cases/fu_steps_3/capera_seed0/adaptive_retrieval_fu",
+        "actual_complete_workload": true,
+        "costs_recomputed": true
+      },
+      {
+        "dataset": "CapERA",
+        "method": "iscc",
+        "steps": 3,
+        "shared_scenario_and_models": true,
+        "source": "results/tgcn_fu_workload_v1_20261028/papers/cases/fu_steps_3/capera_seed0/iscc_p2_gaft",
+        "actual_complete_workload": true,
+        "costs_recomputed": true
+      },
+      {
+        "dataset": "CapERA",
+        "method": "afl",
+        "steps": 3,
+        "shared_scenario_and_models": true,
+        "source": "results/tgcn_fu_workload_v1_20261028/papers/cases/fu_steps_3/capera_seed0/uav_afl_ota_gaft",
+        "actual_complete_workload": true,
+        "costs_recomputed": true
+      },
+      {
+        "dataset": "CapERA",
+        "method": "salun",
+        "steps": 3,
+        "shared_scenario_and_models": true,
+        "source": "results/tgcn_fu_workload_v1_20261028/salun/salun/cases/fu_steps_3/capera_seed0/iscc_p2_gaft",
+        "actual_complete_workload": true,
+        "costs_recomputed": true
+      },
+      {
+        "dataset": "AirScape",
+        "method": "gate_select16",
+        "steps": 3,
+        "shared_scenario_and_models": true,
+        "source": "results/tgcn_fu_workload_v1_20261028/gate_select16/gate_select16/cases/fu_steps_3/airscape_seed0/adaptive_retrieval_fu",
+        "actual_complete_workload": true,
+        "costs_recomputed": true
+      },
+      {
+        "dataset": "AirScape",
+        "method": "iscc",
+        "steps": 3,
+        "shared_scenario_and_models": true,
+        "source": "results/tgcn_fu_workload_v1_20261028/papers/cases/fu_steps_3/airscape_seed0/iscc_p2_gaft",
+        "actual_complete_workload": true,
+        "costs_recomputed": true
+      },
+      {
+        "dataset": "AirScape",
+        "method": "afl",
+        "steps": 3,
+        "shared_scenario_and_models": true,
+        "source": "results/tgcn_fu_workload_v1_20261028/papers/cases/fu_steps_3/airscape_seed0/uav_afl_ota_gaft",
+        "actual_complete_workload": true,
+        "costs_recomputed": true
+      },
+      {
+        "dataset": "AirScape",
+        "method": "salun",
+        "steps": 3,
+        "shared_scenario_and_models": true,
+        "source": "results/tgcn_fu_workload_v1_20261028/salun/salun/cases/fu_steps_3/airscape_seed0/iscc_p2_gaft",
+        "actual_complete_workload": true,
+        "costs_recomputed": true
+      },
+      {
+        "dataset": "CapERA",
+        "method": "gate_select16",
+        "steps": 5,
+        "shared_scenario_and_models": true,
+        "source": "results/tgcn_fu_workload_v1_20261028/gate_select16/gate_select16/cases/fu_steps_5/capera_seed0/adaptive_retrieval_fu",
+        "actual_complete_workload": true,
+        "costs_recomputed": true
+      },
+      {
+        "dataset": "CapERA",
+        "method": "iscc",
+        "steps": 5,
+        "shared_scenario_and_models": true,
+        "source": "results/tgcn_fu_workload_v1_20261028/papers/cases/fu_steps_5/capera_seed0/iscc_p2_gaft",
+        "actual_complete_workload": true,
+        "costs_recomputed": true
+      },
+      {
+        "dataset": "CapERA",
+        "method": "afl",
+        "steps": 5,
+        "shared_scenario_and_models": true,
+        "source": "results/tgcn_fu_workload_v1_20261028/papers/cases/fu_steps_5/capera_seed0/uav_afl_ota_gaft",
+        "actual_complete_workload": true,
+        "costs_recomputed": true
+      },
+      {
+        "dataset": "CapERA",
+        "method": "salun",
+        "steps": 5,
+        "shared_scenario_and_models": true,
+        "source": "results/tgcn_fu_workload_v1_20261028/salun/salun/cases/fu_steps_5/capera_seed0/iscc_p2_gaft",
+        "actual_complete_workload": true,
+        "costs_recomputed": true
+      },
+      {
+        "dataset": "AirScape",
+        "method": "gate_select16",
+        "steps": 5,
+        "shared_scenario_and_models": true,
+        "source": "results/tgcn_fu_workload_v1_20261028/gate_select16/gate_select16/cases/fu_steps_5/airscape_seed0/adaptive_retrieval_fu",
+        "actual_complete_workload": true,
+        "costs_recomputed": true
+      },
+      {
+        "dataset": "AirScape",
+        "method": "iscc",
+        "steps": 5,
+        "shared_scenario_and_models": true,
+        "source": "results/tgcn_fu_workload_v1_20261028/papers/cases/fu_steps_5/airscape_seed0/iscc_p2_gaft",
+        "actual_complete_workload": true,
+        "costs_recomputed": true
+      },
+      {
+        "dataset": "AirScape",
+        "method": "afl",
+        "steps": 5,
+        "shared_scenario_and_models": true,
+        "source": "results/tgcn_fu_workload_v1_20261028/papers/cases/fu_steps_5/airscape_seed0/uav_afl_ota_gaft",
+        "actual_complete_workload": true,
+        "costs_recomputed": true
+      },
+      {
+        "dataset": "AirScape",
+        "method": "salun",
+        "steps": 5,
+        "shared_scenario_and_models": true,
+        "source": "results/tgcn_fu_workload_v1_20261028/salun/salun/cases/fu_steps_5/airscape_seed0/iscc_p2_gaft",
+        "actual_complete_workload": true,
+        "costs_recomputed": true
+      },
+      {
+        "dataset": "CapERA",
+        "method": "gate_select16",
+        "steps": 7,
+        "shared_scenario_and_models": true,
+        "source": "results/tgcn_fu_workload_v1_20261028/gate_select16/gate_select16/cases/fu_steps_7/capera_seed0/adaptive_retrieval_fu",
+        "actual_complete_workload": true,
+        "costs_recomputed": true
+      },
+      {
+        "dataset": "CapERA",
+        "method": "iscc",
+        "steps": 7,
+        "shared_scenario_and_models": true,
+        "source": "results/tgcn_fu_workload_v1_20261028/papers/cases/fu_steps_7/capera_seed0/iscc_p2_gaft",
+        "actual_complete_workload": true,
+        "costs_recomputed": true
+      },
+      {
+        "dataset": "CapERA",
+        "method": "afl",
+        "steps": 7,
+        "shared_scenario_and_models": true,
+        "source": "results/tgcn_fu_workload_v1_20261028/papers/cases/fu_steps_7/capera_seed0/uav_afl_ota_gaft",
+        "actual_complete_workload": true,
+        "costs_recomputed": true
+      },
+      {
+        "dataset": "CapERA",
+        "method": "salun",
+        "steps": 7,
+        "shared_scenario_and_models": true,
+        "source": "results/tgcn_fu_workload_v1_20261028/salun/salun/cases/fu_steps_7/capera_seed0/iscc_p2_gaft",
+        "actual_complete_workload": true,
+        "costs_recomputed": true
+      },
+      {
+        "dataset": "AirScape",
+        "method": "gate_select16",
+        "steps": 7,
+        "shared_scenario_and_models": true,
+        "source": "results/tgcn_fu_workload_v1_20261028/gate_select16/gate_select16/cases/fu_steps_7/airscape_seed0/adaptive_retrieval_fu",
+        "actual_complete_workload": true,
+        "costs_recomputed": true
+      },
+      {
+        "dataset": "AirScape",
+        "method": "iscc",
+        "steps": 7,
+        "shared_scenario_and_models": true,
+        "source": "results/tgcn_fu_workload_v1_20261028/papers/cases/fu_steps_7/airscape_seed0/iscc_p2_gaft",
+        "actual_complete_workload": true,
+        "costs_recomputed": true
+      },
+      {
+        "dataset": "AirScape",
+        "method": "afl",
+        "steps": 7,
+        "shared_scenario_and_models": true,
+        "source": "results/tgcn_fu_workload_v1_20261028/papers/cases/fu_steps_7/airscape_seed0/uav_afl_ota_gaft",
+        "actual_complete_workload": true,
+        "costs_recomputed": true
+      },
+      {
+        "dataset": "AirScape",
+        "method": "salun",
+        "steps": 7,
+        "shared_scenario_and_models": true,
+        "source": "results/tgcn_fu_workload_v1_20261028/salun/salun/cases/fu_steps_7/airscape_seed0/iscc_p2_gaft",
+        "actual_complete_workload": true,
+        "costs_recomputed": true
+      },
+      {
+        "dataset": "CapERA",
+        "method": "gate_select16",
+        "steps": 9,
+        "shared_scenario_and_models": true,
+        "source": "results/tgcn_fu_workload_v1_20261028/gate_select16/gate_select16/cases/fu_steps_9/capera_seed0/adaptive_retrieval_fu",
+        "actual_complete_workload": true,
+        "costs_recomputed": true
+      },
+      {
+        "dataset": "CapERA",
+        "method": "iscc",
+        "steps": 9,
+        "shared_scenario_and_models": true,
+        "source": "results/tgcn_fu_workload_v1_20261028/papers/cases/fu_steps_9/capera_seed0/iscc_p2_gaft",
+        "actual_complete_workload": true,
+        "costs_recomputed": true
+      },
+      {
+        "dataset": "CapERA",
+        "method": "afl",
+        "steps": 9,
+        "shared_scenario_and_models": true,
+        "source": "results/tgcn_fu_workload_v1_20261028/papers/cases/fu_steps_9/capera_seed0/uav_afl_ota_gaft",
+        "actual_complete_workload": true,
+        "costs_recomputed": true
+      },
+      {
+        "dataset": "CapERA",
+        "method": "salun",
+        "steps": 9,
+        "shared_scenario_and_models": true,
+        "source": "results/tgcn_fu_workload_v1_20261028/salun/salun/cases/fu_steps_9/capera_seed0/iscc_p2_gaft",
+        "actual_complete_workload": true,
+        "costs_recomputed": true
+      },
+      {
+        "dataset": "AirScape",
+        "method": "gate_select16",
+        "steps": 9,
+        "shared_scenario_and_models": true,
+        "source": "results/tgcn_fu_workload_v1_20261028/gate_select16/gate_select16/cases/fu_steps_9/airscape_seed0/adaptive_retrieval_fu",
+        "actual_complete_workload": true,
+        "costs_recomputed": true
+      },
+      {
+        "dataset": "AirScape",
+        "method": "iscc",
+        "steps": 9,
+        "shared_scenario_and_models": true,
+        "source": "results/tgcn_fu_workload_v1_20261028/papers/cases/fu_steps_9/airscape_seed0/iscc_p2_gaft",
+        "actual_complete_workload": true,
+        "costs_recomputed": true
+      },
+      {
+        "dataset": "AirScape",
+        "method": "afl",
+        "steps": 9,
+        "shared_scenario_and_models": true,
+        "source": "results/tgcn_fu_workload_v1_20261028/papers/cases/fu_steps_9/airscape_seed0/uav_afl_ota_gaft",
+        "actual_complete_workload": true,
+        "costs_recomputed": true
+      },
+      {
+        "dataset": "AirScape",
+        "method": "salun",
+        "steps": 9,
+        "shared_scenario_and_models": true,
+        "source": "results/tgcn_fu_workload_v1_20261028/salun/salun/cases/fu_steps_9/airscape_seed0/iscc_p2_gaft",
+        "actual_complete_workload": true,
+        "costs_recomputed": true
+      }
+    ]
+  },
+  "retrieval": {
+    "passed": true,
+    "verified_models": 8,
+    "original_recall_and_loss_reproduced": true,
+    "actual_video_frames": 10,
+    "selected_examples": 4,
+    "gain_and_loss_examples": true,
+    "generated_captions_or_media": false,
+    "all_retained_query_ranks_published": true
+  },
+  "energy_matched_retrieval": {
+    "passed": true,
+    "verified_models": 8,
+    "original_recall_and_loss_reproduced": true,
+    "actual_video_frames": 8,
+    "selected_examples": 4,
+    "gain_and_loss_examples": true,
+    "generated_captions_or_media": false,
+    "all_retained_query_ranks_published": true
+  }
+}

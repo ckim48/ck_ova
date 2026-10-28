@@ -1,0 +1,226 @@
+[
+  {
+    "category": "advantage",
+    "available": true,
+    "query": "policeman points his weapon at a white car parked in the middle of the road and collides with two other cars",
+    "unique_caption_filter": true,
+    "top1_reversal": false,
+    "eligible_examples": 14,
+    "dataset": "CapERA",
+    "caption_id": 5060,
+    "gallery_caption_index": 1770,
+    "ground_truth_video": 1012,
+    "gate_select16_rank": 57,
+    "gate_select16_top1_video": 1431,
+    "gate_select16_top3_video_ids": [
+      1431,
+      689,
+      1119
+    ],
+    "iscc_rank": 59,
+    "iscc_top1_video": 1431,
+    "iscc_top3_video_ids": [
+      1431,
+      689,
+      1119
+    ],
+    "afl_rank": 59,
+    "afl_top1_video": 1431,
+    "afl_top3_video_ids": [
+      1431,
+      689,
+      1119
+    ],
+    "salun_rank": 61,
+    "salun_top1_video": 689,
+    "salun_top3_video_ids": [
+      689,
+      1431,
+      1119
+    ],
+    "best_comparator_rank": 59,
+    "advantage": 2,
+    "media": {
+      "689": {
+        "file": "data/capera_official_v1/videos/Videos/Tra/NonEvent/NonEvent_038 .mp4",
+        "sha256": "d222dfe91ead5b6ca67d73ab552987f50f4bb01743bc3886d6f5825a90d87498"
+      },
+      "1012": {
+        "file": "data/capera_official_v1/videos/Videos/Tra/PoliceChase/PoliceChase_015 .mp4",
+        "sha256": "df9e55e69edb38850d5ce2bc0ab5650c0b9b541f25fd2a222946eb1f7344552c"
+      },
+      "1431": {
+        "file": "data/capera_official_v1/videos/Videos/Tra/TrafficCongestion/TrafficCongestion_011 .mp4",
+        "sha256": "16659fb629716fe1b514b240499b9e9c9d9b1ea2e9a83a719e6708cd93d8b0a0"
+      }
+    },
+    "gallery_videos": 503,
+    "display_query": "policeman points his weapon at a white car parked in the middle of the road and collides with two other cars"
+  },
+  {
+    "category": "disadvantage",
+    "available": true,
+    "query": "white car is being chased by two police cars",
+    "unique_caption_filter": true,
+    "top1_reversal": true,
+    "eligible_examples": 3,
+    "dataset": "CapERA",
+    "caption_id": 5079,
+    "gallery_caption_index": 1779,
+    "ground_truth_video": 1015,
+    "gate_select16_rank": 2,
+    "gate_select16_top1_video": 1000,
+    "gate_select16_top3_video_ids": [
+      1000,
+      1015,
+      1032
+    ],
+    "iscc_rank": 2,
+    "iscc_top1_video": 1000,
+    "iscc_top3_video_ids": [
+      1000,
+      1015,
+      1032
+    ],
+    "afl_rank": 2,
+    "afl_top1_video": 1000,
+    "afl_top3_video_ids": [
+      1000,
+      1015,
+      1032
+    ],
+    "salun_rank": 1,
+    "salun_top1_video": 1015,
+    "salun_top3_video_ids": [
+      1015,
+      1000,
+      1032
+    ],
+    "best_comparator_rank": 1,
+    "advantage": -1,
+    "media": {
+      "1000": {
+        "file": "data/capera_official_v1/videos/Videos/Tra/PoliceChase/PoliceChase_003 .mp4",
+        "sha256": "bdfac797f39da66ca67094b2806199aee836e1e9cffb37fc0ee47de119e8d7f0"
+      },
+      "1015": {
+        "file": "data/capera_official_v1/videos/Videos/Tra/PoliceChase/PoliceChase_018 .mp4",
+        "sha256": "5c57dc0da0ba1c2d024d0d8841329e645b96ae9561a71aa13c566dcde06da87c"
+      }
+    },
+    "gallery_videos": 503,
+    "display_query": "white car is being chased by two police cars"
+  },
+  {
+    "category": "advantage",
+    "available": true,
+    "query": "The video is egocentric/first-person perspective, captured from a camera mounted on a drone. A yacht is sailing toward the right side of the frame. The drone, hovering at a low altitude over the sea and maintaining its gimbal camera angle level with the yacht ahead, slowly rotates to the right to keep the yacht in the center of the frame.",
+    "unique_caption_filter": true,
+    "top1_reversal": false,
+    "eligible_examples": 8,
+    "dataset": "AirScape",
+    "caption_id": 9,
+    "gallery_caption_index": 9,
+    "ground_truth_video": 9,
+    "gate_select16_rank": 161,
+    "gate_select16_top1_video": 1398,
+    "gate_select16_top3_video_ids": [
+      1398,
+      973,
+      53
+    ],
+    "iscc_rank": 167,
+    "iscc_top1_video": 973,
+    "iscc_top3_video_ids": [
+      973,
+      1398,
+      53
+    ],
+    "afl_rank": 167,
+    "afl_top1_video": 973,
+    "afl_top3_video_ids": [
+      973,
+      1398,
+      53
+    ],
+    "salun_rank": 168,
+    "salun_top1_video": 1398,
+    "salun_top3_video_ids": [
+      1398,
+      973,
+      53
+    ],
+    "best_comparator_rank": 167,
+    "advantage": 6,
+    "media": {
+      "9": {
+        "file": "data/airscape_v1/videos/11905_WebUAV3M_train_yacht_4_0.mp4",
+        "sha256": "4d98dad818dce11b609a2bc51d552f3b2146ca95b3e06040c0a9f5c8a4f5f203"
+      },
+      "973": {
+        "file": "data/airscape_v1/videos/10372_WebUAV3M_train_tugboat_2_0.mp4",
+        "sha256": "95f5660146e46266338d5e0c4b921123667f6d1ac11637bdb2fbba851fe4a14e"
+      },
+      "1398": {
+        "file": "data/airscape_v1/videos/10340_WebUAV3M_train_trimaran_3_0.mp4",
+        "sha256": "79ac088bd314f0e931154a4cbced844fc9f61225f75e99d7e9062d2a07eb7a04"
+      }
+    },
+    "gallery_videos": 614,
+    "display_query": "The video is egocentric/first-person perspective, captured from a camera mounted on a drone. A yacht is sailing\ntoward the right side of the frame. The drone, hovering at a low altitude over the sea and maintaining its\ngimbal camera angle level with the yacht ahead, slowly rotates to the right to keep the yacht in the center of \u2026"
+  },
+  {
+    "category": "disadvantage",
+    "available": true,
+    "query": "The video is egocentric/first-person perspective, captured from a camera mounted on a drone. A vehicle is driving on a road in the Gobi Desert towards the drone. The drone flies slowly forward while maintaining its flight altitude and gimbal camera angle to get a closer perspective of the vehicle.",
+    "unique_caption_filter": true,
+    "top1_reversal": true,
+    "eligible_examples": 1,
+    "dataset": "AirScape",
+    "caption_id": 112,
+    "gallery_caption_index": 112,
+    "ground_truth_video": 112,
+    "gate_select16_rank": 2,
+    "gate_select16_top1_video": 113,
+    "gate_select16_top3_video_ids": [
+      113,
+      112,
+      189
+    ],
+    "iscc_rank": 1,
+    "iscc_top1_video": 112,
+    "iscc_top3_video_ids": [
+      112,
+      113,
+      189
+    ],
+    "afl_rank": 1,
+    "afl_top1_video": 112,
+    "afl_top3_video_ids": [
+      112,
+      113,
+      189
+    ],
+    "salun_rank": 1,
+    "salun_top1_video": 112,
+    "salun_top3_video_ids": [
+      112,
+      113,
+      189
+    ],
+    "best_comparator_rank": 1,
+    "advantage": -1,
+    "media": {
+      "112": {
+        "file": "data/airscape_v1/videos/10367_WebUAV3M_train_truck_head_1_0.mp4",
+        "sha256": "b3192730b8b472bd2c506f7e4a00344988b1d8667a55869de29efa32febf3d41"
+      },
+      "113": {
+        "file": "data/airscape_v1/videos/04392_WebUAV3M_train_dog_6_1.mp4",
+        "sha256": "476559ed53c75f3fe7051120ebe74ec7f767d92e706b18e340db1616d5a9ba0b"
+      }
+    },
+    "gallery_videos": 614,
+    "display_query": "The video is egocentric/first-person perspective, captured from a camera mounted on a drone. A vehicle is\ndriving on a road in the Gobi Desert towards the drone. The drone flies slowly forward while maintaining its\nflight altitude and gimbal camera angle to get a closer perspective of the vehicle."
+  }
+]

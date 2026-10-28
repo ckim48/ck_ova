@@ -1,0 +1,4 @@
+dataset,comparator,queries,better,equal,worse,mean_rank_difference,median_rank_difference
+CapERA,iscc,1280,873,89,318,21.27421875,6.0
+CapERA,afl,1280,599,287,394,4.03046875,0.0
+CapERA,salun,1280,866,92,322,20.25546875,6.0

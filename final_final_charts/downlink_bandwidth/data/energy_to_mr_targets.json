@@ -1,0 +1,242 @@
+[
+  {
+    "dataset": "CapERA",
+    "method": "gate_select16",
+    "label": "Proposed",
+    "target_mR_percent": 18.0,
+    "reached": true,
+    "energy_kJ": 215.6875987149098,
+    "active_s": 127.8661765275011,
+    "all_FU_procedures_required": true
+  },
+  {
+    "dataset": "CapERA",
+    "method": "gate_select16",
+    "label": "Proposed",
+    "target_mR_percent": 20.0,
+    "reached": true,
+    "energy_kJ": 262.4694552011369,
+    "active_s": 155.5999831418339,
+    "all_FU_procedures_required": true
+  },
+  {
+    "dataset": "CapERA",
+    "method": "gate_select16",
+    "label": "Proposed",
+    "target_mR_percent": 22.0,
+    "reached": true,
+    "energy_kJ": 337.77685831586,
+    "active_s": 200.24464744783302,
+    "all_FU_procedures_required": true
+  },
+  {
+    "dataset": "CapERA",
+    "method": "iscc",
+    "label": "ISCC-P2",
+    "target_mR_percent": 18.0,
+    "reached": false,
+    "energy_kJ": null,
+    "active_s": null,
+    "all_FU_procedures_required": true
+  },
+  {
+    "dataset": "CapERA",
+    "method": "iscc",
+    "label": "ISCC-P2",
+    "target_mR_percent": 20.0,
+    "reached": false,
+    "energy_kJ": null,
+    "active_s": null,
+    "all_FU_procedures_required": true
+  },
+  {
+    "dataset": "CapERA",
+    "method": "iscc",
+    "label": "ISCC-P2",
+    "target_mR_percent": 22.0,
+    "reached": false,
+    "energy_kJ": null,
+    "active_s": null,
+    "all_FU_procedures_required": true
+  },
+  {
+    "dataset": "CapERA",
+    "method": "afl",
+    "label": "AFL-OTA",
+    "target_mR_percent": 18.0,
+    "reached": true,
+    "energy_kJ": 295.58603882861587,
+    "active_s": 175.22777407333245,
+    "all_FU_procedures_required": true
+  },
+  {
+    "dataset": "CapERA",
+    "method": "afl",
+    "label": "AFL-OTA",
+    "target_mR_percent": 20.0,
+    "reached": true,
+    "energy_kJ": 364.223129289704,
+    "active_s": 215.91680319333324,
+    "all_FU_procedures_required": true
+  },
+  {
+    "dataset": "CapERA",
+    "method": "afl",
+    "label": "AFL-OTA",
+    "target_mR_percent": 22.0,
+    "reached": true,
+    "energy_kJ": 462.37267402841144,
+    "active_s": 274.1009542333345,
+    "all_FU_procedures_required": true
+  },
+  {
+    "dataset": "CapERA",
+    "method": "salun",
+    "label": "F-SalUn",
+    "target_mR_percent": 18.0,
+    "reached": false,
+    "energy_kJ": null,
+    "active_s": null,
+    "all_FU_procedures_required": true
+  },
+  {
+    "dataset": "CapERA",
+    "method": "salun",
+    "label": "F-SalUn",
+    "target_mR_percent": 20.0,
+    "reached": false,
+    "energy_kJ": null,
+    "active_s": null,
+    "all_FU_procedures_required": true
+  },
+  {
+    "dataset": "CapERA",
+    "method": "salun",
+    "label": "F-SalUn",
+    "target_mR_percent": 22.0,
+    "reached": false,
+    "energy_kJ": null,
+    "active_s": null,
+    "all_FU_procedures_required": true
+  },
+  {
+    "dataset": "AirScape",
+    "method": "gate_select16",
+    "label": "Proposed",
+    "target_mR_percent": 14.0,
+    "reached": true,
+    "energy_kJ": 243.06214873897758,
+    "active_s": 144.09476726025105,
+    "all_FU_procedures_required": true
+  },
+  {
+    "dataset": "AirScape",
+    "method": "gate_select16",
+    "label": "Proposed",
+    "target_mR_percent": 15.0,
+    "reached": true,
+    "energy_kJ": 332.06169103488094,
+    "active_s": 196.85664416825148,
+    "all_FU_procedures_required": true
+  },
+  {
+    "dataset": "AirScape",
+    "method": "gate_select16",
+    "label": "Proposed",
+    "target_mR_percent": 16.0,
+    "reached": true,
+    "energy_kJ": 441.59957456633896,
+    "active_s": 261.794338824252,
+    "all_FU_procedures_required": true
+  },
+  {
+    "dataset": "AirScape",
+    "method": "iscc",
+    "label": "ISCC-P2",
+    "target_mR_percent": 14.0,
+    "reached": false,
+    "energy_kJ": null,
+    "active_s": null,
+    "all_FU_procedures_required": true
+  },
+  {
+    "dataset": "AirScape",
+    "method": "iscc",
+    "label": "ISCC-P2",
+    "target_mR_percent": 15.0,
+    "reached": false,
+    "energy_kJ": null,
+    "active_s": null,
+    "all_FU_procedures_required": true
+  },
+  {
+    "dataset": "AirScape",
+    "method": "iscc",
+    "label": "ISCC-P2",
+    "target_mR_percent": 16.0,
+    "reached": false,
+    "energy_kJ": null,
+    "active_s": null,
+    "all_FU_procedures_required": true
+  },
+  {
+    "dataset": "AirScape",
+    "method": "afl",
+    "label": "AFL-OTA",
+    "target_mR_percent": 14.0,
+    "reached": true,
+    "energy_kJ": 324.00294922613733,
+    "active_s": 192.07338126999952,
+    "all_FU_procedures_required": true
+  },
+  {
+    "dataset": "AirScape",
+    "method": "afl",
+    "label": "AFL-OTA",
+    "target_mR_percent": 15.0,
+    "reached": true,
+    "energy_kJ": 395.9943378783743,
+    "active_s": 234.75075215000032,
+    "all_FU_procedures_required": true
+  },
+  {
+    "dataset": "AirScape",
+    "method": "afl",
+    "label": "AFL-OTA",
+    "target_mR_percent": 16.0,
+    "reached": true,
+    "energy_kJ": 504.5695251539436,
+    "active_s": 299.1149684700019,
+    "all_FU_procedures_required": true
+  },
+  {
+    "dataset": "AirScape",
+    "method": "salun",
+    "label": "F-SalUn",
+    "target_mR_percent": 14.0,
+    "reached": false,
+    "energy_kJ": null,
+    "active_s": null,
+    "all_FU_procedures_required": true
+  },
+  {
+    "dataset": "AirScape",
+    "method": "salun",
+    "label": "F-SalUn",
+    "target_mR_percent": 15.0,
+    "reached": false,
+    "energy_kJ": null,
+    "active_s": null,
+    "all_FU_procedures_required": true
+  },
+  {
+    "dataset": "AirScape",
+    "method": "salun",
+    "label": "F-SalUn",
+    "target_mR_percent": 16.0,
+    "reached": false,
+    "energy_kJ": null,
+    "active_s": null,
+    "all_FU_procedures_required": true
+  }
+]

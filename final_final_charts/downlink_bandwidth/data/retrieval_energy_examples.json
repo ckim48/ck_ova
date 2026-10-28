@@ -1,0 +1,218 @@
+[
+  {
+    "category": "advantage",
+    "available": true,
+    "query": "bridge over a river is crowded with cars in front of it buildings",
+    "unique_caption_filter": true,
+    "top1_reversal": true,
+    "eligible_examples": 8,
+    "dataset": "CapERA",
+    "caption_id": 7220,
+    "gallery_caption_index": 2445,
+    "ground_truth_video": 1444,
+    "gate_select16_rank": 1,
+    "gate_select16_top1_video": 1444,
+    "gate_select16_top3_video_ids": [
+      1444,
+      1472,
+      1459
+    ],
+    "iscc_rank": 5,
+    "iscc_top1_video": 1459,
+    "iscc_top3_video_ids": [
+      1459,
+      312,
+      1446
+    ],
+    "afl_rank": 2,
+    "afl_top1_video": 1459,
+    "afl_top3_video_ids": [
+      1459,
+      1444,
+      1472
+    ],
+    "salun_rank": 4,
+    "salun_top1_video": 1459,
+    "salun_top3_video_ids": [
+      1459,
+      312,
+      1446
+    ],
+    "best_comparator_rank": 2,
+    "advantage": 1,
+    "media": {
+      "1459": {
+        "file": "data/capera_official_v1/videos/Videos/Tra/TrafficCongestion/TrafficCongestion_039 .mp4",
+        "sha256": "a4bf4446ea2420ac3f72241f08df3189a6c9777a8e8f8728fa04380d6cb44f72"
+      },
+      "1444": {
+        "file": "data/capera_official_v1/videos/Videos/Tra/TrafficCongestion/TrafficCongestion_024 .mp4",
+        "sha256": "2584f3196e7eb19665b1d0fdb761b2e9ff93e68ff5bec6e078ee1db74c682819"
+      }
+    },
+    "gallery_videos": 503,
+    "display_query": "bridge over a river is crowded with cars in front of it buildings"
+  },
+  {
+    "category": "disadvantage",
+    "available": true,
+    "query": "the streets of a neighborhood made up of several houses cars and trees are submerged by a flood of water",
+    "unique_caption_filter": true,
+    "top1_reversal": true,
+    "eligible_examples": 17,
+    "dataset": "CapERA",
+    "caption_id": 2165,
+    "gallery_caption_index": 755,
+    "ground_truth_video": 433,
+    "gate_select16_rank": 3,
+    "gate_select16_top1_video": 394,
+    "gate_select16_top3_video_ids": [
+      394,
+      454,
+      433
+    ],
+    "iscc_rank": 1,
+    "iscc_top1_video": 433,
+    "iscc_top3_video_ids": [
+      433,
+      452,
+      602
+    ],
+    "afl_rank": 3,
+    "afl_top1_video": 394,
+    "afl_top3_video_ids": [
+      394,
+      454,
+      433
+    ],
+    "salun_rank": 1,
+    "salun_top1_video": 433,
+    "salun_top3_video_ids": [
+      433,
+      452,
+      602
+    ],
+    "best_comparator_rank": 1,
+    "advantage": -2,
+    "media": {
+      "433": {
+        "file": "data/capera_official_v1/videos/Videos/Tra/Flood/Flood_004 .mp4",
+        "sha256": "e6e464cd509c5ff2c5e83726b8c3e2b334bd1af59e915d871840d8b962f20be2"
+      },
+      "394": {
+        "file": "data/capera_official_v1/videos/Videos/Tra/Fire/Fire_023 .mp4",
+        "sha256": "ed40598e5afa20d90cecaf1e39c25f7242615b2c8d2188f911e4adb5e2706e3b"
+      }
+    },
+    "gallery_videos": 503,
+    "display_query": "the streets of a neighborhood made up of several houses cars and trees are submerged by a flood of water"
+  },
+  {
+    "category": "advantage",
+    "available": true,
+    "query": "The video is egocentric/first-person perspective, captured from a camera mounted on a drone. The drone flew to the left at a constant altitude, and the camera captured several horses grazing or moving freely near the stream and the orange pond, without focusing on specific targets.",
+    "unique_caption_filter": true,
+    "top1_reversal": true,
+    "eligible_examples": 3,
+    "dataset": "AirScape",
+    "caption_id": 154,
+    "gallery_caption_index": 154,
+    "ground_truth_video": 154,
+    "gate_select16_rank": 1,
+    "gate_select16_top1_video": 154,
+    "gate_select16_top3_video_ids": [
+      154,
+      1283,
+      67
+    ],
+    "iscc_rank": 4,
+    "iscc_top1_video": 1283,
+    "iscc_top3_video_ids": [
+      1283,
+      1336,
+      67
+    ],
+    "afl_rank": 2,
+    "afl_top1_video": 1283,
+    "afl_top3_video_ids": [
+      1283,
+      154,
+      294
+    ],
+    "salun_rank": 4,
+    "salun_top1_video": 1283,
+    "salun_top3_video_ids": [
+      1283,
+      1336,
+      67
+    ],
+    "best_comparator_rank": 2,
+    "advantage": 1,
+    "media": {
+      "154": {
+        "file": "data/airscape_v1/videos/05290_WebUAV3M_train_horse_6_0.mp4",
+        "sha256": "8d759b35bb7e85e52acd326b90e550d1bfe43921934e8b70fed0e13ce57f3a28"
+      },
+      "1283": {
+        "file": "data/airscape_v1/videos/04331_WebUAV3M_train_digging_bucket_3_0.mp4",
+        "sha256": "c32d5a8add39599ced76acab871054b260e3d3475ac67c2304060ccdc7b89024"
+      }
+    },
+    "gallery_videos": 614,
+    "display_query": "The video is egocentric/first-person perspective, captured from a camera mounted on a drone. The drone flew to\nthe left at a constant altitude, and the camera captured several horses grazing or moving freely near the stream\nand the orange pond, without focusing on specific targets."
+  },
+  {
+    "category": "disadvantage",
+    "available": true,
+    "query": "The video is egocentric/first-person perspective, captured from a camera mounted on a drone. The drone flies backwards and upwards while keeping the white pagoda centered in its field of view.",
+    "unique_caption_filter": true,
+    "top1_reversal": true,
+    "eligible_examples": 5,
+    "dataset": "AirScape",
+    "caption_id": 105,
+    "gallery_caption_index": 105,
+    "ground_truth_video": 105,
+    "gate_select16_rank": 3,
+    "gate_select16_top1_video": 1079,
+    "gate_select16_top3_video_ids": [
+      1079,
+      181,
+      105
+    ],
+    "iscc_rank": 1,
+    "iscc_top1_video": 105,
+    "iscc_top3_video_ids": [
+      105,
+      1079,
+      103
+    ],
+    "afl_rank": 1,
+    "afl_top1_video": 105,
+    "afl_top3_video_ids": [
+      105,
+      104,
+      1079
+    ],
+    "salun_rank": 1,
+    "salun_top1_video": 105,
+    "salun_top3_video_ids": [
+      105,
+      1079,
+      103
+    ],
+    "best_comparator_rank": 1,
+    "advantage": -2,
+    "media": {
+      "105": {
+        "file": "data/airscape_v1/videos/05611_WebUAV3M_train_mchod-rten_4_4.mp4",
+        "sha256": "bdd44aa163e46404a373374f017344e3c46e3d8d8cc0cfabd10a03d7f7c63b44"
+      },
+      "1079": {
+        "file": "data/airscape_v1/videos/04792_WebUAV3M_train_going_down_stairs_3_1.mp4",
+        "sha256": "0dfb44eeeadee33fb36bcb53e7630915d006bae951ac6cadd3f7dc0ec5da0275"
+      }
+    },
+    "gallery_videos": 614,
+    "display_query": "The video is egocentric/first-person perspective, captured from a camera mounted on a drone. The drone flies\nbackwards and upwards while keeping the white pagoda centered in its field of view."
+  }
+]

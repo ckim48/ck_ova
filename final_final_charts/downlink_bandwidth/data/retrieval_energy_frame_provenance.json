@@ -1,0 +1,186 @@
+[
+  {
+    "dataset": "CapERA",
+    "video_id": 1444,
+    "file": "data/capera_official_v1/videos/Videos/Tra/TrafficCongestion/TrafficCongestion_024 .mp4",
+    "sha256": "2584f3196e7eb19665b1d0fdb761b2e9ff93e68ff5bec6e078ee1db74c682819",
+    "frame_index": 58,
+    "training_feature_frame_indices": [
+      0,
+      19,
+      39,
+      58,
+      77,
+      96,
+      116,
+      135
+    ],
+    "representative_frame_ordinal": 3,
+    "thumbnail_size": [
+      300,
+      300
+    ],
+    "altered_content": false
+  },
+  {
+    "dataset": "CapERA",
+    "video_id": 1459,
+    "file": "data/capera_official_v1/videos/Videos/Tra/TrafficCongestion/TrafficCongestion_039 .mp4",
+    "sha256": "a4bf4446ea2420ac3f72241f08df3189a6c9777a8e8f8728fa04380d6cb44f72",
+    "frame_index": 59,
+    "training_feature_frame_indices": [
+      0,
+      20,
+      39,
+      59,
+      78,
+      98,
+      117,
+      137
+    ],
+    "representative_frame_ordinal": 3,
+    "thumbnail_size": [
+      300,
+      300
+    ],
+    "altered_content": false
+  },
+  {
+    "dataset": "CapERA",
+    "video_id": 433,
+    "file": "data/capera_official_v1/videos/Videos/Tra/Flood/Flood_004 .mp4",
+    "sha256": "e6e464cd509c5ff2c5e83726b8c3e2b334bd1af59e915d871840d8b962f20be2",
+    "frame_index": 59,
+    "training_feature_frame_indices": [
+      0,
+      20,
+      39,
+      59,
+      78,
+      98,
+      117,
+      137
+    ],
+    "representative_frame_ordinal": 3,
+    "thumbnail_size": [
+      300,
+      300
+    ],
+    "altered_content": false
+  },
+  {
+    "dataset": "CapERA",
+    "video_id": 394,
+    "file": "data/capera_official_v1/videos/Videos/Tra/Fire/Fire_023 .mp4",
+    "sha256": "ed40598e5afa20d90cecaf1e39c25f7242615b2c8d2188f911e4adb5e2706e3b",
+    "frame_index": 59,
+    "training_feature_frame_indices": [
+      0,
+      20,
+      39,
+      59,
+      79,
+      99,
+      118,
+      138
+    ],
+    "representative_frame_ordinal": 3,
+    "thumbnail_size": [
+      300,
+      300
+    ],
+    "altered_content": false
+  },
+  {
+    "dataset": "AirScape",
+    "video_id": 154,
+    "file": "data/airscape_v1/videos/05290_WebUAV3M_train_horse_6_0.mp4",
+    "sha256": "8d759b35bb7e85e52acd326b90e550d1bfe43921934e8b70fed0e13ce57f3a28",
+    "frame_index": 55,
+    "training_feature_frame_indices": [
+      0,
+      18,
+      37,
+      55,
+      73,
+      91,
+      110,
+      128
+    ],
+    "representative_frame_ordinal": 3,
+    "thumbnail_size": [
+      480,
+      270
+    ],
+    "altered_content": false
+  },
+  {
+    "dataset": "AirScape",
+    "video_id": 1283,
+    "file": "data/airscape_v1/videos/04331_WebUAV3M_train_digging_bucket_3_0.mp4",
+    "sha256": "c32d5a8add39599ced76acab871054b260e3d3475ac67c2304060ccdc7b89024",
+    "frame_index": 55,
+    "training_feature_frame_indices": [
+      0,
+      18,
+      37,
+      55,
+      73,
+      91,
+      110,
+      128
+    ],
+    "representative_frame_ordinal": 3,
+    "thumbnail_size": [
+      480,
+      270
+    ],
+    "altered_content": false
+  },
+  {
+    "dataset": "AirScape",
+    "video_id": 105,
+    "file": "data/airscape_v1/videos/05611_WebUAV3M_train_mchod-rten_4_4.mp4",
+    "sha256": "bdd44aa163e46404a373374f017344e3c46e3d8d8cc0cfabd10a03d7f7c63b44",
+    "frame_index": 55,
+    "training_feature_frame_indices": [
+      0,
+      18,
+      37,
+      55,
+      73,
+      91,
+      110,
+      128
+    ],
+    "representative_frame_ordinal": 3,
+    "thumbnail_size": [
+      480,
+      270
+    ],
+    "altered_content": false
+  },
+  {
+    "dataset": "AirScape",
+    "video_id": 1079,
+    "file": "data/airscape_v1/videos/04792_WebUAV3M_train_going_down_stairs_3_1.mp4",
+    "sha256": "0dfb44eeeadee33fb36bcb53e7630915d006bae951ac6cadd3f7dc0ec5da0275",
+    "frame_index": 55,
+    "training_feature_frame_indices": [
+      0,
+      18,
+      37,
+      55,
+      73,
+      91,
+      110,
+      128
+    ],
+    "representative_frame_ordinal": 3,
+    "thumbnail_size": [
+      480,
+      270
+    ],
+    "altered_content": false
+  }
+]

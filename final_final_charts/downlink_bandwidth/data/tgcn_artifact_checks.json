@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "new_figures": 6,
+  "fresh_FU_arms": 40,
+  "exact_baseline_controls": 8,
+  "energy_budget_kJ": 650,
+  "energy_checkpoint_replays_exact": true,
+  "fixed_workload_retrieval": {
+    "models": 8,
+    "selected_examples": 4,
+    "complete_query_ranks_match_full_similarity_matrices": true,
+    "paired_outcomes_and_original_media_verified": true
+  },
+  "matched_energy_retrieval": {
+    "models": 8,
+    "selected_examples": 4,
+    "complete_query_ranks_match_full_similarity_matrices": true,
+    "paired_outcomes_and_original_media_verified": true
+  },
+  "original_nine_figures_unchanged": true,
+  "actual_frame_figures_only": true,
+  "regular_ticks_common_marker_budgets": true,
+  "source_sha256": {
+    "tools/uav_convergence_v2/tgcn_additions_check.py": "a1d5de74b228f81e83addd408ce809dc34d6359a1540a2a5ce8cc78b6d58ae46"
+  }
+}

@@ -1,0 +1,232 @@
+[
+  {
+    "dataset": "CapERA",
+    "video_id": 1012,
+    "file": "data/capera_official_v1/videos/Videos/Tra/PoliceChase/PoliceChase_015 .mp4",
+    "sha256": "df9e55e69edb38850d5ce2bc0ab5650c0b9b541f25fd2a222946eb1f7344552c",
+    "frame_index": 58,
+    "training_feature_frame_indices": [
+      0,
+      19,
+      39,
+      58,
+      78,
+      97,
+      117,
+      136
+    ],
+    "representative_frame_ordinal": 3,
+    "thumbnail_size": [
+      300,
+      300
+    ],
+    "altered_content": false
+  },
+  {
+    "dataset": "CapERA",
+    "video_id": 1431,
+    "file": "data/capera_official_v1/videos/Videos/Tra/TrafficCongestion/TrafficCongestion_011 .mp4",
+    "sha256": "16659fb629716fe1b514b240499b9e9c9d9b1ea2e9a83a719e6708cd93d8b0a0",
+    "frame_index": 57,
+    "training_feature_frame_indices": [
+      0,
+      19,
+      38,
+      57,
+      77,
+      96,
+      115,
+      134
+    ],
+    "representative_frame_ordinal": 3,
+    "thumbnail_size": [
+      300,
+      300
+    ],
+    "altered_content": false
+  },
+  {
+    "dataset": "CapERA",
+    "video_id": 689,
+    "file": "data/capera_official_v1/videos/Videos/Tra/NonEvent/NonEvent_038 .mp4",
+    "sha256": "d222dfe91ead5b6ca67d73ab552987f50f4bb01743bc3886d6f5825a90d87498",
+    "frame_index": 57,
+    "training_feature_frame_indices": [
+      0,
+      19,
+      38,
+      57,
+      76,
+      95,
+      114,
+      133
+    ],
+    "representative_frame_ordinal": 3,
+    "thumbnail_size": [
+      300,
+      300
+    ],
+    "altered_content": false
+  },
+  {
+    "dataset": "CapERA",
+    "video_id": 1015,
+    "file": "data/capera_official_v1/videos/Videos/Tra/PoliceChase/PoliceChase_018 .mp4",
+    "sha256": "5c57dc0da0ba1c2d024d0d8841329e645b96ae9561a71aa13c566dcde06da87c",
+    "frame_index": 59,
+    "training_feature_frame_indices": [
+      0,
+      20,
+      39,
+      59,
+      78,
+      98,
+      117,
+      137
+    ],
+    "representative_frame_ordinal": 3,
+    "thumbnail_size": [
+      300,
+      300
+    ],
+    "altered_content": false
+  },
+  {
+    "dataset": "CapERA",
+    "video_id": 1000,
+    "file": "data/capera_official_v1/videos/Videos/Tra/PoliceChase/PoliceChase_003 .mp4",
+    "sha256": "bdfac797f39da66ca67094b2806199aee836e1e9cffb37fc0ee47de119e8d7f0",
+    "frame_index": 59,
+    "training_feature_frame_indices": [
+      0,
+      20,
+      39,
+      59,
+      79,
+      99,
+      118,
+      138
+    ],
+    "representative_frame_ordinal": 3,
+    "thumbnail_size": [
+      300,
+      300
+    ],
+    "altered_content": false
+  },
+  {
+    "dataset": "AirScape",
+    "video_id": 9,
+    "file": "data/airscape_v1/videos/11905_WebUAV3M_train_yacht_4_0.mp4",
+    "sha256": "4d98dad818dce11b609a2bc51d552f3b2146ca95b3e06040c0a9f5c8a4f5f203",
+    "frame_index": 55,
+    "training_feature_frame_indices": [
+      0,
+      18,
+      37,
+      55,
+      73,
+      91,
+      110,
+      128
+    ],
+    "representative_frame_ordinal": 3,
+    "thumbnail_size": [
+      480,
+      270
+    ],
+    "altered_content": false
+  },
+  {
+    "dataset": "AirScape",
+    "video_id": 1398,
+    "file": "data/airscape_v1/videos/10340_WebUAV3M_train_trimaran_3_0.mp4",
+    "sha256": "79ac088bd314f0e931154a4cbced844fc9f61225f75e99d7e9062d2a07eb7a04",
+    "frame_index": 55,
+    "training_feature_frame_indices": [
+      0,
+      18,
+      37,
+      55,
+      73,
+      91,
+      110,
+      128
+    ],
+    "representative_frame_ordinal": 3,
+    "thumbnail_size": [
+      480,
+      270
+    ],
+    "altered_content": false
+  },
+  {
+    "dataset": "AirScape",
+    "video_id": 973,
+    "file": "data/airscape_v1/videos/10372_WebUAV3M_train_tugboat_2_0.mp4",
+    "sha256": "95f5660146e46266338d5e0c4b921123667f6d1ac11637bdb2fbba851fe4a14e",
+    "frame_index": 55,
+    "training_feature_frame_indices": [
+      0,
+      18,
+      37,
+      55,
+      73,
+      91,
+      110,
+      128
+    ],
+    "representative_frame_ordinal": 3,
+    "thumbnail_size": [
+      480,
+      270
+    ],
+    "altered_content": false
+  },
+  {
+    "dataset": "AirScape",
+    "video_id": 112,
+    "file": "data/airscape_v1/videos/10367_WebUAV3M_train_truck_head_1_0.mp4",
+    "sha256": "b3192730b8b472bd2c506f7e4a00344988b1d8667a55869de29efa32febf3d41",
+    "frame_index": 55,
+    "training_feature_frame_indices": [
+      0,
+      18,
+      37,
+      55,
+      73,
+      91,
+      110,
+      128
+    ],
+    "representative_frame_ordinal": 3,
+    "thumbnail_size": [
+      480,
+      270
+    ],
+    "altered_content": false
+  },
+  {
+    "dataset": "AirScape",
+    "video_id": 113,
+    "file": "data/airscape_v1/videos/04392_WebUAV3M_train_dog_6_1.mp4",
+    "sha256": "476559ed53c75f3fe7051120ebe74ec7f767d92e706b18e340db1616d5a9ba0b",
+    "frame_index": 55,
+    "training_feature_frame_indices": [
+      0,
+      18,
+      37,
+      55,
+      73,
+      91,
+      110,
+      128
+    ],
+    "representative_frame_ordinal": 3,
+    "thumbnail_size": [
+      480,
+      270
+    ],
+    "altered_content": false
+  }
+]

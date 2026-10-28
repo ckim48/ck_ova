@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "dataset": "CapERA",
+      "method": "gate_select16",
+      "exact_model_quality_clock_radio": true
+    },
+    {
+      "dataset": "CapERA",
+      "method": "iscc",
+      "exact_model_quality_clock_radio": true
+    },
+    {
+      "dataset": "CapERA",
+      "method": "afl",
+      "exact_model_quality_clock_radio": true
+    },
+    {
+      "dataset": "CapERA",
+      "method": "salun",
+      "exact_model_quality_clock_radio": true
+    },
+    {
+      "dataset": "AirScape",
+      "method": "gate_select16",
+      "exact_model_quality_clock_radio": true
+    },
+    {
+      "dataset": "AirScape",
+      "method": "iscc",
+      "exact_model_quality_clock_radio": true
+    },
+    {
+      "dataset": "AirScape",
+      "method": "afl",
+      "exact_model_quality_clock_radio": true
+    },
+    {
+      "dataset": "AirScape",
+      "method": "salun",
+      "exact_model_quality_clock_radio": true
+    }
+  ]
+}

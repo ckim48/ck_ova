@@ -1,5 +1,11 @@
 # Proposed = P-KS: learning and resource comparisons
 
+<!-- tgcn-additions -->
+[Energy–mR, FU workload and actual text/video retrieval examples](../downlink_bandwidth/TGCN_ADDITIONS.md). Figures10–15; unchanged Proposed=P-KS.
+<!-- /tgcn-additions -->
+
+
+
 <!-- downlink-bandwidth-current -->
 [Downlink bandwidth figures, paired resource bars, smaller map and comparison tables](../downlink_bandwidth/index.html). Explicit fixed spectral efficiency; 1–5 MHz.
 

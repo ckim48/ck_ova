@@ -1,0 +1,4 @@
+dataset,comparator,queries,better,equal,worse,mean_rank_difference,median_rank_difference
+AirScape,iscc,256,160,16,80,43.2109375,10.0
+AirScape,afl,256,122,29,105,3.34375,0.0
+AirScape,salun,256,159,18,79,41.17578125,9.5

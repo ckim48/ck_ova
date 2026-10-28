@@ -1,5 +1,11 @@
 # Downlink bandwidth, paired resource bars and comparison tables
 
+<!-- tgcn-additions -->
+[Energy–mR, FU workload and actual text/video retrieval examples](TGCN_ADDITIONS.md). Figures10–15; unchanged Proposed=P-KS.
+<!-- /tgcn-additions -->
+
+
+
 Current Proposed is the unchanged P-KS. Four methods: Proposed, ISCC-P2, AFL-OTA and F-SalUn. CapERA is left and AirScape right. [Learning curves and definitions](../proposed_pks/README.md) remain available.
 
 ## Explicit bandwidth model

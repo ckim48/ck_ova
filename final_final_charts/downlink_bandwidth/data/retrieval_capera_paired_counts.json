@@ -1,0 +1,32 @@
+[
+  {
+    "dataset": "CapERA",
+    "comparator": "iscc",
+    "queries": 1280,
+    "better": 569,
+    "equal": 484,
+    "worse": 227,
+    "mean_rank_difference": 2.0015625,
+    "median_rank_difference": 0.0
+  },
+  {
+    "dataset": "CapERA",
+    "comparator": "afl",
+    "queries": 1280,
+    "better": 569,
+    "equal": 485,
+    "worse": 226,
+    "mean_rank_difference": 2.003125,
+    "median_rank_difference": 0.0
+  },
+  {
+    "dataset": "CapERA",
+    "comparator": "salun",
+    "queries": 1280,
+    "better": 442,
+    "equal": 582,
+    "worse": 256,
+    "mean_rank_difference": 0.9828125,
+    "median_rank_difference": 0.0
+  }
+]

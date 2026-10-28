@@ -1,0 +1,32 @@
+[
+  {
+    "dataset": "AirScape",
+    "comparator": "iscc",
+    "queries": 256,
+    "better": 114,
+    "equal": 55,
+    "worse": 87,
+    "mean_rank_difference": 4.24609375,
+    "median_rank_difference": 0.0
+  },
+  {
+    "dataset": "AirScape",
+    "comparator": "afl",
+    "queries": 256,
+    "better": 114,
+    "equal": 55,
+    "worse": 87,
+    "mean_rank_difference": 4.2421875,
+    "median_rank_difference": 0.0
+  },
+  {
+    "dataset": "AirScape",
+    "comparator": "salun",
+    "queries": 256,
+    "better": 103,
+    "equal": 50,
+    "worse": 103,
+    "mean_rank_difference": 2.2109375,
+    "median_rank_difference": 0.0
+  }
+]

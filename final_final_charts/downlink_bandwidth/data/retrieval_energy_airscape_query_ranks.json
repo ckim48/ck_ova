@@ -1,0 +1,8706 @@
+[
+  {
+    "dataset": "AirScape",
+    "caption_id": 0,
+    "gallery_caption_index": 0,
+    "ground_truth_video": 0,
+    "gate_select16_rank": 108,
+    "gate_select16_top1_video": 157,
+    "gate_select16_top3_video_ids": [
+      157,
+      39,
+      1273
+    ],
+    "iscc_rank": 73,
+    "iscc_top1_video": 157,
+    "iscc_top3_video_ids": [
+      157,
+      226,
+      1735
+    ],
+    "afl_rank": 86,
+    "afl_top1_video": 157,
+    "afl_top3_video_ids": [
+      157,
+      1273,
+      39
+    ],
+    "salun_rank": 72,
+    "salun_top1_video": 157,
+    "salun_top3_video_ids": [
+      157,
+      226,
+      1735
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 1,
+    "gallery_caption_index": 1,
+    "ground_truth_video": 1,
+    "gate_select16_rank": 317,
+    "gate_select16_top1_video": 816,
+    "gate_select16_top3_video_ids": [
+      816,
+      1079,
+      1537
+    ],
+    "iscc_rank": 133,
+    "iscc_top1_video": 1079,
+    "iscc_top3_video_ids": [
+      1079,
+      1537,
+      816
+    ],
+    "afl_rank": 267,
+    "afl_top1_video": 816,
+    "afl_top3_video_ids": [
+      816,
+      1079,
+      1537
+    ],
+    "salun_rank": 133,
+    "salun_top1_video": 1079,
+    "salun_top3_video_ids": [
+      1079,
+      1537,
+      816
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 2,
+    "gallery_caption_index": 2,
+    "ground_truth_video": 2,
+    "gate_select16_rank": 8,
+    "gate_select16_top1_video": 1614,
+    "gate_select16_top3_video_ids": [
+      1614,
+      1770,
+      232
+    ],
+    "iscc_rank": 48,
+    "iscc_top1_video": 745,
+    "iscc_top3_video_ids": [
+      745,
+      103,
+      1614
+    ],
+    "afl_rank": 5,
+    "afl_top1_video": 1614,
+    "afl_top3_video_ids": [
+      1614,
+      158,
+      1770
+    ],
+    "salun_rank": 43,
+    "salun_top1_video": 745,
+    "salun_top3_video_ids": [
+      745,
+      103,
+      1614
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 3,
+    "gallery_caption_index": 3,
+    "ground_truth_video": 3,
+    "gate_select16_rank": 14,
+    "gate_select16_top1_video": 1614,
+    "gate_select16_top3_video_ids": [
+      1614,
+      199,
+      170
+    ],
+    "iscc_rank": 94,
+    "iscc_top1_video": 1614,
+    "iscc_top3_video_ids": [
+      1614,
+      241,
+      113
+    ],
+    "afl_rank": 16,
+    "afl_top1_video": 1614,
+    "afl_top3_video_ids": [
+      1614,
+      158,
+      199
+    ],
+    "salun_rank": 89,
+    "salun_top1_video": 1614,
+    "salun_top3_video_ids": [
+      1614,
+      241,
+      71
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 4,
+    "gallery_caption_index": 4,
+    "ground_truth_video": 4,
+    "gate_select16_rank": 100,
+    "gate_select16_top1_video": 172,
+    "gate_select16_top3_video_ids": [
+      172,
+      691,
+      407
+    ],
+    "iscc_rank": 31,
+    "iscc_top1_video": 104,
+    "iscc_top3_video_ids": [
+      104,
+      1146,
+      252
+    ],
+    "afl_rank": 94,
+    "afl_top1_video": 172,
+    "afl_top3_video_ids": [
+      172,
+      691,
+      407
+    ],
+    "salun_rank": 31,
+    "salun_top1_video": 1146,
+    "salun_top3_video_ids": [
+      1146,
+      104,
+      252
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 5,
+    "gallery_caption_index": 5,
+    "ground_truth_video": 5,
+    "gate_select16_rank": 53,
+    "gate_select16_top1_video": 39,
+    "gate_select16_top3_video_ids": [
+      39,
+      157,
+      1699
+    ],
+    "iscc_rank": 65,
+    "iscc_top1_video": 39,
+    "iscc_top3_video_ids": [
+      39,
+      1283,
+      157
+    ],
+    "afl_rank": 48,
+    "afl_top1_video": 39,
+    "afl_top3_video_ids": [
+      39,
+      157,
+      1699
+    ],
+    "salun_rank": 62,
+    "salun_top1_video": 39,
+    "salun_top3_video_ids": [
+      39,
+      1283,
+      157
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 6,
+    "gallery_caption_index": 6,
+    "ground_truth_video": 6,
+    "gate_select16_rank": 29,
+    "gate_select16_top1_video": 1079,
+    "gate_select16_top3_video_ids": [
+      1079,
+      1398,
+      181
+    ],
+    "iscc_rank": 32,
+    "iscc_top1_video": 1079,
+    "iscc_top3_video_ids": [
+      1079,
+      50,
+      181
+    ],
+    "afl_rank": 20,
+    "afl_top1_video": 1398,
+    "afl_top3_video_ids": [
+      1398,
+      1079,
+      181
+    ],
+    "salun_rank": 28,
+    "salun_top1_video": 1079,
+    "salun_top3_video_ids": [
+      1079,
+      50,
+      181
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 7,
+    "gallery_caption_index": 7,
+    "ground_truth_video": 7,
+    "gate_select16_rank": 1,
+    "gate_select16_top1_video": 7,
+    "gate_select16_top3_video_ids": [
+      7,
+      38,
+      41
+    ],
+    "iscc_rank": 25,
+    "iscc_top1_video": 38,
+    "iscc_top3_video_ids": [
+      38,
+      105,
+      168
+    ],
+    "afl_rank": 1,
+    "afl_top1_video": 7,
+    "afl_top3_video_ids": [
+      7,
+      38,
+      244
+    ],
+    "salun_rank": 26,
+    "salun_top1_video": 38,
+    "salun_top3_video_ids": [
+      38,
+      105,
+      168
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 8,
+    "gallery_caption_index": 8,
+    "ground_truth_video": 8,
+    "gate_select16_rank": 254,
+    "gate_select16_top1_video": 207,
+    "gate_select16_top3_video_ids": [
+      207,
+      227,
+      18
+    ],
+    "iscc_rank": 233,
+    "iscc_top1_video": 71,
+    "iscc_top3_video_ids": [
+      71,
+      168,
+      18
+    ],
+    "afl_rank": 243,
+    "afl_top1_video": 207,
+    "afl_top3_video_ids": [
+      207,
+      234,
+      18
+    ],
+    "salun_rank": 239,
+    "salun_top1_video": 71,
+    "salun_top3_video_ids": [
+      71,
+      168,
+      18
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 9,
+    "gallery_caption_index": 9,
+    "ground_truth_video": 9,
+    "gate_select16_rank": 158,
+    "gate_select16_top1_video": 1471,
+    "gate_select16_top3_video_ids": [
+      1471,
+      81,
+      629
+    ],
+    "iscc_rank": 167,
+    "iscc_top1_video": 973,
+    "iscc_top3_video_ids": [
+      973,
+      1398,
+      53
+    ],
+    "afl_rank": 153,
+    "afl_top1_video": 1471,
+    "afl_top3_video_ids": [
+      1471,
+      81,
+      1060
+    ],
+    "salun_rank": 168,
+    "salun_top1_video": 1398,
+    "salun_top3_video_ids": [
+      1398,
+      973,
+      53
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 10,
+    "gallery_caption_index": 10,
+    "ground_truth_video": 10,
+    "gate_select16_rank": 7,
+    "gate_select16_top1_video": 103,
+    "gate_select16_top3_video_ids": [
+      103,
+      117,
+      92
+    ],
+    "iscc_rank": 22,
+    "iscc_top1_video": 103,
+    "iscc_top3_video_ids": [
+      103,
+      222,
+      117
+    ],
+    "afl_rank": 12,
+    "afl_top1_video": 103,
+    "afl_top3_video_ids": [
+      103,
+      117,
+      222
+    ],
+    "salun_rank": 20,
+    "salun_top1_video": 103,
+    "salun_top3_video_ids": [
+      103,
+      222,
+      117
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 11,
+    "gallery_caption_index": 11,
+    "ground_truth_video": 11,
+    "gate_select16_rank": 5,
+    "gate_select16_top1_video": 204,
+    "gate_select16_top3_video_ids": [
+      204,
+      738,
+      266
+    ],
+    "iscc_rank": 170,
+    "iscc_top1_video": 1283,
+    "iscc_top3_video_ids": [
+      1283,
+      168,
+      266
+    ],
+    "afl_rank": 7,
+    "afl_top1_video": 204,
+    "afl_top3_video_ids": [
+      204,
+      1455,
+      1283
+    ],
+    "salun_rank": 161,
+    "salun_top1_video": 1283,
+    "salun_top3_video_ids": [
+      1283,
+      168,
+      266
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 12,
+    "gallery_caption_index": 12,
+    "ground_truth_video": 12,
+    "gate_select16_rank": 246,
+    "gate_select16_top1_video": 1079,
+    "gate_select16_top3_video_ids": [
+      1079,
+      1343,
+      1283
+    ],
+    "iscc_rank": 197,
+    "iscc_top1_video": 1283,
+    "iscc_top3_video_ids": [
+      1283,
+      1079,
+      89
+    ],
+    "afl_rank": 324,
+    "afl_top1_video": 1283,
+    "afl_top3_video_ids": [
+      1283,
+      1079,
+      89
+    ],
+    "salun_rank": 198,
+    "salun_top1_video": 1283,
+    "salun_top3_video_ids": [
+      1283,
+      1079,
+      89
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 13,
+    "gallery_caption_index": 13,
+    "ground_truth_video": 13,
+    "gate_select16_rank": 26,
+    "gate_select16_top1_video": 542,
+    "gate_select16_top3_video_ids": [
+      542,
+      48,
+      1343
+    ],
+    "iscc_rank": 21,
+    "iscc_top1_video": 48,
+    "iscc_top3_video_ids": [
+      48,
+      113,
+      1079
+    ],
+    "afl_rank": 12,
+    "afl_top1_video": 48,
+    "afl_top3_video_ids": [
+      48,
+      542,
+      1247
+    ],
+    "salun_rank": 19,
+    "salun_top1_video": 48,
+    "salun_top3_video_ids": [
+      48,
+      113,
+      1079
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 14,
+    "gallery_caption_index": 14,
+    "ground_truth_video": 14,
+    "gate_select16_rank": 8,
+    "gate_select16_top1_video": 129,
+    "gate_select16_top3_video_ids": [
+      129,
+      816,
+      928
+    ],
+    "iscc_rank": 13,
+    "iscc_top1_video": 928,
+    "iscc_top3_video_ids": [
+      928,
+      816,
+      129
+    ],
+    "afl_rank": 7,
+    "afl_top1_video": 928,
+    "afl_top3_video_ids": [
+      928,
+      129,
+      816
+    ],
+    "salun_rank": 13,
+    "salun_top1_video": 928,
+    "salun_top3_video_ids": [
+      928,
+      816,
+      129
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 15,
+    "gallery_caption_index": 15,
+    "ground_truth_video": 15,
+    "gate_select16_rank": 50,
+    "gate_select16_top1_video": 97,
+    "gate_select16_top3_video_ids": [
+      97,
+      189,
+      159
+    ],
+    "iscc_rank": 46,
+    "iscc_top1_video": 97,
+    "iscc_top3_video_ids": [
+      97,
+      241,
+      103
+    ],
+    "afl_rank": 32,
+    "afl_top1_video": 97,
+    "afl_top3_video_ids": [
+      97,
+      241,
+      159
+    ],
+    "salun_rank": 43,
+    "salun_top1_video": 97,
+    "salun_top3_video_ids": [
+      97,
+      241,
+      103
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 16,
+    "gallery_caption_index": 16,
+    "ground_truth_video": 16,
+    "gate_select16_rank": 18,
+    "gate_select16_top1_video": 371,
+    "gate_select16_top3_video_ids": [
+      371,
+      48,
+      542
+    ],
+    "iscc_rank": 39,
+    "iscc_top1_video": 1283,
+    "iscc_top3_video_ids": [
+      1283,
+      250,
+      113
+    ],
+    "afl_rank": 31,
+    "afl_top1_video": 48,
+    "afl_top3_video_ids": [
+      48,
+      371,
+      112
+    ],
+    "salun_rank": 41,
+    "salun_top1_video": 1283,
+    "salun_top3_video_ids": [
+      1283,
+      250,
+      113
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 17,
+    "gallery_caption_index": 17,
+    "ground_truth_video": 17,
+    "gate_select16_rank": 7,
+    "gate_select16_top1_video": 539,
+    "gate_select16_top3_video_ids": [
+      539,
+      1748,
+      159
+    ],
+    "iscc_rank": 8,
+    "iscc_top1_video": 103,
+    "iscc_top3_video_ids": [
+      103,
+      105,
+      241
+    ],
+    "afl_rank": 1,
+    "afl_top1_video": 17,
+    "afl_top3_video_ids": [
+      17,
+      539,
+      244
+    ],
+    "salun_rank": 7,
+    "salun_top1_video": 103,
+    "salun_top3_video_ids": [
+      103,
+      241,
+      105
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 18,
+    "gallery_caption_index": 18,
+    "ground_truth_video": 18,
+    "gate_select16_rank": 30,
+    "gate_select16_top1_video": 97,
+    "gate_select16_top3_video_ids": [
+      97,
+      80,
+      271
+    ],
+    "iscc_rank": 51,
+    "iscc_top1_video": 97,
+    "iscc_top3_video_ids": [
+      97,
+      105,
+      168
+    ],
+    "afl_rank": 36,
+    "afl_top1_video": 97,
+    "afl_top3_video_ids": [
+      97,
+      80,
+      168
+    ],
+    "salun_rank": 51,
+    "salun_top1_video": 97,
+    "salun_top3_video_ids": [
+      97,
+      105,
+      168
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 19,
+    "gallery_caption_index": 19,
+    "ground_truth_video": 19,
+    "gate_select16_rank": 54,
+    "gate_select16_top1_video": 1471,
+    "gate_select16_top3_video_ids": [
+      1471,
+      1586,
+      81
+    ],
+    "iscc_rank": 196,
+    "iscc_top1_video": 1146,
+    "iscc_top3_video_ids": [
+      1146,
+      104,
+      973
+    ],
+    "afl_rank": 55,
+    "afl_top1_video": 1471,
+    "afl_top3_video_ids": [
+      1471,
+      1245,
+      81
+    ],
+    "salun_rank": 189,
+    "salun_top1_video": 1146,
+    "salun_top3_video_ids": [
+      1146,
+      104,
+      973
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 20,
+    "gallery_caption_index": 20,
+    "ground_truth_video": 20,
+    "gate_select16_rank": 65,
+    "gate_select16_top1_video": 1471,
+    "gate_select16_top3_video_ids": [
+      1471,
+      1060,
+      1523
+    ],
+    "iscc_rank": 514,
+    "iscc_top1_video": 973,
+    "iscc_top3_video_ids": [
+      973,
+      6,
+      1146
+    ],
+    "afl_rank": 76,
+    "afl_top1_video": 1060,
+    "afl_top3_video_ids": [
+      1060,
+      81,
+      1471
+    ],
+    "salun_rank": 498,
+    "salun_top1_video": 973,
+    "salun_top3_video_ids": [
+      973,
+      6,
+      1146
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 21,
+    "gallery_caption_index": 21,
+    "ground_truth_video": 21,
+    "gate_select16_rank": 6,
+    "gate_select16_top1_video": 1369,
+    "gate_select16_top3_video_ids": [
+      1369,
+      1245,
+      629
+    ],
+    "iscc_rank": 37,
+    "iscc_top1_video": 1146,
+    "iscc_top3_video_ids": [
+      1146,
+      766,
+      973
+    ],
+    "afl_rank": 10,
+    "afl_top1_video": 1245,
+    "afl_top3_video_ids": [
+      1245,
+      1369,
+      1146
+    ],
+    "salun_rank": 33,
+    "salun_top1_video": 1146,
+    "salun_top3_video_ids": [
+      1146,
+      766,
+      973
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 22,
+    "gallery_caption_index": 22,
+    "ground_truth_video": 22,
+    "gate_select16_rank": 53,
+    "gate_select16_top1_video": 181,
+    "gate_select16_top3_video_ids": [
+      181,
+      1178,
+      105
+    ],
+    "iscc_rank": 5,
+    "iscc_top1_video": 105,
+    "iscc_top3_video_ids": [
+      105,
+      235,
+      97
+    ],
+    "afl_rank": 17,
+    "afl_top1_video": 105,
+    "afl_top3_video_ids": [
+      105,
+      97,
+      17
+    ],
+    "salun_rank": 5,
+    "salun_top1_video": 105,
+    "salun_top3_video_ids": [
+      105,
+      235,
+      97
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 23,
+    "gallery_caption_index": 23,
+    "ground_truth_video": 23,
+    "gate_select16_rank": 136,
+    "gate_select16_top1_video": 48,
+    "gate_select16_top3_video_ids": [
+      48,
+      542,
+      214
+    ],
+    "iscc_rank": 50,
+    "iscc_top1_video": 250,
+    "iscc_top3_video_ids": [
+      250,
+      48,
+      89
+    ],
+    "afl_rank": 162,
+    "afl_top1_video": 48,
+    "afl_top3_video_ids": [
+      48,
+      114,
+      214
+    ],
+    "salun_rank": 52,
+    "salun_top1_video": 48,
+    "salun_top3_video_ids": [
+      48,
+      250,
+      89
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 24,
+    "gallery_caption_index": 24,
+    "ground_truth_video": 24,
+    "gate_select16_rank": 4,
+    "gate_select16_top1_video": 67,
+    "gate_select16_top3_video_ids": [
+      67,
+      49,
+      808
+    ],
+    "iscc_rank": 4,
+    "iscc_top1_video": 67,
+    "iscc_top3_video_ids": [
+      67,
+      49,
+      1582
+    ],
+    "afl_rank": 3,
+    "afl_top1_video": 67,
+    "afl_top3_video_ids": [
+      67,
+      49,
+      24
+    ],
+    "salun_rank": 4,
+    "salun_top1_video": 67,
+    "salun_top3_video_ids": [
+      67,
+      49,
+      1582
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 25,
+    "gallery_caption_index": 25,
+    "ground_truth_video": 25,
+    "gate_select16_rank": 4,
+    "gate_select16_top1_video": 511,
+    "gate_select16_top3_video_ids": [
+      511,
+      217,
+      906
+    ],
+    "iscc_rank": 17,
+    "iscc_top1_video": 511,
+    "iscc_top3_video_ids": [
+      511,
+      89,
+      222
+    ],
+    "afl_rank": 4,
+    "afl_top1_video": 511,
+    "afl_top3_video_ids": [
+      511,
+      217,
+      906
+    ],
+    "salun_rank": 17,
+    "salun_top1_video": 511,
+    "salun_top3_video_ids": [
+      511,
+      89,
+      222
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 26,
+    "gallery_caption_index": 26,
+    "ground_truth_video": 26,
+    "gate_select16_rank": 314,
+    "gate_select16_top1_video": 1053,
+    "gate_select16_top3_video_ids": [
+      1053,
+      1771,
+      181
+    ],
+    "iscc_rank": 208,
+    "iscc_top1_video": 1079,
+    "iscc_top3_video_ids": [
+      1079,
+      745,
+      50
+    ],
+    "afl_rank": 288,
+    "afl_top1_video": 50,
+    "afl_top3_video_ids": [
+      50,
+      1053,
+      181
+    ],
+    "salun_rank": 210,
+    "salun_top1_video": 1079,
+    "salun_top3_video_ids": [
+      1079,
+      50,
+      745
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 27,
+    "gallery_caption_index": 27,
+    "ground_truth_video": 27,
+    "gate_select16_rank": 141,
+    "gate_select16_top1_video": 97,
+    "gate_select16_top3_video_ids": [
+      97,
+      217,
+      906
+    ],
+    "iscc_rank": 14,
+    "iscc_top1_video": 241,
+    "iscc_top3_video_ids": [
+      241,
+      97,
+      89
+    ],
+    "afl_rank": 72,
+    "afl_top1_video": 97,
+    "afl_top3_video_ids": [
+      97,
+      217,
+      906
+    ],
+    "salun_rank": 14,
+    "salun_top1_video": 97,
+    "salun_top3_video_ids": [
+      97,
+      241,
+      89
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 28,
+    "gallery_caption_index": 28,
+    "ground_truth_video": 28,
+    "gate_select16_rank": 7,
+    "gate_select16_top1_video": 1471,
+    "gate_select16_top3_video_ids": [
+      1471,
+      51,
+      1586
+    ],
+    "iscc_rank": 21,
+    "iscc_top1_video": 1079,
+    "iscc_top3_video_ids": [
+      1079,
+      104,
+      1146
+    ],
+    "afl_rank": 5,
+    "afl_top1_video": 1471,
+    "afl_top3_video_ids": [
+      1471,
+      81,
+      1060
+    ],
+    "salun_rank": 20,
+    "salun_top1_video": 1079,
+    "salun_top3_video_ids": [
+      1079,
+      1146,
+      1398
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 29,
+    "gallery_caption_index": 29,
+    "ground_truth_video": 29,
+    "gate_select16_rank": 94,
+    "gate_select16_top1_video": 189,
+    "gate_select16_top3_video_ids": [
+      189,
+      136,
+      159
+    ],
+    "iscc_rank": 142,
+    "iscc_top1_video": 241,
+    "iscc_top3_video_ids": [
+      241,
+      103,
+      511
+    ],
+    "afl_rank": 112,
+    "afl_top1_video": 511,
+    "afl_top3_video_ids": [
+      511,
+      241,
+      539
+    ],
+    "salun_rank": 141,
+    "salun_top1_video": 241,
+    "salun_top3_video_ids": [
+      241,
+      103,
+      511
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 30,
+    "gallery_caption_index": 30,
+    "ground_truth_video": 30,
+    "gate_select16_rank": 145,
+    "gate_select16_top1_video": 207,
+    "gate_select16_top3_video_ids": [
+      207,
+      1247,
+      1230
+    ],
+    "iscc_rank": 424,
+    "iscc_top1_video": 1230,
+    "iscc_top3_video_ids": [
+      1230,
+      1283,
+      168
+    ],
+    "afl_rank": 157,
+    "afl_top1_video": 1247,
+    "afl_top3_video_ids": [
+      1247,
+      1230,
+      207
+    ],
+    "salun_rank": 416,
+    "salun_top1_video": 1230,
+    "salun_top3_video_ids": [
+      1230,
+      1283,
+      168
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 31,
+    "gallery_caption_index": 31,
+    "ground_truth_video": 31,
+    "gate_select16_rank": 31,
+    "gate_select16_top1_video": 157,
+    "gate_select16_top3_video_ids": [
+      157,
+      39,
+      948
+    ],
+    "iscc_rank": 69,
+    "iscc_top1_video": 157,
+    "iscc_top3_video_ids": [
+      157,
+      39,
+      80
+    ],
+    "afl_rank": 27,
+    "afl_top1_video": 157,
+    "afl_top3_video_ids": [
+      157,
+      39,
+      948
+    ],
+    "salun_rank": 66,
+    "salun_top1_video": 157,
+    "salun_top3_video_ids": [
+      157,
+      39,
+      80
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 32,
+    "gallery_caption_index": 32,
+    "ground_truth_video": 32,
+    "gate_select16_rank": 33,
+    "gate_select16_top1_video": 1471,
+    "gate_select16_top3_video_ids": [
+      1471,
+      81,
+      1586
+    ],
+    "iscc_rank": 139,
+    "iscc_top1_video": 973,
+    "iscc_top3_video_ids": [
+      973,
+      1146,
+      6
+    ],
+    "afl_rank": 34,
+    "afl_top1_video": 1245,
+    "afl_top3_video_ids": [
+      1245,
+      81,
+      1060
+    ],
+    "salun_rank": 135,
+    "salun_top1_video": 973,
+    "salun_top3_video_ids": [
+      973,
+      1146,
+      6
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 33,
+    "gallery_caption_index": 33,
+    "ground_truth_video": 33,
+    "gate_select16_rank": 84,
+    "gate_select16_top1_video": 316,
+    "gate_select16_top3_video_ids": [
+      316,
+      114,
+      1623
+    ],
+    "iscc_rank": 66,
+    "iscc_top1_video": 168,
+    "iscc_top3_video_ids": [
+      168,
+      1286,
+      1283
+    ],
+    "afl_rank": 90,
+    "afl_top1_video": 114,
+    "afl_top3_video_ids": [
+      114,
+      316,
+      176
+    ],
+    "salun_rank": 67,
+    "salun_top1_video": 168,
+    "salun_top3_video_ids": [
+      168,
+      1286,
+      1283
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 34,
+    "gallery_caption_index": 34,
+    "ground_truth_video": 34,
+    "gate_select16_rank": 1,
+    "gate_select16_top1_video": 34,
+    "gate_select16_top3_video_ids": [
+      34,
+      816,
+      129
+    ],
+    "iscc_rank": 21,
+    "iscc_top1_video": 1079,
+    "iscc_top3_video_ids": [
+      1079,
+      816,
+      1537
+    ],
+    "afl_rank": 1,
+    "afl_top1_video": 34,
+    "afl_top3_video_ids": [
+      34,
+      816,
+      129
+    ],
+    "salun_rank": 21,
+    "salun_top1_video": 1079,
+    "salun_top3_video_ids": [
+      1079,
+      816,
+      1537
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 35,
+    "gallery_caption_index": 35,
+    "ground_truth_video": 35,
+    "gate_select16_rank": 105,
+    "gate_select16_top1_video": 1230,
+    "gate_select16_top3_video_ids": [
+      1230,
+      1699,
+      1247
+    ],
+    "iscc_rank": 41,
+    "iscc_top1_video": 1230,
+    "iscc_top3_video_ids": [
+      1230,
+      1699,
+      303
+    ],
+    "afl_rank": 80,
+    "afl_top1_video": 1230,
+    "afl_top3_video_ids": [
+      1230,
+      1699,
+      1247
+    ],
+    "salun_rank": 37,
+    "salun_top1_video": 1230,
+    "salun_top3_video_ids": [
+      1230,
+      1699,
+      303
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 36,
+    "gallery_caption_index": 36,
+    "ground_truth_video": 36,
+    "gate_select16_rank": 29,
+    "gate_select16_top1_video": 1288,
+    "gate_select16_top3_video_ids": [
+      1288,
+      80,
+      157
+    ],
+    "iscc_rank": 83,
+    "iscc_top1_video": 80,
+    "iscc_top3_video_ids": [
+      80,
+      1196,
+      35
+    ],
+    "afl_rank": 49,
+    "afl_top1_video": 80,
+    "afl_top3_video_ids": [
+      80,
+      157,
+      35
+    ],
+    "salun_rank": 85,
+    "salun_top1_video": 80,
+    "salun_top3_video_ids": [
+      80,
+      1196,
+      35
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 37,
+    "gallery_caption_index": 37,
+    "ground_truth_video": 37,
+    "gate_select16_rank": 45,
+    "gate_select16_top1_video": 1471,
+    "gate_select16_top3_video_ids": [
+      1471,
+      1586,
+      81
+    ],
+    "iscc_rank": 257,
+    "iscc_top1_video": 1146,
+    "iscc_top3_video_ids": [
+      1146,
+      973,
+      1398
+    ],
+    "afl_rank": 48,
+    "afl_top1_video": 1471,
+    "afl_top3_video_ids": [
+      1471,
+      81,
+      1245
+    ],
+    "salun_rank": 238,
+    "salun_top1_video": 1146,
+    "salun_top3_video_ids": [
+      1146,
+      973,
+      1398
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 38,
+    "gallery_caption_index": 38,
+    "ground_truth_video": 38,
+    "gate_select16_rank": 1,
+    "gate_select16_top1_video": 38,
+    "gate_select16_top3_video_ids": [
+      38,
+      88,
+      228
+    ],
+    "iscc_rank": 1,
+    "iscc_top1_video": 38,
+    "iscc_top3_video_ids": [
+      38,
+      88,
+      103
+    ],
+    "afl_rank": 1,
+    "afl_top1_video": 38,
+    "afl_top3_video_ids": [
+      38,
+      228,
+      88
+    ],
+    "salun_rank": 1,
+    "salun_top1_video": 38,
+    "salun_top3_video_ids": [
+      38,
+      88,
+      103
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 39,
+    "gallery_caption_index": 39,
+    "ground_truth_video": 39,
+    "gate_select16_rank": 2,
+    "gate_select16_top1_video": 157,
+    "gate_select16_top3_video_ids": [
+      157,
+      39,
+      1699
+    ],
+    "iscc_rank": 2,
+    "iscc_top1_video": 157,
+    "iscc_top3_video_ids": [
+      157,
+      39,
+      1699
+    ],
+    "afl_rank": 2,
+    "afl_top1_video": 157,
+    "afl_top3_video_ids": [
+      157,
+      39,
+      1699
+    ],
+    "salun_rank": 2,
+    "salun_top1_video": 157,
+    "salun_top3_video_ids": [
+      157,
+      39,
+      1699
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 40,
+    "gallery_caption_index": 40,
+    "ground_truth_video": 40,
+    "gate_select16_rank": 2,
+    "gate_select16_top1_video": 816,
+    "gate_select16_top3_video_ids": [
+      816,
+      40,
+      189
+    ],
+    "iscc_rank": 8,
+    "iscc_top1_video": 168,
+    "iscc_top3_video_ids": [
+      168,
+      1079,
+      113
+    ],
+    "afl_rank": 2,
+    "afl_top1_video": 816,
+    "afl_top3_video_ids": [
+      816,
+      40,
+      168
+    ],
+    "salun_rank": 8,
+    "salun_top1_video": 168,
+    "salun_top3_video_ids": [
+      168,
+      1079,
+      113
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 41,
+    "gallery_caption_index": 41,
+    "ground_truth_video": 41,
+    "gate_select16_rank": 39,
+    "gate_select16_top1_video": 178,
+    "gate_select16_top3_video_ids": [
+      178,
+      1336,
+      1393
+    ],
+    "iscc_rank": 89,
+    "iscc_top1_video": 1336,
+    "iscc_top3_video_ids": [
+      1336,
+      1283,
+      91
+    ],
+    "afl_rank": 25,
+    "afl_top1_video": 178,
+    "afl_top3_video_ids": [
+      178,
+      1283,
+      1336
+    ],
+    "salun_rank": 92,
+    "salun_top1_video": 1336,
+    "salun_top3_video_ids": [
+      1336,
+      1283,
+      91
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 42,
+    "gallery_caption_index": 42,
+    "ground_truth_video": 42,
+    "gate_select16_rank": 57,
+    "gate_select16_top1_video": 1586,
+    "gate_select16_top3_video_ids": [
+      1586,
+      81,
+      1471
+    ],
+    "iscc_rank": 242,
+    "iscc_top1_video": 1146,
+    "iscc_top3_video_ids": [
+      1146,
+      973,
+      188
+    ],
+    "afl_rank": 61,
+    "afl_top1_video": 81,
+    "afl_top3_video_ids": [
+      81,
+      1245,
+      1060
+    ],
+    "salun_rank": 232,
+    "salun_top1_video": 1146,
+    "salun_top3_video_ids": [
+      1146,
+      973,
+      188
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 43,
+    "gallery_caption_index": 43,
+    "ground_truth_video": 43,
+    "gate_select16_rank": 6,
+    "gate_select16_top1_video": 511,
+    "gate_select16_top3_video_ids": [
+      511,
+      217,
+      906
+    ],
+    "iscc_rank": 18,
+    "iscc_top1_video": 511,
+    "iscc_top3_video_ids": [
+      511,
+      217,
+      906
+    ],
+    "afl_rank": 11,
+    "afl_top1_video": 511,
+    "afl_top3_video_ids": [
+      511,
+      906,
+      217
+    ],
+    "salun_rank": 18,
+    "salun_top1_video": 511,
+    "salun_top3_video_ids": [
+      511,
+      217,
+      906
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 44,
+    "gallery_caption_index": 44,
+    "ground_truth_video": 44,
+    "gate_select16_rank": 29,
+    "gate_select16_top1_video": 189,
+    "gate_select16_top3_video_ids": [
+      189,
+      357,
+      340
+    ],
+    "iscc_rank": 8,
+    "iscc_top1_video": 113,
+    "iscc_top3_video_ids": [
+      113,
+      217,
+      121
+    ],
+    "afl_rank": 17,
+    "afl_top1_video": 217,
+    "afl_top3_video_ids": [
+      217,
+      189,
+      906
+    ],
+    "salun_rank": 9,
+    "salun_top1_video": 113,
+    "salun_top3_video_ids": [
+      113,
+      217,
+      121
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 45,
+    "gallery_caption_index": 45,
+    "ground_truth_video": 45,
+    "gate_select16_rank": 12,
+    "gate_select16_top1_video": 67,
+    "gate_select16_top3_video_ids": [
+      67,
+      1582,
+      49
+    ],
+    "iscc_rank": 5,
+    "iscc_top1_video": 1582,
+    "iscc_top3_video_ids": [
+      1582,
+      67,
+      49
+    ],
+    "afl_rank": 10,
+    "afl_top1_video": 67,
+    "afl_top3_video_ids": [
+      67,
+      1582,
+      49
+    ],
+    "salun_rank": 5,
+    "salun_top1_video": 1582,
+    "salun_top3_video_ids": [
+      1582,
+      67,
+      49
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 46,
+    "gallery_caption_index": 46,
+    "ground_truth_video": 46,
+    "gate_select16_rank": 9,
+    "gate_select16_top1_video": 316,
+    "gate_select16_top3_video_ids": [
+      316,
+      1699,
+      151
+    ],
+    "iscc_rank": 18,
+    "iscc_top1_video": 1699,
+    "iscc_top3_video_ids": [
+      1699,
+      1230,
+      1283
+    ],
+    "afl_rank": 10,
+    "afl_top1_video": 1699,
+    "afl_top3_video_ids": [
+      1699,
+      316,
+      1230
+    ],
+    "salun_rank": 18,
+    "salun_top1_video": 1699,
+    "salun_top3_video_ids": [
+      1699,
+      1230,
+      1283
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 47,
+    "gallery_caption_index": 47,
+    "ground_truth_video": 47,
+    "gate_select16_rank": 95,
+    "gate_select16_top1_video": 189,
+    "gate_select16_top3_video_ids": [
+      189,
+      92,
+      244
+    ],
+    "iscc_rank": 22,
+    "iscc_top1_video": 222,
+    "iscc_top3_video_ids": [
+      222,
+      89,
+      103
+    ],
+    "afl_rank": 70,
+    "afl_top1_video": 244,
+    "afl_top3_video_ids": [
+      244,
+      222,
+      168
+    ],
+    "salun_rank": 22,
+    "salun_top1_video": 222,
+    "salun_top3_video_ids": [
+      222,
+      89,
+      103
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 48,
+    "gallery_caption_index": 48,
+    "ground_truth_video": 48,
+    "gate_select16_rank": 1,
+    "gate_select16_top1_video": 48,
+    "gate_select16_top3_video_ids": [
+      48,
+      542,
+      67
+    ],
+    "iscc_rank": 3,
+    "iscc_top1_video": 67,
+    "iscc_top3_video_ids": [
+      67,
+      89,
+      48
+    ],
+    "afl_rank": 1,
+    "afl_top1_video": 48,
+    "afl_top3_video_ids": [
+      48,
+      67,
+      972
+    ],
+    "salun_rank": 2,
+    "salun_top1_video": 67,
+    "salun_top3_video_ids": [
+      67,
+      48,
+      89
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 49,
+    "gallery_caption_index": 49,
+    "ground_truth_video": 49,
+    "gate_select16_rank": 2,
+    "gate_select16_top1_video": 67,
+    "gate_select16_top3_video_ids": [
+      67,
+      49,
+      1582
+    ],
+    "iscc_rank": 1,
+    "iscc_top1_video": 49,
+    "iscc_top3_video_ids": [
+      49,
+      67,
+      1582
+    ],
+    "afl_rank": 1,
+    "afl_top1_video": 49,
+    "afl_top3_video_ids": [
+      49,
+      67,
+      1582
+    ],
+    "salun_rank": 1,
+    "salun_top1_video": 49,
+    "salun_top3_video_ids": [
+      49,
+      67,
+      1582
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 50,
+    "gallery_caption_index": 50,
+    "ground_truth_video": 50,
+    "gate_select16_rank": 3,
+    "gate_select16_top1_video": 181,
+    "gate_select16_top3_video_ids": [
+      181,
+      1053,
+      50
+    ],
+    "iscc_rank": 3,
+    "iscc_top1_video": 105,
+    "iscc_top3_video_ids": [
+      105,
+      1079,
+      50
+    ],
+    "afl_rank": 2,
+    "afl_top1_video": 181,
+    "afl_top3_video_ids": [
+      181,
+      50,
+      1053
+    ],
+    "salun_rank": 3,
+    "salun_top1_video": 105,
+    "salun_top3_video_ids": [
+      105,
+      1079,
+      50
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 51,
+    "gallery_caption_index": 51,
+    "ground_truth_video": 51,
+    "gate_select16_rank": 24,
+    "gate_select16_top1_video": 1471,
+    "gate_select16_top3_video_ids": [
+      1471,
+      528,
+      1288
+    ],
+    "iscc_rank": 578,
+    "iscc_top1_video": 1079,
+    "iscc_top3_video_ids": [
+      1079,
+      103,
+      80
+    ],
+    "afl_rank": 86,
+    "afl_top1_video": 1471,
+    "afl_top3_video_ids": [
+      1471,
+      528,
+      1060
+    ],
+    "salun_rank": 575,
+    "salun_top1_video": 1079,
+    "salun_top3_video_ids": [
+      1079,
+      103,
+      80
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 52,
+    "gallery_caption_index": 52,
+    "ground_truth_video": 52,
+    "gate_select16_rank": 125,
+    "gate_select16_top1_video": 157,
+    "gate_select16_top3_video_ids": [
+      157,
+      39,
+      948
+    ],
+    "iscc_rank": 270,
+    "iscc_top1_video": 1283,
+    "iscc_top3_video_ids": [
+      1283,
+      157,
+      1196
+    ],
+    "afl_rank": 146,
+    "afl_top1_video": 157,
+    "afl_top3_video_ids": [
+      157,
+      39,
+      948
+    ],
+    "salun_rank": 262,
+    "salun_top1_video": 1283,
+    "salun_top3_video_ids": [
+      1283,
+      157,
+      1196
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 53,
+    "gallery_caption_index": 53,
+    "ground_truth_video": 53,
+    "gate_select16_rank": 29,
+    "gate_select16_top1_video": 172,
+    "gate_select16_top3_video_ids": [
+      172,
+      1245,
+      1586
+    ],
+    "iscc_rank": 12,
+    "iscc_top1_video": 1146,
+    "iscc_top3_video_ids": [
+      1146,
+      973,
+      104
+    ],
+    "afl_rank": 13,
+    "afl_top1_video": 1245,
+    "afl_top3_video_ids": [
+      1245,
+      1398,
+      172
+    ],
+    "salun_rank": 12,
+    "salun_top1_video": 1146,
+    "salun_top3_video_ids": [
+      1146,
+      973,
+      104
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 54,
+    "gallery_caption_index": 54,
+    "ground_truth_video": 54,
+    "gate_select16_rank": 14,
+    "gate_select16_top1_video": 51,
+    "gate_select16_top3_video_ids": [
+      51,
+      1471,
+      1245
+    ],
+    "iscc_rank": 86,
+    "iscc_top1_video": 6,
+    "iscc_top3_video_ids": [
+      6,
+      973,
+      1398
+    ],
+    "afl_rank": 23,
+    "afl_top1_video": 1245,
+    "afl_top3_video_ids": [
+      1245,
+      51,
+      1471
+    ],
+    "salun_rank": 78,
+    "salun_top1_video": 6,
+    "salun_top3_video_ids": [
+      6,
+      973,
+      1398
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 55,
+    "gallery_caption_index": 55,
+    "ground_truth_video": 55,
+    "gate_select16_rank": 156,
+    "gate_select16_top1_video": 1582,
+    "gate_select16_top3_video_ids": [
+      1582,
+      189,
+      67
+    ],
+    "iscc_rank": 196,
+    "iscc_top1_video": 1582,
+    "iscc_top3_video_ids": [
+      1582,
+      89,
+      91
+    ],
+    "afl_rank": 185,
+    "afl_top1_video": 1582,
+    "afl_top3_video_ids": [
+      1582,
+      89,
+      189
+    ],
+    "salun_rank": 206,
+    "salun_top1_video": 1582,
+    "salun_top3_video_ids": [
+      1582,
+      89,
+      91
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 56,
+    "gallery_caption_index": 56,
+    "ground_truth_video": 56,
+    "gate_select16_rank": 86,
+    "gate_select16_top1_video": 1288,
+    "gate_select16_top3_video_ids": [
+      1288,
+      1062,
+      1079
+    ],
+    "iscc_rank": 112,
+    "iscc_top1_video": 1079,
+    "iscc_top3_video_ids": [
+      1079,
+      1062,
+      71
+    ],
+    "afl_rank": 138,
+    "afl_top1_video": 1062,
+    "afl_top3_video_ids": [
+      1062,
+      588,
+      1079
+    ],
+    "salun_rank": 111,
+    "salun_top1_video": 1079,
+    "salun_top3_video_ids": [
+      1079,
+      1062,
+      71
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 57,
+    "gallery_caption_index": 57,
+    "ground_truth_video": 57,
+    "gate_select16_rank": 60,
+    "gate_select16_top1_video": 157,
+    "gate_select16_top3_video_ids": [
+      157,
+      39,
+      1273
+    ],
+    "iscc_rank": 55,
+    "iscc_top1_video": 157,
+    "iscc_top3_video_ids": [
+      157,
+      1196,
+      80
+    ],
+    "afl_rank": 52,
+    "afl_top1_video": 157,
+    "afl_top3_video_ids": [
+      157,
+      39,
+      1273
+    ],
+    "salun_rank": 52,
+    "salun_top1_video": 157,
+    "salun_top3_video_ids": [
+      157,
+      1196,
+      80
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 58,
+    "gallery_caption_index": 58,
+    "ground_truth_video": 58,
+    "gate_select16_rank": 53,
+    "gate_select16_top1_video": 48,
+    "gate_select16_top3_video_ids": [
+      48,
+      1699,
+      151
+    ],
+    "iscc_rank": 161,
+    "iscc_top1_video": 1283,
+    "iscc_top3_video_ids": [
+      1283,
+      1062,
+      1079
+    ],
+    "afl_rank": 42,
+    "afl_top1_video": 48,
+    "afl_top3_video_ids": [
+      48,
+      1283,
+      1699
+    ],
+    "salun_rank": 157,
+    "salun_top1_video": 1283,
+    "salun_top3_video_ids": [
+      1283,
+      1062,
+      1079
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 59,
+    "gallery_caption_index": 59,
+    "ground_truth_video": 59,
+    "gate_select16_rank": 33,
+    "gate_select16_top1_video": 816,
+    "gate_select16_top3_video_ids": [
+      816,
+      1143,
+      928
+    ],
+    "iscc_rank": 78,
+    "iscc_top1_video": 928,
+    "iscc_top3_video_ids": [
+      928,
+      816,
+      1537
+    ],
+    "afl_rank": 34,
+    "afl_top1_video": 816,
+    "afl_top3_video_ids": [
+      816,
+      1143,
+      928
+    ],
+    "salun_rank": 78,
+    "salun_top1_video": 928,
+    "salun_top3_video_ids": [
+      928,
+      816,
+      1537
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 60,
+    "gallery_caption_index": 60,
+    "ground_truth_video": 60,
+    "gate_select16_rank": 2,
+    "gate_select16_top1_video": 1053,
+    "gate_select16_top3_video_ids": [
+      1053,
+      60,
+      50
+    ],
+    "iscc_rank": 4,
+    "iscc_top1_video": 1079,
+    "iscc_top3_video_ids": [
+      1079,
+      50,
+      1053
+    ],
+    "afl_rank": 3,
+    "afl_top1_video": 1053,
+    "afl_top3_video_ids": [
+      1053,
+      50,
+      60
+    ],
+    "salun_rank": 4,
+    "salun_top1_video": 1079,
+    "salun_top3_video_ids": [
+      1079,
+      50,
+      1053
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 61,
+    "gallery_caption_index": 61,
+    "ground_truth_video": 61,
+    "gate_select16_rank": 55,
+    "gate_select16_top1_video": 67,
+    "gate_select16_top3_video_ids": [
+      67,
+      1582,
+      808
+    ],
+    "iscc_rank": 35,
+    "iscc_top1_video": 1582,
+    "iscc_top3_video_ids": [
+      1582,
+      67,
+      49
+    ],
+    "afl_rank": 56,
+    "afl_top1_video": 67,
+    "afl_top3_video_ids": [
+      67,
+      1582,
+      49
+    ],
+    "salun_rank": 35,
+    "salun_top1_video": 1582,
+    "salun_top3_video_ids": [
+      1582,
+      67,
+      49
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 62,
+    "gallery_caption_index": 62,
+    "ground_truth_video": 62,
+    "gate_select16_rank": 113,
+    "gate_select16_top1_video": 1230,
+    "gate_select16_top3_video_ids": [
+      1230,
+      1699,
+      125
+    ],
+    "iscc_rank": 58,
+    "iscc_top1_video": 168,
+    "iscc_top3_video_ids": [
+      168,
+      1230,
+      1699
+    ],
+    "afl_rank": 104,
+    "afl_top1_video": 1230,
+    "afl_top3_video_ids": [
+      1230,
+      234,
+      775
+    ],
+    "salun_rank": 57,
+    "salun_top1_video": 168,
+    "salun_top3_video_ids": [
+      168,
+      1230,
+      1699
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 63,
+    "gallery_caption_index": 63,
+    "ground_truth_video": 63,
+    "gate_select16_rank": 10,
+    "gate_select16_top1_video": 1582,
+    "gate_select16_top3_video_ids": [
+      1582,
+      67,
+      808
+    ],
+    "iscc_rank": 16,
+    "iscc_top1_video": 1582,
+    "iscc_top3_video_ids": [
+      1582,
+      67,
+      91
+    ],
+    "afl_rank": 11,
+    "afl_top1_video": 1582,
+    "afl_top3_video_ids": [
+      1582,
+      67,
+      192
+    ],
+    "salun_rank": 16,
+    "salun_top1_video": 1582,
+    "salun_top3_video_ids": [
+      1582,
+      67,
+      91
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 64,
+    "gallery_caption_index": 64,
+    "ground_truth_video": 64,
+    "gate_select16_rank": 337,
+    "gate_select16_top1_video": 207,
+    "gate_select16_top3_video_ids": [
+      207,
+      234,
+      316
+    ],
+    "iscc_rank": 447,
+    "iscc_top1_video": 168,
+    "iscc_top3_video_ids": [
+      168,
+      18,
+      1196
+    ],
+    "afl_rank": 446,
+    "afl_top1_video": 234,
+    "afl_top3_video_ids": [
+      234,
+      207,
+      316
+    ],
+    "salun_rank": 447,
+    "salun_top1_video": 18,
+    "salun_top3_video_ids": [
+      18,
+      168,
+      1196
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 65,
+    "gallery_caption_index": 65,
+    "ground_truth_video": 65,
+    "gate_select16_rank": 5,
+    "gate_select16_top1_video": 1582,
+    "gate_select16_top3_video_ids": [
+      1582,
+      808,
+      67
+    ],
+    "iscc_rank": 7,
+    "iscc_top1_video": 1582,
+    "iscc_top3_video_ids": [
+      1582,
+      67,
+      49
+    ],
+    "afl_rank": 6,
+    "afl_top1_video": 1582,
+    "afl_top3_video_ids": [
+      1582,
+      67,
+      808
+    ],
+    "salun_rank": 7,
+    "salun_top1_video": 1582,
+    "salun_top3_video_ids": [
+      1582,
+      67,
+      49
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 66,
+    "gallery_caption_index": 66,
+    "ground_truth_video": 66,
+    "gate_select16_rank": 471,
+    "gate_select16_top1_video": 116,
+    "gate_select16_top3_video_ids": [
+      116,
+      316,
+      793
+    ],
+    "iscc_rank": 490,
+    "iscc_top1_video": 168,
+    "iscc_top3_video_ids": [
+      168,
+      116,
+      1283
+    ],
+    "afl_rank": 502,
+    "afl_top1_video": 116,
+    "afl_top3_video_ids": [
+      116,
+      316,
+      114
+    ],
+    "salun_rank": 494,
+    "salun_top1_video": 168,
+    "salun_top3_video_ids": [
+      168,
+      116,
+      1283
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 67,
+    "gallery_caption_index": 67,
+    "ground_truth_video": 67,
+    "gate_select16_rank": 2,
+    "gate_select16_top1_video": 1582,
+    "gate_select16_top3_video_ids": [
+      1582,
+      67,
+      645
+    ],
+    "iscc_rank": 2,
+    "iscc_top1_video": 1582,
+    "iscc_top3_video_ids": [
+      1582,
+      67,
+      89
+    ],
+    "afl_rank": 2,
+    "afl_top1_video": 1582,
+    "afl_top3_video_ids": [
+      1582,
+      67,
+      479
+    ],
+    "salun_rank": 2,
+    "salun_top1_video": 1582,
+    "salun_top3_video_ids": [
+      1582,
+      67,
+      89
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 68,
+    "gallery_caption_index": 68,
+    "ground_truth_video": 68,
+    "gate_select16_rank": 3,
+    "gate_select16_top1_video": 71,
+    "gate_select16_top3_video_ids": [
+      71,
+      1770,
+      68
+    ],
+    "iscc_rank": 3,
+    "iscc_top1_video": 71,
+    "iscc_top3_video_ids": [
+      71,
+      97,
+      68
+    ],
+    "afl_rank": 4,
+    "afl_top1_video": 71,
+    "afl_top3_video_ids": [
+      71,
+      1770,
+      97
+    ],
+    "salun_rank": 3,
+    "salun_top1_video": 71,
+    "salun_top3_video_ids": [
+      71,
+      97,
+      68
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 69,
+    "gallery_caption_index": 69,
+    "ground_truth_video": 69,
+    "gate_select16_rank": 104,
+    "gate_select16_top1_video": 181,
+    "gate_select16_top3_video_ids": [
+      181,
+      1053,
+      50
+    ],
+    "iscc_rank": 329,
+    "iscc_top1_video": 1079,
+    "iscc_top3_video_ids": [
+      1079,
+      50,
+      105
+    ],
+    "afl_rank": 87,
+    "afl_top1_video": 181,
+    "afl_top3_video_ids": [
+      181,
+      50,
+      1053
+    ],
+    "salun_rank": 328,
+    "salun_top1_video": 1079,
+    "salun_top3_video_ids": [
+      1079,
+      50,
+      105
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 70,
+    "gallery_caption_index": 70,
+    "ground_truth_video": 70,
+    "gate_select16_rank": 12,
+    "gate_select16_top1_video": 1201,
+    "gate_select16_top3_video_ids": [
+      1201,
+      266,
+      158
+    ],
+    "iscc_rank": 47,
+    "iscc_top1_video": 1614,
+    "iscc_top3_video_ids": [
+      1614,
+      462,
+      105
+    ],
+    "afl_rank": 17,
+    "afl_top1_video": 1614,
+    "afl_top3_video_ids": [
+      1614,
+      158,
+      1201
+    ],
+    "salun_rank": 41,
+    "salun_top1_video": 1614,
+    "salun_top3_video_ids": [
+      1614,
+      462,
+      266
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 71,
+    "gallery_caption_index": 71,
+    "ground_truth_video": 71,
+    "gate_select16_rank": 8,
+    "gate_select16_top1_video": 1178,
+    "gate_select16_top3_video_ids": [
+      1178,
+      97,
+      1201
+    ],
+    "iscc_rank": 3,
+    "iscc_top1_video": 97,
+    "iscc_top3_video_ids": [
+      97,
+      1079,
+      71
+    ],
+    "afl_rank": 8,
+    "afl_top1_video": 97,
+    "afl_top3_video_ids": [
+      97,
+      1178,
+      1770
+    ],
+    "salun_rank": 2,
+    "salun_top1_video": 97,
+    "salun_top3_video_ids": [
+      97,
+      71,
+      1079
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 72,
+    "gallery_caption_index": 72,
+    "ground_truth_video": 72,
+    "gate_select16_rank": 70,
+    "gate_select16_top1_video": 67,
+    "gate_select16_top3_video_ids": [
+      67,
+      49,
+      1582
+    ],
+    "iscc_rank": 55,
+    "iscc_top1_video": 67,
+    "iscc_top3_video_ids": [
+      67,
+      1582,
+      49
+    ],
+    "afl_rank": 40,
+    "afl_top1_video": 67,
+    "afl_top3_video_ids": [
+      67,
+      49,
+      1582
+    ],
+    "salun_rank": 55,
+    "salun_top1_video": 67,
+    "salun_top3_video_ids": [
+      67,
+      1582,
+      49
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 73,
+    "gallery_caption_index": 73,
+    "ground_truth_video": 73,
+    "gate_select16_rank": 4,
+    "gate_select16_top1_video": 1582,
+    "gate_select16_top3_video_ids": [
+      1582,
+      67,
+      136
+    ],
+    "iscc_rank": 4,
+    "iscc_top1_video": 1582,
+    "iscc_top3_video_ids": [
+      1582,
+      67,
+      136
+    ],
+    "afl_rank": 3,
+    "afl_top1_video": 1582,
+    "afl_top3_video_ids": [
+      1582,
+      67,
+      73
+    ],
+    "salun_rank": 4,
+    "salun_top1_video": 1582,
+    "salun_top3_video_ids": [
+      1582,
+      67,
+      136
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 74,
+    "gallery_caption_index": 74,
+    "ground_truth_video": 74,
+    "gate_select16_rank": 98,
+    "gate_select16_top1_video": 199,
+    "gate_select16_top3_video_ids": [
+      199,
+      234,
+      125
+    ],
+    "iscc_rank": 304,
+    "iscc_top1_video": 120,
+    "iscc_top3_video_ids": [
+      120,
+      199,
+      168
+    ],
+    "afl_rank": 110,
+    "afl_top1_video": 234,
+    "afl_top3_video_ids": [
+      234,
+      199,
+      125
+    ],
+    "salun_rank": 297,
+    "salun_top1_video": 120,
+    "salun_top3_video_ids": [
+      120,
+      199,
+      168
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 75,
+    "gallery_caption_index": 75,
+    "ground_truth_video": 75,
+    "gate_select16_rank": 102,
+    "gate_select16_top1_video": 151,
+    "gate_select16_top3_video_ids": [
+      151,
+      207,
+      114
+    ],
+    "iscc_rank": 156,
+    "iscc_top1_video": 1283,
+    "iscc_top3_video_ids": [
+      1283,
+      1230,
+      18
+    ],
+    "afl_rank": 89,
+    "afl_top1_video": 151,
+    "afl_top3_video_ids": [
+      151,
+      114,
+      775
+    ],
+    "salun_rank": 152,
+    "salun_top1_video": 1283,
+    "salun_top3_video_ids": [
+      1283,
+      1230,
+      18
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 76,
+    "gallery_caption_index": 76,
+    "ground_truth_video": 76,
+    "gate_select16_rank": 74,
+    "gate_select16_top1_video": 1245,
+    "gate_select16_top3_video_ids": [
+      1245,
+      1398,
+      1471
+    ],
+    "iscc_rank": 130,
+    "iscc_top1_video": 1146,
+    "iscc_top3_video_ids": [
+      1146,
+      1398,
+      973
+    ],
+    "afl_rank": 81,
+    "afl_top1_video": 1245,
+    "afl_top3_video_ids": [
+      1245,
+      1398,
+      1146
+    ],
+    "salun_rank": 127,
+    "salun_top1_video": 1146,
+    "salun_top3_video_ids": [
+      1146,
+      1398,
+      973
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 77,
+    "gallery_caption_index": 77,
+    "ground_truth_video": 77,
+    "gate_select16_rank": 148,
+    "gate_select16_top1_video": 48,
+    "gate_select16_top3_video_ids": [
+      48,
+      542,
+      189
+    ],
+    "iscc_rank": 87,
+    "iscc_top1_video": 250,
+    "iscc_top3_video_ids": [
+      250,
+      89,
+      48
+    ],
+    "afl_rank": 186,
+    "afl_top1_video": 48,
+    "afl_top3_video_ids": [
+      48,
+      1455,
+      250
+    ],
+    "salun_rank": 88,
+    "salun_top1_video": 250,
+    "salun_top3_video_ids": [
+      250,
+      89,
+      48
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 78,
+    "gallery_caption_index": 78,
+    "ground_truth_video": 78,
+    "gate_select16_rank": 59,
+    "gate_select16_top1_video": 234,
+    "gate_select16_top3_video_ids": [
+      234,
+      125,
+      1614
+    ],
+    "iscc_rank": 422,
+    "iscc_top1_video": 103,
+    "iscc_top3_video_ids": [
+      103,
+      1614,
+      1196
+    ],
+    "afl_rank": 104,
+    "afl_top1_video": 234,
+    "afl_top3_video_ids": [
+      234,
+      1614,
+      125
+    ],
+    "salun_rank": 413,
+    "salun_top1_video": 103,
+    "salun_top3_video_ids": [
+      103,
+      1614,
+      1196
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 79,
+    "gallery_caption_index": 79,
+    "ground_truth_video": 79,
+    "gate_select16_rank": 47,
+    "gate_select16_top1_video": 1283,
+    "gate_select16_top3_video_ids": [
+      1283,
+      1288,
+      80
+    ],
+    "iscc_rank": 76,
+    "iscc_top1_video": 1283,
+    "iscc_top3_video_ids": [
+      1283,
+      113,
+      1079
+    ],
+    "afl_rank": 49,
+    "afl_top1_video": 1283,
+    "afl_top3_video_ids": [
+      1283,
+      80,
+      1288
+    ],
+    "salun_rank": 72,
+    "salun_top1_video": 1283,
+    "salun_top3_video_ids": [
+      1283,
+      113,
+      1079
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 80,
+    "gallery_caption_index": 80,
+    "ground_truth_video": 80,
+    "gate_select16_rank": 10,
+    "gate_select16_top1_video": 157,
+    "gate_select16_top3_video_ids": [
+      157,
+      39,
+      35
+    ],
+    "iscc_rank": 2,
+    "iscc_top1_video": 1196,
+    "iscc_top3_video_ids": [
+      1196,
+      80,
+      1283
+    ],
+    "afl_rank": 11,
+    "afl_top1_video": 157,
+    "afl_top3_video_ids": [
+      157,
+      1732,
+      433
+    ],
+    "salun_rank": 2,
+    "salun_top1_video": 1196,
+    "salun_top3_video_ids": [
+      1196,
+      80,
+      1283
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 81,
+    "gallery_caption_index": 81,
+    "ground_truth_video": 81,
+    "gate_select16_rank": 5,
+    "gate_select16_top1_video": 1060,
+    "gate_select16_top3_video_ids": [
+      1060,
+      198,
+      1523
+    ],
+    "iscc_rank": 59,
+    "iscc_top1_video": 973,
+    "iscc_top3_video_ids": [
+      973,
+      241,
+      6
+    ],
+    "afl_rank": 3,
+    "afl_top1_video": 1060,
+    "afl_top3_video_ids": [
+      1060,
+      198,
+      81
+    ],
+    "salun_rank": 43,
+    "salun_top1_video": 973,
+    "salun_top3_video_ids": [
+      973,
+      241,
+      6
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 82,
+    "gallery_caption_index": 82,
+    "ground_truth_video": 82,
+    "gate_select16_rank": 207,
+    "gate_select16_top1_video": 1771,
+    "gate_select16_top3_video_ids": [
+      1771,
+      1079,
+      1146
+    ],
+    "iscc_rank": 162,
+    "iscc_top1_video": 1079,
+    "iscc_top3_video_ids": [
+      1079,
+      113,
+      294
+    ],
+    "afl_rank": 150,
+    "afl_top1_video": 294,
+    "afl_top3_video_ids": [
+      294,
+      1146,
+      1079
+    ],
+    "salun_rank": 164,
+    "salun_top1_video": 1079,
+    "salun_top3_video_ids": [
+      1079,
+      294,
+      113
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 83,
+    "gallery_caption_index": 83,
+    "ground_truth_video": 83,
+    "gate_select16_rank": 23,
+    "gate_select16_top1_video": 316,
+    "gate_select16_top3_video_ids": [
+      316,
+      1699,
+      234
+    ],
+    "iscc_rank": 211,
+    "iscc_top1_video": 1196,
+    "iscc_top3_video_ids": [
+      1196,
+      1283,
+      1699
+    ],
+    "afl_rank": 40,
+    "afl_top1_video": 1699,
+    "afl_top3_video_ids": [
+      1699,
+      234,
+      316
+    ],
+    "salun_rank": 199,
+    "salun_top1_video": 1196,
+    "salun_top3_video_ids": [
+      1196,
+      1699,
+      1283
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 84,
+    "gallery_caption_index": 84,
+    "ground_truth_video": 84,
+    "gate_select16_rank": 234,
+    "gate_select16_top1_video": 207,
+    "gate_select16_top3_video_ids": [
+      207,
+      1230,
+      1247
+    ],
+    "iscc_rank": 424,
+    "iscc_top1_video": 1283,
+    "iscc_top3_video_ids": [
+      1283,
+      168,
+      1230
+    ],
+    "afl_rank": 289,
+    "afl_top1_video": 1230,
+    "afl_top3_video_ids": [
+      1230,
+      207,
+      1247
+    ],
+    "salun_rank": 419,
+    "salun_top1_video": 1230,
+    "salun_top3_video_ids": [
+      1230,
+      168,
+      1283
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 85,
+    "gallery_caption_index": 85,
+    "ground_truth_video": 85,
+    "gate_select16_rank": 47,
+    "gate_select16_top1_video": 1471,
+    "gate_select16_top3_video_ids": [
+      1471,
+      1060,
+      1523
+    ],
+    "iscc_rank": 116,
+    "iscc_top1_video": 973,
+    "iscc_top3_video_ids": [
+      973,
+      1146,
+      6
+    ],
+    "afl_rank": 30,
+    "afl_top1_video": 1060,
+    "afl_top3_video_ids": [
+      1060,
+      81,
+      1471
+    ],
+    "salun_rank": 106,
+    "salun_top1_video": 973,
+    "salun_top3_video_ids": [
+      973,
+      1146,
+      6
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 86,
+    "gallery_caption_index": 86,
+    "ground_truth_video": 86,
+    "gate_select16_rank": 11,
+    "gate_select16_top1_video": 197,
+    "gate_select16_top3_video_ids": [
+      197,
+      178,
+      91
+    ],
+    "iscc_rank": 10,
+    "iscc_top1_video": 91,
+    "iscc_top3_video_ids": [
+      91,
+      89,
+      1393
+    ],
+    "afl_rank": 5,
+    "afl_top1_video": 197,
+    "afl_top3_video_ids": [
+      197,
+      178,
+      1393
+    ],
+    "salun_rank": 10,
+    "salun_top1_video": 91,
+    "salun_top3_video_ids": [
+      91,
+      89,
+      1393
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 87,
+    "gallery_caption_index": 87,
+    "ground_truth_video": 87,
+    "gate_select16_rank": 252,
+    "gate_select16_top1_video": 67,
+    "gate_select16_top3_video_ids": [
+      67,
+      1283,
+      1083
+    ],
+    "iscc_rank": 325,
+    "iscc_top1_video": 1283,
+    "iscc_top3_video_ids": [
+      1283,
+      67,
+      168
+    ],
+    "afl_rank": 234,
+    "afl_top1_video": 1283,
+    "afl_top3_video_ids": [
+      1283,
+      67,
+      168
+    ],
+    "salun_rank": 323,
+    "salun_top1_video": 1283,
+    "salun_top3_video_ids": [
+      1283,
+      67,
+      168
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 88,
+    "gallery_caption_index": 88,
+    "ground_truth_video": 88,
+    "gate_select16_rank": 1,
+    "gate_select16_top1_video": 88,
+    "gate_select16_top3_video_ids": [
+      88,
+      38,
+      155
+    ],
+    "iscc_rank": 1,
+    "iscc_top1_video": 88,
+    "iscc_top3_video_ids": [
+      88,
+      235,
+      38
+    ],
+    "afl_rank": 1,
+    "afl_top1_video": 88,
+    "afl_top3_video_ids": [
+      88,
+      38,
+      155
+    ],
+    "salun_rank": 1,
+    "salun_top1_video": 88,
+    "salun_top3_video_ids": [
+      88,
+      235,
+      38
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 89,
+    "gallery_caption_index": 89,
+    "ground_truth_video": 89,
+    "gate_select16_rank": 6,
+    "gate_select16_top1_video": 511,
+    "gate_select16_top3_video_ids": [
+      511,
+      906,
+      217
+    ],
+    "iscc_rank": 4,
+    "iscc_top1_video": 511,
+    "iscc_top3_video_ids": [
+      511,
+      217,
+      906
+    ],
+    "afl_rank": 6,
+    "afl_top1_video": 511,
+    "afl_top3_video_ids": [
+      511,
+      906,
+      217
+    ],
+    "salun_rank": 4,
+    "salun_top1_video": 511,
+    "salun_top3_video_ids": [
+      511,
+      217,
+      906
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 90,
+    "gallery_caption_index": 90,
+    "ground_truth_video": 90,
+    "gate_select16_rank": 16,
+    "gate_select16_top1_video": 1455,
+    "gate_select16_top3_video_ids": [
+      1455,
+      738,
+      3
+    ],
+    "iscc_rank": 160,
+    "iscc_top1_video": 1614,
+    "iscc_top3_video_ids": [
+      1614,
+      1062,
+      158
+    ],
+    "afl_rank": 27,
+    "afl_top1_video": 1455,
+    "afl_top3_video_ids": [
+      1455,
+      738,
+      3
+    ],
+    "salun_rank": 147,
+    "salun_top1_video": 1614,
+    "salun_top3_video_ids": [
+      1614,
+      1062,
+      158
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 91,
+    "gallery_caption_index": 91,
+    "ground_truth_video": 91,
+    "gate_select16_rank": 9,
+    "gate_select16_top1_video": 67,
+    "gate_select16_top3_video_ids": [
+      67,
+      1582,
+      136
+    ],
+    "iscc_rank": 9,
+    "iscc_top1_video": 1582,
+    "iscc_top3_video_ids": [
+      1582,
+      67,
+      136
+    ],
+    "afl_rank": 12,
+    "afl_top1_video": 67,
+    "afl_top3_video_ids": [
+      67,
+      1582,
+      136
+    ],
+    "salun_rank": 9,
+    "salun_top1_video": 1582,
+    "salun_top3_video_ids": [
+      1582,
+      67,
+      136
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 92,
+    "gallery_caption_index": 92,
+    "ground_truth_video": 92,
+    "gate_select16_rank": 8,
+    "gate_select16_top1_video": 97,
+    "gate_select16_top3_video_ids": [
+      97,
+      178,
+      241
+    ],
+    "iscc_rank": 10,
+    "iscc_top1_video": 97,
+    "iscc_top3_video_ids": [
+      97,
+      241,
+      103
+    ],
+    "afl_rank": 18,
+    "afl_top1_video": 97,
+    "afl_top3_video_ids": [
+      97,
+      241,
+      178
+    ],
+    "salun_rank": 11,
+    "salun_top1_video": 97,
+    "salun_top3_video_ids": [
+      97,
+      241,
+      103
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 93,
+    "gallery_caption_index": 93,
+    "ground_truth_video": 93,
+    "gate_select16_rank": 1,
+    "gate_select16_top1_video": 93,
+    "gate_select16_top3_video_ids": [
+      93,
+      168,
+      237
+    ],
+    "iscc_rank": 1,
+    "iscc_top1_video": 93,
+    "iscc_top3_video_ids": [
+      93,
+      168,
+      1283
+    ],
+    "afl_rank": 1,
+    "afl_top1_video": 93,
+    "afl_top3_video_ids": [
+      93,
+      168,
+      1732
+    ],
+    "salun_rank": 1,
+    "salun_top1_video": 93,
+    "salun_top3_video_ids": [
+      93,
+      168,
+      1283
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 94,
+    "gallery_caption_index": 94,
+    "ground_truth_video": 94,
+    "gate_select16_rank": 377,
+    "gate_select16_top1_video": 479,
+    "gate_select16_top3_video_ids": [
+      479,
+      1582,
+      645
+    ],
+    "iscc_rank": 194,
+    "iscc_top1_video": 1582,
+    "iscc_top3_video_ids": [
+      1582,
+      479,
+      67
+    ],
+    "afl_rank": 305,
+    "afl_top1_video": 479,
+    "afl_top3_video_ids": [
+      479,
+      1582,
+      212
+    ],
+    "salun_rank": 204,
+    "salun_top1_video": 1582,
+    "salun_top3_video_ids": [
+      1582,
+      479,
+      67
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 95,
+    "gallery_caption_index": 95,
+    "ground_truth_video": 95,
+    "gate_select16_rank": 332,
+    "gate_select16_top1_video": 39,
+    "gate_select16_top3_video_ids": [
+      39,
+      657,
+      157
+    ],
+    "iscc_rank": 297,
+    "iscc_top1_video": 1283,
+    "iscc_top3_video_ids": [
+      1283,
+      39,
+      1196
+    ],
+    "afl_rank": 365,
+    "afl_top1_video": 39,
+    "afl_top3_video_ids": [
+      39,
+      157,
+      1283
+    ],
+    "salun_rank": 301,
+    "salun_top1_video": 1283,
+    "salun_top3_video_ids": [
+      1283,
+      39,
+      1196
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 96,
+    "gallery_caption_index": 96,
+    "ground_truth_video": 96,
+    "gate_select16_rank": 107,
+    "gate_select16_top1_video": 207,
+    "gate_select16_top3_video_ids": [
+      207,
+      1230,
+      1247
+    ],
+    "iscc_rank": 227,
+    "iscc_top1_video": 1230,
+    "iscc_top3_video_ids": [
+      1230,
+      1283,
+      168
+    ],
+    "afl_rank": 119,
+    "afl_top1_video": 1230,
+    "afl_top3_video_ids": [
+      1230,
+      207,
+      1247
+    ],
+    "salun_rank": 214,
+    "salun_top1_video": 1230,
+    "salun_top3_video_ids": [
+      1230,
+      1283,
+      1699
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 97,
+    "gallery_caption_index": 97,
+    "ground_truth_video": 97,
+    "gate_select16_rank": 3,
+    "gate_select16_top1_video": 1079,
+    "gate_select16_top3_video_ids": [
+      1079,
+      71,
+      97
+    ],
+    "iscc_rank": 4,
+    "iscc_top1_video": 1079,
+    "iscc_top3_video_ids": [
+      1079,
+      71,
+      103
+    ],
+    "afl_rank": 3,
+    "afl_top1_video": 1079,
+    "afl_top3_video_ids": [
+      1079,
+      71,
+      97
+    ],
+    "salun_rank": 4,
+    "salun_top1_video": 1079,
+    "salun_top3_video_ids": [
+      1079,
+      71,
+      103
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 98,
+    "gallery_caption_index": 98,
+    "ground_truth_video": 98,
+    "gate_select16_rank": 294,
+    "gate_select16_top1_video": 136,
+    "gate_select16_top3_video_ids": [
+      136,
+      189,
+      67
+    ],
+    "iscc_rank": 199,
+    "iscc_top1_video": 89,
+    "iscc_top3_video_ids": [
+      89,
+      222,
+      103
+    ],
+    "afl_rank": 320,
+    "afl_top1_video": 89,
+    "afl_top3_video_ids": [
+      89,
+      511,
+      222
+    ],
+    "salun_rank": 198,
+    "salun_top1_video": 89,
+    "salun_top3_video_ids": [
+      89,
+      222,
+      103
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 99,
+    "gallery_caption_index": 99,
+    "ground_truth_video": 99,
+    "gate_select16_rank": 38,
+    "gate_select16_top1_video": 157,
+    "gate_select16_top3_video_ids": [
+      157,
+      80,
+      1288
+    ],
+    "iscc_rank": 124,
+    "iscc_top1_video": 80,
+    "iscc_top3_video_ids": [
+      80,
+      1196,
+      157
+    ],
+    "afl_rank": 49,
+    "afl_top1_video": 157,
+    "afl_top3_video_ids": [
+      157,
+      80,
+      1273
+    ],
+    "salun_rank": 121,
+    "salun_top1_video": 80,
+    "salun_top3_video_ids": [
+      80,
+      1196,
+      157
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 100,
+    "gallery_caption_index": 100,
+    "ground_truth_video": 100,
+    "gate_select16_rank": 71,
+    "gate_select16_top1_video": 1582,
+    "gate_select16_top3_video_ids": [
+      1582,
+      67,
+      645
+    ],
+    "iscc_rank": 120,
+    "iscc_top1_video": 1582,
+    "iscc_top3_video_ids": [
+      1582,
+      89,
+      91
+    ],
+    "afl_rank": 59,
+    "afl_top1_video": 1582,
+    "afl_top3_video_ids": [
+      1582,
+      89,
+      67
+    ],
+    "salun_rank": 125,
+    "salun_top1_video": 1582,
+    "salun_top3_video_ids": [
+      1582,
+      89,
+      91
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 101,
+    "gallery_caption_index": 101,
+    "ground_truth_video": 101,
+    "gate_select16_rank": 105,
+    "gate_select16_top1_video": 39,
+    "gate_select16_top3_video_ids": [
+      39,
+      157,
+      1273
+    ],
+    "iscc_rank": 120,
+    "iscc_top1_video": 39,
+    "iscc_top3_video_ids": [
+      39,
+      157,
+      1735
+    ],
+    "afl_rank": 114,
+    "afl_top1_video": 39,
+    "afl_top3_video_ids": [
+      39,
+      157,
+      1273
+    ],
+    "salun_rank": 121,
+    "salun_top1_video": 39,
+    "salun_top3_video_ids": [
+      39,
+      157,
+      1735
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 102,
+    "gallery_caption_index": 102,
+    "ground_truth_video": 102,
+    "gate_select16_rank": 6,
+    "gate_select16_top1_video": 48,
+    "gate_select16_top3_video_ids": [
+      48,
+      542,
+      189
+    ],
+    "iscc_rank": 25,
+    "iscc_top1_video": 48,
+    "iscc_top3_video_ids": [
+      48,
+      89,
+      113
+    ],
+    "afl_rank": 9,
+    "afl_top1_video": 48,
+    "afl_top3_video_ids": [
+      48,
+      542,
+      972
+    ],
+    "salun_rank": 25,
+    "salun_top1_video": 48,
+    "salun_top3_video_ids": [
+      48,
+      89,
+      113
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 103,
+    "gallery_caption_index": 103,
+    "ground_truth_video": 103,
+    "gate_select16_rank": 14,
+    "gate_select16_top1_video": 511,
+    "gate_select16_top3_video_ids": [
+      511,
+      923,
+      217
+    ],
+    "iscc_rank": 4,
+    "iscc_top1_video": 511,
+    "iscc_top3_video_ids": [
+      511,
+      217,
+      906
+    ],
+    "afl_rank": 12,
+    "afl_top1_video": 511,
+    "afl_top3_video_ids": [
+      511,
+      217,
+      906
+    ],
+    "salun_rank": 4,
+    "salun_top1_video": 511,
+    "salun_top3_video_ids": [
+      511,
+      217,
+      906
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 104,
+    "gallery_caption_index": 104,
+    "ground_truth_video": 104,
+    "gate_select16_rank": 7,
+    "gate_select16_top1_video": 1146,
+    "gate_select16_top3_video_ids": [
+      1146,
+      188,
+      1398
+    ],
+    "iscc_rank": 8,
+    "iscc_top1_video": 1146,
+    "iscc_top3_video_ids": [
+      1146,
+      188,
+      973
+    ],
+    "afl_rank": 5,
+    "afl_top1_video": 1146,
+    "afl_top3_video_ids": [
+      1146,
+      1398,
+      973
+    ],
+    "salun_rank": 8,
+    "salun_top1_video": 1146,
+    "salun_top3_video_ids": [
+      1146,
+      188,
+      973
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 105,
+    "gallery_caption_index": 105,
+    "ground_truth_video": 105,
+    "gate_select16_rank": 3,
+    "gate_select16_top1_video": 1079,
+    "gate_select16_top3_video_ids": [
+      1079,
+      181,
+      105
+    ],
+    "iscc_rank": 1,
+    "iscc_top1_video": 105,
+    "iscc_top3_video_ids": [
+      105,
+      1079,
+      103
+    ],
+    "afl_rank": 1,
+    "afl_top1_video": 105,
+    "afl_top3_video_ids": [
+      105,
+      104,
+      1079
+    ],
+    "salun_rank": 1,
+    "salun_top1_video": 105,
+    "salun_top3_video_ids": [
+      105,
+      1079,
+      103
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 106,
+    "gallery_caption_index": 106,
+    "ground_truth_video": 106,
+    "gate_select16_rank": 31,
+    "gate_select16_top1_video": 207,
+    "gate_select16_top3_video_ids": [
+      207,
+      610,
+      588
+    ],
+    "iscc_rank": 161,
+    "iscc_top1_video": 71,
+    "iscc_top3_video_ids": [
+      71,
+      588,
+      610
+    ],
+    "afl_rank": 51,
+    "afl_top1_video": 207,
+    "afl_top3_video_ids": [
+      207,
+      588,
+      610
+    ],
+    "salun_rank": 150,
+    "salun_top1_video": 71,
+    "salun_top3_video_ids": [
+      71,
+      588,
+      610
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 107,
+    "gallery_caption_index": 107,
+    "ground_truth_video": 107,
+    "gate_select16_rank": 14,
+    "gate_select16_top1_video": 1228,
+    "gate_select16_top3_video_ids": [
+      1228,
+      243,
+      1084
+    ],
+    "iscc_rank": 18,
+    "iscc_top1_video": 1228,
+    "iscc_top3_video_ids": [
+      1228,
+      1614,
+      588
+    ],
+    "afl_rank": 15,
+    "afl_top1_video": 1228,
+    "afl_top3_video_ids": [
+      1228,
+      588,
+      1614
+    ],
+    "salun_rank": 18,
+    "salun_top1_video": 1228,
+    "salun_top3_video_ids": [
+      1228,
+      1614,
+      588
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 108,
+    "gallery_caption_index": 108,
+    "ground_truth_video": 108,
+    "gate_select16_rank": 126,
+    "gate_select16_top1_video": 1471,
+    "gate_select16_top3_video_ids": [
+      1471,
+      1398,
+      21
+    ],
+    "iscc_rank": 300,
+    "iscc_top1_video": 1146,
+    "iscc_top3_video_ids": [
+      1146,
+      104,
+      188
+    ],
+    "afl_rank": 124,
+    "afl_top1_video": 1471,
+    "afl_top3_video_ids": [
+      1471,
+      1398,
+      1245
+    ],
+    "salun_rank": 293,
+    "salun_top1_video": 1146,
+    "salun_top3_video_ids": [
+      1146,
+      104,
+      1398
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 109,
+    "gallery_caption_index": 109,
+    "ground_truth_video": 109,
+    "gate_select16_rank": 96,
+    "gate_select16_top1_video": 234,
+    "gate_select16_top3_video_ids": [
+      234,
+      223,
+      125
+    ],
+    "iscc_rank": 281,
+    "iscc_top1_video": 1196,
+    "iscc_top3_video_ids": [
+      1196,
+      168,
+      1614
+    ],
+    "afl_rank": 91,
+    "afl_top1_video": 234,
+    "afl_top3_video_ids": [
+      234,
+      125,
+      223
+    ],
+    "salun_rank": 273,
+    "salun_top1_video": 1196,
+    "salun_top3_video_ids": [
+      1196,
+      168,
+      1614
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 110,
+    "gallery_caption_index": 110,
+    "ground_truth_video": 110,
+    "gate_select16_rank": 29,
+    "gate_select16_top1_video": 1582,
+    "gate_select16_top3_video_ids": [
+      1582,
+      67,
+      645
+    ],
+    "iscc_rank": 56,
+    "iscc_top1_video": 1582,
+    "iscc_top3_video_ids": [
+      1582,
+      67,
+      89
+    ],
+    "afl_rank": 39,
+    "afl_top1_video": 1582,
+    "afl_top3_video_ids": [
+      1582,
+      67,
+      479
+    ],
+    "salun_rank": 56,
+    "salun_top1_video": 1582,
+    "salun_top3_video_ids": [
+      1582,
+      67,
+      89
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 111,
+    "gallery_caption_index": 111,
+    "ground_truth_video": 111,
+    "gate_select16_rank": 92,
+    "gate_select16_top1_video": 157,
+    "gate_select16_top3_video_ids": [
+      157,
+      39,
+      1699
+    ],
+    "iscc_rank": 327,
+    "iscc_top1_video": 157,
+    "iscc_top3_video_ids": [
+      157,
+      35,
+      1699
+    ],
+    "afl_rank": 131,
+    "afl_top1_video": 157,
+    "afl_top3_video_ids": [
+      157,
+      1699,
+      39
+    ],
+    "salun_rank": 313,
+    "salun_top1_video": 157,
+    "salun_top3_video_ids": [
+      157,
+      35,
+      1699
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 112,
+    "gallery_caption_index": 112,
+    "ground_truth_video": 112,
+    "gate_select16_rank": 2,
+    "gate_select16_top1_video": 102,
+    "gate_select16_top3_video_ids": [
+      102,
+      112,
+      189
+    ],
+    "iscc_rank": 1,
+    "iscc_top1_video": 112,
+    "iscc_top3_video_ids": [
+      112,
+      113,
+      189
+    ],
+    "afl_rank": 1,
+    "afl_top1_video": 112,
+    "afl_top3_video_ids": [
+      112,
+      102,
+      1363
+    ],
+    "salun_rank": 1,
+    "salun_top1_video": 112,
+    "salun_top3_video_ids": [
+      112,
+      113,
+      189
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 113,
+    "gallery_caption_index": 113,
+    "ground_truth_video": 113,
+    "gate_select16_rank": 1,
+    "gate_select16_top1_video": 113,
+    "gate_select16_top3_video_ids": [
+      113,
+      539,
+      67
+    ],
+    "iscc_rank": 2,
+    "iscc_top1_video": 241,
+    "iscc_top3_video_ids": [
+      241,
+      113,
+      235
+    ],
+    "afl_rank": 4,
+    "afl_top1_video": 1283,
+    "afl_top3_video_ids": [
+      1283,
+      241,
+      539
+    ],
+    "salun_rank": 2,
+    "salun_top1_video": 241,
+    "salun_top3_video_ids": [
+      241,
+      113,
+      235
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 114,
+    "gallery_caption_index": 114,
+    "ground_truth_video": 114,
+    "gate_select16_rank": 11,
+    "gate_select16_top1_video": 214,
+    "gate_select16_top3_video_ids": [
+      214,
+      542,
+      1247
+    ],
+    "iscc_rank": 66,
+    "iscc_top1_video": 168,
+    "iscc_top3_video_ids": [
+      168,
+      250,
+      18
+    ],
+    "afl_rank": 2,
+    "afl_top1_video": 1247,
+    "afl_top3_video_ids": [
+      1247,
+      114,
+      48
+    ],
+    "salun_rank": 61,
+    "salun_top1_video": 168,
+    "salun_top3_video_ids": [
+      168,
+      250,
+      18
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 115,
+    "gallery_caption_index": 115,
+    "ground_truth_video": 115,
+    "gate_select16_rank": 73,
+    "gate_select16_top1_video": 170,
+    "gate_select16_top3_video_ids": [
+      170,
+      1614,
+      71
+    ],
+    "iscc_rank": 50,
+    "iscc_top1_video": 71,
+    "iscc_top3_video_ids": [
+      71,
+      1614,
+      343
+    ],
+    "afl_rank": 51,
+    "afl_top1_video": 1614,
+    "afl_top3_video_ids": [
+      1614,
+      343,
+      158
+    ],
+    "salun_rank": 52,
+    "salun_top1_video": 71,
+    "salun_top3_video_ids": [
+      71,
+      1614,
+      343
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 116,
+    "gallery_caption_index": 116,
+    "ground_truth_video": 116,
+    "gate_select16_rank": 1,
+    "gate_select16_top1_video": 116,
+    "gate_select16_top3_video_ids": [
+      116,
+      820,
+      793
+    ],
+    "iscc_rank": 1,
+    "iscc_top1_video": 116,
+    "iscc_top3_video_ids": [
+      116,
+      168,
+      793
+    ],
+    "afl_rank": 1,
+    "afl_top1_video": 116,
+    "afl_top3_video_ids": [
+      116,
+      793,
+      820
+    ],
+    "salun_rank": 1,
+    "salun_top1_video": 116,
+    "salun_top3_video_ids": [
+      116,
+      168,
+      793
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 117,
+    "gallery_caption_index": 117,
+    "ground_truth_video": 117,
+    "gate_select16_rank": 1,
+    "gate_select16_top1_video": 117,
+    "gate_select16_top3_video_ids": [
+      117,
+      103,
+      619
+    ],
+    "iscc_rank": 2,
+    "iscc_top1_video": 103,
+    "iscc_top3_video_ids": [
+      103,
+      117,
+      222
+    ],
+    "afl_rank": 1,
+    "afl_top1_video": 117,
+    "afl_top3_video_ids": [
+      117,
+      103,
+      222
+    ],
+    "salun_rank": 2,
+    "salun_top1_video": 103,
+    "salun_top3_video_ids": [
+      103,
+      117,
+      222
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 118,
+    "gallery_caption_index": 118,
+    "ground_truth_video": 118,
+    "gate_select16_rank": 48,
+    "gate_select16_top1_video": 1307,
+    "gate_select16_top3_video_ids": [
+      1307,
+      1623,
+      1732
+    ],
+    "iscc_rank": 8,
+    "iscc_top1_video": 1286,
+    "iscc_top3_video_ids": [
+      1286,
+      1732,
+      168
+    ],
+    "afl_rank": 48,
+    "afl_top1_video": 1732,
+    "afl_top3_video_ids": [
+      1732,
+      1273,
+      1307
+    ],
+    "salun_rank": 11,
+    "salun_top1_video": 1286,
+    "salun_top3_video_ids": [
+      1286,
+      1732,
+      168
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 119,
+    "gallery_caption_index": 119,
+    "ground_truth_video": 119,
+    "gate_select16_rank": 150,
+    "gate_select16_top1_video": 39,
+    "gate_select16_top3_video_ids": [
+      39,
+      1196,
+      1150
+    ],
+    "iscc_rank": 129,
+    "iscc_top1_video": 1283,
+    "iscc_top3_video_ids": [
+      1283,
+      1196,
+      575
+    ],
+    "afl_rank": 108,
+    "afl_top1_video": 39,
+    "afl_top3_video_ids": [
+      39,
+      1196,
+      1283
+    ],
+    "salun_rank": 127,
+    "salun_top1_video": 1283,
+    "salun_top3_video_ids": [
+      1283,
+      1196,
+      575
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 120,
+    "gallery_caption_index": 120,
+    "ground_truth_video": 120,
+    "gate_select16_rank": 363,
+    "gate_select16_top1_video": 539,
+    "gate_select16_top3_video_ids": [
+      539,
+      168,
+      113
+    ],
+    "iscc_rank": 230,
+    "iscc_top1_video": 241,
+    "iscc_top3_video_ids": [
+      241,
+      113,
+      168
+    ],
+    "afl_rank": 355,
+    "afl_top1_video": 539,
+    "afl_top3_video_ids": [
+      539,
+      17,
+      168
+    ],
+    "salun_rank": 229,
+    "salun_top1_video": 241,
+    "salun_top3_video_ids": [
+      241,
+      113,
+      168
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 121,
+    "gallery_caption_index": 121,
+    "ground_truth_video": 121,
+    "gate_select16_rank": 41,
+    "gate_select16_top1_video": 808,
+    "gate_select16_top3_video_ids": [
+      808,
+      1582,
+      49
+    ],
+    "iscc_rank": 21,
+    "iscc_top1_video": 1582,
+    "iscc_top3_video_ids": [
+      1582,
+      89,
+      49
+    ],
+    "afl_rank": 25,
+    "afl_top1_video": 808,
+    "afl_top3_video_ids": [
+      808,
+      923,
+      1582
+    ],
+    "salun_rank": 21,
+    "salun_top1_video": 1582,
+    "salun_top3_video_ids": [
+      1582,
+      89,
+      91
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 122,
+    "gallery_caption_index": 122,
+    "ground_truth_video": 122,
+    "gate_select16_rank": 67,
+    "gate_select16_top1_video": 207,
+    "gate_select16_top3_video_ids": [
+      207,
+      316,
+      1699
+    ],
+    "iscc_rank": 188,
+    "iscc_top1_video": 1283,
+    "iscc_top3_video_ids": [
+      1283,
+      168,
+      250
+    ],
+    "afl_rank": 85,
+    "afl_top1_video": 316,
+    "afl_top3_video_ids": [
+      316,
+      1699,
+      303
+    ],
+    "salun_rank": 191,
+    "salun_top1_video": 1283,
+    "salun_top3_video_ids": [
+      1283,
+      168,
+      250
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 123,
+    "gallery_caption_index": 123,
+    "ground_truth_video": 123,
+    "gate_select16_rank": 35,
+    "gate_select16_top1_video": 1369,
+    "gate_select16_top3_video_ids": [
+      1369,
+      629,
+      21
+    ],
+    "iscc_rank": 259,
+    "iscc_top1_video": 6,
+    "iscc_top3_video_ids": [
+      6,
+      104,
+      294
+    ],
+    "afl_rank": 49,
+    "afl_top1_video": 1369,
+    "afl_top3_video_ids": [
+      1369,
+      53,
+      104
+    ],
+    "salun_rank": 246,
+    "salun_top1_video": 6,
+    "salun_top3_video_ids": [
+      6,
+      104,
+      294
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 124,
+    "gallery_caption_index": 124,
+    "ground_truth_video": 124,
+    "gate_select16_rank": 192,
+    "gate_select16_top1_video": 1283,
+    "gate_select16_top3_video_ids": [
+      1283,
+      103,
+      1196
+    ],
+    "iscc_rank": 190,
+    "iscc_top1_video": 103,
+    "iscc_top3_video_ids": [
+      103,
+      1283,
+      964
+    ],
+    "afl_rank": 209,
+    "afl_top1_video": 1283,
+    "afl_top3_video_ids": [
+      1283,
+      103,
+      1196
+    ],
+    "salun_rank": 188,
+    "salun_top1_video": 103,
+    "salun_top3_video_ids": [
+      103,
+      1283,
+      964
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 125,
+    "gallery_caption_index": 125,
+    "ground_truth_video": 125,
+    "gate_select16_rank": 4,
+    "gate_select16_top1_video": 775,
+    "gate_select16_top3_video_ids": [
+      775,
+      1247,
+      1230
+    ],
+    "iscc_rank": 30,
+    "iscc_top1_video": 1230,
+    "iscc_top3_video_ids": [
+      1230,
+      168,
+      1283
+    ],
+    "afl_rank": 6,
+    "afl_top1_video": 775,
+    "afl_top3_video_ids": [
+      775,
+      1230,
+      1247
+    ],
+    "salun_rank": 28,
+    "salun_top1_video": 1230,
+    "salun_top3_video_ids": [
+      1230,
+      168,
+      1283
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 126,
+    "gallery_caption_index": 126,
+    "ground_truth_video": 126,
+    "gate_select16_rank": 137,
+    "gate_select16_top1_video": 1343,
+    "gate_select16_top3_video_ids": [
+      1343,
+      189,
+      1501
+    ],
+    "iscc_rank": 217,
+    "iscc_top1_video": 113,
+    "iscc_top3_video_ids": [
+      113,
+      1582,
+      89
+    ],
+    "afl_rank": 302,
+    "afl_top1_video": 1501,
+    "afl_top3_video_ids": [
+      1501,
+      189,
+      603
+    ],
+    "salun_rank": 233,
+    "salun_top1_video": 113,
+    "salun_top3_video_ids": [
+      113,
+      1582,
+      89
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 127,
+    "gallery_caption_index": 127,
+    "ground_truth_video": 127,
+    "gate_select16_rank": 61,
+    "gate_select16_top1_video": 39,
+    "gate_select16_top3_video_ids": [
+      39,
+      157,
+      657
+    ],
+    "iscc_rank": 129,
+    "iscc_top1_video": 1283,
+    "iscc_top3_video_ids": [
+      1283,
+      39,
+      1196
+    ],
+    "afl_rank": 83,
+    "afl_top1_video": 39,
+    "afl_top3_video_ids": [
+      39,
+      1283,
+      157
+    ],
+    "salun_rank": 128,
+    "salun_top1_video": 1283,
+    "salun_top3_video_ids": [
+      1283,
+      39,
+      1196
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 128,
+    "gallery_caption_index": 128,
+    "ground_truth_video": 128,
+    "gate_select16_rank": 136,
+    "gate_select16_top1_video": 39,
+    "gate_select16_top3_video_ids": [
+      39,
+      157,
+      1273
+    ],
+    "iscc_rank": 135,
+    "iscc_top1_video": 39,
+    "iscc_top3_video_ids": [
+      39,
+      157,
+      80
+    ],
+    "afl_rank": 185,
+    "afl_top1_video": 39,
+    "afl_top3_video_ids": [
+      39,
+      157,
+      1273
+    ],
+    "salun_rank": 131,
+    "salun_top1_video": 39,
+    "salun_top3_video_ids": [
+      39,
+      157,
+      80
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 129,
+    "gallery_caption_index": 129,
+    "ground_truth_video": 129,
+    "gate_select16_rank": 14,
+    "gate_select16_top1_video": 816,
+    "gate_select16_top3_video_ids": [
+      816,
+      1079,
+      371
+    ],
+    "iscc_rank": 53,
+    "iscc_top1_video": 1079,
+    "iscc_top3_video_ids": [
+      1079,
+      816,
+      1537
+    ],
+    "afl_rank": 11,
+    "afl_top1_video": 816,
+    "afl_top3_video_ids": [
+      816,
+      928,
+      1537
+    ],
+    "salun_rank": 53,
+    "salun_top1_video": 1079,
+    "salun_top3_video_ids": [
+      1079,
+      816,
+      1537
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 130,
+    "gallery_caption_index": 130,
+    "ground_truth_video": 130,
+    "gate_select16_rank": 38,
+    "gate_select16_top1_video": 1471,
+    "gate_select16_top3_video_ids": [
+      1471,
+      1523,
+      1060
+    ],
+    "iscc_rank": 112,
+    "iscc_top1_video": 973,
+    "iscc_top3_video_ids": [
+      973,
+      1146,
+      104
+    ],
+    "afl_rank": 52,
+    "afl_top1_video": 1060,
+    "afl_top3_video_ids": [
+      1060,
+      1245,
+      198
+    ],
+    "salun_rank": 109,
+    "salun_top1_video": 973,
+    "salun_top3_video_ids": [
+      973,
+      1146,
+      1398
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 131,
+    "gallery_caption_index": 131,
+    "ground_truth_video": 131,
+    "gate_select16_rank": 40,
+    "gate_select16_top1_video": 1201,
+    "gate_select16_top3_video_ids": [
+      1201,
+      1614,
+      738
+    ],
+    "iscc_rank": 100,
+    "iscc_top1_video": 1614,
+    "iscc_top3_video_ids": [
+      1614,
+      71,
+      1062
+    ],
+    "afl_rank": 26,
+    "afl_top1_video": 1614,
+    "afl_top3_video_ids": [
+      1614,
+      158,
+      738
+    ],
+    "salun_rank": 97,
+    "salun_top1_video": 1614,
+    "salun_top3_video_ids": [
+      1614,
+      71,
+      1062
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 132,
+    "gallery_caption_index": 132,
+    "ground_truth_video": 132,
+    "gate_select16_rank": 31,
+    "gate_select16_top1_video": 157,
+    "gate_select16_top3_video_ids": [
+      157,
+      39,
+      1273
+    ],
+    "iscc_rank": 47,
+    "iscc_top1_video": 157,
+    "iscc_top3_video_ids": [
+      157,
+      39,
+      80
+    ],
+    "afl_rank": 33,
+    "afl_top1_video": 157,
+    "afl_top3_video_ids": [
+      157,
+      1273,
+      39
+    ],
+    "salun_rank": 45,
+    "salun_top1_video": 157,
+    "salun_top3_video_ids": [
+      157,
+      39,
+      80
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 133,
+    "gallery_caption_index": 133,
+    "ground_truth_video": 133,
+    "gate_select16_rank": 4,
+    "gate_select16_top1_video": 1336,
+    "gate_select16_top3_video_ids": [
+      1336,
+      178,
+      92
+    ],
+    "iscc_rank": 73,
+    "iscc_top1_video": 1336,
+    "iscc_top3_video_ids": [
+      1336,
+      92,
+      241
+    ],
+    "afl_rank": 11,
+    "afl_top1_video": 1336,
+    "afl_top3_video_ids": [
+      1336,
+      178,
+      92
+    ],
+    "salun_rank": 69,
+    "salun_top1_video": 1336,
+    "salun_top3_video_ids": [
+      1336,
+      92,
+      241
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 134,
+    "gallery_caption_index": 134,
+    "ground_truth_video": 134,
+    "gate_select16_rank": 63,
+    "gate_select16_top1_video": 234,
+    "gate_select16_top3_video_ids": [
+      234,
+      316,
+      223
+    ],
+    "iscc_rank": 124,
+    "iscc_top1_video": 35,
+    "iscc_top3_video_ids": [
+      35,
+      168,
+      1230
+    ],
+    "afl_rank": 93,
+    "afl_top1_video": 234,
+    "afl_top3_video_ids": [
+      234,
+      775,
+      316
+    ],
+    "salun_rank": 115,
+    "salun_top1_video": 35,
+    "salun_top3_video_ids": [
+      35,
+      1230,
+      316
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 135,
+    "gallery_caption_index": 135,
+    "ground_truth_video": 135,
+    "gate_select16_rank": 20,
+    "gate_select16_top1_video": 223,
+    "gate_select16_top3_video_ids": [
+      223,
+      234,
+      1699
+    ],
+    "iscc_rank": 18,
+    "iscc_top1_video": 1699,
+    "iscc_top3_video_ids": [
+      1699,
+      1230,
+      316
+    ],
+    "afl_rank": 13,
+    "afl_top1_video": 234,
+    "afl_top3_video_ids": [
+      234,
+      223,
+      1699
+    ],
+    "salun_rank": 18,
+    "salun_top1_video": 1699,
+    "salun_top3_video_ids": [
+      1699,
+      1230,
+      316
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 136,
+    "gallery_caption_index": 136,
+    "ground_truth_video": 136,
+    "gate_select16_rank": 2,
+    "gate_select16_top1_video": 235,
+    "gate_select16_top3_video_ids": [
+      235,
+      136,
+      97
+    ],
+    "iscc_rank": 6,
+    "iscc_top1_video": 235,
+    "iscc_top3_video_ids": [
+      235,
+      105,
+      97
+    ],
+    "afl_rank": 12,
+    "afl_top1_video": 235,
+    "afl_top3_video_ids": [
+      235,
+      97,
+      168
+    ],
+    "salun_rank": 6,
+    "salun_top1_video": 235,
+    "salun_top3_video_ids": [
+      235,
+      105,
+      97
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 137,
+    "gallery_caption_index": 137,
+    "ground_truth_video": 137,
+    "gate_select16_rank": 2,
+    "gate_select16_top1_video": 1771,
+    "gate_select16_top3_video_ids": [
+      1771,
+      137,
+      50
+    ],
+    "iscc_rank": 54,
+    "iscc_top1_video": 1079,
+    "iscc_top3_video_ids": [
+      1079,
+      50,
+      113
+    ],
+    "afl_rank": 3,
+    "afl_top1_video": 50,
+    "afl_top3_video_ids": [
+      50,
+      181,
+      137
+    ],
+    "salun_rank": 47,
+    "salun_top1_video": 1079,
+    "salun_top3_video_ids": [
+      1079,
+      50,
+      113
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 138,
+    "gallery_caption_index": 138,
+    "ground_truth_video": 138,
+    "gate_select16_rank": 27,
+    "gate_select16_top1_video": 198,
+    "gate_select16_top3_video_ids": [
+      198,
+      1060,
+      1523
+    ],
+    "iscc_rank": 19,
+    "iscc_top1_video": 181,
+    "iscc_top3_video_ids": [
+      181,
+      153,
+      973
+    ],
+    "afl_rank": 20,
+    "afl_top1_video": 198,
+    "afl_top3_video_ids": [
+      198,
+      1060,
+      81
+    ],
+    "salun_rank": 18,
+    "salun_top1_video": 181,
+    "salun_top3_video_ids": [
+      181,
+      153,
+      973
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 139,
+    "gallery_caption_index": 139,
+    "ground_truth_video": 139,
+    "gate_select16_rank": 239,
+    "gate_select16_top1_video": 479,
+    "gate_select16_top3_video_ids": [
+      479,
+      67,
+      645
+    ],
+    "iscc_rank": 204,
+    "iscc_top1_video": 479,
+    "iscc_top3_video_ids": [
+      479,
+      67,
+      49
+    ],
+    "afl_rank": 205,
+    "afl_top1_video": 479,
+    "afl_top3_video_ids": [
+      479,
+      67,
+      49
+    ],
+    "salun_rank": 211,
+    "salun_top1_video": 479,
+    "salun_top3_video_ids": [
+      479,
+      67,
+      49
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 140,
+    "gallery_caption_index": 140,
+    "ground_truth_video": 140,
+    "gate_select16_rank": 28,
+    "gate_select16_top1_video": 511,
+    "gate_select16_top3_video_ids": [
+      511,
+      217,
+      906
+    ],
+    "iscc_rank": 12,
+    "iscc_top1_video": 511,
+    "iscc_top3_video_ids": [
+      511,
+      217,
+      906
+    ],
+    "afl_rank": 24,
+    "afl_top1_video": 511,
+    "afl_top3_video_ids": [
+      511,
+      217,
+      906
+    ],
+    "salun_rank": 12,
+    "salun_top1_video": 511,
+    "salun_top3_video_ids": [
+      511,
+      217,
+      906
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 141,
+    "gallery_caption_index": 141,
+    "ground_truth_video": 141,
+    "gate_select16_rank": 109,
+    "gate_select16_top1_video": 39,
+    "gate_select16_top3_video_ids": [
+      39,
+      1307,
+      1196
+    ],
+    "iscc_rank": 20,
+    "iscc_top1_video": 1283,
+    "iscc_top3_video_ids": [
+      1283,
+      1196,
+      39
+    ],
+    "afl_rank": 59,
+    "afl_top1_video": 39,
+    "afl_top3_video_ids": [
+      39,
+      1283,
+      1196
+    ],
+    "salun_rank": 21,
+    "salun_top1_video": 1283,
+    "salun_top3_video_ids": [
+      1283,
+      1196,
+      39
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 142,
+    "gallery_caption_index": 142,
+    "ground_truth_video": 142,
+    "gate_select16_rank": 329,
+    "gate_select16_top1_video": 1062,
+    "gate_select16_top3_video_ids": [
+      1062,
+      903,
+      1288
+    ],
+    "iscc_rank": 155,
+    "iscc_top1_video": 1062,
+    "iscc_top3_video_ids": [
+      1062,
+      745,
+      103
+    ],
+    "afl_rank": 405,
+    "afl_top1_video": 1062,
+    "afl_top3_video_ids": [
+      1062,
+      903,
+      1614
+    ],
+    "salun_rank": 167,
+    "salun_top1_video": 1062,
+    "salun_top3_video_ids": [
+      1062,
+      745,
+      103
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 143,
+    "gallery_caption_index": 143,
+    "ground_truth_video": 143,
+    "gate_select16_rank": 13,
+    "gate_select16_top1_video": 157,
+    "gate_select16_top3_video_ids": [
+      157,
+      1638,
+      1273
+    ],
+    "iscc_rank": 22,
+    "iscc_top1_video": 157,
+    "iscc_top3_video_ids": [
+      157,
+      1638,
+      1735
+    ],
+    "afl_rank": 15,
+    "afl_top1_video": 157,
+    "afl_top3_video_ids": [
+      157,
+      1638,
+      1273
+    ],
+    "salun_rank": 24,
+    "salun_top1_video": 157,
+    "salun_top3_video_ids": [
+      157,
+      1638,
+      1735
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 144,
+    "gallery_caption_index": 144,
+    "ground_truth_video": 144,
+    "gate_select16_rank": 28,
+    "gate_select16_top1_video": 1598,
+    "gate_select16_top3_video_ids": [
+      1598,
+      1699,
+      62
+    ],
+    "iscc_rank": 94,
+    "iscc_top1_video": 1699,
+    "iscc_top3_video_ids": [
+      1699,
+      62,
+      303
+    ],
+    "afl_rank": 32,
+    "afl_top1_video": 1699,
+    "afl_top3_video_ids": [
+      1699,
+      62,
+      1598
+    ],
+    "salun_rank": 93,
+    "salun_top1_video": 1699,
+    "salun_top3_video_ids": [
+      1699,
+      62,
+      303
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 145,
+    "gallery_caption_index": 145,
+    "ground_truth_video": 145,
+    "gate_select16_rank": 39,
+    "gate_select16_top1_video": 157,
+    "gate_select16_top3_video_ids": [
+      157,
+      1273,
+      39
+    ],
+    "iscc_rank": 123,
+    "iscc_top1_video": 157,
+    "iscc_top3_video_ids": [
+      157,
+      80,
+      39
+    ],
+    "afl_rank": 64,
+    "afl_top1_video": 157,
+    "afl_top3_video_ids": [
+      157,
+      1273,
+      39
+    ],
+    "salun_rank": 121,
+    "salun_top1_video": 157,
+    "salun_top3_video_ids": [
+      157,
+      80,
+      39
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 146,
+    "gallery_caption_index": 146,
+    "ground_truth_video": 146,
+    "gate_select16_rank": 150,
+    "gate_select16_top1_video": 1079,
+    "gate_select16_top3_video_ids": [
+      1079,
+      181,
+      1053
+    ],
+    "iscc_rank": 101,
+    "iscc_top1_video": 105,
+    "iscc_top3_video_ids": [
+      105,
+      1079,
+      1062
+    ],
+    "afl_rank": 237,
+    "afl_top1_video": 105,
+    "afl_top3_video_ids": [
+      105,
+      1079,
+      1062
+    ],
+    "salun_rank": 104,
+    "salun_top1_video": 105,
+    "salun_top3_video_ids": [
+      105,
+      1079,
+      1062
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 147,
+    "gallery_caption_index": 147,
+    "ground_truth_video": 147,
+    "gate_select16_rank": 77,
+    "gate_select16_top1_video": 1770,
+    "gate_select16_top3_video_ids": [
+      1770,
+      1614,
+      1228
+    ],
+    "iscc_rank": 181,
+    "iscc_top1_video": 103,
+    "iscc_top3_video_ids": [
+      103,
+      1614,
+      241
+    ],
+    "afl_rank": 76,
+    "afl_top1_video": 1614,
+    "afl_top3_video_ids": [
+      1614,
+      1228,
+      1770
+    ],
+    "salun_rank": 175,
+    "salun_top1_video": 103,
+    "salun_top3_video_ids": [
+      103,
+      1614,
+      241
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 148,
+    "gallery_caption_index": 148,
+    "ground_truth_video": 148,
+    "gate_select16_rank": 20,
+    "gate_select16_top1_video": 1614,
+    "gate_select16_top3_video_ids": [
+      1614,
+      199,
+      2
+    ],
+    "iscc_rank": 57,
+    "iscc_top1_video": 1614,
+    "iscc_top3_video_ids": [
+      1614,
+      71,
+      103
+    ],
+    "afl_rank": 22,
+    "afl_top1_video": 1614,
+    "afl_top3_video_ids": [
+      1614,
+      199,
+      2
+    ],
+    "salun_rank": 56,
+    "salun_top1_video": 1614,
+    "salun_top3_video_ids": [
+      1614,
+      71,
+      103
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 149,
+    "gallery_caption_index": 149,
+    "ground_truth_video": 149,
+    "gate_select16_rank": 97,
+    "gate_select16_top1_video": 691,
+    "gate_select16_top3_video_ids": [
+      691,
+      657,
+      1288
+    ],
+    "iscc_rank": 117,
+    "iscc_top1_video": 80,
+    "iscc_top3_video_ids": [
+      80,
+      1283,
+      1581
+    ],
+    "afl_rank": 86,
+    "afl_top1_video": 691,
+    "afl_top3_video_ids": [
+      691,
+      657,
+      930
+    ],
+    "salun_rank": 114,
+    "salun_top1_video": 80,
+    "salun_top3_video_ids": [
+      80,
+      1283,
+      1581
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 150,
+    "gallery_caption_index": 150,
+    "ground_truth_video": 150,
+    "gate_select16_rank": 108,
+    "gate_select16_top1_video": 542,
+    "gate_select16_top3_video_ids": [
+      542,
+      48,
+      738
+    ],
+    "iscc_rank": 339,
+    "iscc_top1_video": 250,
+    "iscc_top3_video_ids": [
+      250,
+      89,
+      48
+    ],
+    "afl_rank": 98,
+    "afl_top1_video": 48,
+    "afl_top3_video_ids": [
+      48,
+      738,
+      763
+    ],
+    "salun_rank": 328,
+    "salun_top1_video": 250,
+    "salun_top3_video_ids": [
+      250,
+      89,
+      48
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 151,
+    "gallery_caption_index": 151,
+    "ground_truth_video": 151,
+    "gate_select16_rank": 25,
+    "gate_select16_top1_video": 207,
+    "gate_select16_top3_video_ids": [
+      207,
+      227,
+      1230
+    ],
+    "iscc_rank": 251,
+    "iscc_top1_video": 168,
+    "iscc_top3_video_ids": [
+      168,
+      1283,
+      1230
+    ],
+    "afl_rank": 25,
+    "afl_top1_video": 1230,
+    "afl_top3_video_ids": [
+      1230,
+      168,
+      775
+    ],
+    "salun_rank": 237,
+    "salun_top1_video": 168,
+    "salun_top3_video_ids": [
+      168,
+      1283,
+      1230
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 152,
+    "gallery_caption_index": 152,
+    "ground_truth_video": 152,
+    "gate_select16_rank": 38,
+    "gate_select16_top1_video": 189,
+    "gate_select16_top3_video_ids": [
+      189,
+      89,
+      48
+    ],
+    "iscc_rank": 371,
+    "iscc_top1_video": 89,
+    "iscc_top3_video_ids": [
+      89,
+      222,
+      103
+    ],
+    "afl_rank": 221,
+    "afl_top1_video": 89,
+    "afl_top3_video_ids": [
+      89,
+      222,
+      48
+    ],
+    "salun_rank": 375,
+    "salun_top1_video": 89,
+    "salun_top3_video_ids": [
+      89,
+      222,
+      103
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 153,
+    "gallery_caption_index": 153,
+    "ground_truth_video": 153,
+    "gate_select16_rank": 3,
+    "gate_select16_top1_video": 1079,
+    "gate_select16_top3_video_ids": [
+      1079,
+      172,
+      153
+    ],
+    "iscc_rank": 12,
+    "iscc_top1_video": 1079,
+    "iscc_top3_video_ids": [
+      1079,
+      50,
+      294
+    ],
+    "afl_rank": 8,
+    "afl_top1_video": 1079,
+    "afl_top3_video_ids": [
+      1079,
+      172,
+      104
+    ],
+    "salun_rank": 12,
+    "salun_top1_video": 1079,
+    "salun_top3_video_ids": [
+      1079,
+      50,
+      294
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 154,
+    "gallery_caption_index": 154,
+    "ground_truth_video": 154,
+    "gate_select16_rank": 1,
+    "gate_select16_top1_video": 154,
+    "gate_select16_top3_video_ids": [
+      154,
+      1283,
+      67
+    ],
+    "iscc_rank": 4,
+    "iscc_top1_video": 1283,
+    "iscc_top3_video_ids": [
+      1283,
+      1336,
+      67
+    ],
+    "afl_rank": 2,
+    "afl_top1_video": 1283,
+    "afl_top3_video_ids": [
+      1283,
+      154,
+      294
+    ],
+    "salun_rank": 4,
+    "salun_top1_video": 1283,
+    "salun_top3_video_ids": [
+      1283,
+      1336,
+      67
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 155,
+    "gallery_caption_index": 155,
+    "ground_truth_video": 155,
+    "gate_select16_rank": 75,
+    "gate_select16_top1_video": 1062,
+    "gate_select16_top3_video_ids": [
+      1062,
+      1288,
+      1178
+    ],
+    "iscc_rank": 32,
+    "iscc_top1_video": 105,
+    "iscc_top3_video_ids": [
+      105,
+      1062,
+      1291
+    ],
+    "afl_rank": 72,
+    "afl_top1_video": 1062,
+    "afl_top3_video_ids": [
+      1062,
+      105,
+      104
+    ],
+    "salun_rank": 32,
+    "salun_top1_video": 105,
+    "salun_top3_video_ids": [
+      105,
+      1062,
+      1291
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 156,
+    "gallery_caption_index": 156,
+    "ground_truth_video": 156,
+    "gate_select16_rank": 12,
+    "gate_select16_top1_video": 67,
+    "gate_select16_top3_video_ids": [
+      67,
+      1582,
+      49
+    ],
+    "iscc_rank": 11,
+    "iscc_top1_video": 67,
+    "iscc_top3_video_ids": [
+      67,
+      1582,
+      49
+    ],
+    "afl_rank": 18,
+    "afl_top1_video": 67,
+    "afl_top3_video_ids": [
+      67,
+      49,
+      1582
+    ],
+    "salun_rank": 12,
+    "salun_top1_video": 67,
+    "salun_top3_video_ids": [
+      67,
+      1582,
+      49
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 157,
+    "gallery_caption_index": 157,
+    "ground_truth_video": 157,
+    "gate_select16_rank": 1,
+    "gate_select16_top1_video": 157,
+    "gate_select16_top3_video_ids": [
+      157,
+      39,
+      1273
+    ],
+    "iscc_rank": 1,
+    "iscc_top1_video": 157,
+    "iscc_top3_video_ids": [
+      157,
+      39,
+      1196
+    ],
+    "afl_rank": 1,
+    "afl_top1_video": 157,
+    "afl_top3_video_ids": [
+      157,
+      39,
+      1273
+    ],
+    "salun_rank": 1,
+    "salun_top1_video": 157,
+    "salun_top3_video_ids": [
+      157,
+      39,
+      1196
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 158,
+    "gallery_caption_index": 158,
+    "ground_truth_video": 158,
+    "gate_select16_rank": 7,
+    "gate_select16_top1_video": 1614,
+    "gate_select16_top3_video_ids": [
+      1614,
+      1228,
+      539
+    ],
+    "iscc_rank": 20,
+    "iscc_top1_video": 1614,
+    "iscc_top3_video_ids": [
+      1614,
+      241,
+      105
+    ],
+    "afl_rank": 7,
+    "afl_top1_video": 1614,
+    "afl_top3_video_ids": [
+      1614,
+      1228,
+      539
+    ],
+    "salun_rank": 17,
+    "salun_top1_video": 1614,
+    "salun_top3_video_ids": [
+      1614,
+      241,
+      105
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 159,
+    "gallery_caption_index": 159,
+    "ground_truth_video": 159,
+    "gate_select16_rank": 12,
+    "gate_select16_top1_video": 97,
+    "gate_select16_top3_video_ids": [
+      97,
+      68,
+      168
+    ],
+    "iscc_rank": 41,
+    "iscc_top1_video": 97,
+    "iscc_top3_video_ids": [
+      97,
+      241,
+      235
+    ],
+    "afl_rank": 13,
+    "afl_top1_video": 97,
+    "afl_top3_video_ids": [
+      97,
+      68,
+      168
+    ],
+    "salun_rank": 41,
+    "salun_top1_video": 97,
+    "salun_top3_video_ids": [
+      97,
+      241,
+      168
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 160,
+    "gallery_caption_index": 160,
+    "ground_truth_video": 160,
+    "gate_select16_rank": 264,
+    "gate_select16_top1_video": 48,
+    "gate_select16_top3_video_ids": [
+      48,
+      1699,
+      234
+    ],
+    "iscc_rank": 270,
+    "iscc_top1_video": 103,
+    "iscc_top3_video_ids": [
+      103,
+      168,
+      48
+    ],
+    "afl_rank": 214,
+    "afl_top1_video": 48,
+    "afl_top3_video_ids": [
+      48,
+      234,
+      1699
+    ],
+    "salun_rank": 271,
+    "salun_top1_video": 103,
+    "salun_top3_video_ids": [
+      103,
+      168,
+      48
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 161,
+    "gallery_caption_index": 161,
+    "ground_truth_video": 161,
+    "gate_select16_rank": 44,
+    "gate_select16_top1_video": 1471,
+    "gate_select16_top3_video_ids": [
+      1471,
+      1398,
+      81
+    ],
+    "iscc_rank": 162,
+    "iscc_top1_video": 1398,
+    "iscc_top3_video_ids": [
+      1398,
+      1146,
+      53
+    ],
+    "afl_rank": 38,
+    "afl_top1_video": 1471,
+    "afl_top3_video_ids": [
+      1471,
+      1398,
+      1060
+    ],
+    "salun_rank": 155,
+    "salun_top1_video": 1398,
+    "salun_top3_video_ids": [
+      1398,
+      1146,
+      53
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 162,
+    "gallery_caption_index": 162,
+    "ground_truth_video": 162,
+    "gate_select16_rank": 17,
+    "gate_select16_top1_video": 189,
+    "gate_select16_top3_video_ids": [
+      189,
+      102,
+      112
+    ],
+    "iscc_rank": 82,
+    "iscc_top1_video": 113,
+    "iscc_top3_video_ids": [
+      113,
+      89,
+      189
+    ],
+    "afl_rank": 13,
+    "afl_top1_video": 112,
+    "afl_top3_video_ids": [
+      112,
+      102,
+      189
+    ],
+    "salun_rank": 79,
+    "salun_top1_video": 113,
+    "salun_top3_video_ids": [
+      113,
+      89,
+      189
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 163,
+    "gallery_caption_index": 163,
+    "ground_truth_video": 163,
+    "gate_select16_rank": 53,
+    "gate_select16_top1_video": 1245,
+    "gate_select16_top3_video_ids": [
+      1245,
+      172,
+      81
+    ],
+    "iscc_rank": 28,
+    "iscc_top1_video": 6,
+    "iscc_top3_video_ids": [
+      6,
+      252,
+      1146
+    ],
+    "afl_rank": 58,
+    "afl_top1_video": 1245,
+    "afl_top3_video_ids": [
+      1245,
+      81,
+      172
+    ],
+    "salun_rank": 27,
+    "salun_top1_video": 6,
+    "salun_top3_video_ids": [
+      6,
+      252,
+      1245
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 164,
+    "gallery_caption_index": 164,
+    "ground_truth_video": 164,
+    "gate_select16_rank": 105,
+    "gate_select16_top1_video": 691,
+    "gate_select16_top3_video_ids": [
+      691,
+      407,
+      198
+    ],
+    "iscc_rank": 493,
+    "iscc_top1_video": 39,
+    "iscc_top3_video_ids": [
+      39,
+      252,
+      53
+    ],
+    "afl_rank": 109,
+    "afl_top1_video": 407,
+    "afl_top3_video_ids": [
+      407,
+      691,
+      81
+    ],
+    "salun_rank": 481,
+    "salun_top1_video": 39,
+    "salun_top3_video_ids": [
+      39,
+      252,
+      53
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 165,
+    "gallery_caption_index": 165,
+    "ground_truth_video": 165,
+    "gate_select16_rank": 116,
+    "gate_select16_top1_video": 816,
+    "gate_select16_top3_video_ids": [
+      816,
+      542,
+      129
+    ],
+    "iscc_rank": 229,
+    "iscc_top1_video": 816,
+    "iscc_top3_video_ids": [
+      816,
+      928,
+      1537
+    ],
+    "afl_rank": 136,
+    "afl_top1_video": 816,
+    "afl_top3_video_ids": [
+      816,
+      928,
+      48
+    ],
+    "salun_rank": 234,
+    "salun_top1_video": 816,
+    "salun_top3_video_ids": [
+      816,
+      928,
+      1537
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 166,
+    "gallery_caption_index": 166,
+    "ground_truth_video": 166,
+    "gate_select16_rank": 65,
+    "gate_select16_top1_video": 1471,
+    "gate_select16_top3_video_ids": [
+      1471,
+      1060,
+      1627
+    ],
+    "iscc_rank": 206,
+    "iscc_top1_video": 1146,
+    "iscc_top3_video_ids": [
+      1146,
+      973,
+      1398
+    ],
+    "afl_rank": 72,
+    "afl_top1_video": 1471,
+    "afl_top3_video_ids": [
+      1471,
+      1060,
+      1398
+    ],
+    "salun_rank": 202,
+    "salun_top1_video": 1146,
+    "salun_top3_video_ids": [
+      1146,
+      973,
+      1398
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 167,
+    "gallery_caption_index": 167,
+    "ground_truth_video": 167,
+    "gate_select16_rank": 13,
+    "gate_select16_top1_video": 178,
+    "gate_select16_top3_video_ids": [
+      178,
+      1336,
+      1393
+    ],
+    "iscc_rank": 67,
+    "iscc_top1_video": 1336,
+    "iscc_top3_video_ids": [
+      1336,
+      1283,
+      1393
+    ],
+    "afl_rank": 67,
+    "afl_top1_video": 1336,
+    "afl_top3_video_ids": [
+      1336,
+      178,
+      1283
+    ],
+    "salun_rank": 67,
+    "salun_top1_video": 1336,
+    "salun_top3_video_ids": [
+      1336,
+      1283,
+      1393
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 168,
+    "gallery_caption_index": 168,
+    "ground_truth_video": 168,
+    "gate_select16_rank": 4,
+    "gate_select16_top1_video": 48,
+    "gate_select16_top3_video_ids": [
+      48,
+      67,
+      1283
+    ],
+    "iscc_rank": 3,
+    "iscc_top1_video": 1283,
+    "iscc_top3_video_ids": [
+      1283,
+      113,
+      168
+    ],
+    "afl_rank": 3,
+    "afl_top1_video": 48,
+    "afl_top3_video_ids": [
+      48,
+      1283,
+      168
+    ],
+    "salun_rank": 3,
+    "salun_top1_video": 1283,
+    "salun_top3_video_ids": [
+      1283,
+      113,
+      168
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 169,
+    "gallery_caption_index": 169,
+    "ground_truth_video": 169,
+    "gate_select16_rank": 100,
+    "gate_select16_top1_video": 1627,
+    "gate_select16_top3_video_ids": [
+      1627,
+      1523,
+      81
+    ],
+    "iscc_rank": 49,
+    "iscc_top1_video": 973,
+    "iscc_top3_video_ids": [
+      973,
+      1245,
+      6
+    ],
+    "afl_rank": 86,
+    "afl_top1_video": 1060,
+    "afl_top3_video_ids": [
+      1060,
+      81,
+      1301
+    ],
+    "salun_rank": 52,
+    "salun_top1_video": 973,
+    "salun_top3_video_ids": [
+      973,
+      1245,
+      6
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 170,
+    "gallery_caption_index": 170,
+    "ground_truth_video": 170,
+    "gate_select16_rank": 2,
+    "gate_select16_top1_video": 1288,
+    "gate_select16_top3_video_ids": [
+      1288,
+      170,
+      80
+    ],
+    "iscc_rank": 37,
+    "iscc_top1_video": 71,
+    "iscc_top3_video_ids": [
+      71,
+      1283,
+      1196
+    ],
+    "afl_rank": 5,
+    "afl_top1_video": 1196,
+    "afl_top3_video_ids": [
+      1196,
+      1614,
+      1638
+    ],
+    "salun_rank": 35,
+    "salun_top1_video": 71,
+    "salun_top3_video_ids": [
+      71,
+      1196,
+      1283
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 171,
+    "gallery_caption_index": 171,
+    "ground_truth_video": 171,
+    "gate_select16_rank": 53,
+    "gate_select16_top1_video": 48,
+    "gate_select16_top3_video_ids": [
+      48,
+      972,
+      126
+    ],
+    "iscc_rank": 152,
+    "iscc_top1_video": 48,
+    "iscc_top3_video_ids": [
+      48,
+      250,
+      168
+    ],
+    "afl_rank": 46,
+    "afl_top1_video": 48,
+    "afl_top3_video_ids": [
+      48,
+      972,
+      186
+    ],
+    "salun_rank": 157,
+    "salun_top1_video": 48,
+    "salun_top3_video_ids": [
+      48,
+      250,
+      972
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 172,
+    "gallery_caption_index": 172,
+    "ground_truth_video": 172,
+    "gate_select16_rank": 34,
+    "gate_select16_top1_video": 1288,
+    "gate_select16_top3_video_ids": [
+      1288,
+      80,
+      1150
+    ],
+    "iscc_rank": 212,
+    "iscc_top1_video": 80,
+    "iscc_top3_video_ids": [
+      80,
+      103,
+      1638
+    ],
+    "afl_rank": 50,
+    "afl_top1_video": 1288,
+    "afl_top3_video_ids": [
+      1288,
+      1146,
+      80
+    ],
+    "salun_rank": 208,
+    "salun_top1_video": 80,
+    "salun_top3_video_ids": [
+      80,
+      1638,
+      103
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 173,
+    "gallery_caption_index": 173,
+    "ground_truth_video": 173,
+    "gate_select16_rank": 78,
+    "gate_select16_top1_video": 113,
+    "gate_select16_top3_video_ids": [
+      113,
+      1283,
+      67
+    ],
+    "iscc_rank": 120,
+    "iscc_top1_video": 113,
+    "iscc_top3_video_ids": [
+      113,
+      1283,
+      241
+    ],
+    "afl_rank": 65,
+    "afl_top1_video": 113,
+    "afl_top3_video_ids": [
+      113,
+      1283,
+      241
+    ],
+    "salun_rank": 116,
+    "salun_top1_video": 113,
+    "salun_top3_video_ids": [
+      113,
+      1283,
+      241
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 174,
+    "gallery_caption_index": 174,
+    "ground_truth_video": 174,
+    "gate_select16_rank": 119,
+    "gate_select16_top1_video": 48,
+    "gate_select16_top3_video_ids": [
+      48,
+      542,
+      214
+    ],
+    "iscc_rank": 100,
+    "iscc_top1_video": 89,
+    "iscc_top3_video_ids": [
+      89,
+      250,
+      48
+    ],
+    "afl_rank": 147,
+    "afl_top1_video": 48,
+    "afl_top3_video_ids": [
+      48,
+      253,
+      214
+    ],
+    "salun_rank": 99,
+    "salun_top1_video": 89,
+    "salun_top3_video_ids": [
+      89,
+      250,
+      48
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 175,
+    "gallery_caption_index": 175,
+    "ground_truth_video": 175,
+    "gate_select16_rank": 9,
+    "gate_select16_top1_video": 80,
+    "gate_select16_top3_video_ids": [
+      80,
+      97,
+      1079
+    ],
+    "iscc_rank": 20,
+    "iscc_top1_video": 105,
+    "iscc_top3_video_ids": [
+      105,
+      97,
+      1079
+    ],
+    "afl_rank": 15,
+    "afl_top1_video": 97,
+    "afl_top3_video_ids": [
+      97,
+      80,
+      271
+    ],
+    "salun_rank": 20,
+    "salun_top1_video": 105,
+    "salun_top3_video_ids": [
+      105,
+      97,
+      1079
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 176,
+    "gallery_caption_index": 176,
+    "ground_truth_video": 176,
+    "gate_select16_rank": 44,
+    "gate_select16_top1_video": 207,
+    "gate_select16_top3_video_ids": [
+      207,
+      48,
+      542
+    ],
+    "iscc_rank": 124,
+    "iscc_top1_video": 250,
+    "iscc_top3_video_ids": [
+      250,
+      1283,
+      241
+    ],
+    "afl_rank": 22,
+    "afl_top1_video": 48,
+    "afl_top3_video_ids": [
+      48,
+      114,
+      539
+    ],
+    "salun_rank": 118,
+    "salun_top1_video": 250,
+    "salun_top3_video_ids": [
+      250,
+      1283,
+      241
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 177,
+    "gallery_caption_index": 177,
+    "ground_truth_video": 177,
+    "gate_select16_rank": 53,
+    "gate_select16_top1_video": 198,
+    "gate_select16_top3_video_ids": [
+      198,
+      1471,
+      51
+    ],
+    "iscc_rank": 98,
+    "iscc_top1_video": 973,
+    "iscc_top3_video_ids": [
+      973,
+      1146,
+      153
+    ],
+    "afl_rank": 51,
+    "afl_top1_video": 198,
+    "afl_top3_video_ids": [
+      198,
+      1060,
+      81
+    ],
+    "salun_rank": 91,
+    "salun_top1_video": 973,
+    "salun_top3_video_ids": [
+      973,
+      1146,
+      153
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 178,
+    "gallery_caption_index": 178,
+    "ground_truth_video": 178,
+    "gate_select16_rank": 1,
+    "gate_select16_top1_video": 178,
+    "gate_select16_top3_video_ids": [
+      178,
+      91,
+      808
+    ],
+    "iscc_rank": 2,
+    "iscc_top1_video": 91,
+    "iscc_top3_video_ids": [
+      91,
+      178,
+      1393
+    ],
+    "afl_rank": 1,
+    "afl_top1_video": 178,
+    "afl_top3_video_ids": [
+      178,
+      91,
+      1393
+    ],
+    "salun_rank": 2,
+    "salun_top1_video": 91,
+    "salun_top3_video_ids": [
+      91,
+      178,
+      1393
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 179,
+    "gallery_caption_index": 179,
+    "ground_truth_video": 179,
+    "gate_select16_rank": 72,
+    "gate_select16_top1_video": 207,
+    "gate_select16_top3_video_ids": [
+      207,
+      1699,
+      316
+    ],
+    "iscc_rank": 203,
+    "iscc_top1_video": 1699,
+    "iscc_top3_video_ids": [
+      1699,
+      1230,
+      1283
+    ],
+    "afl_rank": 66,
+    "afl_top1_video": 207,
+    "afl_top3_video_ids": [
+      207,
+      1699,
+      1230
+    ],
+    "salun_rank": 198,
+    "salun_top1_video": 1699,
+    "salun_top3_video_ids": [
+      1699,
+      1230,
+      1283
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 180,
+    "gallery_caption_index": 180,
+    "ground_truth_video": 180,
+    "gate_select16_rank": 138,
+    "gate_select16_top1_video": 234,
+    "gate_select16_top3_video_ids": [
+      234,
+      738,
+      125
+    ],
+    "iscc_rank": 343,
+    "iscc_top1_video": 168,
+    "iscc_top3_video_ids": [
+      168,
+      1230,
+      1614
+    ],
+    "afl_rank": 165,
+    "afl_top1_video": 234,
+    "afl_top3_video_ids": [
+      234,
+      125,
+      738
+    ],
+    "salun_rank": 332,
+    "salun_top1_video": 168,
+    "salun_top3_video_ids": [
+      168,
+      1230,
+      35
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 181,
+    "gallery_caption_index": 181,
+    "ground_truth_video": 181,
+    "gate_select16_rank": 1,
+    "gate_select16_top1_video": 181,
+    "gate_select16_top3_video_ids": [
+      181,
+      1053,
+      50
+    ],
+    "iscc_rank": 3,
+    "iscc_top1_video": 1079,
+    "iscc_top3_video_ids": [
+      1079,
+      50,
+      181
+    ],
+    "afl_rank": 1,
+    "afl_top1_video": 181,
+    "afl_top3_video_ids": [
+      181,
+      50,
+      1053
+    ],
+    "salun_rank": 3,
+    "salun_top1_video": 1079,
+    "salun_top3_video_ids": [
+      1079,
+      50,
+      181
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 182,
+    "gallery_caption_index": 182,
+    "ground_truth_video": 182,
+    "gate_select16_rank": 120,
+    "gate_select16_top1_video": 207,
+    "gate_select16_top3_video_ids": [
+      207,
+      234,
+      1230
+    ],
+    "iscc_rank": 120,
+    "iscc_top1_video": 1283,
+    "iscc_top3_video_ids": [
+      1283,
+      1196,
+      168
+    ],
+    "afl_rank": 141,
+    "afl_top1_video": 207,
+    "afl_top3_video_ids": [
+      207,
+      1283,
+      1230
+    ],
+    "salun_rank": 120,
+    "salun_top1_video": 1283,
+    "salun_top3_video_ids": [
+      1283,
+      1196,
+      168
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 183,
+    "gallery_caption_index": 183,
+    "ground_truth_video": 183,
+    "gate_select16_rank": 200,
+    "gate_select16_top1_video": 227,
+    "gate_select16_top3_video_ids": [
+      227,
+      168,
+      1283
+    ],
+    "iscc_rank": 152,
+    "iscc_top1_video": 1283,
+    "iscc_top3_video_ids": [
+      1283,
+      168,
+      1079
+    ],
+    "afl_rank": 199,
+    "afl_top1_video": 1283,
+    "afl_top3_video_ids": [
+      1283,
+      168,
+      1230
+    ],
+    "salun_rank": 150,
+    "salun_top1_video": 1283,
+    "salun_top3_video_ids": [
+      1283,
+      168,
+      1079
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 184,
+    "gallery_caption_index": 184,
+    "ground_truth_video": 184,
+    "gate_select16_rank": 47,
+    "gate_select16_top1_video": 81,
+    "gate_select16_top3_video_ids": [
+      81,
+      629,
+      1471
+    ],
+    "iscc_rank": 308,
+    "iscc_top1_video": 6,
+    "iscc_top3_video_ids": [
+      6,
+      104,
+      1146
+    ],
+    "afl_rank": 52,
+    "afl_top1_video": 81,
+    "afl_top3_video_ids": [
+      81,
+      1245,
+      1398
+    ],
+    "salun_rank": 293,
+    "salun_top1_video": 6,
+    "salun_top3_video_ids": [
+      6,
+      104,
+      1398
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 185,
+    "gallery_caption_index": 185,
+    "ground_truth_video": 185,
+    "gate_select16_rank": 119,
+    "gate_select16_top1_video": 181,
+    "gate_select16_top3_video_ids": [
+      181,
+      1178,
+      105
+    ],
+    "iscc_rank": 32,
+    "iscc_top1_video": 105,
+    "iscc_top3_video_ids": [
+      105,
+      235,
+      926
+    ],
+    "afl_rank": 63,
+    "afl_top1_video": 105,
+    "afl_top3_video_ids": [
+      105,
+      97,
+      17
+    ],
+    "salun_rank": 33,
+    "salun_top1_video": 105,
+    "salun_top3_video_ids": [
+      105,
+      235,
+      97
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 186,
+    "gallery_caption_index": 186,
+    "ground_truth_video": 186,
+    "gate_select16_rank": 1,
+    "gate_select16_top1_video": 186,
+    "gate_select16_top3_video_ids": [
+      186,
+      249,
+      931
+    ],
+    "iscc_rank": 1,
+    "iscc_top1_video": 186,
+    "iscc_top3_video_ids": [
+      186,
+      250,
+      113
+    ],
+    "afl_rank": 1,
+    "afl_top1_video": 186,
+    "afl_top3_video_ids": [
+      186,
+      17,
+      249
+    ],
+    "salun_rank": 1,
+    "salun_top1_video": 186,
+    "salun_top3_video_ids": [
+      186,
+      250,
+      113
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 187,
+    "gallery_caption_index": 187,
+    "ground_truth_video": 187,
+    "gate_select16_rank": 13,
+    "gate_select16_top1_video": 816,
+    "gate_select16_top3_video_ids": [
+      816,
+      945,
+      129
+    ],
+    "iscc_rank": 6,
+    "iscc_top1_video": 945,
+    "iscc_top3_video_ids": [
+      945,
+      928,
+      816
+    ],
+    "afl_rank": 9,
+    "afl_top1_video": 816,
+    "afl_top3_video_ids": [
+      816,
+      945,
+      928
+    ],
+    "salun_rank": 6,
+    "salun_top1_video": 945,
+    "salun_top3_video_ids": [
+      945,
+      928,
+      816
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 188,
+    "gallery_caption_index": 188,
+    "ground_truth_video": 188,
+    "gate_select16_rank": 1,
+    "gate_select16_top1_video": 188,
+    "gate_select16_top3_video_ids": [
+      188,
+      104,
+      21
+    ],
+    "iscc_rank": 1,
+    "iscc_top1_video": 188,
+    "iscc_top3_video_ids": [
+      188,
+      104,
+      1146
+    ],
+    "afl_rank": 2,
+    "afl_top1_video": 104,
+    "afl_top3_video_ids": [
+      104,
+      188,
+      1398
+    ],
+    "salun_rank": 1,
+    "salun_top1_video": 188,
+    "salun_top3_video_ids": [
+      188,
+      104,
+      1146
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 189,
+    "gallery_caption_index": 189,
+    "ground_truth_video": 189,
+    "gate_select16_rank": 2,
+    "gate_select16_top1_video": 48,
+    "gate_select16_top3_video_ids": [
+      48,
+      189,
+      542
+    ],
+    "iscc_rank": 4,
+    "iscc_top1_video": 89,
+    "iscc_top3_video_ids": [
+      89,
+      250,
+      48
+    ],
+    "afl_rank": 4,
+    "afl_top1_video": 48,
+    "afl_top3_video_ids": [
+      48,
+      972,
+      250
+    ],
+    "salun_rank": 4,
+    "salun_top1_video": 89,
+    "salun_top3_video_ids": [
+      89,
+      250,
+      48
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 190,
+    "gallery_caption_index": 190,
+    "ground_truth_video": 190,
+    "gate_select16_rank": 9,
+    "gate_select16_top1_video": 1523,
+    "gate_select16_top3_video_ids": [
+      1523,
+      1060,
+      51
+    ],
+    "iscc_rank": 146,
+    "iscc_top1_video": 6,
+    "iscc_top3_video_ids": [
+      6,
+      1079,
+      153
+    ],
+    "afl_rank": 29,
+    "afl_top1_video": 1060,
+    "afl_top3_video_ids": [
+      1060,
+      1523,
+      81
+    ],
+    "salun_rank": 135,
+    "salun_top1_video": 6,
+    "salun_top3_video_ids": [
+      6,
+      553,
+      153
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 191,
+    "gallery_caption_index": 191,
+    "ground_truth_video": 191,
+    "gate_select16_rank": 211,
+    "gate_select16_top1_video": 157,
+    "gate_select16_top3_video_ids": [
+      157,
+      39,
+      247
+    ],
+    "iscc_rank": 208,
+    "iscc_top1_video": 157,
+    "iscc_top3_video_ids": [
+      157,
+      39,
+      1283
+    ],
+    "afl_rank": 197,
+    "afl_top1_video": 157,
+    "afl_top3_video_ids": [
+      157,
+      39,
+      1699
+    ],
+    "salun_rank": 212,
+    "salun_top1_video": 157,
+    "salun_top3_video_ids": [
+      157,
+      39,
+      1283
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 192,
+    "gallery_caption_index": 192,
+    "ground_truth_video": 192,
+    "gate_select16_rank": 7,
+    "gate_select16_top1_video": 479,
+    "gate_select16_top3_video_ids": [
+      479,
+      63,
+      189
+    ],
+    "iscc_rank": 8,
+    "iscc_top1_video": 63,
+    "iscc_top3_video_ids": [
+      63,
+      91,
+      1582
+    ],
+    "afl_rank": 7,
+    "afl_top1_video": 479,
+    "afl_top3_video_ids": [
+      479,
+      63,
+      91
+    ],
+    "salun_rank": 8,
+    "salun_top1_video": 63,
+    "salun_top3_video_ids": [
+      63,
+      91,
+      479
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 193,
+    "gallery_caption_index": 193,
+    "ground_truth_video": 193,
+    "gate_select16_rank": 214,
+    "gate_select16_top1_video": 1770,
+    "gate_select16_top3_video_ids": [
+      1770,
+      2,
+      1614
+    ],
+    "iscc_rank": 238,
+    "iscc_top1_video": 103,
+    "iscc_top3_video_ids": [
+      103,
+      1614,
+      1062
+    ],
+    "afl_rank": 224,
+    "afl_top1_video": 2,
+    "afl_top3_video_ids": [
+      2,
+      1614,
+      1770
+    ],
+    "salun_rank": 236,
+    "salun_top1_video": 103,
+    "salun_top3_video_ids": [
+      103,
+      1614,
+      1062
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 194,
+    "gallery_caption_index": 194,
+    "ground_truth_video": 194,
+    "gate_select16_rank": 111,
+    "gate_select16_top1_video": 738,
+    "gate_select16_top3_video_ids": [
+      738,
+      11,
+      125
+    ],
+    "iscc_rank": 166,
+    "iscc_top1_video": 168,
+    "iscc_top3_video_ids": [
+      168,
+      1614,
+      71
+    ],
+    "afl_rank": 91,
+    "afl_top1_video": 234,
+    "afl_top3_video_ids": [
+      234,
+      738,
+      125
+    ],
+    "salun_rank": 165,
+    "salun_top1_video": 1614,
+    "salun_top3_video_ids": [
+      1614,
+      168,
+      71
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 195,
+    "gallery_caption_index": 195,
+    "ground_truth_video": 195,
+    "gate_select16_rank": 17,
+    "gate_select16_top1_video": 39,
+    "gate_select16_top3_video_ids": [
+      39,
+      247,
+      157
+    ],
+    "iscc_rank": 27,
+    "iscc_top1_video": 39,
+    "iscc_top3_video_ids": [
+      39,
+      157,
+      1196
+    ],
+    "afl_rank": 20,
+    "afl_top1_video": 39,
+    "afl_top3_video_ids": [
+      39,
+      157,
+      247
+    ],
+    "salun_rank": 27,
+    "salun_top1_video": 39,
+    "salun_top3_video_ids": [
+      39,
+      157,
+      1196
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 196,
+    "gallery_caption_index": 196,
+    "ground_truth_video": 196,
+    "gate_select16_rank": 67,
+    "gate_select16_top1_video": 172,
+    "gate_select16_top3_video_ids": [
+      172,
+      1245,
+      221
+    ],
+    "iscc_rank": 23,
+    "iscc_top1_video": 80,
+    "iscc_top3_video_ids": [
+      80,
+      252,
+      6
+    ],
+    "afl_rank": 43,
+    "afl_top1_video": 1245,
+    "afl_top3_video_ids": [
+      1245,
+      172,
+      252
+    ],
+    "salun_rank": 22,
+    "salun_top1_video": 80,
+    "salun_top3_video_ids": [
+      80,
+      252,
+      6
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 197,
+    "gallery_caption_index": 197,
+    "ground_truth_video": 197,
+    "gate_select16_rank": 2,
+    "gate_select16_top1_video": 178,
+    "gate_select16_top3_video_ids": [
+      178,
+      197,
+      1393
+    ],
+    "iscc_rank": 24,
+    "iscc_top1_video": 1393,
+    "iscc_top3_video_ids": [
+      1393,
+      178,
+      91
+    ],
+    "afl_rank": 3,
+    "afl_top1_video": 178,
+    "afl_top3_video_ids": [
+      178,
+      1393,
+      197
+    ],
+    "salun_rank": 21,
+    "salun_top1_video": 1393,
+    "salun_top3_video_ids": [
+      1393,
+      178,
+      91
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 198,
+    "gallery_caption_index": 198,
+    "ground_truth_video": 198,
+    "gate_select16_rank": 21,
+    "gate_select16_top1_video": 189,
+    "gate_select16_top3_video_ids": [
+      189,
+      1582,
+      65
+    ],
+    "iscc_rank": 254,
+    "iscc_top1_video": 1582,
+    "iscc_top3_video_ids": [
+      1582,
+      189,
+      250
+    ],
+    "afl_rank": 15,
+    "afl_top1_video": 189,
+    "afl_top3_video_ids": [
+      189,
+      1582,
+      17
+    ],
+    "salun_rank": 233,
+    "salun_top1_video": 1582,
+    "salun_top3_video_ids": [
+      1582,
+      189,
+      250
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 199,
+    "gallery_caption_index": 199,
+    "ground_truth_video": 199,
+    "gate_select16_rank": 21,
+    "gate_select16_top1_video": 223,
+    "gate_select16_top3_video_ids": [
+      223,
+      1679,
+      316
+    ],
+    "iscc_rank": 32,
+    "iscc_top1_video": 1614,
+    "iscc_top3_video_ids": [
+      1614,
+      1616,
+      80
+    ],
+    "afl_rank": 14,
+    "afl_top1_video": 223,
+    "afl_top3_video_ids": [
+      223,
+      234,
+      316
+    ],
+    "salun_rank": 29,
+    "salun_top1_video": 1614,
+    "salun_top3_video_ids": [
+      1614,
+      80,
+      1616
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 200,
+    "gallery_caption_index": 200,
+    "ground_truth_video": 200,
+    "gate_select16_rank": 250,
+    "gate_select16_top1_video": 316,
+    "gate_select16_top3_video_ids": [
+      316,
+      234,
+      223
+    ],
+    "iscc_rank": 413,
+    "iscc_top1_video": 1699,
+    "iscc_top3_video_ids": [
+      1699,
+      316,
+      253
+    ],
+    "afl_rank": 291,
+    "afl_top1_video": 234,
+    "afl_top3_video_ids": [
+      234,
+      316,
+      223
+    ],
+    "salun_rank": 411,
+    "salun_top1_video": 1699,
+    "salun_top3_video_ids": [
+      1699,
+      316,
+      1230
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 201,
+    "gallery_caption_index": 201,
+    "ground_truth_video": 201,
+    "gate_select16_rank": 106,
+    "gate_select16_top1_video": 2,
+    "gate_select16_top3_video_ids": [
+      2,
+      1614,
+      654
+    ],
+    "iscc_rank": 182,
+    "iscc_top1_video": 1614,
+    "iscc_top3_video_ids": [
+      1614,
+      71,
+      1228
+    ],
+    "afl_rank": 174,
+    "afl_top1_video": 2,
+    "afl_top3_video_ids": [
+      2,
+      1614,
+      1486
+    ],
+    "salun_rank": 182,
+    "salun_top1_video": 1614,
+    "salun_top3_video_ids": [
+      1614,
+      71,
+      1228
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 202,
+    "gallery_caption_index": 202,
+    "ground_truth_video": 202,
+    "gate_select16_rank": 130,
+    "gate_select16_top1_video": 923,
+    "gate_select16_top3_video_ids": [
+      923,
+      89,
+      217
+    ],
+    "iscc_rank": 40,
+    "iscc_top1_video": 89,
+    "iscc_top3_video_ids": [
+      89,
+      923,
+      241
+    ],
+    "afl_rank": 87,
+    "afl_top1_video": 923,
+    "afl_top3_video_ids": [
+      923,
+      217,
+      89
+    ],
+    "salun_rank": 42,
+    "salun_top1_video": 89,
+    "salun_top3_video_ids": [
+      89,
+      923,
+      241
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 203,
+    "gallery_caption_index": 203,
+    "ground_truth_video": 203,
+    "gate_select16_rank": 5,
+    "gate_select16_top1_video": 1541,
+    "gate_select16_top3_video_ids": [
+      1541,
+      511,
+      906
+    ],
+    "iscc_rank": 7,
+    "iscc_top1_video": 511,
+    "iscc_top3_video_ids": [
+      511,
+      1541,
+      217
+    ],
+    "afl_rank": 3,
+    "afl_top1_video": 1541,
+    "afl_top3_video_ids": [
+      1541,
+      511,
+      203
+    ],
+    "salun_rank": 6,
+    "salun_top1_video": 511,
+    "salun_top3_video_ids": [
+      511,
+      1541,
+      217
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 204,
+    "gallery_caption_index": 204,
+    "ground_truth_video": 204,
+    "gate_select16_rank": 3,
+    "gate_select16_top1_video": 39,
+    "gate_select16_top3_video_ids": [
+      39,
+      157,
+      204
+    ],
+    "iscc_rank": 13,
+    "iscc_top1_video": 1283,
+    "iscc_top3_video_ids": [
+      1283,
+      39,
+      80
+    ],
+    "afl_rank": 3,
+    "afl_top1_video": 39,
+    "afl_top3_video_ids": [
+      39,
+      157,
+      204
+    ],
+    "salun_rank": 11,
+    "salun_top1_video": 1283,
+    "salun_top3_video_ids": [
+      1283,
+      39,
+      157
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 205,
+    "gallery_caption_index": 205,
+    "ground_truth_video": 205,
+    "gate_select16_rank": 23,
+    "gate_select16_top1_video": 129,
+    "gate_select16_top3_video_ids": [
+      129,
+      816,
+      928
+    ],
+    "iscc_rank": 38,
+    "iscc_top1_video": 928,
+    "iscc_top3_video_ids": [
+      928,
+      816,
+      1537
+    ],
+    "afl_rank": 14,
+    "afl_top1_video": 928,
+    "afl_top3_video_ids": [
+      928,
+      129,
+      816
+    ],
+    "salun_rank": 39,
+    "salun_top1_video": 928,
+    "salun_top3_video_ids": [
+      928,
+      816,
+      1537
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 206,
+    "gallery_caption_index": 206,
+    "ground_truth_video": 206,
+    "gate_select16_rank": 56,
+    "gate_select16_top1_video": 188,
+    "gate_select16_top3_video_ids": [
+      188,
+      1471,
+      104
+    ],
+    "iscc_rank": 182,
+    "iscc_top1_video": 188,
+    "iscc_top3_video_ids": [
+      188,
+      104,
+      1146
+    ],
+    "afl_rank": 52,
+    "afl_top1_video": 104,
+    "afl_top3_video_ids": [
+      104,
+      188,
+      1146
+    ],
+    "salun_rank": 174,
+    "salun_top1_video": 188,
+    "salun_top3_video_ids": [
+      188,
+      104,
+      1146
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 207,
+    "gallery_caption_index": 207,
+    "ground_truth_video": 207,
+    "gate_select16_rank": 22,
+    "gate_select16_top1_video": 48,
+    "gate_select16_top3_video_ids": [
+      48,
+      542,
+      67
+    ],
+    "iscc_rank": 163,
+    "iscc_top1_video": 250,
+    "iscc_top3_video_ids": [
+      250,
+      48,
+      67
+    ],
+    "afl_rank": 39,
+    "afl_top1_video": 48,
+    "afl_top3_video_ids": [
+      48,
+      542,
+      253
+    ],
+    "salun_rank": 159,
+    "salun_top1_video": 250,
+    "salun_top3_video_ids": [
+      250,
+      48,
+      67
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 208,
+    "gallery_caption_index": 208,
+    "ground_truth_video": 208,
+    "gate_select16_rank": 1,
+    "gate_select16_top1_video": 208,
+    "gate_select16_top3_video_ids": [
+      208,
+      147,
+      1554
+    ],
+    "iscc_rank": 1,
+    "iscc_top1_video": 208,
+    "iscc_top3_video_ids": [
+      208,
+      92,
+      1283
+    ],
+    "afl_rank": 1,
+    "afl_top1_video": 208,
+    "afl_top3_video_ids": [
+      208,
+      147,
+      1554
+    ],
+    "salun_rank": 1,
+    "salun_top1_video": 208,
+    "salun_top3_video_ids": [
+      208,
+      92,
+      1283
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 209,
+    "gallery_caption_index": 209,
+    "ground_truth_video": 209,
+    "gate_select16_rank": 17,
+    "gate_select16_top1_video": 237,
+    "gate_select16_top3_video_ids": [
+      237,
+      227,
+      1762
+    ],
+    "iscc_rank": 179,
+    "iscc_top1_video": 168,
+    "iscc_top3_video_ids": [
+      168,
+      97,
+      1283
+    ],
+    "afl_rank": 38,
+    "afl_top1_video": 775,
+    "afl_top3_video_ids": [
+      775,
+      763,
+      237
+    ],
+    "salun_rank": 164,
+    "salun_top1_video": 168,
+    "salun_top3_video_ids": [
+      168,
+      97,
+      1639
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 210,
+    "gallery_caption_index": 210,
+    "ground_truth_video": 210,
+    "gate_select16_rank": 18,
+    "gate_select16_top1_video": 1471,
+    "gate_select16_top3_video_ids": [
+      1471,
+      1245,
+      1459
+    ],
+    "iscc_rank": 24,
+    "iscc_top1_video": 6,
+    "iscc_top3_video_ids": [
+      6,
+      1146,
+      252
+    ],
+    "afl_rank": 4,
+    "afl_top1_video": 1245,
+    "afl_top3_video_ids": [
+      1245,
+      1459,
+      1398
+    ],
+    "salun_rank": 22,
+    "salun_top1_video": 6,
+    "salun_top3_video_ids": [
+      6,
+      1146,
+      252
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 211,
+    "gallery_caption_index": 211,
+    "ground_truth_video": 211,
+    "gate_select16_rank": 11,
+    "gate_select16_top1_video": 511,
+    "gate_select16_top3_video_ids": [
+      511,
+      906,
+      217
+    ],
+    "iscc_rank": 17,
+    "iscc_top1_video": 511,
+    "iscc_top3_video_ids": [
+      511,
+      217,
+      89
+    ],
+    "afl_rank": 11,
+    "afl_top1_video": 511,
+    "afl_top3_video_ids": [
+      511,
+      217,
+      906
+    ],
+    "salun_rank": 17,
+    "salun_top1_video": 511,
+    "salun_top3_video_ids": [
+      511,
+      217,
+      89
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 212,
+    "gallery_caption_index": 212,
+    "ground_truth_video": 212,
+    "gate_select16_rank": 29,
+    "gate_select16_top1_video": 1582,
+    "gate_select16_top3_video_ids": [
+      1582,
+      67,
+      808
+    ],
+    "iscc_rank": 38,
+    "iscc_top1_video": 1582,
+    "iscc_top3_video_ids": [
+      1582,
+      67,
+      49
+    ],
+    "afl_rank": 16,
+    "afl_top1_video": 1582,
+    "afl_top3_video_ids": [
+      1582,
+      67,
+      49
+    ],
+    "salun_rank": 38,
+    "salun_top1_video": 1582,
+    "salun_top3_video_ids": [
+      1582,
+      67,
+      49
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 213,
+    "gallery_caption_index": 213,
+    "ground_truth_video": 213,
+    "gate_select16_rank": 64,
+    "gate_select16_top1_video": 316,
+    "gate_select16_top3_video_ids": [
+      316,
+      1699,
+      223
+    ],
+    "iscc_rank": 153,
+    "iscc_top1_video": 168,
+    "iscc_top3_video_ids": [
+      168,
+      1283,
+      1699
+    ],
+    "afl_rank": 39,
+    "afl_top1_video": 316,
+    "afl_top3_video_ids": [
+      316,
+      1699,
+      223
+    ],
+    "salun_rank": 144,
+    "salun_top1_video": 168,
+    "salun_top3_video_ids": [
+      168,
+      1283,
+      1699
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 214,
+    "gallery_caption_index": 214,
+    "ground_truth_video": 214,
+    "gate_select16_rank": 38,
+    "gate_select16_top1_video": 316,
+    "gate_select16_top3_video_ids": [
+      316,
+      48,
+      204
+    ],
+    "iscc_rank": 307,
+    "iscc_top1_video": 168,
+    "iscc_top3_video_ids": [
+      168,
+      1283,
+      48
+    ],
+    "afl_rank": 65,
+    "afl_top1_video": 316,
+    "afl_top3_video_ids": [
+      316,
+      48,
+      204
+    ],
+    "salun_rank": 301,
+    "salun_top1_video": 168,
+    "salun_top3_video_ids": [
+      168,
+      1283,
+      1699
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 215,
+    "gallery_caption_index": 215,
+    "ground_truth_video": 215,
+    "gate_select16_rank": 92,
+    "gate_select16_top1_video": 39,
+    "gate_select16_top3_video_ids": [
+      39,
+      157,
+      1288
+    ],
+    "iscc_rank": 228,
+    "iscc_top1_video": 39,
+    "iscc_top3_video_ids": [
+      39,
+      80,
+      1283
+    ],
+    "afl_rank": 122,
+    "afl_top1_video": 39,
+    "afl_top3_video_ids": [
+      39,
+      157,
+      1273
+    ],
+    "salun_rank": 225,
+    "salun_top1_video": 39,
+    "salun_top3_video_ids": [
+      39,
+      80,
+      1283
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 216,
+    "gallery_caption_index": 216,
+    "ground_truth_video": 216,
+    "gate_select16_rank": 34,
+    "gate_select16_top1_video": 242,
+    "gate_select16_top3_video_ids": [
+      242,
+      629,
+      1586
+    ],
+    "iscc_rank": 363,
+    "iscc_top1_video": 6,
+    "iscc_top3_video_ids": [
+      6,
+      346,
+      894
+    ],
+    "afl_rank": 38,
+    "afl_top1_video": 1060,
+    "afl_top3_video_ids": [
+      1060,
+      242,
+      894
+    ],
+    "salun_rank": 349,
+    "salun_top1_video": 6,
+    "salun_top3_video_ids": [
+      6,
+      346,
+      894
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 217,
+    "gallery_caption_index": 217,
+    "ground_truth_video": 217,
+    "gate_select16_rank": 6,
+    "gate_select16_top1_video": 89,
+    "gate_select16_top3_video_ids": [
+      89,
+      241,
+      159
+    ],
+    "iscc_rank": 4,
+    "iscc_top1_video": 89,
+    "iscc_top3_video_ids": [
+      89,
+      241,
+      511
+    ],
+    "afl_rank": 4,
+    "afl_top1_video": 241,
+    "afl_top3_video_ids": [
+      241,
+      89,
+      511
+    ],
+    "salun_rank": 5,
+    "salun_top1_video": 241,
+    "salun_top3_video_ids": [
+      241,
+      89,
+      511
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 218,
+    "gallery_caption_index": 218,
+    "ground_truth_video": 218,
+    "gate_select16_rank": 58,
+    "gate_select16_top1_video": 51,
+    "gate_select16_top3_video_ids": [
+      51,
+      198,
+      1523
+    ],
+    "iscc_rank": 41,
+    "iscc_top1_video": 973,
+    "iscc_top3_video_ids": [
+      973,
+      6,
+      198
+    ],
+    "afl_rank": 28,
+    "afl_top1_video": 198,
+    "afl_top3_video_ids": [
+      198,
+      81,
+      1060
+    ],
+    "salun_rank": 41,
+    "salun_top1_video": 973,
+    "salun_top3_video_ids": [
+      973,
+      6,
+      198
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 219,
+    "gallery_caption_index": 219,
+    "ground_truth_video": 219,
+    "gate_select16_rank": 36,
+    "gate_select16_top1_video": 738,
+    "gate_select16_top3_video_ids": [
+      738,
+      227,
+      1198
+    ],
+    "iscc_rank": 107,
+    "iscc_top1_video": 71,
+    "iscc_top3_video_ids": [
+      71,
+      168,
+      1614
+    ],
+    "afl_rank": 62,
+    "afl_top1_video": 738,
+    "afl_top3_video_ids": [
+      738,
+      234,
+      654
+    ],
+    "salun_rank": 103,
+    "salun_top1_video": 71,
+    "salun_top3_video_ids": [
+      71,
+      168,
+      1614
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 220,
+    "gallery_caption_index": 220,
+    "ground_truth_video": 220,
+    "gate_select16_rank": 16,
+    "gate_select16_top1_video": 157,
+    "gate_select16_top3_video_ids": [
+      157,
+      39,
+      1288
+    ],
+    "iscc_rank": 4,
+    "iscc_top1_video": 157,
+    "iscc_top3_video_ids": [
+      157,
+      80,
+      1283
+    ],
+    "afl_rank": 23,
+    "afl_top1_video": 157,
+    "afl_top3_video_ids": [
+      157,
+      39,
+      1273
+    ],
+    "salun_rank": 4,
+    "salun_top1_video": 157,
+    "salun_top3_video_ids": [
+      157,
+      80,
+      1283
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 221,
+    "gallery_caption_index": 221,
+    "ground_truth_video": 221,
+    "gate_select16_rank": 29,
+    "gate_select16_top1_video": 1288,
+    "gate_select16_top3_video_ids": [
+      1288,
+      172,
+      80
+    ],
+    "iscc_rank": 222,
+    "iscc_top1_video": 80,
+    "iscc_top3_video_ids": [
+      80,
+      1638,
+      1079
+    ],
+    "afl_rank": 32,
+    "afl_top1_video": 1638,
+    "afl_top3_video_ids": [
+      1638,
+      1288,
+      172
+    ],
+    "salun_rank": 215,
+    "salun_top1_video": 80,
+    "salun_top3_video_ids": [
+      80,
+      1638,
+      1079
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 222,
+    "gallery_caption_index": 222,
+    "ground_truth_video": 222,
+    "gate_select16_rank": 27,
+    "gate_select16_top1_video": 511,
+    "gate_select16_top3_video_ids": [
+      511,
+      217,
+      906
+    ],
+    "iscc_rank": 7,
+    "iscc_top1_video": 511,
+    "iscc_top3_video_ids": [
+      511,
+      217,
+      89
+    ],
+    "afl_rank": 12,
+    "afl_top1_video": 511,
+    "afl_top3_video_ids": [
+      511,
+      217,
+      906
+    ],
+    "salun_rank": 7,
+    "salun_top1_video": 511,
+    "salun_top3_video_ids": [
+      511,
+      217,
+      89
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 223,
+    "gallery_caption_index": 223,
+    "ground_truth_video": 223,
+    "gate_select16_rank": 3,
+    "gate_select16_top1_video": 234,
+    "gate_select16_top3_video_ids": [
+      234,
+      316,
+      223
+    ],
+    "iscc_rank": 120,
+    "iscc_top1_video": 1283,
+    "iscc_top3_video_ids": [
+      1283,
+      1614,
+      168
+    ],
+    "afl_rank": 3,
+    "afl_top1_video": 234,
+    "afl_top3_video_ids": [
+      234,
+      316,
+      223
+    ],
+    "salun_rank": 109,
+    "salun_top1_video": 1283,
+    "salun_top3_video_ids": [
+      1283,
+      1614,
+      168
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 224,
+    "gallery_caption_index": 224,
+    "ground_truth_video": 224,
+    "gate_select16_rank": 83,
+    "gate_select16_top1_video": 223,
+    "gate_select16_top3_video_ids": [
+      223,
+      125,
+      234
+    ],
+    "iscc_rank": 218,
+    "iscc_top1_video": 1196,
+    "iscc_top3_video_ids": [
+      1196,
+      1230,
+      964
+    ],
+    "afl_rank": 72,
+    "afl_top1_video": 223,
+    "afl_top3_video_ids": [
+      223,
+      234,
+      125
+    ],
+    "salun_rank": 210,
+    "salun_top1_video": 1196,
+    "salun_top3_video_ids": [
+      1196,
+      1230,
+      964
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 225,
+    "gallery_caption_index": 225,
+    "ground_truth_video": 225,
+    "gate_select16_rank": 75,
+    "gate_select16_top1_video": 1471,
+    "gate_select16_top3_video_ids": [
+      1471,
+      21,
+      629
+    ],
+    "iscc_rank": 444,
+    "iscc_top1_video": 6,
+    "iscc_top3_video_ids": [
+      6,
+      973,
+      97
+    ],
+    "afl_rank": 69,
+    "afl_top1_video": 1245,
+    "afl_top3_video_ids": [
+      1245,
+      1060,
+      1398
+    ],
+    "salun_rank": 431,
+    "salun_top1_video": 6,
+    "salun_top3_video_ids": [
+      6,
+      973,
+      97
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 226,
+    "gallery_caption_index": 226,
+    "ground_truth_video": 226,
+    "gate_select16_rank": 4,
+    "gate_select16_top1_video": 157,
+    "gate_select16_top3_video_ids": [
+      157,
+      1288,
+      39
+    ],
+    "iscc_rank": 2,
+    "iscc_top1_video": 80,
+    "iscc_top3_video_ids": [
+      80,
+      226,
+      157
+    ],
+    "afl_rank": 5,
+    "afl_top1_video": 157,
+    "afl_top3_video_ids": [
+      157,
+      39,
+      1273
+    ],
+    "salun_rank": 3,
+    "salun_top1_video": 157,
+    "salun_top3_video_ids": [
+      157,
+      80,
+      226
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 227,
+    "gallery_caption_index": 227,
+    "ground_truth_video": 227,
+    "gate_select16_rank": 2,
+    "gate_select16_top1_video": 1455,
+    "gate_select16_top3_video_ids": [
+      1455,
+      227,
+      654
+    ],
+    "iscc_rank": 50,
+    "iscc_top1_video": 168,
+    "iscc_top3_video_ids": [
+      168,
+      105,
+      1614
+    ],
+    "afl_rank": 11,
+    "afl_top1_video": 1455,
+    "afl_top3_video_ids": [
+      1455,
+      168,
+      234
+    ],
+    "salun_rank": 49,
+    "salun_top1_video": 168,
+    "salun_top3_video_ids": [
+      168,
+      105,
+      1614
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 228,
+    "gallery_caption_index": 228,
+    "ground_truth_video": 228,
+    "gate_select16_rank": 70,
+    "gate_select16_top1_video": 1196,
+    "gate_select16_top3_video_ids": [
+      1196,
+      923,
+      645
+    ],
+    "iscc_rank": 72,
+    "iscc_top1_video": 89,
+    "iscc_top3_video_ids": [
+      89,
+      1196,
+      923
+    ],
+    "afl_rank": 110,
+    "afl_top1_video": 1196,
+    "afl_top3_video_ids": [
+      1196,
+      923,
+      89
+    ],
+    "salun_rank": 75,
+    "salun_top1_video": 89,
+    "salun_top3_video_ids": [
+      89,
+      1196,
+      923
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 229,
+    "gallery_caption_index": 229,
+    "ground_truth_video": 229,
+    "gate_select16_rank": 33,
+    "gate_select16_top1_video": 1614,
+    "gate_select16_top3_video_ids": [
+      1614,
+      170,
+      1486
+    ],
+    "iscc_rank": 71,
+    "iscc_top1_video": 1614,
+    "iscc_top3_video_ids": [
+      1614,
+      71,
+      103
+    ],
+    "afl_rank": 31,
+    "afl_top1_video": 1614,
+    "afl_top3_video_ids": [
+      1614,
+      1486,
+      1455
+    ],
+    "salun_rank": 69,
+    "salun_top1_video": 1614,
+    "salun_top3_video_ids": [
+      1614,
+      71,
+      343
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 230,
+    "gallery_caption_index": 230,
+    "ground_truth_video": 230,
+    "gate_select16_rank": 104,
+    "gate_select16_top1_video": 11,
+    "gate_select16_top3_video_ids": [
+      11,
+      738,
+      1762
+    ],
+    "iscc_rank": 251,
+    "iscc_top1_video": 80,
+    "iscc_top3_video_ids": [
+      80,
+      97,
+      1639
+    ],
+    "afl_rank": 120,
+    "afl_top1_video": 738,
+    "afl_top3_video_ids": [
+      738,
+      1762,
+      11
+    ],
+    "salun_rank": 246,
+    "salun_top1_video": 80,
+    "salun_top3_video_ids": [
+      80,
+      97,
+      1639
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 231,
+    "gallery_caption_index": 231,
+    "ground_truth_video": 231,
+    "gate_select16_rank": 85,
+    "gate_select16_top1_video": 21,
+    "gate_select16_top3_video_ids": [
+      21,
+      1245,
+      81
+    ],
+    "iscc_rank": 39,
+    "iscc_top1_video": 6,
+    "iscc_top3_video_ids": [
+      6,
+      181,
+      1023
+    ],
+    "afl_rank": 69,
+    "afl_top1_video": 1245,
+    "afl_top3_video_ids": [
+      1245,
+      81,
+      21
+    ],
+    "salun_rank": 37,
+    "salun_top1_video": 6,
+    "salun_top3_video_ids": [
+      6,
+      181,
+      528
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 232,
+    "gallery_caption_index": 232,
+    "ground_truth_video": 232,
+    "gate_select16_rank": 54,
+    "gate_select16_top1_video": 654,
+    "gate_select16_top3_video_ids": [
+      654,
+      1614,
+      738
+    ],
+    "iscc_rank": 88,
+    "iscc_top1_video": 71,
+    "iscc_top3_video_ids": [
+      71,
+      1614,
+      103
+    ],
+    "afl_rank": 68,
+    "afl_top1_video": 1614,
+    "afl_top3_video_ids": [
+      1614,
+      2,
+      654
+    ],
+    "salun_rank": 86,
+    "salun_top1_video": 71,
+    "salun_top3_video_ids": [
+      71,
+      1614,
+      103
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 233,
+    "gallery_caption_index": 233,
+    "ground_truth_video": 233,
+    "gate_select16_rank": 40,
+    "gate_select16_top1_video": 157,
+    "gate_select16_top3_video_ids": [
+      157,
+      39,
+      1273
+    ],
+    "iscc_rank": 39,
+    "iscc_top1_video": 157,
+    "iscc_top3_video_ids": [
+      157,
+      39,
+      1286
+    ],
+    "afl_rank": 42,
+    "afl_top1_video": 157,
+    "afl_top3_video_ids": [
+      157,
+      39,
+      1273
+    ],
+    "salun_rank": 39,
+    "salun_top1_video": 157,
+    "salun_top3_video_ids": [
+      157,
+      39,
+      1286
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 234,
+    "gallery_caption_index": 234,
+    "ground_truth_video": 234,
+    "gate_select16_rank": 1,
+    "gate_select16_top1_video": 234,
+    "gate_select16_top3_video_ids": [
+      234,
+      125,
+      1230
+    ],
+    "iscc_rank": 36,
+    "iscc_top1_video": 168,
+    "iscc_top3_video_ids": [
+      168,
+      1230,
+      1283
+    ],
+    "afl_rank": 2,
+    "afl_top1_video": 1230,
+    "afl_top3_video_ids": [
+      1230,
+      234,
+      775
+    ],
+    "salun_rank": 30,
+    "salun_top1_video": 168,
+    "salun_top3_video_ids": [
+      168,
+      1230,
+      1283
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 235,
+    "gallery_caption_index": 235,
+    "ground_truth_video": 235,
+    "gate_select16_rank": 9,
+    "gate_select16_top1_video": 1083,
+    "gate_select16_top3_video_ids": [
+      1083,
+      73,
+      136
+    ],
+    "iscc_rank": 1,
+    "iscc_top1_video": 235,
+    "iscc_top3_video_ids": [
+      235,
+      73,
+      136
+    ],
+    "afl_rank": 5,
+    "afl_top1_video": 67,
+    "afl_top3_video_ids": [
+      67,
+      73,
+      24
+    ],
+    "salun_rank": 1,
+    "salun_top1_video": 235,
+    "salun_top3_video_ids": [
+      235,
+      73,
+      136
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 236,
+    "gallery_caption_index": 236,
+    "ground_truth_video": 236,
+    "gate_select16_rank": 74,
+    "gate_select16_top1_video": 1582,
+    "gate_select16_top3_video_ids": [
+      1582,
+      479,
+      645
+    ],
+    "iscc_rank": 50,
+    "iscc_top1_video": 1582,
+    "iscc_top3_video_ids": [
+      1582,
+      67,
+      91
+    ],
+    "afl_rank": 27,
+    "afl_top1_video": 1582,
+    "afl_top3_video_ids": [
+      1582,
+      67,
+      479
+    ],
+    "salun_rank": 50,
+    "salun_top1_video": 1582,
+    "salun_top3_video_ids": [
+      1582,
+      67,
+      91
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 237,
+    "gallery_caption_index": 237,
+    "ground_truth_video": 237,
+    "gate_select16_rank": 87,
+    "gate_select16_top1_video": 48,
+    "gate_select16_top3_video_ids": [
+      48,
+      152,
+      1455
+    ],
+    "iscc_rank": 198,
+    "iscc_top1_video": 168,
+    "iscc_top3_video_ids": [
+      168,
+      97,
+      71
+    ],
+    "afl_rank": 152,
+    "afl_top1_video": 48,
+    "afl_top3_video_ids": [
+      48,
+      168,
+      1455
+    ],
+    "salun_rank": 190,
+    "salun_top1_video": 168,
+    "salun_top3_video_ids": [
+      168,
+      97,
+      71
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 238,
+    "gallery_caption_index": 238,
+    "ground_truth_video": 238,
+    "gate_select16_rank": 52,
+    "gate_select16_top1_video": 1614,
+    "gate_select16_top3_video_ids": [
+      1614,
+      2,
+      1770
+    ],
+    "iscc_rank": 40,
+    "iscc_top1_video": 1614,
+    "iscc_top3_video_ids": [
+      1614,
+      103,
+      71
+    ],
+    "afl_rank": 40,
+    "afl_top1_video": 1614,
+    "afl_top3_video_ids": [
+      1614,
+      2,
+      1770
+    ],
+    "salun_rank": 41,
+    "salun_top1_video": 1614,
+    "salun_top3_video_ids": [
+      1614,
+      71,
+      103
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 239,
+    "gallery_caption_index": 239,
+    "ground_truth_video": 239,
+    "gate_select16_rank": 34,
+    "gate_select16_top1_video": 1471,
+    "gate_select16_top3_video_ids": [
+      1471,
+      629,
+      1245
+    ],
+    "iscc_rank": 136,
+    "iscc_top1_video": 1638,
+    "iscc_top3_video_ids": [
+      1638,
+      6,
+      1146
+    ],
+    "afl_rank": 33,
+    "afl_top1_video": 1245,
+    "afl_top3_video_ids": [
+      1245,
+      1471,
+      1459
+    ],
+    "salun_rank": 130,
+    "salun_top1_video": 1638,
+    "salun_top3_video_ids": [
+      1638,
+      6,
+      1146
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 240,
+    "gallery_caption_index": 240,
+    "ground_truth_video": 240,
+    "gate_select16_rank": 109,
+    "gate_select16_top1_video": 1060,
+    "gate_select16_top3_video_ids": [
+      1060,
+      1523,
+      1526
+    ],
+    "iscc_rank": 284,
+    "iscc_top1_video": 745,
+    "iscc_top3_video_ids": [
+      745,
+      1079,
+      103
+    ],
+    "afl_rank": 141,
+    "afl_top1_video": 1060,
+    "afl_top3_video_ids": [
+      1060,
+      973,
+      1526
+    ],
+    "salun_rank": 280,
+    "salun_top1_video": 745,
+    "salun_top3_video_ids": [
+      745,
+      1079,
+      973
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 241,
+    "gallery_caption_index": 241,
+    "ground_truth_video": 241,
+    "gate_select16_rank": 41,
+    "gate_select16_top1_video": 1283,
+    "gate_select16_top3_video_ids": [
+      1283,
+      67,
+      479
+    ],
+    "iscc_rank": 15,
+    "iscc_top1_video": 250,
+    "iscc_top3_video_ids": [
+      250,
+      1283,
+      103
+    ],
+    "afl_rank": 22,
+    "afl_top1_video": 1283,
+    "afl_top3_video_ids": [
+      1283,
+      250,
+      1146
+    ],
+    "salun_rank": 14,
+    "salun_top1_video": 250,
+    "salun_top3_video_ids": [
+      250,
+      1283,
+      103
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 242,
+    "gallery_caption_index": 242,
+    "ground_truth_video": 242,
+    "gate_select16_rank": 14,
+    "gate_select16_top1_video": 1471,
+    "gate_select16_top3_video_ids": [
+      1471,
+      81,
+      1398
+    ],
+    "iscc_rank": 101,
+    "iscc_top1_video": 1398,
+    "iscc_top3_video_ids": [
+      1398,
+      6,
+      1146
+    ],
+    "afl_rank": 23,
+    "afl_top1_video": 81,
+    "afl_top3_video_ids": [
+      81,
+      1398,
+      1245
+    ],
+    "salun_rank": 95,
+    "salun_top1_video": 1398,
+    "salun_top3_video_ids": [
+      1398,
+      6,
+      1146
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 243,
+    "gallery_caption_index": 243,
+    "ground_truth_video": 243,
+    "gate_select16_rank": 15,
+    "gate_select16_top1_video": 2,
+    "gate_select16_top3_video_ids": [
+      2,
+      1084,
+      232
+    ],
+    "iscc_rank": 12,
+    "iscc_top1_video": 71,
+    "iscc_top3_video_ids": [
+      71,
+      1614,
+      588
+    ],
+    "afl_rank": 18,
+    "afl_top1_video": 2,
+    "afl_top3_video_ids": [
+      2,
+      588,
+      232
+    ],
+    "salun_rank": 12,
+    "salun_top1_video": 71,
+    "salun_top3_video_ids": [
+      71,
+      1614,
+      588
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 244,
+    "gallery_caption_index": 244,
+    "ground_truth_video": 244,
+    "gate_select16_rank": 2,
+    "gate_select16_top1_video": 41,
+    "gate_select16_top3_video_ids": [
+      41,
+      244,
+      249
+    ],
+    "iscc_rank": 4,
+    "iscc_top1_video": 105,
+    "iscc_top3_video_ids": [
+      105,
+      1581,
+      1079
+    ],
+    "afl_rank": 2,
+    "afl_top1_video": 41,
+    "afl_top3_video_ids": [
+      41,
+      244,
+      17
+    ],
+    "salun_rank": 5,
+    "salun_top1_video": 105,
+    "salun_top3_video_ids": [
+      105,
+      1581,
+      1079
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 245,
+    "gallery_caption_index": 245,
+    "ground_truth_video": 245,
+    "gate_select16_rank": 100,
+    "gate_select16_top1_video": 21,
+    "gate_select16_top3_video_ids": [
+      21,
+      1245,
+      1471
+    ],
+    "iscc_rank": 33,
+    "iscc_top1_video": 188,
+    "iscc_top3_video_ids": [
+      188,
+      6,
+      1245
+    ],
+    "afl_rank": 81,
+    "afl_top1_video": 1245,
+    "afl_top3_video_ids": [
+      1245,
+      21,
+      81
+    ],
+    "salun_rank": 37,
+    "salun_top1_video": 188,
+    "salun_top3_video_ids": [
+      188,
+      6,
+      1245
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 246,
+    "gallery_caption_index": 246,
+    "ground_truth_video": 246,
+    "gate_select16_rank": 9,
+    "gate_select16_top1_video": 738,
+    "gate_select16_top3_video_ids": [
+      738,
+      125,
+      223
+    ],
+    "iscc_rank": 222,
+    "iscc_top1_video": 97,
+    "iscc_top3_video_ids": [
+      97,
+      738,
+      89
+    ],
+    "afl_rank": 103,
+    "afl_top1_video": 738,
+    "afl_top3_video_ids": [
+      738,
+      125,
+      223
+    ],
+    "salun_rank": 218,
+    "salun_top1_video": 97,
+    "salun_top3_video_ids": [
+      97,
+      738,
+      303
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 247,
+    "gallery_caption_index": 247,
+    "ground_truth_video": 247,
+    "gate_select16_rank": 599,
+    "gate_select16_top1_video": 539,
+    "gate_select16_top3_video_ids": [
+      539,
+      198,
+      189
+    ],
+    "iscc_rank": 589,
+    "iscc_top1_video": 241,
+    "iscc_top3_video_ids": [
+      241,
+      113,
+      17
+    ],
+    "afl_rank": 600,
+    "afl_top1_video": 539,
+    "afl_top3_video_ids": [
+      539,
+      17,
+      241
+    ],
+    "salun_rank": 590,
+    "salun_top1_video": 241,
+    "salun_top3_video_ids": [
+      241,
+      113,
+      539
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 248,
+    "gallery_caption_index": 248,
+    "ground_truth_video": 248,
+    "gate_select16_rank": 164,
+    "gate_select16_top1_video": 227,
+    "gate_select16_top3_video_ids": [
+      227,
+      168,
+      738
+    ],
+    "iscc_rank": 275,
+    "iscc_top1_video": 168,
+    "iscc_top3_video_ids": [
+      168,
+      105,
+      1283
+    ],
+    "afl_rank": 169,
+    "afl_top1_video": 168,
+    "afl_top3_video_ids": [
+      168,
+      204,
+      738
+    ],
+    "salun_rank": 273,
+    "salun_top1_video": 168,
+    "salun_top3_video_ids": [
+      168,
+      105,
+      1283
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 249,
+    "gallery_caption_index": 249,
+    "ground_truth_video": 249,
+    "gate_select16_rank": 210,
+    "gate_select16_top1_video": 1146,
+    "gate_select16_top3_video_ids": [
+      1146,
+      188,
+      294
+    ],
+    "iscc_rank": 124,
+    "iscc_top1_video": 1735,
+    "iscc_top3_video_ids": [
+      1735,
+      80,
+      294
+    ],
+    "afl_rank": 208,
+    "afl_top1_video": 1146,
+    "afl_top3_video_ids": [
+      1146,
+      188,
+      294
+    ],
+    "salun_rank": 133,
+    "salun_top1_video": 1735,
+    "salun_top3_video_ids": [
+      1735,
+      80,
+      294
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 250,
+    "gallery_caption_index": 250,
+    "ground_truth_video": 250,
+    "gate_select16_rank": 43,
+    "gate_select16_top1_video": 1582,
+    "gate_select16_top3_video_ids": [
+      1582,
+      67,
+      136
+    ],
+    "iscc_rank": 15,
+    "iscc_top1_video": 1582,
+    "iscc_top3_video_ids": [
+      1582,
+      136,
+      67
+    ],
+    "afl_rank": 20,
+    "afl_top1_video": 1582,
+    "afl_top3_video_ids": [
+      1582,
+      67,
+      136
+    ],
+    "salun_rank": 15,
+    "salun_top1_video": 1582,
+    "salun_top3_video_ids": [
+      1582,
+      136,
+      67
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 251,
+    "gallery_caption_index": 251,
+    "ground_truth_video": 251,
+    "gate_select16_rank": 100,
+    "gate_select16_top1_video": 157,
+    "gate_select16_top3_video_ids": [
+      157,
+      1699,
+      1273
+    ],
+    "iscc_rank": 62,
+    "iscc_top1_video": 157,
+    "iscc_top3_video_ids": [
+      157,
+      1699,
+      1196
+    ],
+    "afl_rank": 103,
+    "afl_top1_video": 157,
+    "afl_top3_video_ids": [
+      157,
+      1699,
+      1273
+    ],
+    "salun_rank": 63,
+    "salun_top1_video": 157,
+    "salun_top3_video_ids": [
+      157,
+      1699,
+      1196
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 252,
+    "gallery_caption_index": 252,
+    "ground_truth_video": 252,
+    "gate_select16_rank": 4,
+    "gate_select16_top1_video": 1079,
+    "gate_select16_top3_video_ids": [
+      1079,
+      80,
+      105
+    ],
+    "iscc_rank": 50,
+    "iscc_top1_video": 105,
+    "iscc_top3_video_ids": [
+      105,
+      1079,
+      103
+    ],
+    "afl_rank": 4,
+    "afl_top1_video": 105,
+    "afl_top3_video_ids": [
+      105,
+      80,
+      1079
+    ],
+    "salun_rank": 47,
+    "salun_top1_video": 105,
+    "salun_top3_video_ids": [
+      105,
+      1079,
+      103
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 253,
+    "gallery_caption_index": 253,
+    "ground_truth_video": 253,
+    "gate_select16_rank": 142,
+    "gate_select16_top1_video": 189,
+    "gate_select16_top3_video_ids": [
+      189,
+      645,
+      168
+    ],
+    "iscc_rank": 61,
+    "iscc_top1_video": 168,
+    "iscc_top3_video_ids": [
+      168,
+      89,
+      61
+    ],
+    "afl_rank": 94,
+    "afl_top1_video": 168,
+    "afl_top3_video_ids": [
+      168,
+      532,
+      89
+    ],
+    "salun_rank": 61,
+    "salun_top1_video": 168,
+    "salun_top3_video_ids": [
+      168,
+      89,
+      61
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 254,
+    "gallery_caption_index": 254,
+    "ground_truth_video": 254,
+    "gate_select16_rank": 69,
+    "gate_select16_top1_video": 1699,
+    "gate_select16_top3_video_ids": [
+      1699,
+      1230,
+      151
+    ],
+    "iscc_rank": 40,
+    "iscc_top1_video": 1230,
+    "iscc_top3_video_ids": [
+      1230,
+      1699,
+      303
+    ],
+    "afl_rank": 47,
+    "afl_top1_video": 1230,
+    "afl_top3_video_ids": [
+      1230,
+      1699,
+      775
+    ],
+    "salun_rank": 40,
+    "salun_top1_video": 1230,
+    "salun_top3_video_ids": [
+      1230,
+      1699,
+      303
+    ]
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 255,
+    "gallery_caption_index": 255,
+    "ground_truth_video": 255,
+    "gate_select16_rank": 43,
+    "gate_select16_top1_video": 1770,
+    "gate_select16_top3_video_ids": [
+      1770,
+      243,
+      266
+    ],
+    "iscc_rank": 38,
+    "iscc_top1_video": 1614,
+    "iscc_top3_video_ids": [
+      1614,
+      462,
+      103
+    ],
+    "afl_rank": 32,
+    "afl_top1_video": 243,
+    "afl_top3_video_ids": [
+      243,
+      1614,
+      1770
+    ],
+    "salun_rank": 37,
+    "salun_top1_video": 462,
+    "salun_top3_video_ids": [
+      462,
+      1614,
+      243
+    ]
+  }
+]

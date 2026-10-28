@@ -1,0 +1,41 @@
+{
+  "registered_unix": 1793186557.8412414,
+  "methods": {
+    "gate_select16": "Proposed",
+    "iscc": "ISCC-P2",
+    "afl": "AFL-OTA",
+    "salun": "F-SalUn"
+  },
+  "datasets": [
+    "CapERA",
+    "AirScape"
+  ],
+  "checkpoint": "Unchanged current final200 model, same45 requests and225 FU cycles, same full gallery and native captions as the published mR. Same workload, not equal energy/time.",
+  "inference": "Use original frozen RemoteCLIP eight-frame mean features plus the trained rank10 image/text adapters; recompute full video-caption similarity matrices and verify all six published retrieval recalls and loss. This is text-to-video retrieval; an original representative frame visualizes each returned video, not generated image or caption output.",
+  "illustrations": "For each dataset, select one query with Proposed better GT rank than every comparator and one with worse rank than at least one comparator. Prefer a top1 success/failure reversal. Restrict illustrative candidates to native caption strings that are unique in this gallery and different top1 predictions; if empty, relax only caption uniqueness, then the top1 reversal preference. Choose median absolute GT-rank advantage/disadvantage, tie-break by caption ID. Disclose empty categories; never fabricate a contrast. These are diagnostic selected examples, not representative performance estimates.",
+  "comprehensive": "Export rank/top3 video IDs for every retained text query and paired better/equal/worse counts. No query filtering for the aggregate metrics. No training or model selection uses these results.",
+  "publication": "Only derived scientific figures with a few original representative frames/native query excerpts, selected-case provenance and full numerical query ranks. No raw video files, full annotation files, feature caches or checkpoints.",
+  "source_sha256": {
+    "tools/uav_convergence_v2/tgcn_retrieval_examples_v1.py": "ca2913dd6896a3e257f27e2dfeec5cc9909f9ca3b4d107de5c89df2346536c58",
+    "results/learning_selection_fix_v2_20261028/gate_select16/cases/baseline/capera_seed0/adaptive_retrieval_fu/final.pt": "50324ef38957ef3cee7021b9ee5d72c7bd284987aa8a7c855fee1190d3636ec2",
+    "results/learning_selection_fix_v2_20261028/gate_select16/cases/baseline/capera_seed0/plan.json": "92132da504a8b90808747e03a9cb1d4933a84a2e11ca928efd542b1f0f54fd46",
+    "results/learning_selection_fix_v2_20261028/gate_select16/cases/baseline/capera_seed0/feature_cache/features.pt": "6745e1576b1eb3787b77b064dfb55a959bb7a8a5d5a34b2f996e27167d23d1c7",
+    "results/paper_uav_benchmarks_v1_20261028/cases/baseline/capera_seed0/iscc_p2_gaft/final.pt": "b734b12611ce08687c1bf05d1afc4cd1c4c4d383a4e33b0d8e3493d42f4abd04",
+    "results/paper_uav_benchmarks_v1_20261028/cases/baseline/capera_seed0/plan.json": "92132da504a8b90808747e03a9cb1d4933a84a2e11ca928efd542b1f0f54fd46",
+    "results/paper_uav_benchmarks_v1_20261028/cases/baseline/capera_seed0/feature_cache/features.pt": "6745e1576b1eb3787b77b064dfb55a959bb7a8a5d5a34b2f996e27167d23d1c7",
+    "results/paper_uav_benchmarks_v1_20261028/cases/baseline/capera_seed0/uav_afl_ota_gaft/final.pt": "9069d7627eaf5311208db6f13799d857f1ed87d39498d249488412220f26aaf2",
+    "results/learning_quality_v3_20261028/salun/cases/baseline/capera_seed0/iscc_p2_gaft/final.pt": "0a05159c249146eb09d6c8f0c5d362e54e9571a6f3926171233d90a674967289",
+    "results/learning_quality_v3_20261028/salun/cases/baseline/capera_seed0/plan.json": "92132da504a8b90808747e03a9cb1d4933a84a2e11ca928efd542b1f0f54fd46",
+    "results/learning_quality_v3_20261028/salun/cases/baseline/capera_seed0/feature_cache/features.pt": "6745e1576b1eb3787b77b064dfb55a959bb7a8a5d5a34b2f996e27167d23d1c7",
+    "results/learning_selection_fix_v2_20261028/gate_select16/cases/baseline/airscape_seed0/adaptive_retrieval_fu/final.pt": "cdf49f5c160241645d2ad5cd26def1b51b4002c95e733e5e39e8ec917ecb5b6f",
+    "results/learning_selection_fix_v2_20261028/gate_select16/cases/baseline/airscape_seed0/plan.json": "5e856fffec7bec897b916cd31a311ad2c647498f616762cf5364810ff1ec348b",
+    "results/learning_selection_fix_v2_20261028/gate_select16/cases/baseline/airscape_seed0/feature_cache/features.pt": "c174aee077acc2911b5b2b8a1426f8fea75f105e6f72d829d7ffbe8cbc72f587",
+    "results/paper_uav_benchmarks_v1_20261028/cases/baseline/airscape_seed0/iscc_p2_gaft/final.pt": "6467825e70395e87f7a548667b6cb6baf225558bc81c0f7ebf7c2c6a1b7ac948",
+    "results/paper_uav_benchmarks_v1_20261028/cases/baseline/airscape_seed0/plan.json": "5e856fffec7bec897b916cd31a311ad2c647498f616762cf5364810ff1ec348b",
+    "results/paper_uav_benchmarks_v1_20261028/cases/baseline/airscape_seed0/feature_cache/features.pt": "c174aee077acc2911b5b2b8a1426f8fea75f105e6f72d829d7ffbe8cbc72f587",
+    "results/paper_uav_benchmarks_v1_20261028/cases/baseline/airscape_seed0/uav_afl_ota_gaft/final.pt": "75fb6b7377821b62cd01663386d9778b2c4350c3e96c4d285bc2c9e905693e50",
+    "results/learning_quality_v3_20261028/salun/cases/baseline/airscape_seed0/iscc_p2_gaft/final.pt": "a590b28b92235974f3a2e6133fed046c8ddc757018a2c728cefa26d284acd948",
+    "results/learning_quality_v3_20261028/salun/cases/baseline/airscape_seed0/plan.json": "5e856fffec7bec897b916cd31a311ad2c647498f616762cf5364810ff1ec348b",
+    "results/learning_quality_v3_20261028/salun/cases/baseline/airscape_seed0/feature_cache/features.pt": "c174aee077acc2911b5b2b8a1426f8fea75f105e6f72d829d7ffbe8cbc72f587"
+  }
+}
