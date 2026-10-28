@@ -1,5 +1,8 @@
 # Proposed = P-KS: learning and resource comparisons
 
+<!-- downlink-bandwidth-current -->
+[New downlink bandwidth figures, hatched energy/delay bars and 90%-size map](../downlink_bandwidth/index.html). Explicit fixed spectral efficiency; 1–5 MHz.
+
 **Parallel advantage:** [Five figures and a matched immediate-serial P-KS experiment](../parallel_advantage/README.md).
 
 The user-selected P-KS is now the only method labeled **Proposed** in this bundle. It is the unchanged proxy-KL-gated FU + half-exploration/half-loss-priority FL16 method. The previous adaptive-FU/uniform-FL Proposed is removed from these comparisons. P-KB25 is a separate experiment and is not substituted for P-KS. Historical bundles retain their original identities.

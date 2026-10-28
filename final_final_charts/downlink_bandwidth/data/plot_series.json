@@ -1,0 +1,802 @@
+[
+  {
+    "figure": "01_downlink_bandwidth_energy_1x2",
+    "dataset": "CapERA",
+    "method": "gate_select16",
+    "kind": "line",
+    "metric": "total_energy_j",
+    "scale": 0.001,
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "y": [
+      204.27739345959722,
+      105.26047726119405,
+      72.25483852839113,
+      55.75201916199797,
+      45.85032754215837
+    ]
+  },
+  {
+    "figure": "01_downlink_bandwidth_energy_1x2",
+    "dataset": "CapERA",
+    "method": "iscc",
+    "kind": "line",
+    "metric": "total_energy_j",
+    "scale": 0.001,
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "y": [
+      649.9623177948238,
+      526.0528807644129,
+      484.74973508761605,
+      464.09816224921605,
+      451.7072185461705
+    ]
+  },
+  {
+    "figure": "01_downlink_bandwidth_energy_1x2",
+    "dataset": "CapERA",
+    "method": "afl",
+    "kind": "line",
+    "metric": "total_energy_j",
+    "scale": 0.001,
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "y": [
+      252.8824203874964,
+      128.97298335709576,
+      87.66983768028643,
+      67.01826484188588,
+      54.627321138846405
+    ]
+  },
+  {
+    "figure": "01_downlink_bandwidth_energy_1x2",
+    "dataset": "CapERA",
+    "method": "salun",
+    "kind": "line",
+    "metric": "total_energy_j",
+    "scale": 0.001,
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "y": [
+      649.9597513121374,
+      526.0503142817265,
+      484.74716860493,
+      464.09559576653027,
+      451.70465206348473
+    ]
+  },
+  {
+    "figure": "01_downlink_bandwidth_energy_1x2",
+    "dataset": "AirScape",
+    "method": "gate_select16",
+    "kind": "line",
+    "metric": "total_energy_j",
+    "scale": 0.001,
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "y": [
+      204.2674774140689,
+      105.25056121566578,
+      72.24492248286953,
+      55.74210311646574,
+      45.840411496626544
+    ]
+  },
+  {
+    "figure": "01_downlink_bandwidth_energy_1x2",
+    "dataset": "AirScape",
+    "method": "iscc",
+    "kind": "line",
+    "metric": "total_energy_j",
+    "scale": 0.001,
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "y": [
+      649.3047817180119,
+      525.3953446876009,
+      484.0921990108047,
+      463.4406261724047,
+      451.04968246935914
+    ]
+  },
+  {
+    "figure": "01_downlink_bandwidth_energy_1x2",
+    "dataset": "AirScape",
+    "method": "afl",
+    "kind": "line",
+    "metric": "total_energy_j",
+    "scale": 0.001,
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "y": [
+      253.06641911362914,
+      129.15698208322897,
+      87.8538364064197,
+      67.2022635680196,
+      54.81131986498012
+    ]
+  },
+  {
+    "figure": "01_downlink_bandwidth_energy_1x2",
+    "dataset": "AirScape",
+    "method": "salun",
+    "kind": "line",
+    "metric": "total_energy_j",
+    "scale": 0.001,
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "y": [
+      649.3068250528967,
+      525.3973880224859,
+      484.0942423456895,
+      463.44266950728957,
+      451.0517258042442
+    ]
+  },
+  {
+    "figure": "02_downlink_bandwidth_delay_1x2",
+    "dataset": "CapERA",
+    "method": "gate_select16",
+    "kind": "line",
+    "metric": "delay_s",
+    "scale": 1.0,
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "y": [
+      121.10183345083442,
+      62.401289450832536,
+      42.8344414508308,
+      33.05101745083486,
+      27.180963050835096
+    ]
+  },
+  {
+    "figure": "02_downlink_bandwidth_delay_1x2",
+    "dataset": "CapERA",
+    "method": "iscc",
+    "kind": "line",
+    "metric": "delay_s",
+    "scale": 1.0,
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "y": [
+      384.3037388367693,
+      310.8460748367628,
+      286.3601868367647,
+      274.1172428367647,
+      266.7714764367614
+    ]
+  },
+  {
+    "figure": "02_downlink_bandwidth_delay_1x2",
+    "dataset": "CapERA",
+    "method": "afl",
+    "kind": "line",
+    "metric": "delay_s",
+    "scale": 1.0,
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "y": [
+      149.912405113332,
+      76.45474111333161,
+      51.96885311332609,
+      39.725909113325756,
+      32.38014271332607
+    ]
+  },
+  {
+    "figure": "02_downlink_bandwidth_delay_1x2",
+    "dataset": "CapERA",
+    "method": "salun",
+    "kind": "line",
+    "metric": "delay_s",
+    "scale": 1.0,
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "y": [
+      384.3022440352411,
+      310.84458003523457,
+      286.3586920352367,
+      274.11574803523683,
+      266.76998163523353
+    ]
+  },
+  {
+    "figure": "02_downlink_bandwidth_delay_1x2",
+    "dataset": "AirScape",
+    "method": "gate_select16",
+    "kind": "line",
+    "metric": "delay_s",
+    "scale": 1.0,
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "y": [
+      121.09600040291753,
+      62.39545640291568,
+      42.8286084029179,
+      33.04518440291565,
+      27.175130002916127
+    ]
+  },
+  {
+    "figure": "02_downlink_bandwidth_delay_1x2",
+    "dataset": "AirScape",
+    "method": "iscc",
+    "kind": "line",
+    "metric": "delay_s",
+    "scale": 1.0,
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "y": [
+      383.9147060540845,
+      310.457042054078,
+      285.9711540540802,
+      273.72821005408025,
+      266.38244365407695
+    ]
+  },
+  {
+    "figure": "02_downlink_bandwidth_delay_1x2",
+    "dataset": "AirScape",
+    "method": "afl",
+    "kind": "line",
+    "metric": "delay_s",
+    "scale": 1.0,
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "y": [
+      150.02124430999868,
+      76.5635803099986,
+      52.07769230999309,
+      39.83474830999303,
+      32.48898190999335
+    ]
+  },
+  {
+    "figure": "02_downlink_bandwidth_delay_1x2",
+    "dataset": "AirScape",
+    "method": "salun",
+    "kind": "line",
+    "metric": "delay_s",
+    "scale": 1.0,
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "y": [
+      383.91589854366384,
+      310.45823454365745,
+      285.97234654365957,
+      273.7294025436596,
+      266.3836361436564
+    ]
+  },
+  {
+    "figure": "03_downlink_bandwidth_mission_delay_1x2",
+    "dataset": "CapERA",
+    "method": "gate_select16",
+    "kind": "line",
+    "metric": "mission_delay_s",
+    "scale": 1.0,
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "y": [
+      1185.9098871801907,
+      1127.2093431801889,
+      1107.642495180187,
+      1097.8590711801912,
+      1091.9890167801914
+    ]
+  },
+  {
+    "figure": "03_downlink_bandwidth_mission_delay_1x2",
+    "dataset": "CapERA",
+    "method": "iscc",
+    "kind": "line",
+    "metric": "mission_delay_s",
+    "scale": 1.0,
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "y": [
+      1449.1117925661256,
+      1375.6541285661192,
+      1351.168240566121,
+      1338.925296566121,
+      1331.5795301661176
+    ]
+  },
+  {
+    "figure": "03_downlink_bandwidth_mission_delay_1x2",
+    "dataset": "CapERA",
+    "method": "afl",
+    "kind": "line",
+    "metric": "mission_delay_s",
+    "scale": 1.0,
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "y": [
+      1214.7204588426885,
+      1141.262794842688,
+      1116.7769068426824,
+      1104.533962842682,
+      1097.1881964426825
+    ]
+  },
+  {
+    "figure": "03_downlink_bandwidth_mission_delay_1x2",
+    "dataset": "CapERA",
+    "method": "salun",
+    "kind": "line",
+    "metric": "mission_delay_s",
+    "scale": 1.0,
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "y": [
+      1449.1102977645974,
+      1375.6526337645907,
+      1351.166745764593,
+      1338.9238017645932,
+      1331.5780353645898
+    ]
+  },
+  {
+    "figure": "03_downlink_bandwidth_mission_delay_1x2",
+    "dataset": "AirScape",
+    "method": "gate_select16",
+    "kind": "line",
+    "metric": "mission_delay_s",
+    "scale": 1.0,
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "y": [
+      1185.9040541322738,
+      1127.203510132272,
+      1107.636662132274,
+      1097.853238132272,
+      1091.9831837322724
+    ]
+  },
+  {
+    "figure": "03_downlink_bandwidth_mission_delay_1x2",
+    "dataset": "AirScape",
+    "method": "iscc",
+    "kind": "line",
+    "metric": "mission_delay_s",
+    "scale": 1.0,
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "y": [
+      1448.7227597834408,
+      1375.2650957834344,
+      1350.7792077834365,
+      1338.5362637834364,
+      1331.1904973834332
+    ]
+  },
+  {
+    "figure": "03_downlink_bandwidth_mission_delay_1x2",
+    "dataset": "AirScape",
+    "method": "afl",
+    "kind": "line",
+    "metric": "mission_delay_s",
+    "scale": 1.0,
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "y": [
+      1214.8292980393549,
+      1141.3716340393548,
+      1116.8857460393494,
+      1104.6428020393494,
+      1097.2970356393496
+    ]
+  },
+  {
+    "figure": "03_downlink_bandwidth_mission_delay_1x2",
+    "dataset": "AirScape",
+    "method": "salun",
+    "kind": "line",
+    "metric": "mission_delay_s",
+    "scale": 1.0,
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "y": [
+      1448.7239522730201,
+      1375.2662882730137,
+      1350.7804002730159,
+      1338.5374562730158,
+      1331.1916898730126
+    ]
+  },
+  {
+    "figure": "04_energy_bar_1x2",
+    "dataset": "CapERA",
+    "method": "gate_select16",
+    "kind": "bar",
+    "metric": "total_energy_j",
+    "scale": 0.001,
+    "x": [
+      0
+    ],
+    "y": [
+      204.27739345959722
+    ],
+    "bandwidth_mhz": 1,
+    "hatch": "//",
+    "color": "#4C72B0"
+  },
+  {
+    "figure": "04_energy_bar_1x2",
+    "dataset": "CapERA",
+    "method": "iscc",
+    "kind": "bar",
+    "metric": "total_energy_j",
+    "scale": 0.001,
+    "x": [
+      1
+    ],
+    "y": [
+      649.9623177948238
+    ],
+    "bandwidth_mhz": 1,
+    "hatch": "\\\\",
+    "color": "#EFAA54"
+  },
+  {
+    "figure": "04_energy_bar_1x2",
+    "dataset": "CapERA",
+    "method": "afl",
+    "kind": "bar",
+    "metric": "total_energy_j",
+    "scale": 0.001,
+    "x": [
+      2
+    ],
+    "y": [
+      252.8824203874964
+    ],
+    "bandwidth_mhz": 1,
+    "hatch": "..",
+    "color": "#66B366"
+  },
+  {
+    "figure": "04_energy_bar_1x2",
+    "dataset": "CapERA",
+    "method": "salun",
+    "kind": "bar",
+    "metric": "total_energy_j",
+    "scale": 0.001,
+    "x": [
+      3
+    ],
+    "y": [
+      649.9597513121374
+    ],
+    "bandwidth_mhz": 1,
+    "hatch": "xx",
+    "color": "#C65365"
+  },
+  {
+    "figure": "04_energy_bar_1x2",
+    "dataset": "AirScape",
+    "method": "gate_select16",
+    "kind": "bar",
+    "metric": "total_energy_j",
+    "scale": 0.001,
+    "x": [
+      0
+    ],
+    "y": [
+      204.2674774140689
+    ],
+    "bandwidth_mhz": 1,
+    "hatch": "//",
+    "color": "#4C72B0"
+  },
+  {
+    "figure": "04_energy_bar_1x2",
+    "dataset": "AirScape",
+    "method": "iscc",
+    "kind": "bar",
+    "metric": "total_energy_j",
+    "scale": 0.001,
+    "x": [
+      1
+    ],
+    "y": [
+      649.3047817180119
+    ],
+    "bandwidth_mhz": 1,
+    "hatch": "\\\\",
+    "color": "#EFAA54"
+  },
+  {
+    "figure": "04_energy_bar_1x2",
+    "dataset": "AirScape",
+    "method": "afl",
+    "kind": "bar",
+    "metric": "total_energy_j",
+    "scale": 0.001,
+    "x": [
+      2
+    ],
+    "y": [
+      253.06641911362914
+    ],
+    "bandwidth_mhz": 1,
+    "hatch": "..",
+    "color": "#66B366"
+  },
+  {
+    "figure": "04_energy_bar_1x2",
+    "dataset": "AirScape",
+    "method": "salun",
+    "kind": "bar",
+    "metric": "total_energy_j",
+    "scale": 0.001,
+    "x": [
+      3
+    ],
+    "y": [
+      649.3068250528967
+    ],
+    "bandwidth_mhz": 1,
+    "hatch": "xx",
+    "color": "#C65365"
+  },
+  {
+    "figure": "05_delay_bar_1x2",
+    "dataset": "CapERA",
+    "method": "gate_select16",
+    "kind": "bar",
+    "metric": "delay_s",
+    "scale": 1.0,
+    "x": [
+      0
+    ],
+    "y": [
+      121.10183345083442
+    ],
+    "bandwidth_mhz": 1,
+    "hatch": "//",
+    "color": "#4C72B0"
+  },
+  {
+    "figure": "05_delay_bar_1x2",
+    "dataset": "CapERA",
+    "method": "iscc",
+    "kind": "bar",
+    "metric": "delay_s",
+    "scale": 1.0,
+    "x": [
+      1
+    ],
+    "y": [
+      384.3037388367693
+    ],
+    "bandwidth_mhz": 1,
+    "hatch": "\\\\",
+    "color": "#EFAA54"
+  },
+  {
+    "figure": "05_delay_bar_1x2",
+    "dataset": "CapERA",
+    "method": "afl",
+    "kind": "bar",
+    "metric": "delay_s",
+    "scale": 1.0,
+    "x": [
+      2
+    ],
+    "y": [
+      149.912405113332
+    ],
+    "bandwidth_mhz": 1,
+    "hatch": "..",
+    "color": "#66B366"
+  },
+  {
+    "figure": "05_delay_bar_1x2",
+    "dataset": "CapERA",
+    "method": "salun",
+    "kind": "bar",
+    "metric": "delay_s",
+    "scale": 1.0,
+    "x": [
+      3
+    ],
+    "y": [
+      384.3022440352411
+    ],
+    "bandwidth_mhz": 1,
+    "hatch": "xx",
+    "color": "#C65365"
+  },
+  {
+    "figure": "05_delay_bar_1x2",
+    "dataset": "AirScape",
+    "method": "gate_select16",
+    "kind": "bar",
+    "metric": "delay_s",
+    "scale": 1.0,
+    "x": [
+      0
+    ],
+    "y": [
+      121.09600040291753
+    ],
+    "bandwidth_mhz": 1,
+    "hatch": "//",
+    "color": "#4C72B0"
+  },
+  {
+    "figure": "05_delay_bar_1x2",
+    "dataset": "AirScape",
+    "method": "iscc",
+    "kind": "bar",
+    "metric": "delay_s",
+    "scale": 1.0,
+    "x": [
+      1
+    ],
+    "y": [
+      383.9147060540845
+    ],
+    "bandwidth_mhz": 1,
+    "hatch": "\\\\",
+    "color": "#EFAA54"
+  },
+  {
+    "figure": "05_delay_bar_1x2",
+    "dataset": "AirScape",
+    "method": "afl",
+    "kind": "bar",
+    "metric": "delay_s",
+    "scale": 1.0,
+    "x": [
+      2
+    ],
+    "y": [
+      150.02124430999868
+    ],
+    "bandwidth_mhz": 1,
+    "hatch": "..",
+    "color": "#66B366"
+  },
+  {
+    "figure": "05_delay_bar_1x2",
+    "dataset": "AirScape",
+    "method": "salun",
+    "kind": "bar",
+    "metric": "delay_s",
+    "scale": 1.0,
+    "x": [
+      3
+    ],
+    "y": [
+      383.91589854366384
+    ],
+    "bandwidth_mhz": 1,
+    "hatch": "xx",
+    "color": "#C65365"
+  }
+]

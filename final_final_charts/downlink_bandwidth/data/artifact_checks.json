@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "figures": 6,
+  "arms": 40,
+  "fresh_arms": 24,
+  "reused_arms": 16,
+  "exact_model_controls": 8,
+  "original_rate_results_unchanged": true,
+  "derived_bandwidth_rates_and_costs_verified": true,
+  "plot_values_match_metrics": true,
+  "regular_endpoint_ticks": true,
+  "vector_map_uniform_scale": 0.9,
+  "source_sha256": {
+    "tools/uav_convergence_v2/downlink_bandwidth_check.py": "e190d3c5534dcfef730a7c76730b0a40b915813b30a814fd980e166356471bb7"
+  }
+}

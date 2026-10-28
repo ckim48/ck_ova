@@ -1,5 +1,8 @@
 # Current UAV/VLM comparison: Proposed = P-KS
 
+<!-- downlink-bandwidth-current -->
+[New downlink bandwidth figures, hatched energy/delay bars and 90%-size map](downlink_bandwidth/index.html). Explicit fixed spectral efficiency; 1–5 MHz.
+
 **Parallel advantage:** [Five figures and a matched immediate-serial P-KS experiment](parallel_advantage/README.md).
 
 **Current charts:** [P-KS as Proposed, round/time learning curves and three resource sensitivities](proposed_pks/README.md) · [Gallery](proposed_pks/index.html). The old adaptive Proposed is excluded from this current comparison. P-KB25 remains a separate candidate; its results are not relabeled as P-KS.
