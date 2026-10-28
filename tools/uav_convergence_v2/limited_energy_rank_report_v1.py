@@ -13,6 +13,7 @@ ROOT,read,write,sha = inference.ROOT,inference.read,inference.write,inference.sh
 BASE=ROOT/'final_final_charts/downlink_bandwidth'
 DEST=BASE/'limited_energy'
 NAME='19_all_method_rank_boxplot_1x2'
+FIGURE_SIZE=(7.4, 3.735 * .9)
 
 
 def csv_write(path,rows):
@@ -27,6 +28,8 @@ def main():
     verified=read(inference.OUT/'finished.json');assert verified['passed']
     protocol=inference.checkpoint.register()
     summary=read(inference.OUT/'summary.json')
+    # Reduce only the limited-energy figures' height; keep point-size typography.
+    renderer.SIZE=FIGURE_SIZE
     renderer.report.setup();renderer.report.prior.chart.plt.rcParams['savefig.bbox']=None
     figures,all_boxes,pairs=[],[],[]
     for budget in protocol['budgets_kJ']:
