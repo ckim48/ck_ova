@@ -216,7 +216,7 @@ def main():
             for item in figure['files']:
                 before[str((folder/item['file']).relative_to(ROOT))] = item['sha256']
             result = render(folder, figure, series)
-            if result.get('display_revision') == 'title_free_detail_v2':
+            if result.get('kind') == 'rank_boxplot':
                 style_source = Path(__file__).with_name('paper_boxplot_refine_v2.py')
                 manifest['source_sha256'][str(style_source.relative_to(ROOT))] = report.sha(style_source)
             manifest['figures'][index] = result

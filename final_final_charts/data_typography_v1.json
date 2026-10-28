@@ -839,13 +839,13 @@
         "legend_gap_pt": null,
         "fixed_pdf_width_pt": 532.8,
         "title_removed": true,
-        "detail_numeric_tick_pt": 12
+        "detail_panels_removed": true
       }
     }
   ],
   "source_sha256": {
-    "tools/uav_convergence_v2/paper_typography_v1.py": "74ef02a406ce5b54ae1a76ebdbc93af83aa505df5a457da7fcdf7f4f31cf7c2a",
-    "tools/uav_convergence_v2/paper_boxplot_refine_v2.py": "38b82b327615eee1b6b23c796d9bed8e2006e4bbcc2e2496df305fb3eeb8e647"
+    "tools/uav_convergence_v2/paper_typography_v1.py": "e4ea3424942f929bd57ebe260495101ae27fe00ae3985104a7e68c5984fb7dcc",
+    "tools/uav_convergence_v2/paper_boxplot_refine_v2.py": "d058e583c993121423dc82700d8c56ad6e61911d4dae5bc4d54f3e69c6ad824e"
   },
   "category_font_overrides": {
     "11_fu_steps_energy_1x2": 12.0

@@ -2858,15 +2858,15 @@
       "files": [
         {
           "file": "19_all_method_rank_boxplot_1x2.pdf",
-          "sha256": "f6001cf11b891757f3479f04d8aa22f57fa5b85946c0dace53141d4c86818121"
+          "sha256": "7061257e371c838eb1b5d013c0e4e22e2df93d9d89061bb5759d0e0d4ba26215"
         },
         {
           "file": "19_all_method_rank_boxplot_1x2.png",
-          "sha256": "1d53101f01930ee254fea0f84d1ef1e8035777b3e710d42b3cfd542e6bde59d9"
+          "sha256": "1c3f24c47e543da468b3c8f03e724cb6a1951b7db079e8649b05311e2a41dcd3"
         },
         {
           "file": "19_all_method_rank_boxplot_1x2.svg",
-          "sha256": "061b1c6a445eecc6e12b1819f099e912a979011377ef1a837c31d3d9aac57797"
+          "sha256": "4d1fcb4cef4d0a065d9e8fbc5b917eef51a881dcd8add5f673f09c66e00c1983"
         }
       ],
       "kind": "rank_boxplot",
@@ -3629,7 +3629,7 @@
       "whisker_rule": "1.5 IQR, ending at the most extreme observed in-fence values",
       "show_all_fliers": true,
       "y_scale": "linear",
-      "caption": "GT-rank distributions of all retained text queries at the same 650 kJ budget. Lower ranks are better. Each lower axis shows the full 0--700 range with every outlier; the separate upper strip repeats exactly the same box statistics in the 0--100 interval. Shared light shading marks that interval. Opaque box colors and median markers match the method palette in the bar and line charts. Every method uses the same median emphasis; hollow outlier markers receive deterministic horizontal spreading only. Boxes are query distributions, not confidence intervals over independent training seeds.",
+      "caption": "GT-rank distributions of all retained text queries at the same 650 kJ budget. Lower ranks are better. Both panels show the full 0--700 range with every outlier. Opaque box colors and median markers match the method palette in the bar and line charts. Every method uses the same median emphasis; hollow outlier markers receive deterministic horizontal spreading only. Boxes are query distributions, not confidence intervals over independent training seeds.",
       "typography": {
         "version": "paper_typography_v1",
         "figure_inches": [
@@ -3656,55 +3656,17 @@
         "legend_gap_pt": null,
         "fixed_pdf_width_pt": 532.8,
         "title_removed": true,
-        "detail_numeric_tick_pt": 12
+        "detail_panels_removed": true
       },
-      "display_revision": "title_free_detail_v2",
+      "display_revision": "title_free_full_range_v3",
       "title_removed": true,
-      "detail_axes": [
-        {
-          "dataset": "CapERA",
-          "x_limits": [
-            -0.4,
-            3.4
-          ],
-          "y_limits": [
-            0,
-            100
-          ],
-          "y_ticks": [
-            0,
-            50,
-            100
-          ],
-          "same_statistics_as_main": true,
-          "separate_nonoverlapping_axes": true
-        },
-        {
-          "dataset": "AirScape",
-          "x_limits": [
-            -0.4,
-            3.4
-          ],
-          "y_limits": [
-            0,
-            100
-          ],
-          "y_ticks": [
-            0,
-            50,
-            100
-          ],
-          "same_statistics_as_main": true,
-          "separate_nonoverlapping_axes": true
-        }
-      ],
+      "detail_axes": [],
       "draw_checks": [
         {
           "dataset": "CapERA",
           "method": "gate_select16",
           "original_fliers": 144,
           "displayed_full_range_fliers": 144,
-          "displayed_detail_fliers": 7,
           "vertical_values_unchanged": true,
           "horizontal_spread_half_width": 0.065,
           "box_facecolor": "#4C72B0",
@@ -3718,7 +3680,6 @@
           "method": "iscc",
           "original_fliers": 126,
           "displayed_full_range_fliers": 126,
-          "displayed_detail_fliers": 0,
           "vertical_values_unchanged": true,
           "horizontal_spread_half_width": 0.065,
           "box_facecolor": "#EFAA54",
@@ -3732,7 +3693,6 @@
           "method": "afl",
           "original_fliers": 155,
           "displayed_full_range_fliers": 155,
-          "displayed_detail_fliers": 0,
           "vertical_values_unchanged": true,
           "horizontal_spread_half_width": 0.065,
           "box_facecolor": "#66B366",
@@ -3746,7 +3706,6 @@
           "method": "salun",
           "original_fliers": 131,
           "displayed_full_range_fliers": 131,
-          "displayed_detail_fliers": 0,
           "vertical_values_unchanged": true,
           "horizontal_spread_half_width": 0.065,
           "box_facecolor": "#C65365",
@@ -3760,7 +3719,6 @@
           "method": "gate_select16",
           "original_fliers": 17,
           "displayed_full_range_fliers": 17,
-          "displayed_detail_fliers": 0,
           "vertical_values_unchanged": true,
           "horizontal_spread_half_width": 0.065,
           "box_facecolor": "#4C72B0",
@@ -3774,7 +3732,6 @@
           "method": "iscc",
           "original_fliers": 11,
           "displayed_full_range_fliers": 11,
-          "displayed_detail_fliers": 0,
           "vertical_values_unchanged": true,
           "horizontal_spread_half_width": 0.065,
           "box_facecolor": "#EFAA54",
@@ -3788,7 +3745,6 @@
           "method": "afl",
           "original_fliers": 21,
           "displayed_full_range_fliers": 21,
-          "displayed_detail_fliers": 0,
           "vertical_values_unchanged": true,
           "horizontal_spread_half_width": 0.065,
           "box_facecolor": "#66B366",
@@ -3802,7 +3758,6 @@
           "method": "salun",
           "original_fliers": 11,
           "displayed_full_range_fliers": 11,
-          "displayed_detail_fliers": 0,
           "vertical_values_unchanged": true,
           "horizontal_spread_half_width": 0.065,
           "box_facecolor": "#C65365",
@@ -3813,7 +3768,9 @@
         }
       ],
       "palette_revision": "opaque_shared_palette_medians",
-      "lower_rank_is_better": true
+      "lower_rank_is_better": true,
+      "detail_panels_removed": true,
+      "y_label": "GT rank"
     }
   ],
   "source_sha256": {
@@ -34620,8 +34577,8 @@
     "final_final_charts/downlink_bandwidth/data/retrieval_energy_airscape_query_ranks.json": "f2dbaaa65a9f4db49063ea2b6fa4c02697636dc7b15f7bf683970690a8318a78",
     "final_final_charts/downlink_bandwidth/data/retrieval_energy_airscape_paired_counts.json": "c41d3799bcbd7d46573241f78bcffee562206d7c9b3fe4f10069b0a1d8d5978b",
     "tools/uav_convergence_v2/tgcn_rank_comparison_v5.py": "a11e80372c1c70a1d1297640b727974a8f9f9a4175fe1f2616b2a72f741053e2",
-    "tools/uav_convergence_v2/paper_typography_v1.py": "74ef02a406ce5b54ae1a76ebdbc93af83aa505df5a457da7fcdf7f4f31cf7c2a",
-    "tools/uav_convergence_v2/paper_boxplot_refine_v2.py": "38b82b327615eee1b6b23c796d9bed8e2006e4bbcc2e2496df305fb3eeb8e647"
+    "tools/uav_convergence_v2/paper_typography_v1.py": "e4ea3424942f929bd57ebe260495101ae27fe00ae3985104a7e68c5984fb7dcc",
+    "tools/uav_convergence_v2/paper_boxplot_refine_v2.py": "d058e583c993121423dc82700d8c56ad6e61911d4dae5bc4d54f3e69c6ad824e"
   },
   "fresh_FU_workload_arms": 40,
   "original_figures": {
