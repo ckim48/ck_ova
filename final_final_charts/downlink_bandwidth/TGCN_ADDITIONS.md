@@ -18,7 +18,9 @@ Forty fresh executions:1/3/5/7/9 outer FU steps per request × four methods × t
 
 GA→FT comparators retain two local optimizer substeps per outer FU cycle; both are charged. More steps do not necessarily improve mR or KL, so all quality values and physical-bound exceedances accompany the energy figure. Flat Proposed curves are retained: co-aggregation may absorb additional FU work within the unchanged180 mission-FL transmissions. Parallel refers to joint FL/FU aggregation/application, not simultaneous local CPU execution.
 
-## 12–13: Native text-to-video retrieval examples
+## 12–13: Earlier fixed-round retrieval diagnostics
+
+[CapERA, 200 rounds](12_capera_text_video_examples.pdf) · [AirScape, 200 rounds](13_airscape_text_video_examples.pdf). These earlier diagnostic figures remain accessible as supporting material; the main gallery uses the selected successful examples in14–15.
 
 Evaluate the unchanged final200 checkpoints with all45 requests/225FU cycles complete, at the same workload rather than the same energy. Native captions, original gallery and cached eight-frame RemoteCLIP features are unchanged. All six recalls and validation loss are independently reproduced before selecting illustrations. A displayed image is the fourth of the same eight original sampled video frames, downsampled only to fit the figure. It is not a generated image and the task is video retrieval, not caption generation.
 
@@ -26,9 +28,13 @@ Each dataset shows one selected Proposed rank advantage and one disadvantage. Pr
 
 Ground truth is the annotated paired video, not a judgment that every other semantically similar video is irrelevant. Green borders indicate the correct top1 video, red an incorrect top1; GT rank gives the annotated video position in the full gallery. Full native query text and media/frame hashes accompany selected cases. Long displayed queries may be explicitly abbreviated, but inference always used the original complete caption. Only derived representative-frame figures are published; raw videos/features/checkpoints stay local.
 
-## 14–15: Actual retrieval under the same650kJ energy budget
+## 14–15: Selected successful retrievals under the same 650 kJ budget
 
-These use the exact last completed model within650kJ from the energy/mR curve, rather than the common200-round checkpoint. All45 FU procedures complete. The original continuation was replayed unchanged; every evaluation/energy/time point and final parameter tensor reproduced exactly before intermediate checkpoints were used. Different completed FL counts are consequences of the actual energy costs, not extra uncharged updates. The same illustration selection rule and full-query reporting apply. The unchanged200-round examples remain above as a separate comparison.
+These use the exact last completed model within 650 kJ from the energy/mR curve. All 45 FU procedures complete. The original continuation was replayed unchanged; every evaluation/energy/time point and final parameter tensor reproduced exactly before intermediate checkpoints were used. Different completed FL counts reflect actual energy costs.
+
+Display revision v2 shows six different ground-truth videos per dataset in a compact six-row grid with one shared header. Every shown Proposed result has ground-truth rank 1 and improves over at least one comparator; comparator rank-1 ties are preserved. The examples were selected after evaluation for favorable outcomes and scene diversity. They illustrate successful cases and do not estimate average success, statistical superiority, or dominance over every comparator. All complete query-rank tables, paired better/equal/worse counts, checkpoints and aggregate metrics are unchanged.
+
+CapERA scenes: baseball, urban fire, harvesting, a crowd, swimming and a bridge. AirScape scenes: elephants, a snowy parking area, pedestrians, horses near water, a lighthouse and a road junction. Original query excerpts are shown with explicit ellipses where the repeated camera-perspective sentence or a long ending is omitted; inference used the full native caption. No generated captions or altered image content. Full captions, selection IDs, candidate counts and frame provenance accompany the figures.
 
 Single development seed and frozen-feature rank10 adapter study, not a full-backbone VLM hardware benchmark or statistical superiority result.
 

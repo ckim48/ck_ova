@@ -1,11 +1,268 @@
 [
   {
-    "category": "advantage",
+    "dataset": "CapERA",
+    "caption_id": 101,
+    "gallery_caption_index": 6,
+    "ground_truth_video": 20,
+    "gate_select16_rank": 1,
+    "gate_select16_top1_video": 20,
+    "gate_select16_top3_video_ids": [
+      20,
+      12,
+      704
+    ],
+    "iscc_rank": 2,
+    "iscc_top1_video": 12,
+    "iscc_top3_video_ids": [
+      12,
+      20,
+      704
+    ],
+    "afl_rank": 2,
+    "afl_top1_video": 12,
+    "afl_top3_video_ids": [
+      12,
+      20,
+      704
+    ],
+    "salun_rank": 2,
+    "salun_top1_video": 12,
+    "salun_top3_video_ids": [
+      12,
+      20,
+      704
+    ],
+    "category": "selected_success",
     "available": true,
-    "query": "bridge over a river is crowded with cars in front of it buildings",
-    "unique_caption_filter": true,
-    "top1_reversal": true,
-    "eligible_examples": 8,
+    "topic": "Baseball",
+    "query": "many players listen to coaches on a threeway baseball field",
+    "display_query": "many players listen to coaches on a threeway baseball field",
+    "strictly_better_than_all": true,
+    "best_comparator_rank": 2,
+    "media": {
+      "20": {
+        "file": "data/capera_official_v1/videos/Videos/Tra/Baseball/Baseball_021 .mp4",
+        "sha256": "8e83ae96fcf8a1ce1de0211988932d0b84e76900e689cd03857cff7abc777847"
+      },
+      "12": {
+        "file": "data/capera_official_v1/videos/Videos/Tra/Baseball/Baseball_013 .mp4",
+        "sha256": "bcc7920768e4bbe070458749a0069ad611a34ec5150abbfe06414578a056e2a1"
+      }
+    }
+  },
+  {
+    "dataset": "CapERA",
+    "caption_id": 2096,
+    "gallery_caption_index": 706,
+    "ground_truth_video": 419,
+    "gate_select16_rank": 1,
+    "gate_select16_top1_video": 419,
+    "gate_select16_top3_video_ids": [
+      419,
+      270,
+      397
+    ],
+    "iscc_rank": 7,
+    "iscc_top1_video": 270,
+    "iscc_top3_video_ids": [
+      270,
+      1088,
+      862
+    ],
+    "afl_rank": 3,
+    "afl_top1_video": 270,
+    "afl_top3_video_ids": [
+      270,
+      862,
+      419
+    ],
+    "salun_rank": 7,
+    "salun_top1_video": 270,
+    "salun_top3_video_ids": [
+      270,
+      1088,
+      862
+    ],
+    "category": "selected_success",
+    "available": true,
+    "topic": "Urban fire",
+    "query": "thick black smoke rises from downtown surrounded by buildings and trees",
+    "display_query": "thick black smoke rises from downtown surrounded by buildings and trees",
+    "strictly_better_than_all": true,
+    "best_comparator_rank": 3,
+    "media": {
+      "419": {
+        "file": "data/capera_official_v1/videos/Videos/Tra/Fire/Fire_048 .mp4",
+        "sha256": "97d8aa416a5c5be46b2aad91fa88a2bace9ffba83782b3fd46bf0ff6e7bd780f"
+      },
+      "270": {
+        "file": "data/capera_official_v1/videos/Videos/Tra/Constructing/Constructing_014 .mp4",
+        "sha256": "5f6441bc372843d5f6c456b4b558328d4df7f4542a82dde67210054e2c4b211e"
+      }
+    }
+  },
+  {
+    "dataset": "CapERA",
+    "caption_id": 2431,
+    "gallery_caption_index": 811,
+    "ground_truth_video": 486,
+    "gate_select16_rank": 1,
+    "gate_select16_top1_video": 486,
+    "gate_select16_top3_video_ids": [
+      486,
+      522,
+      514
+    ],
+    "iscc_rank": 2,
+    "iscc_top1_video": 522,
+    "iscc_top3_video_ids": [
+      522,
+      486,
+      997
+    ],
+    "afl_rank": 2,
+    "afl_top1_video": 522,
+    "afl_top3_video_ids": [
+      522,
+      486,
+      535
+    ],
+    "salun_rank": 2,
+    "salun_top1_video": 522,
+    "salun_top3_video_ids": [
+      522,
+      486,
+      997
+    ],
+    "category": "selected_success",
+    "available": true,
+    "topic": "Harvesting",
+    "query": "wheat harvesting machine is outdoors",
+    "display_query": "wheat harvesting machine is outdoors",
+    "strictly_better_than_all": true,
+    "best_comparator_rank": 2,
+    "media": {
+      "522": {
+        "file": "data/capera_official_v1/videos/Videos/Tra/Harvesting/Harvesting_042 .mp4",
+        "sha256": "97a2d7281d7bbfd286c6b7af12fea5b2474d9ae8b64c612119ef3354311a89cc"
+      },
+      "486": {
+        "file": "data/capera_official_v1/videos/Videos/Tra/Harvesting/Harvesting_006 .mp4",
+        "sha256": "f651cc5e1e9d3bdd3c8999e8523bc08b2e143cdd71c63ca647c2cd9ce8c5a15f"
+      }
+    }
+  },
+  {
+    "dataset": "CapERA",
+    "caption_id": 5599,
+    "gallery_caption_index": 1869,
+    "ground_truth_video": 1119,
+    "gate_select16_rank": 1,
+    "gate_select16_top1_video": 1119,
+    "gate_select16_top3_video_ids": [
+      1119,
+      828,
+      213
+    ],
+    "iscc_rank": 2,
+    "iscc_top1_video": 828,
+    "iscc_top3_video_ids": [
+      828,
+      1119,
+      1054
+    ],
+    "afl_rank": 2,
+    "afl_top1_video": 213,
+    "afl_top3_video_ids": [
+      213,
+      1119,
+      828
+    ],
+    "salun_rank": 2,
+    "salun_top1_video": 828,
+    "salun_top3_video_ids": [
+      828,
+      1119,
+      1054
+    ],
+    "category": "selected_success",
+    "available": true,
+    "topic": "Crowd",
+    "query": "people are praying in the holy mosque in makkah",
+    "display_query": "people are praying in the holy mosque in makkah",
+    "strictly_better_than_all": true,
+    "best_comparator_rank": 2,
+    "media": {
+      "828": {
+        "file": "data/capera_official_v1/videos/Videos/Tra/NonEvent/NonEvent_177 .mp4",
+        "sha256": "fc7b74441e880a549743064100d6c60c3b951c0bb971cb1c46e333e94c6674fe"
+      },
+      "213": {
+        "file": "data/capera_official_v1/videos/Videos/Tra/Concert/Concert_033 .mp4",
+        "sha256": "115149e785dbee6441d7a1baf8db12007e1e758751c6be3d99aa56c12085b376"
+      },
+      "1119": {
+        "file": "data/capera_official_v1/videos/Videos/Tra/ReligiousActivity/ReligiousActivity_010 .mp4",
+        "sha256": "6c1b3de725ab859f729ce57eab9af8b6171deb201236a80b1f3283b767ebca32"
+      }
+    }
+  },
+  {
+    "dataset": "CapERA",
+    "caption_id": 6635,
+    "gallery_caption_index": 2220,
+    "ground_truth_video": 1327,
+    "gate_select16_rank": 1,
+    "gate_select16_top1_video": 1327,
+    "gate_select16_top3_video_ids": [
+      1327,
+      1341,
+      1334
+    ],
+    "iscc_rank": 3,
+    "iscc_top1_video": 1161,
+    "iscc_top3_video_ids": [
+      1161,
+      1341,
+      1327
+    ],
+    "afl_rank": 4,
+    "afl_top1_video": 908,
+    "afl_top3_video_ids": [
+      908,
+      1334,
+      1341
+    ],
+    "salun_rank": 4,
+    "salun_top1_video": 1161,
+    "salun_top3_video_ids": [
+      1161,
+      1341,
+      908
+    ],
+    "category": "selected_success",
+    "available": true,
+    "topic": "Swimming",
+    "query": "three people were swimming in a body of water near the trees",
+    "display_query": "three people were swimming in a body of water near the trees",
+    "strictly_better_than_all": true,
+    "best_comparator_rank": 3,
+    "media": {
+      "1161": {
+        "file": "data/capera_official_v1/videos/Videos/Tra/ReligiousActivity/ReligiousActivity_052 .mp4",
+        "sha256": "dfcd81404701587c784f43369d2e4767c2d22ce4f6f632e5140e8275978d200b"
+      },
+      "908": {
+        "file": "data/capera_official_v1/videos/Videos/Tra/Party/Party_014 .mp4",
+        "sha256": "41706f6d3acc64bf34487d94a8f870e7b6d800447392b5b7f5e9095bdc7587a8"
+      },
+      "1327": {
+        "file": "data/capera_official_v1/videos/Videos/Tra/Swimming/Swimming_014 .mp4",
+        "sha256": "fd7a33b581ad8b95550e9b412c198399d2782aad7193c0da0639cc5bbdaa073c"
+      }
+    }
+  },
+  {
     "dataset": "CapERA",
     "caption_id": 7220,
     "gallery_caption_index": 2445,
@@ -38,8 +295,13 @@
       312,
       1446
     ],
+    "category": "selected_success",
+    "available": true,
+    "topic": "Bridge",
+    "query": "bridge over a river is crowded with cars in front of it buildings",
+    "display_query": "bridge over a river is crowded with cars in front of it buildings",
+    "strictly_better_than_all": true,
     "best_comparator_rank": 2,
-    "advantage": 1,
     "media": {
       "1459": {
         "file": "data/capera_official_v1/videos/Videos/Tra/TrafficCongestion/TrafficCongestion_039 .mp4",
@@ -49,71 +311,166 @@
         "file": "data/capera_official_v1/videos/Videos/Tra/TrafficCongestion/TrafficCongestion_024 .mp4",
         "sha256": "2584f3196e7eb19665b1d0fdb761b2e9ff93e68ff5bec6e078ee1db74c682819"
       }
-    },
-    "gallery_videos": 503,
-    "display_query": "bridge over a river is crowded with cars in front of it buildings"
+    }
   },
   {
-    "category": "disadvantage",
-    "available": true,
-    "query": "the streets of a neighborhood made up of several houses cars and trees are submerged by a flood of water",
-    "unique_caption_filter": true,
-    "top1_reversal": true,
-    "eligible_examples": 17,
-    "dataset": "CapERA",
-    "caption_id": 2165,
-    "gallery_caption_index": 755,
-    "ground_truth_video": 433,
-    "gate_select16_rank": 3,
-    "gate_select16_top1_video": 394,
+    "dataset": "AirScape",
+    "caption_id": 7,
+    "gallery_caption_index": 7,
+    "ground_truth_video": 7,
+    "gate_select16_rank": 1,
+    "gate_select16_top1_video": 7,
     "gate_select16_top3_video_ids": [
-      394,
-      454,
-      433
+      7,
+      38,
+      41
     ],
-    "iscc_rank": 1,
-    "iscc_top1_video": 433,
+    "iscc_rank": 25,
+    "iscc_top1_video": 38,
     "iscc_top3_video_ids": [
-      433,
-      452,
-      602
+      38,
+      105,
+      168
     ],
-    "afl_rank": 3,
-    "afl_top1_video": 394,
+    "afl_rank": 1,
+    "afl_top1_video": 7,
     "afl_top3_video_ids": [
-      394,
-      454,
-      433
+      7,
+      38,
+      244
     ],
-    "salun_rank": 1,
-    "salun_top1_video": 433,
+    "salun_rank": 26,
+    "salun_top1_video": 38,
     "salun_top3_video_ids": [
-      433,
-      452,
-      602
+      38,
+      105,
+      168
     ],
+    "category": "selected_success",
+    "available": true,
+    "topic": "Elephants",
+    "query": "The video is egocentric/first-person perspective, captured from a camera mounted on a drone. As a herd of elephants slowly moves upward along a forest path, the drone hovers in place, first adjusting the gimbal upwards and then downwards, keeping the herd of elephants centered in its view.",
+    "display_query": "\u2026 As a herd of elephants slowly moves upward along a forest path, the drone hovers in place, first adjusting the gimbal upwards and then \u2026",
+    "strictly_better_than_all": false,
     "best_comparator_rank": 1,
-    "advantage": -2,
     "media": {
-      "433": {
-        "file": "data/capera_official_v1/videos/Videos/Tra/Flood/Flood_004 .mp4",
-        "sha256": "e6e464cd509c5ff2c5e83726b8c3e2b334bd1af59e915d871840d8b962f20be2"
+      "38": {
+        "file": "data/airscape_v1/videos/04642_WebUAV3M_train_flower_5_0.mp4",
+        "sha256": "9a2c273b981ab8f7c961e2641039b02033bbc8ce4569efbdbd498aff7339055c"
       },
-      "394": {
-        "file": "data/capera_official_v1/videos/Videos/Tra/Fire/Fire_023 .mp4",
-        "sha256": "ed40598e5afa20d90cecaf1e39c25f7242615b2c8d2188f911e4adb5e2706e3b"
+      "7": {
+        "file": "data/airscape_v1/videos/04510_WebUAV3M_train_elephant_6_0.mp4",
+        "sha256": "0d158a458ba3d33eddb28f7679e71a8b576709e4a927371661e3bcddfdd558ef"
       }
-    },
-    "gallery_videos": 503,
-    "display_query": "the streets of a neighborhood made up of several houses cars and trees are submerged by a flood of water"
+    }
   },
   {
-    "category": "advantage",
+    "dataset": "AirScape",
+    "caption_id": 34,
+    "gallery_caption_index": 34,
+    "ground_truth_video": 34,
+    "gate_select16_rank": 1,
+    "gate_select16_top1_video": 34,
+    "gate_select16_top3_video_ids": [
+      34,
+      816,
+      129
+    ],
+    "iscc_rank": 21,
+    "iscc_top1_video": 1079,
+    "iscc_top3_video_ids": [
+      1079,
+      816,
+      1537
+    ],
+    "afl_rank": 1,
+    "afl_top1_video": 34,
+    "afl_top3_video_ids": [
+      34,
+      816,
+      129
+    ],
+    "salun_rank": 21,
+    "salun_top1_video": 1079,
+    "salun_top3_video_ids": [
+      1079,
+      816,
+      1537
+    ],
+    "category": "selected_success",
     "available": true,
-    "query": "The video is egocentric/first-person perspective, captured from a camera mounted on a drone. The drone flew to the left at a constant altitude, and the camera captured several horses grazing or moving freely near the stream and the orange pond, without focusing on specific targets.",
-    "unique_caption_filter": true,
-    "top1_reversal": true,
-    "eligible_examples": 3,
+    "topic": "Snow and parking",
+    "query": "The video is egocentric/first-person perspective, captured from a camera mounted on a drone. The drone flies forward while slowly adjusting the gimbal downward to keep the parking lot and the people active on the snow at the center of the field of vision.",
+    "display_query": "\u2026 The drone flies forward while slowly adjusting the gimbal downward to keep the parking lot and the people active on the snow at the center of \u2026",
+    "strictly_better_than_all": false,
+    "best_comparator_rank": 1,
+    "media": {
+      "34": {
+        "file": "data/airscape_v1/videos/09999_WebUAV3M_train_suv_39_3.mp4",
+        "sha256": "d48fafc1665fb40b7e709bf41ae0542b1336ad4ba3c0ec5948d122d7529b87b9"
+      },
+      "1079": {
+        "file": "data/airscape_v1/videos/04792_WebUAV3M_train_going_down_stairs_3_1.mp4",
+        "sha256": "0dfb44eeeadee33fb36bcb53e7630915d006bae951ac6cadd3f7dc0ec5da0275"
+      }
+    }
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 113,
+    "gallery_caption_index": 113,
+    "ground_truth_video": 113,
+    "gate_select16_rank": 1,
+    "gate_select16_top1_video": 113,
+    "gate_select16_top3_video_ids": [
+      113,
+      539,
+      67
+    ],
+    "iscc_rank": 2,
+    "iscc_top1_video": 241,
+    "iscc_top3_video_ids": [
+      241,
+      113,
+      235
+    ],
+    "afl_rank": 4,
+    "afl_top1_video": 1283,
+    "afl_top3_video_ids": [
+      1283,
+      241,
+      539
+    ],
+    "salun_rank": 2,
+    "salun_top1_video": 241,
+    "salun_top3_video_ids": [
+      241,
+      113,
+      235
+    ],
+    "category": "selected_success",
+    "available": true,
+    "topic": "Pedestrians",
+    "query": "The video is egocentric/first-person perspective, captured from a camera mounted on a drone. The drone gradually flies forward while keeping two people standing in the center of the pathway in its field of vision, using the camera gimbal to maintain focus.",
+    "display_query": "\u2026 The drone gradually flies forward while keeping two people standing in the center of the pathway in its field of vision, using the camera \u2026",
+    "strictly_better_than_all": true,
+    "best_comparator_rank": 2,
+    "media": {
+      "113": {
+        "file": "data/airscape_v1/videos/04392_WebUAV3M_train_dog_6_1.mp4",
+        "sha256": "476559ed53c75f3fe7051120ebe74ec7f767d92e706b18e340db1616d5a9ba0b"
+      },
+      "1283": {
+        "file": "data/airscape_v1/videos/04331_WebUAV3M_train_digging_bucket_3_0.mp4",
+        "sha256": "c32d5a8add39599ced76acab871054b260e3d3475ac67c2304060ccdc7b89024"
+      },
+      "241": {
+        "file": "data/airscape_v1/videos/08495_WebUAV3M_train_sitting_11_1.mp4",
+        "sha256": "7cc4cda3af7c0ea7b24ac34ca0a70d83e9dfa5d26bd2340865441595bf1351da"
+      }
+    }
+  },
+  {
     "dataset": "AirScape",
     "caption_id": 154,
     "gallery_caption_index": 154,
@@ -146,8 +503,13 @@
       1336,
       67
     ],
+    "category": "selected_success",
+    "available": true,
+    "topic": "Horses and water",
+    "query": "The video is egocentric/first-person perspective, captured from a camera mounted on a drone. The drone flew to the left at a constant altitude, and the camera captured several horses grazing or moving freely near the stream and the orange pond, without focusing on specific targets.",
+    "display_query": "\u2026 The drone flew to the left at a constant altitude, and the camera captured several horses grazing or moving freely near the stream and the \u2026",
+    "strictly_better_than_all": true,
     "best_comparator_rank": 2,
-    "advantage": 1,
     "media": {
       "154": {
         "file": "data/airscape_v1/videos/05290_WebUAV3M_train_horse_6_0.mp4",
@@ -157,62 +519,112 @@
         "file": "data/airscape_v1/videos/04331_WebUAV3M_train_digging_bucket_3_0.mp4",
         "sha256": "c32d5a8add39599ced76acab871054b260e3d3475ac67c2304060ccdc7b89024"
       }
-    },
-    "gallery_videos": 614,
-    "display_query": "The video is egocentric/first-person perspective, captured from a camera mounted on a drone. The drone flew to\nthe left at a constant altitude, and the camera captured several horses grazing or moving freely near the stream\nand the orange pond, without focusing on specific targets."
+    }
   },
   {
-    "category": "disadvantage",
-    "available": true,
-    "query": "The video is egocentric/first-person perspective, captured from a camera mounted on a drone. The drone flies backwards and upwards while keeping the white pagoda centered in its field of view.",
-    "unique_caption_filter": true,
-    "top1_reversal": true,
-    "eligible_examples": 5,
     "dataset": "AirScape",
-    "caption_id": 105,
-    "gallery_caption_index": 105,
-    "ground_truth_video": 105,
-    "gate_select16_rank": 3,
-    "gate_select16_top1_video": 1079,
+    "caption_id": 181,
+    "gallery_caption_index": 181,
+    "ground_truth_video": 181,
+    "gate_select16_rank": 1,
+    "gate_select16_top1_video": 181,
     "gate_select16_top3_video_ids": [
-      1079,
       181,
-      105
+      1053,
+      50
     ],
-    "iscc_rank": 1,
-    "iscc_top1_video": 105,
+    "iscc_rank": 3,
+    "iscc_top1_video": 1079,
     "iscc_top3_video_ids": [
-      105,
       1079,
-      103
+      50,
+      181
     ],
     "afl_rank": 1,
-    "afl_top1_video": 105,
+    "afl_top1_video": 181,
     "afl_top3_video_ids": [
-      105,
-      104,
-      1079
+      181,
+      50,
+      1053
     ],
-    "salun_rank": 1,
-    "salun_top1_video": 105,
+    "salun_rank": 3,
+    "salun_top1_video": 1079,
     "salun_top3_video_ids": [
-      105,
       1079,
-      103
+      50,
+      181
     ],
+    "category": "selected_success",
+    "available": true,
+    "topic": "Lighthouse",
+    "query": "The video is egocentric/first-person perspective, captured from a camera mounted on a drone. The drone flies clockwise around the lighthouse while maintaining the lighthouse in the center of the field of view, gradually adjusting its camera gimbal downwards as it descends.",
+    "display_query": "\u2026 The drone flies clockwise around the lighthouse while maintaining the lighthouse in the center of the field of view, gradually adjusting its \u2026",
+    "strictly_better_than_all": false,
     "best_comparator_rank": 1,
-    "advantage": -2,
     "media": {
-      "105": {
-        "file": "data/airscape_v1/videos/05611_WebUAV3M_train_mchod-rten_4_4.mp4",
-        "sha256": "bdd44aa163e46404a373374f017344e3c46e3d8d8cc0cfabd10a03d7f7c63b44"
+      "181": {
+        "file": "data/airscape_v1/videos/02937_WebUAV3M_train_beacon_26_2.mp4",
+        "sha256": "80f223257799bfa275fe483fe888479ddf16ad3e88d804dd245a5b11fb40b264"
       },
       "1079": {
         "file": "data/airscape_v1/videos/04792_WebUAV3M_train_going_down_stairs_3_1.mp4",
         "sha256": "0dfb44eeeadee33fb36bcb53e7630915d006bae951ac6cadd3f7dc0ec5da0275"
       }
-    },
-    "gallery_videos": 614,
-    "display_query": "The video is egocentric/first-person perspective, captured from a camera mounted on a drone. The drone flies\nbackwards and upwards while keeping the white pagoda centered in its field of view."
+    }
+  },
+  {
+    "dataset": "AirScape",
+    "caption_id": 234,
+    "gallery_caption_index": 234,
+    "ground_truth_video": 234,
+    "gate_select16_rank": 1,
+    "gate_select16_top1_video": 234,
+    "gate_select16_top3_video_ids": [
+      234,
+      125,
+      1230
+    ],
+    "iscc_rank": 36,
+    "iscc_top1_video": 168,
+    "iscc_top3_video_ids": [
+      168,
+      1230,
+      1283
+    ],
+    "afl_rank": 2,
+    "afl_top1_video": 1230,
+    "afl_top3_video_ids": [
+      1230,
+      234,
+      775
+    ],
+    "salun_rank": 30,
+    "salun_top1_video": 168,
+    "salun_top3_video_ids": [
+      168,
+      1230,
+      1283
+    ],
+    "category": "selected_success",
+    "available": true,
+    "topic": "Road junction",
+    "query": "The video is egocentric/first-person perspective, captured from a camera mounted on a drone. The drone ascends and moves backward while maintaining a central view of the highway intersection below, with the camera gimbal angle slightly adjusting downward for a clearer perspective.",
+    "display_query": "\u2026 The drone ascends and moves backward while maintaining a central view of the highway intersection below, with the camera gimbal angle slightly \u2026",
+    "strictly_better_than_all": true,
+    "best_comparator_rank": 2,
+    "media": {
+      "168": {
+        "file": "data/airscape_v1/videos/07258_WebUAV3M_train_riding_an_electric_bicycle_16_0.mp4",
+        "sha256": "9e4547ffee84a7d4b3210c0053e752d85eef83e0ee0e6b66d2d29a5bf574b3e0"
+      },
+      "234": {
+        "file": "data/airscape_v1/videos/03680_WebUAV3M_train_cab_27_0.mp4",
+        "sha256": "7028059a7164b59595626d69a6010bb8ea53d1da84121ef89e1960935f6c2720"
+      },
+      "1230": {
+        "file": "data/airscape_v1/videos/03669_WebUAV3M_train_cab_2_0.mp4",
+        "sha256": "d0c93ed77b6ec542a38fb1eacc3db1b0120ae5d3b91e60dc48a03c9af5343dc8"
+      }
+    }
   }
 ]

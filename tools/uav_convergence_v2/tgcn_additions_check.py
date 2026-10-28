@@ -18,7 +18,8 @@ def check_retrieval(module, prefix, figures):
     examples = read(dest/'data'/(prefix+'_examples.json'))
     summaries = read(dest/'data'/(prefix+'_summary.json'))
     frames = read(dest/'data'/(prefix+'_frame_provenance.json'))
-    assert len(summaries) == 8 and len(examples) == 4
+    successful = protocol.get('display_selection_version') == 'favorable_diverse_v2'
+    assert len(summaries) == 8 and len(examples) == (12 if successful else 4)
     for name, digest in protocol['source_sha256'].items():
         assert sha(root/name) == digest, name
     for ds in report.DATASETS:
@@ -55,14 +56,30 @@ def check_retrieval(module, prefix, figures):
                 assert pair['equal'] == sum(v==0 for v in delta)
                 assert pair['worse'] == sum(v<0 for v in delta)
         chosen = [r for r in examples if r['dataset'] == ds]
-        assert {r['category'] for r in chosen} == {'advantage', 'disadvantage'}
+        if successful:
+            assert len(chosen) == len({r['ground_truth_video'] for r in chosen}) == 6
+            assert {r['category'] for r in chosen} == {'selected_success'}
+            assert [r['caption_id'] for r in chosen] == protocol['chosen_caption_ids'][ds]
+            eligible = [r for r in ranks if r['gate_select16_rank'] == 1 and
+                        max(r[m+'_rank'] for m in report.METHODS if m != 'gate_select16') > 1]
+            candidate = next(r for r in protocol['eligible_counts'] if r['dataset'] == ds)
+            assert candidate['eligible_queries'] == len(eligible)
+            assert candidate['eligible_videos'] == len({r['ground_truth_video'] for r in eligible})
+        else:
+            assert {r['category'] for r in chosen} == {'advantage', 'disadvantage'}
         for case in chosen:
             assert case['available']
             row = next(r for r in ranks if r['caption_id'] == case['caption_id'])
             assert all(case[k] == v for k, v in row.items())
             assert case['query'] == data.captions[case['caption_id']]
-            difference = min(row[m+'_rank'] for m in report.METHODS if m != 'gate_select16')-row['gate_select16_rank']
-            assert (difference > 0) == (case['category'] == 'advantage')
+            if successful:
+                assert row['gate_select16_rank'] == 1
+                assert row['gate_select16_top1_video'] == row['ground_truth_video']
+                assert max(row[m+'_rank'] for m in report.METHODS if m != 'gate_select16') > 1
+                assert case['display_query'].replace('…', '').strip() in ' '.join(case['query'].split())
+            else:
+                difference = min(row[m+'_rank'] for m in report.METHODS if m != 'gate_select16')-row['gate_select16_rank']
+                assert (difference > 0) == (case['category'] == 'advantage')
             for item in case['media'].values():
                 assert sha(root/item['file']) == item['sha256']
         for frame in [r for r in frames if r['dataset'] == ds]:
@@ -70,17 +87,22 @@ def check_retrieval(module, prefix, figures):
             assert frame['frame_index'] == frame['training_feature_frame_indices'][3]
             assert frame['representative_frame_ordinal'] == 3 and not frame['altered_content']
         figure = next(f for f in figures if f['name'].startswith(('12' if prefix=='retrieval' else '14') if ds=='CapERA' else ('13' if prefix=='retrieval' else '15')))
-        assert len(figure['layout']) == 10
+        assert len(figure['layout']) == 5*len(chosen)
         for item in figure['layout']:
-            case = next(c for c in chosen if c['category'] == item['category'])
+            case = next(c for c in chosen if c['caption_id'] == item['caption_id'])
             if item['method'] is not None:
                 assert item['video_id'] == case[item['method']+'_top1_video']
                 assert item['GT_rank'] == case[item['method']+'_rank']
             assert item['top1_correct'] == (item['video_id'] == case['ground_truth_video'])
         root_svg = ET.parse(dest/(figure['name']+'.svg')).getroot()
-        assert len(root_svg.findall('.//{http://www.w3.org/2000/svg}image')) == 10
-    return dict(models=8, selected_examples=4, complete_query_ranks_match_full_similarity_matrices=True,
-                paired_outcomes_and_original_media_verified=True)
+        assert len(root_svg.findall('.//{http://www.w3.org/2000/svg}image')) == 5*len(chosen)
+        if successful:
+            assert figure['shared_column_headers'] and figure['rows'] == 6
+            text = (dest/(figure['name']+'.svg')).read_text()
+            assert 'Selected successful retrievals' in text
+    return dict(models=8, selected_examples=len(examples), complete_query_ranks_match_full_similarity_matrices=True,
+                paired_outcomes_and_original_media_verified=True,
+                selection_kind='selected_successful_examples' if successful else 'contrasting_diagnostics')
 
 
 def main():
@@ -92,6 +114,8 @@ def main():
     assert manifest['complete'] and audit['passed'] and len(manifest['figures']) == 6
     assert {f['name'] for f in manifest['figures']} == set(report.NAMES)
     for file, digest in manifest['original_figures'].items():
+        assert sha(dest/file) == digest, file
+    for file, digest in manifest.get('unchanged_measurements', {}).items():
         assert sha(dest/file) == digest, file
     for file, digest in manifest['source_sha256'].items():
         assert sha(root/file) == digest, file

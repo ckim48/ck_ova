@@ -1,8 +1,12 @@
 # Proposed = P-KS: learning and resource comparisons
 
 <!-- tgcn-additions -->
-[Energy–mR, FU workload and actual text/video retrieval examples](../downlink_bandwidth/TGCN_ADDITIONS.md). Figures10–15; unchanged Proposed=P-KS.
+[Energy–mR, FU workload and selected successful retrieval examples](../downlink_bandwidth/TGCN_ADDITIONS.md). Main figures10–11 and14–15; fixed-round diagnostics12–13 remain linked.
 <!-- /tgcn-additions -->
+
+
+
+
 
 
 

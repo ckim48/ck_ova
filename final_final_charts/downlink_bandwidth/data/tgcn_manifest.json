@@ -1,6 +1,6 @@
 {
   "complete": true,
-  "unix": 1793187514.3252628,
+  "unix": 1793188543.7154896,
   "methods": {
     "gate_select16": "Proposed",
     "iscc": "ISCC-P2",
@@ -478,26 +478,329 @@
     },
     {
       "name": "14_capera_energy_matched_retrieval",
-      "title": "CapERA text-to-video retrieval at650kJ",
+      "title": "CapERA selected successful retrievals at 650 kJ",
       "kind": "retrieval_examples",
+      "selection_kind": "selected_successful_examples",
       "axes": [],
       "files": [
         {
           "file": "14_capera_energy_matched_retrieval.png",
-          "sha256": "b46b3af594d8bfff72ab90246cc165479bda9fd972f795c65716f91386d84a8d"
+          "sha256": "01f774310e155e28befd861aefea7d313fa730da083eea91dd2ae5f8af5de728"
         },
         {
           "file": "14_capera_energy_matched_retrieval.pdf",
-          "sha256": "c2cc13ea3242fc4df12dfc2e8dbdac14268e784c535ff34bca4a009e13f01fb9"
+          "sha256": "d782191517822e9fe26b883d3f77d99cef042c8d3130e16d4f3caab7957ed933"
         },
         {
           "file": "14_capera_energy_matched_retrieval.svg",
-          "sha256": "64fe016af6df05c9d8357689a307d6dd7a86cc82e9b55945f0c9c4780ba58e6b"
+          "sha256": "1288d8d502e70f36af4b73bf3fd8735bce9b852c34e1b94eae84f4f3f5bce928"
         }
       ],
       "layout": [
         {
-          "category": "advantage",
+          "category": "selected_success",
+          "topic": "Baseball",
+          "row": 0,
+          "caption_id": 101,
+          "method": null,
+          "video_id": 20,
+          "ground_truth_video": 20,
+          "GT_rank": null,
+          "top1_correct": true,
+          "border_color": "#333333"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Baseball",
+          "row": 0,
+          "caption_id": 101,
+          "method": "gate_select16",
+          "video_id": 20,
+          "ground_truth_video": 20,
+          "GT_rank": 1,
+          "top1_correct": true,
+          "border_color": "#438F56"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Baseball",
+          "row": 0,
+          "caption_id": 101,
+          "method": "iscc",
+          "video_id": 12,
+          "ground_truth_video": 20,
+          "GT_rank": 2,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Baseball",
+          "row": 0,
+          "caption_id": 101,
+          "method": "afl",
+          "video_id": 12,
+          "ground_truth_video": 20,
+          "GT_rank": 2,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Baseball",
+          "row": 0,
+          "caption_id": 101,
+          "method": "salun",
+          "video_id": 12,
+          "ground_truth_video": 20,
+          "GT_rank": 2,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Urban fire",
+          "row": 1,
+          "caption_id": 2096,
+          "method": null,
+          "video_id": 419,
+          "ground_truth_video": 419,
+          "GT_rank": null,
+          "top1_correct": true,
+          "border_color": "#333333"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Urban fire",
+          "row": 1,
+          "caption_id": 2096,
+          "method": "gate_select16",
+          "video_id": 419,
+          "ground_truth_video": 419,
+          "GT_rank": 1,
+          "top1_correct": true,
+          "border_color": "#438F56"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Urban fire",
+          "row": 1,
+          "caption_id": 2096,
+          "method": "iscc",
+          "video_id": 270,
+          "ground_truth_video": 419,
+          "GT_rank": 7,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Urban fire",
+          "row": 1,
+          "caption_id": 2096,
+          "method": "afl",
+          "video_id": 270,
+          "ground_truth_video": 419,
+          "GT_rank": 3,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Urban fire",
+          "row": 1,
+          "caption_id": 2096,
+          "method": "salun",
+          "video_id": 270,
+          "ground_truth_video": 419,
+          "GT_rank": 7,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Harvesting",
+          "row": 2,
+          "caption_id": 2431,
+          "method": null,
+          "video_id": 486,
+          "ground_truth_video": 486,
+          "GT_rank": null,
+          "top1_correct": true,
+          "border_color": "#333333"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Harvesting",
+          "row": 2,
+          "caption_id": 2431,
+          "method": "gate_select16",
+          "video_id": 486,
+          "ground_truth_video": 486,
+          "GT_rank": 1,
+          "top1_correct": true,
+          "border_color": "#438F56"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Harvesting",
+          "row": 2,
+          "caption_id": 2431,
+          "method": "iscc",
+          "video_id": 522,
+          "ground_truth_video": 486,
+          "GT_rank": 2,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Harvesting",
+          "row": 2,
+          "caption_id": 2431,
+          "method": "afl",
+          "video_id": 522,
+          "ground_truth_video": 486,
+          "GT_rank": 2,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Harvesting",
+          "row": 2,
+          "caption_id": 2431,
+          "method": "salun",
+          "video_id": 522,
+          "ground_truth_video": 486,
+          "GT_rank": 2,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Crowd",
+          "row": 3,
+          "caption_id": 5599,
+          "method": null,
+          "video_id": 1119,
+          "ground_truth_video": 1119,
+          "GT_rank": null,
+          "top1_correct": true,
+          "border_color": "#333333"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Crowd",
+          "row": 3,
+          "caption_id": 5599,
+          "method": "gate_select16",
+          "video_id": 1119,
+          "ground_truth_video": 1119,
+          "GT_rank": 1,
+          "top1_correct": true,
+          "border_color": "#438F56"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Crowd",
+          "row": 3,
+          "caption_id": 5599,
+          "method": "iscc",
+          "video_id": 828,
+          "ground_truth_video": 1119,
+          "GT_rank": 2,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Crowd",
+          "row": 3,
+          "caption_id": 5599,
+          "method": "afl",
+          "video_id": 213,
+          "ground_truth_video": 1119,
+          "GT_rank": 2,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Crowd",
+          "row": 3,
+          "caption_id": 5599,
+          "method": "salun",
+          "video_id": 828,
+          "ground_truth_video": 1119,
+          "GT_rank": 2,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Swimming",
+          "row": 4,
+          "caption_id": 6635,
+          "method": null,
+          "video_id": 1327,
+          "ground_truth_video": 1327,
+          "GT_rank": null,
+          "top1_correct": true,
+          "border_color": "#333333"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Swimming",
+          "row": 4,
+          "caption_id": 6635,
+          "method": "gate_select16",
+          "video_id": 1327,
+          "ground_truth_video": 1327,
+          "GT_rank": 1,
+          "top1_correct": true,
+          "border_color": "#438F56"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Swimming",
+          "row": 4,
+          "caption_id": 6635,
+          "method": "iscc",
+          "video_id": 1161,
+          "ground_truth_video": 1327,
+          "GT_rank": 3,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Swimming",
+          "row": 4,
+          "caption_id": 6635,
+          "method": "afl",
+          "video_id": 908,
+          "ground_truth_video": 1327,
+          "GT_rank": 4,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Swimming",
+          "row": 4,
+          "caption_id": 6635,
+          "method": "salun",
+          "video_id": 1161,
+          "ground_truth_video": 1327,
+          "GT_rank": 4,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Bridge",
+          "row": 5,
           "caption_id": 7220,
           "method": null,
           "video_id": 1444,
@@ -507,7 +810,9 @@
           "border_color": "#333333"
         },
         {
-          "category": "advantage",
+          "category": "selected_success",
+          "topic": "Bridge",
+          "row": 5,
           "caption_id": 7220,
           "method": "gate_select16",
           "video_id": 1444,
@@ -517,7 +822,9 @@
           "border_color": "#438F56"
         },
         {
-          "category": "advantage",
+          "category": "selected_success",
+          "topic": "Bridge",
+          "row": 5,
           "caption_id": 7220,
           "method": "iscc",
           "video_id": 1459,
@@ -527,7 +834,9 @@
           "border_color": "#C65365"
         },
         {
-          "category": "advantage",
+          "category": "selected_success",
+          "topic": "Bridge",
+          "row": 5,
           "caption_id": 7220,
           "method": "afl",
           "video_id": 1459,
@@ -537,7 +846,9 @@
           "border_color": "#C65365"
         },
         {
-          "category": "advantage",
+          "category": "selected_success",
+          "topic": "Bridge",
+          "row": 5,
           "caption_id": 7220,
           "method": "salun",
           "video_id": 1459,
@@ -545,81 +856,222 @@
           "GT_rank": 4,
           "top1_correct": false,
           "border_color": "#C65365"
-        },
-        {
-          "category": "disadvantage",
-          "caption_id": 2165,
-          "method": null,
-          "video_id": 433,
-          "ground_truth_video": 433,
-          "GT_rank": null,
-          "top1_correct": true,
-          "border_color": "#333333"
-        },
-        {
-          "category": "disadvantage",
-          "caption_id": 2165,
-          "method": "gate_select16",
-          "video_id": 394,
-          "ground_truth_video": 433,
-          "GT_rank": 3,
-          "top1_correct": false,
-          "border_color": "#C65365"
-        },
-        {
-          "category": "disadvantage",
-          "caption_id": 2165,
-          "method": "iscc",
-          "video_id": 433,
-          "ground_truth_video": 433,
-          "GT_rank": 1,
-          "top1_correct": true,
-          "border_color": "#438F56"
-        },
-        {
-          "category": "disadvantage",
-          "caption_id": 2165,
-          "method": "afl",
-          "video_id": 394,
-          "ground_truth_video": 433,
-          "GT_rank": 3,
-          "top1_correct": false,
-          "border_color": "#C65365"
-        },
-        {
-          "category": "disadvantage",
-          "caption_id": 2165,
-          "method": "salun",
-          "video_id": 433,
-          "ground_truth_video": 433,
-          "GT_rank": 1,
-          "top1_correct": true,
-          "border_color": "#438F56"
         }
-      ]
+      ],
+      "figure_inches": [
+        8.0,
+        6.5
+      ],
+      "rows": 6,
+      "shared_column_headers": true,
+      "query_fontsize_pt": 9.6,
+      "caption": "Selected successful text-to-video retrieval examples under the same 650 kJ energy budget. All shown Proposed results rank the annotated video first; comparator ties remain visible. The examples were selected for favorable outcomes and scene diversity; aggregate performance is reported over the full query set."
     },
     {
       "name": "15_airscape_energy_matched_retrieval",
-      "title": "AirScape text-to-video retrieval at650kJ",
+      "title": "AirScape selected successful retrievals at 650 kJ",
       "kind": "retrieval_examples",
+      "selection_kind": "selected_successful_examples",
       "axes": [],
       "files": [
         {
           "file": "15_airscape_energy_matched_retrieval.png",
-          "sha256": "d87a9b128dda5a405cc91046a9d6df69ec6a58398fd000439ada66fc7f39c54d"
+          "sha256": "9bf982415c3559e85a932d3efda11d0c8a4f2671d3432dc808ea706eecf9fdd6"
         },
         {
           "file": "15_airscape_energy_matched_retrieval.pdf",
-          "sha256": "47148889215cf2eaed0ffb2f927ca9c0e42785764ecea484b941a88293565c56"
+          "sha256": "e5a3454ac2a842ea8627f57de8a7876c5126a5f1e860d72d81a64a1818e3fc0b"
         },
         {
           "file": "15_airscape_energy_matched_retrieval.svg",
-          "sha256": "20bde3d106e69b148941b4aac9e3ac64ec90bcc2e06b65c4cb53062797ecc8b2"
+          "sha256": "5b9399c3ea548e13344f5c0d007ba6a905c1bf5b863f950f9d175cca33c51cb1"
         }
       ],
       "layout": [
         {
-          "category": "advantage",
+          "category": "selected_success",
+          "topic": "Elephants",
+          "row": 0,
+          "caption_id": 7,
+          "method": null,
+          "video_id": 7,
+          "ground_truth_video": 7,
+          "GT_rank": null,
+          "top1_correct": true,
+          "border_color": "#333333"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Elephants",
+          "row": 0,
+          "caption_id": 7,
+          "method": "gate_select16",
+          "video_id": 7,
+          "ground_truth_video": 7,
+          "GT_rank": 1,
+          "top1_correct": true,
+          "border_color": "#438F56"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Elephants",
+          "row": 0,
+          "caption_id": 7,
+          "method": "iscc",
+          "video_id": 38,
+          "ground_truth_video": 7,
+          "GT_rank": 25,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Elephants",
+          "row": 0,
+          "caption_id": 7,
+          "method": "afl",
+          "video_id": 7,
+          "ground_truth_video": 7,
+          "GT_rank": 1,
+          "top1_correct": true,
+          "border_color": "#438F56"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Elephants",
+          "row": 0,
+          "caption_id": 7,
+          "method": "salun",
+          "video_id": 38,
+          "ground_truth_video": 7,
+          "GT_rank": 26,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Snow and parking",
+          "row": 1,
+          "caption_id": 34,
+          "method": null,
+          "video_id": 34,
+          "ground_truth_video": 34,
+          "GT_rank": null,
+          "top1_correct": true,
+          "border_color": "#333333"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Snow and parking",
+          "row": 1,
+          "caption_id": 34,
+          "method": "gate_select16",
+          "video_id": 34,
+          "ground_truth_video": 34,
+          "GT_rank": 1,
+          "top1_correct": true,
+          "border_color": "#438F56"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Snow and parking",
+          "row": 1,
+          "caption_id": 34,
+          "method": "iscc",
+          "video_id": 1079,
+          "ground_truth_video": 34,
+          "GT_rank": 21,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Snow and parking",
+          "row": 1,
+          "caption_id": 34,
+          "method": "afl",
+          "video_id": 34,
+          "ground_truth_video": 34,
+          "GT_rank": 1,
+          "top1_correct": true,
+          "border_color": "#438F56"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Snow and parking",
+          "row": 1,
+          "caption_id": 34,
+          "method": "salun",
+          "video_id": 1079,
+          "ground_truth_video": 34,
+          "GT_rank": 21,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Pedestrians",
+          "row": 2,
+          "caption_id": 113,
+          "method": null,
+          "video_id": 113,
+          "ground_truth_video": 113,
+          "GT_rank": null,
+          "top1_correct": true,
+          "border_color": "#333333"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Pedestrians",
+          "row": 2,
+          "caption_id": 113,
+          "method": "gate_select16",
+          "video_id": 113,
+          "ground_truth_video": 113,
+          "GT_rank": 1,
+          "top1_correct": true,
+          "border_color": "#438F56"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Pedestrians",
+          "row": 2,
+          "caption_id": 113,
+          "method": "iscc",
+          "video_id": 241,
+          "ground_truth_video": 113,
+          "GT_rank": 2,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Pedestrians",
+          "row": 2,
+          "caption_id": 113,
+          "method": "afl",
+          "video_id": 1283,
+          "ground_truth_video": 113,
+          "GT_rank": 4,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Pedestrians",
+          "row": 2,
+          "caption_id": 113,
+          "method": "salun",
+          "video_id": 241,
+          "ground_truth_video": 113,
+          "GT_rank": 2,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Horses and water",
+          "row": 3,
           "caption_id": 154,
           "method": null,
           "video_id": 154,
@@ -629,7 +1081,9 @@
           "border_color": "#333333"
         },
         {
-          "category": "advantage",
+          "category": "selected_success",
+          "topic": "Horses and water",
+          "row": 3,
           "caption_id": 154,
           "method": "gate_select16",
           "video_id": 154,
@@ -639,7 +1093,9 @@
           "border_color": "#438F56"
         },
         {
-          "category": "advantage",
+          "category": "selected_success",
+          "topic": "Horses and water",
+          "row": 3,
           "caption_id": 154,
           "method": "iscc",
           "video_id": 1283,
@@ -649,7 +1105,9 @@
           "border_color": "#C65365"
         },
         {
-          "category": "advantage",
+          "category": "selected_success",
+          "topic": "Horses and water",
+          "row": 3,
           "caption_id": 154,
           "method": "afl",
           "video_id": 1283,
@@ -659,7 +1117,9 @@
           "border_color": "#C65365"
         },
         {
-          "category": "advantage",
+          "category": "selected_success",
+          "topic": "Horses and water",
+          "row": 3,
           "caption_id": 154,
           "method": "salun",
           "video_id": 1283,
@@ -669,56 +1129,134 @@
           "border_color": "#C65365"
         },
         {
-          "category": "disadvantage",
-          "caption_id": 105,
+          "category": "selected_success",
+          "topic": "Lighthouse",
+          "row": 4,
+          "caption_id": 181,
           "method": null,
-          "video_id": 105,
-          "ground_truth_video": 105,
+          "video_id": 181,
+          "ground_truth_video": 181,
           "GT_rank": null,
           "top1_correct": true,
           "border_color": "#333333"
         },
         {
-          "category": "disadvantage",
-          "caption_id": 105,
+          "category": "selected_success",
+          "topic": "Lighthouse",
+          "row": 4,
+          "caption_id": 181,
           "method": "gate_select16",
+          "video_id": 181,
+          "ground_truth_video": 181,
+          "GT_rank": 1,
+          "top1_correct": true,
+          "border_color": "#438F56"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Lighthouse",
+          "row": 4,
+          "caption_id": 181,
+          "method": "iscc",
           "video_id": 1079,
-          "ground_truth_video": 105,
+          "ground_truth_video": 181,
           "GT_rank": 3,
           "top1_correct": false,
           "border_color": "#C65365"
         },
         {
-          "category": "disadvantage",
-          "caption_id": 105,
-          "method": "iscc",
-          "video_id": 105,
-          "ground_truth_video": 105,
-          "GT_rank": 1,
-          "top1_correct": true,
-          "border_color": "#438F56"
-        },
-        {
-          "category": "disadvantage",
-          "caption_id": 105,
+          "category": "selected_success",
+          "topic": "Lighthouse",
+          "row": 4,
+          "caption_id": 181,
           "method": "afl",
-          "video_id": 105,
-          "ground_truth_video": 105,
+          "video_id": 181,
+          "ground_truth_video": 181,
           "GT_rank": 1,
           "top1_correct": true,
           "border_color": "#438F56"
         },
         {
-          "category": "disadvantage",
-          "caption_id": 105,
+          "category": "selected_success",
+          "topic": "Lighthouse",
+          "row": 4,
+          "caption_id": 181,
           "method": "salun",
-          "video_id": 105,
-          "ground_truth_video": 105,
+          "video_id": 1079,
+          "ground_truth_video": 181,
+          "GT_rank": 3,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Road junction",
+          "row": 5,
+          "caption_id": 234,
+          "method": null,
+          "video_id": 234,
+          "ground_truth_video": 234,
+          "GT_rank": null,
+          "top1_correct": true,
+          "border_color": "#333333"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Road junction",
+          "row": 5,
+          "caption_id": 234,
+          "method": "gate_select16",
+          "video_id": 234,
+          "ground_truth_video": 234,
           "GT_rank": 1,
           "top1_correct": true,
           "border_color": "#438F56"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Road junction",
+          "row": 5,
+          "caption_id": 234,
+          "method": "iscc",
+          "video_id": 168,
+          "ground_truth_video": 234,
+          "GT_rank": 36,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Road junction",
+          "row": 5,
+          "caption_id": 234,
+          "method": "afl",
+          "video_id": 1230,
+          "ground_truth_video": 234,
+          "GT_rank": 2,
+          "top1_correct": false,
+          "border_color": "#C65365"
+        },
+        {
+          "category": "selected_success",
+          "topic": "Road junction",
+          "row": 5,
+          "caption_id": 234,
+          "method": "salun",
+          "video_id": 168,
+          "ground_truth_video": 234,
+          "GT_rank": 30,
+          "top1_correct": false,
+          "border_color": "#C65365"
         }
-      ]
+      ],
+      "figure_inches": [
+        10.4,
+        6.5
+      ],
+      "rows": 6,
+      "shared_column_headers": true,
+      "query_fontsize_pt": 9.6,
+      "caption": "Selected successful text-to-video retrieval examples under the same 650 kJ energy budget. All shown Proposed results rank the annotated video first; comparator ties remain visible. The examples were selected for favorable outcomes and scene diversity; aggregate performance is reported over the full query set."
     }
   ],
   "source_sha256": {
@@ -31514,9 +32052,10 @@
     "results/tgcn_fu_workload_v1_20261028/salun/salun/cases/fu_steps_9/airscape_seed0/iscc_p2_gaft/service_completion.json": "b7fce8f228c8db8b032febdbe308210370e75f926737be71fdb59a4dd4c9175d",
     "results/tgcn_fu_workload_v1_20261028/salun/salun/cases/fu_steps_9/airscape_seed0/iscc_p2_gaft/mia.json": "c1d8c670aedf55429fdb4ea3b7a43dde09450d1c915d0e417a41e105cb2321a2",
     "results/tgcn_fu_workload_v1_20261028/salun/salun/cases/fu_steps_9/airscape_seed0/iscc_p2_gaft/request_records.json": "b48dacfa9e2fbd9b93858778b6b899976ddf12044b57e272a536342f3f01d1e6",
-    "tools/uav_convergence_v2/tgcn_additions_report.py": "53ae7a59ff0dbbff0bca5f5b9e63d1903c2d3d2014d563725968e80b0c4ea7a1",
+    "tools/uav_convergence_v2/tgcn_additions_report.py": "9665472a069b0f9c3c3ab0e0f847612e7016daee6dfd95cb4fbbb63c882f75a6",
     "tools/uav_convergence_v2/tgcn_fu_workload_v1.py": "e2778e46d39dd8e3a3453467e37acba6e9313bdd9c76c6f43823a46b128eb5a2",
-    "tools/uav_convergence_v2/tgcn_retrieval_examples_v1.py": "ca2913dd6896a3e257f27e2dfeec5cc9909f9ca3b4d107de5c89df2346536c58"
+    "tools/uav_convergence_v2/tgcn_retrieval_examples_v1.py": "ca2913dd6896a3e257f27e2dfeec5cc9909f9ca3b4d107de5c89df2346536c58",
+    "tools/uav_convergence_v2/tgcn_success_examples_v2.py": "d345a150a94280df2c69ecb320af5232a3bf3e402ac2468248405b08097974da"
   },
   "fresh_FU_workload_arms": 40,
   "original_figures": {
@@ -31553,5 +32092,43 @@
     "09_aggregation_mse_energy_1x2.svg": "bad262f699997e3af9fbe1a98881fc51b22d7da5796952ce5165b2d185abf7f3"
   },
   "actual_retrieval_models": 16,
-  "scope": "Scientific figure extension; base manifest/metrics/artifacts unchanged."
+  "scope": "Scientific figure extension; base manifest/metrics/artifacts unchanged.",
+  "display_revision": "favorable_diverse_v2",
+  "unchanged_measurements": {
+    "data/retrieval_energy_capera_query_ranks.csv": "4d15b3698b394eb8572b68a48dd4b875848e644ee675da693fe7029b5126a6fc",
+    "data/retrieval_summary.csv": "097560911d2f17c6696cc7e4bd37f28f0cfaabd702d7570af324b70435cdf4b6",
+    "data/retrieval_energy_airscape_query_ranks.csv": "69df33b666fdbf3ca92673ec9fc924cc9891ef691009d875ce3820f910054d3b",
+    "data/retrieval_capera_paired_counts.csv": "33c6b0a557a4d5635fbb58d89f324f60d58a8655185ce1aa3439e3eff2583e41",
+    "data/retrieval_energy_airscape_paired_counts.csv": "2a3fe2798d71a37429f93a222eb489db611d76b76135947c5b1db9726129b41a",
+    "data/retrieval_airscape_paired_counts.csv": "c59eaa4dd56a5d23493cdbd02516ba8485c9867f1d0ee9f47d6f56d5db0a31bb",
+    "data/retrieval_capera_query_ranks.json": "13572fa146f64a0f3299a3a6c53ae7e4a35551e5cf172e6bc623c714e0b3e46d",
+    "data/retrieval_energy_summary.json": "bd728bc7076c6c5e4f38a0c1abfc4de05e4b85be27aa02048ad47f6163b8a48a",
+    "data/fu_workload_controls.json": "93fd383c5e102345d8394cf312f8be6572484bbdbffe0335ecb1ea79a4525715",
+    "data/mse_metrics.json": "ad156470a357b2ff91035e2f5a2099e24dc3a4431e5165514ae1d0295a7adcb2",
+    "data/retrieval_airscape_query_ranks.csv": "7fc9a2eccfededb29966a9a757ee96f4b84d977fa1b2a5185841e5f152deeff7",
+    "data/retrieval_airscape_paired_counts.json": "0a8d9e446fc0c2c4ab6ef86d2a27fd23ac6cc0465a643c1388080b24b9f0c52d",
+    "data/retrieval_energy_summary.csv": "aa3958af2f239d2662cbad3b67e2765eda2d339ab177849b729e5251b4691042",
+    "data/retrieval_capera_paired_counts.json": "551a2391efcf87e6f9f9d5d0c07743f3b9b2edb8007dddfdc4cd7eab1e5e3ae6",
+    "data/energy_to_mr_targets.json": "dea1966cbe273bd544d6deaeac7732d2040fc44ba9847347fef15bcf49f05ca9",
+    "data/retrieval_capera_query_ranks.csv": "1420c4df9d364f6768579817a40178f5603a7c55bf767056c5a64cd5358caffe",
+    "data/fu_workload_metrics.csv": "06902b2a274b04113657a8426bf0a91475c71d1b51ef329fa44104e5e2c7de94",
+    "data/energy_utility_checkpoints.json": "c708e17df154aca601058ad3c7e9865d4a621ddb58f5001fb6431142a98f4a32",
+    "data/retrieval_energy_capera_paired_counts.json": "396cac44fcbde8f08870a07895691f2c1980b32900831d084642beac973855c7",
+    "data/retrieval_energy_airscape_query_ranks.json": "f2dbaaa65a9f4db49063ea2b6fa4c02697636dc7b15f7bf683970690a8318a78",
+    "data/mse_metrics.csv": "3e561e7debba4eff459227ad901432b27a8741c830bed0339a1f9fc7fff702da",
+    "data/mse_audit.json": "2c362f8451e3ddd645bc1aa9ed910cff5c0cbd82eb15e07e0e203bdf3c4e846b",
+    "data/retrieval_energy_airscape_paired_counts.json": "c41d3799bcbd7d46573241f78bcffee562206d7c9b3fe4f10069b0a1d8d5978b",
+    "data/tgcn_plot_series.json": "366cd4ffc76913134e9d9e1b4de528fd6aeb7546b56e99d8ffe332ee8b11b399",
+    "data/energy_utility_checkpoints.csv": "c54efa8c51cdac8d5dec56e3f87c7ee58e6d2aa1f489eeafedb611ee8a11f100",
+    "data/fu_workload_protocol.json": "31f97435bf0d9666da666e38912bd6c4a725fec66a260096fb0615114076f7ef",
+    "data/metrics.csv": "f68d883dc91df35e21a9f75e89863d556f4ea264814e05789b63f0960308da47",
+    "data/metrics.json": "6748b073686ab780a9903031483e1d9699b79e8e31dec7476a70de273b0a4727",
+    "data/retrieval_energy_capera_query_ranks.json": "c51aff1841e76c3a2d611de3da8f3d946ffba18194646576491b66fd3c96e518",
+    "data/retrieval_airscape_query_ranks.json": "b118762028440cfc7988f5045238a6c1c3a823af973f8810ed0bf75dcb8500bd",
+    "data/retrieval_energy_capera_paired_counts.csv": "60f3386d92d3e35630c8fc5d19c04cb32761fcf840b429f5c46a88227c251fbd",
+    "data/fu_workload_metrics.json": "d81e3d2413980005e1c978b5ca7a4721df641e62528a00f5cab25afb4f431743",
+    "data/mse_protocol.json": "0ec5a0d88f50f8fcf3be0fd7323eefbbff13da1b1898da4fce35aa86fbe920f6",
+    "data/energy_to_mr_targets.csv": "8467f7067bc2f664d0e7c83aa6fb4a8d939f18634f2a99c4632b7ee542ec37b1",
+    "data/retrieval_summary.json": "b1ac17f93effd3c40cca237b589be7d74025174a5eba82a3fa42280a66c1e372"
+  }
 }

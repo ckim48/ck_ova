@@ -12,7 +12,7 @@
   ],
   "checkpoint": "Last completed evaluated model within the same650kJ active-energy budget. These are exactly recovered checkpoints from the existing400s continuation, independently audited against every original curve point and final parameters. All45 prescribed FU procedures complete. FL round counts differ because actual completed work differs. Same native gallery and captions; no interpolation or qualitative-outcome-based checkpoint choice.",
   "inference": "Use original frozen RemoteCLIP eight-frame mean features plus the trained rank10 image/text adapters; recompute full video-caption similarity matrices and verify all six published retrieval recalls and loss. This is text-to-video retrieval; an original representative frame visualizes each returned video, not generated image or caption output.",
-  "illustrations": "For each dataset, select one query with Proposed better GT rank than every comparator and one with worse rank than at least one comparator. Prefer a top1 success/failure reversal. Restrict illustrative candidates to native caption strings that are unique in this gallery and different top1 predictions; if empty, relax only caption uniqueness, then the top1 reversal preference. Choose median absolute GT-rank advantage/disadvantage, tie-break by caption ID. Disclose empty categories; never fabricate a contrast. These are diagnostic selected examples, not representative performance estimates.",
+  "illustrations": "Post-hoc, user-requested selected successful retrievals: Proposed must rank the annotated video first, and at least one comparator must rank it lower. Six different ground-truth videos per dataset were curated for varied visible subjects. Comparator ties at rank1 remain visible. These are favorable illustrations, not a random sample, a success-rate estimate or evidence that Proposed wins every query. Full original retained-query ranks and aggregate metrics remain unchanged.",
   "comprehensive": "Export rank/top3 video IDs for every retained text query and paired better/equal/worse counts. No query filtering for the aggregate metrics. No training or model selection uses these results.",
   "publication": "Only derived scientific figures with a few original representative frames/native query excerpts, selected-case provenance and full numerical query ranks. No raw video files, full annotation files, feature caches or checkpoints.",
   "source_sha256": {
@@ -53,7 +53,8 @@
     "results/tgcn_energy_checkpoint_v1_20261028/airscape_seed0/afl/snapshot650.pt": "d83d1c3f74b879fccf76d664a30acfd98449090f80a802af8232533634aacd1d",
     "results/tgcn_energy_checkpoint_v1_20261028/airscape_seed0/afl/snapshot650.json": "c603ba60b91e5aa3fc55b253cccf51a2690da687f0c76baaf4f171924309c12c",
     "results/tgcn_energy_checkpoint_v1_20261028/airscape_seed0/salun/snapshot650.pt": "4f4efd467cba4f6616b19c188f62c21d426ff1e3ced5ee69ae0bf2c55b1d974e",
-    "results/tgcn_energy_checkpoint_v1_20261028/airscape_seed0/salun/snapshot650.json": "1097680bec0c615fb95ced983453708e86df8d32a955ebe70fb3df655b2625e4"
+    "results/tgcn_energy_checkpoint_v1_20261028/airscape_seed0/salun/snapshot650.json": "1097680bec0c615fb95ced983453708e86df8d32a955ebe70fb3df655b2625e4",
+    "tools/uav_convergence_v2/tgcn_success_examples_v2.py": "d345a150a94280df2c69ecb320af5232a3bf3e402ac2468248405b08097974da"
   },
   "budget_j": 650000.0,
   "models": [
@@ -146,5 +147,43 @@
       "checkpoint_sha256": "4f4efd467cba4f6616b19c188f62c21d426ff1e3ced5ee69ae0bf2c55b1d974e"
     }
   ],
-  "companion": "The original fixed200-round examples and every-query rank table remain available separately. Do not conflate same-energy and same-round comparisons."
+  "companion": "The original fixed200-round examples and every-query rank table remain available separately. Do not conflate same-energy and same-round comparisons.",
+  "display_selection_version": "favorable_diverse_v2",
+  "display_only": true,
+  "chosen_caption_ids": {
+    "CapERA": [
+      101,
+      2096,
+      2431,
+      5599,
+      6635,
+      7220
+    ],
+    "AirScape": [
+      7,
+      34,
+      113,
+      154,
+      181,
+      234
+    ]
+  },
+  "text_display": "Original native query excerpts only. Omit the repeated AirScape perspective sentence and shorten long query endings with visible ellipses. Full native text remains in examples.json and was used in the original inference. Scene labels are editorial categories used only for diversity, not model-generated captions.",
+  "layout": "Six rows, one shared method header, query excerpt at left, ground truth plus four actual top1 results. Original fourth-of-eight sampled frame, aspect ratio preserved, downsampling only. Green border: correct top1; red: incorrect top1. Numeric ranks are from the full original gallery.",
+  "eligible_counts": [
+    {
+      "dataset": "CapERA",
+      "all_retained_queries": 1280,
+      "eligible_queries": 59,
+      "eligible_videos": 38,
+      "displayed": 6
+    },
+    {
+      "dataset": "AirScape",
+      "all_retained_queries": 256,
+      "eligible_queries": 10,
+      "eligible_videos": 10,
+      "displayed": 6
+    }
+  ]
 }

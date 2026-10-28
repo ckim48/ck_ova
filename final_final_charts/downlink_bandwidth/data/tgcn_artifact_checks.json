@@ -9,18 +9,20 @@
     "models": 8,
     "selected_examples": 4,
     "complete_query_ranks_match_full_similarity_matrices": true,
-    "paired_outcomes_and_original_media_verified": true
+    "paired_outcomes_and_original_media_verified": true,
+    "selection_kind": "contrasting_diagnostics"
   },
   "matched_energy_retrieval": {
     "models": 8,
-    "selected_examples": 4,
+    "selected_examples": 12,
     "complete_query_ranks_match_full_similarity_matrices": true,
-    "paired_outcomes_and_original_media_verified": true
+    "paired_outcomes_and_original_media_verified": true,
+    "selection_kind": "selected_successful_examples"
   },
   "original_nine_figures_unchanged": true,
   "actual_frame_figures_only": true,
   "regular_ticks_common_marker_budgets": true,
   "source_sha256": {
-    "tools/uav_convergence_v2/tgcn_additions_check.py": "a1d5de74b228f81e83addd408ce809dc34d6359a1540a2a5ce8cc78b6d58ae46"
+    "tools/uav_convergence_v2/tgcn_additions_check.py": "8990de6eeebfa004ff460ac0db4aa1339513dfde47349665d7cd51c7fa38b881"
   }
 }

@@ -1,6 +1,294 @@
 [
   {
     "dataset": "CapERA",
+    "video_id": 20,
+    "file": "data/capera_official_v1/videos/Videos/Tra/Baseball/Baseball_021 .mp4",
+    "sha256": "8e83ae96fcf8a1ce1de0211988932d0b84e76900e689cd03857cff7abc777847",
+    "frame_index": 59,
+    "training_feature_frame_indices": [
+      0,
+      20,
+      39,
+      59,
+      79,
+      99,
+      118,
+      138
+    ],
+    "representative_frame_ordinal": 3,
+    "thumbnail_size": [
+      300,
+      300
+    ],
+    "altered_content": false,
+    "thumbnail_rgb_sha256": "e84ad72b90829978731e58bc4033f3f48985b1c43374ff981c2d7dbfcbeafde6"
+  },
+  {
+    "dataset": "CapERA",
+    "video_id": 12,
+    "file": "data/capera_official_v1/videos/Videos/Tra/Baseball/Baseball_013 .mp4",
+    "sha256": "bcc7920768e4bbe070458749a0069ad611a34ec5150abbfe06414578a056e2a1",
+    "frame_index": 59,
+    "training_feature_frame_indices": [
+      0,
+      20,
+      39,
+      59,
+      79,
+      99,
+      118,
+      138
+    ],
+    "representative_frame_ordinal": 3,
+    "thumbnail_size": [
+      300,
+      300
+    ],
+    "altered_content": false,
+    "thumbnail_rgb_sha256": "68fb776337aecf9d51dcaa729649ab6490db2357e475a33f64149f0e8deee309"
+  },
+  {
+    "dataset": "CapERA",
+    "video_id": 419,
+    "file": "data/capera_official_v1/videos/Videos/Tra/Fire/Fire_048 .mp4",
+    "sha256": "97d8aa416a5c5be46b2aad91fa88a2bace9ffba83782b3fd46bf0ff6e7bd780f",
+    "frame_index": 59,
+    "training_feature_frame_indices": [
+      0,
+      20,
+      39,
+      59,
+      79,
+      99,
+      118,
+      138
+    ],
+    "representative_frame_ordinal": 3,
+    "thumbnail_size": [
+      300,
+      300
+    ],
+    "altered_content": false,
+    "thumbnail_rgb_sha256": "7dc1aef1c34c9f9e4678c9f031c1caf9fe9c9be30aa70472facd95d2de40e207"
+  },
+  {
+    "dataset": "CapERA",
+    "video_id": 270,
+    "file": "data/capera_official_v1/videos/Videos/Tra/Constructing/Constructing_014 .mp4",
+    "sha256": "5f6441bc372843d5f6c456b4b558328d4df7f4542a82dde67210054e2c4b211e",
+    "frame_index": 58,
+    "training_feature_frame_indices": [
+      0,
+      19,
+      39,
+      58,
+      78,
+      97,
+      117,
+      136
+    ],
+    "representative_frame_ordinal": 3,
+    "thumbnail_size": [
+      300,
+      300
+    ],
+    "altered_content": false,
+    "thumbnail_rgb_sha256": "a1e47c22699b60938f03f14c66f9c4a50ca4ca8b277f06c35d8afa2de0f2e845"
+  },
+  {
+    "dataset": "CapERA",
+    "video_id": 486,
+    "file": "data/capera_official_v1/videos/Videos/Tra/Harvesting/Harvesting_006 .mp4",
+    "sha256": "f651cc5e1e9d3bdd3c8999e8523bc08b2e143cdd71c63ca647c2cd9ce8c5a15f",
+    "frame_index": 59,
+    "training_feature_frame_indices": [
+      0,
+      20,
+      39,
+      59,
+      79,
+      99,
+      118,
+      138
+    ],
+    "representative_frame_ordinal": 3,
+    "thumbnail_size": [
+      300,
+      300
+    ],
+    "altered_content": false,
+    "thumbnail_rgb_sha256": "2dd1fa697c34118ea145303ad06c07f5063697ae762706c55ccbc24aefac9b5d"
+  },
+  {
+    "dataset": "CapERA",
+    "video_id": 522,
+    "file": "data/capera_official_v1/videos/Videos/Tra/Harvesting/Harvesting_042 .mp4",
+    "sha256": "97a2d7281d7bbfd286c6b7af12fea5b2474d9ae8b64c612119ef3354311a89cc",
+    "frame_index": 60,
+    "training_feature_frame_indices": [
+      0,
+      20,
+      40,
+      60,
+      79,
+      99,
+      119,
+      139
+    ],
+    "representative_frame_ordinal": 3,
+    "thumbnail_size": [
+      300,
+      300
+    ],
+    "altered_content": false,
+    "thumbnail_rgb_sha256": "be8f6ca64e496ba5b0384b8bde7e8b100af983a54ef551e5e448d64ebc299eec"
+  },
+  {
+    "dataset": "CapERA",
+    "video_id": 1119,
+    "file": "data/capera_official_v1/videos/Videos/Tra/ReligiousActivity/ReligiousActivity_010 .mp4",
+    "sha256": "6c1b3de725ab859f729ce57eab9af8b6171deb201236a80b1f3283b767ebca32",
+    "frame_index": 59,
+    "training_feature_frame_indices": [
+      0,
+      20,
+      39,
+      59,
+      79,
+      99,
+      118,
+      138
+    ],
+    "representative_frame_ordinal": 3,
+    "thumbnail_size": [
+      300,
+      300
+    ],
+    "altered_content": false,
+    "thumbnail_rgb_sha256": "1640d8fc9827716c876944f2e2c676c0de80603507e3adb5c29f62dd7d1245df"
+  },
+  {
+    "dataset": "CapERA",
+    "video_id": 828,
+    "file": "data/capera_official_v1/videos/Videos/Tra/NonEvent/NonEvent_177 .mp4",
+    "sha256": "fc7b74441e880a549743064100d6c60c3b951c0bb971cb1c46e333e94c6674fe",
+    "frame_index": 59,
+    "training_feature_frame_indices": [
+      0,
+      20,
+      39,
+      59,
+      78,
+      98,
+      117,
+      137
+    ],
+    "representative_frame_ordinal": 3,
+    "thumbnail_size": [
+      300,
+      300
+    ],
+    "altered_content": false,
+    "thumbnail_rgb_sha256": "227e8b39b971836813638d10156a6192a90879a01ad16ab43cf3ba387df871cc"
+  },
+  {
+    "dataset": "CapERA",
+    "video_id": 213,
+    "file": "data/capera_official_v1/videos/Videos/Tra/Concert/Concert_033 .mp4",
+    "sha256": "115149e785dbee6441d7a1baf8db12007e1e758751c6be3d99aa56c12085b376",
+    "frame_index": 57,
+    "training_feature_frame_indices": [
+      0,
+      19,
+      38,
+      57,
+      76,
+      95,
+      114,
+      133
+    ],
+    "representative_frame_ordinal": 3,
+    "thumbnail_size": [
+      300,
+      300
+    ],
+    "altered_content": false,
+    "thumbnail_rgb_sha256": "d04a0f0eef4d22a51221519f0bcd2955aa2299cde3c9012cc1100bca3b6a47a3"
+  },
+  {
+    "dataset": "CapERA",
+    "video_id": 1327,
+    "file": "data/capera_official_v1/videos/Videos/Tra/Swimming/Swimming_014 .mp4",
+    "sha256": "fd7a33b581ad8b95550e9b412c198399d2782aad7193c0da0639cc5bbdaa073c",
+    "frame_index": 59,
+    "training_feature_frame_indices": [
+      0,
+      20,
+      39,
+      59,
+      78,
+      98,
+      117,
+      137
+    ],
+    "representative_frame_ordinal": 3,
+    "thumbnail_size": [
+      300,
+      300
+    ],
+    "altered_content": false,
+    "thumbnail_rgb_sha256": "043d338cc8b8f4602f859892859835e4424ec81ba8b1f3644876e49e89938685"
+  },
+  {
+    "dataset": "CapERA",
+    "video_id": 1161,
+    "file": "data/capera_official_v1/videos/Videos/Tra/ReligiousActivity/ReligiousActivity_052 .mp4",
+    "sha256": "dfcd81404701587c784f43369d2e4767c2d22ce4f6f632e5140e8275978d200b",
+    "frame_index": 59,
+    "training_feature_frame_indices": [
+      0,
+      20,
+      39,
+      59,
+      79,
+      99,
+      118,
+      138
+    ],
+    "representative_frame_ordinal": 3,
+    "thumbnail_size": [
+      300,
+      300
+    ],
+    "altered_content": false,
+    "thumbnail_rgb_sha256": "f003c9046b3e06f8e9c57757011b669bda76ed0b99cec8630b29cc432f4f42c1"
+  },
+  {
+    "dataset": "CapERA",
+    "video_id": 908,
+    "file": "data/capera_official_v1/videos/Videos/Tra/Party/Party_014 .mp4",
+    "sha256": "41706f6d3acc64bf34487d94a8f870e7b6d800447392b5b7f5e9095bdc7587a8",
+    "frame_index": 59,
+    "training_feature_frame_indices": [
+      0,
+      20,
+      39,
+      59,
+      79,
+      99,
+      118,
+      138
+    ],
+    "representative_frame_ordinal": 3,
+    "thumbnail_size": [
+      300,
+      300
+    ],
+    "altered_content": false,
+    "thumbnail_rgb_sha256": "b4c80b0e3954c381287028ab0b470a1a8a7ba392f74b1ce4926c8d16585a74a8"
+  },
+  {
+    "dataset": "CapERA",
     "video_id": 1444,
     "file": "data/capera_official_v1/videos/Videos/Tra/TrafficCongestion/TrafficCongestion_024 .mp4",
     "sha256": "2584f3196e7eb19665b1d0fdb761b2e9ff93e68ff5bec6e078ee1db74c682819",
@@ -20,7 +308,8 @@
       300,
       300
     ],
-    "altered_content": false
+    "altered_content": false,
+    "thumbnail_rgb_sha256": "d8f20b52fa0bda206244cf6df4dffddc9311c3029a1b4958f8643a3a0f941f53"
   },
   {
     "dataset": "CapERA",
@@ -43,59 +332,14 @@
       300,
       300
     ],
-    "altered_content": false
-  },
-  {
-    "dataset": "CapERA",
-    "video_id": 433,
-    "file": "data/capera_official_v1/videos/Videos/Tra/Flood/Flood_004 .mp4",
-    "sha256": "e6e464cd509c5ff2c5e83726b8c3e2b334bd1af59e915d871840d8b962f20be2",
-    "frame_index": 59,
-    "training_feature_frame_indices": [
-      0,
-      20,
-      39,
-      59,
-      78,
-      98,
-      117,
-      137
-    ],
-    "representative_frame_ordinal": 3,
-    "thumbnail_size": [
-      300,
-      300
-    ],
-    "altered_content": false
-  },
-  {
-    "dataset": "CapERA",
-    "video_id": 394,
-    "file": "data/capera_official_v1/videos/Videos/Tra/Fire/Fire_023 .mp4",
-    "sha256": "ed40598e5afa20d90cecaf1e39c25f7242615b2c8d2188f911e4adb5e2706e3b",
-    "frame_index": 59,
-    "training_feature_frame_indices": [
-      0,
-      20,
-      39,
-      59,
-      79,
-      99,
-      118,
-      138
-    ],
-    "representative_frame_ordinal": 3,
-    "thumbnail_size": [
-      300,
-      300
-    ],
-    "altered_content": false
+    "altered_content": false,
+    "thumbnail_rgb_sha256": "845f27e9c7f606ae217f74cc646143ccdf1b3abd01f09abc33d2f33b4a7ddda5"
   },
   {
     "dataset": "AirScape",
-    "video_id": 154,
-    "file": "data/airscape_v1/videos/05290_WebUAV3M_train_horse_6_0.mp4",
-    "sha256": "8d759b35bb7e85e52acd326b90e550d1bfe43921934e8b70fed0e13ce57f3a28",
+    "video_id": 7,
+    "file": "data/airscape_v1/videos/04510_WebUAV3M_train_elephant_6_0.mp4",
+    "sha256": "0d158a458ba3d33eddb28f7679e71a8b576709e4a927371661e3bcddfdd558ef",
     "frame_index": 55,
     "training_feature_frame_indices": [
       0,
@@ -112,13 +356,14 @@
       480,
       270
     ],
-    "altered_content": false
+    "altered_content": false,
+    "thumbnail_rgb_sha256": "432b02f0815fca7715c3ba8f6e65e6a07904c731adccbf31163ec1858a398064"
   },
   {
     "dataset": "AirScape",
-    "video_id": 1283,
-    "file": "data/airscape_v1/videos/04331_WebUAV3M_train_digging_bucket_3_0.mp4",
-    "sha256": "c32d5a8add39599ced76acab871054b260e3d3475ac67c2304060ccdc7b89024",
+    "video_id": 38,
+    "file": "data/airscape_v1/videos/04642_WebUAV3M_train_flower_5_0.mp4",
+    "sha256": "9a2c273b981ab8f7c961e2641039b02033bbc8ce4569efbdbd498aff7339055c",
     "frame_index": 55,
     "training_feature_frame_indices": [
       0,
@@ -135,13 +380,14 @@
       480,
       270
     ],
-    "altered_content": false
+    "altered_content": false,
+    "thumbnail_rgb_sha256": "f3738091ba5ce7bf62177e25173f08214b1e526506ab14bbac244eb5ebefeb07"
   },
   {
     "dataset": "AirScape",
-    "video_id": 105,
-    "file": "data/airscape_v1/videos/05611_WebUAV3M_train_mchod-rten_4_4.mp4",
-    "sha256": "bdd44aa163e46404a373374f017344e3c46e3d8d8cc0cfabd10a03d7f7c63b44",
+    "video_id": 34,
+    "file": "data/airscape_v1/videos/09999_WebUAV3M_train_suv_39_3.mp4",
+    "sha256": "d48fafc1665fb40b7e709bf41ae0542b1336ad4ba3c0ec5948d122d7529b87b9",
     "frame_index": 55,
     "training_feature_frame_indices": [
       0,
@@ -158,7 +404,8 @@
       480,
       270
     ],
-    "altered_content": false
+    "altered_content": false,
+    "thumbnail_rgb_sha256": "899542c8360fe1b7de1138c58c503a0f85aa99021015bf9742ae5fc670ec8b63"
   },
   {
     "dataset": "AirScape",
@@ -181,6 +428,199 @@
       480,
       270
     ],
-    "altered_content": false
+    "altered_content": false,
+    "thumbnail_rgb_sha256": "8140f24a4e128002d0facbc7cd8ad51de70e9b92ee355594dc31b1b3914fbdf7"
+  },
+  {
+    "dataset": "AirScape",
+    "video_id": 113,
+    "file": "data/airscape_v1/videos/04392_WebUAV3M_train_dog_6_1.mp4",
+    "sha256": "476559ed53c75f3fe7051120ebe74ec7f767d92e706b18e340db1616d5a9ba0b",
+    "frame_index": 55,
+    "training_feature_frame_indices": [
+      0,
+      18,
+      37,
+      55,
+      73,
+      91,
+      110,
+      128
+    ],
+    "representative_frame_ordinal": 3,
+    "thumbnail_size": [
+      480,
+      270
+    ],
+    "altered_content": false,
+    "thumbnail_rgb_sha256": "d96c64bcd6f99c194854574be7616a9fc8d52e726e3f36e96b8fc15239069cc4"
+  },
+  {
+    "dataset": "AirScape",
+    "video_id": 241,
+    "file": "data/airscape_v1/videos/08495_WebUAV3M_train_sitting_11_1.mp4",
+    "sha256": "7cc4cda3af7c0ea7b24ac34ca0a70d83e9dfa5d26bd2340865441595bf1351da",
+    "frame_index": 55,
+    "training_feature_frame_indices": [
+      0,
+      18,
+      37,
+      55,
+      73,
+      91,
+      110,
+      128
+    ],
+    "representative_frame_ordinal": 3,
+    "thumbnail_size": [
+      480,
+      270
+    ],
+    "altered_content": false,
+    "thumbnail_rgb_sha256": "918553fe74817aa8024ef95e4346c01c10a257f049cc519047b59cb4ca7881f6"
+  },
+  {
+    "dataset": "AirScape",
+    "video_id": 1283,
+    "file": "data/airscape_v1/videos/04331_WebUAV3M_train_digging_bucket_3_0.mp4",
+    "sha256": "c32d5a8add39599ced76acab871054b260e3d3475ac67c2304060ccdc7b89024",
+    "frame_index": 55,
+    "training_feature_frame_indices": [
+      0,
+      18,
+      37,
+      55,
+      73,
+      91,
+      110,
+      128
+    ],
+    "representative_frame_ordinal": 3,
+    "thumbnail_size": [
+      480,
+      270
+    ],
+    "altered_content": false,
+    "thumbnail_rgb_sha256": "2a8e61f3fa68cdc630da5ecdf8770ee5906a83d2cea2b40f454bca54f2475804"
+  },
+  {
+    "dataset": "AirScape",
+    "video_id": 154,
+    "file": "data/airscape_v1/videos/05290_WebUAV3M_train_horse_6_0.mp4",
+    "sha256": "8d759b35bb7e85e52acd326b90e550d1bfe43921934e8b70fed0e13ce57f3a28",
+    "frame_index": 55,
+    "training_feature_frame_indices": [
+      0,
+      18,
+      37,
+      55,
+      73,
+      91,
+      110,
+      128
+    ],
+    "representative_frame_ordinal": 3,
+    "thumbnail_size": [
+      480,
+      270
+    ],
+    "altered_content": false,
+    "thumbnail_rgb_sha256": "1b8ef2295a18b7a75923e222ab0b17d3f85a75fb1cdd9d8fcf23acf2687997be"
+  },
+  {
+    "dataset": "AirScape",
+    "video_id": 181,
+    "file": "data/airscape_v1/videos/02937_WebUAV3M_train_beacon_26_2.mp4",
+    "sha256": "80f223257799bfa275fe483fe888479ddf16ad3e88d804dd245a5b11fb40b264",
+    "frame_index": 55,
+    "training_feature_frame_indices": [
+      0,
+      18,
+      37,
+      55,
+      73,
+      91,
+      110,
+      128
+    ],
+    "representative_frame_ordinal": 3,
+    "thumbnail_size": [
+      480,
+      270
+    ],
+    "altered_content": false,
+    "thumbnail_rgb_sha256": "0e3c9ab19695fd3ea16f8dd0bae819ec63812c18436745f4a490bd12c2a2a1c5"
+  },
+  {
+    "dataset": "AirScape",
+    "video_id": 234,
+    "file": "data/airscape_v1/videos/03680_WebUAV3M_train_cab_27_0.mp4",
+    "sha256": "7028059a7164b59595626d69a6010bb8ea53d1da84121ef89e1960935f6c2720",
+    "frame_index": 55,
+    "training_feature_frame_indices": [
+      0,
+      18,
+      37,
+      55,
+      73,
+      91,
+      110,
+      128
+    ],
+    "representative_frame_ordinal": 3,
+    "thumbnail_size": [
+      480,
+      270
+    ],
+    "altered_content": false,
+    "thumbnail_rgb_sha256": "b7b3c54525695660803f2785695f3f3284493d2bc255cb5f4e7403b8b244700b"
+  },
+  {
+    "dataset": "AirScape",
+    "video_id": 168,
+    "file": "data/airscape_v1/videos/07258_WebUAV3M_train_riding_an_electric_bicycle_16_0.mp4",
+    "sha256": "9e4547ffee84a7d4b3210c0053e752d85eef83e0ee0e6b66d2d29a5bf574b3e0",
+    "frame_index": 55,
+    "training_feature_frame_indices": [
+      0,
+      18,
+      37,
+      55,
+      73,
+      91,
+      110,
+      128
+    ],
+    "representative_frame_ordinal": 3,
+    "thumbnail_size": [
+      480,
+      270
+    ],
+    "altered_content": false,
+    "thumbnail_rgb_sha256": "2be4e137ad0d4a6e57ca7ace0564a5f2b038a1fee62e61f652799a9a9f8f2b49"
+  },
+  {
+    "dataset": "AirScape",
+    "video_id": 1230,
+    "file": "data/airscape_v1/videos/03669_WebUAV3M_train_cab_2_0.mp4",
+    "sha256": "d0c93ed77b6ec542a38fb1eacc3db1b0120ae5d3b91e60dc48a03c9af5343dc8",
+    "frame_index": 55,
+    "training_feature_frame_indices": [
+      0,
+      18,
+      37,
+      55,
+      73,
+      91,
+      110,
+      128
+    ],
+    "representative_frame_ordinal": 3,
+    "thumbnail_size": [
+      480,
+      270
+    ],
+    "altered_content": false,
+    "thumbnail_rgb_sha256": "095a2b0e381da969e61abd8172dfbad1449987c84ea7c1cc0171df717909d16d"
   }
 ]

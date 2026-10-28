@@ -446,10 +446,29 @@
     "passed": true,
     "verified_models": 8,
     "original_recall_and_loss_reproduced": true,
-    "actual_video_frames": 8,
-    "selected_examples": 4,
-    "gain_and_loss_examples": true,
+    "actual_video_frames": 26,
+    "selected_examples": 12,
+    "selected_successful_examples": true,
+    "gain_and_loss_examples": false,
+    "outcome_selection_disclosed": true,
+    "posthoc_display_only": true,
     "generated_captions_or_media": false,
-    "all_retained_query_ranks_published": true
+    "all_retained_query_ranks_published": true,
+    "eligible_counts": [
+      {
+        "dataset": "CapERA",
+        "all_retained_queries": 1280,
+        "eligible_queries": 59,
+        "eligible_videos": 38,
+        "displayed": 6
+      },
+      {
+        "dataset": "AirScape",
+        "all_retained_queries": 256,
+        "eligible_queries": 10,
+        "eligible_videos": 10,
+        "displayed": 6
+      }
+    ]
   }
 }
