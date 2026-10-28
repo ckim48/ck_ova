@@ -1,0 +1,197 @@
+{
+  "passed": true,
+  "figure": "20_energy_to_target_mr_1x2",
+  "files": [
+    {
+      "file": "20_energy_to_target_mr_1x2.pdf",
+      "sha256": "95672603ad40235b5fcb4a8a0cfad955ff46b2ff94191981a99a74f27cfb18b2"
+    },
+    {
+      "file": "20_energy_to_target_mr_1x2.png",
+      "sha256": "2056eb055ee03e9de04b5bcd939367ddb5622edff814cd1a1545d7af783509a6"
+    },
+    {
+      "file": "20_energy_to_target_mr_1x2.svg",
+      "sha256": "28e31a53d220af40a1b3e4e21c11aa0c137fe732db076f805e29ff637d7bd13a"
+    }
+  ],
+  "series": [
+    {
+      "dataset": "CapERA",
+      "method": "gate_select16",
+      "x": [
+        18.0,
+        20.0,
+        22.0
+      ],
+      "y": [
+        215.6875987149098,
+        262.4694552011369,
+        337.77685831586
+      ]
+    },
+    {
+      "dataset": "CapERA",
+      "method": "afl",
+      "x": [
+        18.0,
+        20.0,
+        22.0
+      ],
+      "y": [
+        295.58603882861587,
+        364.223129289704,
+        462.37267402841144
+      ]
+    },
+    {
+      "dataset": "AirScape",
+      "method": "gate_select16",
+      "x": [
+        14.0,
+        15.0,
+        16.0
+      ],
+      "y": [
+        243.06214873897758,
+        332.06169103488094,
+        441.59957456633896
+      ]
+    },
+    {
+      "dataset": "AirScape",
+      "method": "afl",
+      "x": [
+        14.0,
+        15.0,
+        16.0
+      ],
+      "y": [
+        324.00294922613733,
+        395.9943378783743,
+        504.5695251539436
+      ]
+    }
+  ],
+  "panels": [
+    {
+      "dataset": "CapERA",
+      "x_ticks": [
+        18.0,
+        20.0,
+        22.0
+      ],
+      "y_ticks": [
+        0,
+        100,
+        200,
+        300,
+        400,
+        500,
+        600
+      ]
+    },
+    {
+      "dataset": "AirScape",
+      "x_ticks": [
+        14.0,
+        15.0,
+        16.0
+      ],
+      "y_ticks": [
+        0,
+        100,
+        200,
+        300,
+        400,
+        500,
+        600
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "dataset": "CapERA",
+      "target_mR_percent": 18.0,
+      "proposed_energy_kJ": 215.6875987149098,
+      "afl_energy_kJ": 295.58603882861587,
+      "energy_reduction_percent": 27.030518907569956,
+      "proposed_active_s": 127.8661765275011,
+      "afl_active_s": 175.22777407333245,
+      "active_time_reduction_percent": 27.02859052812634
+    },
+    {
+      "dataset": "CapERA",
+      "target_mR_percent": 20.0,
+      "proposed_energy_kJ": 262.4694552011369,
+      "afl_energy_kJ": 364.223129289704,
+      "energy_reduction_percent": 27.93718078448334,
+      "proposed_active_s": 155.5999831418339,
+      "afl_active_s": 215.91680319333324,
+      "active_time_reduction_percent": 27.935213544955694
+    },
+    {
+      "dataset": "CapERA",
+      "target_mR_percent": 22.0,
+      "proposed_energy_kJ": 337.77685831586,
+      "afl_energy_kJ": 462.37267402841144,
+      "energy_reduction_percent": 26.947054337578646,
+      "proposed_active_s": 200.24464744783302,
+      "afl_active_s": 274.1009542333345,
+      "active_time_reduction_percent": 26.944928736960794
+    },
+    {
+      "dataset": "AirScape",
+      "target_mR_percent": 14.0,
+      "proposed_energy_kJ": 243.06214873897758,
+      "afl_energy_kJ": 324.00294922613733,
+      "energy_reduction_percent": 24.981501150061213,
+      "proposed_active_s": 144.09476726025105,
+      "afl_active_s": 192.07338126999952,
+      "active_time_reduction_percent": 24.979314516416228
+    },
+    {
+      "dataset": "AirScape",
+      "target_mR_percent": 15.0,
+      "proposed_energy_kJ": 332.06169103488094,
+      "afl_energy_kJ": 395.9943378783743,
+      "energy_reduction_percent": 16.14483863229622,
+      "proposed_active_s": 196.85664416825148,
+      "afl_active_s": 234.75075215000032,
+      "active_time_reduction_percent": 16.142273298249275
+    },
+    {
+      "dataset": "AirScape",
+      "target_mR_percent": 16.0,
+      "proposed_energy_kJ": 441.59957456633896,
+      "afl_energy_kJ": 504.5695251539436,
+      "energy_reduction_percent": 12.479935360422834,
+      "proposed_active_s": 261.794338824252,
+      "afl_active_s": 299.1149684700019,
+      "active_time_reduction_percent": 12.477018397523876
+    }
+  ],
+  "caption": "Energy required by Proposed and AFL-OTA to first reach the previously reported retained-mR targets, after all 45 prescribed FU procedures have completed. Each marker is an actual evaluated checkpoint; connecting lines are visual guides. The plotted targets are 18%, 20%, and 22% for CapERA, and 14%, 15%, and 16% for AirScape. The maximum observation budget is 650 kJ. ISCC-P2 and F-SalUn do not reach these targets within this budget and retain their unreached entries in energy_to_mr_targets.csv. This is a focused comparison of the two OTA methods. Energy includes active communication, adapter computation, and hovering. Threshold crossing is first observed attainment, not sustained convergence. FU procedure completion does not imply equal forgetting quality: KL is not matched or constrained here. These are descriptive results from one development seed, not a statistical superiority claim.\n",
+  "checked_targets": 24,
+  "all_existing_targets_checked": true,
+  "all_previous_figures_unchanged": true,
+  "matched_KL": false,
+  "new_training_runs": 0,
+  "figure_inches": [
+    7.4,
+    3.735
+  ],
+  "axis_label_pt": 14.0,
+  "numeric_tick_pt": 12.0,
+  "legend_pt": 12.0,
+  "legend_gap_pt": 8.000000000000023,
+  "input_sha256": {
+    "final_final_charts/downlink_bandwidth/data/energy_utility_checkpoints.json": "c708e17df154aca601058ad3c7e9865d4a621ddb58f5001fb6431142a98f4a32",
+    "final_final_charts/downlink_bandwidth/data/energy_to_mr_targets.json": "dea1966cbe273bd544d6deaeac7732d2040fc44ba9847347fef15bcf49f05ca9"
+  },
+  "source_sha256": {
+    "tools/uav_convergence_v2/energy_target_comparison_v1.py": "fc0c7e3054ac64381cf281a67dd6ade3b9b11da8c15631de94c4d182b634ec3a",
+    "tools/uav_convergence_v2/proposed_pks_report.py": "739c44d94cb7b7eab02b7a804a234a5ff488d0c4f52585af8ea8cae5fcd66f53",
+    "tools/uav_convergence_v2/paper_typography_v1.py": "e4ea3424942f929bd57ebe260495101ae27fe00ae3985104a7e68c5984fb7dcc"
+  }
+}

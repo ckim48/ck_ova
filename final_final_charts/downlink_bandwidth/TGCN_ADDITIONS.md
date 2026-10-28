@@ -75,6 +75,27 @@ Both figures use the unchanged last completed models within 650 kJ and all retai
 
 Single development seed and frozen-feature rank10 adapter study, not a full-backbone VLM hardware benchmark or statistical superiority result.
 
+<!-- energy-target-afl -->
+
+## 20: Energy to a shared retained-mR target
+
+Energy required by Proposed and AFL-OTA to first reach the previously reported retained-mR targets, after all 45 prescribed FU procedures have completed. Each marker is an actual evaluated checkpoint; connecting lines are visual guides. The plotted targets are 18%, 20%, and 22% for CapERA, and 14%, 15%, and 16% for AirScape. The maximum observation budget is 650 kJ. ISCC-P2 and F-SalUn do not reach these targets within this budget and retain their unreached entries in energy_to_mr_targets.csv. This is a focused comparison of the two OTA methods. Energy includes active communication, adapter computation, and hovering. Threshold crossing is first observed attainment, not sustained convergence. FU procedure completion does not imply equal forgetting quality: KL is not matched or constrained here. These are descriptive results from one development seed, not a statistical superiority claim.
+
+[Figure PDF](20_energy_to_target_mr_1x2.pdf) · [Exact energy and time comparisons](data/energy_target_afl_comparison.csv)
+
+| Dataset | Target mR (%) | Proposed (kJ) | AFL-OTA (kJ) | Energy reduction |
+|---|---:|---:|---:|---:|
+| CapERA | 18 | 215.69 | 295.59 | 27.03% |
+| CapERA | 20 | 262.47 | 364.22 | 27.94% |
+| CapERA | 22 | 337.78 | 462.37 | 26.95% |
+| AirScape | 14 | 243.06 | 324.00 | 24.98% |
+| AirScape | 15 | 332.06 | 395.99 | 16.14% |
+| AirScape | 16 | 441.60 | 504.57 | 12.48% |
+
+Reproduce with `.venv/bin/python tools/uav_convergence_v2/energy_target_comparison_v1.py`.
+
+<!-- /energy-target-afl -->
+
 ## Reproduction
 
 ```sh
