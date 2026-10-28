@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "models": 24,
+  "figures": 3,
+  "query_counts": [
+    1280,
+    256
+  ],
+  "all_checkpoint_budget_boundaries_verified": true,
+  "all_scores_recomputed": true,
+  "all_query_ranks_verified": true,
+  "all_outliers_retained": true,
+  "original_650kJ_figure_unchanged": true,
+  "source_sha256": {
+    "tools/uav_convergence_v2/limited_energy_rank_report_v1.py": "d12aeaddb21b71b883d58dbb8ad4f135ed0c5c9ec07bc2b3c48815d7caa0f916",
+    "tools/uav_convergence_v2/limited_energy_retrieval_v1.py": "c945e4eb020ff8768d552265e2ab349bb218d761001613458f705b6b45f8ce3d",
+    "tools/uav_convergence_v2/limited_energy_checkpoints_v1.py": "95f22ad4f5119bd793b51fde8af3659778a53468db8136cbe43a6e144609ed80",
+    "tools/uav_convergence_v2/paper_boxplot_refine_v2.py": "d058e583c993121423dc82700d8c56ad6e61911d4dae5bc4d54f3e69c6ad824e"
+  },
+  "original_650kJ_sha256": {
+    "final_final_charts/downlink_bandwidth/19_all_method_rank_boxplot_1x2.pdf": "7061257e371c838eb1b5d013c0e4e22e2df93d9d89061bb5759d0e0d4ba26215",
+    "final_final_charts/downlink_bandwidth/19_all_method_rank_boxplot_1x2.png": "1c3f24c47e543da468b3c8f03e724cb6a1951b7db079e8649b05311e2a41dcd3",
+    "final_final_charts/downlink_bandwidth/19_all_method_rank_boxplot_1x2.svg": "4d1fcb4cef4d0a065d9e8fbc5b917eef51a881dcd8add5f673f09c66e00c1983"
+  },
+  "inference_checks": {
+    "passed": true,
+    "models": 24,
+    "budgets_kJ": [
+      200,
+      300,
+      400
+    ],
+    "original_query_ids_and_gallery_preserved": true,
+    "all_ranks_from_actual_scores": true,
+    "source_sha256": {
+      "tools/uav_convergence_v2/limited_energy_retrieval_v1.py": "c945e4eb020ff8768d552265e2ab349bb218d761001613458f705b6b45f8ce3d"
+    },
+    "input_sha256": {
+      "results/learning_selection_fix_v2_20261028/gate_select16/cases/baseline/capera_seed0/feature_cache/features.pt": "6745e1576b1eb3787b77b064dfb55a959bb7a8a5d5a34b2f996e27167d23d1c7",
+      "results/learning_selection_fix_v2_20261028/gate_select16/cases/baseline/capera_seed0/plan.json": "92132da504a8b90808747e03a9cb1d4933a84a2e11ca928efd542b1f0f54fd46",
+      "results/limited_energy_checkpoints_v1_20261028/checkpoints/200kJ/capera/gate_select16/model.pt": "82139fde8b0ddd7d79b826f5bdcc547153a433c413564f268426cafb6f5388d0",
+      "results/limited_energy_checkpoints_v1_20261028/checkpoints/200kJ/capera/iscc/model.pt": "55dc0d95342c82363d1641b221b8431e3c21b4208bd4b404f133e61370ef947f",
+      "results/limited_energy_checkpoints_v1_20261028/checkpoints/200kJ/capera/afl/model.pt": "2d864e918c19a586b04f85759a25fc56da9b6ab053e614ca3078f5a7b98068ff",
+      "results/limited_energy_checkpoints_v1_20261028/checkpoints/200kJ/capera/salun/model.pt": "2b2d318f4441e185aa95237543705550b46e93a721241cf5f0f88ca88bcadd37",
+      "results/limited_energy_checkpoints_v1_20261028/checkpoints/300kJ/capera/gate_select16/model.pt": "e6f96a63c1c19a335efee4e0384c2d562de08c2b6ee6749cb4853b96ee8d23f4",
+      "results/limited_energy_checkpoints_v1_20261028/checkpoints/300kJ/capera/iscc/model.pt": "474770d1797f96da2e314d83822f93a6120b800c34663c5707d277214ec29c7d",
+      "results/limited_energy_checkpoints_v1_20261028/checkpoints/300kJ/capera/afl/model.pt": "dce9420a964e09188463fa79ac9b56b500d20d7bd24436b033dca017370a6760",
+      "results/limited_energy_checkpoints_v1_20261028/checkpoints/300kJ/capera/salun/model.pt": "c621302cd0d189d7e22fcb8e6eaa573c233e98500bb2060734f46cdfc7973390",
+      "results/limited_energy_checkpoints_v1_20261028/checkpoints/400kJ/capera/gate_select16/model.pt": "4415983ce650128b4837c7ae6e59396aa01a5e51bc1f8aeb59833d8a69be600f",
+      "results/limited_energy_checkpoints_v1_20261028/checkpoints/400kJ/capera/iscc/model.pt": "278da5b9e0fb57f063c84707b9442ed12f0fdc9d34fed1c5bb2dbf74931f4e05",
+      "results/limited_energy_checkpoints_v1_20261028/checkpoints/400kJ/capera/afl/model.pt": "ba36d6e5cd5955618916510ebcbea110052f37569925486267614e6ada1aaf4a",
+      "results/limited_energy_checkpoints_v1_20261028/checkpoints/400kJ/capera/salun/model.pt": "c35c07bfa693966c6089fea5a3f48b794d3d6378d4d927347d18820887801cae",
+      "results/learning_selection_fix_v2_20261028/gate_select16/cases/baseline/airscape_seed0/feature_cache/features.pt": "c174aee077acc2911b5b2b8a1426f8fea75f105e6f72d829d7ffbe8cbc72f587",
+      "results/learning_selection_fix_v2_20261028/gate_select16/cases/baseline/airscape_seed0/plan.json": "5e856fffec7bec897b916cd31a311ad2c647498f616762cf5364810ff1ec348b",
+      "results/limited_energy_checkpoints_v1_20261028/checkpoints/200kJ/airscape/gate_select16/model.pt": "ac8c801f937d46ed39f3f66f9648d7e58cbaa30f311160f4d5e0ecfeb22bcab5",
+      "results/limited_energy_checkpoints_v1_20261028/checkpoints/200kJ/airscape/iscc/model.pt": "3af69230a68d7f504f8423ca095cf6fe4f284da0d79489cf7180f1ad6c136289",
+      "results/limited_energy_checkpoints_v1_20261028/checkpoints/200kJ/airscape/afl/model.pt": "b848a3da2c8f2c0f554f70d771f78b4f81bdee8baf34f90a91cb8f54fcafdd25",
+      "results/limited_energy_checkpoints_v1_20261028/checkpoints/200kJ/airscape/salun/model.pt": "d5814c7ec33cd7041b6a19838f0bf4d1cc9d1263fe4bbd60605fe3564d6c10d7",
+      "results/limited_energy_checkpoints_v1_20261028/checkpoints/300kJ/airscape/gate_select16/model.pt": "699479efb135637e8e5c75bf6214578ae6d3dc6875fb56414009b98d2fea6eb6",
+      "results/limited_energy_checkpoints_v1_20261028/checkpoints/300kJ/airscape/iscc/model.pt": "0b9b4f7646fc8db6b1070a50cafd3c602df78439007fc8cd8b8b64b2e0878ce7",
+      "results/limited_energy_checkpoints_v1_20261028/checkpoints/300kJ/airscape/afl/model.pt": "5ed3ea5a8c13bfb8f668f9d7c16185bf18224f106ecd90a0a0034ee7fb9e9e4e",
+      "results/limited_energy_checkpoints_v1_20261028/checkpoints/300kJ/airscape/salun/model.pt": "6fa692d7ead96328d2d8df6cf4554f85cb94617677d91a899b9b2aa8d8af2e52",
+      "results/limited_energy_checkpoints_v1_20261028/checkpoints/400kJ/airscape/gate_select16/model.pt": "3a04648251421b221386adde8703e6a539bc7609b21228a541af6ab00d528cee",
+      "results/limited_energy_checkpoints_v1_20261028/checkpoints/400kJ/airscape/iscc/model.pt": "352ea78594aa8d020c34fbd5e0d34becc6cc58b29fde27257367baa9b2f540e5",
+      "results/limited_energy_checkpoints_v1_20261028/checkpoints/400kJ/airscape/afl/model.pt": "e64ed63593a4263977adc2dfb90d45e2f648839e2ff46adef0d071941d0ca6b0",
+      "results/limited_energy_checkpoints_v1_20261028/checkpoints/400kJ/airscape/salun/model.pt": "c53db911a235fce6de7b75d76d213e69e7a9e9b577fc9e654060e007060afe97"
+    }
+  }
+}

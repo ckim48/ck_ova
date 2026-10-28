@@ -1,0 +1,164 @@
+[
+  {
+    "dataset": "CapERA",
+    "budget_kJ": 200,
+    "comparator": "iscc",
+    "queries": 1280,
+    "improved": 753,
+    "tied": 291,
+    "worsened": 236
+  },
+  {
+    "dataset": "CapERA",
+    "budget_kJ": 200,
+    "comparator": "afl",
+    "queries": 1280,
+    "improved": 580,
+    "tied": 476,
+    "worsened": 224
+  },
+  {
+    "dataset": "CapERA",
+    "budget_kJ": 200,
+    "comparator": "salun",
+    "queries": 1280,
+    "improved": 736,
+    "tied": 310,
+    "worsened": 234
+  },
+  {
+    "dataset": "AirScape",
+    "budget_kJ": 200,
+    "comparator": "iscc",
+    "queries": 256,
+    "improved": 160,
+    "tied": 38,
+    "worsened": 58
+  },
+  {
+    "dataset": "AirScape",
+    "budget_kJ": 200,
+    "comparator": "afl",
+    "queries": 256,
+    "improved": 115,
+    "tied": 55,
+    "worsened": 86
+  },
+  {
+    "dataset": "AirScape",
+    "budget_kJ": 200,
+    "comparator": "salun",
+    "queries": 256,
+    "improved": 155,
+    "tied": 42,
+    "worsened": 59
+  },
+  {
+    "dataset": "CapERA",
+    "budget_kJ": 300,
+    "comparator": "iscc",
+    "queries": 1280,
+    "improved": 819,
+    "tied": 146,
+    "worsened": 315
+  },
+  {
+    "dataset": "CapERA",
+    "budget_kJ": 300,
+    "comparator": "afl",
+    "queries": 1280,
+    "improved": 740,
+    "tied": 196,
+    "worsened": 344
+  },
+  {
+    "dataset": "CapERA",
+    "budget_kJ": 300,
+    "comparator": "salun",
+    "queries": 1280,
+    "improved": 809,
+    "tied": 153,
+    "worsened": 318
+  },
+  {
+    "dataset": "AirScape",
+    "budget_kJ": 300,
+    "comparator": "iscc",
+    "queries": 256,
+    "improved": 165,
+    "tied": 24,
+    "worsened": 67
+  },
+  {
+    "dataset": "AirScape",
+    "budget_kJ": 300,
+    "comparator": "afl",
+    "queries": 256,
+    "improved": 150,
+    "tied": 28,
+    "worsened": 78
+  },
+  {
+    "dataset": "AirScape",
+    "budget_kJ": 300,
+    "comparator": "salun",
+    "queries": 256,
+    "improved": 164,
+    "tied": 22,
+    "worsened": 70
+  },
+  {
+    "dataset": "CapERA",
+    "budget_kJ": 400,
+    "comparator": "iscc",
+    "queries": 1280,
+    "improved": 828,
+    "tied": 114,
+    "worsened": 338
+  },
+  {
+    "dataset": "CapERA",
+    "budget_kJ": 400,
+    "comparator": "afl",
+    "queries": 1280,
+    "improved": 701,
+    "tied": 218,
+    "worsened": 361
+  },
+  {
+    "dataset": "CapERA",
+    "budget_kJ": 400,
+    "comparator": "salun",
+    "queries": 1280,
+    "improved": 825,
+    "tied": 106,
+    "worsened": 349
+  },
+  {
+    "dataset": "AirScape",
+    "budget_kJ": 400,
+    "comparator": "iscc",
+    "queries": 256,
+    "improved": 158,
+    "tied": 16,
+    "worsened": 82
+  },
+  {
+    "dataset": "AirScape",
+    "budget_kJ": 400,
+    "comparator": "afl",
+    "queries": 256,
+    "improved": 139,
+    "tied": 28,
+    "worsened": 89
+  },
+  {
+    "dataset": "AirScape",
+    "budget_kJ": 400,
+    "comparator": "salun",
+    "queries": 256,
+    "improved": 157,
+    "tied": 15,
+    "worsened": 84
+  }
+]

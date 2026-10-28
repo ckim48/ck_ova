@@ -1,0 +1,93 @@
+{
+  "passed": true,
+  "stages": [
+    {
+      "passed": true,
+      "dataset": "AirScape",
+      "method": "afl",
+      "original_curve_and_final_model_exact": true
+    },
+    {
+      "passed": true,
+      "dataset": "AirScape",
+      "method": "afl",
+      "transactions": 225,
+      "final_parameters_exact": true,
+      "all_transactions_exact_except_solver_wall_time": true
+    },
+    {
+      "passed": true,
+      "dataset": "AirScape",
+      "method": "gate_select16",
+      "original_curve_and_final_model_exact": true
+    },
+    {
+      "passed": true,
+      "dataset": "AirScape",
+      "method": "gate_select16",
+      "transactions": 180,
+      "final_parameters_exact": true,
+      "all_transactions_exact_except_solver_wall_time": true
+    },
+    {
+      "passed": true,
+      "dataset": "AirScape",
+      "method": "iscc",
+      "transactions": 225,
+      "final_parameters_exact": true,
+      "all_transactions_exact_except_solver_wall_time": true
+    },
+    {
+      "passed": true,
+      "dataset": "AirScape",
+      "method": "salun",
+      "transactions": 225,
+      "final_parameters_exact": true,
+      "all_transactions_exact_except_solver_wall_time": true
+    },
+    {
+      "passed": true,
+      "dataset": "CapERA",
+      "method": "afl",
+      "original_curve_and_final_model_exact": true
+    },
+    {
+      "passed": true,
+      "dataset": "CapERA",
+      "method": "afl",
+      "transactions": 225,
+      "final_parameters_exact": true,
+      "all_transactions_exact_except_solver_wall_time": true
+    },
+    {
+      "passed": true,
+      "dataset": "CapERA",
+      "method": "gate_select16",
+      "original_curve_and_final_model_exact": true
+    },
+    {
+      "passed": true,
+      "dataset": "CapERA",
+      "method": "gate_select16",
+      "transactions": 180,
+      "final_parameters_exact": true,
+      "all_transactions_exact_except_solver_wall_time": true
+    },
+    {
+      "passed": true,
+      "dataset": "CapERA",
+      "method": "iscc",
+      "transactions": 225,
+      "final_parameters_exact": true,
+      "all_transactions_exact_except_solver_wall_time": true
+    },
+    {
+      "passed": true,
+      "dataset": "CapERA",
+      "method": "salun",
+      "transactions": 225,
+      "final_parameters_exact": true,
+      "all_transactions_exact_except_solver_wall_time": true
+    }
+  ]
+}
