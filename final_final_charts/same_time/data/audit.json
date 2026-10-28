@@ -1,0 +1,75 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "dataset": "CapERA",
+      "method": "current",
+      "verified_transactions": 413,
+      "energy_clock_and_workload": true,
+      "source": "results/learning_time_budget_v1_20261028/capera_seed0/current"
+    },
+    {
+      "dataset": "CapERA",
+      "method": "gate_select16",
+      "verified_transactions": 413,
+      "energy_clock_and_workload": true,
+      "source": "results/learning_time_budget_v1_20261028/capera_seed0/gate_select16"
+    },
+    {
+      "dataset": "CapERA",
+      "method": "iscc",
+      "verified_transactions": 9,
+      "energy_clock_and_workload": true,
+      "source": "results/learning_time_budget_v1_20261028/capera_seed0/iscc"
+    },
+    {
+      "dataset": "CapERA",
+      "method": "afl",
+      "verified_transactions": 373,
+      "energy_clock_and_workload": true,
+      "source": "results/learning_time_budget_v1_20261028/capera_seed0/afl"
+    },
+    {
+      "dataset": "CapERA",
+      "method": "salun",
+      "verified_transactions": 9,
+      "energy_clock_and_workload": true,
+      "source": "results/learning_time_budget_v1_20261028/capera_seed0/salun"
+    },
+    {
+      "dataset": "AirScape",
+      "method": "current",
+      "verified_transactions": 412,
+      "energy_clock_and_workload": true,
+      "source": "results/learning_time_budget_v1_20261028/airscape_seed0/current"
+    },
+    {
+      "dataset": "AirScape",
+      "method": "gate_select16",
+      "verified_transactions": 413,
+      "energy_clock_and_workload": true,
+      "source": "results/learning_time_budget_v1_20261028/airscape_seed0/gate_select16"
+    },
+    {
+      "dataset": "AirScape",
+      "method": "iscc",
+      "verified_transactions": 9,
+      "energy_clock_and_workload": true,
+      "source": "results/learning_time_budget_v1_20261028/airscape_seed0/iscc"
+    },
+    {
+      "dataset": "AirScape",
+      "method": "afl",
+      "verified_transactions": 373,
+      "energy_clock_and_workload": true,
+      "source": "results/learning_time_budget_v1_20261028/airscape_seed0/afl"
+    },
+    {
+      "dataset": "AirScape",
+      "method": "salun",
+      "verified_transactions": 9,
+      "energy_clock_and_workload": true,
+      "source": "results/learning_time_budget_v1_20261028/airscape_seed0/salun"
+    }
+  ]
+}

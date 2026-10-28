@@ -1,0 +1,3122 @@
+[
+  {
+    "axis": "bandwidth",
+    "dataset": "CapERA",
+    "method": "adaptive_retrieval_fu",
+    "label": "Proposed",
+    "metric": "total_energy_j",
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "values": [
+      204450.56402545693,
+      201912.11436543544,
+      201054.45892150435,
+      200556.61686740842,
+      200292.44736337702
+    ],
+    "first": 204450.56402545693,
+    "last": 200292.44736337702,
+    "endpoint_change_percent": -2.033800533591168,
+    "span_percent": 2.076022694223778,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "bandwidth",
+    "dataset": "CapERA",
+    "method": "adaptive_retrieval_fu",
+    "label": "Proposed",
+    "metric": "delay_s",
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "values": [
+      121.20416648000125,
+      119.69888647999795,
+      119.19029981333495,
+      118.89504648000103,
+      118.73837448000022
+    ],
+    "first": 121.20416648000125,
+    "last": 118.73837448000022,
+    "endpoint_change_percent": -2.0344119114155124,
+    "span_percent": 2.0766597242042995,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "bandwidth",
+    "dataset": "CapERA",
+    "method": "adaptive_retrieval_fu",
+    "label": "Proposed",
+    "metric": "mission_delay_s",
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "values": [
+      1186.0122202093576,
+      1184.5069402093543,
+      1183.9983535426913,
+      1183.7031002093572,
+      1183.5464282093567
+    ],
+    "first": 1186.0122202093576,
+    "last": 1183.5464282093567,
+    "endpoint_change_percent": -0.20790612086321048,
+    "span_percent": 0.20833927095968985,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "bandwidth",
+    "dataset": "CapERA",
+    "method": "iscc_p2_gaft",
+    "label": "ISCC-P2",
+    "metric": "total_energy_j",
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "values": [
+      649962.3177948238,
+      501098.50285176747,
+      446404.1027137913,
+      417581.52899503143,
+      399767.56144591206
+    ],
+    "first": 649962.3177948238,
+    "last": 399767.56144591206,
+    "endpoint_change_percent": -38.493732559414575,
+    "span_percent": 62.58505703764128,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "bandwidth",
+    "dataset": "CapERA",
+    "method": "iscc_p2_gaft",
+    "label": "ISCC-P2",
+    "metric": "delay_s",
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "values": [
+      384.3037388367693,
+      296.43128726701184,
+      264.1459311859601,
+      247.1324258814534,
+      236.61716827932554
+    ],
+    "first": 384.3037388367693,
+    "last": 236.61716827932554,
+    "endpoint_change_percent": -38.429647081880915,
+    "span_percent": 62.41583044519423,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "bandwidth",
+    "dataset": "CapERA",
+    "method": "iscc_p2_gaft",
+    "label": "ISCC-P2",
+    "metric": "mission_delay_s",
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "values": [
+      1449.1117925661256,
+      1361.2393409963681,
+      1328.9539849153164,
+      1311.9404796108097,
+      1301.4252220086819
+    ],
+    "first": 1449.1117925661256,
+    "last": 1301.4252220086819,
+    "endpoint_change_percent": -10.191523615711962,
+    "span_percent": 11.348064265228942,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "bandwidth",
+    "dataset": "CapERA",
+    "method": "uav_afl_ota_gaft",
+    "label": "AFL-OTA",
+    "metric": "total_energy_j",
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "values": [
+      252882.42038749642,
+      252008.61951153688,
+      251729.02972048576,
+      251515.6103230139,
+      251456.8032029937
+    ],
+    "first": 252882.42038749642,
+    "last": 251456.8032029937,
+    "endpoint_change_percent": -0.5637470498416675,
+    "span_percent": 0.56694317526651,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "bandwidth",
+    "dataset": "CapERA",
+    "method": "uav_afl_ota_gaft",
+    "label": "AFL-OTA",
+    "metric": "delay_s",
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "values": [
+      149.912405113332,
+      149.39528511333387,
+      149.22973844666876,
+      149.10344511333597,
+      149.0686291133327
+    ],
+    "first": 149.912405113332,
+    "last": 149.0686291133327,
+    "endpoint_change_percent": -0.5628460162195537,
+    "span_percent": 0.5660319042431139,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "bandwidth",
+    "dataset": "CapERA",
+    "method": "uav_afl_ota_gaft",
+    "label": "AFL-OTA",
+    "metric": "mission_delay_s",
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "values": [
+      1214.7204588426885,
+      1214.2033388426903,
+      1214.037792176025,
+      1213.9114988426923,
+      1213.876682842689
+    ],
+    "first": 1214.7204588426885,
+    "last": 1213.876682842689,
+    "endpoint_change_percent": -0.06946256596380707,
+    "span_percent": 0.06951084998383372,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "bandwidth",
+    "dataset": "CapERA",
+    "method": "f_salun",
+    "label": "F-SalUn",
+    "metric": "total_energy_j",
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "values": [
+      649959.7513121375,
+      501095.90748408786,
+      446401.4788930459,
+      417578.87915059435,
+      399764.8892114405
+    ],
+    "first": 649959.7513121375,
+    "last": 399764.8892114405,
+    "endpoint_change_percent": -38.49390082933659,
+    "span_percent": 62.585501841900346,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "bandwidth",
+    "dataset": "CapERA",
+    "method": "f_salun",
+    "label": "F-SalUn",
+    "metric": "delay_s",
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "values": [
+      384.3022440352411,
+      296.42977537434956,
+      264.14440245773346,
+      247.13088175511325,
+      236.61561090489226
+    ],
+    "first": 384.3022440352411,
+    "last": 236.61561090489226,
+    "endpoint_change_percent": -38.42981284199989,
+    "span_percent": 62.41626770336448,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "bandwidth",
+    "dataset": "CapERA",
+    "method": "f_salun",
+    "label": "F-SalUn",
+    "metric": "mission_delay_s",
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "values": [
+      1449.1102977645974,
+      1361.237829103706,
+      1328.9524561870899,
+      1311.9389354844695,
+      1301.4236646342486
+    ],
+    "first": 1449.1102977645974,
+    "last": 1301.4236646342486,
+    "endpoint_change_percent": -10.191538446602078,
+    "span_percent": 11.348082653150037,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "bandwidth",
+    "dataset": "AirScape",
+    "method": "adaptive_retrieval_fu",
+    "label": "Proposed",
+    "metric": "total_energy_j",
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "values": [
+      204751.43727241087,
+      202092.10791707062,
+      201148.14512649967,
+      200736.56973915471,
+      200468.969113745
+    ],
+    "first": 204751.43727241087,
+    "last": 200468.969113745,
+    "endpoint_change_percent": -2.0915448583485485,
+    "span_percent": 2.136224961697697,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "bandwidth",
+    "dataset": "AirScape",
+    "method": "adaptive_retrieval_fu",
+    "label": "Proposed",
+    "metric": "delay_s",
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "values": [
+      121.38263922666829,
+      119.80567922666452,
+      119.24589256000198,
+      119.0018392266681,
+      118.84311922666703
+    ],
+    "first": 121.38263922666829,
+    "last": 118.84311922666703,
+    "endpoint_change_percent": -2.0921608033740324,
+    "span_percent": 2.136867507792095,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "bandwidth",
+    "dataset": "AirScape",
+    "method": "adaptive_retrieval_fu",
+    "label": "Proposed",
+    "metric": "mission_delay_s",
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "values": [
+      1186.1906929560246,
+      1184.6137329560208,
+      1184.0539462893582,
+      1183.8098929560244,
+      1183.6511729560234
+    ],
+    "first": 1186.1906929560246,
+    "last": 1183.6511729560234,
+    "endpoint_change_percent": -0.21409036633668332,
+    "span_percent": 0.2145496965680449,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "bandwidth",
+    "dataset": "AirScape",
+    "method": "iscc_p2_gaft",
+    "label": "ISCC-P2",
+    "metric": "total_energy_j",
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "values": [
+      649304.7817180118,
+      500494.3858165999,
+      445795.48237451236,
+      416954.26260680746,
+      399117.9001912472
+    ],
+    "first": 649304.7817180118,
+    "last": 399117.9001912472,
+    "endpoint_change_percent": -38.531501472203686,
+    "span_percent": 62.68495635171498,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "bandwidth",
+    "dataset": "AirScape",
+    "method": "iscc_p2_gaft",
+    "label": "ISCC-P2",
+    "metric": "delay_s",
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "values": [
+      383.9147060540845,
+      296.07386231597354,
+      263.78584164802874,
+      246.7613035515103,
+      236.23279499716728
+    ],
+    "first": 383.9147060540845,
+    "last": 236.23279499716728,
+    "endpoint_change_percent": -38.46737536438949,
+    "span_percent": 62.515414533654436,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "bandwidth",
+    "dataset": "AirScape",
+    "method": "iscc_p2_gaft",
+    "label": "ISCC-P2",
+    "metric": "mission_delay_s",
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "values": [
+      1448.7227597834408,
+      1360.88191604533,
+      1328.593895377385,
+      1311.5693572808666,
+      1301.0408487265236
+    ],
+    "first": 1448.7227597834408,
+    "last": 1301.0408487265236,
+    "endpoint_change_percent": -10.193938768449605,
+    "span_percent": 11.351058746654296,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "bandwidth",
+    "dataset": "AirScape",
+    "method": "uav_afl_ota_gaft",
+    "label": "AFL-OTA",
+    "metric": "total_energy_j",
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "values": [
+      253066.41911362912,
+      252408.98661901383,
+      252091.80749252508,
+      251907.27381571967,
+      251810.3857141175
+    ],
+    "first": 253066.41911362912,
+    "last": 251810.3857141175,
+    "endpoint_change_percent": -0.4963255906931141,
+    "span_percent": 0.49880126903805166,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "bandwidth",
+    "dataset": "AirScape",
+    "method": "uav_afl_ota_gaft",
+    "label": "AFL-OTA",
+    "metric": "delay_s",
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "values": [
+      150.02124430999868,
+      149.63212430999914,
+      149.44439097666708,
+      149.3351643100013,
+      149.27782030999975
+    ],
+    "first": 150.02124430999868,
+    "last": 149.27782030999975,
+    "endpoint_change_percent": -0.49554581647298646,
+    "span_percent": 0.4980137025413889,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "bandwidth",
+    "dataset": "AirScape",
+    "method": "uav_afl_ota_gaft",
+    "label": "AFL-OTA",
+    "metric": "mission_delay_s",
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "values": [
+      1214.8292980393549,
+      1214.4401780393555,
+      1214.2524447060232,
+      1214.1432180393576,
+      1214.085874039356
+    ],
+    "first": 1214.8292980393549,
+    "last": 1214.085874039356,
+    "endpoint_change_percent": -0.061195758218768326,
+    "span_percent": 0.06123323035835959,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "bandwidth",
+    "dataset": "AirScape",
+    "method": "f_salun",
+    "label": "F-SalUn",
+    "metric": "total_energy_j",
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "values": [
+      649306.8250528966,
+      500496.42785449605,
+      445797.5246461633,
+      416956.30589131964,
+      399119.9447910818
+    ],
+    "first": 649306.8250528966,
+    "last": 399119.9447910818,
+    "endpoint_change_percent": -38.53138002075259,
+    "span_percent": 62.68463491414202,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "bandwidth",
+    "dataset": "AirScape",
+    "method": "f_salun",
+    "label": "F-SalUn",
+    "metric": "delay_s",
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "values": [
+      383.91589854366384,
+      296.0750540381299,
+      263.78703350849685,
+      246.76249601128438,
+      236.23398823521234
+    ],
+    "first": 383.91589854366384,
+    "last": 236.23398823521234,
+    "endpoint_change_percent": -38.46725568507687,
+    "span_percent": 62.515098446125485,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "bandwidth",
+    "dataset": "AirScape",
+    "method": "f_salun",
+    "label": "F-SalUn",
+    "metric": "mission_delay_s",
+    "x": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "values": [
+      1448.7239522730201,
+      1360.8831077674863,
+      1328.5950872378532,
+      1311.5705497406407,
+      1301.0420419645686
+    ],
+    "first": 1448.7239522730201,
+    "last": 1301.0420419645686,
+    "endpoint_change_percent": -10.193930325838918,
+    "span_percent": 11.351048278613064,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "downlink",
+    "dataset": "CapERA",
+    "method": "adaptive_retrieval_fu",
+    "label": "Proposed",
+    "metric": "total_energy_j",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "values": [
+      798552.0612158602,
+      402484.39642225165,
+      204450.56402545693,
+      105433.64782705458,
+      55925.18972785787
+    ],
+    "first": 798552.0612158602,
+    "last": 55925.18972785787,
+    "endpoint_change_percent": -92.99667580311454,
+    "span_percent": 1327.8933430566076,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "downlink",
+    "dataset": "CapERA",
+    "method": "adaptive_retrieval_fu",
+    "label": "Proposed",
+    "metric": "delay_s",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "values": [
+      473.40743048000314,
+      238.6052544799981,
+      121.20416648000125,
+      62.50362247999985,
+      33.153350480001805
+    ],
+    "first": 473.40743048000314,
+    "last": 33.153350480001805,
+    "endpoint_change_percent": -92.99686731862519,
+    "span_percent": 1327.9323918273776,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "downlink",
+    "dataset": "CapERA",
+    "method": "adaptive_retrieval_fu",
+    "label": "Proposed",
+    "metric": "mission_delay_s",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "values": [
+      1538.2154842093596,
+      1303.4133082093545,
+      1186.0122202093576,
+      1127.3116762093562,
+      1097.961404209358
+    ],
+    "first": 1538.2154842093596,
+    "last": 1097.961404209358,
+    "endpoint_change_percent": -28.621092722018172,
+    "span_percent": 40.09740946377149,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "downlink",
+    "dataset": "CapERA",
+    "method": "iscc_p2_gaft",
+    "label": "ISCC-P2",
+    "metric": "total_energy_j",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "values": [
+      1393418.939977209,
+      897781.1918556162,
+      649962.3177948238,
+      526052.8807644128,
+      464098.16224921605
+    ],
+    "first": 1393418.939977209,
+    "last": 464098.16224921605,
+    "endpoint_change_percent": -66.69356580894423,
+    "span_percent": 200.2422878005186,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "downlink",
+    "dataset": "CapERA",
+    "method": "iscc_p2_gaft",
+    "label": "ISCC-P2",
+    "metric": "delay_s",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "values": [
+      825.0497228367606,
+      531.2190668367648,
+      384.3037388367693,
+      310.8460748367628,
+      274.1172428367647
+    ],
+    "first": 825.0497228367606,
+    "last": 274.1172428367647,
+    "endpoint_change_percent": -66.7756699688026,
+    "span_percent": 200.98424830869655,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "downlink",
+    "dataset": "CapERA",
+    "method": "iscc_p2_gaft",
+    "label": "ISCC-P2",
+    "metric": "mission_delay_s",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "values": [
+      1889.8577765661166,
+      1596.027120566121,
+      1449.1117925661256,
+      1375.6541285661192,
+      1338.925296566121
+    ],
+    "first": 1889.8577765661166,
+    "last": 1338.925296566121,
+    "endpoint_change_percent": -29.15206037361411,
+    "span_percent": 41.14736508548658,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "downlink",
+    "dataset": "CapERA",
+    "method": "uav_afl_ota_gaft",
+    "label": "AFL-OTA",
+    "metric": "total_energy_j",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "values": [
+      996339.0425698828,
+      500701.2944482947,
+      252882.42038749642,
+      128972.98335709574,
+      67018.26484188587
+    ],
+    "first": 996339.0425698828,
+    "last": 67018.26484188587,
+    "endpoint_change_percent": -93.27354826234412,
+    "span_percent": 1386.6679179482112,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "downlink",
+    "dataset": "CapERA",
+    "method": "uav_afl_ota_gaft",
+    "label": "AFL-OTA",
+    "metric": "delay_s",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "values": [
+      590.6583891133239,
+      296.82773311333096,
+      149.912405113332,
+      76.45474111333161,
+      39.725909113325756
+    ],
+    "first": 590.6583891133239,
+    "last": 39.725909113325756,
+    "endpoint_change_percent": -93.27430036624708,
+    "span_percent": 1386.8341651498972,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "downlink",
+    "dataset": "CapERA",
+    "method": "uav_afl_ota_gaft",
+    "label": "AFL-OTA",
+    "metric": "mission_delay_s",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "values": [
+      1655.46644284268,
+      1361.6357868426874,
+      1214.7204588426885,
+      1141.262794842688,
+      1104.533962842682
+    ],
+    "first": 1655.46644284268,
+    "last": 1104.533962842682,
+    "endpoint_change_percent": -33.279592128365074,
+    "span_percent": 49.87917968426172,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "downlink",
+    "dataset": "CapERA",
+    "method": "f_salun",
+    "label": "F-SalUn",
+    "metric": "total_energy_j",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "values": [
+      1393416.3734945243,
+      897778.6253729298,
+      649959.7513121375,
+      526050.3142817265,
+      464095.59576653026
+    ],
+    "first": 1393416.3734945243,
+    "last": 464095.59576653026,
+    "endpoint_change_percent": -66.69368864938532,
+    "span_percent": 200.24339515505804,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "downlink",
+    "dataset": "CapERA",
+    "method": "f_salun",
+    "label": "F-SalUn",
+    "metric": "delay_s",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "values": [
+      825.0482280352333,
+      531.2175720352366,
+      384.3022440352411,
+      310.84458003523457,
+      274.11574803523683
+    ],
+    "first": 825.0482280352333,
+    "last": 274.11574803523683,
+    "endpoint_change_percent": -66.77579095127383,
+    "span_percent": 200.98534431125628,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "downlink",
+    "dataset": "CapERA",
+    "method": "f_salun",
+    "label": "F-SalUn",
+    "metric": "mission_delay_s",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "values": [
+      1889.8562817645895,
+      1596.0256257645929,
+      1449.1102977645974,
+      1375.6526337645907,
+      1338.9238017645932
+    ],
+    "first": 1889.8562817645895,
+    "last": 1338.9238017645932,
+    "endpoint_change_percent": -29.152083431740206,
+    "span_percent": 41.147411023234625,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "downlink",
+    "dataset": "AirScape",
+    "method": "adaptive_retrieval_fu",
+    "label": "Proposed",
+    "metric": "total_energy_j",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "values": [
+      798852.9344628137,
+      402785.2696692045,
+      204751.43727241087,
+      105734.52107400769,
+      56226.06297481149
+    ],
+    "first": 798852.9344628137,
+    "last": 56226.06297481149,
+    "endpoint_change_percent": -92.96165031769952,
+    "span_percent": 1320.7876066668387,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "downlink",
+    "dataset": "AirScape",
+    "method": "adaptive_retrieval_fu",
+    "label": "Proposed",
+    "metric": "delay_s",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "values": [
+      473.5859032266699,
+      238.7837272266645,
+      121.38263922666829,
+      62.682095226666405,
+      33.33182322666866
+    ],
+    "first": 473.5859032266699,
+    "last": 33.33182322666866,
+    "endpoint_change_percent": -92.9618210762673,
+    "span_percent": 1320.8220774666647,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "downlink",
+    "dataset": "AirScape",
+    "method": "adaptive_retrieval_fu",
+    "label": "Proposed",
+    "metric": "mission_delay_s",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "values": [
+      1538.3939569560262,
+      1303.5917809560208,
+      1186.1906929560246,
+      1127.4901489560227,
+      1098.1398769560249
+    ],
+    "first": 1538.3939569560262,
+    "last": 1098.1398769560249,
+    "endpoint_change_percent": -28.61777232088969,
+    "span_percent": 40.09089272127684,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "downlink",
+    "dataset": "AirScape",
+    "method": "iscc_p2_gaft",
+    "label": "ISCC-P2",
+    "metric": "total_energy_j",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "values": [
+      1392761.403900399,
+      897123.6557788042,
+      649304.7817180118,
+      525395.3446876009,
+      463440.6261724047
+    ],
+    "first": 1392761.403900399,
+    "last": 463440.6261724047,
+    "endpoint_change_percent": -66.72505248389646,
+    "span_percent": 200.52639437403954,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "downlink",
+    "dataset": "AirScape",
+    "method": "iscc_p2_gaft",
+    "label": "ISCC-P2",
+    "metric": "delay_s",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "values": [
+      824.6606900540769,
+      530.83003405408,
+      383.9147060540845,
+      310.457042054078,
+      273.72821005408025
+    ],
+    "first": 824.6606900540769,
+    "last": 273.72821005408025,
+    "endpoint_change_percent": -66.80717131840848,
+    "span_percent": 201.26989464883778,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "downlink",
+    "dataset": "AirScape",
+    "method": "iscc_p2_gaft",
+    "label": "ISCC-P2",
+    "metric": "mission_delay_s",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "values": [
+      1889.4687437834332,
+      1595.6380877834363,
+      1448.7227597834408,
+      1375.2650957834344,
+      1338.5362637834364
+    ],
+    "first": 1889.4687437834332,
+    "last": 1338.5362637834364,
+    "endpoint_change_percent": -29.158062646583982,
+    "span_percent": 41.159324174211,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "downlink",
+    "dataset": "AirScape",
+    "method": "uav_afl_ota_gaft",
+    "label": "AFL-OTA",
+    "metric": "total_energy_j",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "values": [
+      996523.0412960144,
+      500885.2931744257,
+      253066.41911362912,
+      129156.98208322897,
+      67202.2635680196
+    ],
+    "first": 996523.0412960144,
+    "last": 67202.2635680196,
+    "endpoint_change_percent": -93.25632616777023,
+    "span_percent": 1382.8712432987788,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "downlink",
+    "dataset": "AirScape",
+    "method": "uav_afl_ota_gaft",
+    "label": "AFL-OTA",
+    "metric": "delay_s",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "values": [
+      590.76722830999,
+      296.9365723099967,
+      150.02124430999868,
+      76.5635803099986,
+      39.83474830999303
+    ],
+    "first": 590.76722830999,
+    "last": 39.83474830999303,
+    "endpoint_change_percent": -93.25711610240323,
+    "span_percent": 1383.0449629370164,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "downlink",
+    "dataset": "AirScape",
+    "method": "uav_afl_ota_gaft",
+    "label": "AFL-OTA",
+    "metric": "mission_delay_s",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "values": [
+      1655.5752820393463,
+      1361.7446260393529,
+      1214.8292980393549,
+      1141.3716340393548,
+      1104.6428020393494
+    ],
+    "first": 1655.5752820393463,
+    "last": 1104.6428020393494,
+    "endpoint_change_percent": -33.277404294255675,
+    "span_percent": 49.87426514551912,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "downlink",
+    "dataset": "AirScape",
+    "method": "f_salun",
+    "label": "F-SalUn",
+    "metric": "total_energy_j",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "values": [
+      1392763.4472352848,
+      897125.6991136891,
+      649306.8250528966,
+      525397.3880224859,
+      463442.66950728954
+    ],
+    "first": 1392763.4472352848,
+    "last": 463442.66950728954,
+    "endpoint_change_percent": -66.72495459101472,
+    "span_percent": 200.52551024617685,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "downlink",
+    "dataset": "AirScape",
+    "method": "f_salun",
+    "label": "F-SalUn",
+    "metric": "delay_s",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "values": [
+      824.6618825436568,
+      530.8312265436593,
+      383.91589854366384,
+      310.45823454365745,
+      273.7294025436596
+    ],
+    "first": 824.6618825436568,
+    "last": 273.7294025436596,
+    "endpoint_change_percent": -66.80707471293017,
+    "span_percent": 201.26901782577923,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "downlink",
+    "dataset": "AirScape",
+    "method": "f_salun",
+    "label": "F-SalUn",
+    "metric": "mission_delay_s",
+    "x": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "values": [
+      1889.469936273013,
+      1595.6392802730154,
+      1448.7239522730201,
+      1375.2662882730137,
+      1338.5374562730158
+    ],
+    "first": 1889.469936273013,
+    "last": 1338.5374562730158,
+    "endpoint_change_percent": -29.158044244234638,
+    "span_percent": 41.159287505782416,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "request_bursts",
+    "dataset": "CapERA",
+    "method": "adaptive_retrieval_fu",
+    "label": "Proposed",
+    "metric": "total_energy_j",
+    "x": [
+      1,
+      3,
+      5,
+      9,
+      15
+    ],
+    "values": [
+      207071.48165093217,
+      205024.3670480785,
+      204450.56402545693,
+      204764.467797969,
+      204795.6724181182
+    ],
+    "first": 207071.48165093217,
+    "last": 204795.6724181182,
+    "endpoint_change_percent": -1.0990452256725458,
+    "span_percent": 1.2819322059433924,
+    "direction": "nonmonotonic"
+  },
+  {
+    "axis": "request_bursts",
+    "dataset": "CapERA",
+    "method": "adaptive_retrieval_fu",
+    "label": "Proposed",
+    "metric": "delay_s",
+    "x": [
+      1,
+      3,
+      5,
+      9,
+      15
+    ],
+    "values": [
+      122.7561183920001,
+      121.54370708000104,
+      121.20416648000125,
+      121.39032429333517,
+      121.40895453333529
+    ],
+    "first": 122.7561183920001,
+    "last": 121.40895453333529,
+    "endpoint_change_percent": -1.0974311311823026,
+    "span_percent": 1.2804443585319625,
+    "direction": "nonmonotonic"
+  },
+  {
+    "axis": "request_bursts",
+    "dataset": "CapERA",
+    "method": "adaptive_retrieval_fu",
+    "label": "Proposed",
+    "metric": "mission_delay_s",
+    "x": [
+      1,
+      3,
+      5,
+      9,
+      15
+    ],
+    "values": [
+      1187.5641721213565,
+      1186.3517608093573,
+      1186.0122202093576,
+      1186.1983780226915,
+      1186.2170082626917
+    ],
+    "first": 1187.5641721213565,
+    "last": 1186.2170082626917,
+    "endpoint_change_percent": -0.11343924735101041,
+    "span_percent": 0.1308546308000924,
+    "direction": "nonmonotonic"
+  },
+  {
+    "axis": "request_bursts",
+    "dataset": "CapERA",
+    "method": "iscc_p2_gaft",
+    "label": "ISCC-P2",
+    "metric": "total_energy_j",
+    "x": [
+      1,
+      3,
+      5,
+      9,
+      15
+    ],
+    "values": [
+      889770.3236887864,
+      693594.7243645046,
+      649962.3177948238,
+      604153.7651353334,
+      581630.1126901415
+    ],
+    "first": 889770.3236887864,
+    "last": 581630.1126901415,
+    "endpoint_change_percent": -34.63143271863297,
+    "span_percent": 52.97872381012774,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "request_bursts",
+    "dataset": "CapERA",
+    "method": "iscc_p2_gaft",
+    "label": "ISCC-P2",
+    "metric": "delay_s",
+    "x": [
+      1,
+      3,
+      5,
+      9,
+      15
+    ],
+    "values": [
+      526.513556905446,
+      410.1897898292051,
+      384.3037388367693,
+      357.173831694015,
+      343.83409414472374
+    ],
+    "first": 526.513556905446,
+    "last": 343.83409414472374,
+    "endpoint_change_percent": -34.69606059802345,
+    "span_percent": 53.13011881940663,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "request_bursts",
+    "dataset": "CapERA",
+    "method": "iscc_p2_gaft",
+    "label": "ISCC-P2",
+    "metric": "mission_delay_s",
+    "x": [
+      1,
+      3,
+      5,
+      9,
+      15
+    ],
+    "values": [
+      1591.3216106348023,
+      1474.9978435585615,
+      1449.1117925661256,
+      1421.9818854233713,
+      1408.64214787408
+    ],
+    "first": 1591.3216106348023,
+    "last": 1408.64214787408,
+    "endpoint_change_percent": -11.479732414860422,
+    "span_percent": 12.968479115609433,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "request_bursts",
+    "dataset": "CapERA",
+    "method": "uav_afl_ota_gaft",
+    "label": "AFL-OTA",
+    "metric": "total_energy_j",
+    "x": [
+      1,
+      3,
+      5,
+      9,
+      15
+    ],
+    "values": [
+      475173.6598504188,
+      288349.2398465735,
+      252882.42038749642,
+      229805.80128735324,
+      218411.824584896
+    ],
+    "first": 475173.6598504188,
+    "last": 218411.824584896,
+    "endpoint_change_percent": -54.03536790030608,
+    "span_percent": 117.55857804563155,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "request_bursts",
+    "dataset": "CapERA",
+    "method": "uav_afl_ota_gaft",
+    "label": "AFL-OTA",
+    "metric": "delay_s",
+    "x": [
+      1,
+      3,
+      5,
+      9,
+      15
+    ],
+    "values": [
+      281.69029005833613,
+      170.93771937499827,
+      149.912405113332,
+      136.23216494999804,
+      129.47750207333115
+    ],
+    "first": 281.69029005833613,
+    "last": 129.47750207333115,
+    "endpoint_change_percent": -54.03551111168324,
+    "span_percent": 117.55925589203709,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "request_bursts",
+    "dataset": "CapERA",
+    "method": "uav_afl_ota_gaft",
+    "label": "AFL-OTA",
+    "metric": "mission_delay_s",
+    "x": [
+      1,
+      3,
+      5,
+      9,
+      15
+    ],
+    "values": [
+      1346.4983437876924,
+      1235.7457731043546,
+      1214.7204588426885,
+      1201.0402186793544,
+      1194.2855558026874
+    ],
+    "first": 1346.4983437876924,
+    "last": 1194.2855558026874,
+    "endpoint_change_percent": -11.304342755954034,
+    "span_percent": 12.74509159433832,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "request_bursts",
+    "dataset": "CapERA",
+    "method": "f_salun",
+    "label": "F-SalUn",
+    "metric": "total_energy_j",
+    "x": [
+      1,
+      3,
+      5,
+      9,
+      15
+    ],
+    "values": [
+      889755.6552752757,
+      693590.5427504606,
+      649959.7513121375,
+      604151.1997627872,
+      581627.5834054651
+    ],
+    "first": 889755.6552752757,
+    "last": 581627.5834054651,
+    "endpoint_change_percent": -34.63063932698252,
+    "span_percent": 52.976867098651304,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "request_bursts",
+    "dataset": "CapERA",
+    "method": "f_salun",
+    "label": "F-SalUn",
+    "metric": "delay_s",
+    "x": [
+      1,
+      3,
+      5,
+      9,
+      15
+    ],
+    "values": [
+      526.5048787829447,
+      410.1873364982254,
+      384.3022440352411,
+      357.1723374877545,
+      343.83262135310804
+    ],
+    "first": 526.5048787829447,
+    "last": 343.83262135310804,
+    "endpoint_change_percent": -34.695263955026824,
+    "span_percent": 53.128250807312604,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "request_bursts",
+    "dataset": "CapERA",
+    "method": "f_salun",
+    "label": "F-SalUn",
+    "metric": "mission_delay_s",
+    "x": [
+      1,
+      3,
+      5,
+      9,
+      15
+    ],
+    "values": [
+      1591.312932512301,
+      1474.9953902275818,
+      1449.1102977645974,
+      1421.9803912171108,
+      1408.6406750824644
+    ],
+    "first": 1591.312932512301,
+    "last": 1408.6406750824644,
+    "endpoint_change_percent": -11.479342227266443,
+    "span_percent": 12.967981165185538,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "request_bursts",
+    "dataset": "AirScape",
+    "method": "adaptive_retrieval_fu",
+    "label": "Proposed",
+    "metric": "total_energy_j",
+    "x": [
+      1,
+      3,
+      5,
+      9,
+      15
+    ],
+    "values": [
+      207361.97683267386,
+      205113.30267868825,
+      204751.43727241087,
+      204408.16132889365,
+      204578.19803419325
+    ],
+    "first": 207361.97683267386,
+    "last": 204578.19803419325,
+    "endpoint_change_percent": -1.3424731192290484,
+    "span_percent": 1.4450575185339654,
+    "direction": "nonmonotonic"
+  },
+  {
+    "axis": "request_bursts",
+    "dataset": "AirScape",
+    "method": "adaptive_retrieval_fu",
+    "label": "Proposed",
+    "metric": "delay_s",
+    "x": [
+      1,
+      3,
+      5,
+      9,
+      15
+    ],
+    "values": [
+      122.92853259200028,
+      121.59669138666766,
+      121.38263922666829,
+      121.17934305333546,
+      121.28023752000198
+    ],
+    "first": 122.92853259200028,
+    "last": 121.28023752000198,
+    "endpoint_change_percent": -1.3408563799170992,
+    "span_percent": 1.4434717127447483,
+    "direction": "nonmonotonic"
+  },
+  {
+    "axis": "request_bursts",
+    "dataset": "AirScape",
+    "method": "adaptive_retrieval_fu",
+    "label": "Proposed",
+    "metric": "mission_delay_s",
+    "x": [
+      1,
+      3,
+      5,
+      9,
+      15
+    ],
+    "values": [
+      1187.7365863213565,
+      1186.404745116024,
+      1186.1906929560246,
+      1185.9873967826916,
+      1186.0882912493582
+    ],
+    "first": 1187.7365863213565,
+    "last": 1186.0882912493582,
+    "endpoint_change_percent": -0.13877614708353025,
+    "span_percent": 0.1474880376815202,
+    "direction": "nonmonotonic"
+  },
+  {
+    "axis": "request_bursts",
+    "dataset": "AirScape",
+    "method": "iscc_p2_gaft",
+    "label": "ISCC-P2",
+    "metric": "total_energy_j",
+    "x": [
+      1,
+      3,
+      5,
+      9,
+      15
+    ],
+    "values": [
+      889752.7996922928,
+      693590.0188237354,
+      649304.7817180118,
+      604150.8866899097,
+      581627.327209459
+    ],
+    "first": 889752.7996922928,
+    "last": 581627.327209459,
+    "endpoint_change_percent": -34.63045832386189,
+    "span_percent": 52.97644351773552,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "request_bursts",
+    "dataset": "AirScape",
+    "method": "iscc_p2_gaft",
+    "label": "ISCC-P2",
+    "metric": "delay_s",
+    "x": [
+      1,
+      3,
+      5,
+      9,
+      15
+    ],
+    "values": [
+      526.5031893637776,
+      410.18703116006526,
+      383.9147060540845,
+      357.17215721778905,
+      343.83247465093075
+    ],
+    "first": 526.5031893637776,
+    "last": 343.83247465093075,
+    "endpoint_change_percent": -34.69508227169236,
+    "span_percent": 53.127824792669664,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "request_bursts",
+    "dataset": "AirScape",
+    "method": "iscc_p2_gaft",
+    "label": "ISCC-P2",
+    "metric": "mission_delay_s",
+    "x": [
+      1,
+      3,
+      5,
+      9,
+      15
+    ],
+    "values": [
+      1591.311243093134,
+      1474.9950848894216,
+      1448.7227597834408,
+      1421.9802109471455,
+      1408.6405283802872
+    ],
+    "first": 1591.311243093134,
+    "last": 1408.6405283802872,
+    "endpoint_change_percent": -11.47925746805999,
+    "span_percent": 12.96787299758364,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "request_bursts",
+    "dataset": "AirScape",
+    "method": "uav_afl_ota_gaft",
+    "label": "AFL-OTA",
+    "metric": "total_energy_j",
+    "x": [
+      1,
+      3,
+      5,
+      9,
+      15
+    ],
+    "values": [
+      475778.5453107177,
+      288945.01898728614,
+      253066.41911362912,
+      230041.2733695213,
+      218699.23666047092
+    ],
+    "first": 475778.5453107177,
+    "last": 218699.23666047092,
+    "endpoint_change_percent": -54.03339666826621,
+    "span_percent": 117.54924826251711,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "request_bursts",
+    "dataset": "AirScape",
+    "method": "uav_afl_ota_gaft",
+    "label": "AFL-OTA",
+    "metric": "delay_s",
+    "x": [
+      1,
+      3,
+      5,
+      9,
+      15
+    ],
+    "values": [
+      282.04856251666695,
+      171.2905896833322,
+      150.02124430999868,
+      136.37156219166525,
+      129.64786318999853
+    ],
+    "first": 282.04856251666695,
+    "last": 129.64786318999853,
+    "endpoint_change_percent": -54.03349620605235,
+    "span_percent": 117.54971935274065,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "request_bursts",
+    "dataset": "AirScape",
+    "method": "uav_afl_ota_gaft",
+    "label": "AFL-OTA",
+    "metric": "mission_delay_s",
+    "x": [
+      1,
+      3,
+      5,
+      9,
+      15
+    ],
+    "values": [
+      1346.8566162460231,
+      1236.0986434126885,
+      1214.8292980393549,
+      1201.1796159210217,
+      1194.4559169193549
+    ],
+    "first": 1346.8566162460231,
+    "last": 1194.4559169193549,
+    "endpoint_change_percent": -11.315287573182175,
+    "span_percent": 12.759005767222288,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "request_bursts",
+    "dataset": "AirScape",
+    "method": "f_salun",
+    "label": "F-SalUn",
+    "metric": "total_energy_j",
+    "x": [
+      1,
+      3,
+      5,
+      9,
+      15
+    ],
+    "values": [
+      889763.3490453587,
+      693593.3537888649,
+      649306.8250528966,
+      604152.9226829488,
+      581629.3782031114
+    ],
+    "first": 889763.3490453587,
+    "last": 581629.3782031114,
+    "endpoint_change_percent": -34.63100285855213,
+    "span_percent": 52.97771783712128,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "request_bursts",
+    "dataset": "AirScape",
+    "method": "f_salun",
+    "label": "F-SalUn",
+    "metric": "delay_s",
+    "x": [
+      1,
+      3,
+      5,
+      9,
+      15
+    ],
+    "values": [
+      526.5094305689458,
+      410.18899029099384,
+      383.91589854366384,
+      357.1733452850575,
+      343.83367167217193
+    ],
+    "first": 526.5094305689458,
+    "last": 343.83367167217193,
+    "endpoint_change_percent": -34.69562904113125,
+    "span_percent": 53.12910687553196,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "request_bursts",
+    "dataset": "AirScape",
+    "method": "f_salun",
+    "label": "F-SalUn",
+    "metric": "mission_delay_s",
+    "x": [
+      1,
+      3,
+      5,
+      9,
+      15
+    ],
+    "values": [
+      1591.3174842983021,
+      1474.9970440203501,
+      1448.7239522730201,
+      1421.981399014414,
+      1408.6417254015282
+    ],
+    "first": 1591.3174842983021,
+    "last": 1408.6417254015282,
+    "endpoint_change_percent": -11.479529427612967,
+    "span_percent": 12.968220066369462,
+    "direction": "decreasing"
+  },
+  {
+    "axis": "fl_rounds",
+    "dataset": "CapERA",
+    "method": "adaptive_retrieval_fu",
+    "label": "Proposed",
+    "metric": "total_energy_j",
+    "x": [
+      100,
+      125,
+      150,
+      175,
+      200
+    ],
+    "values": [
+      91766.28004596892,
+      120153.43081005897,
+      148713.3769491556,
+      177135.15806578854,
+      204450.56402545693
+    ],
+    "first": 91766.28004596892,
+    "last": 204450.56402545693,
+    "endpoint_change_percent": 122.79486966567737,
+    "span_percent": 122.79486966567737,
+    "direction": "increasing"
+  },
+  {
+    "axis": "fl_rounds",
+    "dataset": "CapERA",
+    "method": "adaptive_retrieval_fu",
+    "label": "Proposed",
+    "metric": "delay_s",
+    "x": [
+      100,
+      125,
+      150,
+      175,
+      200
+    ],
+    "values": [
+      54.40096648000015,
+      71.22989448000041,
+      88.16122248000076,
+      105.01063048000104,
+      121.20416648000125
+    ],
+    "first": 54.40096648000015,
+    "last": 121.20416648000125,
+    "endpoint_change_percent": 122.79781835229065,
+    "span_percent": 122.79781835229065,
+    "direction": "increasing"
+  },
+  {
+    "axis": "fl_rounds",
+    "dataset": "CapERA",
+    "method": "adaptive_retrieval_fu",
+    "label": "Proposed",
+    "metric": "mission_delay_s",
+    "x": [
+      100,
+      125,
+      150,
+      175,
+      200
+    ],
+    "values": [
+      1119.2090202093564,
+      1136.0379482093567,
+      1152.969276209357,
+      1169.8186842093573,
+      1186.0122202093576
+    ],
+    "first": 1119.2090202093564,
+    "last": 1186.0122202093576,
+    "endpoint_change_percent": 5.968786776531254,
+    "span_percent": 5.968786776531254,
+    "direction": "increasing"
+  },
+  {
+    "axis": "fl_rounds",
+    "dataset": "CapERA",
+    "method": "iscc_p2_gaft",
+    "label": "ISCC-P2",
+    "metric": "total_energy_j",
+    "x": [
+      100,
+      125,
+      150,
+      175,
+      200
+    ],
+    "values": [
+      347181.188304446,
+      423643.5829943802,
+      500105.97768431663,
+      576568.3723742533,
+      649962.3177948238
+    ],
+    "first": 347181.188304446,
+    "last": 649962.3177948238,
+    "endpoint_change_percent": 87.21127171926912,
+    "span_percent": 87.21127171926912,
+    "direction": "increasing"
+  },
+  {
+    "axis": "fl_rounds",
+    "dataset": "CapERA",
+    "method": "iscc_p2_gaft",
+    "label": "ISCC-P2",
+    "metric": "delay_s",
+    "x": [
+      100,
+      125,
+      150,
+      175,
+      200
+    ],
+    "values": [
+      205.3334524099547,
+      250.52945294090455,
+      295.72545347185576,
+      340.9214540028071,
+      384.3037388367693
+    ],
+    "first": 205.3334524099547,
+    "last": 384.3037388367693,
+    "endpoint_change_percent": 87.16080323312092,
+    "span_percent": 87.16080323312092,
+    "direction": "increasing"
+  },
+  {
+    "axis": "fl_rounds",
+    "dataset": "CapERA",
+    "method": "iscc_p2_gaft",
+    "label": "ISCC-P2",
+    "metric": "mission_delay_s",
+    "x": [
+      100,
+      125,
+      150,
+      175,
+      200
+    ],
+    "values": [
+      1270.1415061393109,
+      1315.3375066702608,
+      1360.533507201212,
+      1405.7295077321633,
+      1449.1117925661256
+    ],
+    "first": 1270.1415061393109,
+    "last": 1449.1117925661256,
+    "endpoint_change_percent": 14.090578534891618,
+    "span_percent": 14.090578534891618,
+    "direction": "increasing"
+  },
+  {
+    "axis": "fl_rounds",
+    "dataset": "CapERA",
+    "method": "uav_afl_ota_gaft",
+    "label": "AFL-OTA",
+    "metric": "total_energy_j",
+    "x": [
+      100,
+      125,
+      150,
+      175,
+      200
+    ],
+    "values": [
+      141506.9060904811,
+      169566.85606828096,
+      197713.25019332848,
+      225842.2787260221,
+      252882.42038749642
+    ],
+    "first": 141506.9060904811,
+    "last": 252882.42038749642,
+    "endpoint_change_percent": 78.7067694249499,
+    "span_percent": 78.7067694249499,
+    "direction": "increasing"
+  },
+  {
+    "axis": "fl_rounds",
+    "dataset": "CapERA",
+    "method": "uav_afl_ota_gaft",
+    "label": "AFL-OTA",
+    "metric": "delay_s",
+    "x": [
+      100,
+      125,
+      150,
+      175,
+      200
+    ],
+    "values": [
+      83.88744511333297,
+      100.5218131133326,
+      117.20738111333236,
+      133.88262719333207,
+      149.912405113332
+    ],
+    "first": 83.88744511333297,
+    "last": 149.912405113332,
+    "endpoint_change_percent": 78.7066049166219,
+    "span_percent": 78.7066049166219,
+    "direction": "increasing"
+  },
+  {
+    "axis": "fl_rounds",
+    "dataset": "CapERA",
+    "method": "uav_afl_ota_gaft",
+    "label": "AFL-OTA",
+    "metric": "mission_delay_s",
+    "x": [
+      100,
+      125,
+      150,
+      175,
+      200
+    ],
+    "values": [
+      1148.6954988426892,
+      1165.329866842689,
+      1182.0154348426886,
+      1198.6906809226884,
+      1214.7204588426885
+    ],
+    "first": 1148.6954988426892,
+    "last": 1214.7204588426885,
+    "endpoint_change_percent": 5.747820903496126,
+    "span_percent": 5.747820903496126,
+    "direction": "increasing"
+  },
+  {
+    "axis": "fl_rounds",
+    "dataset": "CapERA",
+    "method": "f_salun",
+    "label": "F-SalUn",
+    "metric": "total_energy_j",
+    "x": [
+      100,
+      125,
+      150,
+      175,
+      200
+    ],
+    "values": [
+      347178.62182175927,
+      423641.0165116942,
+      500103.4112016307,
+      576565.8058915669,
+      649959.7513121375
+    ],
+    "first": 347178.62182175927,
+    "last": 649959.7513121375,
+    "endpoint_change_percent": 87.21191641973431,
+    "span_percent": 87.21191641973431,
+    "direction": "increasing"
+  },
+  {
+    "axis": "fl_rounds",
+    "dataset": "CapERA",
+    "method": "f_salun",
+    "label": "F-SalUn",
+    "metric": "delay_s",
+    "x": [
+      100,
+      125,
+      150,
+      175,
+      200
+    ],
+    "values": [
+      205.33195760842625,
+      250.52795813937655,
+      295.72395867032776,
+      340.91995920127886,
+      384.3022440352411
+    ],
+    "first": 205.33195760842625,
+    "last": 384.3022440352411,
+    "endpoint_change_percent": 87.16143775734906,
+    "span_percent": 87.16143775734906,
+    "direction": "increasing"
+  },
+  {
+    "axis": "fl_rounds",
+    "dataset": "CapERA",
+    "method": "f_salun",
+    "label": "F-SalUn",
+    "metric": "mission_delay_s",
+    "x": [
+      100,
+      125,
+      150,
+      175,
+      200
+    ],
+    "values": [
+      1270.1400113377827,
+      1315.3360118687328,
+      1360.532012399684,
+      1405.7280129306353,
+      1449.1102977645974
+    ],
+    "first": 1270.1400113377827,
+    "last": 1449.1102977645974,
+    "endpoint_change_percent": 14.090595117802263,
+    "span_percent": 14.090595117802263,
+    "direction": "increasing"
+  },
+  {
+    "axis": "fl_rounds",
+    "dataset": "AirScape",
+    "method": "adaptive_retrieval_fu",
+    "label": "Proposed",
+    "metric": "total_energy_j",
+    "x": [
+      100,
+      125,
+      150,
+      175,
+      200
+    ],
+    "values": [
+      93035.16140605662,
+      120281.46572542842,
+      148910.4795467093,
+      177366.91664790653,
+      204751.43727241087
+    ],
+    "first": 93035.16140605662,
+    "last": 204751.43727241087,
+    "endpoint_change_percent": 120.07962815129964,
+    "span_percent": 120.07962815129964,
+    "direction": "increasing"
+  },
+  {
+    "axis": "fl_rounds",
+    "dataset": "AirScape",
+    "method": "adaptive_retrieval_fu",
+    "label": "Proposed",
+    "metric": "delay_s",
+    "x": [
+      100,
+      125,
+      150,
+      175,
+      200
+    ],
+    "values": [
+      55.1533912266672,
+      71.30596722666746,
+      88.27825522666774,
+      105.14814322666797,
+      121.38263922666829
+    ],
+    "first": 55.1533912266672,
+    "last": 121.38263922666829,
+    "endpoint_change_percent": 120.08191432475073,
+    "span_percent": 120.08191432475073,
+    "direction": "increasing"
+  },
+  {
+    "axis": "fl_rounds",
+    "dataset": "AirScape",
+    "method": "adaptive_retrieval_fu",
+    "label": "Proposed",
+    "metric": "mission_delay_s",
+    "x": [
+      100,
+      125,
+      150,
+      175,
+      200
+    ],
+    "values": [
+      1119.9614449560236,
+      1136.1140209560238,
+      1153.086308956024,
+      1169.956196956024,
+      1186.1906929560246
+    ],
+    "first": 1119.9614449560236,
+    "last": 1186.1906929560246,
+    "endpoint_change_percent": 5.913529282483609,
+    "span_percent": 5.913529282483609,
+    "direction": "increasing"
+  },
+  {
+    "axis": "fl_rounds",
+    "dataset": "AirScape",
+    "method": "iscc_p2_gaft",
+    "label": "ISCC-P2",
+    "metric": "total_energy_j",
+    "x": [
+      100,
+      125,
+      150,
+      175,
+      200
+    ],
+    "values": [
+      346523.6522276329,
+      422986.0469175682,
+      499448.4416075051,
+      575910.8362974414,
+      649304.7817180118
+    ],
+    "first": 346523.6522276329,
+    "last": 649304.7817180118,
+    "endpoint_change_percent": 87.37675698150633,
+    "span_percent": 87.37675698150633,
+    "direction": "increasing"
+  },
+  {
+    "axis": "fl_rounds",
+    "dataset": "AirScape",
+    "method": "iscc_p2_gaft",
+    "label": "ISCC-P2",
+    "metric": "delay_s",
+    "x": [
+      100,
+      125,
+      150,
+      175,
+      200
+    ],
+    "values": [
+      204.9444196272692,
+      250.14042015821974,
+      295.3364206891712,
+      340.5324212201223,
+      383.9147060540845
+    ],
+    "first": 204.9444196272692,
+    "last": 383.9147060540845,
+    "endpoint_change_percent": 87.32625496820413,
+    "span_percent": 87.32625496820413,
+    "direction": "increasing"
+  },
+  {
+    "axis": "fl_rounds",
+    "dataset": "AirScape",
+    "method": "iscc_p2_gaft",
+    "label": "ISCC-P2",
+    "metric": "mission_delay_s",
+    "x": [
+      100,
+      125,
+      150,
+      175,
+      200
+    ],
+    "values": [
+      1269.7524733566256,
+      1314.948473887576,
+      1360.1444744185276,
+      1405.3404749494784,
+      1448.7227597834408
+    ],
+    "first": 1269.7524733566256,
+    "last": 1448.7227597834408,
+    "endpoint_change_percent": 14.094895673146613,
+    "span_percent": 14.094895673146613,
+    "direction": "increasing"
+  },
+  {
+    "axis": "fl_rounds",
+    "dataset": "AirScape",
+    "method": "uav_afl_ota_gaft",
+    "label": "AFL-OTA",
+    "metric": "total_energy_j",
+    "x": [
+      100,
+      125,
+      150,
+      175,
+      200
+    ],
+    "values": [
+      141656.30016484577,
+      169768.15855944584,
+      198000.95507081773,
+      226320.0950312225,
+      253066.41911362912
+    ],
+    "first": 141656.30016484577,
+    "last": 253066.41911362912,
+    "endpoint_change_percent": 78.64819201061664,
+    "span_percent": 78.64819201061664,
+    "direction": "increasing"
+  },
+  {
+    "axis": "fl_rounds",
+    "dataset": "AirScape",
+    "method": "uav_afl_ota_gaft",
+    "label": "AFL-OTA",
+    "metric": "delay_s",
+    "x": [
+      100,
+      125,
+      150,
+      175,
+      200
+    ],
+    "values": [
+      83.97572238999955,
+      100.64089230999934,
+      117.37766030999921,
+      134.16562830999953,
+      150.02124430999868
+    ],
+    "first": 83.97572238999955,
+    "last": 150.02124430999868,
+    "endpoint_change_percent": 78.64835221454949,
+    "span_percent": 78.64835221454949,
+    "direction": "increasing"
+  },
+  {
+    "axis": "fl_rounds",
+    "dataset": "AirScape",
+    "method": "uav_afl_ota_gaft",
+    "label": "AFL-OTA",
+    "metric": "mission_delay_s",
+    "x": [
+      100,
+      125,
+      150,
+      175,
+      200
+    ],
+    "values": [
+      1148.783776119356,
+      1165.4489460393556,
+      1182.1857140393554,
+      1198.973682039356,
+      1214.8292980393549
+    ],
+    "first": 1148.783776119356,
+    "last": 1214.8292980393549,
+    "endpoint_change_percent": 5.749169103267082,
+    "span_percent": 5.749169103267082,
+    "direction": "increasing"
+  },
+  {
+    "axis": "fl_rounds",
+    "dataset": "AirScape",
+    "method": "f_salun",
+    "label": "F-SalUn",
+    "metric": "total_energy_j",
+    "x": [
+      100,
+      125,
+      150,
+      175,
+      200
+    ],
+    "values": [
+      346525.69556251663,
+      422988.09025245305,
+      499450.48494238994,
+      575912.8796323264,
+      649306.8250528966
+    ],
+    "first": 346525.69556251663,
+    "last": 649306.8250528966,
+    "endpoint_change_percent": 87.37624175282994,
+    "span_percent": 87.37624175282994,
+    "direction": "increasing"
+  },
+  {
+    "axis": "fl_rounds",
+    "dataset": "AirScape",
+    "method": "f_salun",
+    "label": "F-SalUn",
+    "metric": "delay_s",
+    "x": [
+      100,
+      125,
+      150,
+      175,
+      200
+    ],
+    "values": [
+      204.94561211684788,
+      250.1416126477991,
+      295.33761317875053,
+      340.53361370970174,
+      383.91589854366384
+    ],
+    "first": 204.94561211684788,
+    "last": 383.91589854366384,
+    "endpoint_change_percent": 87.3257468546229,
+    "span_percent": 87.3257468546229,
+    "direction": "increasing"
+  },
+  {
+    "axis": "fl_rounds",
+    "dataset": "AirScape",
+    "method": "f_salun",
+    "label": "F-SalUn",
+    "metric": "mission_delay_s",
+    "x": [
+      100,
+      125,
+      150,
+      175,
+      200
+    ],
+    "values": [
+      1269.753665846204,
+      1314.9496663771554,
+      1360.145666908107,
+      1405.341667439058,
+      1448.7239522730201
+    ],
+    "first": 1269.753665846204,
+    "last": 1448.7239522730201,
+    "endpoint_change_percent": 14.09488243592072,
+    "span_percent": 14.09488243592072,
+    "direction": "increasing"
+  },
+  {
+    "axis": "packet_loss",
+    "dataset": "CapERA",
+    "method": "adaptive_retrieval_fu",
+    "label": "Proposed",
+    "metric": "total_energy_j",
+    "x": [
+      0,
+      10,
+      20,
+      30,
+      40
+    ],
+    "values": [
+      204450.56402545693,
+      229896.25198705643,
+      268617.9510590559,
+      307339.65013105527,
+      362656.3630910563
+    ],
+    "first": 204450.56402545693,
+    "last": 362656.3630910563,
+    "endpoint_change_percent": 77.38095505860309,
+    "span_percent": 77.38095505860309,
+    "direction": "increasing"
+  },
+  {
+    "axis": "packet_loss",
+    "dataset": "CapERA",
+    "method": "adaptive_retrieval_fu",
+    "label": "Proposed",
+    "metric": "delay_s",
+    "x": [
+      0,
+      10,
+      20,
+      30,
+      40
+    ],
+    "values": [
+      121.20416648000125,
+      136.28922248000094,
+      159.24474248000064,
+      182.20026248000028,
+      214.99386248000087
+    ],
+    "first": 121.20416648000125,
+    "last": 214.99386248000087,
+    "endpoint_change_percent": 77.38157748518898,
+    "span_percent": 77.38157748518898,
+    "direction": "increasing"
+  },
+  {
+    "axis": "packet_loss",
+    "dataset": "CapERA",
+    "method": "adaptive_retrieval_fu",
+    "label": "Proposed",
+    "metric": "mission_delay_s",
+    "x": [
+      0,
+      10,
+      20,
+      30,
+      40
+    ],
+    "values": [
+      1186.0122202093576,
+      1201.0972762093572,
+      1224.052796209357,
+      1247.0083162093565,
+      1279.8019162093572
+    ],
+    "first": 1186.0122202093576,
+    "last": 1279.8019162093572,
+    "endpoint_change_percent": 7.907987321028087,
+    "span_percent": 7.907987321028087,
+    "direction": "increasing"
+  },
+  {
+    "axis": "packet_loss",
+    "dataset": "CapERA",
+    "method": "iscc_p2_gaft",
+    "label": "ISCC-P2",
+    "metric": "total_energy_j",
+    "x": [
+      0,
+      10,
+      20,
+      30,
+      40
+    ],
+    "values": [
+      649962.3177948238,
+      676514.3400156231,
+      722980.3789020223,
+      769446.4177884214,
+      839145.4761180211
+    ],
+    "first": 649962.3177948238,
+    "last": 839145.4761180211,
+    "endpoint_change_percent": 29.106788677388764,
+    "span_percent": 29.106788677388764,
+    "direction": "increasing"
+  },
+  {
+    "axis": "packet_loss",
+    "dataset": "CapERA",
+    "method": "iscc_p2_gaft",
+    "label": "ISCC-P2",
+    "metric": "delay_s",
+    "x": [
+      0,
+      10,
+      20,
+      30,
+      40
+    ],
+    "values": [
+      384.3037388367693,
+      400.04466683676884,
+      427.5912908367684,
+      455.13791483676783,
+      496.4578508367677
+    ],
+    "first": 384.3037388367693,
+    "last": 496.4578508367677,
+    "endpoint_change_percent": 29.183716072987576,
+    "span_percent": 29.183716072987576,
+    "direction": "increasing"
+  },
+  {
+    "axis": "packet_loss",
+    "dataset": "CapERA",
+    "method": "iscc_p2_gaft",
+    "label": "ISCC-P2",
+    "metric": "mission_delay_s",
+    "x": [
+      0,
+      10,
+      20,
+      30,
+      40
+    ],
+    "values": [
+      1449.1117925661256,
+      1464.852720566125,
+      1492.399344566125,
+      1519.945968566124,
+      1561.265904566124
+    ],
+    "first": 1449.1117925661256,
+    "last": 1561.265904566124,
+    "endpoint_change_percent": 7.739507233006004,
+    "span_percent": 7.739507233006004,
+    "direction": "increasing"
+  },
+  {
+    "axis": "packet_loss",
+    "dataset": "CapERA",
+    "method": "uav_afl_ota_gaft",
+    "label": "AFL-OTA",
+    "metric": "total_energy_j",
+    "x": [
+      0,
+      10,
+      20,
+      30,
+      40
+    ],
+    "values": [
+      252882.42038749642,
+      279434.4426082961,
+      325900.4814946943,
+      372366.52038109605,
+      442065.57871070004
+    ],
+    "first": 252882.42038749642,
+    "last": 442065.57871070004,
+    "endpoint_change_percent": 74.81071955627235,
+    "span_percent": 74.81071955627235,
+    "direction": "increasing"
+  },
+  {
+    "axis": "packet_loss",
+    "dataset": "CapERA",
+    "method": "uav_afl_ota_gaft",
+    "label": "AFL-OTA",
+    "metric": "delay_s",
+    "x": [
+      0,
+      10,
+      20,
+      30,
+      40
+    ],
+    "values": [
+      149.912405113332,
+      165.65333311333183,
+      193.19995711333075,
+      220.74658111333179,
+      262.06651711333416
+    ],
+    "first": 149.912405113332,
+    "last": 262.06651711333416,
+    "endpoint_change_percent": 74.81309629794477,
+    "span_percent": 74.81309629794477,
+    "direction": "increasing"
+  },
+  {
+    "axis": "packet_loss",
+    "dataset": "CapERA",
+    "method": "uav_afl_ota_gaft",
+    "label": "AFL-OTA",
+    "metric": "mission_delay_s",
+    "x": [
+      0,
+      10,
+      20,
+      30,
+      40
+    ],
+    "values": [
+      1214.7204588426885,
+      1230.4613868426882,
+      1258.008010842687,
+      1285.554634842688,
+      1326.8745708426904
+    ],
+    "first": 1214.7204588426885,
+    "last": 1326.8745708426904,
+    "endpoint_change_percent": 9.232915374361571,
+    "span_percent": 9.232915374361571,
+    "direction": "increasing"
+  },
+  {
+    "axis": "packet_loss",
+    "dataset": "CapERA",
+    "method": "f_salun",
+    "label": "F-SalUn",
+    "metric": "total_energy_j",
+    "x": [
+      0,
+      10,
+      20,
+      30,
+      40
+    ],
+    "values": [
+      649959.7513121375,
+      676511.7735329366,
+      722977.8124193358,
+      769443.851305735,
+      839142.9096353347
+    ],
+    "first": 649959.7513121375,
+    "last": 839142.9096353347,
+    "endpoint_change_percent": 29.106903610765844,
+    "span_percent": 29.106903610765844,
+    "direction": "increasing"
+  },
+  {
+    "axis": "packet_loss",
+    "dataset": "CapERA",
+    "method": "f_salun",
+    "label": "F-SalUn",
+    "metric": "delay_s",
+    "x": [
+      0,
+      10,
+      20,
+      30,
+      40
+    ],
+    "values": [
+      384.3022440352411,
+      400.0431720352406,
+      427.58979603524017,
+      455.1364200352396,
+      496.4563560352395
+    ],
+    "first": 384.3022440352411,
+    "last": 496.4563560352395,
+    "endpoint_change_percent": 29.18382958745194,
+    "span_percent": 29.18382958745194,
+    "direction": "increasing"
+  },
+  {
+    "axis": "packet_loss",
+    "dataset": "CapERA",
+    "method": "f_salun",
+    "label": "F-SalUn",
+    "metric": "mission_delay_s",
+    "x": [
+      0,
+      10,
+      20,
+      30,
+      40
+    ],
+    "values": [
+      1449.1102977645974,
+      1464.8512257645968,
+      1492.3978497645965,
+      1519.944473764596,
+      1561.264409764596
+    ],
+    "first": 1449.1102977645974,
+    "last": 1561.264409764596,
+    "endpoint_change_percent": 7.739515216544102,
+    "span_percent": 7.739515216544102,
+    "direction": "increasing"
+  },
+  {
+    "axis": "packet_loss",
+    "dataset": "AirScape",
+    "method": "adaptive_retrieval_fu",
+    "label": "Proposed",
+    "metric": "total_energy_j",
+    "x": [
+      0,
+      10,
+      20,
+      30,
+      40
+    ],
+    "values": [
+      204751.43727241087,
+      230197.12523401063,
+      268918.8243060099,
+      307640.5233780091,
+      362957.2363380098
+    ],
+    "first": 204751.43727241087,
+    "last": 362957.2363380098,
+    "endpoint_change_percent": 77.26724714274633,
+    "span_percent": 77.26724714274633,
+    "direction": "increasing"
+  },
+  {
+    "axis": "packet_loss",
+    "dataset": "AirScape",
+    "method": "adaptive_retrieval_fu",
+    "label": "Proposed",
+    "metric": "delay_s",
+    "x": [
+      0,
+      10,
+      20,
+      30,
+      40
+    ],
+    "values": [
+      121.38263922666829,
+      136.46769522666816,
+      159.4232152266677,
+      182.37873522666723,
+      215.17233522666766
+    ],
+    "first": 121.38263922666829,
+    "last": 215.17233522666766,
+    "endpoint_change_percent": 77.2678008960225,
+    "span_percent": 77.2678008960225,
+    "direction": "increasing"
+  },
+  {
+    "axis": "packet_loss",
+    "dataset": "AirScape",
+    "method": "adaptive_retrieval_fu",
+    "label": "Proposed",
+    "metric": "mission_delay_s",
+    "x": [
+      0,
+      10,
+      20,
+      30,
+      40
+    ],
+    "values": [
+      1186.1906929560246,
+      1201.2757489560245,
+      1224.231268956024,
+      1247.1867889560235,
+      1279.980388956024
+    ],
+    "first": 1186.1906929560246,
+    "last": 1279.980388956024,
+    "endpoint_change_percent": 7.9067974952891085,
+    "span_percent": 7.9067974952891085,
+    "direction": "increasing"
+  },
+  {
+    "axis": "packet_loss",
+    "dataset": "AirScape",
+    "method": "iscc_p2_gaft",
+    "label": "ISCC-P2",
+    "metric": "total_energy_j",
+    "x": [
+      0,
+      10,
+      20,
+      30,
+      40
+    ],
+    "values": [
+      649304.7817180118,
+      675856.8039388112,
+      722322.8428252103,
+      768788.8817116095,
+      838487.9400412092
+    ],
+    "first": 649304.7817180118,
+    "last": 838487.9400412092,
+    "endpoint_change_percent": 29.136264455443083,
+    "span_percent": 29.136264455443083,
+    "direction": "increasing"
+  },
+  {
+    "axis": "packet_loss",
+    "dataset": "AirScape",
+    "method": "iscc_p2_gaft",
+    "label": "ISCC-P2",
+    "metric": "delay_s",
+    "x": [
+      0,
+      10,
+      20,
+      30,
+      40
+    ],
+    "values": [
+      383.9147060540845,
+      399.6556340540841,
+      427.20225805408364,
+      454.7488820540831,
+      496.06881805408295
+    ],
+    "first": 383.9147060540845,
+    "last": 496.06881805408295,
+    "endpoint_change_percent": 29.213288845517326,
+    "span_percent": 29.213288845517326,
+    "direction": "increasing"
+  },
+  {
+    "axis": "packet_loss",
+    "dataset": "AirScape",
+    "method": "iscc_p2_gaft",
+    "label": "ISCC-P2",
+    "metric": "mission_delay_s",
+    "x": [
+      0,
+      10,
+      20,
+      30,
+      40
+    ],
+    "values": [
+      1448.7227597834408,
+      1464.4636877834403,
+      1492.01031178344,
+      1519.5569357834393,
+      1560.8768717834391
+    ],
+    "first": 1448.7227597834408,
+    "last": 1560.8768717834391,
+    "endpoint_change_percent": 7.741585561668374,
+    "span_percent": 7.741585561668374,
+    "direction": "increasing"
+  },
+  {
+    "axis": "packet_loss",
+    "dataset": "AirScape",
+    "method": "uav_afl_ota_gaft",
+    "label": "AFL-OTA",
+    "metric": "total_energy_j",
+    "x": [
+      0,
+      10,
+      20,
+      30,
+      40
+    ],
+    "values": [
+      253066.41911362912,
+      279618.441334429,
+      326084.4802208272,
+      372550.5191072286,
+      442249.5774368319
+    ],
+    "first": 253066.41911362912,
+    "last": 442249.5774368319,
+    "endpoint_change_percent": 74.75632641652777,
+    "span_percent": 74.75632641652777,
+    "direction": "increasing"
+  },
+  {
+    "axis": "packet_loss",
+    "dataset": "AirScape",
+    "method": "uav_afl_ota_gaft",
+    "label": "AFL-OTA",
+    "metric": "delay_s",
+    "x": [
+      0,
+      10,
+      20,
+      30,
+      40
+    ],
+    "values": [
+      150.02124430999868,
+      165.76217230999862,
+      193.30879630999755,
+      220.85542030999835,
+      262.1753563100003
+    ],
+    "first": 150.02124430999868,
+    "last": 262.1753563100003,
+    "endpoint_change_percent": 74.75882000301924,
+    "span_percent": 74.75882000301924,
+    "direction": "increasing"
+  },
+  {
+    "axis": "packet_loss",
+    "dataset": "AirScape",
+    "method": "uav_afl_ota_gaft",
+    "label": "AFL-OTA",
+    "metric": "mission_delay_s",
+    "x": [
+      0,
+      10,
+      20,
+      30,
+      40
+    ],
+    "values": [
+      1214.8292980393549,
+      1230.570226039355,
+      1258.1168500393537,
+      1285.6634740393547,
+      1326.9834100393566
+    ],
+    "first": 1214.8292980393549,
+    "last": 1326.9834100393566,
+    "endpoint_change_percent": 9.232088177409793,
+    "span_percent": 9.232088177409793,
+    "direction": "increasing"
+  },
+  {
+    "axis": "packet_loss",
+    "dataset": "AirScape",
+    "method": "f_salun",
+    "label": "F-SalUn",
+    "metric": "total_energy_j",
+    "x": [
+      0,
+      10,
+      20,
+      30,
+      40
+    ],
+    "values": [
+      649306.8250528966,
+      675858.847273696,
+      722324.8861600952,
+      768790.9250464942,
+      838489.983376094
+    ],
+    "first": 649306.8250528966,
+    "last": 838489.983376094,
+    "endpoint_change_percent": 29.136172765130787,
+    "span_percent": 29.136172765130787,
+    "direction": "increasing"
+  },
+  {
+    "axis": "packet_loss",
+    "dataset": "AirScape",
+    "method": "f_salun",
+    "label": "F-SalUn",
+    "metric": "delay_s",
+    "x": [
+      0,
+      10,
+      20,
+      30,
+      40
+    ],
+    "values": [
+      383.91589854366384,
+      399.6568265436634,
+      427.20345054366294,
+      454.7500745436624,
+      496.07001054366225
+    ],
+    "first": 383.91589854366384,
+    "last": 496.07001054366225,
+    "endpoint_change_percent": 29.21319810548111,
+    "span_percent": 29.21319810548111,
+    "direction": "increasing"
+  },
+  {
+    "axis": "packet_loss",
+    "dataset": "AirScape",
+    "method": "f_salun",
+    "label": "F-SalUn",
+    "metric": "mission_delay_s",
+    "x": [
+      0,
+      10,
+      20,
+      30,
+      40
+    ],
+    "values": [
+      1448.7239522730201,
+      1464.4648802730196,
+      1492.0115042730192,
+      1519.5581282730186,
+      1560.8780642730185
+    ],
+    "first": 1448.7239522730201,
+    "last": 1560.8780642730185,
+    "endpoint_change_percent": 7.741579189329384,
+    "span_percent": 7.741579189329384,
+    "direction": "increasing"
+  }
+]

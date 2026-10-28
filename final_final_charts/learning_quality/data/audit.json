@@ -1,0 +1,131 @@
+{
+  "passed": true,
+  "arms": 20,
+  "rows": [
+    {
+      "dataset": "CapERA",
+      "variant": "control",
+      "shared_inputs": true,
+      "causal_selection_calls": 0
+    },
+    {
+      "dataset": "CapERA",
+      "variant": "exact",
+      "shared_inputs": true,
+      "causal_selection_calls": 0
+    },
+    {
+      "dataset": "CapERA",
+      "variant": "equal",
+      "shared_inputs": true,
+      "causal_selection_calls": 0
+    },
+    {
+      "dataset": "CapERA",
+      "variant": "gaft",
+      "shared_inputs": true,
+      "causal_selection_calls": 0
+    },
+    {
+      "dataset": "CapERA",
+      "variant": "retain1",
+      "shared_inputs": true,
+      "causal_selection_calls": 0
+    },
+    {
+      "dataset": "CapERA",
+      "variant": "gate",
+      "shared_inputs": true,
+      "causal_selection_calls": 0
+    },
+    {
+      "dataset": "CapERA",
+      "variant": "select16",
+      "shared_inputs": true,
+      "causal_selection_calls": 1800
+    },
+    {
+      "dataset": "CapERA",
+      "variant": "gate_select16",
+      "shared_inputs": true,
+      "causal_selection_calls": 1800
+    },
+    {
+      "dataset": "CapERA",
+      "variant": "gate_select8",
+      "shared_inputs": true,
+      "causal_selection_calls": 1800
+    },
+    {
+      "dataset": "CapERA",
+      "variant": "salun",
+      "shared_inputs": true,
+      "causal_selection_calls": 0
+    },
+    {
+      "dataset": "AirScape",
+      "variant": "control",
+      "shared_inputs": true,
+      "causal_selection_calls": 0
+    },
+    {
+      "dataset": "AirScape",
+      "variant": "exact",
+      "shared_inputs": true,
+      "causal_selection_calls": 0
+    },
+    {
+      "dataset": "AirScape",
+      "variant": "equal",
+      "shared_inputs": true,
+      "causal_selection_calls": 0
+    },
+    {
+      "dataset": "AirScape",
+      "variant": "gaft",
+      "shared_inputs": true,
+      "causal_selection_calls": 0
+    },
+    {
+      "dataset": "AirScape",
+      "variant": "retain1",
+      "shared_inputs": true,
+      "causal_selection_calls": 0
+    },
+    {
+      "dataset": "AirScape",
+      "variant": "gate",
+      "shared_inputs": true,
+      "causal_selection_calls": 0
+    },
+    {
+      "dataset": "AirScape",
+      "variant": "select16",
+      "shared_inputs": true,
+      "causal_selection_calls": 1800
+    },
+    {
+      "dataset": "AirScape",
+      "variant": "gate_select16",
+      "shared_inputs": true,
+      "causal_selection_calls": 1800
+    },
+    {
+      "dataset": "AirScape",
+      "variant": "gate_select8",
+      "shared_inputs": true,
+      "causal_selection_calls": 1800
+    },
+    {
+      "dataset": "AirScape",
+      "variant": "salun",
+      "shared_inputs": true,
+      "causal_selection_calls": 0
+    }
+  ],
+  "checks": [
+    "Identical plans, requests, initial and reference checkpoints",
+    "Selection records contain only locally retained eligible samples at execution time",
+    "All declared FL selections executed and their extra operations charged"
+  ]
+}

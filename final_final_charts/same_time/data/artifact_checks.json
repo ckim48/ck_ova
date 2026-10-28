@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "figures": 4,
+  "rows": 60,
+  "series": 40,
+  "checks": [
+    "Plotted metrics match their measured tables",
+    "Endpoint ticks are regular and panel precision agrees",
+    "All registered figure and provenance hashes match",
+    "No smoothed, rescaled or invented quality trajectories"
+  ]
+}

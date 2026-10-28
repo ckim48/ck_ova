@@ -1,0 +1,1350 @@
+{
+  "passed": true,
+  "arms": 168,
+  "rows": [
+    {
+      "case": "baseline",
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/proposed_resource_sweep_v1_20261028/cases/baseline/capera_seed0/adaptive_retrieval_fu"
+    },
+    {
+      "case": "baseline",
+      "dataset": "CapERA",
+      "method": "iscc_p2_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/paper_uav_benchmarks_v1_20261028/cases/baseline/capera_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "baseline",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/paper_uav_benchmarks_v1_20261028/cases/baseline/capera_seed0/uav_afl_ota_gaft"
+    },
+    {
+      "case": "baseline",
+      "dataset": "CapERA",
+      "method": "f_salun",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/learning_quality_v3_20261028/salun/cases/baseline/capera_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "baseline",
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/proposed_resource_sweep_v1_20261028/cases/baseline/airscape_seed0/adaptive_retrieval_fu"
+    },
+    {
+      "case": "baseline",
+      "dataset": "AirScape",
+      "method": "iscc_p2_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/paper_uav_benchmarks_v1_20261028/cases/baseline/airscape_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "baseline",
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/paper_uav_benchmarks_v1_20261028/cases/baseline/airscape_seed0/uav_afl_ota_gaft"
+    },
+    {
+      "case": "baseline",
+      "dataset": "AirScape",
+      "method": "f_salun",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/learning_quality_v3_20261028/salun/cases/baseline/airscape_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "bandwidth_2",
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/proposed_resource_sweep_v1_20261028/cases/bandwidth_2/capera_seed0/adaptive_retrieval_fu"
+    },
+    {
+      "case": "bandwidth_2",
+      "dataset": "CapERA",
+      "method": "iscc_p2_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/paper_uav_benchmarks_v1_20261028/cases/bandwidth_2/capera_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "bandwidth_2",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/paper_uav_benchmarks_v1_20261028/cases/bandwidth_2/capera_seed0/uav_afl_ota_gaft"
+    },
+    {
+      "case": "bandwidth_2",
+      "dataset": "CapERA",
+      "method": "f_salun",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/learning_quality_v3_20261028/salun/cases/bandwidth_2/capera_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "bandwidth_2",
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/proposed_resource_sweep_v1_20261028/cases/bandwidth_2/airscape_seed0/adaptive_retrieval_fu"
+    },
+    {
+      "case": "bandwidth_2",
+      "dataset": "AirScape",
+      "method": "iscc_p2_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/paper_uav_benchmarks_v1_20261028/cases/bandwidth_2/airscape_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "bandwidth_2",
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/paper_uav_benchmarks_v1_20261028/cases/bandwidth_2/airscape_seed0/uav_afl_ota_gaft"
+    },
+    {
+      "case": "bandwidth_2",
+      "dataset": "AirScape",
+      "method": "f_salun",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/learning_quality_v3_20261028/salun/cases/bandwidth_2/airscape_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "bandwidth_3",
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/proposed_resource_sweep_v1_20261028/cases/bandwidth_3/capera_seed0/adaptive_retrieval_fu"
+    },
+    {
+      "case": "bandwidth_3",
+      "dataset": "CapERA",
+      "method": "iscc_p2_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/paper_uav_benchmarks_v1_20261028/cases/bandwidth_3/capera_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "bandwidth_3",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/paper_uav_benchmarks_v1_20261028/cases/bandwidth_3/capera_seed0/uav_afl_ota_gaft"
+    },
+    {
+      "case": "bandwidth_3",
+      "dataset": "CapERA",
+      "method": "f_salun",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/learning_quality_v3_20261028/salun/cases/bandwidth_3/capera_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "bandwidth_3",
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/proposed_resource_sweep_v1_20261028/cases/bandwidth_3/airscape_seed0/adaptive_retrieval_fu"
+    },
+    {
+      "case": "bandwidth_3",
+      "dataset": "AirScape",
+      "method": "iscc_p2_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/paper_uav_benchmarks_v1_20261028/cases/bandwidth_3/airscape_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "bandwidth_3",
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/paper_uav_benchmarks_v1_20261028/cases/bandwidth_3/airscape_seed0/uav_afl_ota_gaft"
+    },
+    {
+      "case": "bandwidth_3",
+      "dataset": "AirScape",
+      "method": "f_salun",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/learning_quality_v3_20261028/salun/cases/bandwidth_3/airscape_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "bandwidth_4",
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/proposed_resource_sweep_v1_20261028/cases/bandwidth_4/capera_seed0/adaptive_retrieval_fu"
+    },
+    {
+      "case": "bandwidth_4",
+      "dataset": "CapERA",
+      "method": "iscc_p2_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/paper_uav_benchmarks_v1_20261028/cases/bandwidth_4/capera_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "bandwidth_4",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/paper_uav_benchmarks_v1_20261028/cases/bandwidth_4/capera_seed0/uav_afl_ota_gaft"
+    },
+    {
+      "case": "bandwidth_4",
+      "dataset": "CapERA",
+      "method": "f_salun",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/learning_quality_v3_20261028/salun/cases/bandwidth_4/capera_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "bandwidth_4",
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/proposed_resource_sweep_v1_20261028/cases/bandwidth_4/airscape_seed0/adaptive_retrieval_fu"
+    },
+    {
+      "case": "bandwidth_4",
+      "dataset": "AirScape",
+      "method": "iscc_p2_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/paper_uav_benchmarks_v1_20261028/cases/bandwidth_4/airscape_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "bandwidth_4",
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/paper_uav_benchmarks_v1_20261028/cases/bandwidth_4/airscape_seed0/uav_afl_ota_gaft"
+    },
+    {
+      "case": "bandwidth_4",
+      "dataset": "AirScape",
+      "method": "f_salun",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/learning_quality_v3_20261028/salun/cases/bandwidth_4/airscape_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "bandwidth_5",
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/proposed_resource_sweep_v1_20261028/cases/bandwidth_5/capera_seed0/adaptive_retrieval_fu"
+    },
+    {
+      "case": "bandwidth_5",
+      "dataset": "CapERA",
+      "method": "iscc_p2_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/paper_uav_benchmarks_v1_20261028/cases/bandwidth_5/capera_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "bandwidth_5",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/paper_uav_benchmarks_v1_20261028/cases/bandwidth_5/capera_seed0/uav_afl_ota_gaft"
+    },
+    {
+      "case": "bandwidth_5",
+      "dataset": "CapERA",
+      "method": "f_salun",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/learning_quality_v3_20261028/salun/cases/bandwidth_5/capera_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "bandwidth_5",
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/proposed_resource_sweep_v1_20261028/cases/bandwidth_5/airscape_seed0/adaptive_retrieval_fu"
+    },
+    {
+      "case": "bandwidth_5",
+      "dataset": "AirScape",
+      "method": "iscc_p2_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/paper_uav_benchmarks_v1_20261028/cases/bandwidth_5/airscape_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "bandwidth_5",
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/paper_uav_benchmarks_v1_20261028/cases/bandwidth_5/airscape_seed0/uav_afl_ota_gaft"
+    },
+    {
+      "case": "bandwidth_5",
+      "dataset": "AirScape",
+      "method": "f_salun",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/learning_quality_v3_20261028/salun/cases/bandwidth_5/airscape_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "downlink_0p25",
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/proposed_resource_timing_v1_20261028/cases/downlink_0p25/capera_seed0/adaptive_retrieval_fu"
+    },
+    {
+      "case": "downlink_0p25",
+      "dataset": "CapERA",
+      "method": "iscc_p2_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/paper_uav_benchmarks_v1_20261028/cases/downlink_0p25/capera_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "downlink_0p25",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/paper_uav_benchmarks_v1_20261028/cases/downlink_0p25/capera_seed0/uav_afl_ota_gaft"
+    },
+    {
+      "case": "downlink_0p25",
+      "dataset": "CapERA",
+      "method": "f_salun",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/learning_quality_v3_20261028/salun/cases/downlink_0p25/capera_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "downlink_0p25",
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/proposed_resource_timing_v1_20261028/cases/downlink_0p25/airscape_seed0/adaptive_retrieval_fu"
+    },
+    {
+      "case": "downlink_0p25",
+      "dataset": "AirScape",
+      "method": "iscc_p2_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/paper_uav_benchmarks_v1_20261028/cases/downlink_0p25/airscape_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "downlink_0p25",
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/paper_uav_benchmarks_v1_20261028/cases/downlink_0p25/airscape_seed0/uav_afl_ota_gaft"
+    },
+    {
+      "case": "downlink_0p25",
+      "dataset": "AirScape",
+      "method": "f_salun",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/learning_quality_v3_20261028/salun/cases/downlink_0p25/airscape_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "downlink_0p5",
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/proposed_resource_timing_v1_20261028/cases/downlink_0p5/capera_seed0/adaptive_retrieval_fu"
+    },
+    {
+      "case": "downlink_0p5",
+      "dataset": "CapERA",
+      "method": "iscc_p2_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/paper_uav_benchmarks_v1_20261028/cases/downlink_0p5/capera_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "downlink_0p5",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/paper_uav_benchmarks_v1_20261028/cases/downlink_0p5/capera_seed0/uav_afl_ota_gaft"
+    },
+    {
+      "case": "downlink_0p5",
+      "dataset": "CapERA",
+      "method": "f_salun",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/learning_quality_v3_20261028/salun/cases/downlink_0p5/capera_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "downlink_0p5",
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/proposed_resource_timing_v1_20261028/cases/downlink_0p5/airscape_seed0/adaptive_retrieval_fu"
+    },
+    {
+      "case": "downlink_0p5",
+      "dataset": "AirScape",
+      "method": "iscc_p2_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/paper_uav_benchmarks_v1_20261028/cases/downlink_0p5/airscape_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "downlink_0p5",
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/paper_uav_benchmarks_v1_20261028/cases/downlink_0p5/airscape_seed0/uav_afl_ota_gaft"
+    },
+    {
+      "case": "downlink_0p5",
+      "dataset": "AirScape",
+      "method": "f_salun",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/learning_quality_v3_20261028/salun/cases/downlink_0p5/airscape_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "downlink_2",
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/proposed_resource_timing_v1_20261028/cases/downlink_2/capera_seed0/adaptive_retrieval_fu"
+    },
+    {
+      "case": "downlink_2",
+      "dataset": "CapERA",
+      "method": "iscc_p2_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/paper_uav_benchmarks_v1_20261028/cases/downlink_2/capera_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "downlink_2",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/paper_uav_benchmarks_v1_20261028/cases/downlink_2/capera_seed0/uav_afl_ota_gaft"
+    },
+    {
+      "case": "downlink_2",
+      "dataset": "CapERA",
+      "method": "f_salun",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/learning_quality_v3_20261028/salun/cases/downlink_2/capera_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "downlink_2",
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/proposed_resource_timing_v1_20261028/cases/downlink_2/airscape_seed0/adaptive_retrieval_fu"
+    },
+    {
+      "case": "downlink_2",
+      "dataset": "AirScape",
+      "method": "iscc_p2_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/paper_uav_benchmarks_v1_20261028/cases/downlink_2/airscape_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "downlink_2",
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/paper_uav_benchmarks_v1_20261028/cases/downlink_2/airscape_seed0/uav_afl_ota_gaft"
+    },
+    {
+      "case": "downlink_2",
+      "dataset": "AirScape",
+      "method": "f_salun",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/learning_quality_v3_20261028/salun/cases/downlink_2/airscape_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "downlink_4",
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/proposed_resource_timing_v1_20261028/cases/downlink_4/capera_seed0/adaptive_retrieval_fu"
+    },
+    {
+      "case": "downlink_4",
+      "dataset": "CapERA",
+      "method": "iscc_p2_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/paper_uav_benchmarks_v1_20261028/cases/downlink_4/capera_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "downlink_4",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/paper_uav_benchmarks_v1_20261028/cases/downlink_4/capera_seed0/uav_afl_ota_gaft"
+    },
+    {
+      "case": "downlink_4",
+      "dataset": "CapERA",
+      "method": "f_salun",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/learning_quality_v3_20261028/salun/cases/downlink_4/capera_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "downlink_4",
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/proposed_resource_timing_v1_20261028/cases/downlink_4/airscape_seed0/adaptive_retrieval_fu"
+    },
+    {
+      "case": "downlink_4",
+      "dataset": "AirScape",
+      "method": "iscc_p2_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/paper_uav_benchmarks_v1_20261028/cases/downlink_4/airscape_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "downlink_4",
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/paper_uav_benchmarks_v1_20261028/cases/downlink_4/airscape_seed0/uav_afl_ota_gaft"
+    },
+    {
+      "case": "downlink_4",
+      "dataset": "AirScape",
+      "method": "f_salun",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/learning_quality_v3_20261028/salun/cases/downlink_4/airscape_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "request_bursts_45",
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/request_bursts_45/capera_seed0/adaptive_retrieval_fu"
+    },
+    {
+      "case": "request_bursts_45",
+      "dataset": "CapERA",
+      "method": "iscc_p2_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/request_bursts_45/capera_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "request_bursts_45",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/request_bursts_45/capera_seed0/uav_afl_ota_gaft"
+    },
+    {
+      "case": "request_bursts_45",
+      "dataset": "CapERA",
+      "method": "f_salun",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/learning_quality_v3_20261028/salun/cases/request_bursts_45/capera_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "request_bursts_45",
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/request_bursts_45/airscape_seed0/adaptive_retrieval_fu"
+    },
+    {
+      "case": "request_bursts_45",
+      "dataset": "AirScape",
+      "method": "iscc_p2_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/request_bursts_45/airscape_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "request_bursts_45",
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/request_bursts_45/airscape_seed0/uav_afl_ota_gaft"
+    },
+    {
+      "case": "request_bursts_45",
+      "dataset": "AirScape",
+      "method": "f_salun",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/learning_quality_v3_20261028/salun/cases/request_bursts_45/airscape_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "request_bursts_15",
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/request_bursts_15/capera_seed0/adaptive_retrieval_fu"
+    },
+    {
+      "case": "request_bursts_15",
+      "dataset": "CapERA",
+      "method": "iscc_p2_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/request_bursts_15/capera_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "request_bursts_15",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/request_bursts_15/capera_seed0/uav_afl_ota_gaft"
+    },
+    {
+      "case": "request_bursts_15",
+      "dataset": "CapERA",
+      "method": "f_salun",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/learning_quality_v3_20261028/salun/cases/request_bursts_15/capera_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "request_bursts_15",
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/request_bursts_15/airscape_seed0/adaptive_retrieval_fu"
+    },
+    {
+      "case": "request_bursts_15",
+      "dataset": "AirScape",
+      "method": "iscc_p2_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/request_bursts_15/airscape_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "request_bursts_15",
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/request_bursts_15/airscape_seed0/uav_afl_ota_gaft"
+    },
+    {
+      "case": "request_bursts_15",
+      "dataset": "AirScape",
+      "method": "f_salun",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/learning_quality_v3_20261028/salun/cases/request_bursts_15/airscape_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "request_bursts_5",
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/request_bursts_5/capera_seed0/adaptive_retrieval_fu"
+    },
+    {
+      "case": "request_bursts_5",
+      "dataset": "CapERA",
+      "method": "iscc_p2_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/request_bursts_5/capera_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "request_bursts_5",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/request_bursts_5/capera_seed0/uav_afl_ota_gaft"
+    },
+    {
+      "case": "request_bursts_5",
+      "dataset": "CapERA",
+      "method": "f_salun",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/learning_quality_v3_20261028/salun/cases/request_bursts_5/capera_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "request_bursts_5",
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/request_bursts_5/airscape_seed0/adaptive_retrieval_fu"
+    },
+    {
+      "case": "request_bursts_5",
+      "dataset": "AirScape",
+      "method": "iscc_p2_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/request_bursts_5/airscape_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "request_bursts_5",
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/request_bursts_5/airscape_seed0/uav_afl_ota_gaft"
+    },
+    {
+      "case": "request_bursts_5",
+      "dataset": "AirScape",
+      "method": "f_salun",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/learning_quality_v3_20261028/salun/cases/request_bursts_5/airscape_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "request_bursts_3",
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/request_bursts_3/capera_seed0/adaptive_retrieval_fu"
+    },
+    {
+      "case": "request_bursts_3",
+      "dataset": "CapERA",
+      "method": "iscc_p2_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/request_bursts_3/capera_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "request_bursts_3",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/request_bursts_3/capera_seed0/uav_afl_ota_gaft"
+    },
+    {
+      "case": "request_bursts_3",
+      "dataset": "CapERA",
+      "method": "f_salun",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/learning_quality_v3_20261028/salun/cases/request_bursts_3/capera_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "request_bursts_3",
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/request_bursts_3/airscape_seed0/adaptive_retrieval_fu"
+    },
+    {
+      "case": "request_bursts_3",
+      "dataset": "AirScape",
+      "method": "iscc_p2_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/request_bursts_3/airscape_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "request_bursts_3",
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/request_bursts_3/airscape_seed0/uav_afl_ota_gaft"
+    },
+    {
+      "case": "request_bursts_3",
+      "dataset": "AirScape",
+      "method": "f_salun",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/learning_quality_v3_20261028/salun/cases/request_bursts_3/airscape_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "fl_rounds_100",
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/fl_rounds_100/capera_seed0/adaptive_retrieval_fu"
+    },
+    {
+      "case": "fl_rounds_100",
+      "dataset": "CapERA",
+      "method": "iscc_p2_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/fl_rounds_100/capera_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "fl_rounds_100",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/fl_rounds_100/capera_seed0/uav_afl_ota_gaft"
+    },
+    {
+      "case": "fl_rounds_100",
+      "dataset": "CapERA",
+      "method": "f_salun",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/learning_quality_v3_20261028/salun/cases/fl_rounds_100/capera_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "fl_rounds_100",
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_departure_fix_v1_20261028/cases/fl_rounds_100/airscape_seed0/adaptive_retrieval_fu"
+    },
+    {
+      "case": "fl_rounds_100",
+      "dataset": "AirScape",
+      "method": "iscc_p2_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/fl_rounds_100/airscape_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "fl_rounds_100",
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/fl_rounds_100/airscape_seed0/uav_afl_ota_gaft"
+    },
+    {
+      "case": "fl_rounds_100",
+      "dataset": "AirScape",
+      "method": "f_salun",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/learning_quality_v3_20261028/salun/cases/fl_rounds_100/airscape_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "fl_rounds_125",
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/fl_rounds_125/capera_seed0/adaptive_retrieval_fu"
+    },
+    {
+      "case": "fl_rounds_125",
+      "dataset": "CapERA",
+      "method": "iscc_p2_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/fl_rounds_125/capera_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "fl_rounds_125",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/fl_rounds_125/capera_seed0/uav_afl_ota_gaft"
+    },
+    {
+      "case": "fl_rounds_125",
+      "dataset": "CapERA",
+      "method": "f_salun",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/learning_quality_v3_20261028/salun/cases/fl_rounds_125/capera_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "fl_rounds_125",
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/fl_rounds_125/airscape_seed0/adaptive_retrieval_fu"
+    },
+    {
+      "case": "fl_rounds_125",
+      "dataset": "AirScape",
+      "method": "iscc_p2_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/fl_rounds_125/airscape_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "fl_rounds_125",
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/fl_rounds_125/airscape_seed0/uav_afl_ota_gaft"
+    },
+    {
+      "case": "fl_rounds_125",
+      "dataset": "AirScape",
+      "method": "f_salun",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/learning_quality_v3_20261028/salun/cases/fl_rounds_125/airscape_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "fl_rounds_150",
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/fl_rounds_150/capera_seed0/adaptive_retrieval_fu"
+    },
+    {
+      "case": "fl_rounds_150",
+      "dataset": "CapERA",
+      "method": "iscc_p2_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/fl_rounds_150/capera_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "fl_rounds_150",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/fl_rounds_150/capera_seed0/uav_afl_ota_gaft"
+    },
+    {
+      "case": "fl_rounds_150",
+      "dataset": "CapERA",
+      "method": "f_salun",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/learning_quality_v3_20261028/salun/cases/fl_rounds_150/capera_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "fl_rounds_150",
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/fl_rounds_150/airscape_seed0/adaptive_retrieval_fu"
+    },
+    {
+      "case": "fl_rounds_150",
+      "dataset": "AirScape",
+      "method": "iscc_p2_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/fl_rounds_150/airscape_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "fl_rounds_150",
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/fl_rounds_150/airscape_seed0/uav_afl_ota_gaft"
+    },
+    {
+      "case": "fl_rounds_150",
+      "dataset": "AirScape",
+      "method": "f_salun",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/learning_quality_v3_20261028/salun/cases/fl_rounds_150/airscape_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "fl_rounds_175",
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/fl_rounds_175/capera_seed0/adaptive_retrieval_fu"
+    },
+    {
+      "case": "fl_rounds_175",
+      "dataset": "CapERA",
+      "method": "iscc_p2_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/fl_rounds_175/capera_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "fl_rounds_175",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/fl_rounds_175/capera_seed0/uav_afl_ota_gaft"
+    },
+    {
+      "case": "fl_rounds_175",
+      "dataset": "CapERA",
+      "method": "f_salun",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/learning_quality_v3_20261028/salun/cases/fl_rounds_175/capera_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "fl_rounds_175",
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/fl_rounds_175/airscape_seed0/adaptive_retrieval_fu"
+    },
+    {
+      "case": "fl_rounds_175",
+      "dataset": "AirScape",
+      "method": "iscc_p2_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/fl_rounds_175/airscape_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "fl_rounds_175",
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/fl_rounds_175/airscape_seed0/uav_afl_ota_gaft"
+    },
+    {
+      "case": "fl_rounds_175",
+      "dataset": "AirScape",
+      "method": "f_salun",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/learning_quality_v3_20261028/salun/cases/fl_rounds_175/airscape_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "packet_loss_0p1",
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/packet_loss_0p1/capera_seed0/adaptive_retrieval_fu"
+    },
+    {
+      "case": "packet_loss_0p1",
+      "dataset": "CapERA",
+      "method": "iscc_p2_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/packet_loss_0p1/capera_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "packet_loss_0p1",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/packet_loss_0p1/capera_seed0/uav_afl_ota_gaft"
+    },
+    {
+      "case": "packet_loss_0p1",
+      "dataset": "CapERA",
+      "method": "f_salun",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/learning_quality_v3_20261028/salun/cases/packet_loss_0p1/capera_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "packet_loss_0p1",
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/packet_loss_0p1/airscape_seed0/adaptive_retrieval_fu"
+    },
+    {
+      "case": "packet_loss_0p1",
+      "dataset": "AirScape",
+      "method": "iscc_p2_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/packet_loss_0p1/airscape_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "packet_loss_0p1",
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/packet_loss_0p1/airscape_seed0/uav_afl_ota_gaft"
+    },
+    {
+      "case": "packet_loss_0p1",
+      "dataset": "AirScape",
+      "method": "f_salun",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/learning_quality_v3_20261028/salun/cases/packet_loss_0p1/airscape_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "packet_loss_0p2",
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/packet_loss_0p2/capera_seed0/adaptive_retrieval_fu"
+    },
+    {
+      "case": "packet_loss_0p2",
+      "dataset": "CapERA",
+      "method": "iscc_p2_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/packet_loss_0p2/capera_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "packet_loss_0p2",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/packet_loss_0p2/capera_seed0/uav_afl_ota_gaft"
+    },
+    {
+      "case": "packet_loss_0p2",
+      "dataset": "CapERA",
+      "method": "f_salun",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/learning_quality_v3_20261028/salun/cases/packet_loss_0p2/capera_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "packet_loss_0p2",
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/packet_loss_0p2/airscape_seed0/adaptive_retrieval_fu"
+    },
+    {
+      "case": "packet_loss_0p2",
+      "dataset": "AirScape",
+      "method": "iscc_p2_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/packet_loss_0p2/airscape_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "packet_loss_0p2",
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/packet_loss_0p2/airscape_seed0/uav_afl_ota_gaft"
+    },
+    {
+      "case": "packet_loss_0p2",
+      "dataset": "AirScape",
+      "method": "f_salun",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/learning_quality_v3_20261028/salun/cases/packet_loss_0p2/airscape_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "packet_loss_0p3",
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/packet_loss_0p3/capera_seed0/adaptive_retrieval_fu"
+    },
+    {
+      "case": "packet_loss_0p3",
+      "dataset": "CapERA",
+      "method": "iscc_p2_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/packet_loss_0p3/capera_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "packet_loss_0p3",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/packet_loss_0p3/capera_seed0/uav_afl_ota_gaft"
+    },
+    {
+      "case": "packet_loss_0p3",
+      "dataset": "CapERA",
+      "method": "f_salun",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/learning_quality_v3_20261028/salun/cases/packet_loss_0p3/capera_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "packet_loss_0p3",
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/packet_loss_0p3/airscape_seed0/adaptive_retrieval_fu"
+    },
+    {
+      "case": "packet_loss_0p3",
+      "dataset": "AirScape",
+      "method": "iscc_p2_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/packet_loss_0p3/airscape_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "packet_loss_0p3",
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/packet_loss_0p3/airscape_seed0/uav_afl_ota_gaft"
+    },
+    {
+      "case": "packet_loss_0p3",
+      "dataset": "AirScape",
+      "method": "f_salun",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/learning_quality_v3_20261028/salun/cases/packet_loss_0p3/airscape_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "packet_loss_0p4",
+      "dataset": "CapERA",
+      "method": "adaptive_retrieval_fu",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/packet_loss_0p4/capera_seed0/adaptive_retrieval_fu"
+    },
+    {
+      "case": "packet_loss_0p4",
+      "dataset": "CapERA",
+      "method": "iscc_p2_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/packet_loss_0p4/capera_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "packet_loss_0p4",
+      "dataset": "CapERA",
+      "method": "uav_afl_ota_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/packet_loss_0p4/capera_seed0/uav_afl_ota_gaft"
+    },
+    {
+      "case": "packet_loss_0p4",
+      "dataset": "CapERA",
+      "method": "f_salun",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/learning_quality_v3_20261028/salun/cases/packet_loss_0p4/capera_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "packet_loss_0p4",
+      "dataset": "AirScape",
+      "method": "adaptive_retrieval_fu",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/packet_loss_0p4/airscape_seed0/adaptive_retrieval_fu"
+    },
+    {
+      "case": "packet_loss_0p4",
+      "dataset": "AirScape",
+      "method": "iscc_p2_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/packet_loss_0p4/airscape_seed0/iscc_p2_gaft"
+    },
+    {
+      "case": "packet_loss_0p4",
+      "dataset": "AirScape",
+      "method": "uav_afl_ota_gaft",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/workload_sweeps_v3_20261028/cases/packet_loss_0p4/airscape_seed0/uav_afl_ota_gaft"
+    },
+    {
+      "case": "packet_loss_0p4",
+      "dataset": "AirScape",
+      "method": "f_salun",
+      "shared_inputs": true,
+      "complete_workload": true,
+      "source": "results/learning_quality_v3_20261028/salun/cases/packet_loss_0p4/airscape_seed0/iscc_p2_gaft"
+    }
+  ]
+}
