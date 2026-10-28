@@ -20,14 +20,6 @@
       "higher": false
     },
     {
-      "key": "forget_kl",
-      "source": "forget_KL",
-      "bandwidth": 1,
-      "scale": 1.0,
-      "decimals": 6,
-      "higher": false
-    },
-    {
       "key": "energy_kj",
       "source": "total_energy_j",
       "bandwidth": 1,
@@ -63,12 +55,6 @@
           "bold": false
         },
         {
-          "column": "forget_kl",
-          "value": 0.003788608592003584,
-          "formatted": "0.003789",
-          "bold": true
-        },
-        {
           "column": "energy_kj",
           "value": 649.9623177948238,
           "formatted": "649.962",
@@ -97,12 +83,6 @@
           "column": "loss",
           "value": 5.343484878540039,
           "formatted": "5.3435",
-          "bold": false
-        },
-        {
-          "column": "forget_kl",
-          "value": 0.0037912349216639996,
-          "formatted": "0.003791",
           "bold": false
         },
         {
@@ -137,12 +117,6 @@
           "bold": false
         },
         {
-          "column": "forget_kl",
-          "value": 0.009667620062828064,
-          "formatted": "0.009668",
-          "bold": false
-        },
-        {
           "column": "energy_kj",
           "value": 649.9597513121374,
           "formatted": "649.960",
@@ -172,12 +146,6 @@
           "value": 5.228848457336426,
           "formatted": "5.2288",
           "bold": true
-        },
-        {
-          "column": "forget_kl",
-          "value": 0.018232312053442,
-          "formatted": "0.018232",
-          "bold": false
         },
         {
           "column": "energy_kj",
@@ -211,12 +179,6 @@
           "bold": false
         },
         {
-          "column": "forget_kl",
-          "value": 0.0008385229157283902,
-          "formatted": "0.000839",
-          "bold": true
-        },
-        {
           "column": "energy_kj",
           "value": 649.3047817180119,
           "formatted": "649.305",
@@ -246,12 +208,6 @@
           "value": 5.5593743324279785,
           "formatted": "5.5594",
           "bold": false
-        },
-        {
-          "column": "forget_kl",
-          "value": 0.0008385473629459739,
-          "formatted": "0.000839",
-          "bold": true
         },
         {
           "column": "energy_kj",
@@ -285,12 +241,6 @@
           "bold": false
         },
         {
-          "column": "forget_kl",
-          "value": 0.003127321368083358,
-          "formatted": "0.003127",
-          "bold": false
-        },
-        {
           "column": "energy_kj",
           "value": 649.3068250528967,
           "formatted": "649.307",
@@ -320,12 +270,6 @@
           "value": 5.511499404907227,
           "formatted": "5.5115",
           "bold": true
-        },
-        {
-          "column": "forget_kl",
-          "value": 0.007319689728319645,
-          "formatted": "0.007320",
-          "bold": false
         },
         {
           "column": "energy_kj",

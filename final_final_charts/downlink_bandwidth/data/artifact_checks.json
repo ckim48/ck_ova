@@ -1,10 +1,13 @@
 {
   "passed": true,
-  "figures": 8,
+  "figures": 9,
   "tables": 2,
   "arms": 40,
   "fresh_arms": 24,
   "reused_arms": 16,
+  "mse_arms": 40,
+  "fresh_mse_arms": 32,
+  "total_unique_arms": 72,
   "exact_model_controls": 8,
   "original_rate_results_unchanged": true,
   "derived_bandwidth_rates_and_costs_verified": true,
@@ -15,9 +18,11 @@
     5
   ],
   "tables_match_metrics_and_ties_verified": true,
-  "vector_map_uniform_scale": 0.72,
-  "map_scale_relative_to_previous": 0.8,
+  "map_panel_scale": 0.576,
+  "map_panel_scale_relative_to_previous": 0.8,
+  "map_text_matches_chart_ticks_pt": 12,
+  "table07_forget_KL_removed": true,
   "source_sha256": {
-    "tools/uav_convergence_v2/downlink_bandwidth_check.py": "c8081ceb7196e05c8fff9745365f53a0e75eebeeab8158af878aa26170cc15ca"
+    "tools/uav_convergence_v2/downlink_bandwidth_check.py": "9468dc9021a8c796def4fdbb6e7940303abd35b9bd98363feac69e597c27e80b"
   }
 }

@@ -17,7 +17,6 @@ FORMATTING = r'''\footnotesize
 BASE_COLUMNS = [
     dict(key='mr_percent', source='retained_mR_percent', bandwidth=1, scale=1., decimals=3, higher=True),
     dict(key='loss', source='retained_loss', bandwidth=1, scale=1., decimals=4, higher=False),
-    dict(key='forget_kl', source='forget_KL', bandwidth=1, scale=1., decimals=6, higher=False),
     dict(key='energy_kj', source='total_energy_j', bandwidth=1, scale=.001, decimals=3, higher=False),
     dict(key='delay_s', source='delay_s', bandwidth=1, scale=1., decimals=3, higher=False),
 ]
@@ -113,11 +112,11 @@ def render_one(dest, rows, name, caption, label, columns, header, number):
     return dict(name=name, title=caption, kind='table', axes=[], files=files), data
 
 
-def render(dest, rows):
+def render(dest, rows, names=None):
     headers = [
         r'''\multirow{2}{*}{\textsc{Dataset}} & \multirow{2}{*}{\textsc{Method}}
-        & \textsc{Retained mR} & \textsc{Loss} & \textsc{Forget KL} & \textsc{Energy} & \textsc{Delay} \\
-        & & (\%) $\uparrow$ & $\downarrow$ & $\downarrow$ & (kJ) $\downarrow$ & (s) $\downarrow$ \\''',
+        & \textsc{Retained mR} & \textsc{Loss} & \textsc{Energy} & \textsc{Delay} \\
+        & & (\%) $\uparrow$ & $\downarrow$ & (kJ) $\downarrow$ & (s) $\downarrow$ \\''',
         r'''\multirow{2}{*}{\textsc{Dataset}} & \multirow{2}{*}{\textsc{Method}}
         & \multicolumn{2}{c|}{\textsc{Total Energy} (kJ) $\downarrow$}
         & \multicolumn{2}{c}{\textsc{Delay} (s) $\downarrow$} \\
@@ -129,6 +128,8 @@ def render(dest, rows):
          'tab:vlm_downlink_resources', COST_COLUMNS)]
     figures, audits = [], []
     for i, ((name, caption, label, columns), header) in enumerate(zip(specs, headers), 1):
+        if names is not None and name not in names:
+            continue
         figure, data = render_one(dest, rows, name, caption, label, columns, header, i)
         figures.append(figure)
         audits.append(dict(name=name, rows=len(data['rows']), cells=sum(len(r['cells']) for r in data['rows']),

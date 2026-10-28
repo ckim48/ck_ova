@@ -1102,5 +1102,197 @@
     "bandwidth_mhz": 5,
     "hatch": "..",
     "color": "#C65365"
+  },
+  {
+    "figure": "09_aggregation_mse_energy_1x2",
+    "dataset": "CapERA",
+    "method": "gate_select16",
+    "kind": "line",
+    "axis": "aggregation_mse",
+    "x": [
+      0.01,
+      0.025,
+      0.04,
+      0.055,
+      0.07
+    ],
+    "y": [
+      206.14716854058713,
+      204.38198259650264,
+      204.27739345959722,
+      204.27699310978852,
+      204.27676801629087
+    ],
+    "metric": "total_energy_j",
+    "scale": 0.001,
+    "normalized_relative_budget": true
+  },
+  {
+    "figure": "09_aggregation_mse_energy_1x2",
+    "dataset": "CapERA",
+    "method": "iscc",
+    "kind": "line",
+    "axis": "aggregation_mse",
+    "x": [
+      0.01,
+      0.025,
+      0.04,
+      0.055,
+      0.07
+    ],
+    "y": [
+      649.9623177948238,
+      649.9623177948238,
+      649.9623177948238,
+      649.9623177948238,
+      649.9623177948238
+    ],
+    "metric": "total_energy_j",
+    "scale": 0.001,
+    "normalized_relative_budget": true
+  },
+  {
+    "figure": "09_aggregation_mse_energy_1x2",
+    "dataset": "CapERA",
+    "method": "afl",
+    "kind": "line",
+    "axis": "aggregation_mse",
+    "x": [
+      0.01,
+      0.025,
+      0.04,
+      0.055,
+      0.07
+    ],
+    "y": [
+      262.4635790248351,
+      254.64628991639918,
+      252.8824203874964,
+      252.36380680753774,
+      252.08722785012776
+    ],
+    "metric": "total_energy_j",
+    "scale": 0.001,
+    "normalized_relative_budget": true
+  },
+  {
+    "figure": "09_aggregation_mse_energy_1x2",
+    "dataset": "CapERA",
+    "method": "salun",
+    "kind": "line",
+    "axis": "aggregation_mse",
+    "x": [
+      0.01,
+      0.025,
+      0.04,
+      0.055,
+      0.07
+    ],
+    "y": [
+      649.9597513121374,
+      649.9597513121374,
+      649.9597513121374,
+      649.9597513121374,
+      649.9597513121374
+    ],
+    "metric": "total_energy_j",
+    "scale": 0.001,
+    "normalized_relative_budget": true
+  },
+  {
+    "figure": "09_aggregation_mse_energy_1x2",
+    "dataset": "AirScape",
+    "method": "gate_select16",
+    "kind": "line",
+    "axis": "aggregation_mse",
+    "x": [
+      0.01,
+      0.025,
+      0.04,
+      0.055,
+      0.07
+    ],
+    "y": [
+      206.4479798305283,
+      204.54469153065023,
+      204.2674774140689,
+      204.26707690505035,
+      204.26685364978462
+    ],
+    "metric": "total_energy_j",
+    "scale": 0.001,
+    "normalized_relative_budget": true
+  },
+  {
+    "figure": "09_aggregation_mse_energy_1x2",
+    "dataset": "AirScape",
+    "method": "iscc",
+    "kind": "line",
+    "axis": "aggregation_mse",
+    "x": [
+      0.01,
+      0.025,
+      0.04,
+      0.055,
+      0.07
+    ],
+    "y": [
+      649.3047817180119,
+      649.3047817180119,
+      649.3047817180119,
+      649.3047817180119,
+      649.3047817180119
+    ],
+    "metric": "total_energy_j",
+    "scale": 0.001,
+    "normalized_relative_budget": true
+  },
+  {
+    "figure": "09_aggregation_mse_energy_1x2",
+    "dataset": "AirScape",
+    "method": "afl",
+    "kind": "line",
+    "axis": "aggregation_mse",
+    "x": [
+      0.01,
+      0.025,
+      0.04,
+      0.055,
+      0.07
+    ],
+    "y": [
+      264.0496249419937,
+      255.31493021322282,
+      253.06641911362914,
+      252.40930993235145,
+      252.11542901435683
+    ],
+    "metric": "total_energy_j",
+    "scale": 0.001,
+    "normalized_relative_budget": true
+  },
+  {
+    "figure": "09_aggregation_mse_energy_1x2",
+    "dataset": "AirScape",
+    "method": "salun",
+    "kind": "line",
+    "axis": "aggregation_mse",
+    "x": [
+      0.01,
+      0.025,
+      0.04,
+      0.055,
+      0.07
+    ],
+    "y": [
+      649.3068250528967,
+      649.3068250528967,
+      649.3068250528967,
+      649.3068250528967,
+      649.3068250528967
+    ],
+    "metric": "total_energy_j",
+    "scale": 0.001,
+    "normalized_relative_budget": true
   }
 ]

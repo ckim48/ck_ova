@@ -198,10 +198,14 @@ def docs(rows):
         '## Figures', '',
         '- 01–03: energy, active FL/FU delay and separate mission delay versus downlink bandwidth.',
         '- 04–05: two adjacent bars per method, at 1 MHz and 5 MHz. Method colors match the line plots; hatching identifies bandwidth. Common zero baseline and bandwidth legend, no bar-top numbers or extra grey text. Both values come from the completed runs, without additional training or rescaling costs.',
-        '- 06: the existing satellite/IoT/UAV map reduced by another 20% in width and height relative to the previous 90%-size release. Unchanged geometry and snapshot heads. Its provenance identifies the original snapshot run, not a newly measured bandwidth-dependent trajectory.',
-        '- 07: baseline mR, validation loss, common-reference forget KL, energy and active delay as a LaTeX table.',
+        '- 06: each square map panel is another 20% smaller than the previous 72%-scale release, now 57.6% of the original map area width/height. Tick labels and visit numbers are redrawn at the same 12pt size and serif family as the line-chart ticks; they are not scaled with the map. Geometry and snapshot heads are unchanged.',
+        '- 07: baseline mR, validation loss, energy and active delay as a LaTeX table. The requested Forget KL column is omitted from this table; aggregate measurement records retain the original diagnostics.',
         '- 08: 1 MHz/5 MHz energy and active-delay comparison table. Both tables include PDF/PNG previews, standalone LaTeX sources and CSV values. Best values are bold within each dataset and metric; a displayed-precision tie is bold for all tied methods. No uncertainty is invented from this single seed.', '',
-        'Map size: 10.4 × 5.35 inches → previous 9.36 × 4.815 inches → current 7.488 × 3.852 inches (72% of the original). Map imagery: Esri, Vantor, Earthstar Geographics, and the GIS User Community. Road data: © [OpenStreetMap contributors](https://www.openstreetmap.org/copyright). The complete original attribution, source hashes and snapshot provenance are in `data/mission_map.json`.', '',
+        '- 09: aggregation MSE budget versus total energy, from 32 new executions plus 8 shared baseline arms. No amplification of small changes or removal of flat digital curves.', '',
+        'Map panel side: previous 3.2495 inches → current 2.5996 inches. The surrounding margins accommodate full-size text, so the total canvas is not uniformly scaled. Map imagery: Esri, Vantor, Earthstar Geographics, and the GIS User Community. Road data: © [OpenStreetMap contributors](https://www.openstreetmap.org/copyright). Original attribution, source hashes, typography checks and snapshot provenance are in `data/mission_map.json`.', '',
+        '## Aggregation MSE sweep', '',
+        'The plotted threshold is the dimensionless squared relative-RMSE coefficient, tau = delta^2: 0.010, 0.025, 0.040, 0.055, 0.070. The baseline delta=0.2 corresponds to tau=0.04. Each nonbaseline condition reruns all four methods on both datasets with all other inputs and physical settings fixed. Energy remains communication + computation + active hovering; both links stay at the original 1 MHz/1 Mbit/s condition.', '',
+        'The actual squared-error constraint is conditional E[||reconstruction error||_2^2] <= epsilon_k^2, where epsilon_k follows the original method norm/guard and 1e-8 RMS numerical floor. Proposed keeps its FL block-norm bound and FU-relative total-noise guard; AFL-OTA keeps its raw aggregate norm and coherent repetition rule. Thus tau is a relative MSE-budget coefficient, not an identical absolute or per-coordinate MSE limit across methods. The fixed FP32 ideal digital transports have zero modeled aggregation error and legitimately flat cost curves. All quality outcomes and bound diagnostics are retained in `data/mse_metrics.csv`; numerical definitions and unchanged method assumptions are in `data/mse_protocol.json`.', '',
         'Energy = active communication + executed adapter computation + active hovering. Travel/IoT collection/preflight energy is excluded. Main delay is active FL/FU service time; mission delay additionally includes travel, collection and return. Same 200 total FL rounds and 225 FU steps for 45 requests. Single development seed, frozen feature caches and scoped literature adaptations; these are not full-VLM hardware measurements, statistical superiority results or certified equal-quality unlearning. Unfavorable quality and QoS-cap exceedances remain in the metrics.', '',
         '| Dataset | Method | Energy (kJ), 1 MHz | Active delay (s), 1 MHz |',
         '|---|---|---:|---:|']
@@ -210,6 +214,7 @@ def docs(rows):
             lines.append(f"| {r['dataset']} | {r['label']} | {r['total_energy_j']/1000:.3f} | {r['delay_s']:.3f} |")
     lines += ['', '## Reproduction', '', 'With the existing local caches and original rate-study arms:', '',
               '```sh', '.venv/bin/python tools/uav_convergence_v2/downlink_bandwidth_v1.py run',
+              '.venv/bin/python tools/uav_convergence_v2/aggregation_mse_v1.py run',
               '.venv/bin/python tools/uav_convergence_v2/downlink_bandwidth_report.py',
               '.venv/bin/python tools/uav_convergence_v2/downlink_bandwidth_check.py', '```', '',
               'The frozen runner refuses to overwrite attempts. Only code, figures, aggregate metrics and hashes are published; no raw data, checkpoints or execution logs.', '']
@@ -241,7 +246,8 @@ def link_galleries():
             path.write_text(text)
 
 
-def main(style_only=False):
+def main(style_only=False, map_table_only=False):
+    style_only = style_only or map_table_only
     protocol = study.register()
     assert read(study.OUT / 'campaign_finished.json')['passed']
     if style_only:
@@ -249,36 +255,44 @@ def main(style_only=False):
         previous_series = read(DEST / 'data/plot_series.json')
         rows, audit = read(DEST / 'data/metrics.json'), read(DEST / 'data/audit.json')
         for f in previous_manifest['figures']:
-            if not f['name'].startswith(('01_', '02_', '03_')):
+            keep = f['name'].startswith(('01_', '02_', '03_', '04_', '05_', '08_') if map_table_only else ('01_', '02_', '03_'))
+            if not keep:
                 continue  # All other figures are rebuilt, including interrupted exports.
             for item in f['files']:
                 assert sha(DEST / item['file']) == item['sha256']
     setup()
     if style_only:
         prior.SOURCES = previous_manifest['source_sha256']
-        prior.FIGURES = [f for f in previous_manifest['figures'] if f['name'].startswith(('01_', '02_', '03_'))]
-        prior.SERIES = [s for s in previous_series if s['kind'] == 'line']
+        keep_prefix = ('01_', '02_', '03_', '04_', '05_', '08_') if map_table_only else ('01_', '02_', '03_')
+        prior.FIGURES = [f for f in previous_manifest['figures'] if f['name'].startswith(keep_prefix)]
+        prior.SERIES = [s for s in previous_series if s['figure'].startswith(keep_prefix)]
     else:
         rows, audit = collect()
         sweep(rows)
-    bars(rows)
+    if not map_table_only:
+        bars(rows)
     import compact_mission_map
     map_figure, map_audit = compact_mission_map.render(DEST)
     prior.FIGURES.append(map_figure)
     audit['map'] = map_audit
     import bandwidth_tables
-    table_figures, table_audit = bandwidth_tables.render(DEST, rows)
+    table_figures, table_audit = bandwidth_tables.render(DEST, rows, names=['07_performance_table'] if map_table_only else None)
+    if map_table_only:
+        table_audit['tables'] += [t for t in audit['tables']['tables'] if t['name'] == '08_bandwidth_table']
     prior.FIGURES.extend(table_figures)
     audit['tables'] = table_audit
+    import aggregation_mse_report
+    audit['mse_sweep'] = aggregation_mse_report.render(DEST)
     docs(rows)
     write(DEST / 'data/audit.json', audit)
     write(DEST / 'data/protocol.json', protocol)
     write(DEST / 'data/bandwidth_model.json', study.MODEL)
     for file in [Path(__file__), Path(study.__file__), Path(compact_mission_map.__file__), Path(bandwidth_tables.__file__)]:
         prior.SOURCES[str(file.relative_to(ROOT))] = sha(file)
-    export.finish(DEST, rows, 'Downlink bandwidth 1–5 MHz; paired energy/delay bars, smaller map and comparison tables.',
+    prior.FIGURES.sort(key=lambda f: f['name'])
+    export.finish(DEST, rows, 'Downlink bandwidth and MSE sweeps; paired resource bars, map and comparison tables.',
                   dict(compared_arms=40, new_arms=24, reused_arms=16, baseline_bandwidth_mhz=1,
-                       bar_bandwidths_mhz=BAR_BANDWIDTHS))
+                       bar_bandwidths_mhz=BAR_BANDWIDTHS, mse_compared_arms=40, mse_new_arms=32, total_unique_arms=72))
     link_galleries()
     print(dict(figures=len(prior.FIGURES), arms=len(rows), destination=str(DEST)), flush=True)
 
@@ -286,4 +300,6 @@ def main(style_only=False):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--style-only', action='store_true', help='Reuse audited metrics and unchanged line artifacts.')
-    main(parser.parse_args().style_only)
+    parser.add_argument('--map-table-only', action='store_true', help='Rebuild map/table07 and MSE sweep; preserve the other artifacts.')
+    args = parser.parse_args()
+    main(args.style_only, args.map_table_only)
