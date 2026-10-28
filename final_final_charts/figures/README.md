@@ -1,6 +1,6 @@
 # Matching paper figures
 
-These aliases use the current P-KS experiments and match the requested LaTeX filenames. All three PDFs have the same 532.8 pt width, 12 pt numeric ticks and legends, and 14 pt category names/axis titles. Four-method category names wrap at the hyphen to preserve font size without overlap. Legends sit 8 pt above the plots. Thus width=\linewidth gives matching apparent font sizes.
+These aliases use the current P-KS experiments and match the requested LaTeX filenames. All three PDFs have the same 532.8 pt width, 12 pt numeric ticks and legends, and 14 pt axis titles and category names, with the requested FU category exception at 12 pt. FU method names use 12 pt on one line; other four-method category names wrap at the hyphen at 14 pt. Legends sit 8 pt above the plots. Thus width=\linewidth gives matching apparent font sizes.
 
 - fu_steps_energy_1x2: current 11, paired 1-step and 9-step FU workloads.
 - 01_round_loss_1x2: current P-KS round validation loss.

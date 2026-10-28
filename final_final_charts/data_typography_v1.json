@@ -761,18 +761,18 @@
         ],
         "axes": [
           {
-            "x_tick_pt": 14.0,
+            "x_tick_pt": 12.0,
             "y_tick_pt": 12.0,
             "x_label_pt": 14.0,
             "y_label_pt": 14.0,
-            "category_names_match_axis_title": true
+            "category_names_match_axis_title": false
           },
           {
-            "x_tick_pt": 14.0,
+            "x_tick_pt": 12.0,
             "y_tick_pt": 12.0,
             "x_label_pt": 14.0,
             "y_label_pt": 14.0,
-            "category_names_match_axis_title": true
+            "category_names_match_axis_title": false
           }
         ],
         "legend_pt": 12.0,
@@ -837,11 +837,17 @@
         ],
         "legend_pt": null,
         "legend_gap_pt": null,
-        "fixed_pdf_width_pt": 532.8000000000001
+        "fixed_pdf_width_pt": 532.8,
+        "title_removed": true,
+        "detail_numeric_tick_pt": 12
       }
     }
   ],
   "source_sha256": {
-    "tools/uav_convergence_v2/paper_typography_v1.py": "2ea7e9501477ef1ee457c6191c4f248142fb8171cba60ae319c6eb0477f6bf01"
+    "tools/uav_convergence_v2/paper_typography_v1.py": "74ef02a406ce5b54ae1a76ebdbc93af83aa505df5a457da7fcdf7f4f31cf7c2a",
+    "tools/uav_convergence_v2/paper_boxplot_refine_v2.py": "624c4a2665a6f872db6d3043c6aeb1c75a0c45755120584a6dbe3b9673998e78"
+  },
+  "category_font_overrides": {
+    "11_fu_steps_energy_1x2": 12.0
   }
 }

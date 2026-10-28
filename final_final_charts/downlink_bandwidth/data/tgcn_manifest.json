@@ -244,15 +244,15 @@
       "files": [
         {
           "file": "11_fu_steps_energy_1x2.pdf",
-          "sha256": "ddfdaf8974ea6ecc50ee3f2cb0c191167730d942d48f07834dee83b713be4581"
+          "sha256": "7b0d39d4447b473df49f83ebef8d44e74a25222d9156dced707749147bb36eba"
         },
         {
           "file": "11_fu_steps_energy_1x2.png",
-          "sha256": "d0b0bc46aca69054632f6fdaff22318be9e3408833b7237ad9ed1d0347feb869"
+          "sha256": "8a568ecc984f607dfeadca484fc1b77cc5e6e394b75ee1ae6c3b76dccbdacc11"
         },
         {
           "file": "11_fu_steps_energy_1x2.svg",
-          "sha256": "e8604f3f0e7971024a2c188c097b04ff00c0b93e83af93596b1967092085adc8"
+          "sha256": "32dd11443a9b081145cdd23b6e9f19821027e25d2975e27511f23c2c0361b82e"
         }
       ],
       "kind": "paired_bar",
@@ -271,18 +271,18 @@
         ],
         "axes": [
           {
-            "x_tick_pt": 14.0,
+            "x_tick_pt": 12.0,
             "y_tick_pt": 12.0,
             "x_label_pt": 14.0,
             "y_label_pt": 14.0,
-            "category_names_match_axis_title": true
+            "category_names_match_axis_title": false
           },
           {
-            "x_tick_pt": 14.0,
+            "x_tick_pt": 12.0,
             "y_tick_pt": 12.0,
             "x_label_pt": 14.0,
             "y_label_pt": 14.0,
-            "category_names_match_axis_title": true
+            "category_names_match_axis_title": false
           }
         ],
         "legend_pt": 12.0,
@@ -2858,15 +2858,15 @@
       "files": [
         {
           "file": "19_all_method_rank_boxplot_1x2.pdf",
-          "sha256": "edcff3dbf8a96a80b5816001c18056e8a720392932fdfd3d593ba8f932d76e5f"
+          "sha256": "fa013e3f6d928aed00f8460401b11388bd7f62b8282c3fc5f8eff9f057bdf561"
         },
         {
           "file": "19_all_method_rank_boxplot_1x2.png",
-          "sha256": "be7985c524fb766b344c143c8e70b324bc9a6dfd8635357033cb58575672cf29"
+          "sha256": "02939e4c1fb560df0a8172ca9d462b78666e944846d0c041d435345ef59a9223"
         },
         {
           "file": "19_all_method_rank_boxplot_1x2.svg",
-          "sha256": "c595bff28cfb1afc35903d2d3c0fcb62a4231804ddff5315c5d249e526506a8e"
+          "sha256": "02ce4205035f450d1853e0653617cb3b4193a381e9e7ca206dcb3d27ad903080"
         }
       ],
       "kind": "rank_boxplot",
@@ -3629,7 +3629,7 @@
       "whisker_rule": "1.5 IQR, ending at the most extreme observed in-fence values",
       "show_all_fliers": true,
       "y_scale": "linear",
-      "caption": "Distribution of annotated video ranks for all retained text queries under the same 650 kJ active-energy budget. Boxes show the 25th\u201375th percentiles with median lines; whiskers use 1.5 IQR and every outside value is plotted. Lower ranks are better. This is the query distribution from one development seed, not training-run confidence intervals. CapERA captions from the same video are not independent observations.",
+      "caption": "GT-rank distributions of all retained text queries at the same 650 kJ budget. Lower ranks are better. Each lower axis shows the full 0--700 range with every outlier; the separate upper strip repeats exactly the same box statistics in the 0--100 interval. Shared light shading marks that interval. Median lines are emphasized; hollow outlier markers receive deterministic horizontal spreading only. Boxes are query distributions, not confidence intervals over independent training seeds.",
       "typography": {
         "version": "paper_typography_v1",
         "figure_inches": [
@@ -3654,8 +3654,124 @@
         ],
         "legend_pt": null,
         "legend_gap_pt": null,
-        "fixed_pdf_width_pt": 532.8000000000001
-      }
+        "fixed_pdf_width_pt": 532.8,
+        "title_removed": true,
+        "detail_numeric_tick_pt": 12
+      },
+      "display_revision": "title_free_detail_v2",
+      "title_removed": true,
+      "detail_axes": [
+        {
+          "dataset": "CapERA",
+          "x_limits": [
+            -0.4,
+            3.4
+          ],
+          "y_limits": [
+            0,
+            100
+          ],
+          "y_ticks": [
+            0,
+            50,
+            100
+          ],
+          "same_statistics_as_main": true,
+          "separate_nonoverlapping_axes": true
+        },
+        {
+          "dataset": "AirScape",
+          "x_limits": [
+            -0.4,
+            3.4
+          ],
+          "y_limits": [
+            0,
+            100
+          ],
+          "y_ticks": [
+            0,
+            50,
+            100
+          ],
+          "same_statistics_as_main": true,
+          "separate_nonoverlapping_axes": true
+        }
+      ],
+      "draw_checks": [
+        {
+          "dataset": "CapERA",
+          "method": "gate_select16",
+          "original_fliers": 144,
+          "displayed_full_range_fliers": 144,
+          "displayed_detail_fliers": 7,
+          "vertical_values_unchanged": true,
+          "horizontal_spread_half_width": 0.065
+        },
+        {
+          "dataset": "CapERA",
+          "method": "iscc",
+          "original_fliers": 126,
+          "displayed_full_range_fliers": 126,
+          "displayed_detail_fliers": 0,
+          "vertical_values_unchanged": true,
+          "horizontal_spread_half_width": 0.065
+        },
+        {
+          "dataset": "CapERA",
+          "method": "afl",
+          "original_fliers": 155,
+          "displayed_full_range_fliers": 155,
+          "displayed_detail_fliers": 0,
+          "vertical_values_unchanged": true,
+          "horizontal_spread_half_width": 0.065
+        },
+        {
+          "dataset": "CapERA",
+          "method": "salun",
+          "original_fliers": 131,
+          "displayed_full_range_fliers": 131,
+          "displayed_detail_fliers": 0,
+          "vertical_values_unchanged": true,
+          "horizontal_spread_half_width": 0.065
+        },
+        {
+          "dataset": "AirScape",
+          "method": "gate_select16",
+          "original_fliers": 17,
+          "displayed_full_range_fliers": 17,
+          "displayed_detail_fliers": 0,
+          "vertical_values_unchanged": true,
+          "horizontal_spread_half_width": 0.065
+        },
+        {
+          "dataset": "AirScape",
+          "method": "iscc",
+          "original_fliers": 11,
+          "displayed_full_range_fliers": 11,
+          "displayed_detail_fliers": 0,
+          "vertical_values_unchanged": true,
+          "horizontal_spread_half_width": 0.065
+        },
+        {
+          "dataset": "AirScape",
+          "method": "afl",
+          "original_fliers": 21,
+          "displayed_full_range_fliers": 21,
+          "displayed_detail_fliers": 0,
+          "vertical_values_unchanged": true,
+          "horizontal_spread_half_width": 0.065
+        },
+        {
+          "dataset": "AirScape",
+          "method": "salun",
+          "original_fliers": 11,
+          "displayed_full_range_fliers": 11,
+          "displayed_detail_fliers": 0,
+          "vertical_values_unchanged": true,
+          "horizontal_spread_half_width": 0.065
+        }
+      ]
     }
   ],
   "source_sha256": {
@@ -34462,7 +34578,8 @@
     "final_final_charts/downlink_bandwidth/data/retrieval_energy_airscape_query_ranks.json": "f2dbaaa65a9f4db49063ea2b6fa4c02697636dc7b15f7bf683970690a8318a78",
     "final_final_charts/downlink_bandwidth/data/retrieval_energy_airscape_paired_counts.json": "c41d3799bcbd7d46573241f78bcffee562206d7c9b3fe4f10069b0a1d8d5978b",
     "tools/uav_convergence_v2/tgcn_rank_comparison_v5.py": "a11e80372c1c70a1d1297640b727974a8f9f9a4175fe1f2616b2a72f741053e2",
-    "tools/uav_convergence_v2/paper_typography_v1.py": "2ea7e9501477ef1ee457c6191c4f248142fb8171cba60ae319c6eb0477f6bf01"
+    "tools/uav_convergence_v2/paper_typography_v1.py": "74ef02a406ce5b54ae1a76ebdbc93af83aa505df5a457da7fcdf7f4f31cf7c2a",
+    "tools/uav_convergence_v2/paper_boxplot_refine_v2.py": "624c4a2665a6f872db6d3043c6aeb1c75a0c45755120584a6dbe3b9673998e78"
   },
   "fresh_FU_workload_arms": 40,
   "original_figures": {

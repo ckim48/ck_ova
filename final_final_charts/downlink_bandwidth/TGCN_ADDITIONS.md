@@ -85,3 +85,7 @@ Single development seed and frozen-feature rank10 adapter study, not a full-back
 .venv/bin/python tools/uav_convergence_v2/tgcn_additions_report.py
 .venv/bin/python tools/uav_convergence_v2/tgcn_additions_check.py
 ```
+
+<!-- rank-detail-v2 -->
+
+Figure 19 has no overall title. The lower axes retain the full 0–700 rank range; the separate upper strips show the same box statistics over 0–100. Shared shading identifies this interval. Every outlier is retained as a hollow marker, with only horizontal spreading to reduce overlap. Figure 11 uses 12 pt method names on one line. Reapply these presentation changes with `.venv/bin/python tools/uav_convergence_v2/paper_boxplot_refine_v2.py`.

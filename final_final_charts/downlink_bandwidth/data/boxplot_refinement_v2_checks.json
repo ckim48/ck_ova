@@ -1,0 +1,152 @@
+{
+  "passed": true,
+  "full_range": [
+    0,
+    700
+  ],
+  "detail_range": [
+    0,
+    100
+  ],
+  "title_removed": true,
+  "before_artifact_sha256": {
+    "10_energy_mr_1x2.pdf": "2e1db5034880833c4d5bddaee564c5a7519e5cbf1dc4f3284a1cb0fdc903ea31",
+    "10_energy_mr_1x2.png": "7bd4f09ca68bcbce2e9fe58efd9b6a2e0d261db568311206707de57302cc0cdd",
+    "10_energy_mr_1x2.svg": "0ecb53063d4846fac98ef73faedffb5e7848aa0c93bedad0d9bcdae0346efb36",
+    "11_fu_steps_energy_1x2.pdf": "ed1430fbf39243b318b51c88123e5ec8f5ec24dfc699e8925350b7f6b9490a51",
+    "11_fu_steps_energy_1x2.png": "8a568ecc984f607dfeadca484fc1b77cc5e6e394b75ee1ae6c3b76dccbdacc11",
+    "11_fu_steps_energy_1x2.svg": "9db0af4cc59ecd4f98b3a7149a09de15933ec771bdafcb0d04ab96b8c13760d4",
+    "12_capera_text_video_examples.png": "a24f6f1dabb083a887a098450c3908eebf29e6633f6dca0e58de6b828d2185d1",
+    "12_capera_text_video_examples.pdf": "c816d623e003febaf82535c63895d955791aaacce5236e746afa9e59bd5f59d2",
+    "12_capera_text_video_examples.svg": "bd5dc3525c4f3b157ef243d736be51d57eb71c610e49ff75fc03f21a74cd985d",
+    "13_airscape_text_video_examples.png": "62d7eb96beb1d5830976e26dccdc3548573e5ad1193a13ec34b48ac2cf15c730",
+    "13_airscape_text_video_examples.pdf": "d7aeb8cda937db70943463b14e4c82b94a2a982f6e0837fe3585e92cca5dc3d1",
+    "13_airscape_text_video_examples.svg": "f93d658fa24e43c2e65873908f86dd26797811416664bbfaacbda7d0e32034cc",
+    "14_capera_energy_matched_retrieval.png": "01f774310e155e28befd861aefea7d313fa730da083eea91dd2ae5f8af5de728",
+    "14_capera_energy_matched_retrieval.pdf": "d782191517822e9fe26b883d3f77d99cef042c8d3130e16d4f3caab7957ed933",
+    "14_capera_energy_matched_retrieval.svg": "1288d8d502e70f36af4b73bf3fd8735bce9b852c34e1b94eae84f4f3f5bce928",
+    "15_airscape_energy_matched_retrieval.png": "9bf982415c3559e85a932d3efda11d0c8a4f2671d3432dc808ea706eecf9fdd6",
+    "15_airscape_energy_matched_retrieval.pdf": "e5a3454ac2a842ea8627f57de8a7876c5126a5f1e860d72d81a64a1818e3fc0b",
+    "15_airscape_energy_matched_retrieval.svg": "5b9399c3ea548e13344f5c0d007ba6a905c1bf5b863f950f9d175cca33c51cb1",
+    "16_combined_text_video_examples.png": "36191b1540cdff8c6318aacb56fa77659f66b58a8bace5d4aa0d786ff0441414",
+    "16_combined_text_video_examples.pdf": "f16b11f9666971309b029b6e35329b6b21ebe3bb7ce12191c13c1563395e0779",
+    "16_combined_text_video_examples.svg": "e5cb74cfb991215618aaa9b41b6ead849f0e76a66f50686bfe13f9a2927cac32",
+    "17_rank_outcomes_and_examples.png": "6bf6d5289b4ab53ab7dfd671339c7f840c494e7f06d1e44048ece4737de1f800",
+    "17_rank_outcomes_and_examples.pdf": "358f6731fb157f33c42403e93360d8c474acb07ba966c524b56fe9a91878a7c1",
+    "17_rank_outcomes_and_examples.svg": "99ec3289084729c602984ecbea58f57058acf267cba8589ad00f953d1b136b87",
+    "18_all_comparator_rank_outcomes_1x2.pdf": "fbdeb01ebc1faca415ff4928d451a0f97b6196ec29f7df1d544d88cbf0425870",
+    "18_all_comparator_rank_outcomes_1x2.png": "d94855bcf2c5c20bae1fb7365bdc301539e4450aa36efe08cbffded055a37b09",
+    "18_all_comparator_rank_outcomes_1x2.svg": "4184390d618a95e1932f0bf2e1b2153f9fdff846bd01fc789bd84006888feffc",
+    "19_all_method_rank_boxplot_1x2.pdf": "a1b0dde578cf1e748d5d36c27217d0d4d925b09344baca696385e022bdf3a5e4",
+    "19_all_method_rank_boxplot_1x2.png": "02939e4c1fb560df0a8172ca9d462b78666e944846d0c041d435345ef59a9223",
+    "19_all_method_rank_boxplot_1x2.svg": "8d098a03607aa8be2fe6c3a8603a19d7992effbea582d46b7546b278f6995c33"
+  },
+  "unchanged_measurement_sha256": {
+    "final_final_charts/downlink_bandwidth/data/retrieval_energy_capera_query_ranks.csv": "4d15b3698b394eb8572b68a48dd4b875848e644ee675da693fe7029b5126a6fc",
+    "final_final_charts/downlink_bandwidth/data/retrieval_summary.csv": "097560911d2f17c6696cc7e4bd37f28f0cfaabd702d7570af324b70435cdf4b6",
+    "final_final_charts/downlink_bandwidth/data/retrieval_energy_airscape_query_ranks.csv": "69df33b666fdbf3ca92673ec9fc924cc9891ef691009d875ce3820f910054d3b",
+    "final_final_charts/downlink_bandwidth/data/retrieval_capera_paired_counts.csv": "33c6b0a557a4d5635fbb58d89f324f60d58a8655185ce1aa3439e3eff2583e41",
+    "final_final_charts/downlink_bandwidth/data/retrieval_energy_airscape_paired_counts.csv": "2a3fe2798d71a37429f93a222eb489db611d76b76135947c5b1db9726129b41a",
+    "final_final_charts/downlink_bandwidth/data/retrieval_airscape_paired_counts.csv": "c59eaa4dd56a5d23493cdbd02516ba8485c9867f1d0ee9f47d6f56d5db0a31bb",
+    "final_final_charts/downlink_bandwidth/data/retrieval_rank_box_stats.json": "4b57017053668d191d2a3304ce767f5c4915b92ce8780fb3758c1bdf6ad254e0",
+    "final_final_charts/downlink_bandwidth/data/retrieval_capera_query_ranks.json": "13572fa146f64a0f3299a3a6c53ae7e4a35551e5cf172e6bc623c714e0b3e46d",
+    "final_final_charts/downlink_bandwidth/data/retrieval_energy_summary.json": "bd728bc7076c6c5e4f38a0c1abfc4de05e4b85be27aa02048ad47f6163b8a48a",
+    "final_final_charts/downlink_bandwidth/data/retrieval_all_comparator_outcomes.csv": "24558ee35ad67a7f054e4d15f3ebaeda07742402ad64304d0b243765a581b64f",
+    "final_final_charts/downlink_bandwidth/data/plot_series.json": "7ed9550fd362301c4eef9a783b9b57f4fe0e788d5c0c7170741a00d116c6a600",
+    "final_final_charts/downlink_bandwidth/data/mse_metrics.json": "ad156470a357b2ff91035e2f5a2099e24dc3a4431e5165514ae1d0295a7adcb2",
+    "final_final_charts/downlink_bandwidth/data/retrieval_rank_box_stats.csv": "2ccbbb815b461e2680ffed6c84e3a20fd3e47b5d1eab3a84c6bef718a414f782",
+    "final_final_charts/downlink_bandwidth/data/retrieval_airscape_query_ranks.csv": "7fc9a2eccfededb29966a9a757ee96f4b84d977fa1b2a5185841e5f152deeff7",
+    "final_final_charts/downlink_bandwidth/data/retrieval_airscape_paired_counts.json": "0a8d9e446fc0c2c4ab6ef86d2a27fd23ac6cc0465a643c1388080b24b9f0c52d",
+    "final_final_charts/downlink_bandwidth/data/retrieval_energy_summary.csv": "aa3958af2f239d2662cbad3b67e2765eda2d339ab177849b729e5251b4691042",
+    "final_final_charts/downlink_bandwidth/data/retrieval_capera_paired_counts.json": "551a2391efcf87e6f9f9d5d0c07743f3b9b2edb8007dddfdc4cd7eab1e5e3ae6",
+    "final_final_charts/downlink_bandwidth/data/retrieval_capera_query_ranks.csv": "1420c4df9d364f6768579817a40178f5603a7c55bf767056c5a64cd5358caffe",
+    "final_final_charts/downlink_bandwidth/data/fu_workload_metrics.csv": "06902b2a274b04113657a8426bf0a91475c71d1b51ef329fa44104e5e2c7de94",
+    "final_final_charts/downlink_bandwidth/data/retrieval_energy_capera_paired_counts.json": "396cac44fcbde8f08870a07895691f2c1980b32900831d084642beac973855c7",
+    "final_final_charts/downlink_bandwidth/data/retrieval_energy_airscape_query_ranks.json": "f2dbaaa65a9f4db49063ea2b6fa4c02697636dc7b15f7bf683970690a8318a78",
+    "final_final_charts/downlink_bandwidth/data/mse_metrics.csv": "3e561e7debba4eff459227ad901432b27a8741c830bed0339a1f9fc7fff702da",
+    "final_final_charts/downlink_bandwidth/data/retrieval_energy_airscape_paired_counts.json": "c41d3799bcbd7d46573241f78bcffee562206d7c9b3fe4f10069b0a1d8d5978b",
+    "final_final_charts/downlink_bandwidth/data/tgcn_plot_series.json": "09bb7c4650c6030e29b297c1be0231199f9701eb40b86ae73dbfa6c3165fb540",
+    "final_final_charts/downlink_bandwidth/data/metrics.csv": "f68d883dc91df35e21a9f75e89863d556f4ea264814e05789b63f0960308da47",
+    "final_final_charts/downlink_bandwidth/data/metrics.json": "6748b073686ab780a9903031483e1d9699b79e8e31dec7476a70de273b0a4727",
+    "final_final_charts/downlink_bandwidth/data/retrieval_all_comparator_outcomes.json": "c7dd5a920503186444e83ae7d8d1f3b77332b26b46b9c2bc619437c286418ecb",
+    "final_final_charts/downlink_bandwidth/data/retrieval_energy_capera_query_ranks.json": "c51aff1841e76c3a2d611de3da8f3d946ffba18194646576491b66fd3c96e518",
+    "final_final_charts/downlink_bandwidth/data/retrieval_airscape_query_ranks.json": "b118762028440cfc7988f5045238a6c1c3a823af973f8810ed0bf75dcb8500bd",
+    "final_final_charts/downlink_bandwidth/data/retrieval_energy_capera_paired_counts.csv": "60f3386d92d3e35630c8fc5d19c04cb32761fcf840b429f5c46a88227c251fbd",
+    "final_final_charts/downlink_bandwidth/data/fu_workload_metrics.json": "d81e3d2413980005e1c978b5ca7a4721df641e62528a00f5cab25afb4f431743",
+    "final_final_charts/downlink_bandwidth/data/retrieval_summary.json": "b1ac17f93effd3c40cca237b589be7d74025174a5eba82a3fa42280a66c1e372"
+  },
+  "draw_checks": [
+    {
+      "dataset": "CapERA",
+      "method": "gate_select16",
+      "original_fliers": 144,
+      "displayed_full_range_fliers": 144,
+      "displayed_detail_fliers": 7,
+      "vertical_values_unchanged": true,
+      "horizontal_spread_half_width": 0.065
+    },
+    {
+      "dataset": "CapERA",
+      "method": "iscc",
+      "original_fliers": 126,
+      "displayed_full_range_fliers": 126,
+      "displayed_detail_fliers": 0,
+      "vertical_values_unchanged": true,
+      "horizontal_spread_half_width": 0.065
+    },
+    {
+      "dataset": "CapERA",
+      "method": "afl",
+      "original_fliers": 155,
+      "displayed_full_range_fliers": 155,
+      "displayed_detail_fliers": 0,
+      "vertical_values_unchanged": true,
+      "horizontal_spread_half_width": 0.065
+    },
+    {
+      "dataset": "CapERA",
+      "method": "salun",
+      "original_fliers": 131,
+      "displayed_full_range_fliers": 131,
+      "displayed_detail_fliers": 0,
+      "vertical_values_unchanged": true,
+      "horizontal_spread_half_width": 0.065
+    },
+    {
+      "dataset": "AirScape",
+      "method": "gate_select16",
+      "original_fliers": 17,
+      "displayed_full_range_fliers": 17,
+      "displayed_detail_fliers": 0,
+      "vertical_values_unchanged": true,
+      "horizontal_spread_half_width": 0.065
+    },
+    {
+      "dataset": "AirScape",
+      "method": "iscc",
+      "original_fliers": 11,
+      "displayed_full_range_fliers": 11,
+      "displayed_detail_fliers": 0,
+      "vertical_values_unchanged": true,
+      "horizontal_spread_half_width": 0.065
+    },
+    {
+      "dataset": "AirScape",
+      "method": "afl",
+      "original_fliers": 21,
+      "displayed_full_range_fliers": 21,
+      "displayed_detail_fliers": 0,
+      "vertical_values_unchanged": true,
+      "horizontal_spread_half_width": 0.065
+    },
+    {
+      "dataset": "AirScape",
+      "method": "salun",
+      "original_fliers": 11,
+      "displayed_full_range_fliers": 11,
+      "displayed_detail_fliers": 0,
+      "vertical_values_unchanged": true,
+      "horizontal_spread_half_width": 0.065
+    }
+  ]
+}

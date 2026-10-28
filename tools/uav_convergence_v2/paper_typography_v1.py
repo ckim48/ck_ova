@@ -45,6 +45,9 @@ def source_labels(path):
 
 
 def render(folder, figure, series):
+    if figure.get('kind') == 'rank_boxplot':
+        import paper_boxplot_refine_v2
+        return paper_boxplot_refine_v2.render(folder, figure)
     figure = copy.deepcopy(figure)
     chart = report.prior.chart
     name = figure['name']
@@ -121,9 +124,10 @@ def render(folder, figure, series):
             getattr(ax, 'set_'+dim+'lim')(a['limits'])
             getattr(ax, 'set_'+dim+'ticks')(a['ticks'])
             if a.get('kind') == 'categorical':
-                displayed = [s.replace('-', '-\n', 1) if len(a['ticks']) == 4 else s for s in a['labels']]
-                getattr(ax, 'set_'+dim+'ticklabels')(displayed, fontsize=LABEL)
-                ax.tick_params(axis=dim, labelsize=LABEL, length=0, pad=6)
+                category_size = 12. if name == '11_fu_steps_energy_1x2' else LABEL
+                displayed = [s.replace('-', '-\n', 1) if len(a['ticks']) == 4 and category_size == LABEL else s for s in a['labels']]
+                getattr(ax, 'set_'+dim+'ticklabels')(displayed, fontsize=category_size)
+                ax.tick_params(axis=dim, labelsize=category_size, length=0, pad=6)
                 ax.grid(False, axis=dim)
             else:
                 precision = max(len(s.split('.')[-1]) if '.' in s else 0 for s in a['labels'])
@@ -151,14 +155,14 @@ def render(folder, figure, series):
     renderer = fig.canvas.get_renderer()
     font_audit, gap = [], None
     for ax, panel in zip(axes, figure['axes']):
-        x_size = LABEL if panel['x'].get('kind') == 'categorical' else TICK
+        x_size = (12. if name == '11_fu_steps_energy_1x2' else LABEL) if panel['x'].get('kind') == 'categorical' else TICK
         assert all(t.get_fontsize() == x_size for t in ax.get_xticklabels())
         assert all(t.get_fontsize() == TICK for t in ax.get_yticklabels())
         assert ax.xaxis.label.get_fontsize() == ax.yaxis.label.get_fontsize() == LABEL
         bounds = [t.get_window_extent(renderer) for t in ax.get_xticklabels()]
         assert all(a.x1+1 < b.x0 for a, b in zip(bounds, bounds[1:])), (name, 'x labels overlap')
         font_audit.append(dict(x_tick_pt=x_size, y_tick_pt=TICK, x_label_pt=LABEL, y_label_pt=LABEL,
-                               category_names_match_axis_title=panel['x'].get('kind') == 'categorical'))
+                               category_names_match_axis_title=panel['x'].get('kind') == 'categorical' and x_size == LABEL))
     if legend is not None:
         assert all(t.get_fontsize() == LEGEND for t in legend.get_texts())
         box = legend.get_window_extent(renderer)
@@ -212,6 +216,9 @@ def main():
             for item in figure['files']:
                 before[str((folder/item['file']).relative_to(ROOT))] = item['sha256']
             result = render(folder, figure, series)
+            if result.get('display_revision') == 'title_free_detail_v2':
+                style_source = Path(__file__).with_name('paper_boxplot_refine_v2.py')
+                manifest['source_sha256'][str(style_source.relative_to(ROOT))] = report.sha(style_source)
             manifest['figures'][index] = result
             changed.append(dict(folder=str(folder.relative_to(ROOT)), name=result['name'], typography=result['typography']))
             print('Restyled '+str(folder.relative_to(BASE))+'/'+figure['name'], flush=True)
@@ -235,13 +242,14 @@ def main():
             shutil.copyfile(source.with_suffix('.'+ext), target/(stem+'.'+ext))
     report.write(BASE/'data_typography_v1.json', dict(passed=True, version=VERSION,
         figures=len(changed), fixed_pdf_width_pt=SIZE[0]*72, tick_font_pt=TICK, axis_label_font_pt=LABEL,
-        category_font_pt=LABEL, legend_font_pt=LEGEND, legend_gap_pt=GAP_PT, before_artifact_sha256=before,
+        category_font_pt=LABEL, category_font_overrides={'11_fu_steps_energy_1x2': 12.},
+        legend_font_pt=LEGEND, legend_gap_pt=GAP_PT, before_artifact_sha256=before,
         unchanged_measurement_sha256=measurements, updated=changed,
         source_sha256={str(Path(__file__).relative_to(ROOT)): report.sha(Path(__file__))}))
     (target/'README.md').write_text('# Matching paper figures\n\n'
         'These aliases use the current P-KS experiments and match the requested LaTeX filenames. '
-        'All three PDFs have the same 532.8 pt width, 12 pt numeric ticks and legends, and 14 pt category names/axis titles. '
-        'Four-method category names wrap at the hyphen to preserve font size without overlap. '
+        'All three PDFs have the same 532.8 pt width, 12 pt numeric ticks and legends, and 14 pt axis titles. '
+        'FU method names use 12 pt on one line; other four-method category names wrap at the hyphen at 14 pt. '
         'Legends sit 8 pt above the plots. Thus width=\\linewidth gives matching apparent font sizes.\n\n'
         '- fu_steps_energy_1x2: current 11, paired 1-step and 9-step FU workloads.\n'
         '- 01_round_loss_1x2: current P-KS round validation loss.\n'
