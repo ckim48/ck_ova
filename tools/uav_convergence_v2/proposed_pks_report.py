@@ -122,10 +122,19 @@ def round_curves():
                 if metric != 'KL':
                     x = [k for k, _ in warm] + x
                     y = [scale * v[metric] for _, v in warm] + y
-                prior.chart.style.curve(ax, x, y, i, title)
+                line = prior.chart.style.curve(ax, x, y, i, title)
+                # Match actual FL rounds across methods, rather than record indices.
+                # Several FU evaluations may share a round: mark the last one,
+                # while retaining every original point in the connecting line.
+                marker_rounds = list(range(25 if metric == 'KL' else 0, 201, 25))
+                last_at_round = {round_number: index for index, round_number in enumerate(x)}
+                marker_indices = [last_at_round[round_number] for round_number in marker_rounds]
+                line.set_markevery(marker_indices)
                 values += y
                 prior.SERIES.append(dict(figure=name, dataset=ds, method=m, metric=metric,
                                          domain='round', x=x, y=y, no_smoothing=True,
+                                         marker_rounds=marker_rounds, marker_indices=marker_indices,
+                                         duplicate_round_marker='last observed evaluation',
                                          reference='common_final200' if metric == 'KL' else None))
             prior.chart.regular_axis(ax, 'x', [0, 50, 100, 150, 200], 0)
             ax.set_xlabel('FL round')
@@ -189,7 +198,7 @@ def sweep_curves(rows):
 def docs(rows, responses):
     text = ['# Proposed = P-KS: learning and resource comparisons', '',
             'The user-selected P-KS is now the only method labeled **Proposed** in this bundle. It is the unchanged proxy-KL-gated FU + half-exploration/half-loss-priority FL16 method. The previous adaptive-FU/uniform-FL Proposed is removed from these comparisons. P-KB25 is a separate experiment and is not substituted for P-KS. Historical bundles retain their original identities.', '',
-            'Methods: Proposed (P-KS), ISCC-P2, AFL-OTA and F-SalUn. The [paper-transfer definitions](../four_methods/README.md) remain unchanged. Main line color/marker for Proposed is blue/circle. Every chart is CapERA left and AirScape right, with uniform endpoint ticks, matching panel precision, and no value labels or extra captions.', '',
+            'Methods: Proposed, ISCC-P2, AFL-OTA and F-SalUn. The [paper-transfer definitions](../four_methods/README.md) remain unchanged. Main line color/marker for Proposed is blue/circle. Every chart is CapERA left and AirScape right, with uniform endpoint ticks, matching panel precision, and no value labels or extra captions. Round-curve markers share the same 25-round grid across all methods; the last observed evaluation is marked when FU produces multiple observations at one FL round. All original line values remain unchanged.', '',
             '## Figures', '',
             '- 01–03: validation loss, retained mR and forget-set KL versus FL round, through the common 200-round workload. FU updates occur during this workload; the loss is retained retrieval validation CE after the actual FL/FU updates, not a sum of incompatible local FL and FU objectives.',
             '- 04–05: loss and mR versus active time, with actual retained-only FL continuation after all 45 requests finish. All methods receive the same continuation learning rate and 400-second budget. Display the last evaluated completed checkpoint; no invented additional progress.',

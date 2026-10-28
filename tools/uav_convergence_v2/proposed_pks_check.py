@@ -47,6 +47,10 @@ def main():
         assert all(a <= b for a, b in zip(s['x'], s['x'][1:]))
         if s.get('domain') == 'round':
             assert s['x'][-1] == 200
+            assert s['marker_rounds'] == list(range(25 if s['metric'] == 'KL' else 0, 201, 25))
+            assert [s['x'][i] for i in s['marker_indices']] == s['marker_rounds']
+            assert all(s['x'].index(s['x'][i], i) == i and s['x'][i] not in s['x'][i + 1:]
+                       for i in s['marker_indices'])
             metric = {'loss': 'retained_loss', 'mR': 'retained_mR_percent', 'KL': 'forget_KL'}[s['metric']]
             assert s['y'][-1] == indexed[('baseline', s['dataset'], s['method'])][metric]
         elif s.get('domain') == 'time':
