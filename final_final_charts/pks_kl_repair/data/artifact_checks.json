@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "figures": 14,
+  "series": 108,
+  "endpoints": 40,
+  "strict_budget_endpoints": 4,
+  "checks": [
+    "All10 methods retain both common and policy-matched reference evaluations",
+    "Original P-KS warmup/workload and continuation reproduce exactly; no result overwritten",
+    "Both gradient passes and their computation are present in actual execution records",
+    "All bounded gradients respect the declared local training-only norm constraint",
+    "Only eligible retained data enter selection; common physical clocks and energies audited",
+    "Strict400 KL, mR and loss use the identical saved model; no mixed-endpoint claim",
+    "All figure values, regular endpoint ticks, precision and source/artifact hashes verified"
+  ],
+  "source_sha256": {
+    "tools/uav_convergence_v2/pks_release_check.py": "8e0ba1d395706a65fb3a84f14febcc01515886bcae4e70426a6244b5c8aed0e2"
+  }
+}

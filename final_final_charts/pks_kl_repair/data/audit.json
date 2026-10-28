@@ -1,0 +1,210 @@
+{
+  "passed": true,
+  "continuation_arms": 20,
+  "rows": [
+    {
+      "dataset": "CapERA",
+      "method": "current",
+      "verified_transactions": 413,
+      "energy_clock_and_workload": true,
+      "source": "results/learning_time_budget_v1_20261028/capera_seed0/current"
+    },
+    {
+      "dataset": "CapERA",
+      "method": "pks",
+      "verified_transactions": 413,
+      "energy_clock_and_workload": true,
+      "source": "results/learning_time_budget_v1_20261028/capera_seed0/gate_select16"
+    },
+    {
+      "dataset": "CapERA",
+      "method": "iscc",
+      "verified_transactions": 9,
+      "energy_clock_and_workload": true,
+      "source": "results/learning_time_budget_v1_20261028/capera_seed0/iscc"
+    },
+    {
+      "dataset": "CapERA",
+      "method": "afl",
+      "verified_transactions": 373,
+      "energy_clock_and_workload": true,
+      "source": "results/learning_time_budget_v1_20261028/capera_seed0/afl"
+    },
+    {
+      "dataset": "CapERA",
+      "method": "salun",
+      "verified_transactions": 9,
+      "energy_clock_and_workload": true,
+      "source": "results/learning_time_budget_v1_20261028/capera_seed0/salun"
+    },
+    {
+      "dataset": "CapERA",
+      "method": "mix25_gate",
+      "verified_transactions": 413,
+      "energy_clock_and_workload": true,
+      "source": "results/pks_balance_v1_20261028/continuation/capera_seed0/mix25_gate"
+    },
+    {
+      "dataset": "CapERA",
+      "method": "mix50_gate",
+      "verified_transactions": 413,
+      "energy_clock_and_workload": true,
+      "source": "results/pks_balance_v1_20261028/continuation/capera_seed0/mix50_gate"
+    },
+    {
+      "dataset": "CapERA",
+      "method": "mix50_adaptive",
+      "verified_transactions": 413,
+      "energy_clock_and_workload": true,
+      "source": "results/pks_balance_v1_20261028/continuation/capera_seed0/mix50_adaptive"
+    },
+    {
+      "dataset": "CapERA",
+      "method": "pk_uniform",
+      "verified_transactions": 413,
+      "energy_clock_and_workload": true,
+      "source": "results/pks_balance_v1_20261028/continuation/capera_seed0/pk_uniform"
+    },
+    {
+      "dataset": "CapERA",
+      "method": "pls_uniform",
+      "verified_transactions": 412,
+      "energy_clock_and_workload": true,
+      "source": "results/pks_balance_v1_20261028/continuation/capera_seed0/pls_uniform"
+    },
+    {
+      "dataset": "AirScape",
+      "method": "current",
+      "verified_transactions": 412,
+      "energy_clock_and_workload": true,
+      "source": "results/learning_time_budget_v1_20261028/airscape_seed0/current"
+    },
+    {
+      "dataset": "AirScape",
+      "method": "pks",
+      "verified_transactions": 413,
+      "energy_clock_and_workload": true,
+      "source": "results/learning_time_budget_v1_20261028/airscape_seed0/gate_select16"
+    },
+    {
+      "dataset": "AirScape",
+      "method": "iscc",
+      "verified_transactions": 9,
+      "energy_clock_and_workload": true,
+      "source": "results/learning_time_budget_v1_20261028/airscape_seed0/iscc"
+    },
+    {
+      "dataset": "AirScape",
+      "method": "afl",
+      "verified_transactions": 373,
+      "energy_clock_and_workload": true,
+      "source": "results/learning_time_budget_v1_20261028/airscape_seed0/afl"
+    },
+    {
+      "dataset": "AirScape",
+      "method": "salun",
+      "verified_transactions": 9,
+      "energy_clock_and_workload": true,
+      "source": "results/learning_time_budget_v1_20261028/airscape_seed0/salun"
+    },
+    {
+      "dataset": "AirScape",
+      "method": "mix25_gate",
+      "verified_transactions": 413,
+      "energy_clock_and_workload": true,
+      "source": "results/pks_balance_v1_20261028/continuation/airscape_seed0/mix25_gate"
+    },
+    {
+      "dataset": "AirScape",
+      "method": "mix50_gate",
+      "verified_transactions": 413,
+      "energy_clock_and_workload": true,
+      "source": "results/pks_balance_v1_20261028/continuation/airscape_seed0/mix50_gate"
+    },
+    {
+      "dataset": "AirScape",
+      "method": "mix50_adaptive",
+      "verified_transactions": 412,
+      "energy_clock_and_workload": true,
+      "source": "results/pks_balance_v1_20261028/continuation/airscape_seed0/mix50_adaptive"
+    },
+    {
+      "dataset": "AirScape",
+      "method": "pk_uniform",
+      "verified_transactions": 413,
+      "energy_clock_and_workload": true,
+      "source": "results/pks_balance_v1_20261028/continuation/airscape_seed0/pk_uniform"
+    },
+    {
+      "dataset": "AirScape",
+      "method": "pls_uniform",
+      "verified_transactions": 412,
+      "energy_clock_and_workload": true,
+      "source": "results/pks_balance_v1_20261028/continuation/airscape_seed0/pls_uniform"
+    }
+  ],
+  "gradient_checks": [
+    {
+      "dataset": "CapERA",
+      "method": "mix25_gate",
+      "baseline_gradient_pairs": 1800,
+      "continuation_gradient_pairs": 4130,
+      "eligible_retained_samples_only": true,
+      "local_gradient_bound": true
+    },
+    {
+      "dataset": "CapERA",
+      "method": "mix50_gate",
+      "baseline_gradient_pairs": 1800,
+      "continuation_gradient_pairs": 4130,
+      "eligible_retained_samples_only": true,
+      "local_gradient_bound": true
+    },
+    {
+      "dataset": "CapERA",
+      "method": "mix50_adaptive",
+      "baseline_gradient_pairs": 1800,
+      "continuation_gradient_pairs": 4130,
+      "eligible_retained_samples_only": true,
+      "local_gradient_bound": true
+    },
+    {
+      "dataset": "AirScape",
+      "method": "mix25_gate",
+      "baseline_gradient_pairs": 1800,
+      "continuation_gradient_pairs": 4130,
+      "eligible_retained_samples_only": true,
+      "local_gradient_bound": true
+    },
+    {
+      "dataset": "AirScape",
+      "method": "mix50_gate",
+      "baseline_gradient_pairs": 1800,
+      "continuation_gradient_pairs": 4130,
+      "eligible_retained_samples_only": true,
+      "local_gradient_bound": true
+    },
+    {
+      "dataset": "AirScape",
+      "method": "mix50_adaptive",
+      "baseline_gradient_pairs": 1800,
+      "continuation_gradient_pairs": 4120,
+      "eligible_retained_samples_only": true,
+      "local_gradient_bound": true
+    }
+  ],
+  "common_reference_continuation_numeric_tolerance": 1e-06,
+  "zero_change_control": {
+    "passed": true,
+    "rows": [
+      {
+        "dataset": "CapERA",
+        "identical_checkpoint_metrics_and_physical_clock": true
+      },
+      {
+        "dataset": "AirScape",
+        "identical_checkpoint_metrics_and_physical_clock": true
+      }
+    ]
+  }
+}

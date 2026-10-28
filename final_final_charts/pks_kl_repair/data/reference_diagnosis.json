@@ -1,0 +1,128 @@
+{
+  "CapERA": {
+    "passed": true,
+    "original_reference_preserved": true,
+    "reporting_only": true,
+    "rows": [
+      {
+        "dataset": "CapERA",
+        "reference_policy": "original_reference_reproduction",
+        "FL_round": 200,
+        "retained_mR_percent": 17.5911458209157,
+        "retained_loss": 5.228848457336426,
+        "reference_mR_percent": 16.471354415019356,
+        "reference_loss": 5.4418134689331055,
+        "forget_KL": 0.018232312053442,
+        "worst_request_KL": 0.02613075077533722,
+        "reference_max_parameter_difference": 0.0
+      },
+      {
+        "dataset": "CapERA",
+        "reference_policy": "uniform_sampler",
+        "FL_round": 200,
+        "retained_mR_percent": 17.5911458209157,
+        "retained_loss": 5.228848457336426,
+        "reference_mR_percent": 16.354166716337204,
+        "reference_loss": 5.4459333419799805,
+        "forget_KL": 0.018335606902837753,
+        "worst_request_KL": 0.026091208681464195
+      },
+      {
+        "dataset": "CapERA",
+        "reference_policy": "uniform_sampler",
+        "FL_round": 613,
+        "retained_mR_percent": 24.16666684051355,
+        "retained_loss": 4.269837856292725,
+        "reference_mR_percent": 23.919270808498062,
+        "reference_loss": 4.389455795288086,
+        "forget_KL": 0.08242464065551758,
+        "worst_request_KL": 0.12180459499359131
+      },
+      {
+        "dataset": "CapERA",
+        "reference_policy": "selective_sampler",
+        "FL_round": 200,
+        "retained_mR_percent": 17.5911458209157,
+        "retained_loss": 5.228848457336426,
+        "reference_mR_percent": 17.096354191501938,
+        "reference_loss": 5.331409931182861,
+        "forget_KL": 0.004450354725122452,
+        "worst_request_KL": 0.0064758071675896645
+      },
+      {
+        "dataset": "CapERA",
+        "reference_policy": "selective_sampler",
+        "FL_round": 613,
+        "retained_mR_percent": 24.16666684051355,
+        "retained_loss": 4.269837856292725,
+        "reference_mR_percent": 24.192708358168602,
+        "reference_loss": 4.279901504516602,
+        "forget_KL": 0.0010338739957660437,
+        "worst_request_KL": 0.0015454599633812904
+      }
+    ]
+  },
+  "AirScape": {
+    "passed": true,
+    "original_reference_preserved": true,
+    "reporting_only": true,
+    "rows": [
+      {
+        "dataset": "AirScape",
+        "reference_policy": "original_reference_reproduction",
+        "FL_round": 200,
+        "retained_mR_percent": 13.802083333333334,
+        "retained_loss": 5.511499404907227,
+        "reference_mR_percent": 13.541666666666666,
+        "reference_loss": 5.5939788818359375,
+        "forget_KL": 0.007319689728319645,
+        "worst_request_KL": 0.013771766796708107,
+        "reference_max_parameter_difference": 0.0
+      },
+      {
+        "dataset": "AirScape",
+        "reference_policy": "uniform_sampler",
+        "FL_round": 200,
+        "retained_mR_percent": 13.802083333333334,
+        "retained_loss": 5.511499404907227,
+        "reference_mR_percent": 13.541666666666666,
+        "reference_loss": 5.594501495361328,
+        "forget_KL": 0.007547466550022364,
+        "worst_request_KL": 0.014235211536288261
+      },
+      {
+        "dataset": "AirScape",
+        "reference_policy": "uniform_sampler",
+        "FL_round": 613,
+        "retained_mR_percent": 16.731770833333336,
+        "retained_loss": 4.994905948638916,
+        "reference_mR_percent": 16.536458333333336,
+        "reference_loss": 5.04648494720459,
+        "forget_KL": 0.0710737407207489,
+        "worst_request_KL": 0.0960916131734848
+      },
+      {
+        "dataset": "AirScape",
+        "reference_policy": "selective_sampler",
+        "FL_round": 200,
+        "retained_mR_percent": 13.802083333333334,
+        "retained_loss": 5.511499404907227,
+        "reference_mR_percent": 13.736979166666666,
+        "reference_loss": 5.539362907409668,
+        "forget_KL": 0.00123469321988523,
+        "worst_request_KL": 0.0021762733813375235
+      },
+      {
+        "dataset": "AirScape",
+        "reference_policy": "selective_sampler",
+        "FL_round": 613,
+        "retained_mR_percent": 16.731770833333336,
+        "retained_loss": 4.994905948638916,
+        "reference_mR_percent": 16.731770833333336,
+        "reference_loss": 5.002597808837891,
+        "forget_KL": 0.0005109119811095297,
+        "worst_request_KL": 0.0009227610426023602
+      }
+    ]
+  }
+}
