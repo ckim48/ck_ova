@@ -496,5 +496,18 @@
     ],
     "generated_captions_or_media": false,
     "actual_video_frames": 18
+  },
+  "all_method_rank_charts": {
+    "passed": true,
+    "all_methods": 4,
+    "comparator_pairs": 6,
+    "boxplots": 8,
+    "retained_query_counts": [
+      1280,
+      256
+    ],
+    "no_query_filtering": true,
+    "all_outliers_visible": true,
+    "models_and_scores_unchanged": true
   }
 }

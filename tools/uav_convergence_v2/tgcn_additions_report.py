@@ -20,7 +20,8 @@ METHODS, DATASETS = current.METHODS, current.DATASETS
 NAMES = ['10_energy_mr_1x2', '11_fu_steps_energy_1x2',
          '12_capera_text_video_examples', '13_airscape_text_video_examples',
          '14_capera_energy_matched_retrieval', '15_airscape_energy_matched_retrieval',
-         '16_combined_text_video_examples', '17_rank_outcomes_and_examples']
+         '16_combined_text_video_examples', '17_rank_outcomes_and_examples',
+         '18_all_comparator_rank_outcomes_1x2', '19_all_method_rank_boxplot_1x2']
 ENERGY_BUDGET_KJ = 650.
 
 
@@ -286,7 +287,7 @@ def documents():
         'Forty fresh executions:1/3/5/7/9 outer FU steps per request × four methods × two datasets. Same45 requests, sample cohorts, release ordinals,10UAV, five regions,200 totalFL rounds, initial models, features, learning/radio/energy coefficients. Every prescribed FU step finishes. Eight fresh five-step controls exactly reproduce original final parameter tensors, quality, transaction clocks and radio decisions.', '',
         'GA→FT comparators retain two local optimizer substeps per outer FU cycle; both are charged. More steps do not necessarily improve mR or KL, so all quality values and physical-bound exceedances accompany the energy figure. Flat Proposed curves are retained: co-aggregation may absorb additional FU work within the unchanged180 mission-FL transmissions. Parallel refers to joint FL/FU aggregation/application, not simultaneous local CPU execution.', '',
         '## 12–13: Earlier fixed-round retrieval diagnostics', '',
-        '[CapERA, 200 rounds](12_capera_text_video_examples.pdf) · [AirScape, 200 rounds](13_airscape_text_video_examples.pdf). These earlier diagnostic figures remain accessible as supporting material; the main gallery uses whole-query outcomes and examples in17.', '',
+        '[CapERA, 200 rounds](12_capera_text_video_examples.pdf) · [AirScape, 200 rounds](13_airscape_text_video_examples.pdf). These earlier diagnostic figures remain accessible as supporting material; the main gallery uses chart-only full-query comparisons in18–19.', '',
         'Evaluate the unchanged final200 checkpoints with all45 requests/225FU cycles complete, at the same workload rather than the same energy. Native captions, original gallery and cached eight-frame RemoteCLIP features are unchanged. All six recalls and validation loss are independently reproduced before selecting illustrations. A displayed image is the fourth of the same eight original sampled video frames, downsampled only to fit the figure. It is not a generated image and the task is video retrieval, not caption generation.', '',
         'Each dataset shows one selected Proposed rank advantage and one disadvantage. Prefer a top1 reversal among unique native caption strings; choose the median rank gap with caption-ID tie breaking. Full selection rules and counts are in the protocol. These two deliberately contrasting cases are not a random or representative sample. Complete retained-query rank/top3-ID tables and better/equal/worse counts prevent a favorable-only interpretation.', '',
         'Ground truth is the annotated paired video, not a judgment that every other semantically similar video is irrelevant. Green borders indicate the correct top1 video, red an incorrect top1; GT rank gives the annotated video position in the full gallery. Full native query text and media/frame hashes accompany selected cases. Long displayed queries may be explicitly abbreviated, but inference always used the original complete caption. Only derived representative-frame figures are published; raw videos/features/checkpoints stay local.', '',
@@ -308,6 +309,11 @@ def documents():
         '| AirScape | 122 / 256 (47.7%) | 29 / 256 (11.3%) | 105 / 256 (41.0%) |', '',
         'Panels (b–c) retain the eight selected queries, native frames and four-method top1 results from16 unchanged. The full-query bars are never computed from these selected examples. Read the Proposed and AFL-OTA GT ranks to connect a case to the corresponding outcome. A top1 miss can be a paired-rank tie: the CapERA flood case has GT rank3 for both. Green/red image borders encode top1 correctness, whereas the upper blue/gold/red segments encode improved/tied/worsened ranks.', '',
         'The combined figure puts illustrative successes and confusions in the context of the full-query outcome distribution. It is descriptive evidence from the current single-seed study, not causal attribution to AirComp, a generalization claim, a query-independent significance test or proof of unlearning. CapERA has multiple captions per video; the denominator is text queries, not independent videos. [Exact counts and percentages](data/retrieval_rank_outcomes.csv) accompany the figure.', '',
+        '[Combined statistics and examples](17_rank_outcomes_and_examples.pdf) remains available as supporting material. The current chart-only alternatives below use all comparator methods.', '',
+        '## 18–19: Chart-only comparisons using every retained query', '',
+        '[18: Paired-rank outcome bars](18_all_comparator_rank_outcomes_1x2.pdf) is the main choice for comparing the frequency of improvements. Each comparator gets one 100% stacked bar: Proposed has a smaller, equal or larger annotated-video rank. All three baselines (ISCC-P2, AFL-OTA, F-SalUn) are included. Proposed is the reference; a self-comparison would be trivially 100% tied and is omitted. Method names label the x-axis; colors and hatches represent improved/tied/worsened outcomes. No values are printed on the bars.', '',
+        '[19: GT-rank boxplots](19_all_method_rank_boxplot_1x2.pdf) includes all four methods directly. Each box shows the query-rank median and 25th–75th percentiles, with 1.5-IQR whiskers and every outlier shown. Both panels use a common linear rank axis; lower is better. Boxes describe the distribution across queries, not uncertainty across training seeds. The paired frequency chart and rank-distribution chart answer different questions; neither is mR or forgetting quality.', '',
+        'Both figures use the unchanged last completed models within 650 kJ and all retained native text queries (CapERA1,280; AirScape256), without selected-case filtering, new training, score modification or outlier suppression. Caption multiplicity in CapERA means queries need not be independent videos. [Exact paired counts](data/retrieval_all_comparator_outcomes.csv) and [boxplot statistics](data/retrieval_rank_box_stats.csv) accompany the plots.', '',
         'Single development seed and frozen-feature rank10 adapter study, not a full-backbone VLM hardware benchmark or statistical superiority result.', '',
         '## Reproduction', '', '```sh',
         '.venv/bin/python tools/uav_convergence_v2/tgcn_fu_workload_v1.py run',
@@ -327,7 +333,7 @@ def documents():
             a, b = text.index(marker), text.index(end)+len(end)
             text = text[:a]+text[b:]
         insert = text.index('\n')+1
-        card = ('\n'+marker+'\n[Energy–mR, paired FU-workload bars and retrieval outcomes with examples]('+relative+'TGCN_ADDITIONS.md). Main figures10–11 and17; earlier example sheets12–16 remain linked.\n'+end+'\n')
+        card = ('\n'+marker+'\n[Energy–mR, paired FU-workload bars and all-method retrieval charts]('+relative+'TGCN_ADDITIONS.md). Main figures10–11 and18–19; example sheets12–17 remain linked.\n'+end+'\n')
         path.write_text(text[:insert]+card+text[insert:])
         path = folder/'index.html'
         text = path.read_text()
@@ -335,14 +341,38 @@ def documents():
             a, b = text.index(marker), text.index(end)+len(end)
             text = text[:a]+text[b:]
         insert = text.index('</h1>')+len('</h1>')
-        main_names = [NAMES[0], NAMES[1], NAMES[7]] if folder == DEST else [NAMES[0], NAMES[7]]
+        main_names = [NAMES[0], NAMES[1], NAMES[8], NAMES[9]] if folder == DEST else [NAMES[0], NAMES[8], NAMES[9]]
         figures = [f for f in prior.FIGURES if f['name'] in main_names]
         cards = ''.join('<section><h2>'+html.escape(f['title'])+'</h2><a href="'+relative+f['name']+'.pdf"><img loading="lazy" src="'+relative+f['name']+'.png"></a></section>' for f in figures)
         text = text[:insert]+marker+'<p><a href="'+relative+'TGCN_ADDITIONS.md">Energy efficiency and actual VLM retrieval: definitions and full numerical results</a></p>'+cards+end+text[insert:]
         path.write_text(text)
 
 
-def main(success_only=False, integrated_only=False):
+def main(success_only=False, integrated_only=False, ranks_only=False):
+    if ranks_only:
+        manifest = read(DEST/'data/tgcn_manifest.json')
+        audit = read(DEST/'data/tgcn_audit.json')
+        kept = [f for f in manifest['figures'] if f['name'] not in NAMES[8:10]]
+        untouched = {f['file']: sha(DEST/f['file']) for figure in kept for f in figure['files']}
+        numerical = {str(p.relative_to(DEST)): sha(p) for p in (DEST/'data').iterdir()
+                     if p.suffix in ['.json', '.csv'] and
+                     (p.name.startswith(('energy_', 'fu_workload_', 'mse_')) or
+                      p.name in ['metrics.json', 'metrics.csv', 'tgcn_plot_series.json'] or
+                      any(s in p.name for s in ['query_ranks', 'paired_counts', 'summary']))}
+        setup()
+        prior.FIGURES, prior.SOURCES = kept, manifest['source_sha256']
+        import tgcn_rank_comparison_v5 as rank_comparison
+        audit['all_method_rank_charts'] = rank_comparison.render(__import__(__name__))
+        prior.FIGURES.sort(key=lambda f: f['name'])
+        prior.SOURCES[str(Path(__file__).relative_to(ROOT))] = sha(Path(__file__))
+        manifest.update(unix=time.time(), figures=prior.FIGURES, source_sha256=prior.SOURCES,
+                        display_revision='all_method_rank_charts_v5', unchanged_measurements=numerical)
+        write(DEST/'data/tgcn_manifest.json', manifest)
+        write(DEST/'data/tgcn_audit.json', audit)
+        assert all(sha(DEST/p) == digest for p, digest in {**untouched, **numerical}.items())
+        documents()
+        print(dict(passed=True, updated_figures=2, all_query_comparisons=True, new_training=0), flush=True)
+        return
     if success_only or integrated_only:
         manifest = read(DEST/'data/tgcn_manifest.json')
         audit = read(DEST/'data/tgcn_audit.json')
@@ -390,6 +420,8 @@ def main(success_only=False, integrated_only=False):
     audits['combined_retrieval'] = combined.render(__import__(__name__), energy_retrieval)
     import tgcn_integrated_outcomes_v4 as integrated
     audits['integrated_retrieval'] = integrated.render(__import__(__name__), energy_retrieval)
+    import tgcn_rank_comparison_v5 as rank_comparison
+    audits['all_method_rank_charts'] = rank_comparison.render(__import__(__name__))
     write(DEST/'data/tgcn_audit.json', dict(passed=True, **audits))
     write(DEST/'data/tgcn_plot_series.json', prior.SERIES)
     for module in [Path(__file__), Path(fu.__file__), Path(retrieval.__file__)]:
@@ -407,5 +439,6 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--display-only', '--success-only', dest='success_only', action='store_true', help='Update paired FU bars and combined retrieval examples from existing measured results.')
     parser.add_argument('--integrated-only', action='store_true', help='Only add whole-query outcomes above the existing selected examples.')
+    parser.add_argument('--ranks-only', action='store_true', help='Create all-comparator outcome bars and all-method rank boxplots from existing full-query ranks.')
     args = parser.parse_args()
-    main(args.success_only, args.integrated_only)
+    main(args.success_only, args.integrated_only, args.ranks_only)

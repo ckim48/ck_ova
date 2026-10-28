@@ -1,0 +1,200 @@
+[
+  {
+    "dataset": "CapERA",
+    "comparator": "iscc",
+    "comparator_label": "ISCC-P2",
+    "outcome": "improved",
+    "count": 873,
+    "queries": 1280,
+    "percent": 68.203125,
+    "energy_budget_kJ": 650.0,
+    "reference_method": "gate_select16"
+  },
+  {
+    "dataset": "CapERA",
+    "comparator": "iscc",
+    "comparator_label": "ISCC-P2",
+    "outcome": "tied",
+    "count": 89,
+    "queries": 1280,
+    "percent": 6.953125,
+    "energy_budget_kJ": 650.0,
+    "reference_method": "gate_select16"
+  },
+  {
+    "dataset": "CapERA",
+    "comparator": "iscc",
+    "comparator_label": "ISCC-P2",
+    "outcome": "worsened",
+    "count": 318,
+    "queries": 1280,
+    "percent": 24.84375,
+    "energy_budget_kJ": 650.0,
+    "reference_method": "gate_select16"
+  },
+  {
+    "dataset": "CapERA",
+    "comparator": "afl",
+    "comparator_label": "AFL-OTA",
+    "outcome": "improved",
+    "count": 599,
+    "queries": 1280,
+    "percent": 46.796875,
+    "energy_budget_kJ": 650.0,
+    "reference_method": "gate_select16"
+  },
+  {
+    "dataset": "CapERA",
+    "comparator": "afl",
+    "comparator_label": "AFL-OTA",
+    "outcome": "tied",
+    "count": 287,
+    "queries": 1280,
+    "percent": 22.421875,
+    "energy_budget_kJ": 650.0,
+    "reference_method": "gate_select16"
+  },
+  {
+    "dataset": "CapERA",
+    "comparator": "afl",
+    "comparator_label": "AFL-OTA",
+    "outcome": "worsened",
+    "count": 394,
+    "queries": 1280,
+    "percent": 30.78125,
+    "energy_budget_kJ": 650.0,
+    "reference_method": "gate_select16"
+  },
+  {
+    "dataset": "CapERA",
+    "comparator": "salun",
+    "comparator_label": "F-SalUn",
+    "outcome": "improved",
+    "count": 866,
+    "queries": 1280,
+    "percent": 67.65625,
+    "energy_budget_kJ": 650.0,
+    "reference_method": "gate_select16"
+  },
+  {
+    "dataset": "CapERA",
+    "comparator": "salun",
+    "comparator_label": "F-SalUn",
+    "outcome": "tied",
+    "count": 92,
+    "queries": 1280,
+    "percent": 7.1875,
+    "energy_budget_kJ": 650.0,
+    "reference_method": "gate_select16"
+  },
+  {
+    "dataset": "CapERA",
+    "comparator": "salun",
+    "comparator_label": "F-SalUn",
+    "outcome": "worsened",
+    "count": 322,
+    "queries": 1280,
+    "percent": 25.15625,
+    "energy_budget_kJ": 650.0,
+    "reference_method": "gate_select16"
+  },
+  {
+    "dataset": "AirScape",
+    "comparator": "iscc",
+    "comparator_label": "ISCC-P2",
+    "outcome": "improved",
+    "count": 160,
+    "queries": 256,
+    "percent": 62.5,
+    "energy_budget_kJ": 650.0,
+    "reference_method": "gate_select16"
+  },
+  {
+    "dataset": "AirScape",
+    "comparator": "iscc",
+    "comparator_label": "ISCC-P2",
+    "outcome": "tied",
+    "count": 16,
+    "queries": 256,
+    "percent": 6.25,
+    "energy_budget_kJ": 650.0,
+    "reference_method": "gate_select16"
+  },
+  {
+    "dataset": "AirScape",
+    "comparator": "iscc",
+    "comparator_label": "ISCC-P2",
+    "outcome": "worsened",
+    "count": 80,
+    "queries": 256,
+    "percent": 31.25,
+    "energy_budget_kJ": 650.0,
+    "reference_method": "gate_select16"
+  },
+  {
+    "dataset": "AirScape",
+    "comparator": "afl",
+    "comparator_label": "AFL-OTA",
+    "outcome": "improved",
+    "count": 122,
+    "queries": 256,
+    "percent": 47.65625,
+    "energy_budget_kJ": 650.0,
+    "reference_method": "gate_select16"
+  },
+  {
+    "dataset": "AirScape",
+    "comparator": "afl",
+    "comparator_label": "AFL-OTA",
+    "outcome": "tied",
+    "count": 29,
+    "queries": 256,
+    "percent": 11.328125,
+    "energy_budget_kJ": 650.0,
+    "reference_method": "gate_select16"
+  },
+  {
+    "dataset": "AirScape",
+    "comparator": "afl",
+    "comparator_label": "AFL-OTA",
+    "outcome": "worsened",
+    "count": 105,
+    "queries": 256,
+    "percent": 41.015625,
+    "energy_budget_kJ": 650.0,
+    "reference_method": "gate_select16"
+  },
+  {
+    "dataset": "AirScape",
+    "comparator": "salun",
+    "comparator_label": "F-SalUn",
+    "outcome": "improved",
+    "count": 159,
+    "queries": 256,
+    "percent": 62.109375,
+    "energy_budget_kJ": 650.0,
+    "reference_method": "gate_select16"
+  },
+  {
+    "dataset": "AirScape",
+    "comparator": "salun",
+    "comparator_label": "F-SalUn",
+    "outcome": "tied",
+    "count": 18,
+    "queries": 256,
+    "percent": 7.03125,
+    "energy_budget_kJ": 650.0,
+    "reference_method": "gate_select16"
+  },
+  {
+    "dataset": "AirScape",
+    "comparator": "salun",
+    "comparator_label": "F-SalUn",
+    "outcome": "worsened",
+    "count": 79,
+    "queries": 256,
+    "percent": 30.859375,
+    "energy_budget_kJ": 650.0,
+    "reference_method": "gate_select16"
+  }
+]

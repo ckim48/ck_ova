@@ -22,7 +22,7 @@ GA→FT comparators retain two local optimizer substeps per outer FU cycle; both
 
 ## 12–13: Earlier fixed-round retrieval diagnostics
 
-[CapERA, 200 rounds](12_capera_text_video_examples.pdf) · [AirScape, 200 rounds](13_airscape_text_video_examples.pdf). These earlier diagnostic figures remain accessible as supporting material; the main gallery uses whole-query outcomes and examples in17.
+[CapERA, 200 rounds](12_capera_text_video_examples.pdf) · [AirScape, 200 rounds](13_airscape_text_video_examples.pdf). These earlier diagnostic figures remain accessible as supporting material; the main gallery uses chart-only full-query comparisons in18–19.
 
 Evaluate the unchanged final200 checkpoints with all45 requests/225FU cycles complete, at the same workload rather than the same energy. Native captions, original gallery and cached eight-frame RemoteCLIP features are unchanged. All six recalls and validation loss are independently reproduced before selecting illustrations. A displayed image is the fourth of the same eight original sampled video frames, downsampled only to fit the figure. It is not a generated image and the task is video retrieval, not caption generation.
 
@@ -62,6 +62,16 @@ Panel (a) compares Proposed with AFL-OTA under the same 650 kJ active-energy bud
 Panels (b–c) retain the eight selected queries, native frames and four-method top1 results from16 unchanged. The full-query bars are never computed from these selected examples. Read the Proposed and AFL-OTA GT ranks to connect a case to the corresponding outcome. A top1 miss can be a paired-rank tie: the CapERA flood case has GT rank3 for both. Green/red image borders encode top1 correctness, whereas the upper blue/gold/red segments encode improved/tied/worsened ranks.
 
 The combined figure puts illustrative successes and confusions in the context of the full-query outcome distribution. It is descriptive evidence from the current single-seed study, not causal attribution to AirComp, a generalization claim, a query-independent significance test or proof of unlearning. CapERA has multiple captions per video; the denominator is text queries, not independent videos. [Exact counts and percentages](data/retrieval_rank_outcomes.csv) accompany the figure.
+
+[Combined statistics and examples](17_rank_outcomes_and_examples.pdf) remains available as supporting material. The current chart-only alternatives below use all comparator methods.
+
+## 18–19: Chart-only comparisons using every retained query
+
+[18: Paired-rank outcome bars](18_all_comparator_rank_outcomes_1x2.pdf) is the main choice for comparing the frequency of improvements. Each comparator gets one 100% stacked bar: Proposed has a smaller, equal or larger annotated-video rank. All three baselines (ISCC-P2, AFL-OTA, F-SalUn) are included. Proposed is the reference; a self-comparison would be trivially 100% tied and is omitted. Method names label the x-axis; colors and hatches represent improved/tied/worsened outcomes. No values are printed on the bars.
+
+[19: GT-rank boxplots](19_all_method_rank_boxplot_1x2.pdf) includes all four methods directly. Each box shows the query-rank median and 25th–75th percentiles, with 1.5-IQR whiskers and every outlier shown. Both panels use a common linear rank axis; lower is better. Boxes describe the distribution across queries, not uncertainty across training seeds. The paired frequency chart and rank-distribution chart answer different questions; neither is mR or forgetting quality.
+
+Both figures use the unchanged last completed models within 650 kJ and all retained native text queries (CapERA1,280; AirScape256), without selected-case filtering, new training, score modification or outlier suppression. Caption multiplicity in CapERA means queries need not be independent videos. [Exact paired counts](data/retrieval_all_comparator_outcomes.csv) and [boxplot statistics](data/retrieval_rank_box_stats.csv) accompany the plots.
 
 Single development seed and frozen-feature rank10 adapter study, not a full-backbone VLM hardware benchmark or statistical superiority result.
 

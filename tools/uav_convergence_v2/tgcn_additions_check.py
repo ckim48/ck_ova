@@ -147,13 +147,62 @@ def check_retrieval(module, prefix, figures):
                 selection_kind='selected_successes_and_misses' if mixed else 'selected_successful_examples' if successful else 'contrasting_diagnostics')
 
 
+def check_all_method_rank_charts(manifest):
+    dest, read = report.DEST, report.read
+    protocol = read(dest/'data/retrieval_rank_comparison_protocol.json')
+    assert protocol['display_only'] and protocol['energy_budget_kJ'] == 650.
+    for file, digest in protocol['source_sha256'].items():
+        assert report.sha(report.ROOT/file) == digest, file
+    records = read(dest/'data/retrieval_all_comparator_outcomes.json')
+    stats = read(dest/'data/retrieval_rank_box_stats.json')
+    assert len(records) == 18 and len(stats) == 8
+    bars = next(f for f in manifest['figures'] if f['name'] == report.NAMES[8])
+    box = next(f for f in manifest['figures'] if f['name'] == report.NAMES[9])
+    assert bars['all_retained_queries'] and not bars['numeric_bar_annotations']
+    assert box['all_retained_queries'] and box['show_all_fliers'] and box['y_scale'] == 'linear'
+    assert box['boxes'] == stats
+    comparators = [m for m in report.METHODS if m != 'gate_select16']
+    assert bars['comparator_order'] == comparators
+    for ds in report.DATASETS:
+        ranks = read(dest/'data'/f'retrieval_energy_{ds.lower()}_query_ranks.json')
+        assert len(ranks) == protocol['query_counts'][ds]
+        for method in comparators:
+            delta = np.array([r[method+'_rank']-r['gate_select16_rank'] for r in ranks])
+            bottom = 0.
+            for outcome, count in [('improved', int(sum(delta > 0))), ('tied', int(sum(delta == 0))), ('worsened', int(sum(delta < 0)))]:
+                row = next(r for r in records if (r['dataset'], r['comparator'], r['outcome']) == (ds, method, outcome))
+                artist = next(r for r in bars['bars'] if (r['dataset'], r['comparator'], r['outcome']) == (ds, method, outcome))
+                assert row['count'] == count and row['queries'] == len(ranks)
+                assert row['percent'] == artist['height'] == 100*count/len(ranks)
+                assert artist['bottom'] == bottom
+                bottom += row['percent']
+            assert math.isclose(bottom, 100., abs_tol=1e-10)
+        for method in report.METHODS:
+            values = np.array([r[method+'_rank'] for r in ranks], dtype=float)
+            s = next(r for r in stats if (r['dataset'], r['method']) == (ds, method))
+            q1, median, q3 = np.quantile(values, [.25, .5, .75])
+            inside = values[(values >= q1-1.5*(q3-q1)) & (values <= q3+1.5*(q3-q1))]
+            assert [s['q1'], s['median'], s['q3']] == [q1, median, q3]
+            assert [s['whisker_low'], s['whisker_high']] == [min(inside), max(inside)]
+            assert s['fliers'] == values[values < min(inside)].tolist()+values[values > max(inside)].tolist()
+            assert s['queries'] == len(ranks) and s['minimum'] == min(values) and s['maximum'] == max(values)
+            panel = next(p for p in box['axes'] if p['dataset'] == ds)
+            assert panel['y']['limits'][0] < min(values) and panel['y']['limits'][-1] > max(values)
+    for figure in [bars, box]:
+        svg = ET.parse(dest/(figure['name']+'.svg')).getroot()
+        assert not svg.findall('.//{http://www.w3.org/2000/svg}image')
+    return dict(passed=True, query_counts=[1280, 256], comparator_pairs=6,
+                all_four_method_boxplots=True, exact_counts_and_quantiles=True,
+                all_outliers_in_plot_range=True, scientific_charts_without_images=True)
+
+
 def main():
     torch.set_num_threads(1)
     root, dest, read, sha = report.ROOT, report.DEST, report.read, report.sha
     manifest = read(dest/'data/tgcn_manifest.json')
     audit = read(dest/'data/tgcn_audit.json')
     series = read(dest/'data/tgcn_plot_series.json')
-    assert manifest['complete'] and audit['passed'] and len(manifest['figures']) == len(report.NAMES) == 8
+    assert manifest['complete'] and audit['passed'] and len(manifest['figures']) == len(report.NAMES) == 10
     assert {f['name'] for f in manifest['figures']} == set(report.NAMES)
     for file, digest in manifest['original_figures'].items():
         assert sha(dest/file) == digest, file
@@ -204,7 +253,8 @@ def main():
             for dim in ['x', 'y']:
                 ticks = ax[dim]['ticks']
                 if ax[dim].get('kind') == 'categorical':
-                    assert dim == 'x' and ax[dim]['labels'] == list(report.METHODS.values())
+                    expected = [label for method, label in report.METHODS.items() if method != 'gate_select16'] if figure['name'] == report.NAMES[8] else list(report.METHODS.values())
+                    assert dim == 'x' and ax[dim]['labels'] == expected
                     assert ax[dim]['limits'][0] < ticks[0] and ax[dim]['limits'][-1] > ticks[-1]
                     precision.append(None)
                     continue
@@ -234,10 +284,12 @@ def main():
     matched = check_retrieval(energy_retrieval, 'retrieval_energy', manifest['figures'])
     combined = check_retrieval(energy_retrieval, 'retrieval_combined', manifest['figures'])
     integrated = check_retrieval(energy_retrieval, 'retrieval_integrated', manifest['figures'])
-    result = dict(passed=True, new_figures=8, fresh_FU_arms=40, exact_baseline_controls=8,
+    rank_charts = check_all_method_rank_charts(manifest)
+    result = dict(passed=True, new_figures=10, fresh_FU_arms=40, exact_baseline_controls=8,
         energy_budget_kJ=650, energy_checkpoint_replays_exact=True,
         fixed_workload_retrieval=fixed, matched_energy_retrieval=matched, combined_retrieval=combined,
         integrated_retrieval=integrated, full_query_outcome_counts_and_bar_widths_verified=True,
+        all_method_rank_charts=rank_charts,
         paired_FU_workload_bars_from_measured_1_and_9_steps=True,
         original_nine_figures_unchanged=True, actual_frame_figures_only=True,
         regular_ticks_common_marker_budgets=True,
