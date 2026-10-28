@@ -1,0 +1,291 @@
+{
+  "name": "08_bandwidth_table",
+  "caption": "Energy and active FL/FU delay under two downlink bandwidths for the same completed workload.",
+  "label": "tab:vlm_downlink_resources",
+  "columns": [
+    {
+      "key": "energy_kj_1mhz",
+      "source": "total_energy_j",
+      "bandwidth": 1,
+      "scale": 0.001,
+      "decimals": 3,
+      "higher": false
+    },
+    {
+      "key": "energy_kj_5mhz",
+      "source": "total_energy_j",
+      "bandwidth": 5,
+      "scale": 0.001,
+      "decimals": 3,
+      "higher": false
+    },
+    {
+      "key": "delay_s_1mhz",
+      "source": "delay_s",
+      "bandwidth": 1,
+      "scale": 1.0,
+      "decimals": 3,
+      "higher": false
+    },
+    {
+      "key": "delay_s_5mhz",
+      "source": "delay_s",
+      "bandwidth": 5,
+      "scale": 1.0,
+      "decimals": 3,
+      "higher": false
+    }
+  ],
+  "rows": [
+    {
+      "dataset": "CapERA",
+      "method": "iscc",
+      "label": "ISCC-P2",
+      "cells": [
+        {
+          "column": "energy_kj_1mhz",
+          "value": 649.9623177948238,
+          "formatted": "649.962",
+          "bold": false
+        },
+        {
+          "column": "energy_kj_5mhz",
+          "value": 451.7072185461705,
+          "formatted": "451.707",
+          "bold": false
+        },
+        {
+          "column": "delay_s_1mhz",
+          "value": 384.3037388367693,
+          "formatted": "384.304",
+          "bold": false
+        },
+        {
+          "column": "delay_s_5mhz",
+          "value": 266.7714764367614,
+          "formatted": "266.771",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "dataset": "CapERA",
+      "method": "afl",
+      "label": "AFL-OTA",
+      "cells": [
+        {
+          "column": "energy_kj_1mhz",
+          "value": 252.8824203874964,
+          "formatted": "252.882",
+          "bold": false
+        },
+        {
+          "column": "energy_kj_5mhz",
+          "value": 54.627321138846405,
+          "formatted": "54.627",
+          "bold": false
+        },
+        {
+          "column": "delay_s_1mhz",
+          "value": 149.912405113332,
+          "formatted": "149.912",
+          "bold": false
+        },
+        {
+          "column": "delay_s_5mhz",
+          "value": 32.38014271332607,
+          "formatted": "32.380",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "dataset": "CapERA",
+      "method": "salun",
+      "label": "F-SalUn",
+      "cells": [
+        {
+          "column": "energy_kj_1mhz",
+          "value": 649.9597513121374,
+          "formatted": "649.960",
+          "bold": false
+        },
+        {
+          "column": "energy_kj_5mhz",
+          "value": 451.70465206348473,
+          "formatted": "451.705",
+          "bold": false
+        },
+        {
+          "column": "delay_s_1mhz",
+          "value": 384.3022440352411,
+          "formatted": "384.302",
+          "bold": false
+        },
+        {
+          "column": "delay_s_5mhz",
+          "value": 266.76998163523353,
+          "formatted": "266.770",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "dataset": "CapERA",
+      "method": "gate_select16",
+      "label": "Proposed",
+      "cells": [
+        {
+          "column": "energy_kj_1mhz",
+          "value": 204.27739345959722,
+          "formatted": "204.277",
+          "bold": true
+        },
+        {
+          "column": "energy_kj_5mhz",
+          "value": 45.85032754215837,
+          "formatted": "45.850",
+          "bold": true
+        },
+        {
+          "column": "delay_s_1mhz",
+          "value": 121.10183345083442,
+          "formatted": "121.102",
+          "bold": true
+        },
+        {
+          "column": "delay_s_5mhz",
+          "value": 27.180963050835096,
+          "formatted": "27.181",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "dataset": "AirScape",
+      "method": "iscc",
+      "label": "ISCC-P2",
+      "cells": [
+        {
+          "column": "energy_kj_1mhz",
+          "value": 649.3047817180119,
+          "formatted": "649.305",
+          "bold": false
+        },
+        {
+          "column": "energy_kj_5mhz",
+          "value": 451.04968246935914,
+          "formatted": "451.050",
+          "bold": false
+        },
+        {
+          "column": "delay_s_1mhz",
+          "value": 383.9147060540845,
+          "formatted": "383.915",
+          "bold": false
+        },
+        {
+          "column": "delay_s_5mhz",
+          "value": 266.38244365407695,
+          "formatted": "266.382",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "dataset": "AirScape",
+      "method": "afl",
+      "label": "AFL-OTA",
+      "cells": [
+        {
+          "column": "energy_kj_1mhz",
+          "value": 253.06641911362914,
+          "formatted": "253.066",
+          "bold": false
+        },
+        {
+          "column": "energy_kj_5mhz",
+          "value": 54.81131986498012,
+          "formatted": "54.811",
+          "bold": false
+        },
+        {
+          "column": "delay_s_1mhz",
+          "value": 150.02124430999868,
+          "formatted": "150.021",
+          "bold": false
+        },
+        {
+          "column": "delay_s_5mhz",
+          "value": 32.48898190999335,
+          "formatted": "32.489",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "dataset": "AirScape",
+      "method": "salun",
+      "label": "F-SalUn",
+      "cells": [
+        {
+          "column": "energy_kj_1mhz",
+          "value": 649.3068250528967,
+          "formatted": "649.307",
+          "bold": false
+        },
+        {
+          "column": "energy_kj_5mhz",
+          "value": 451.0517258042442,
+          "formatted": "451.052",
+          "bold": false
+        },
+        {
+          "column": "delay_s_1mhz",
+          "value": 383.91589854366384,
+          "formatted": "383.916",
+          "bold": false
+        },
+        {
+          "column": "delay_s_5mhz",
+          "value": 266.3836361436564,
+          "formatted": "266.384",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "dataset": "AirScape",
+      "method": "gate_select16",
+      "label": "Proposed",
+      "cells": [
+        {
+          "column": "energy_kj_1mhz",
+          "value": 204.2674774140689,
+          "formatted": "204.267",
+          "bold": true
+        },
+        {
+          "column": "energy_kj_5mhz",
+          "value": 45.840411496626544,
+          "formatted": "45.840",
+          "bold": true
+        },
+        {
+          "column": "delay_s_1mhz",
+          "value": 121.09600040291753,
+          "formatted": "121.096",
+          "bold": true
+        },
+        {
+          "column": "delay_s_5mhz",
+          "value": 27.175130002916127,
+          "formatted": "27.175",
+          "bold": true
+        }
+      ]
+    }
+  ],
+  "bold_policy": "Best within dataset/column at displayed precision; all displayed ties bold.",
+  "evaluation": "Single seed; same completed200FL and225FU steps. Baseline KL is common retained-only final200 reference, not the training proxy."
+}

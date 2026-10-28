@@ -545,14 +545,24 @@
   ],
   "map": {
     "passed": true,
-    "linear_scale": 0.9,
+    "linear_scale": 0.7200000000000001,
     "original_page_size_points": [
       748.8,
       385.2
     ],
-    "page_size_points": [
+    "previous_linear_scale": 0.9,
+    "scale_relative_to_previous": 0.8,
+    "previous_page_size_points": [
       673.92,
       346.68
+    ],
+    "page_size_points": [
+      539.1360000000001,
+      277.34400000000005
+    ],
+    "rendered_pdf_page_size_points": [
+      539.14,
+      277.34
     ],
     "original_svg_content_preserved": true,
     "geometry_and_snapshot_heads_unchanged": true,
@@ -564,5 +574,27 @@
     },
     "original_snapshot_run": "results/iot_uav_remoteclip_v4_event_mission/capera_seed0/proposed_fu_guard_cliperase",
     "snapshot_scope": "Preserved requested map from the earlier scenario illustration; not claimed as a new P-KS bandwidth-run head selection."
+  },
+  "tables": {
+    "passed": true,
+    "tables": [
+      {
+        "name": "07_performance_table",
+        "rows": 8,
+        "cells": 40,
+        "data_file": "data/07_performance_table.json",
+        "single_seed_no_error_bars": true,
+        "source_metrics_sha256": "6748b073686ab780a9903031483e1d9699b79e8e31dec7476a70de273b0a4727"
+      },
+      {
+        "name": "08_bandwidth_table",
+        "rows": 8,
+        "cells": 32,
+        "data_file": "data/08_bandwidth_table.json",
+        "single_seed_no_error_bars": true,
+        "source_metrics_sha256": "6748b073686ab780a9903031483e1d9699b79e8e31dec7476a70de273b0a4727"
+      }
+    ],
+    "source_metrics_unchanged": true
   }
 }

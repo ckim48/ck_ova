@@ -1,0 +1,28 @@
+% Requires \usepackage{booktabs,multirow}.
+% Single seed; bold = best at displayed precision, including ties.
+\begin{table}[t]
+\centering
+\caption{Performance comparison after 200 FL rounds and 225 FU steps at 1 MHz downlink bandwidth.}
+\label{tab:vlm_fl_fu_performance}
+\footnotesize
+\renewcommand{\arraystretch}{1.0}
+\setlength{\tabcolsep}{3pt}
+
+\begin{tabular}{c|c|c|c|c|c|c}
+\toprule
+\multirow{2}{*}{\textsc{Dataset}} & \multirow{2}{*}{\textsc{Method}}
+        & \textsc{Retained mR} & \textsc{Loss} & \textsc{Forget KL} & \textsc{Energy} & \textsc{Delay} \\
+        & & (\%) $\uparrow$ & $\downarrow$ & $\downarrow$ & (kJ) $\downarrow$ & (s) $\downarrow$ \\
+\midrule
+\multirow{4}{*}{\textsc{CapERA}} & \textsc{ISCC-P2} & 16.901 & 5.3435 & \textbf{0.003789} & 649.962 & 384.304 \\
+ & \textsc{AFL-OTA} & 16.966 & 5.3435 & 0.003791 & 252.882 & 149.912 \\
+ & \textsc{F-SalUn} & 17.552 & 5.2810 & 0.009668 & 649.960 & 384.302 \\
+ & \textsc{Proposed} & \textbf{17.591} & \textbf{5.2288} & 0.018232 & \textbf{204.277} & \textbf{121.102} \\
+\midrule
+\multirow{4}{*}{\textsc{AirScape}} & \textsc{ISCC-P2} & 13.737 & 5.5594 & \textbf{0.000839} & 649.305 & 383.915 \\
+ & \textsc{AFL-OTA} & 13.737 & 5.5594 & \textbf{0.000839} & 253.066 & 150.021 \\
+ & \textsc{F-SalUn} & 13.737 & 5.5299 & 0.003127 & 649.307 & 383.916 \\
+ & \textsc{Proposed} & \textbf{13.802} & \textbf{5.5115} & 0.007320 & \textbf{204.267} & \textbf{121.096} \\
+\bottomrule
+\end{tabular}
+\end{table}

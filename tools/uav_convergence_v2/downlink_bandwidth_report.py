@@ -1,10 +1,12 @@
 """Export audited bandwidth sweeps and matching unannotated hatched bars."""
+import argparse
 import copy
 import html
 import math
 from pathlib import Path
 
 import numpy as np
+from matplotlib.patches import Patch
 import downlink_bandwidth_v1 as study
 import proposed_pks_report as current
 
@@ -12,7 +14,8 @@ ROOT, read, write, sha = study.ROOT, study.read, study.write, study.sha
 DEST = ROOT / 'final_final_charts/downlink_bandwidth'
 prior, export, plots = current.prior, current.export, current.plots
 METHODS, DATASETS = study.METHODS, study.MODEL_DATASETS
-HATCHES = ['//', '\\\\', '..', 'xx']
+BAR_BANDWIDTHS = [1, 5]
+HATCHES = ['//', '..']
 PALETTE = current.PALETTE
 
 
@@ -144,42 +147,49 @@ def bars(rows):
             (5, 'delay_s', 'Delay (s)', 1., 'delay')]:
         name = f'{number:02d}_{kind}_bar_1x2'
         fig, axes = prior.chart.style.canvas(label)
-        values = [r[metric] * scale for r in rows if r['bandwidth_mhz'] == 1]
+        values = [r[metric] * scale for r in rows if r['bandwidth_mhz'] in BAR_BANDWIDTHS]
         ticks = prior.chart.nice_ticks([0., max(values) * 1.03], bins=4, simple=True)
         panels = []
         for ax, ds in zip(axes, DATASETS):
             for i, (m, title) in enumerate(METHODS.items()):
-                row = next(r for r in rows if r['bandwidth_mhz'] == 1 and r['dataset'] == ds and r['method'] == m)
-                y = row[metric] * scale
-                ax.bar(i, y, width=.68, color=PALETTE[i][0], edgecolor='#202020',
-                       linewidth=.65, hatch=HATCHES[i], label=title)
-                prior.SERIES.append(dict(figure=name, dataset=ds, method=m, kind='bar',
-                                         metric=metric, scale=scale, x=[i], y=[y],
-                                         bandwidth_mhz=1, hatch=HATCHES[i], color=PALETTE[i][0]))
+                for j, bandwidth in enumerate(BAR_BANDWIDTHS):
+                    row = next(r for r in rows if r['bandwidth_mhz'] == bandwidth and r['dataset'] == ds and r['method'] == m)
+                    y = row[metric] * scale
+                    x = i + (j-.5)*.37
+                    ax.bar(x, y, width=.33, color=PALETTE[i][0], edgecolor='#202020',
+                           linewidth=.65, hatch=HATCHES[j])
+                    prior.SERIES.append(dict(figure=name, dataset=ds, method=m, kind='bar',
+                                             metric=metric, scale=scale, x=[x], y=[y],
+                                             group_index=i, bandwidth_mhz=bandwidth,
+                                             hatch=HATCHES[j], color=PALETTE[i][0]))
             ax.set_xlim(-.55, len(METHODS)-.45)
-            ax.set_xticks([])
+            ax.set_xticks(range(len(METHODS)), list(METHODS.values()))
+            ax.tick_params(axis='x', labelsize=8.5, length=0, pad=6)
             ax.grid(False, axis='x')
             prior.chart.regular_axis(ax, 'y', ticks, 0)
             assert not ax.texts
             pos = ax.get_position()
             fig.text((pos.x0 + pos.x1)/2, .015, f'({chr(97 + DATASETS.index(ds))}) {ds}',
                      ha='center', va='bottom', fontsize=14)
-            panels.append(dict(dataset=ds, x=dict(kind='categorical', ticks=[],
+            panels.append(dict(dataset=ds, x=dict(kind='categorical', ticks=list(range(len(METHODS))),
                 limits=list(ax.get_xlim()), labels=list(METHODS.values())),
                 y=dict(ticks=ticks, limits=[ticks[0], ticks[-1]], labels=[str(int(v)) for v in ticks])))
-        fig.legend(*axes[0].get_legend_handles_labels(), ncol=4, loc='upper center',
-                   bbox_to_anchor=(.5, 1.), fontsize=10, handlelength=1.6, columnspacing=1.)
+        fig.legend(handles=[Patch(facecolor='white', edgecolor='#202020',
+                                  linewidth=.65, hatch=hatch, label=f'{bandwidth} MHz')
+                            for bandwidth, hatch in zip(BAR_BANDWIDTHS, HATCHES)],
+                   ncol=2, loc='upper center', bbox_to_anchor=(.5, 1.),
+                   fontsize=10, handlelength=1.6, columnspacing=1.6)
         files = []
         for ext in ['png', 'pdf', 'svg']:
             path = DEST / (name + '.' + ext)
             fig.savefig(path, dpi=350, bbox_inches='tight')
             files.append(dict(file=path.name, sha256=sha(path)))
         prior.chart.plt.close(fig)
-        prior.FIGURES.append(dict(name=name, title=label + ' at 1 MHz downlink bandwidth', axes=panels, files=files))
+        prior.FIGURES.append(dict(name=name, title=label + ': paired 1 MHz and 5 MHz bars', axes=panels, files=files))
 
 
 def docs(rows):
-    lines = ['# Downlink bandwidth and baseline resource bars', '',
+    lines = ['# Downlink bandwidth, paired resource bars and comparison tables', '',
         'Current Proposed is the unchanged P-KS. Four methods: Proposed, ISCC-P2, AFL-OTA and F-SalUn. CapERA is left and AirScape right. [Learning curves and definitions](../proposed_pks/README.md) remain available.', '',
         '## Explicit bandwidth model', '',
         '`R_dl = B_dl * eta_dl`, with `eta_dl = 1 bit/s/Hz`. Downlink bandwidth is 1, 2, 3, 4, 5 MHz; the derived rates are 1, 2, 3, 4, 5 Mbit/s. Only the downlink bandwidth changes; uplink bandwidth stays 1 MHz. Transmit power stays 0.32 W and every actual full-model broadcast is charged.', '',
@@ -187,9 +197,11 @@ def docs(rows):
         'All eight 1 MHz controls and all sixteen 3/5 MHz conditions execute the full workload: 24 new runs. The sixteen existing 2/4 Mbit/s runs are reused as equivalent 2/4 MHz conditions only under the declared eta=1 model. Original files remain unchanged; the release audit checks shared input hashes, physical settings, every broadcast duration, and recomputed costs. All eight fresh 1 MHz controls reproduce the original models, final evaluations, radio decisions and clocks. Reuse is explicit in metrics, not claimed as new execution.', '',
         '## Figures', '',
         '- 01–03: energy, active FL/FU delay and separate mission delay versus downlink bandwidth.',
-        '- 04–05: energy and active-delay bar charts at the baseline 1 MHz. Hatched bars, consistent method colors, zero baseline, common legend, no bar-top numbers or extra grey text.',
-        '- 06: the existing satellite/IoT/UAV map at 90% of its previous physical width and height; unchanged geometry and snapshot heads. Its provenance identifies the original snapshot run, not a newly measured bandwidth-dependent trajectory.', '',
-        'Map size: 10.4 × 5.35 inches → 9.36 × 4.815 inches. Map imagery: Esri, Vantor, Earthstar Geographics, and the GIS User Community. Road data: © [OpenStreetMap contributors](https://www.openstreetmap.org/copyright). The complete original attribution, source hashes and snapshot provenance are in `data/mission_map.json`.', '',
+        '- 04–05: two adjacent bars per method, at 1 MHz and 5 MHz. Method colors match the line plots; hatching identifies bandwidth. Common zero baseline and bandwidth legend, no bar-top numbers or extra grey text. Both values come from the completed runs, without additional training or rescaling costs.',
+        '- 06: the existing satellite/IoT/UAV map reduced by another 20% in width and height relative to the previous 90%-size release. Unchanged geometry and snapshot heads. Its provenance identifies the original snapshot run, not a newly measured bandwidth-dependent trajectory.',
+        '- 07: baseline mR, validation loss, common-reference forget KL, energy and active delay as a LaTeX table.',
+        '- 08: 1 MHz/5 MHz energy and active-delay comparison table. Both tables include PDF/PNG previews, standalone LaTeX sources and CSV values. Best values are bold within each dataset and metric; a displayed-precision tie is bold for all tied methods. No uncertainty is invented from this single seed.', '',
+        'Map size: 10.4 × 5.35 inches → previous 9.36 × 4.815 inches → current 7.488 × 3.852 inches (72% of the original). Map imagery: Esri, Vantor, Earthstar Geographics, and the GIS User Community. Road data: © [OpenStreetMap contributors](https://www.openstreetmap.org/copyright). The complete original attribution, source hashes and snapshot provenance are in `data/mission_map.json`.', '',
         'Energy = active communication + executed adapter computation + active hovering. Travel/IoT collection/preflight energy is excluded. Main delay is active FL/FU service time; mission delay additionally includes travel, collection and return. Same 200 total FL rounds and 225 FU steps for 45 requests. Single development seed, frozen feature caches and scoped literature adaptations; these are not full-VLM hardware measurements, statistical superiority results or certified equal-quality unlearning. Unfavorable quality and QoS-cap exceedances remain in the metrics.', '',
         '| Dataset | Method | Energy (kJ), 1 MHz | Active delay (s), 1 MHz |',
         '|---|---|---:|---:|']
@@ -221,31 +233,57 @@ def link_galleries():
         if marker not in path.read_text():
             text = path.read_text()
             end = text.index('\n') + 1
-            path.write_text(text[:end] + '\n' + marker + '\n[New downlink bandwidth figures, hatched energy/delay bars and 90%-size map](' + relative + 'index.html). Explicit fixed spectral efficiency; 1–5 MHz.\n' + text[end:])
+            path.write_text(text[:end] + '\n' + marker + '\n[Downlink bandwidth figures, paired resource bars, smaller map and comparison tables](' + relative + 'index.html). Explicit fixed spectral efficiency; 1–5 MHz.\n' + text[end:])
+        else:
+            text = path.read_text()
+            text = text.replace('New downlink bandwidth figures, hatched energy/delay bars and 90%-size map',
+                                'Downlink bandwidth figures, paired resource bars, smaller map and comparison tables')
+            path.write_text(text)
 
 
-def main():
+def main(style_only=False):
     protocol = study.register()
     assert read(study.OUT / 'campaign_finished.json')['passed']
+    if style_only:
+        previous_manifest = read(DEST / 'data/manifest.json')
+        previous_series = read(DEST / 'data/plot_series.json')
+        rows, audit = read(DEST / 'data/metrics.json'), read(DEST / 'data/audit.json')
+        for f in previous_manifest['figures']:
+            if not f['name'].startswith(('01_', '02_', '03_')):
+                continue  # All other figures are rebuilt, including interrupted exports.
+            for item in f['files']:
+                assert sha(DEST / item['file']) == item['sha256']
     setup()
-    rows, audit = collect()
-    sweep(rows)
+    if style_only:
+        prior.SOURCES = previous_manifest['source_sha256']
+        prior.FIGURES = [f for f in previous_manifest['figures'] if f['name'].startswith(('01_', '02_', '03_'))]
+        prior.SERIES = [s for s in previous_series if s['kind'] == 'line']
+    else:
+        rows, audit = collect()
+        sweep(rows)
     bars(rows)
     import compact_mission_map
     map_figure, map_audit = compact_mission_map.render(DEST)
     prior.FIGURES.append(map_figure)
     audit['map'] = map_audit
+    import bandwidth_tables
+    table_figures, table_audit = bandwidth_tables.render(DEST, rows)
+    prior.FIGURES.extend(table_figures)
+    audit['tables'] = table_audit
     docs(rows)
     write(DEST / 'data/audit.json', audit)
     write(DEST / 'data/protocol.json', protocol)
     write(DEST / 'data/bandwidth_model.json', study.MODEL)
-    for file in [Path(__file__), Path(study.__file__), Path(compact_mission_map.__file__)]:
+    for file in [Path(__file__), Path(study.__file__), Path(compact_mission_map.__file__), Path(bandwidth_tables.__file__)]:
         prior.SOURCES[str(file.relative_to(ROOT))] = sha(file)
-    export.finish(DEST, rows, 'Downlink bandwidth 1–5 MHz; hatched baseline energy/delay bars and 90%-size map.',
-                  dict(compared_arms=40, new_arms=24, reused_arms=16, baseline_bandwidth_mhz=1))
+    export.finish(DEST, rows, 'Downlink bandwidth 1–5 MHz; paired energy/delay bars, smaller map and comparison tables.',
+                  dict(compared_arms=40, new_arms=24, reused_arms=16, baseline_bandwidth_mhz=1,
+                       bar_bandwidths_mhz=BAR_BANDWIDTHS))
     link_galleries()
     print(dict(figures=len(prior.FIGURES), arms=len(rows), destination=str(DEST)), flush=True)
 
 
 if __name__ == '__main__':
-    main()
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--style-only', action='store_true', help='Reuse audited metrics and unchanged line artifacts.')
+    main(parser.parse_args().style_only)

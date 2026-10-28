@@ -1,4 +1,4 @@
-# Downlink bandwidth and baseline resource bars
+# Downlink bandwidth, paired resource bars and comparison tables
 
 Current Proposed is the unchanged P-KS. Four methods: Proposed, ISCC-P2, AFL-OTA and F-SalUn. CapERA is left and AirScape right. [Learning curves and definitions](../proposed_pks/README.md) remain available.
 
@@ -13,10 +13,12 @@ All eight 1 MHz controls and all sixteen 3/5 MHz conditions execute the full wor
 ## Figures
 
 - 01–03: energy, active FL/FU delay and separate mission delay versus downlink bandwidth.
-- 04–05: energy and active-delay bar charts at the baseline 1 MHz. Hatched bars, consistent method colors, zero baseline, common legend, no bar-top numbers or extra grey text.
-- 06: the existing satellite/IoT/UAV map at 90% of its previous physical width and height; unchanged geometry and snapshot heads. Its provenance identifies the original snapshot run, not a newly measured bandwidth-dependent trajectory.
+- 04–05: two adjacent bars per method, at 1 MHz and 5 MHz. Method colors match the line plots; hatching identifies bandwidth. Common zero baseline and bandwidth legend, no bar-top numbers or extra grey text. Both values come from the completed runs, without additional training or rescaling costs.
+- 06: the existing satellite/IoT/UAV map reduced by another 20% in width and height relative to the previous 90%-size release. Unchanged geometry and snapshot heads. Its provenance identifies the original snapshot run, not a newly measured bandwidth-dependent trajectory.
+- 07: baseline mR, validation loss, common-reference forget KL, energy and active delay as a LaTeX table.
+- 08: 1 MHz/5 MHz energy and active-delay comparison table. Both tables include PDF/PNG previews, standalone LaTeX sources and CSV values. Best values are bold within each dataset and metric; a displayed-precision tie is bold for all tied methods. No uncertainty is invented from this single seed.
 
-Map size: 10.4 × 5.35 inches → 9.36 × 4.815 inches. Map imagery: Esri, Vantor, Earthstar Geographics, and the GIS User Community. Road data: © [OpenStreetMap contributors](https://www.openstreetmap.org/copyright). The complete original attribution, source hashes and snapshot provenance are in `data/mission_map.json`.
+Map size: 10.4 × 5.35 inches → previous 9.36 × 4.815 inches → current 7.488 × 3.852 inches (72% of the original). Map imagery: Esri, Vantor, Earthstar Geographics, and the GIS User Community. Road data: © [OpenStreetMap contributors](https://www.openstreetmap.org/copyright). The complete original attribution, source hashes and snapshot provenance are in `data/mission_map.json`.
 
 Energy = active communication + executed adapter computation + active hovering. Travel/IoT collection/preflight energy is excluded. Main delay is active FL/FU service time; mission delay additionally includes travel, collection and return. Same 200 total FL rounds and 225 FU steps for 45 requests. Single development seed, frozen feature caches and scoped literature adaptations; these are not full-VLM hardware measurements, statistical superiority results or certified equal-quality unlearning. Unfavorable quality and QoS-cap exceedances remain in the metrics.
 

@@ -1,0 +1,347 @@
+{
+  "name": "07_performance_table",
+  "caption": "Performance comparison after 200 FL rounds and 225 FU steps at 1 MHz downlink bandwidth.",
+  "label": "tab:vlm_fl_fu_performance",
+  "columns": [
+    {
+      "key": "mr_percent",
+      "source": "retained_mR_percent",
+      "bandwidth": 1,
+      "scale": 1.0,
+      "decimals": 3,
+      "higher": true
+    },
+    {
+      "key": "loss",
+      "source": "retained_loss",
+      "bandwidth": 1,
+      "scale": 1.0,
+      "decimals": 4,
+      "higher": false
+    },
+    {
+      "key": "forget_kl",
+      "source": "forget_KL",
+      "bandwidth": 1,
+      "scale": 1.0,
+      "decimals": 6,
+      "higher": false
+    },
+    {
+      "key": "energy_kj",
+      "source": "total_energy_j",
+      "bandwidth": 1,
+      "scale": 0.001,
+      "decimals": 3,
+      "higher": false
+    },
+    {
+      "key": "delay_s",
+      "source": "delay_s",
+      "bandwidth": 1,
+      "scale": 1.0,
+      "decimals": 3,
+      "higher": false
+    }
+  ],
+  "rows": [
+    {
+      "dataset": "CapERA",
+      "method": "iscc",
+      "label": "ISCC-P2",
+      "cells": [
+        {
+          "column": "mr_percent",
+          "value": 16.901041567325592,
+          "formatted": "16.901",
+          "bold": false
+        },
+        {
+          "column": "loss",
+          "value": 5.343520641326904,
+          "formatted": "5.3435",
+          "bold": false
+        },
+        {
+          "column": "forget_kl",
+          "value": 0.003788608592003584,
+          "formatted": "0.003789",
+          "bold": true
+        },
+        {
+          "column": "energy_kj",
+          "value": 649.9623177948238,
+          "formatted": "649.962",
+          "bold": false
+        },
+        {
+          "column": "delay_s",
+          "value": 384.3037388367693,
+          "formatted": "384.304",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "dataset": "CapERA",
+      "method": "afl",
+      "label": "AFL-OTA",
+      "cells": [
+        {
+          "column": "mr_percent",
+          "value": 16.966145733992256,
+          "formatted": "16.966",
+          "bold": false
+        },
+        {
+          "column": "loss",
+          "value": 5.343484878540039,
+          "formatted": "5.3435",
+          "bold": false
+        },
+        {
+          "column": "forget_kl",
+          "value": 0.0037912349216639996,
+          "formatted": "0.003791",
+          "bold": false
+        },
+        {
+          "column": "energy_kj",
+          "value": 252.8824203874964,
+          "formatted": "252.882",
+          "bold": false
+        },
+        {
+          "column": "delay_s",
+          "value": 149.912405113332,
+          "formatted": "149.912",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "dataset": "CapERA",
+      "method": "salun",
+      "label": "F-SalUn",
+      "cells": [
+        {
+          "column": "mr_percent",
+          "value": 17.552083544433117,
+          "formatted": "17.552",
+          "bold": false
+        },
+        {
+          "column": "loss",
+          "value": 5.280974388122559,
+          "formatted": "5.2810",
+          "bold": false
+        },
+        {
+          "column": "forget_kl",
+          "value": 0.009667620062828064,
+          "formatted": "0.009668",
+          "bold": false
+        },
+        {
+          "column": "energy_kj",
+          "value": 649.9597513121374,
+          "formatted": "649.960",
+          "bold": false
+        },
+        {
+          "column": "delay_s",
+          "value": 384.3022440352411,
+          "formatted": "384.302",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "dataset": "CapERA",
+      "method": "gate_select16",
+      "label": "Proposed",
+      "cells": [
+        {
+          "column": "mr_percent",
+          "value": 17.5911458209157,
+          "formatted": "17.591",
+          "bold": true
+        },
+        {
+          "column": "loss",
+          "value": 5.228848457336426,
+          "formatted": "5.2288",
+          "bold": true
+        },
+        {
+          "column": "forget_kl",
+          "value": 0.018232312053442,
+          "formatted": "0.018232",
+          "bold": false
+        },
+        {
+          "column": "energy_kj",
+          "value": 204.27739345959722,
+          "formatted": "204.277",
+          "bold": true
+        },
+        {
+          "column": "delay_s",
+          "value": 121.10183345083442,
+          "formatted": "121.102",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "dataset": "AirScape",
+      "method": "iscc",
+      "label": "ISCC-P2",
+      "cells": [
+        {
+          "column": "mr_percent",
+          "value": 13.736979166666666,
+          "formatted": "13.737",
+          "bold": false
+        },
+        {
+          "column": "loss",
+          "value": 5.559386253356934,
+          "formatted": "5.5594",
+          "bold": false
+        },
+        {
+          "column": "forget_kl",
+          "value": 0.0008385229157283902,
+          "formatted": "0.000839",
+          "bold": true
+        },
+        {
+          "column": "energy_kj",
+          "value": 649.3047817180119,
+          "formatted": "649.305",
+          "bold": false
+        },
+        {
+          "column": "delay_s",
+          "value": 383.9147060540845,
+          "formatted": "383.915",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "dataset": "AirScape",
+      "method": "afl",
+      "label": "AFL-OTA",
+      "cells": [
+        {
+          "column": "mr_percent",
+          "value": 13.736979166666666,
+          "formatted": "13.737",
+          "bold": false
+        },
+        {
+          "column": "loss",
+          "value": 5.5593743324279785,
+          "formatted": "5.5594",
+          "bold": false
+        },
+        {
+          "column": "forget_kl",
+          "value": 0.0008385473629459739,
+          "formatted": "0.000839",
+          "bold": true
+        },
+        {
+          "column": "energy_kj",
+          "value": 253.06641911362914,
+          "formatted": "253.066",
+          "bold": false
+        },
+        {
+          "column": "delay_s",
+          "value": 150.02124430999868,
+          "formatted": "150.021",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "dataset": "AirScape",
+      "method": "salun",
+      "label": "F-SalUn",
+      "cells": [
+        {
+          "column": "mr_percent",
+          "value": 13.736979166666666,
+          "formatted": "13.737",
+          "bold": false
+        },
+        {
+          "column": "loss",
+          "value": 5.529854774475098,
+          "formatted": "5.5299",
+          "bold": false
+        },
+        {
+          "column": "forget_kl",
+          "value": 0.003127321368083358,
+          "formatted": "0.003127",
+          "bold": false
+        },
+        {
+          "column": "energy_kj",
+          "value": 649.3068250528967,
+          "formatted": "649.307",
+          "bold": false
+        },
+        {
+          "column": "delay_s",
+          "value": 383.91589854366384,
+          "formatted": "383.916",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "dataset": "AirScape",
+      "method": "gate_select16",
+      "label": "Proposed",
+      "cells": [
+        {
+          "column": "mr_percent",
+          "value": 13.802083333333334,
+          "formatted": "13.802",
+          "bold": true
+        },
+        {
+          "column": "loss",
+          "value": 5.511499404907227,
+          "formatted": "5.5115",
+          "bold": true
+        },
+        {
+          "column": "forget_kl",
+          "value": 0.007319689728319645,
+          "formatted": "0.007320",
+          "bold": false
+        },
+        {
+          "column": "energy_kj",
+          "value": 204.2674774140689,
+          "formatted": "204.267",
+          "bold": true
+        },
+        {
+          "column": "delay_s",
+          "value": 121.09600040291753,
+          "formatted": "121.096",
+          "bold": true
+        }
+      ]
+    }
+  ],
+  "bold_policy": "Best within dataset/column at displayed precision; all displayed ties bold.",
+  "evaluation": "Single seed; same completed200FL and225FU steps. Baseline KL is common retained-only final200 reference, not the training proxy."
+}

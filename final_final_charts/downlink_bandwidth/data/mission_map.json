@@ -776,8 +776,8 @@
   "visual_variant": "visible_clusters_actual_event_mission",
   "axis_tick_policy": "Both endpoints included; 500m intervals",
   "figure_size_inches": [
-    9.360000000000001,
-    4.8149999999999995
+    7.488000000000001,
+    3.8520000000000003
   ],
   "square_panels": true,
   "viewport_change": "Expanded north/south bounds; imagery and coordinates retain equal spatial scale",
@@ -1129,14 +1129,24 @@
   "source_renderer": "tools/plot_mission_map_visible_clusters.py",
   "compact_variant": {
     "passed": true,
-    "linear_scale": 0.9,
+    "linear_scale": 0.7200000000000001,
     "original_page_size_points": [
       748.8,
       385.2
     ],
-    "page_size_points": [
+    "previous_linear_scale": 0.9,
+    "scale_relative_to_previous": 0.8,
+    "previous_page_size_points": [
       673.92,
       346.68
+    ],
+    "page_size_points": [
+      539.1360000000001,
+      277.34400000000005
+    ],
+    "rendered_pdf_page_size_points": [
+      539.14,
+      277.34
     ],
     "original_svg_content_preserved": true,
     "geometry_and_snapshot_heads_unchanged": true,

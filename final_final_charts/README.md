@@ -1,7 +1,7 @@
 # Current UAV/VLM comparison: Proposed = P-KS
 
 <!-- downlink-bandwidth-current -->
-[New downlink bandwidth figures, hatched energy/delay bars and 90%-size map](downlink_bandwidth/index.html). Explicit fixed spectral efficiency; 1–5 MHz.
+[Downlink bandwidth figures, paired resource bars, smaller map and comparison tables](downlink_bandwidth/index.html). Explicit fixed spectral efficiency; 1–5 MHz.
 
 **Parallel advantage:** [Five figures and a matched immediate-serial P-KS experiment](parallel_advantage/README.md).
 

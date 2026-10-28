@@ -1,6 +1,6 @@
 {
   "complete": true,
-  "unix": 1793181958.144468,
+  "unix": 1793182966.9192822,
   "methods": {
     "gate_select16": "Proposed",
     "iscc": "ISCC-P2",
@@ -332,13 +332,18 @@
     },
     {
       "name": "04_energy_bar_1x2",
-      "title": "Total energy (kJ) at 1 MHz downlink bandwidth",
+      "title": "Total energy (kJ): paired 1 MHz and 5 MHz bars",
       "axes": [
         {
           "dataset": "CapERA",
           "x": {
             "kind": "categorical",
-            "ticks": [],
+            "ticks": [
+              0,
+              1,
+              2,
+              3
+            ],
             "limits": [
               -0.55,
               3.55
@@ -375,7 +380,12 @@
           "dataset": "AirScape",
           "x": {
             "kind": "categorical",
-            "ticks": [],
+            "ticks": [
+              0,
+              1,
+              2,
+              3
+            ],
             "limits": [
               -0.55,
               3.55
@@ -412,27 +422,32 @@
       "files": [
         {
           "file": "04_energy_bar_1x2.png",
-          "sha256": "ead5a2fc2d0c11ce2332fb4278720639eaccf6efd6ac2b378a2429e7d4d368ed"
+          "sha256": "cc1538e4a1d7642ef9caabf8118c2da6213f137207f1c0ee3a5db5c7aa4d26f9"
         },
         {
           "file": "04_energy_bar_1x2.pdf",
-          "sha256": "f77cc1d3357984eef9573f6ed1faf2b917366b5832cd25fc6ff78bb1d32ac7db"
+          "sha256": "8c3a40901be6280943f3a75ca58f8be2f45f3ce799435fa834154861180d025d"
         },
         {
           "file": "04_energy_bar_1x2.svg",
-          "sha256": "3328cad20186e5daf6c828a83764d7368462427993c00fd0922a62f48626a6f6"
+          "sha256": "270da7fd6ad3608f1cce1eea3b4f9d01b064819c27a169412fcedbbed2669407"
         }
       ]
     },
     {
       "name": "05_delay_bar_1x2",
-      "title": "Delay (s) at 1 MHz downlink bandwidth",
+      "title": "Delay (s): paired 1 MHz and 5 MHz bars",
       "axes": [
         {
           "dataset": "CapERA",
           "x": {
             "kind": "categorical",
-            "ticks": [],
+            "ticks": [
+              0,
+              1,
+              2,
+              3
+            ],
             "limits": [
               -0.55,
               3.55
@@ -469,7 +484,12 @@
           "dataset": "AirScape",
           "x": {
             "kind": "categorical",
-            "ticks": [],
+            "ticks": [
+              0,
+              1,
+              2,
+              3
+            ],
             "limits": [
               -0.55,
               3.55
@@ -506,41 +526,97 @@
       "files": [
         {
           "file": "05_delay_bar_1x2.png",
-          "sha256": "a0ce52363e60253797236dcb67ac70a8788607e083b72e2a85dc8764ee4faa0d"
+          "sha256": "155b2baa9cf9a103a42de8cadf6e5894ea9023af910151c93617a2b75166a83d"
         },
         {
           "file": "05_delay_bar_1x2.pdf",
-          "sha256": "c83d27c59ae8fb5185b7d59e57c70f80b18d7f904a2623e32ffdf47c733bf340"
+          "sha256": "6649951bfee82a624c643f9271ebdce3af65b7382fbd1d53c4724d07fc5238aa"
         },
         {
           "file": "05_delay_bar_1x2.svg",
-          "sha256": "8cd6e6a396065175ada14dcf02aebe58f6df40fcf9c291e091bc0af6892913f7"
+          "sha256": "a8d367503515fb66fc8e209bb22c3de9027e95a7c32ebd6624467bff3f5afb6d"
         }
       ]
     },
     {
       "name": "06_mission_map_1x2",
-      "title": "Satellite / IoT\u2013UAV map at90% of the original size",
+      "title": "Satellite / IoT\u2013UAV map: 20% smaller than the previous release",
       "kind": "map",
       "axes": [],
       "files": [
         {
           "file": "06_mission_map_1x2.png",
-          "sha256": "d5f261973a3d673767e311092e0ab05bb494b5367317b50bce6bfdb8e8214186"
+          "sha256": "31d56f6ca8ab92af67a184a13766faae145942b7f2aeb1943cb05923d96b3c63"
         },
         {
           "file": "06_mission_map_1x2.pdf",
-          "sha256": "2fe4293871c92e28d2656c8c94a56b5d8f61c8945c2e46f6e0b6e4aaaf0ea9da"
+          "sha256": "6e4f17fd14b91ab872b0303b3dd3fd56a9e7237e3bc333914fde5a1b958bc3ce"
         },
         {
           "file": "06_mission_map_1x2.svg",
-          "sha256": "0165af4391b0a613e33f95cb6515584bcd2ff89b87430c051a8589e52014f01c"
+          "sha256": "f572e35e4db13c908cac6017ac14d10252695427f783c82dc00a44506d6d187d"
         }
       ],
-      "linear_scale": 0.9,
+      "linear_scale": 0.7200000000000001,
       "physical_size_inches": [
-        9.360000000000001,
-        4.8149999999999995
+        7.488000000000001,
+        3.8520000000000003
+      ]
+    },
+    {
+      "name": "07_performance_table",
+      "title": "Performance comparison after 200 FL rounds and 225 FU steps at 1 MHz downlink bandwidth.",
+      "kind": "table",
+      "axes": [],
+      "files": [
+        {
+          "file": "07_performance_table.png",
+          "sha256": "44594fc85389f0f961055461da52182af3e34ddfef98a067e6c8f7a820c54057"
+        },
+        {
+          "file": "07_performance_table.pdf",
+          "sha256": "8c52baaff8b9722ef0a3079bed27dbbca45ba5bd7a186fd68f65ab0c94e2fe53"
+        },
+        {
+          "file": "07_performance_table.svg",
+          "sha256": "9663910261759207acca65e27bf738aee10ff3c68ae98f715feae6d25076d33e"
+        },
+        {
+          "file": "07_performance_table.tex",
+          "sha256": "778e679a4befbf771846cc02cd854b1c526baa059fa3121318cea14fac982c14"
+        },
+        {
+          "file": "07_performance_table_standalone.tex",
+          "sha256": "2e672887c76886b0a77d6fea595526e252869b16748dbb42a0fe2b23f014e4dd"
+        }
+      ]
+    },
+    {
+      "name": "08_bandwidth_table",
+      "title": "Energy and active FL/FU delay under two downlink bandwidths for the same completed workload.",
+      "kind": "table",
+      "axes": [],
+      "files": [
+        {
+          "file": "08_bandwidth_table.png",
+          "sha256": "6d2616e70120ba1b4f39b6fe077727c646bf771336af085a6f342507b8f898f3"
+        },
+        {
+          "file": "08_bandwidth_table.pdf",
+          "sha256": "3bf86eb8fbe8ef90a698ddde0d6e6013fc7350fab42a65f832e14a05121b690f"
+        },
+        {
+          "file": "08_bandwidth_table.svg",
+          "sha256": "c2102a7844c9563f15767a6d2ec198343b61ea4ee7e2ab3cbd9e8b10d999fd61"
+        },
+        {
+          "file": "08_bandwidth_table.tex",
+          "sha256": "f618409c85ca01b47c09ce62ddae9b57fd2aa80011fb6299714b8595e9573bc2"
+        },
+        {
+          "file": "08_bandwidth_table_standalone.tex",
+          "sha256": "95f77e5e0439f3e19e4736c087dacc04bceabd2aedd0889342b8e143e4fc7415"
+        }
       ]
     }
   ],
@@ -19851,19 +19927,24 @@
     "results/downlink_bandwidth_v1_20261028/salun/salun/cases/downlink_bandwidth_5/airscape_seed0/iscc_p2_gaft/mia.json": "13168ea63114743d4055bac1f7fe3b8d6093cc1daf978c8a85e748800348ceb8",
     "results/downlink_bandwidth_v1_20261028/salun/salun/cases/downlink_bandwidth_5/airscape_seed0/iscc_p2_gaft/request_records.json": "f5af3b4c9123b31bf3f938d7439ef5076f06ed15faad2bbc7519ab199b085bc8",
     "results/downlink_bandwidth_v1_20261028/salun/salun/cases/downlink_bandwidth_5/airscape_seed0/iscc_p2_gaft/manifest.json": "e3f3a3b2798ce5e8b0c89fea20b3287e03c4efd2b25026c781f46d23b69ead8c",
-    "tools/uav_convergence_v2/downlink_bandwidth_report.py": "77f1a516002113566c66acca7062606afad8ec10c34f9cd559201d77c1db2a45",
+    "tools/uav_convergence_v2/downlink_bandwidth_report.py": "9bc7dec35c51d5738488f14aa6c740bc478b500cb267a795281c28c9e14316c3",
     "tools/uav_convergence_v2/downlink_bandwidth_v1.py": "6a8cc9be9703923510da1cff83347e2542d61b0ef050d6e370edccea66e8de40",
-    "tools/uav_convergence_v2/compact_mission_map.py": "3a0d853ea15412671e5f84c05695a47eacf8399ca60660cf4658d904f123d1da",
+    "tools/uav_convergence_v2/compact_mission_map.py": "76070391ad45d662108519de0aabf959dfdaaec54ce2a590e3141bfc80cdd53b",
     "tools/uav_convergence_v2/learning_quality_report.py": "dfafda2b19f80718d120e744b0138a2a5e3f94fc164d11fd6ab2b042da89e05b",
     "tools/uav_convergence_v2/learning_quality_v3.py": "3818616a3519d01cbc469ce4f98590d0138ff256c97b77d2a9b4677ed7d5c750",
     "tools/uav_convergence_v2/learning_selection_fix_v2.py": "84581c09a2582e95d2e95a2406c42afb762d4e745cffb646a7c265aea64fd0d1",
     "tools/uav_convergence_v2/paper_uav_charts.py": "8681fb6c14125af5d87d04c552bc4a15591cf0463ef7ab7d9f825b08c47fcbdb",
-    "tools/uav_convergence_v2/workload_charts.py": "744384ad980a21f09f26bd042204467fa3aa46d8f972da0bde02e8bff0c64b6b"
+    "tools/uav_convergence_v2/workload_charts.py": "744384ad980a21f09f26bd042204467fa3aa46d8f972da0bde02e8bff0c64b6b",
+    "tools/uav_convergence_v2/bandwidth_tables.py": "5b3bec8ce64ed8ec0d56b68ea438f7bead87e15e91b3fbd7a760884fb3691719"
   },
   "raw_data_published": false,
-  "description": "Downlink bandwidth 1\u20135 MHz; hatched baseline energy/delay bars and 90%-size map.",
+  "description": "Downlink bandwidth 1\u20135 MHz; paired energy/delay bars, smaller map and comparison tables.",
   "compared_arms": 40,
   "new_arms": 24,
   "reused_arms": 16,
-  "baseline_bandwidth_mhz": 1
+  "baseline_bandwidth_mhz": 1,
+  "bar_bandwidths_mhz": [
+    1,
+    5
+  ]
 }

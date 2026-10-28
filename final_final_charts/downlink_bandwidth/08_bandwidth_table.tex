@@ -1,0 +1,29 @@
+% Requires \usepackage{booktabs,multirow}.
+% Single seed; bold = best at displayed precision, including ties.
+\begin{table}[t]
+\centering
+\caption{Energy and active FL/FU delay under two downlink bandwidths for the same completed workload.}
+\label{tab:vlm_downlink_resources}
+\footnotesize
+\renewcommand{\arraystretch}{1.0}
+\setlength{\tabcolsep}{3pt}
+
+\begin{tabular}{c|c|c|c|c|c}
+\toprule
+\multirow{2}{*}{\textsc{Dataset}} & \multirow{2}{*}{\textsc{Method}}
+        & \multicolumn{2}{c|}{\textsc{Total Energy} (kJ) $\downarrow$}
+        & \multicolumn{2}{c}{\textsc{Delay} (s) $\downarrow$} \\
+        & & 1 MHz & 5 MHz & 1 MHz & 5 MHz \\
+\midrule
+\multirow{4}{*}{\textsc{CapERA}} & \textsc{ISCC-P2} & 649.962 & 451.707 & 384.304 & 266.771 \\
+ & \textsc{AFL-OTA} & 252.882 & 54.627 & 149.912 & 32.380 \\
+ & \textsc{F-SalUn} & 649.960 & 451.705 & 384.302 & 266.770 \\
+ & \textsc{Proposed} & \textbf{204.277} & \textbf{45.850} & \textbf{121.102} & \textbf{27.181} \\
+\midrule
+\multirow{4}{*}{\textsc{AirScape}} & \textsc{ISCC-P2} & 649.305 & 451.050 & 383.915 & 266.382 \\
+ & \textsc{AFL-OTA} & 253.066 & 54.811 & 150.021 & 32.489 \\
+ & \textsc{F-SalUn} & 649.307 & 451.052 & 383.916 & 266.384 \\
+ & \textsc{Proposed} & \textbf{204.267} & \textbf{45.840} & \textbf{121.096} & \textbf{27.175} \\
+\bottomrule
+\end{tabular}
+\end{table}
