@@ -1,0 +1,847 @@
+{
+  "passed": true,
+  "version": "paper_typography_v1",
+  "figures": 24,
+  "fixed_pdf_width_pt": 532.8000000000001,
+  "tick_font_pt": 12.0,
+  "axis_label_font_pt": 14.0,
+  "category_font_pt": 14.0,
+  "legend_font_pt": 12.0,
+  "legend_gap_pt": 8.0,
+  "before_artifact_sha256": {
+    "final_final_charts/proposed_pks/01_round_loss_1x2.pdf": "396d467937aa41394363145f2892c49eee967d365e27806f8214afa7f8836e34",
+    "final_final_charts/proposed_pks/01_round_loss_1x2.png": "547e7ba544fcbe042bd76a00524ec31bbdfbc8c242f8008fca26c5a680c4d43c",
+    "final_final_charts/proposed_pks/01_round_loss_1x2.svg": "9dd783681d47f613305c850bff01304bb75ef997b5f3d5c856c8593b11bdb383",
+    "final_final_charts/proposed_pks/02_round_mr_1x2.pdf": "bf15e228189bba8542f61ac83abdbe39202676f82723248f8ace37d3b952080a",
+    "final_final_charts/proposed_pks/02_round_mr_1x2.png": "e974f27e9f47aa1a1e8557c9da6813404c96c270c08faba690069cd279dc5cd1",
+    "final_final_charts/proposed_pks/02_round_mr_1x2.svg": "1f79a38067ada66e52b7bf368ff86c2ca5eafb26602461bf7dfb501374b040ce",
+    "final_final_charts/proposed_pks/03_round_kl_1x2.pdf": "a2fa66b71116631025881bda3ef321b0ef60f9163e2f82735afbe25296034fba",
+    "final_final_charts/proposed_pks/03_round_kl_1x2.png": "697576a2cf69f7ea96ae11d955fceb5eb796e7d9051d2ddfc8317c4e4d09e21e",
+    "final_final_charts/proposed_pks/03_round_kl_1x2.svg": "fbec8f808571ca2b369c7551d6126e81bb6e4195ee1b480a8622a30218f4f927",
+    "final_final_charts/proposed_pks/04_time_loss_1x2.pdf": "16723bd620b2175fbc2a307d32f2f75effd458be13b1e0f03ef75c378ab5ca8a",
+    "final_final_charts/proposed_pks/04_time_loss_1x2.png": "f5a615cd1e2dcf129ed616b87c2d100cf1f59f4f66c82e59eb8c423b4bcf3223",
+    "final_final_charts/proposed_pks/04_time_loss_1x2.svg": "5aebca371ab15fb994794c4e0de71133835adfd7d280d5add32b63b7c36b1026",
+    "final_final_charts/proposed_pks/05_time_mr_1x2.pdf": "6069d1e349e63db7595c2b2f57f27e392543a9bfeca1e1213066bacfa3b3938d",
+    "final_final_charts/proposed_pks/05_time_mr_1x2.png": "e768cdd4ae1c2b52fab10ab4868addc98caf4532af87a7971d12158b8c93e73d",
+    "final_final_charts/proposed_pks/05_time_mr_1x2.svg": "79287c4a540f7f6aff8a503487afa35a770ff4cd67f08402048eb46d0f9fcfc7",
+    "final_final_charts/proposed_pks/06_downlink_energy_1x2.pdf": "8c10248ff4e7f01102b40272f570b6ea2bb7e7d5f4aeed8f565e425c04021f48",
+    "final_final_charts/proposed_pks/06_downlink_energy_1x2.png": "c43c11d01d83ed4cb2156c86157f2212e447e2c7d71a4909c08a80878a815489",
+    "final_final_charts/proposed_pks/06_downlink_energy_1x2.svg": "c89a899903f8df63a7506cdd011118af93367f43c295ea7e7542546da858184e",
+    "final_final_charts/proposed_pks/07_downlink_delay_1x2.pdf": "189fbb8925f9673dd0f238e7b3fbb5a434e8d0c9711ff02557f482c1741037e3",
+    "final_final_charts/proposed_pks/07_downlink_delay_1x2.png": "bb58a6fff450190a5f01f2396ea16e6c80d3e20e55b4253b8862d016e00f8a76",
+    "final_final_charts/proposed_pks/07_downlink_delay_1x2.svg": "2ce3e1c05cf3150d7a8ffda74c18dfd09f3343bbccd972d345cfad3a3760dd3d",
+    "final_final_charts/proposed_pks/08_fl_rounds_energy_1x2.pdf": "66dc501ed4e3ceaf349890b2d228ae1b575edf3f1902fc04e638283eba148bc0",
+    "final_final_charts/proposed_pks/08_fl_rounds_energy_1x2.png": "2023ca94ef4eb9e5ad29ed2aa98f057619e912ae73b72c6fdf3a6b5b8b30cde0",
+    "final_final_charts/proposed_pks/08_fl_rounds_energy_1x2.svg": "9853d2f421faa77af73fd1bcf7663f7d9d1478ea9bdc077ace70f8d019f304ce",
+    "final_final_charts/proposed_pks/09_fl_rounds_delay_1x2.pdf": "1547e5e00cee560d81c334abffdca85d79ba31949f23899b204ea4b75f496030",
+    "final_final_charts/proposed_pks/09_fl_rounds_delay_1x2.png": "b924ce96e5b569f77c4c8db892a2c0706bc2bab5527234090f3241105b761b38",
+    "final_final_charts/proposed_pks/09_fl_rounds_delay_1x2.svg": "3670468a065321ae04201a2acdfc6ed9f4ef4e033762415d1e9ef507878ec419",
+    "final_final_charts/proposed_pks/10_packet_loss_energy_1x2.pdf": "e48ccd3611d345fa1918455c977f00e54ae664795b0a3a6db90c22e133d9ea25",
+    "final_final_charts/proposed_pks/10_packet_loss_energy_1x2.png": "bcbd9c168f8e380e224d93d330a562c3ed930bfccaaf1c943e81b58ec9d6bc64",
+    "final_final_charts/proposed_pks/10_packet_loss_energy_1x2.svg": "4d45d509a888ef6c01a41e13da3de6a8e33150905e486ff3a1aaac2765a46a72",
+    "final_final_charts/proposed_pks/11_packet_loss_delay_1x2.pdf": "6c52662c0e7796809a3d96a11f47569d149d03554c0c81fd5e2396e172f00c24",
+    "final_final_charts/proposed_pks/11_packet_loss_delay_1x2.png": "b8f85fa436d655733bbaf8e2bd3e93e48140407a20b5cf8210299a8b3849f048",
+    "final_final_charts/proposed_pks/11_packet_loss_delay_1x2.svg": "be4283581d1eb5edf4abd790b991ea1c453c2e7def739385096f1d09ff8e7fe7",
+    "final_final_charts/proposed_pks/12_downlink_mission_delay_1x2.pdf": "0eb3309860d211d803436333cdaec918db148c2ec2c258b18e7537eba24832d3",
+    "final_final_charts/proposed_pks/12_downlink_mission_delay_1x2.png": "863ca5b1c34a0a3b0e5d69684e94a79a1e3637218fc9da63735110524556b3bd",
+    "final_final_charts/proposed_pks/12_downlink_mission_delay_1x2.svg": "269b419eef9edfe9bb1b45604af5c0e51fc9fec940f19101767d122e86b29f0b",
+    "final_final_charts/proposed_pks/13_fl_rounds_mission_delay_1x2.pdf": "c849ea14672e4e42cbfa0e2578ca2a506144833152d43143ae0dd7f5c6c7a3cc",
+    "final_final_charts/proposed_pks/13_fl_rounds_mission_delay_1x2.png": "99162377700792c0b68705f3021c0ef5d1644be1dcc6dd810088271f6ec82571",
+    "final_final_charts/proposed_pks/13_fl_rounds_mission_delay_1x2.svg": "f95d08707622da935de4a226e562de64fce85834942efaa014cbf1984a05fda7",
+    "final_final_charts/proposed_pks/14_packet_loss_mission_delay_1x2.pdf": "f756be22e227e6002e63d2e699871a19641a840f16bf96ff1da5bfa88fc59f82",
+    "final_final_charts/proposed_pks/14_packet_loss_mission_delay_1x2.png": "deb53e5c4e95cda3dfca1ec8b9535a0fb382083ab1d4ce6fcbf5f0b232f555f4",
+    "final_final_charts/proposed_pks/14_packet_loss_mission_delay_1x2.svg": "a1bdc0742ec02196b3966f80c765995bfd239db020a226d6d3de71350ff473bb",
+    "final_final_charts/downlink_bandwidth/01_downlink_bandwidth_energy_1x2.pdf": "cb2c118c2062f983b080750de508e3411728241955ac2b48774ba75c27922a06",
+    "final_final_charts/downlink_bandwidth/01_downlink_bandwidth_energy_1x2.png": "5004efb19e06a6534082bb254242e3cb5b001cf506965707696766cdf1c3d716",
+    "final_final_charts/downlink_bandwidth/01_downlink_bandwidth_energy_1x2.svg": "793e324d0ab0b5fae5b88cffbe4cbc9d710887d9daca20ec65a0271763224cf4",
+    "final_final_charts/downlink_bandwidth/02_downlink_bandwidth_delay_1x2.pdf": "bf1614b686c8c7690c72587e5645c954f45e52a8b9d9b30cb199fa6fc4bdaa68",
+    "final_final_charts/downlink_bandwidth/02_downlink_bandwidth_delay_1x2.png": "213484716a4511e034a18d5d3bea0b706e804e4d9c9f5ae0cc7fc9d8fff71a0a",
+    "final_final_charts/downlink_bandwidth/02_downlink_bandwidth_delay_1x2.svg": "e221fc43d6040865e7b77762f9418e390e875dbcf0b3bf317bace4e95fc29b2e",
+    "final_final_charts/downlink_bandwidth/03_downlink_bandwidth_mission_delay_1x2.pdf": "ab5512819662bbc535a6748d422e0b1e18816a67b6d2557193e3f543a32f49fe",
+    "final_final_charts/downlink_bandwidth/03_downlink_bandwidth_mission_delay_1x2.png": "5a875ed7bb282bf30aefcbc2508dcd220b7c260f32502ee8aabbb035acf552c7",
+    "final_final_charts/downlink_bandwidth/03_downlink_bandwidth_mission_delay_1x2.svg": "209c033a77daaed2856c7068db233b32de5e28ba2fb97373bd534ac7c33d5b1a",
+    "final_final_charts/downlink_bandwidth/04_energy_bar_1x2.pdf": "f8a844fb608d88382522eea083bef0667ff886260e796075a3fbbb04f1f698e6",
+    "final_final_charts/downlink_bandwidth/04_energy_bar_1x2.png": "954aec5d4ab98324253b41e1cc9436df27e13d7faaa1db26ff2b53e669ea5728",
+    "final_final_charts/downlink_bandwidth/04_energy_bar_1x2.svg": "3e1adfeb93ee0c28176b28cf6643a7f3510f97f382fcfacbd71b4f7d3504813c",
+    "final_final_charts/downlink_bandwidth/05_delay_bar_1x2.pdf": "3009933aee1e631269a95a5e91074c803938b991f39ed303234e483a19d3cd76",
+    "final_final_charts/downlink_bandwidth/05_delay_bar_1x2.png": "dd3f46d639905b155007e0a711746e4987a370d5cb9ff2e19bb1379511efd5b6",
+    "final_final_charts/downlink_bandwidth/05_delay_bar_1x2.svg": "d5056f278dbbd19452f75401e80bb4c727cd7e6b03dc771a8c10969fceb886a6",
+    "final_final_charts/downlink_bandwidth/09_aggregation_mse_energy_1x2.pdf": "9b5542796a52f5ccce86f59665852d125035c915c1affdfb503add933474da95",
+    "final_final_charts/downlink_bandwidth/09_aggregation_mse_energy_1x2.png": "f46582b3bb7355e113ccc3c89b0c185e99108e7ce754caa0bfe1b4a9c067f1bc",
+    "final_final_charts/downlink_bandwidth/09_aggregation_mse_energy_1x2.svg": "7b697781938031a80771cc67ad66ff506d997affecd8d4710529cf34cac4f382",
+    "final_final_charts/downlink_bandwidth/10_energy_mr_1x2.pdf": "21277ff597488452f5c009a296477e57828c800dd37ee9f94d473c1c83dc3f24",
+    "final_final_charts/downlink_bandwidth/10_energy_mr_1x2.png": "7bd4f09ca68bcbce2e9fe58efd9b6a2e0d261db568311206707de57302cc0cdd",
+    "final_final_charts/downlink_bandwidth/10_energy_mr_1x2.svg": "21bccab5aef91e63a2d44674bfe2581b50d13c9350461757e4b95c07973750d4",
+    "final_final_charts/downlink_bandwidth/11_fu_steps_energy_1x2.pdf": "5e2dac7d4a82f9f590394dd9f99ce2e5b186d3fb3600084b2bd8f3a4f604ae8c",
+    "final_final_charts/downlink_bandwidth/11_fu_steps_energy_1x2.png": "8a568ecc984f607dfeadca484fc1b77cc5e6e394b75ee1ae6c3b76dccbdacc11",
+    "final_final_charts/downlink_bandwidth/11_fu_steps_energy_1x2.svg": "80f1d8fb5d7c1afc9d1404f68af075455c677ac6078d7dcec04c03737f7fdac6",
+    "final_final_charts/downlink_bandwidth/18_all_comparator_rank_outcomes_1x2.pdf": "9f016b9fe00cc31f248be2196cbc1ebfb979cffc83ef27f5ae1b332d5ef4e0af",
+    "final_final_charts/downlink_bandwidth/18_all_comparator_rank_outcomes_1x2.png": "855f156a379cebce6038175e790ad1803c8c92b918390345835605f805309615",
+    "final_final_charts/downlink_bandwidth/18_all_comparator_rank_outcomes_1x2.svg": "3de476d6581b63e37edbadf612975cffd113780dcb8567d60f2859ecc41791b2",
+    "final_final_charts/downlink_bandwidth/19_all_method_rank_boxplot_1x2.pdf": "8e6a232d2f7a5b3bdcaa176be02beb7ac7c637b90754fe5210614591daf42537",
+    "final_final_charts/downlink_bandwidth/19_all_method_rank_boxplot_1x2.png": "5ff9f83f25b1ae246827579fd04baa10f5254e4e3508c7d583518df362ec13fe",
+    "final_final_charts/downlink_bandwidth/19_all_method_rank_boxplot_1x2.svg": "8636fd4b36d803e83fd0f0dd46835a40e81152bcfda4090874651058f36331d1"
+  },
+  "unchanged_measurement_sha256": {
+    "final_final_charts/proposed_pks/data/plot_series.json": "16a2a07d55baf1ba32d2d52d44f91ac4147cddab3d6de15c15a965929503bef5",
+    "final_final_charts/proposed_pks/data/metrics.csv": "a9100e6cee249b59bb6a5530eef53e0618b5a71c2744e2c33b6c170793a72db9",
+    "final_final_charts/proposed_pks/data/metrics.json": "f407ad03c63b9d34a76556bcb5db6d5cd7b946abcbf4db5c35765924ae036cd5",
+    "final_final_charts/downlink_bandwidth/data/retrieval_energy_capera_query_ranks.csv": "4d15b3698b394eb8572b68a48dd4b875848e644ee675da693fe7029b5126a6fc",
+    "final_final_charts/downlink_bandwidth/data/retrieval_summary.csv": "097560911d2f17c6696cc7e4bd37f28f0cfaabd702d7570af324b70435cdf4b6",
+    "final_final_charts/downlink_bandwidth/data/retrieval_energy_airscape_query_ranks.csv": "69df33b666fdbf3ca92673ec9fc924cc9891ef691009d875ce3820f910054d3b",
+    "final_final_charts/downlink_bandwidth/data/retrieval_capera_paired_counts.csv": "33c6b0a557a4d5635fbb58d89f324f60d58a8655185ce1aa3439e3eff2583e41",
+    "final_final_charts/downlink_bandwidth/data/retrieval_energy_airscape_paired_counts.csv": "2a3fe2798d71a37429f93a222eb489db611d76b76135947c5b1db9726129b41a",
+    "final_final_charts/downlink_bandwidth/data/retrieval_airscape_paired_counts.csv": "c59eaa4dd56a5d23493cdbd02516ba8485c9867f1d0ee9f47d6f56d5db0a31bb",
+    "final_final_charts/downlink_bandwidth/data/retrieval_rank_box_stats.json": "4b57017053668d191d2a3304ce767f5c4915b92ce8780fb3758c1bdf6ad254e0",
+    "final_final_charts/downlink_bandwidth/data/retrieval_capera_query_ranks.json": "13572fa146f64a0f3299a3a6c53ae7e4a35551e5cf172e6bc623c714e0b3e46d",
+    "final_final_charts/downlink_bandwidth/data/retrieval_energy_summary.json": "bd728bc7076c6c5e4f38a0c1abfc4de05e4b85be27aa02048ad47f6163b8a48a",
+    "final_final_charts/downlink_bandwidth/data/retrieval_all_comparator_outcomes.csv": "24558ee35ad67a7f054e4d15f3ebaeda07742402ad64304d0b243765a581b64f",
+    "final_final_charts/downlink_bandwidth/data/plot_series.json": "7ed9550fd362301c4eef9a783b9b57f4fe0e788d5c0c7170741a00d116c6a600",
+    "final_final_charts/downlink_bandwidth/data/mse_metrics.json": "ad156470a357b2ff91035e2f5a2099e24dc3a4431e5165514ae1d0295a7adcb2",
+    "final_final_charts/downlink_bandwidth/data/retrieval_rank_box_stats.csv": "2ccbbb815b461e2680ffed6c84e3a20fd3e47b5d1eab3a84c6bef718a414f782",
+    "final_final_charts/downlink_bandwidth/data/retrieval_airscape_query_ranks.csv": "7fc9a2eccfededb29966a9a757ee96f4b84d977fa1b2a5185841e5f152deeff7",
+    "final_final_charts/downlink_bandwidth/data/retrieval_airscape_paired_counts.json": "0a8d9e446fc0c2c4ab6ef86d2a27fd23ac6cc0465a643c1388080b24b9f0c52d",
+    "final_final_charts/downlink_bandwidth/data/retrieval_energy_summary.csv": "aa3958af2f239d2662cbad3b67e2765eda2d339ab177849b729e5251b4691042",
+    "final_final_charts/downlink_bandwidth/data/retrieval_capera_paired_counts.json": "551a2391efcf87e6f9f9d5d0c07743f3b9b2edb8007dddfdc4cd7eab1e5e3ae6",
+    "final_final_charts/downlink_bandwidth/data/retrieval_capera_query_ranks.csv": "1420c4df9d364f6768579817a40178f5603a7c55bf767056c5a64cd5358caffe",
+    "final_final_charts/downlink_bandwidth/data/fu_workload_metrics.csv": "06902b2a274b04113657a8426bf0a91475c71d1b51ef329fa44104e5e2c7de94",
+    "final_final_charts/downlink_bandwidth/data/retrieval_energy_capera_paired_counts.json": "396cac44fcbde8f08870a07895691f2c1980b32900831d084642beac973855c7",
+    "final_final_charts/downlink_bandwidth/data/retrieval_energy_airscape_query_ranks.json": "f2dbaaa65a9f4db49063ea2b6fa4c02697636dc7b15f7bf683970690a8318a78",
+    "final_final_charts/downlink_bandwidth/data/mse_metrics.csv": "3e561e7debba4eff459227ad901432b27a8741c830bed0339a1f9fc7fff702da",
+    "final_final_charts/downlink_bandwidth/data/retrieval_energy_airscape_paired_counts.json": "c41d3799bcbd7d46573241f78bcffee562206d7c9b3fe4f10069b0a1d8d5978b",
+    "final_final_charts/downlink_bandwidth/data/tgcn_plot_series.json": "09bb7c4650c6030e29b297c1be0231199f9701eb40b86ae73dbfa6c3165fb540",
+    "final_final_charts/downlink_bandwidth/data/metrics.csv": "f68d883dc91df35e21a9f75e89863d556f4ea264814e05789b63f0960308da47",
+    "final_final_charts/downlink_bandwidth/data/metrics.json": "6748b073686ab780a9903031483e1d9699b79e8e31dec7476a70de273b0a4727",
+    "final_final_charts/downlink_bandwidth/data/retrieval_all_comparator_outcomes.json": "c7dd5a920503186444e83ae7d8d1f3b77332b26b46b9c2bc619437c286418ecb",
+    "final_final_charts/downlink_bandwidth/data/retrieval_energy_capera_query_ranks.json": "c51aff1841e76c3a2d611de3da8f3d946ffba18194646576491b66fd3c96e518",
+    "final_final_charts/downlink_bandwidth/data/retrieval_airscape_query_ranks.json": "b118762028440cfc7988f5045238a6c1c3a823af973f8810ed0bf75dcb8500bd",
+    "final_final_charts/downlink_bandwidth/data/retrieval_energy_capera_paired_counts.csv": "60f3386d92d3e35630c8fc5d19c04cb32761fcf840b429f5c46a88227c251fbd",
+    "final_final_charts/downlink_bandwidth/data/fu_workload_metrics.json": "d81e3d2413980005e1c978b5ca7a4721df641e62528a00f5cab25afb4f431743",
+    "final_final_charts/downlink_bandwidth/data/retrieval_summary.json": "b1ac17f93effd3c40cca237b589be7d74025174a5eba82a3fa42280a66c1e372"
+  },
+  "updated": [
+    {
+      "folder": "final_final_charts/proposed_pks",
+      "name": "01_round_loss_1x2",
+      "typography": {
+        "version": "paper_typography_v1",
+        "figure_inches": [
+          7.4,
+          3.735
+        ],
+        "axes": [
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          },
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          }
+        ],
+        "legend_pt": 12.0,
+        "legend_gap_pt": 8.000000000000023,
+        "fixed_pdf_width_pt": 532.8000000000001
+      }
+    },
+    {
+      "folder": "final_final_charts/proposed_pks",
+      "name": "02_round_mr_1x2",
+      "typography": {
+        "version": "paper_typography_v1",
+        "figure_inches": [
+          7.4,
+          3.735
+        ],
+        "axes": [
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          },
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          }
+        ],
+        "legend_pt": 12.0,
+        "legend_gap_pt": 8.000000000000023,
+        "fixed_pdf_width_pt": 532.8000000000001
+      }
+    },
+    {
+      "folder": "final_final_charts/proposed_pks",
+      "name": "03_round_kl_1x2",
+      "typography": {
+        "version": "paper_typography_v1",
+        "figure_inches": [
+          7.4,
+          3.735
+        ],
+        "axes": [
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          },
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          }
+        ],
+        "legend_pt": 12.0,
+        "legend_gap_pt": 8.000000000000023,
+        "fixed_pdf_width_pt": 532.8000000000001
+      }
+    },
+    {
+      "folder": "final_final_charts/proposed_pks",
+      "name": "04_time_loss_1x2",
+      "typography": {
+        "version": "paper_typography_v1",
+        "figure_inches": [
+          7.4,
+          3.735
+        ],
+        "axes": [
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          },
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          }
+        ],
+        "legend_pt": 12.0,
+        "legend_gap_pt": 8.000000000000023,
+        "fixed_pdf_width_pt": 532.8000000000001
+      }
+    },
+    {
+      "folder": "final_final_charts/proposed_pks",
+      "name": "05_time_mr_1x2",
+      "typography": {
+        "version": "paper_typography_v1",
+        "figure_inches": [
+          7.4,
+          3.735
+        ],
+        "axes": [
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          },
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          }
+        ],
+        "legend_pt": 12.0,
+        "legend_gap_pt": 8.000000000000023,
+        "fixed_pdf_width_pt": 532.8000000000001
+      }
+    },
+    {
+      "folder": "final_final_charts/proposed_pks",
+      "name": "06_downlink_energy_1x2",
+      "typography": {
+        "version": "paper_typography_v1",
+        "figure_inches": [
+          7.4,
+          3.735
+        ],
+        "axes": [
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          },
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          }
+        ],
+        "legend_pt": 12.0,
+        "legend_gap_pt": 8.000000000000023,
+        "fixed_pdf_width_pt": 532.8000000000001
+      }
+    },
+    {
+      "folder": "final_final_charts/proposed_pks",
+      "name": "07_downlink_delay_1x2",
+      "typography": {
+        "version": "paper_typography_v1",
+        "figure_inches": [
+          7.4,
+          3.735
+        ],
+        "axes": [
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          },
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          }
+        ],
+        "legend_pt": 12.0,
+        "legend_gap_pt": 8.000000000000023,
+        "fixed_pdf_width_pt": 532.8000000000001
+      }
+    },
+    {
+      "folder": "final_final_charts/proposed_pks",
+      "name": "08_fl_rounds_energy_1x2",
+      "typography": {
+        "version": "paper_typography_v1",
+        "figure_inches": [
+          7.4,
+          3.735
+        ],
+        "axes": [
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          },
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          }
+        ],
+        "legend_pt": 12.0,
+        "legend_gap_pt": 8.000000000000023,
+        "fixed_pdf_width_pt": 532.8000000000001
+      }
+    },
+    {
+      "folder": "final_final_charts/proposed_pks",
+      "name": "09_fl_rounds_delay_1x2",
+      "typography": {
+        "version": "paper_typography_v1",
+        "figure_inches": [
+          7.4,
+          3.735
+        ],
+        "axes": [
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          },
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          }
+        ],
+        "legend_pt": 12.0,
+        "legend_gap_pt": 8.000000000000023,
+        "fixed_pdf_width_pt": 532.8000000000001
+      }
+    },
+    {
+      "folder": "final_final_charts/proposed_pks",
+      "name": "10_packet_loss_energy_1x2",
+      "typography": {
+        "version": "paper_typography_v1",
+        "figure_inches": [
+          7.4,
+          3.735
+        ],
+        "axes": [
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          },
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          }
+        ],
+        "legend_pt": 12.0,
+        "legend_gap_pt": 8.000000000000023,
+        "fixed_pdf_width_pt": 532.8000000000001
+      }
+    },
+    {
+      "folder": "final_final_charts/proposed_pks",
+      "name": "11_packet_loss_delay_1x2",
+      "typography": {
+        "version": "paper_typography_v1",
+        "figure_inches": [
+          7.4,
+          3.735
+        ],
+        "axes": [
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          },
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          }
+        ],
+        "legend_pt": 12.0,
+        "legend_gap_pt": 8.000000000000023,
+        "fixed_pdf_width_pt": 532.8000000000001
+      }
+    },
+    {
+      "folder": "final_final_charts/proposed_pks",
+      "name": "12_downlink_mission_delay_1x2",
+      "typography": {
+        "version": "paper_typography_v1",
+        "figure_inches": [
+          7.4,
+          3.735
+        ],
+        "axes": [
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          },
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          }
+        ],
+        "legend_pt": 12.0,
+        "legend_gap_pt": 8.000000000000023,
+        "fixed_pdf_width_pt": 532.8000000000001
+      }
+    },
+    {
+      "folder": "final_final_charts/proposed_pks",
+      "name": "13_fl_rounds_mission_delay_1x2",
+      "typography": {
+        "version": "paper_typography_v1",
+        "figure_inches": [
+          7.4,
+          3.735
+        ],
+        "axes": [
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          },
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          }
+        ],
+        "legend_pt": 12.0,
+        "legend_gap_pt": 8.000000000000023,
+        "fixed_pdf_width_pt": 532.8000000000001
+      }
+    },
+    {
+      "folder": "final_final_charts/proposed_pks",
+      "name": "14_packet_loss_mission_delay_1x2",
+      "typography": {
+        "version": "paper_typography_v1",
+        "figure_inches": [
+          7.4,
+          3.735
+        ],
+        "axes": [
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          },
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          }
+        ],
+        "legend_pt": 12.0,
+        "legend_gap_pt": 8.000000000000023,
+        "fixed_pdf_width_pt": 532.8000000000001
+      }
+    },
+    {
+      "folder": "final_final_charts/downlink_bandwidth",
+      "name": "01_downlink_bandwidth_energy_1x2",
+      "typography": {
+        "version": "paper_typography_v1",
+        "figure_inches": [
+          7.4,
+          3.735
+        ],
+        "axes": [
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          },
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          }
+        ],
+        "legend_pt": 12.0,
+        "legend_gap_pt": 8.000000000000023,
+        "fixed_pdf_width_pt": 532.8000000000001
+      }
+    },
+    {
+      "folder": "final_final_charts/downlink_bandwidth",
+      "name": "02_downlink_bandwidth_delay_1x2",
+      "typography": {
+        "version": "paper_typography_v1",
+        "figure_inches": [
+          7.4,
+          3.735
+        ],
+        "axes": [
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          },
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          }
+        ],
+        "legend_pt": 12.0,
+        "legend_gap_pt": 8.000000000000023,
+        "fixed_pdf_width_pt": 532.8000000000001
+      }
+    },
+    {
+      "folder": "final_final_charts/downlink_bandwidth",
+      "name": "03_downlink_bandwidth_mission_delay_1x2",
+      "typography": {
+        "version": "paper_typography_v1",
+        "figure_inches": [
+          7.4,
+          3.735
+        ],
+        "axes": [
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          },
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          }
+        ],
+        "legend_pt": 12.0,
+        "legend_gap_pt": 8.000000000000023,
+        "fixed_pdf_width_pt": 532.8000000000001
+      }
+    },
+    {
+      "folder": "final_final_charts/downlink_bandwidth",
+      "name": "04_energy_bar_1x2",
+      "typography": {
+        "version": "paper_typography_v1",
+        "figure_inches": [
+          7.4,
+          3.735
+        ],
+        "axes": [
+          {
+            "x_tick_pt": 14.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": true
+          },
+          {
+            "x_tick_pt": 14.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": true
+          }
+        ],
+        "legend_pt": 12.0,
+        "legend_gap_pt": 8.000000000000023,
+        "fixed_pdf_width_pt": 532.8000000000001
+      }
+    },
+    {
+      "folder": "final_final_charts/downlink_bandwidth",
+      "name": "05_delay_bar_1x2",
+      "typography": {
+        "version": "paper_typography_v1",
+        "figure_inches": [
+          7.4,
+          3.735
+        ],
+        "axes": [
+          {
+            "x_tick_pt": 14.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": true
+          },
+          {
+            "x_tick_pt": 14.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": true
+          }
+        ],
+        "legend_pt": 12.0,
+        "legend_gap_pt": 8.000000000000023,
+        "fixed_pdf_width_pt": 532.8000000000001
+      }
+    },
+    {
+      "folder": "final_final_charts/downlink_bandwidth",
+      "name": "09_aggregation_mse_energy_1x2",
+      "typography": {
+        "version": "paper_typography_v1",
+        "figure_inches": [
+          7.4,
+          3.735
+        ],
+        "axes": [
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          },
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          }
+        ],
+        "legend_pt": 12.0,
+        "legend_gap_pt": 8.000000000000023,
+        "fixed_pdf_width_pt": 532.8000000000001
+      }
+    },
+    {
+      "folder": "final_final_charts/downlink_bandwidth",
+      "name": "10_energy_mr_1x2",
+      "typography": {
+        "version": "paper_typography_v1",
+        "figure_inches": [
+          7.4,
+          3.735
+        ],
+        "axes": [
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          },
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          }
+        ],
+        "legend_pt": 12.0,
+        "legend_gap_pt": 8.000000000000023,
+        "fixed_pdf_width_pt": 532.8000000000001
+      }
+    },
+    {
+      "folder": "final_final_charts/downlink_bandwidth",
+      "name": "11_fu_steps_energy_1x2",
+      "typography": {
+        "version": "paper_typography_v1",
+        "figure_inches": [
+          7.4,
+          3.735
+        ],
+        "axes": [
+          {
+            "x_tick_pt": 14.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": true
+          },
+          {
+            "x_tick_pt": 14.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": true
+          }
+        ],
+        "legend_pt": 12.0,
+        "legend_gap_pt": 8.000000000000023,
+        "fixed_pdf_width_pt": 532.8000000000001
+      }
+    },
+    {
+      "folder": "final_final_charts/downlink_bandwidth",
+      "name": "18_all_comparator_rank_outcomes_1x2",
+      "typography": {
+        "version": "paper_typography_v1",
+        "figure_inches": [
+          7.4,
+          3.735
+        ],
+        "axes": [
+          {
+            "x_tick_pt": 14.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": true
+          },
+          {
+            "x_tick_pt": 14.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": true
+          }
+        ],
+        "legend_pt": 12.0,
+        "legend_gap_pt": 8.000000000000023,
+        "fixed_pdf_width_pt": 532.8000000000001
+      }
+    },
+    {
+      "folder": "final_final_charts/downlink_bandwidth",
+      "name": "19_all_method_rank_boxplot_1x2",
+      "typography": {
+        "version": "paper_typography_v1",
+        "figure_inches": [
+          7.4,
+          3.735
+        ],
+        "axes": [
+          {
+            "x_tick_pt": 14.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": true
+          },
+          {
+            "x_tick_pt": 14.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": true
+          }
+        ],
+        "legend_pt": null,
+        "legend_gap_pt": null,
+        "fixed_pdf_width_pt": 532.8000000000001
+      }
+    }
+  ],
+  "source_sha256": {
+    "tools/uav_convergence_v2/paper_typography_v1.py": "2ea7e9501477ef1ee457c6191c4f248142fb8171cba60ae319c6eb0477f6bf01"
+  }
+}

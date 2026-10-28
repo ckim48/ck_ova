@@ -101,18 +101,44 @@
       ],
       "files": [
         {
-          "file": "01_downlink_bandwidth_energy_1x2.png",
-          "sha256": "fd062c82348917a7e05e9cdd5b34343efebe81f462ff349c24142bb01df73fa9"
+          "file": "01_downlink_bandwidth_energy_1x2.pdf",
+          "sha256": "c44000ecd3f091eb3828f3e749c347f008d8f31c9767dcb3891e6e190daa4391"
         },
         {
-          "file": "01_downlink_bandwidth_energy_1x2.pdf",
-          "sha256": "f51a3bed19a2852ccae04dd013ac1e74d40fe0483db811478dc438250ec1b69b"
+          "file": "01_downlink_bandwidth_energy_1x2.png",
+          "sha256": "5004efb19e06a6534082bb254242e3cb5b001cf506965707696766cdf1c3d716"
         },
         {
           "file": "01_downlink_bandwidth_energy_1x2.svg",
-          "sha256": "276b84315b579d1d3c08fecc8df77cade29a682b334735c3668bdc3c8c8e7a8b"
+          "sha256": "0f051fecd4dbee8173057fcecea421e5479dd224306569e3dc77f33d98dba45e"
         }
-      ]
+      ],
+      "typography": {
+        "version": "paper_typography_v1",
+        "figure_inches": [
+          7.4,
+          3.735
+        ],
+        "axes": [
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          },
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          }
+        ],
+        "legend_pt": 12.0,
+        "legend_gap_pt": 8.000000000000023,
+        "fixed_pdf_width_pt": 532.8000000000001
+      }
     },
     {
       "name": "02_downlink_bandwidth_delay_1x2",
@@ -207,18 +233,44 @@
       ],
       "files": [
         {
-          "file": "02_downlink_bandwidth_delay_1x2.png",
-          "sha256": "0e5541f5393890b39697661e5598047ddd11f0499ee94816342f775eaa15b3e0"
+          "file": "02_downlink_bandwidth_delay_1x2.pdf",
+          "sha256": "9ff8385776eef8d19bc32c430d6e84eb162f01cd0551d4a7d455395f4da133ef"
         },
         {
-          "file": "02_downlink_bandwidth_delay_1x2.pdf",
-          "sha256": "60d6c2da24ed52842c8d3656869d4b22a29449ef6c8f9ff9ce86cf2215d959c8"
+          "file": "02_downlink_bandwidth_delay_1x2.png",
+          "sha256": "213484716a4511e034a18d5d3bea0b706e804e4d9c9f5ae0cc7fc9d8fff71a0a"
         },
         {
           "file": "02_downlink_bandwidth_delay_1x2.svg",
-          "sha256": "985f80f5dbeb1dfee719dc1722edf9804f08d8cea8d948f6886d9670b5636d45"
+          "sha256": "11af574f3b99b2cea615b576e1bad5f6a2c4974034c57d5ed5194b5e667a6a9c"
         }
-      ]
+      ],
+      "typography": {
+        "version": "paper_typography_v1",
+        "figure_inches": [
+          7.4,
+          3.735
+        ],
+        "axes": [
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          },
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          }
+        ],
+        "legend_pt": 12.0,
+        "legend_gap_pt": 8.000000000000023,
+        "fixed_pdf_width_pt": 532.8000000000001
+      }
     },
     {
       "name": "03_downlink_bandwidth_mission_delay_1x2",
@@ -317,18 +369,44 @@
       ],
       "files": [
         {
-          "file": "03_downlink_bandwidth_mission_delay_1x2.png",
-          "sha256": "f3fd80206351f90c8ce3acfeb4d9646ed392398e26a2ed2bfe1b10e61f707169"
+          "file": "03_downlink_bandwidth_mission_delay_1x2.pdf",
+          "sha256": "513d4ebc88e24ea7bb9c32ca0a40373c831eb31df2097e2bad288f05da58b486"
         },
         {
-          "file": "03_downlink_bandwidth_mission_delay_1x2.pdf",
-          "sha256": "1bbc36d9fba03e7f5dbdfb8bd6705fc1087a44de6396d2b16e936982d932cc10"
+          "file": "03_downlink_bandwidth_mission_delay_1x2.png",
+          "sha256": "5a875ed7bb282bf30aefcbc2508dcd220b7c260f32502ee8aabbb035acf552c7"
         },
         {
           "file": "03_downlink_bandwidth_mission_delay_1x2.svg",
-          "sha256": "2e60f7d6e34b79832ec06182a4911c813c0ed924c666308175c677e487fa77f8"
+          "sha256": "17a1e816588333337d6fa760a1b89f0f1e53a6939d1a6a6bd9aa66e6e98666e7"
         }
-      ]
+      ],
+      "typography": {
+        "version": "paper_typography_v1",
+        "figure_inches": [
+          7.4,
+          3.735
+        ],
+        "axes": [
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          },
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          }
+        ],
+        "legend_pt": 12.0,
+        "legend_gap_pt": 8.000000000000023,
+        "fixed_pdf_width_pt": 532.8000000000001
+      }
     },
     {
       "name": "04_energy_bar_1x2",
@@ -345,8 +423,8 @@
               3
             ],
             "limits": [
-              -0.55,
-              3.55
+              -0.4,
+              3.4
             ],
             "labels": [
               "Proposed",
@@ -387,8 +465,8 @@
               3
             ],
             "limits": [
-              -0.55,
-              3.55
+              -0.4,
+              3.4
             ],
             "labels": [
               "Proposed",
@@ -421,18 +499,44 @@
       ],
       "files": [
         {
-          "file": "04_energy_bar_1x2.png",
-          "sha256": "cc1538e4a1d7642ef9caabf8118c2da6213f137207f1c0ee3a5db5c7aa4d26f9"
+          "file": "04_energy_bar_1x2.pdf",
+          "sha256": "733141968ffca48eabd6030d4f1f234ffba8edfd9cfdfc50fa4bb610d2f76634"
         },
         {
-          "file": "04_energy_bar_1x2.pdf",
-          "sha256": "8c3a40901be6280943f3a75ca58f8be2f45f3ce799435fa834154861180d025d"
+          "file": "04_energy_bar_1x2.png",
+          "sha256": "4b9120787ea071ffc70b68a712fd25fdd4496d150088835686592276b50ea6f0"
         },
         {
           "file": "04_energy_bar_1x2.svg",
-          "sha256": "270da7fd6ad3608f1cce1eea3b4f9d01b064819c27a169412fcedbbed2669407"
+          "sha256": "0baa9bb7af4af69bfae0c3fb2803f97eeba21627823ed06d25b479a36761f651"
         }
-      ]
+      ],
+      "typography": {
+        "version": "paper_typography_v1",
+        "figure_inches": [
+          7.4,
+          3.735
+        ],
+        "axes": [
+          {
+            "x_tick_pt": 14.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": true
+          },
+          {
+            "x_tick_pt": 14.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": true
+          }
+        ],
+        "legend_pt": 12.0,
+        "legend_gap_pt": 8.000000000000023,
+        "fixed_pdf_width_pt": 532.8000000000001
+      }
     },
     {
       "name": "05_delay_bar_1x2",
@@ -449,8 +553,8 @@
               3
             ],
             "limits": [
-              -0.55,
-              3.55
+              -0.4,
+              3.4
             ],
             "labels": [
               "Proposed",
@@ -491,8 +595,8 @@
               3
             ],
             "limits": [
-              -0.55,
-              3.55
+              -0.4,
+              3.4
             ],
             "labels": [
               "Proposed",
@@ -525,18 +629,44 @@
       ],
       "files": [
         {
-          "file": "05_delay_bar_1x2.png",
-          "sha256": "155b2baa9cf9a103a42de8cadf6e5894ea9023af910151c93617a2b75166a83d"
+          "file": "05_delay_bar_1x2.pdf",
+          "sha256": "226c12c7415a5a748437a35fac6c49cd13617c4c78f6e8a8abd675323cb6d5ae"
         },
         {
-          "file": "05_delay_bar_1x2.pdf",
-          "sha256": "6649951bfee82a624c643f9271ebdce3af65b7382fbd1d53c4724d07fc5238aa"
+          "file": "05_delay_bar_1x2.png",
+          "sha256": "595075cea411b70977abef9aa4975fdd9fee8d3da48771c56137b96758b6bbe5"
         },
         {
           "file": "05_delay_bar_1x2.svg",
-          "sha256": "a8d367503515fb66fc8e209bb22c3de9027e95a7c32ebd6624467bff3f5afb6d"
+          "sha256": "0815abad564b7f7a215b8898c9d801290db606bc681a89527621ba20608b6583"
         }
-      ]
+      ],
+      "typography": {
+        "version": "paper_typography_v1",
+        "figure_inches": [
+          7.4,
+          3.735
+        ],
+        "axes": [
+          {
+            "x_tick_pt": 14.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": true
+          },
+          {
+            "x_tick_pt": 14.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": true
+          }
+        ],
+        "legend_pt": 12.0,
+        "legend_gap_pt": 8.000000000000023,
+        "fixed_pdf_width_pt": 532.8000000000001
+      }
     },
     {
       "name": "06_mission_map_1x2",
@@ -720,18 +850,44 @@
       ],
       "files": [
         {
-          "file": "09_aggregation_mse_energy_1x2.png",
-          "sha256": "bd50eb59b68bf3d17ff0f68179087390fc40eaa7b8a45e90747a976150d8ad30"
+          "file": "09_aggregation_mse_energy_1x2.pdf",
+          "sha256": "507ae492066321b844ad79e95696204d765c33b371c54caab71db5f43a9e5a9b"
         },
         {
-          "file": "09_aggregation_mse_energy_1x2.pdf",
-          "sha256": "9bfa4d3eb68317ff682bbe82dcf29416a593498b9db2b3a0fb09fd9e64b504a8"
+          "file": "09_aggregation_mse_energy_1x2.png",
+          "sha256": "f46582b3bb7355e113ccc3c89b0c185e99108e7ce754caa0bfe1b4a9c067f1bc"
         },
         {
           "file": "09_aggregation_mse_energy_1x2.svg",
-          "sha256": "bad262f699997e3af9fbe1a98881fc51b22d7da5796952ce5165b2d185abf7f3"
+          "sha256": "88e9ce18387e9006ee2020193f83fac6761c73b58e0dcc37dcc4676e9efa57a2"
         }
-      ]
+      ],
+      "typography": {
+        "version": "paper_typography_v1",
+        "figure_inches": [
+          7.4,
+          3.735
+        ],
+        "axes": [
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          },
+          {
+            "x_tick_pt": 12.0,
+            "y_tick_pt": 12.0,
+            "x_label_pt": 14.0,
+            "y_label_pt": 14.0,
+            "category_names_match_axis_title": false
+          }
+        ],
+        "legend_pt": 12.0,
+        "legend_gap_pt": 8.000000000000023,
+        "fixed_pdf_width_pt": 532.8000000000001
+      }
     }
   ],
   "source_sha256": {
@@ -35895,7 +36051,8 @@
     "results/aggregation_mse_v1_20261028/salun/salun/cases/mse_0p07/airscape_seed0/iscc_p2_gaft/request_records.json": "a28361d7eeee1b06a22a8037bfcf9db810d931885238d91aa607f02e511300bb",
     "results/aggregation_mse_v1_20261028/salun/salun/cases/mse_0p07/airscape_seed0/iscc_p2_gaft/manifest.json": "64186fbfa3e9367a83e13d06e34003d993f0b0d1e65fc9ae4249bce54f45cb3c",
     "tools/uav_convergence_v2/aggregation_mse_report.py": "5800e4b1de05d1ece7ca7ed23181992a8fad073d6903cd12b56a154363f1727a",
-    "tools/uav_convergence_v2/aggregation_mse_v1.py": "52c765aa6d080a0242fee7ed28ed17435f81d75be1578d1333015c4f88ca2521"
+    "tools/uav_convergence_v2/aggregation_mse_v1.py": "52c765aa6d080a0242fee7ed28ed17435f81d75be1578d1333015c4f88ca2521",
+    "tools/uav_convergence_v2/paper_typography_v1.py": "2ea7e9501477ef1ee457c6191c4f248142fb8171cba60ae319c6eb0477f6bf01"
   },
   "raw_data_published": false,
   "description": "Downlink bandwidth and MSE sweeps; paired resource bars, map and comparison tables.",
@@ -35909,5 +36066,6 @@
   ],
   "mse_compared_arms": 40,
   "mse_new_arms": 32,
-  "total_unique_arms": 72
+  "total_unique_arms": 72,
+  "typography_revision": "paper_typography_v1"
 }

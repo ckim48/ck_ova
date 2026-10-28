@@ -100,8 +100,9 @@ def main():
             if path.suffix == '.svg' and f.get('kind') not in ['map', 'table']:
                 text = path.read_text()
                 assert 'Proposed (' not in text
+                visible_text = ''.join(''.join(ET.parse(path).getroot().itertext()).split())
                 for title in report.METHODS.values():
-                    assert title in text
+                    assert title.replace(' ', '') in visible_text
                 if '_bar_' in f['name']:
                     assert panel['y']['limits'][0] == 0
                     assert '1 MHz' in text and '5 MHz' in text

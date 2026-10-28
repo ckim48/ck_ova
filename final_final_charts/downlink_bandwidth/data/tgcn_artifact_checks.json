@@ -47,10 +47,12 @@
     "scientific_charts_without_images": true
   },
   "paired_FU_workload_bars_from_measured_1_and_9_steps": true,
-  "original_nine_figures_unchanged": true,
+  "original_nine_figures_unchanged": false,
+  "original_nine_measurements_unchanged": true,
+  "authorized_typography_revision": "paper_typography_v1",
   "actual_frame_figures_only": true,
   "regular_ticks_common_marker_budgets": true,
   "source_sha256": {
-    "tools/uav_convergence_v2/tgcn_additions_check.py": "97fb5e07ed9e3f537e762bc0c95b05b3ac28162b8fce15b2c464eefbd51bbca1"
+    "tools/uav_convergence_v2/tgcn_additions_check.py": "5cf3fe91034c442de8c23c07a5aaae190efe2c5e307b6c62abeda1df7d4a4f5b"
   }
 }

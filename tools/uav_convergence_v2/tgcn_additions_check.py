@@ -279,7 +279,8 @@ def main():
             if path.suffix == '.svg':
                 text = path.read_text()
                 assert 'Proposed (' not in text
-                assert all(label in text for label in report.METHODS.values())
+                visible_text = ''.join(''.join(ET.parse(path).getroot().itertext()).split())
+                assert all(label.replace(' ', '') in visible_text for label in report.METHODS.values())
     fixed = check_retrieval(retrieval, 'retrieval', manifest['figures'])
     matched = check_retrieval(energy_retrieval, 'retrieval_energy', manifest['figures'])
     combined = check_retrieval(energy_retrieval, 'retrieval_combined', manifest['figures'])
@@ -291,7 +292,10 @@ def main():
         integrated_retrieval=integrated, full_query_outcome_counts_and_bar_widths_verified=True,
         all_method_rank_charts=rank_charts,
         paired_FU_workload_bars_from_measured_1_and_9_steps=True,
-        original_nine_figures_unchanged=True, actual_frame_figures_only=True,
+        original_nine_figures_unchanged=not bool(manifest.get('typography_revision')),
+        original_nine_measurements_unchanged=True,
+        authorized_typography_revision=manifest.get('typography_revision'),
+        actual_frame_figures_only=True,
         regular_ticks_common_marker_budgets=True,
         source_sha256={str(Path(__file__).relative_to(root)): sha(Path(__file__))})
     report.write(dest/'data/tgcn_artifact_checks.json', result)
