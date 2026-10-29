@@ -1,5 +1,7 @@
 # Current UAV/VLM comparison: Proposed = P-KS
 
+**Forgetting validation:** [Eight new figures and full results](forgetting_quality/README.md) · [Combined PDF](forgetting_quality/forgetting_quality_all.pdf). Includes fresh adapter retraining, matched FU/no-FU controls, all deleted-query retrieval, association changes, and common/policy-matched KL. The current controls do **not** establish a clear forgetting benefit; retained mR and aggregation distortion alone must not be presented as evidence of deletion.
+
 <!-- tgcn-additions -->
 [Energy–mR, paired FU-workload bars and all-method retrieval charts](downlink_bandwidth/TGCN_ADDITIONS.md). Main figures10–11 and18–19; example sheets12–17 remain linked.
 <!-- /tgcn-additions -->

@@ -1,0 +1,56 @@
+% Fresh seed0 audit; exact controls do not imply physical transmission feasibility.
+\begin{figure}[!t]
+    \centering
+    \includegraphics[width=\linewidth]{figures/20_forget_retrieval_1x2.pdf}
+    \caption{Forget-set retrieval performance of the final FL/FU models and policy-matched models retrained without the requested data.}
+    \label{fig:20_forget_retrieval_1x2}
+\end{figure}
+
+\begin{figure}[!t]
+    \centering
+    \includegraphics[width=\linewidth]{figures/21_forget_retraining_kl_1x2.pdf}
+    \caption{Forget-set prediction divergence from common and policy-matched retraining references.}
+    \label{fig:21_forget_retraining_kl_1x2}
+\end{figure}
+
+\begin{figure}[!t]
+    \centering
+    \includegraphics[width=\linewidth]{figures/22_forget_association_change_1x2.pdf}
+    \caption{Change in deleted video--text associations induced by FU under exact aggregation. Positive values indicate a reduction relative to the matched no-FU control. Error bars show conditional 95\% video-bootstrap intervals.}
+    \label{fig:22_forget_association_change_1x2}
+\end{figure}
+
+\begin{figure}[!t]
+    \centering
+    \includegraphics[width=\linewidth]{figures/23_forget_retrieval_fu_control_1x2.pdf}
+    \caption{Forget-set retrieval performance with and without FU under exact aggregation at the same 200-round learning horizon.}
+    \label{fig:23_forget_retrieval_fu_control_1x2}
+\end{figure}
+
+\begin{figure}[!t]
+    \centering
+    \includegraphics[width=\linewidth]{figures/24_wireless_error_forgetting_1x2.pdf}
+    \caption{Forget-set prediction divergence from the common retraining reference under exact and wireless aggregation.}
+    \label{fig:24_wireless_error_forgetting_1x2}
+\end{figure}
+
+\begin{figure}[!t]
+    \centering
+    \includegraphics[width=\linewidth]{figures/25_request_retraining_kl_1x2.pdf}
+    \caption{Distribution of prediction divergence from policy-matched retraining over all deletion requests. The dashed line indicates the diagnostic tolerance.}
+    \label{fig:25_request_retraining_kl_1x2}
+\end{figure}
+
+\begin{figure}[!t]
+    \centering
+    \includegraphics[width=\linewidth]{figures/26_forget_association_before_after_1x2.pdf}
+    \caption{Mean cosine similarity of deleted video--text pairs before the deletion workload and after joint FL/FU.}
+    \label{fig:26_forget_association_before_after_1x2}
+\end{figure}
+
+\begin{figure}[!t]
+    \centering
+    \includegraphics[width=\linewidth]{figures/27_forget_kl_fu_control_1x2.pdf}
+    \caption{Forget-set divergence from policy-matched retraining with and without FU under exact aggregation at the same 200-round learning horizon.}
+    \label{fig:27_forget_kl_fu_control_1x2}
+\end{figure}

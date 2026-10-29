@@ -1,0 +1,71 @@
+{
+  "passed": true,
+  "new_training_runs": 22,
+  "retraining_runs": 6,
+  "paired_control_runs": 16,
+  "frozen_models_evaluated": 8,
+  "original_inputs_unchanged": true,
+  "multiple_caption_metric_checks": true,
+  "global_similarity_offset_invariance": true,
+  "noFU_baselines_identical_as_expected": true,
+  "figures": 8,
+  "checks": [
+    {
+      "dataset": "CapERA",
+      "method": "gate_select16",
+      "full_deleted_cohort": true,
+      "all45requests": true,
+      "metrics_reduced_from_per_video_values": true
+    },
+    {
+      "dataset": "CapERA",
+      "method": "iscc",
+      "full_deleted_cohort": true,
+      "all45requests": true,
+      "metrics_reduced_from_per_video_values": true
+    },
+    {
+      "dataset": "CapERA",
+      "method": "afl",
+      "full_deleted_cohort": true,
+      "all45requests": true,
+      "metrics_reduced_from_per_video_values": true
+    },
+    {
+      "dataset": "CapERA",
+      "method": "salun",
+      "full_deleted_cohort": true,
+      "all45requests": true,
+      "metrics_reduced_from_per_video_values": true
+    },
+    {
+      "dataset": "AirScape",
+      "method": "gate_select16",
+      "full_deleted_cohort": true,
+      "all45requests": true,
+      "metrics_reduced_from_per_video_values": true
+    },
+    {
+      "dataset": "AirScape",
+      "method": "iscc",
+      "full_deleted_cohort": true,
+      "all45requests": true,
+      "metrics_reduced_from_per_video_values": true
+    },
+    {
+      "dataset": "AirScape",
+      "method": "afl",
+      "full_deleted_cohort": true,
+      "all45requests": true,
+      "metrics_reduced_from_per_video_values": true
+    },
+    {
+      "dataset": "AirScape",
+      "method": "salun",
+      "full_deleted_cohort": true,
+      "all45requests": true,
+      "metrics_reduced_from_per_video_values": true
+    }
+  ],
+  "source_sha256": "d4e4b662aa8dd14f99a9dbf6222ed7017112087647854b113eaa072579029d75"
+}

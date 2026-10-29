@@ -1,0 +1,465 @@
+figure,dataset,method,label,series,value,mean,low,high,weakened_percent,unchanged_percent,strengthened_percent,videos,plot_value,request,common_KL,matched_KL
+20_forget_retrieval_1x2,CapERA,gate_select16,Proposed,FL + FU,17.300944669365723,,,,,,,,,,,
+20_forget_retrieval_1x2,CapERA,gate_select16,Proposed,Retrained,16.626180836707157,,,,,,,,,,,
+20_forget_retrieval_1x2,CapERA,iscc,ISCC-P2,FL + FU,16.61268556005398,,,,,,,,,,,
+20_forget_retrieval_1x2,CapERA,iscc,ISCC-P2,Retrained,16.342780026990553,,,,,,,,,,,
+20_forget_retrieval_1x2,CapERA,afl,AFL-OTA,FL + FU,16.61268556005398,,,,,,,,,,,
+20_forget_retrieval_1x2,CapERA,afl,AFL-OTA,Retrained,16.342780026990553,,,,,,,,,,,
+20_forget_retrieval_1x2,CapERA,salun,F-SalUn,FL + FU,17.031039136302294,,,,,,,,,,,
+20_forget_retrieval_1x2,CapERA,salun,F-SalUn,Retrained,16.342780026990553,,,,,,,,,,,
+20_forget_retrieval_1x2,AirScape,gate_select16,Proposed,FL + FU,11.545623836126628,,,,,,,,,,,
+20_forget_retrieval_1x2,AirScape,gate_select16,Proposed,Retrained,11.266294227188082,,,,,,,,,,,
+20_forget_retrieval_1x2,AirScape,iscc,ISCC-P2,FL + FU,11.359404096834263,,,,,,,,,,,
+20_forget_retrieval_1x2,AirScape,iscc,ISCC-P2,Retrained,11.1731843575419,,,,,,,,,,,
+20_forget_retrieval_1x2,AirScape,afl,AFL-OTA,FL + FU,11.359404096834263,,,,,,,,,,,
+20_forget_retrieval_1x2,AirScape,afl,AFL-OTA,Retrained,11.1731843575419,,,,,,,,,,,
+20_forget_retrieval_1x2,AirScape,salun,F-SalUn,FL + FU,11.499068901303536,,,,,,,,,,,
+20_forget_retrieval_1x2,AirScape,salun,F-SalUn,Retrained,11.1731843575419,,,,,,,,,,,
+21_forget_retraining_kl_1x2,CapERA,gate_select16,Proposed,Common reference,18.232287284456607,,,,,,,,,,,
+21_forget_retraining_kl_1x2,CapERA,gate_select16,Proposed,Policy-matched reference,4.4503424594617025,,,,,,,,,,,
+21_forget_retraining_kl_1x2,CapERA,iscc,ISCC-P2,Common reference,3.788593439701568,,,,,,,,,,,
+21_forget_retraining_kl_1x2,CapERA,iscc,ISCC-P2,Policy-matched reference,3.3351858158358443,,,,,,,,,,,
+21_forget_retraining_kl_1x2,CapERA,afl,AFL-OTA,Common reference,3.791222400895477,,,,,,,,,,,
+21_forget_retraining_kl_1x2,CapERA,afl,AFL-OTA,Policy-matched reference,3.3371930543887522,,,,,,,,,,,
+21_forget_retraining_kl_1x2,CapERA,salun,F-SalUn,Common reference,9.667605415429696,,,,,,,,,,,
+21_forget_retraining_kl_1x2,CapERA,salun,F-SalUn,Policy-matched reference,8.980545405229448,,,,,,,,,,,
+21_forget_retraining_kl_1x2,AirScape,gate_select16,Proposed,Common reference,7.319675942118564,,,,,,,,,,,
+21_forget_retraining_kl_1x2,AirScape,gate_select16,Proposed,Policy-matched reference,1.2346767083416144,,,,,,,,,,,
+21_forget_retraining_kl_1x2,AirScape,iscc,ISCC-P2,Common reference,0.8385217829134481,,,,,,,,,,,
+21_forget_retraining_kl_1x2,AirScape,iscc,ISCC-P2,Policy-matched reference,1.229629092282832,,,,,,,,,,,
+21_forget_retraining_kl_1x2,AirScape,afl,AFL-OTA,Common reference,0.8385458016144135,,,,,,,,,,,
+21_forget_retraining_kl_1x2,AirScape,afl,AFL-OTA,Policy-matched reference,1.2300044451861394,,,,,,,,,,,
+21_forget_retraining_kl_1x2,AirScape,salun,F-SalUn,Common reference,3.1273171588585407,,,,,,,,,,,
+21_forget_retraining_kl_1x2,AirScape,salun,F-SalUn,Policy-matched reference,3.9087719452603538,,,,,,,,,,,
+22_forget_association_change_1x2,CapERA,gate_select16,,Exact no-FU minus exact FU margin,,0.007713869804082728,-0.07126916190487763,0.09143416722829537,54.25101214574899,0.0,45.74898785425101,247,,,,
+22_forget_association_change_1x2,CapERA,iscc,,Exact no-FU minus exact FU margin,,-0.0202615304805472,-0.09855317190449857,0.0652391725926621,50.20242914979757,0.0,49.797570850202426,247,,,,
+22_forget_association_change_1x2,CapERA,afl,,Exact no-FU minus exact FU margin,,-0.0202615304805472,-0.09855317190449857,0.0652391725926621,50.20242914979757,0.0,49.797570850202426,247,,,,
+22_forget_association_change_1x2,CapERA,salun,,Exact no-FU minus exact FU margin,,0.1719288906899667,0.032223131594569646,0.3272637944685384,57.89473684210527,0.0,42.10526315789473,247,,,,
+22_forget_association_change_1x2,AirScape,gate_select16,,Exact no-FU minus exact FU margin,,-0.024303984905340588,-0.07931507922301292,0.03326740904336666,50.83798882681564,0.0,49.162011173184354,358,,,,
+22_forget_association_change_1x2,AirScape,iscc,,Exact no-FU minus exact FU margin,,-0.058769763335990814,-0.12303824322014345,0.0060537695149857,45.81005586592179,0.0,54.18994413407822,358,,,,
+22_forget_association_change_1x2,AirScape,afl,,Exact no-FU minus exact FU margin,,-0.058769763335990814,-0.12303824322014345,0.0060537695149857,45.81005586592179,0.0,54.18994413407822,358,,,,
+22_forget_association_change_1x2,AirScape,salun,,Exact no-FU minus exact FU margin,,0.09592769201494288,-0.006219224766577813,0.1985121712299541,50.83798882681564,0.0,49.162011173184354,358,,,,
+23_forget_retrieval_fu_control_1x2,CapERA,gate_select16,Proposed,Without FU,16.842105263157897,,,,,,,,,,,
+23_forget_retrieval_fu_control_1x2,CapERA,gate_select16,Proposed,With FU,17.300944669365723,,,,,,,,,,,
+23_forget_retrieval_fu_control_1x2,CapERA,iscc,ISCC-P2,Without FU,16.410256410256416,,,,,,,,,,,
+23_forget_retrieval_fu_control_1x2,CapERA,iscc,ISCC-P2,With FU,16.61268556005398,,,,,,,,,,,
+23_forget_retrieval_fu_control_1x2,CapERA,afl,AFL-OTA,Without FU,16.410256410256416,,,,,,,,,,,
+23_forget_retrieval_fu_control_1x2,CapERA,afl,AFL-OTA,With FU,16.61268556005398,,,,,,,,,,,
+23_forget_retrieval_fu_control_1x2,CapERA,salun,F-SalUn,Without FU,16.410256410256416,,,,,,,,,,,
+23_forget_retrieval_fu_control_1x2,CapERA,salun,F-SalUn,With FU,17.031039136302294,,,,,,,,,,,
+23_forget_retrieval_fu_control_1x2,AirScape,gate_select16,Proposed,Without FU,11.21973929236499,,,,,,,,,,,
+23_forget_retrieval_fu_control_1x2,AirScape,gate_select16,Proposed,With FU,11.545623836126628,,,,,,,,,,,
+23_forget_retrieval_fu_control_1x2,AirScape,iscc,ISCC-P2,Without FU,11.033519553072626,,,,,,,,,,,
+23_forget_retrieval_fu_control_1x2,AirScape,iscc,ISCC-P2,With FU,11.359404096834263,,,,,,,,,,,
+23_forget_retrieval_fu_control_1x2,AirScape,afl,AFL-OTA,Without FU,11.033519553072626,,,,,,,,,,,
+23_forget_retrieval_fu_control_1x2,AirScape,afl,AFL-OTA,With FU,11.359404096834263,,,,,,,,,,,
+23_forget_retrieval_fu_control_1x2,AirScape,salun,F-SalUn,Without FU,11.033519553072626,,,,,,,,,,,
+23_forget_retrieval_fu_control_1x2,AirScape,salun,F-SalUn,With FU,11.499068901303536,,,,,,,,,,,
+24_wireless_error_forgetting_1x2,CapERA,gate_select16,Proposed,Exact aggregation,18.239245318190722,,,,,,,,,,,
+24_wireless_error_forgetting_1x2,CapERA,gate_select16,Proposed,Wireless aggregation,18.232287284456607,,,,,,,,,,,
+24_wireless_error_forgetting_1x2,CapERA,iscc,ISCC-P2,Exact aggregation,3.788593439701568,,,,,,,,,,,
+24_wireless_error_forgetting_1x2,CapERA,iscc,ISCC-P2,Wireless aggregation,3.788593439701568,,,,,,,,,,,
+24_wireless_error_forgetting_1x2,CapERA,afl,AFL-OTA,Exact aggregation,3.788593439701568,,,,,,,,,,,
+24_wireless_error_forgetting_1x2,CapERA,afl,AFL-OTA,Wireless aggregation,3.791222400895477,,,,,,,,,,,
+24_wireless_error_forgetting_1x2,CapERA,salun,F-SalUn,Exact aggregation,9.667605415429696,,,,,,,,,,,
+24_wireless_error_forgetting_1x2,CapERA,salun,F-SalUn,Wireless aggregation,9.667605415429696,,,,,,,,,,,
+24_wireless_error_forgetting_1x2,AirScape,gate_select16,Proposed,Exact aggregation,7.315100775176761,,,,,,,,,,,
+24_wireless_error_forgetting_1x2,AirScape,gate_select16,Proposed,Wireless aggregation,7.319675942118564,,,,,,,,,,,
+24_wireless_error_forgetting_1x2,AirScape,iscc,ISCC-P2,Exact aggregation,0.8385217829134481,,,,,,,,,,,
+24_wireless_error_forgetting_1x2,AirScape,iscc,ISCC-P2,Wireless aggregation,0.8385217829134481,,,,,,,,,,,
+24_wireless_error_forgetting_1x2,AirScape,afl,AFL-OTA,Exact aggregation,0.8385217829134481,,,,,,,,,,,
+24_wireless_error_forgetting_1x2,AirScape,afl,AFL-OTA,Wireless aggregation,0.8385458016144135,,,,,,,,,,,
+24_wireless_error_forgetting_1x2,AirScape,salun,F-SalUn,Exact aggregation,3.1273171588585407,,,,,,,,,,,
+24_wireless_error_forgetting_1x2,AirScape,salun,F-SalUn,Wireless aggregation,3.1273171588585407,,,,,,,,,,,
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,3,2.9474919638917387,b00_u0,0.012267106686207438,0.0029474919638917386
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,9,5.191934597746079,b00_u2,0.02157391180621899,0.005191934597746079
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,5,2.945779328256304,b00_u3,0.011410815064481938,0.002945779328256304
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,5,6.277469862209116,b00_u7,0.026130783279733387,0.006277469862209116
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,7,4.200892397884595,b00_u9,0.017575406249604984,0.004200892397884595
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,3,6.475795664393411,b01_u0,0.024695779009253307,0.006475795664393411
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,9,4.623531905455932,b01_u2,0.01860137446786119,0.004623531905455933
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,5,4.676533615567291,b01_u3,0.019762484236361517,0.004676533615567292
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,5,4.263952103938472,b01_u7,0.017105640308802215,0.004263952103938472
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,7,4.366739248838475,b01_u9,0.017946393390368458,0.004366739248838475
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,3,6.250291510551516,b02_u0,0.02492016706728768,0.006250291510551517
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,9,4.355673808031483,b02_u2,0.016795199930482382,0.004355673808031483
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,5,4.014797259467212,b02_u3,0.017331290028327,0.004014797259467212
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,5,2.900494498916986,b02_u7,0.010123820960140282,0.0029004944989169863
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,7,3.910013584202649,b02_u9,0.01694337109515886,0.003910013584202649
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,3,3.993469151570019,b03_u0,0.015245974638621035,0.003993469151570019
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,9,4.7246182031654715,b03_u2,0.018769769034670224,0.004724618203165471
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,5,5.198235390645076,b03_u3,0.02391133863628668,0.005198235390645076
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,5,3.978060911806973,b03_u7,0.016316528120466446,0.003978060911806973
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,7,5.229290275732714,b03_u9,0.021689077878333803,0.005229290275732714
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,3,2.715634952783297,b04_u0,0.009289285435446744,0.002715634952783297
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,8,3.8375676368873552,b04_u2,0.015480110938961258,0.0038375676368873554
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,5,3.6436837773147186,b04_u3,0.01643848145007331,0.0036436837773147187
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,5,3.2958118085842223,b04_u7,0.012816788630984562,0.003295811808584222
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,7,4.290117800765275,b04_u9,0.017278019267804874,0.004290117800765275
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,3,4.224215941100354,b05_u0,0.015994013076288265,0.004224215941100354
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,8,4.770459201225043,b05_u2,0.020316362886296582,0.004770459201225043
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,4,5.506008551624181,b05_u3,0.023349986554448365,0.005506008551624181
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,5,4.982397086792497,b05_u7,0.02119437493307058,0.004982397086792497
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,7,4.553645628481379,b05_u9,0.01888705070713617,0.004553645628481379
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,3,5.148626734171237,b06_u0,0.019835369148190136,0.005148626734171237
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,8,4.737061131543875,b06_u2,0.020299564704689355,0.0047370611315438755
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,4,4.656192166554991,b06_u3,0.017841130864247514,0.004656192166554991
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,5,4.7108733837515855,b06_u7,0.019606037015693224,0.004710873383751585
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,7,3.0359719107965013,b06_u9,0.012212843321985387,0.0030359719107965013
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,2,5.293921282196712,b07_u0,0.02029946290494494,0.005293921282196712
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,8,4.191446041146449,b07_u2,0.018816503185766158,0.004191446041146449
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,4,5.9023601212716095,b07_u3,0.024587355170531802,0.00590236012127161
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,5,3.9737304664616238,b07_u7,0.016959851303023157,0.003973730466461624
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,6,3.805474802388917,b07_u9,0.016148645396659996,0.0038054748023889167
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,2,2.9301136534480974,b08_u0,0.011473487525319504,0.0029301136534480975
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,8,5.1876326121774365,b08_u2,0.020632355286480587,0.0051876326121774365
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,4,6.001299983315102,b08_u3,0.023420666498760786,0.006001299983315102
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,4,5.458617575501219,b08_u7,0.020280304121994098,0.005458617575501219
+25_request_retraining_kl_1x2,CapERA,gate_select16,,Policy-matched,,,,,,,,6,3.553037407343482,b08_u9,0.014831425269310286,0.0035530374073434816
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,3,2.5908804046655303,b00_u0,0.003046856714684842,0.00259088040466553
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,9,3.7954578518380795,b00_u2,0.004448292043722854,0.0037954578518380796
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,5,2.3672516142556392,b00_u3,0.0026814523022343447,0.0023672516142556393
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,5,3.973827598012662,b00_u7,0.004460571343212208,0.003973827598012662
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,7,2.9683956973594,b00_u9,0.0033125252007457466,0.0029683956973594002
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,3,4.925970337984966,b01_u0,0.005832463014442741,0.0049259703379849655
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,9,3.490659744863183,b01_u2,0.00398687504657287,0.003490659744863183
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,5,3.4905251974458436,b01_u3,0.0037033906814931726,0.0034905251974458435
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,5,3.115609727190784,b01_u7,0.0036179065393360105,0.0031156097271907842
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,7,3.180761062688856,b01_u9,0.003474222618508074,0.0031807610626888557
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,3,4.3291544187732205,b02_u0,0.00528467238144287,0.00432915441877322
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,9,3.5561445659179705,b02_u2,0.004250883064342436,0.0035561445659179703
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,5,3.269397557321479,b02_u3,0.0033347720591518693,0.0032693975573214787
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,5,2.528020263275675,b02_u7,0.0030098533675659363,0.0025280202632756753
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,7,2.8922054993589796,b02_u9,0.0031966389530535696,0.0028922054993589796
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,3,3.251200919544161,b03_u0,0.00399538989606557,0.003251200919544161
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,9,3.2986357982813543,b03_u2,0.003691015424271162,0.0032986357982813545
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,5,3.5782312976979647,b03_u3,0.00399031229899384,0.0035782312976979647
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,5,2.8382949908293322,b03_u7,0.003392409159980671,0.002838294990829332
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,7,3.8800360769702107,b03_u9,0.004022698165698781,0.0038800360769702105
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,3,2.2889514197092136,b04_u0,0.003178274992070846,0.0022889514197092136
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,8,3.1738503544931995,b04_u2,0.003468688199320378,0.0031738503544931993
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,5,3.0301133982644393,b04_u3,0.0031686093346894478,0.0030301133982644393
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,5,2.7590608814865467,b04_u7,0.003348923500061532,0.0027590608814865468
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,7,3.16081901316992,b04_u9,0.0035910444572022095,0.00316081901316992
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,3,3.333126537717447,b05_u0,0.004143176766586337,0.003333126537717447
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,8,3.695172671195822,b05_u2,0.004134960437454226,0.003695172671195822
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,4,4.010444834036923,b05_u3,0.0043039496107456394,0.004010444834036923
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,5,3.462635875666893,b05_u7,0.0038600207175218644,0.003462635875666893
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,7,3.189037978727074,b05_u9,0.0035747990909754364,0.003189037978727074
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,3,3.378507515334772,b06_u0,0.00375771118161387,0.003378507515334772
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,8,3.4882866425445993,b06_u2,0.003862039933090376,0.0034882866425445993
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,4,3.381123887745544,b06_u3,0.0038486771098280716,0.003381123887745544
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,5,3.6025850714818604,b06_u7,0.004157328967980376,0.0036025850714818605
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,7,2.4579316957320505,b06_u9,0.0026168788419312383,0.0024579316957320505
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,2,4.482839604620854,b07_u0,0.005421561426927826,0.004482839604620854
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,8,3.491308448346246,b07_u2,0.003923475249505511,0.003491308448346246
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,4,4.352254089400343,b07_u3,0.00513832980456438,0.004352254089400344
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,5,3.2690397348486373,b07_u7,0.0036860151662367704,0.0032690397348486373
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,6,2.9579704676719736,b07_u9,0.0035253627473531223,0.0029579704676719735
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,2,2.1901575948177574,b08_u0,0.002601260789608985,0.0021901575948177574
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,8,3.377326181160046,b08_u2,0.0038117175662327938,0.003377326181160046
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,4,4.149225614996398,b08_u3,0.004821692551687052,0.004149225614996398
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,4,4.067906080679699,b08_u7,0.0049285298901333595,0.0040679060806796995
+25_request_retraining_kl_1x2,CapERA,iscc,,Policy-matched,,,,,,,,6,2.8261625634936864,b08_u9,0.003187381366072356,0.0028261625634936863
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,3,2.592060195188204,b00_u0,0.003048670043357926,0.002592060195188204
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,9,3.800007676666804,b00_u2,0.004453947929585004,0.003800007676666804
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,5,2.368115569436754,b00_u3,0.0026826876731688236,0.0023681155694367543
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,5,3.9762614637762113,b00_u7,0.004463508356479715,0.003976261463776211
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,7,2.968909282998419,b00_u9,0.003313630658815382,0.002968909282998419
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,3,4.930639109456352,b01_u0,0.005837817322043612,0.004930639109456352
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,9,3.493569716850782,b01_u2,0.003990270794730308,0.003493569716850782
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,5,3.490172457826478,b01_u3,0.003703231646434013,0.003490172457826478
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,5,3.1194802247770035,b01_u7,0.0036222241694111854,0.0031194802247770034
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,7,3.181668481201718,b01_u9,0.0034757012665651435,0.003181668481201718
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,3,4.332702114791206,b02_u0,0.0052889487991132295,0.004332702114791206
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,9,3.5593126492644744,b02_u2,0.0042547984644584445,0.0035593126492644745
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,5,3.269473774721831,b02_u3,0.0033353648793062033,0.003269473774721831
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,5,2.52830481804713,b02_u7,0.0030110976490825185,0.00252830481804713
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,7,2.8936190852109935,b02_u9,0.0031983433633099565,0.0028936190852109937
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,3,3.2525875926987893,b03_u0,0.0039982445283165005,0.0032525875926987893
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,9,3.3017091321282344,b03_u2,0.0036945875626711658,0.0033017091321282345
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,5,3.579996430229241,b03_u3,0.003992750530027322,0.003579996430229241
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,5,2.8406542240001333,b03_u7,0.0033954744526997296,0.0028406542240001333
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,7,3.8817084343520687,b03_u9,0.004024865196821963,0.003881708434352069
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,3,2.288899400434922,b04_u0,0.003179093762621585,0.002288899400434922
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,8,3.176059502147506,b04_u2,0.003471461726787391,0.003176059502147506
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,5,3.0318730057400596,b04_u3,0.0031709367616619783,0.0030318730057400595
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,5,2.758281315789836,b04_u7,0.003349340901618076,0.0027582813157898357
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,7,3.1617058720595943,b04_u9,0.0035924784366940577,0.003161705872059594
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,3,3.3345672673525044,b05_u0,0.004145340136784934,0.0033345672673525044
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,8,3.6997948704812265,b05_u2,0.004140117273714308,0.0036997948704812263
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,4,4.012013848706324,b05_u3,0.0043059055419496,0.004012013848706324
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,5,3.466315337647721,b05_u7,0.003863551794284742,0.003466315337647721
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,7,3.1902197501699683,b05_u9,0.003576320472462899,0.0031902197501699685
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,3,3.377563277269775,b06_u0,0.003757672400614281,0.003377563277269775
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,8,3.4922885857005928,b06_u2,0.003866673801196769,0.0034922885857005927
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,4,3.381356903596926,b06_u3,0.003849260568598564,0.003381356903596926
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,5,3.6047864168739636,b06_u7,0.004160395403430468,0.0036047864168739637
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,7,2.4570394883307767,b06_u9,0.0026168681810172685,0.0024570394883307767
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,2,4.483900889959687,b07_u0,0.005422821806444922,0.0044839008899596865
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,8,3.4947494672870016,b07_u2,0.003927464072165995,0.0034947494672870017
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,4,4.356091713736021,b07_u3,0.005143170217160705,0.004356091713736021
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,5,3.2703469905241795,b07_u7,0.0036883695700707804,0.0032703469905241795
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,6,2.959434360142829,b07_u9,0.0035277718121654775,0.0029594343601428287
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,2,2.192053391872456,b08_u0,0.002604010755521065,0.0021920533918724557
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,8,3.3818363824806177,b08_u2,0.0038166698078695126,0.0033818363824806175
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,4,4.151712415489841,b08_u3,0.004825110749542817,0.0041517124154898406
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,4,4.069022075331281,b08_u7,0.0049301678257134135,0.004069022075331281
+25_request_retraining_kl_1x2,CapERA,afl,,Policy-matched,,,,,,,,6,2.826116510716362,b08_u9,0.0031876930414634886,0.002826116510716362
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,3,7.270839794924537,b00_u0,0.008004961448546738,0.007270839794924537
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,9,10.324642170500868,b00_u2,0.01134114304904848,0.010324642170500867
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,5,6.6460008311982826,b00_u3,0.007099972863508312,0.006646000831198283
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,5,10.20029264968359,b00_u7,0.010912712821278231,0.01020029264968359
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,7,7.704062227997979,b00_u9,0.008205460302478092,0.007704062227997979
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,3,14.701971611274484,b01_u0,0.01617900294553767,0.014701971611274484
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,9,9.996595301758006,b01_u2,0.010765717717137274,0.009996595301758006
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,5,9.196433720122425,b01_u3,0.009477825480353296,0.009196433720122424
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,5,8.856111389474957,b01_u7,0.00960542801818803,0.008856111389474957
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,7,7.972277945018044,b01_u9,0.008397099704591005,0.007972277945018045
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,3,11.496378278996556,b02_u0,0.012971608668687157,0.011496378278996555
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,9,10.477715202365129,b02_u2,0.011648085247852442,0.010477715202365128
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,5,8.451539521068067,b02_u3,0.008505751034967368,0.008451539521068066
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,5,7.622834302950856,b02_u7,0.00836133705767387,0.007622834302950856
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,7,6.926865648287262,b02_u9,0.007380136926129327,0.006926865648287262
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,3,9.929412766302484,b03_u0,0.0111277904043627,0.009929412766302484
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,9,9.24901028552086,b03_u2,0.009807428099759482,0.00924901028552086
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,5,8.40147192928815,b03_u3,0.008998506044966093,0.008401471929288149
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,5,7.931253072429433,b03_u7,0.008758085938771584,0.007931253072429433
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,7,9.736190926179626,b03_u9,0.009933341839273982,0.009736190926179627
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,3,6.712266249045377,b04_u0,0.0080603838444879,0.006712266249045377
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,8,8.91752316455637,b04_u2,0.00938109686346181,0.008917523164556369
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,5,7.250623649077482,b04_u3,0.007447153791605718,0.007250623649077481
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,5,8.133839562790131,b04_u7,0.009049091690557414,0.00813383956279013
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,7,7.963576027329448,b04_u9,0.008578821369630405,0.007963576027329448
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,3,10.022448562479608,b05_u0,0.011364228248458402,0.010022448562479608
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,8,9.767006865957363,b05_u2,0.010443603336614808,0.009767006865957363
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,4,10.233156976068472,b05_u3,0.010695308443923945,0.010233156976068471
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,5,8.648826353669573,b05_u7,0.009215854062957192,0.008648826353669573
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,7,8.038856774104946,b05_u9,0.008587982709510706,0.008038856774104946
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,3,9.055179941981756,b06_u0,0.009582045944587532,0.009055179941981755
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,8,9.490116933115148,b06_u2,0.010011602152821236,0.009490116933115147
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,4,8.914969889158044,b06_u3,0.009578768192996131,0.008914969889158044
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,5,9.756259659976314,b06_u7,0.010573653700618095,0.009756259659976313
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,7,6.412389568164171,b06_u9,0.006645878140242881,0.006412389568164171
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,2,12.370983560725756,b07_u0,0.013897369742978593,0.012370983560725756
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,8,9.810887643327192,b07_u2,0.010486730812027023,0.009810887643327191
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,4,11.553561132765392,b07_u3,0.01280899975479603,0.011553561132765391
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,5,8.971984854333975,b07_u7,0.009589967302798496,0.008971984854333976
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,6,7.561551627174752,b07_u9,0.008421132781912742,0.007561551627174752
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,2,6.225117530726475,b08_u0,0.0069145740416962,0.006225117530726475
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,8,9.369476688264319,b08_u2,0.010037823100188269,0.009369476688264319
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,4,11.159070590306436,b08_u3,0.012072481571063585,0.011159070590306436
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,4,11.465603547868291,b08_u7,0.012772632259905058,0.01146560354786829
+25_request_retraining_kl_1x2,CapERA,salun,,Policy-matched,,,,,,,,6,6.978935780514444,b08_u9,0.0075231774693779695,0.006978935780514444
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,8,1.4711377878011822,b00_u0,0.008669587657939935,0.0014711377878011821
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,10,1.2703768782953537,b00_u2,0.007808918742395454,0.0012703768782953537
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,5,1.6961184100309927,b00_u3,0.009633264973960942,0.0016961184100309928
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,10,0.9348378117348689,b00_u7,0.00576171687424231,0.0009348378117348689
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,8,1.4057226587463152,b00_u9,0.007903610260556866,0.0014057226587463152
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,8,1.4303454885838067,b01_u0,0.007580731799606834,0.0014303454885838066
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,10,1.1730556433043418,b01_u2,0.006804689647414106,0.0011730556433043418
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,5,1.9346328102211867,b01_u3,0.010720601478412478,0.0019346328102211867
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,10,0.8630852709698489,b01_u7,0.005402790226526671,0.0008630852709698489
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,8,0.9515055078965627,b01_u9,0.005052963780234835,0.0009515055078965628
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,8,1.5815187050338277,b02_u0,0.009354431815145444,0.0015815187050338278
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,10,1.459993173845177,b02_u2,0.008459240319083235,0.0014599931738451771
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,5,1.4307960226402412,b02_u3,0.007984928654906187,0.0014307960226402413
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,10,1.0547269731151478,b02_u7,0.006230725608141078,0.001054726973115148
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,8,1.1786265894589547,b02_u9,0.006242460520843292,0.0011786265894589546
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,8,1.3281653072785988,b03_u0,0.007808887225068253,0.001328165307278599
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,9,1.159008133463437,b03_u2,0.007052966358847699,0.001159008133463437
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,5,1.6914498492421486,b03_u3,0.009935538825902682,0.0016914498492421486
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,10,1.3018846533376534,b03_u7,0.007570225122319284,0.0013018846533376534
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,8,1.4527691205024353,b03_u9,0.008810995636610187,0.0014527691205024353
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,8,2.010266024809293,b04_u0,0.012894554571297148,0.0020102660248092928
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,9,1.2329473829755992,b04_u2,0.007584205587845576,0.0012329473829755992
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,5,1.561994663887669,b04_u3,0.009597978936959394,0.001561994663887669
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,10,0.9829667222908873,b04_u7,0.0055576578476991875,0.0009829667222908873
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,8,1.008675052558661,b04_u9,0.006020841552539112,0.0010086750525586609
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,8,1.530296545485182,b05_u0,0.008616522284623628,0.001530296545485182
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,9,1.0074736827901156,b05_u2,0.00536005383307664,0.0010074736827901157
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,5,0.9950449547747638,b05_u3,0.006088742790020382,0.0009950449547747639
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,10,0.898858001973747,b05_u7,0.005755738120177395,0.000898858001973747
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,8,1.1804611219398686,b05_u9,0.0068382898256373155,0.0011804611219398686
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,8,2.1762773473334605,b06_u0,0.013771786647736617,0.0021762773473334605
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,9,0.9567948410386519,b06_u2,0.005715241029583587,0.0009567948410386519
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,4,0.8805077283429649,b06_u3,0.005043490854325478,0.0008805077283429648
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,10,0.8211840785718809,b06_u7,0.0050832422926723134,0.000821184078571881
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,8,0.9388777082049327,b06_u9,0.005551710399667101,0.0009388777082049327
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,8,1.0433356138185175,b07_u0,0.005833060284958095,0.0010433356138185176
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,9,1.0210941768798711,b07_u2,0.0061913130818247826,0.0010210941768798712
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,4,1.8675725819043558,b07_u3,0.010931319726008127,0.0018675725819043557
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,10,0.9466582209225199,b07_u7,0.006302984006626827,0.0009466582209225199
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,7,0.9730277372676868,b07_u9,0.006250150947096945,0.0009730277372676868
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,8,1.4088282957550602,b08_u0,0.008370341337504519,0.0014088282957550602
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,9,1.204861221578379,b08_u2,0.007106156610219393,0.001204861221578379
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,4,1.7140374569928296,b08_u3,0.010424935346279423,0.0017140374569928297
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,10,0.9019955419111101,b08_u7,0.005517803841551654,0.0009019955419111101
+25_request_retraining_kl_1x2,AirScape,gate_select16,,Policy-matched,,,,,,,,7,1.2420138785093457,b08_u9,0.007582244120096744,0.0012420138785093457
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,8,1.221378916134944,b00_u0,0.0009078406815079482,0.001221378916134944
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,10,1.3341728282600307,b00_u2,0.000935248471305505,0.0013341728282600307
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,5,1.0142054691518205,b00_u3,0.0008974953809219373,0.0010142054691518205
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,10,0.9832358222689477,b00_u7,0.0006162608882427855,0.0009832358222689476
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,8,1.121237227973047,b00_u9,0.0008646701353702316,0.0011212372279730469
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,8,1.15612669392206,b01_u0,0.0008952631043664394,0.00115612669392206
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,10,1.3035082915134057,b01_u2,0.0007960504464271725,0.0013035082915134057
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,5,0.8941713688267935,b01_u3,0.0009346053057909025,0.0008941713688267935
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,10,1.3465189340599695,b01_u7,0.0007582539424169965,0.0013465189340599695
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,8,1.1909265596736731,b01_u9,0.0006919260812125378,0.0011909265596736732
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,8,1.3987871390314524,b02_u0,0.0010253280819457421,0.0013987871390314524
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,10,1.1913830343266263,b02_u2,0.0009247056304402491,0.0011913830343266262
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,5,1.0148698117710249,b02_u3,0.0008787669585174016,0.0010148698117710248
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,10,1.3103889615855382,b02_u7,0.0008006090517098993,0.0013103889615855382
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,8,0.9242003382987765,b02_u9,0.0006781458262821899,0.0009242003382987765
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,8,1.3883045573843031,b03_u0,0.0009333744245114566,0.0013883045573843031
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,9,1.4180397176706947,b03_u2,0.0009046072904377281,0.0014180397176706946
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,5,1.0532736648573005,b03_u3,0.000970837529647231,0.0010532736648573005
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,10,1.2466308852900312,b03_u7,0.0008937097436743184,0.0012466308852900313
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,8,1.1335390072195726,b03_u9,0.0008862622716502836,0.0011335390072195726
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,8,1.287426060803011,b04_u0,0.0012198866182501098,0.001287426060803011
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,9,1.5271162297593508,b04_u2,0.0009571657145531864,0.0015271162297593509
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,5,1.3532842654028292,b04_u3,0.0010127677373596162,0.0013532842654028292
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,10,1.2501173907983176,b04_u7,0.0007296309087828813,0.0012501173907983176
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,8,1.1533873798433643,b04_u9,0.0006868471460489004,0.0011533873798433643
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,8,1.3089213819384276,b05_u0,0.0009465647947899498,0.0013089213819384275
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,9,0.918463328977858,b05_u2,0.0005870310871847781,0.000918463328977858
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,5,0.7049709441326804,b05_u3,0.0006406439284748396,0.0007049709441326803
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,10,1.3391290226808037,b05_u7,0.0008032007042103922,0.0013391290226808037
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,8,1.2332824240445022,b05_u9,0.0007867378061522308,0.0012332824240445022
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,8,1.4553286597558168,b06_u0,0.001370736124193647,0.001455328659755817
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,9,1.3204250700634372,b06_u2,0.0007476102938584787,0.0013204250700634373
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,4,0.7981295487963117,b06_u3,0.0005081366507637356,0.0007981295487963117
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,10,1.0720056706106944,b06_u7,0.0006023086232598328,0.0010720056706106944
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,8,1.167583306716837,b06_u9,0.0006639721365707472,0.001167583306716837
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,8,1.5331863466848072,b07_u0,0.0008273988823477346,0.0015331863466848073
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,9,1.4345912113579797,b07_u2,0.0008610825105885849,0.0014345912113579798
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,4,1.058134238500994,b07_u3,0.0010448761227809928,0.001058134238500994
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,10,1.3199416818449223,b07_u7,0.0007758213372531257,0.0013199416818449224
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,7,1.172811688101181,b07_u9,0.0007443276148749509,0.001172811688101181
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,8,1.3480808148146648,b08_u0,0.0008965047871641493,0.0013480808148146647
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,9,1.3513917728845788,b08_u2,0.0008752508671976897,0.0013513917728845788
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,4,1.2761976277735771,b08_u3,0.0010852735527705918,0.0012761976277735772
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,10,0.9046533754175038,b08_u7,0.0006095554424985658,0.0009046533754175038
+25_request_retraining_kl_1x2,AirScape,iscc,,Policy-matched,,,,,,,,7,1.6247329232346632,b08_u9,0.0009502603535075946,0.0016247329232346632
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,8,1.2216697561574246,b00_u0,0.00090795819568962,0.0012216697561574245
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,10,1.334756387649371,b00_u2,0.0009356280301929717,0.001334756387649371
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,5,1.0149530735520684,b00_u3,0.0008980609728123021,0.0010149530735520684
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,10,0.9828468368736245,b00_u7,0.0006156710552829745,0.0009828468368736245
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,8,1.1217862057704162,b00_u9,0.0008649405790903228,0.0011217862057704162
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,8,1.156937942600981,b01_u0,0.0008959113076749825,0.001156937942600981
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,10,1.3031771187760364,b01_u2,0.0007956719284865493,0.0013031771187760363
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,5,0.8945012258338321,b01_u3,0.0009345915059696779,0.0008945012258338321
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,10,1.3467621789261282,b01_u7,0.0007582297723728864,0.001346762178926128
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,8,1.1908347361735536,b01_u9,0.000691211992469418,0.0011908347361735535
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,8,1.3994171730155178,b02_u0,0.0010256703806382256,0.0013994171730155177
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,10,1.1918414853584314,b02_u2,0.0009249041256817872,0.0011918414853584313
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,5,1.0152915774083033,b02_u3,0.0008790690442423285,0.0010152915774083032
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,10,1.3107282665756008,b02_u7,0.0008007897513806616,0.0013107282665756007
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,8,0.9239219228334268,b02_u9,0.0006773823112523377,0.0009239219228334268
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,8,1.388939001381189,b03_u0,0.000933688370654554,0.001388939001381189
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,9,1.4188310162211284,b03_u2,0.000904873238991019,0.0014188310162211283
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,5,1.0539344400485249,b03_u3,0.0009710261723115076,0.0010539344400485248
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,10,1.246935602351913,b03_u7,0.0008937331976111013,0.001246935602351913
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,8,1.1339132090601336,b03_u9,0.000886430498998596,0.0011339132090601336
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,8,1.2880776187183196,b04_u0,0.0012205583683661783,0.0012880776187183195
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,9,1.5274220117233985,b04_u2,0.0009572186175411603,0.0015274220117233986
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,5,1.3537489059719694,b04_u3,0.001012509892499573,0.0013537489059719694
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,10,1.250335157090536,b04_u7,0.0007298639639410961,0.001250335157090536
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,8,1.1540926338158424,b04_u9,0.0006870216099475853,0.0011540926338158425
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,8,1.3096512515709253,b05_u0,0.0009469040534921023,0.0013096512515709253
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,9,0.9184823194365015,b05_u2,0.0005868313430198683,0.0009184823194365015
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,5,0.704563191712403,b05_u3,0.0006396330472001091,0.000704563191712403
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,10,1.3396653590388834,b05_u7,0.0008035507743150473,0.0013396653590388833
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,8,1.233694616526401,b05_u9,0.0007865484979141843,0.001233694616526401
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,8,1.455986854470969,b06_u0,0.0013712900125689106,0.001455986854470969
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,9,1.3212368505499834,b06_u2,0.0007475947381644322,0.0013212368505499835
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,4,0.7988287434070832,b06_u3,0.00050796202300066,0.0007988287434070832
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,10,1.0721132036205405,b06_u7,0.0006017198182031354,0.0010721132036205405
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,8,1.1679947439772314,b06_u9,0.0006637106855239985,0.0011679947439772313
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,8,1.5334935804160763,b07_u0,0.0008271155081397173,0.0015334935804160762
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,9,1.4352667780192458,b07_u2,0.0008612289074340964,0.0014352667780192457
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,4,1.0587486183499755,b07_u3,0.0010451893445454817,0.0010587486183499754
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,10,1.3204440192598834,b07_u7,0.000775906460565744,0.0013204440192598834
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,7,1.1736249231348326,b07_u9,0.0007447747484280603,0.0011736249231348325
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,8,1.3485491364474085,b08_u0,0.0008968018126901259,0.0013485491364474084
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,9,1.3518169027248874,b08_u2,0.0008748690517173396,0.0013518169027248875
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,4,1.277055440733051,b08_u3,0.0010859280622153324,0.001277055440733051
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,10,0.904080358677254,b08_u7,0.0006088661430134013,0.000904080358677254
+25_request_retraining_kl_1x2,AirScape,afl,,Policy-matched,,,,,,,,7,1.6252397026504677,b08_u9,0.0009501651545098035,0.0016252397026504677
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,8,3.9662163929941197,b00_u0,0.00332406936319767,0.00396621639299412
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,10,4.381121030724871,b00_u2,0.0035725460033637552,0.0043811210307248705
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,5,3.3714520510181427,b00_u3,0.003108172461522999,0.003371452051018143
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,10,3.1454525114251912,b00_u7,0.0023600615453604028,0.0031454525114251912
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,8,3.6167726738848898,b00_u9,0.0031059664158612195,0.0036167726738848896
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,8,3.6592595998399737,b01_u0,0.00313671098002811,0.003659259599839974
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,10,4.080885586916491,b01_u2,0.0030832058740161857,0.0040808855869164905
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,5,3.0261246982999066,b01_u3,0.0030635260159546417,0.0030261246982999064
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,10,4.087921097598928,b01_u7,0.0029061356341033525,0.004087921097598928
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,8,3.459763328429635,b01_u9,0.0024689222797145034,0.0034597633284296353
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,8,4.214104561970477,b02_u0,0.0034724994318976843,0.004214104561970477
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,10,3.771123172968119,b02_u2,0.003252737861531795,0.0037711231729681194
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,5,3.501316189595029,b02_u3,0.0031957260920779905,0.0035013161895950293
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,10,4.025864250596968,b02_u7,0.00298222408794191,0.004025864250596968
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,8,2.8471408353111514,b02_u9,0.0023274598365128117,0.0028471408353111516
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,8,4.500028510009813,b03_u0,0.003592994425252623,0.0045000285100098136
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,9,4.497662051900202,b03_u2,0.0035107451495409773,0.004497662051900202
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,5,3.562370039331331,b03_u3,0.0033980399150284127,0.003562370039331331
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,10,4.001755889181585,b03_u7,0.003298936354233188,0.004001755889181585
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,8,3.6612972050894084,b03_u9,0.003163520354734691,0.0036612972050894086
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,8,4.290558416741069,b04_u0,0.004137401681571227,0.0042905584167410695
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,9,4.70300869365146,b04_u2,0.0036009158069423095,0.004703008693651461
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,5,4.5364522938934675,b04_u3,0.003864795348803467,0.004536452293893468
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,10,3.7542447090322835,b04_u7,0.002708928621164205,0.0037542447090322833
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,8,3.6303550559988365,b04_u9,0.002720495042959419,0.0036303550559988363
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,8,4.158279501265513,b05_u0,0.0034419395251159227,0.004158279501265513
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,9,3.0642054272115926,b05_u2,0.0023769386962256118,0.0030642054272115925
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,5,2.4337324734783405,b05_u3,0.0022551354463683374,0.0024337324734783404
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,10,4.219870993531001,b05_u7,0.0031524821205677475,0.004219870993531001
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,8,3.889095789284564,b05_u9,0.0030041634223886664,0.0038890957892845643
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,8,4.958970309644565,b06_u0,0.004770976050800473,0.004958970309644565
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,9,4.159056636284334,b06_u2,0.0030349578760784216,0.004159056636284335
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,4,2.5068061743209746,b06_u3,0.0019330797548214088,0.0025068061743209746
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,10,3.2998941624959546,b06_u7,0.0023220354257083246,0.0032998941624959545
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,8,3.6105797536008915,b06_u9,0.0026259187210098582,0.0036105797536008914
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,8,4.771926796704362,b07_u0,0.0033837862366064998,0.0047719267967043615
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,9,4.518815732867673,b07_u2,0.0034139068298731532,0.0045188157328676735
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,4,3.703482479963114,b07_u3,0.003633668192099977,0.0037034824799631137
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,10,4.208359250987144,b07_u7,0.0031221979151317214,0.0042083592509871435
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,7,3.6467441914834016,b07_u9,0.002834296920653348,0.0036467441914834016
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,8,4.313494701954006,b08_u0,0.003449304482441031,0.004313494701954006
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,9,4.270512328234414,b08_u2,0.0033618503570780134,0.004270512328234414
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,4,4.263734669151997,b08_u3,0.003913493406640462,0.004263734669151998
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,10,2.9643951715958945,b08_u7,0.0023230006337650795,0.0029643951715958945
+25_request_retraining_kl_1x2,AirScape,salun,,Policy-matched,,,,,,,,7,5.006977353902796,b08_u9,0.00369196334321359,0.005006977353902796
+26_forget_association_before_after_1x2,CapERA,gate_select16,Proposed,Before requests,0.2711426596556598,,,,,,,,,,,
+26_forget_association_before_after_1x2,CapERA,gate_select16,Proposed,After FL + FU,0.2763383952593297,,,,,,,,,,,
+26_forget_association_before_after_1x2,CapERA,iscc,ISCC-P2,Before requests,0.2711426596556598,,,,,,,,,,,
+26_forget_association_before_after_1x2,CapERA,iscc,ISCC-P2,After FL + FU,0.2764163175669221,,,,,,,,,,,
+26_forget_association_before_after_1x2,CapERA,afl,AFL-OTA,Before requests,0.2711426596556598,,,,,,,,,,,
+26_forget_association_before_after_1x2,CapERA,afl,AFL-OTA,After FL + FU,0.2764201402773527,,,,,,,,,,,
+26_forget_association_before_after_1x2,CapERA,salun,F-SalUn,Before requests,0.2711426596556598,,,,,,,,,,,
+26_forget_association_before_after_1x2,CapERA,salun,F-SalUn,After FL + FU,0.27813093512982084,,,,,,,,,,,
+26_forget_association_before_after_1x2,AirScape,gate_select16,Proposed,Before requests,0.26523402797312073,,,,,,,,,,,
+26_forget_association_before_after_1x2,AirScape,gate_select16,Proposed,After FL + FU,0.2603547320726617,,,,,,,,,,,
+26_forget_association_before_after_1x2,AirScape,iscc,ISCC-P2,Before requests,0.26523402797312073,,,,,,,,,,,
+26_forget_association_before_after_1x2,AirScape,iscc,ISCC-P2,After FL + FU,0.26331152971819116,,,,,,,,,,,
+26_forget_association_before_after_1x2,AirScape,afl,AFL-OTA,Before requests,0.26523402797312073,,,,,,,,,,,
+26_forget_association_before_after_1x2,AirScape,afl,AFL-OTA,After FL + FU,0.2633119719309627,,,,,,,,,,,
+26_forget_association_before_after_1x2,AirScape,salun,F-SalUn,Before requests,0.26523402797312073,,,,,,,,,,,
+26_forget_association_before_after_1x2,AirScape,salun,F-SalUn,After FL + FU,0.2635082159600791,,,,,,,,,,,
+27_forget_kl_fu_control_1x2,CapERA,gate_select16,Proposed,Without FU,0.3120909266654048,,,,,,,,,,,
+27_forget_kl_fu_control_1x2,CapERA,gate_select16,Proposed,With FU,4.448486582436749,,,,,,,,,,,
+27_forget_kl_fu_control_1x2,CapERA,iscc,ISCC-P2,Without FU,0.0615419295930602,,,,,,,,,,,
+27_forget_kl_fu_control_1x2,CapERA,iscc,ISCC-P2,With FU,3.3351858158358443,,,,,,,,,,,
+27_forget_kl_fu_control_1x2,CapERA,afl,AFL-OTA,Without FU,0.0615419295930602,,,,,,,,,,,
+27_forget_kl_fu_control_1x2,CapERA,afl,AFL-OTA,With FU,3.3351858158358443,,,,,,,,,,,
+27_forget_kl_fu_control_1x2,CapERA,salun,F-SalUn,Without FU,0.0615419295930602,,,,,,,,,,,
+27_forget_kl_fu_control_1x2,CapERA,salun,F-SalUn,With FU,8.980545405229448,,,,,,,,,,,
+27_forget_kl_fu_control_1x2,AirScape,gate_select16,Proposed,Without FU,1.0548197355381126,,,,,,,,,,,
+27_forget_kl_fu_control_1x2,AirScape,gate_select16,Proposed,With FU,1.2311287607795218,,,,,,,,,,,
+27_forget_kl_fu_control_1x2,AirScape,iscc,ISCC-P2,Without FU,0.21020359858557197,,,,,,,,,,,
+27_forget_kl_fu_control_1x2,AirScape,iscc,ISCC-P2,With FU,1.229629092282832,,,,,,,,,,,
+27_forget_kl_fu_control_1x2,AirScape,afl,AFL-OTA,Without FU,0.21020359858557197,,,,,,,,,,,
+27_forget_kl_fu_control_1x2,AirScape,afl,AFL-OTA,With FU,1.229629092282832,,,,,,,,,,,
+27_forget_kl_fu_control_1x2,AirScape,salun,F-SalUn,Without FU,0.21020359858557197,,,,,,,,,,,
+27_forget_kl_fu_control_1x2,AirScape,salun,F-SalUn,With FU,3.9087719452603538,,,,,,,,,,,

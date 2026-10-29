@@ -1,0 +1,90 @@
+[
+  {
+    "dataset": "CapERA",
+    "method": "gate_select16",
+    "mean": 0.007713869804082728,
+    "low": -0.07126916190487763,
+    "high": 0.09143416722829537,
+    "weakened_percent": 54.25101214574899,
+    "unchanged_percent": 0.0,
+    "strengthened_percent": 45.74898785425101,
+    "videos": 247
+  },
+  {
+    "dataset": "CapERA",
+    "method": "iscc",
+    "mean": -0.0202615304805472,
+    "low": -0.09855317190449857,
+    "high": 0.0652391725926621,
+    "weakened_percent": 50.20242914979757,
+    "unchanged_percent": 0.0,
+    "strengthened_percent": 49.797570850202426,
+    "videos": 247
+  },
+  {
+    "dataset": "CapERA",
+    "method": "afl",
+    "mean": -0.0202615304805472,
+    "low": -0.09855317190449857,
+    "high": 0.0652391725926621,
+    "weakened_percent": 50.20242914979757,
+    "unchanged_percent": 0.0,
+    "strengthened_percent": 49.797570850202426,
+    "videos": 247
+  },
+  {
+    "dataset": "CapERA",
+    "method": "salun",
+    "mean": 0.1719288906899667,
+    "low": 0.032223131594569646,
+    "high": 0.3272637944685384,
+    "weakened_percent": 57.89473684210527,
+    "unchanged_percent": 0.0,
+    "strengthened_percent": 42.10526315789473,
+    "videos": 247
+  },
+  {
+    "dataset": "AirScape",
+    "method": "gate_select16",
+    "mean": -0.024303984905340588,
+    "low": -0.07931507922301292,
+    "high": 0.03326740904336666,
+    "weakened_percent": 50.83798882681564,
+    "unchanged_percent": 0.0,
+    "strengthened_percent": 49.162011173184354,
+    "videos": 358
+  },
+  {
+    "dataset": "AirScape",
+    "method": "iscc",
+    "mean": -0.058769763335990814,
+    "low": -0.12303824322014345,
+    "high": 0.0060537695149857,
+    "weakened_percent": 45.81005586592179,
+    "unchanged_percent": 0.0,
+    "strengthened_percent": 54.18994413407822,
+    "videos": 358
+  },
+  {
+    "dataset": "AirScape",
+    "method": "afl",
+    "mean": -0.058769763335990814,
+    "low": -0.12303824322014345,
+    "high": 0.0060537695149857,
+    "weakened_percent": 45.81005586592179,
+    "unchanged_percent": 0.0,
+    "strengthened_percent": 54.18994413407822,
+    "videos": 358
+  },
+  {
+    "dataset": "AirScape",
+    "method": "salun",
+    "mean": 0.09592769201494288,
+    "low": -0.006219224766577813,
+    "high": 0.1985121712299541,
+    "weakened_percent": 50.83798882681564,
+    "unchanged_percent": 0.0,
+    "strengthened_percent": 49.162011173184354,
+    "videos": 358
+  }
+]

@@ -1,0 +1,230 @@
+[
+  {
+    "dataset": "CapERA",
+    "policy": "common",
+    "fresh_rounds": 200,
+    "wall_s": 6.8265461921691895,
+    "original_reference_tensor_exact": true,
+    "checkpoint_sha256": "851b460262378f081ec0f65beacc6239482e7e2bc67a688f93e99526305b2bf8",
+    "metrics": {
+      "forget": {
+        "i2t_R1": 0.0728744939271255,
+        "t2i_R1": 0.06072874493927126,
+        "i2t_R5": 0.16194331983805668,
+        "t2i_R5": 0.18299595141700406,
+        "i2t_R10": 0.22672064777327935,
+        "t2i_R10": 0.27611336032388667,
+        "mR": 0.16356275303643728,
+        "loss": 5.530363078750036,
+        "positive_cosine": 0.27501548867625725,
+        "association_margin": 0.05353287445705913,
+        "correct_pair_probability": 0.039499517962847494,
+        "t2i_mean_rank": 60.67206477732794
+      },
+      "retained": {
+        "i2t_R1": 0.0625,
+        "t2i_R1": 0.0390625,
+        "i2t_R5": 0.16796875,
+        "t2i_R5": 0.18046875,
+        "i2t_R10": 0.2421875,
+        "t2i_R10": 0.29609375000000004,
+        "mR": 0.16471354166666669,
+        "loss": 5.441813561967219,
+        "positive_cosine": 0.2753185000842132,
+        "association_margin": 0.05578671071005471,
+        "correct_pair_probability": 0.03346234099873917,
+        "t2i_mean_rank": 61.2125
+      }
+    }
+  },
+  {
+    "dataset": "CapERA",
+    "policy": "priority",
+    "fresh_rounds": 200,
+    "wall_s": 5.702997922897339,
+    "original_reference_tensor_exact": true,
+    "checkpoint_sha256": "196e2133551f341f3c3f921c8ce9482896924b2a7a564b1e2343bb75f91c93bf",
+    "metrics": {
+      "forget": {
+        "i2t_R1": 0.0728744939271255,
+        "t2i_R1": 0.059919028340080976,
+        "i2t_R5": 0.1659919028340081,
+        "t2i_R5": 0.18461538461538463,
+        "i2t_R10": 0.2388663967611336,
+        "t2i_R10": 0.27530364372469635,
+        "mR": 0.16626180836707155,
+        "loss": 5.429250531060218,
+        "positive_cosine": 0.27482809246099144,
+        "association_margin": 0.05341682002804029,
+        "correct_pair_probability": 0.040364108776939946,
+        "t2i_mean_rank": 58.97085020242915
+      },
+      "retained": {
+        "i2t_R1": 0.0625,
+        "t2i_R1": 0.041406250000000006,
+        "i2t_R5": 0.1796875,
+        "t2i_R5": 0.18203125,
+        "i2t_R10": 0.2578125,
+        "t2i_R10": 0.30234375,
+        "mR": 0.17096354166666666,
+        "loss": 5.331409969697571,
+        "positive_cosine": 0.2753373045344652,
+        "association_margin": 0.05578834084602264,
+        "correct_pair_probability": 0.034455882396926464,
+        "t2i_mean_rank": 59.275000000000006
+      }
+    }
+  },
+  {
+    "dataset": "CapERA",
+    "policy": "equal",
+    "fresh_rounds": 200,
+    "wall_s": 6.739335536956787,
+    "original_reference_tensor_exact": true,
+    "checkpoint_sha256": "b6d28fdd4e839608192dcb847b606b1b6a6f8d0701089bfbaf3518978560e58a",
+    "metrics": {
+      "forget": {
+        "i2t_R1": 0.07692307692307693,
+        "t2i_R1": 0.06072874493927125,
+        "i2t_R5": 0.15789473684210525,
+        "t2i_R5": 0.18299595141700406,
+        "i2t_R10": 0.22672064777327935,
+        "t2i_R10": 0.27530364372469635,
+        "mR": 0.16342780026990553,
+        "loss": 5.525890162853257,
+        "positive_cosine": 0.27544016191182963,
+        "association_margin": 0.05352435722246081,
+        "correct_pair_probability": 0.03947619629061418,
+        "t2i_mean_rank": 60.76113360323887
+      },
+      "retained": {
+        "i2t_R1": 0.0625,
+        "t2i_R1": 0.037500000000000006,
+        "i2t_R5": 0.1640625,
+        "t2i_R5": 0.17890625000000002,
+        "i2t_R10": 0.2421875,
+        "t2i_R10": 0.29609375000000004,
+        "mR": 0.16354166666666664,
+        "loss": 5.438148934477782,
+        "positive_cosine": 0.2757327826260509,
+        "association_margin": 0.05577291314744532,
+        "correct_pair_probability": 0.03355130649424174,
+        "t2i_mean_rank": 61.294531250000006
+      }
+    }
+  },
+  {
+    "dataset": "AirScape",
+    "policy": "common",
+    "fresh_rounds": 200,
+    "wall_s": 6.4658918380737305,
+    "original_reference_tensor_exact": true,
+    "checkpoint_sha256": "3896a0b8add439c40b5692b0568c86ed893b7d73946cec31cec3823225f4d414",
+    "metrics": {
+      "forget": {
+        "i2t_R1": 0.036312849162011177,
+        "t2i_R1": 0.013966480446927373,
+        "i2t_R5": 0.1424581005586592,
+        "t2i_R5": 0.0893854748603352,
+        "i2t_R10": 0.23743016759776536,
+        "t2i_R10": 0.14804469273743018,
+        "mR": 0.11126629422718808,
+        "loss": 5.752080222947666,
+        "positive_cosine": 0.2645807049160553,
+        "association_margin": 0.03468332656537468,
+        "correct_pair_probability": 0.015558842598307034,
+        "t2i_mean_rank": 125.65642458100558
+      },
+      "retained": {
+        "i2t_R1": 0.0546875,
+        "t2i_R1": 0.04296875,
+        "i2t_R5": 0.14453125,
+        "t2i_R5": 0.1484375,
+        "i2t_R10": 0.22265625,
+        "t2i_R10": 0.19921875,
+        "mR": 0.13541666666666666,
+        "loss": 5.593978240607331,
+        "positive_cosine": 0.2667399279897372,
+        "association_margin": 0.036334612358678825,
+        "correct_pair_probability": 0.018914960458790965,
+        "t2i_mean_rank": 112.4453125
+      }
+    }
+  },
+  {
+    "dataset": "AirScape",
+    "policy": "priority",
+    "fresh_rounds": 200,
+    "wall_s": 5.554293870925903,
+    "original_reference_tensor_exact": true,
+    "checkpoint_sha256": "29a578c4b707b4960ac5a2dae8ebbc1fd1d1d265f767220e744b4a08f1ad9d0d",
+    "metrics": {
+      "forget": {
+        "i2t_R1": 0.036312849162011177,
+        "t2i_R1": 0.01675977653631285,
+        "i2t_R5": 0.1452513966480447,
+        "t2i_R5": 0.0893854748603352,
+        "i2t_R10": 0.22905027932960895,
+        "t2i_R10": 0.15921787709497207,
+        "mR": 0.11266294227188081,
+        "loss": 5.698519513312763,
+        "positive_cosine": 0.2609947230122513,
+        "association_margin": 0.03453454371934468,
+        "correct_pair_probability": 0.015751433085545424,
+        "t2i_mean_rank": 121.36871508379889
+      },
+      "retained": {
+        "i2t_R1": 0.05859375,
+        "t2i_R1": 0.04296875,
+        "i2t_R5": 0.1484375,
+        "t2i_R5": 0.1484375,
+        "i2t_R10": 0.22265625,
+        "t2i_R10": 0.203125,
+        "mR": 0.13736979166666669,
+        "loss": 5.5393628153132,
+        "positive_cosine": 0.26301193721746685,
+        "association_margin": 0.036123446510996596,
+        "correct_pair_probability": 0.019047129882777014,
+        "t2i_mean_rank": 107.83984375
+      }
+    }
+  },
+  {
+    "dataset": "AirScape",
+    "policy": "equal",
+    "fresh_rounds": 200,
+    "wall_s": 6.648923397064209,
+    "original_reference_tensor_exact": true,
+    "checkpoint_sha256": "d678220e58a87ed5b26ac59fd2cd8d392c4c6dc4542a30cc2278502d885628b5",
+    "metrics": {
+      "forget": {
+        "i2t_R1": 0.0335195530726257,
+        "t2i_R1": 0.013966480446927373,
+        "i2t_R5": 0.1452513966480447,
+        "t2i_R5": 0.0893854748603352,
+        "i2t_R10": 0.24022346368715083,
+        "t2i_R10": 0.14804469273743018,
+        "mR": 0.11173184357541899,
+        "loss": 5.7559909658373325,
+        "positive_cosine": 0.2650583063941916,
+        "association_margin": 0.03466224508533613,
+        "correct_pair_probability": 0.01552661270313717,
+        "t2i_mean_rank": 126.05865921787709
+      },
+      "retained": {
+        "i2t_R1": 0.0546875,
+        "t2i_R1": 0.04296875,
+        "i2t_R5": 0.14453125,
+        "t2i_R5": 0.1484375,
+        "i2t_R10": 0.22265625,
+        "t2i_R10": 0.19921875,
+        "mR": 0.13541666666666666,
+        "loss": 5.598384113499461,
+        "positive_cosine": 0.2672260443305122,
+        "association_margin": 0.036320659307280526,
+        "correct_pair_probability": 0.018867150159551024,
+        "t2i_mean_rank": 113.140625
+      }
+    }
+  }
+]
