@@ -112,7 +112,14 @@ def main():
     assert np.allclose(m['map_panel_size_inches'], np.array(m['previous_map_panel_size_inches'])*.8)
     assert np.allclose(m['map_panel_size_inches'], np.array(m['original_map_panel_size_inches'])*.576)
     assert m['tick_fontsize_pt'] == m['visit_fontsize_pt'] == 12 and m['labels_inside_canvas']
-    assert m['geometry_and_snapshot_heads_unchanged']
+    if m.get('location_revision') == 'yeouido_v1':
+        assert not m['geometry_and_snapshot_heads_unchanged'] and m['new_geometry_verified']
+        geometry = read(root/m['geometry_checks'])
+        assert geometry['passed'] and geometry['satellite_and_overlay_registered']
+        assert geometry['iot_not_on_water'] and geometry['ten_uav_identities_preserved']
+        assert geometry['no_FL_FU_retraining']
+    else:
+        assert m['geometry_and_snapshot_heads_unchanged']
     ns = {'s': 'http://www.w3.org/2000/svg'}
     new_svg = ET.parse(dest / '06_mission_map_1x2.svg').getroot()
     reference_svg = ET.parse(dest / '01_downlink_bandwidth_energy_1x2.svg').getroot()
@@ -162,6 +169,7 @@ def main():
                   plot_values_match_metrics=True, regular_endpoint_ticks=True,
                   paired_bars_bandwidths_mhz=[1, 5], tables_match_metrics_and_ties_verified=True,
                   map_panel_scale=.576, map_panel_scale_relative_to_previous=.8,
+                  map_location_revision=m.get('location_revision','daejeon'),
                   map_text_matches_chart_ticks_pt=12, table07_forget_KL_removed=True,
                   source_sha256={str(Path(__file__).relative_to(root)): sha(Path(__file__))})
     report.write(dest / 'data/artifact_checks.json', result)

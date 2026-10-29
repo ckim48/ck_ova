@@ -1,0 +1,87 @@
+{
+  "location": "Yeouido, Seoul, South Korea",
+  "layout": "1 x 2",
+  "figure_size_inches": [
+    6.449215094339622,
+    3.099607547169811
+  ],
+  "map_panel_size_inches": [
+    2.599607547169811,
+    2.599607547169811
+  ],
+  "tick_fontsize_pt": 12,
+  "visit_fontsize_pt": 12,
+  "tick_values": [
+    0,
+    500,
+    1000,
+    1500,
+    2000
+  ],
+  "mission_side_m": 1800,
+  "displayed_map_side_m": 2000,
+  "view_padding_m": 100,
+  "center_latlon": [
+    37.5238,
+    126.9298
+  ],
+  "imagery": {
+    "service": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+    "export_url": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=14128499.828079803%2C4511110.551593041%2C14131021.576904306%2C4513632.300417542&bboxSR=3857&imageSR=3857&size=1800%2C1800&format=jpg&dpi=180",
+    "export": {
+      "href": "https://services.arcgisonline.com/arcgis/rest/directories/arcgisoutput/World_Imagery_MapServer/_ags_mapd2bbdc3ec97644d08ee907c6c9f9c8ca.jpg",
+      "width": 1800,
+      "height": 1800,
+      "extent": {
+        "xmin": 14128499.828079805,
+        "ymin": 4511110.55159304,
+        "xmax": 14131021.576904308,
+        "ymax": 4513632.300417543,
+        "spatialReference": {
+          "wkid": 102100,
+          "latestWkid": 3857
+        }
+      },
+      "scale": 9928.125122069385
+    },
+    "requested_bbox": [
+      14128499.828079803,
+      4511110.551593041,
+      14131021.576904306,
+      4513632.300417542
+    ],
+    "center_latlon": [
+      37.5238,
+      126.9298
+    ],
+    "ground_view_side_m": 2000,
+    "mission_side_m": 1800,
+    "copyright": "Source: Esri, Vantor, Earthstar Geographics, and the GIS User Community",
+    "image_sha256": "7ae580f1aad578ee004488058c0dabba47242d3e97ac3ebdcec73418ea8374fb"
+  },
+  "osm_attribution": "© OpenStreetMap contributors",
+  "osm_copyright_url": "https://www.openstreetmap.org/copyright",
+  "uav_count": 10,
+  "mission_stops": 5,
+  "iot_count": 200,
+  "head_semantics": "nominal_packet_planning_head_not_FL_FU_experiment_result",
+  "deployment_source": "final_final_charts/yeouido_map/deployment.json",
+  "deployment_sha256": "cbbf6116092abbe592936853fcd8d1b53669e21769fe7d1f0a1e0f4d1e71ec92",
+  "cluster_semantics": "Translucent enclosure of a planned ten-UAV collection snapshot; not radio coverage",
+  "path_semantics": "Ten identity-preserving piecewise-linear planned paths across five stops and return",
+  "scope": "New synthetic geometry on real Yeouido map coordinates; not measured flights or sensor deployments. Existing Daejeon FL/FU results are not relabeled as Yeouido results.",
+  "files": [
+    {
+      "file": "mission_map_1x2.pdf",
+      "sha256": "679bc80353a2a0581ebdc9c76e5f67d5f98da2808691eee166031324fe36f8db"
+    },
+    {
+      "file": "mission_map_1x2.png",
+      "sha256": "28db0a0ecedca99d12cc7a04753e59c6a5a0412cc6164f57516adbc39cdf16b2"
+    },
+    {
+      "file": "mission_map_1x2.svg",
+      "sha256": "5a71c44698ae34307abf4be83183be3326a08ff5f6b19f90e06072e1663802d3"
+    }
+  ]
+}

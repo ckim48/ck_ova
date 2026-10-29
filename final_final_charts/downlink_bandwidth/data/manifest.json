@@ -670,7 +670,7 @@
     },
     {
       "name": "06_mission_map_1x2",
-      "title": "Satellite / IoT\u2013UAV map: smaller panels with matching12pt labels",
+      "title": "Yeouido satellite imagery and planned IoT–UAV deployment",
       "kind": "map",
       "axes": [],
       "linear_scale": 0.576,
@@ -680,18 +680,20 @@
       ],
       "files": [
         {
-          "file": "06_mission_map_1x2.png",
-          "sha256": "f306f4cbe124a08889267dd7132269991314859719e553012c7e5634ad70d98b"
+          "file": "06_mission_map_1x2.pdf",
+          "sha256": "679bc80353a2a0581ebdc9c76e5f67d5f98da2808691eee166031324fe36f8db"
         },
         {
-          "file": "06_mission_map_1x2.pdf",
-          "sha256": "e301f7fb577d1fd952307f5508c3d6549061047e3b35db06f8860885263361ab"
+          "file": "06_mission_map_1x2.png",
+          "sha256": "28db0a0ecedca99d12cc7a04753e59c6a5a0412cc6164f57516adbc39cdf16b2"
         },
         {
           "file": "06_mission_map_1x2.svg",
-          "sha256": "c5d7818e5e2eecc2883108bca5457f19f2b370c078e3b187f9bbbdd59e2cc10c"
+          "sha256": "5a71c44698ae34307abf4be83183be3326a08ff5f6b19f90e06072e1663802d3"
         }
-      ]
+      ],
+      "location": "Yeouido, Seoul, South Korea",
+      "scope": "New Yeouido geometry illustration; the FL/FU performance tables and curves retain their Daejeon conditions."
     },
     {
       "name": "07_performance_table",
@@ -20199,7 +20201,7 @@
     "results/downlink_bandwidth_v1_20261028/salun/salun/cases/downlink_bandwidth_5/airscape_seed0/iscc_p2_gaft/manifest.json": "e3f3a3b2798ce5e8b0c89fea20b3287e03c4efd2b25026c781f46d23b69ead8c",
     "tools/uav_convergence_v2/downlink_bandwidth_report.py": "4cbac25dae0827b45a659c3b7c3d86af95265a1a008625b49cdf7a14312fbb24",
     "tools/uav_convergence_v2/downlink_bandwidth_v1.py": "6a8cc9be9703923510da1cff83347e2542d61b0ef050d6e370edccea66e8de40",
-    "tools/uav_convergence_v2/compact_mission_map.py": "acf5e677ce5321137a7317a617e0d53801255b4808a8961aef4e7bd49f1adafe",
+    "tools/uav_convergence_v2/compact_mission_map.py": "a2e17dbc289ddb887deba81a5739d7c9d5d3aa08fb899a09edf6408131328e4e",
     "tools/uav_convergence_v2/learning_quality_report.py": "dfafda2b19f80718d120e744b0138a2a5e3f94fc164d11fd6ab2b042da89e05b",
     "tools/uav_convergence_v2/learning_quality_v3.py": "3818616a3519d01cbc469ce4f98590d0138ff256c97b77d2a9b4677ed7d5c750",
     "tools/uav_convergence_v2/learning_selection_fix_v2.py": "84581c09a2582e95d2e95a2406c42afb762d4e745cffb646a7c265aea64fd0d1",
@@ -36052,7 +36054,8 @@
     "results/aggregation_mse_v1_20261028/salun/salun/cases/mse_0p07/airscape_seed0/iscc_p2_gaft/manifest.json": "64186fbfa3e9367a83e13d06e34003d993f0b0d1e65fc9ae4249bce54f45cb3c",
     "tools/uav_convergence_v2/aggregation_mse_report.py": "5800e4b1de05d1ece7ca7ed23181992a8fad073d6903cd12b56a154363f1727a",
     "tools/uav_convergence_v2/aggregation_mse_v1.py": "52c765aa6d080a0242fee7ed28ed17435f81d75be1578d1333015c4f88ca2521",
-    "tools/uav_convergence_v2/paper_typography_v1.py": "e4ea3424942f929bd57ebe260495101ae27fe00ae3985104a7e68c5984fb7dcc"
+    "tools/uav_convergence_v2/paper_typography_v1.py": "b47b86688c232577b40680f06bd4836cf737997f2be10b810c3750a4a2cf2758",
+    "tools/uav_convergence_v2/yeouido_mission_map_v1.py": "ed5ee8f6aac27bbe2ee93fbe0ef456faa8758d0c6fa207e22cce5009444cdb95"
   },
   "raw_data_published": false,
   "description": "Downlink bandwidth and MSE sweeps; paired resource bars, map and comparison tables.",
@@ -36067,5 +36070,8 @@
   "mse_compared_arms": 40,
   "mse_new_arms": 32,
   "total_unique_arms": 72,
-  "typography_revision": "paper_typography_v1"
+  "typography_revision": "paper_typography_v1",
+  "previous_plot_source_sha256": {
+    "tools/uav_convergence_v2/paper_typography_v1.py": "e4ea3424942f929bd57ebe260495101ae27fe00ae3985104a7e68c5984fb7dcc"
+  }
 }

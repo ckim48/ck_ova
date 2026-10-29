@@ -1,0 +1,13 @@
+{
+  "url": "https://overpass-api.de/api/interpreter",
+  "query": "[out:json][timeout:40];(way[\"highway\"](37.513,126.914,37.541,126.949);way[\"waterway\"](37.513,126.914,37.541,126.949);way[\"natural\"=\"water\"](37.513,126.914,37.541,126.949);relation[\"natural\"=\"water\"](37.513,126.914,37.541,126.949);way[\"leisure\"~\"park|garden|pitch|playground\"](37.513,126.914,37.541,126.949);relation[\"leisure\"=\"park\"](37.513,126.914,37.541,126.949););out body geom;",
+  "sha256": "da8ec126957aa7b99e8531b1ee76d9eaea43b10ca6ad5e8799bfd1bb7c7d281a",
+  "downloaded_unix": 1793282524.9998674,
+  "copyright": "OpenStreetMap contributors",
+  "license": "ODbL",
+  "attribution_url": "https://www.openstreetmap.org/copyright",
+  "timestamp": {
+    "timestamp_osm_base": "2026-10-29T14:00:41Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  }
+}

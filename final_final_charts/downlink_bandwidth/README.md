@@ -71,3 +71,7 @@ With the existing local caches and original rate-study arms:
 ```
 
 The frozen runner refuses to overwrite attempts. Only code, figures, aggregate metrics and hashes are published; no raw data, checkpoints or execution logs.
+
+<!-- yeouido-map -->
+
+The current mission map now illustrates Yeouido, Seoul. See [the map folder](../yeouido_map/README.md) for the new geometry and sources. Existing FL/FU result tables and curves remain based on Daejeon; they have not been relabeled or rerun.

@@ -27,6 +27,11 @@ def pdf_size(path):
 
 
 def render(dest):
+    # Keep the user-selected Yeouido map when rebuilding the chart gallery.
+    current = ROOT / 'final_final_charts/yeouido_map'
+    if (current/'manifest.json').exists() and (current/'previous_daejeon/manifest.json').exists():
+        import yeouido_mission_map_v1
+        return yeouido_mission_map_v1.install(dest)
     import proposed_pks_report as chart
     chart.prior.chart.configure()
     reference, panels = chart.prior.chart.style.canvas('')

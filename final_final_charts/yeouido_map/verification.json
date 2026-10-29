@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "no_FL_FU_retraining": true,
+  "iot_not_on_water": true,
+  "sensors_on_mapped_park_paths": true,
+  "satellite_and_overlay_registered": true,
+  "all_200_devices_retained": true,
+  "ten_uav_identities_preserved": true,
+  "five_collection_zones": true,
+  "no_duplicate_UAVs_at_a_snapshot": true,
+  "nominal_head_candidates_checked": 50,
+  "minimum_continuous_separation_m": 22.00000000004682,
+  "independently_sampled_minimum_separation_m": 22.00000330857746,
+  "peak_iot_power_W": 0.0006515000189082013,
+  "source_sha256": {
+    "tools/uav_convergence_v2/yeouido_mission_map_v1.py": "ed5ee8f6aac27bbe2ee93fbe0ef456faa8758d0c6fa207e22cce5009444cdb95",
+    "tools/iot_uav_deployment_v3_global_iot/deployment.py": "e680382cbeab025873f66c3d16ee8ba3f08837f3b77e0a186a1905f63d045ed5",
+    "data/korea_mission_yeouido_v1/osm_snapshot.json": "da8ec126957aa7b99e8531b1ee76d9eaea43b10ca6ad5e8799bfd1bb7c7d281a",
+    "data/korea_mission_yeouido_v1/satellite_1x2.jpg": "7ae580f1aad578ee004488058c0dabba47242d3e97ac3ebdcec73418ea8374fb"
+  }
+}

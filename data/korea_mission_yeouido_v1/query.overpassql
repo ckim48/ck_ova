@@ -1,0 +1,1 @@
+[out:json][timeout:40];(way["highway"](37.513,126.914,37.541,126.949);way["waterway"](37.513,126.914,37.541,126.949);way["natural"="water"](37.513,126.914,37.541,126.949);relation["natural"="water"](37.513,126.914,37.541,126.949);way["leisure"~"park|garden|pitch|playground"](37.513,126.914,37.541,126.949);relation["leisure"="park"](37.513,126.914,37.541,126.949););out body geom;

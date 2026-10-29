@@ -1,0 +1,34 @@
+{
+  "service": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+  "export_url": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=14128499.828079803%2C4511110.551593041%2C14131021.576904306%2C4513632.300417542&bboxSR=3857&imageSR=3857&size=1800%2C1800&format=jpg&dpi=180",
+  "export": {
+    "href": "https://services.arcgisonline.com/arcgis/rest/directories/arcgisoutput/World_Imagery_MapServer/_ags_mapd2bbdc3ec97644d08ee907c6c9f9c8ca.jpg",
+    "width": 1800,
+    "height": 1800,
+    "extent": {
+      "xmin": 14128499.828079805,
+      "ymin": 4511110.55159304,
+      "xmax": 14131021.576904308,
+      "ymax": 4513632.300417543,
+      "spatialReference": {
+        "wkid": 102100,
+        "latestWkid": 3857
+      }
+    },
+    "scale": 9928.125122069385
+  },
+  "requested_bbox": [
+    14128499.828079803,
+    4511110.551593041,
+    14131021.576904306,
+    4513632.300417542
+  ],
+  "center_latlon": [
+    37.5238,
+    126.9298
+  ],
+  "ground_view_side_m": 2000,
+  "mission_side_m": 1800,
+  "copyright": "Source: Esri, Vantor, Earthstar Geographics, and the GIS User Community",
+  "image_sha256": "7ae580f1aad578ee004488058c0dabba47242d3e97ac3ebdcec73418ea8374fb"
+}
