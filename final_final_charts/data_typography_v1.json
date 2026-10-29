@@ -777,7 +777,32 @@
         ],
         "legend_pt": 12.0,
         "legend_gap_pt": 8.000000000000023,
-        "fixed_pdf_width_pt": 532.8000000000001
+        "fixed_pdf_width_pt": 532.8000000000001,
+        "category_layout_revision": "matched_rank_fu_v1",
+        "physical_panels": [
+          {
+            "width_pt": 205.128,
+            "height_pt": 174.798,
+            "category_gap_pt": [
+              9.791052631578937,
+              7.091052631578936,
+              8.441052631578936
+            ],
+            "category_pt": 12.0,
+            "one_line": true
+          },
+          {
+            "width_pt": 205.128,
+            "height_pt": 174.798,
+            "category_gap_pt": [
+              9.791052631578937,
+              7.091052631578978,
+              8.441052631578895
+            ],
+            "category_pt": 12.0,
+            "one_line": true
+          }
+        ]
       }
     },
     {
@@ -844,10 +869,12 @@
     }
   ],
   "source_sha256": {
-    "tools/uav_convergence_v2/paper_typography_v1.py": "e4ea3424942f929bd57ebe260495101ae27fe00ae3985104a7e68c5984fb7dcc",
-    "tools/uav_convergence_v2/paper_boxplot_refine_v2.py": "d058e583c993121423dc82700d8c56ad6e61911d4dae5bc4d54f3e69c6ad824e"
+    "tools/uav_convergence_v2/paper_typography_v1.py": "b47b86688c232577b40680f06bd4836cf737997f2be10b810c3750a4a2cf2758",
+    "tools/uav_convergence_v2/paper_boxplot_refine_v2.py": "ad4d965c0822a3d4ebf56b78b87bd3550dceaa316ef88db159d6eddbb222a2c8",
+    "tools/uav_convergence_v2/match_rank_fu_layout_v1.py": "7052c5df8242d647d90af8488308bd6c546b5bf96110f4dc32eab32e4da20520"
   },
   "category_font_overrides": {
     "11_fu_steps_energy_1x2": 12.0
-  }
+  },
+  "matched_rank_fu_layout_checks": "matched_rank_fu_layout_v1_checks.json"
 }

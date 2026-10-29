@@ -23,6 +23,28 @@ TICK = LEGEND = 12.
 LABEL = 14.
 GAP_PT = 8.
 NS = {'s': 'http://www.w3.org/2000/svg'}
+CATEGORY_RECTS = [(.095, .22, .385, .65), (.595, .22, .385, .65)]
+CATEGORY_CAPTION_Y = .035
+
+
+def category_layout_audit(fig):
+    """Check physical geometry and readable single-line method labels."""
+    fig.canvas.draw()
+    renderer = fig.canvas.get_renderer()
+    panels = []
+    for ax in fig.axes:
+        labels = ax.get_xticklabels()
+        assert [t.get_text() for t in labels] == list(report.METHODS.values())
+        assert all(t.get_fontsize() == TICK and '\n' not in t.get_text() for t in labels)
+        bounds = [t.get_window_extent(renderer) for t in labels]
+        gaps = [(b.x0-a.x1)*72/fig.dpi for a, b in zip(bounds, bounds[1:])]
+        assert min(gaps) >= 6., gaps
+        box = ax.get_window_extent(renderer)
+        panels.append(dict(width_pt=box.width*72/fig.dpi, height_pt=box.height*72/fig.dpi,
+                           category_gap_pt=gaps, category_pt=TICK, one_line=True))
+    assert np.allclose([p['width_pt'] for p in panels], panels[0]['width_pt'])
+    assert np.allclose([p['height_pt'] for p in panels], panels[0]['height_pt'])
+    return panels
 
 
 def source_labels(path):
@@ -52,10 +74,16 @@ def render(folder, figure, series):
     chart = report.prior.chart
     name = figure['name']
     labels = source_labels(folder/(name+'.svg'))
-    fig, axes = chart.plt.subplots(1, 2, figsize=SIZE)
-    fig.subplots_adjust(left=.115, right=.965, bottom=.22, top=.83, wspace=.46)
+    matched_categories = name == '11_fu_steps_energy_1x2'
+    if matched_categories:
+        fig = chart.plt.figure(figsize=SIZE)
+        axes = [fig.add_axes(rect) for rect in CATEGORY_RECTS]
+    else:
+        fig, axes = chart.plt.subplots(1, 2, figsize=SIZE)
+        fig.subplots_adjust(left=.115, right=.965, bottom=.22, top=.83, wspace=.46)
     for ax in axes:
-        ax.set_box_aspect(.9)
+        if not matched_categories:
+            ax.set_box_aspect(.9)
         ax.grid(True, ls=':', lw=.5)
         ax.set_axisbelow(True)
         ax.tick_params(direction='out', pad=3, labelsize=TICK)
@@ -136,7 +164,7 @@ def render(folder, figure, series):
         ax.set_xlabel(label_pair[0], fontsize=LABEL)
         ax.set_ylabel(label_pair[1], fontsize=LABEL, labelpad=4)
         pos = ax.get_position()
-        fig.text((pos.x0+pos.x1)/2, .015, f'({chr(97+report.DATASETS.index(ds))}) {ds}',
+        fig.text((pos.x0+pos.x1)/2, CATEGORY_CAPTION_Y if matched_categories else .015, f'({chr(97+report.DATASETS.index(ds))}) {ds}',
                  ha='center', va='bottom', fontsize=LABEL)
     if kind != 'rank_boxplot':
         if legend_handles is None:
@@ -180,6 +208,7 @@ def render(folder, figure, series):
             continue
         box = t.get_window_extent(renderer)
         assert box.x0 >= -1 and box.y0 >= -1 and box.x1 <= fig.bbox.width+1 and box.y1 <= fig.bbox.height+1, (name, t.get_text(), box)
+    layout = category_layout_audit(fig) if matched_categories else None
     files = []
     for ext in ['pdf', 'png', 'svg']:
         path = folder/(name+'.'+ext)
@@ -191,6 +220,8 @@ def render(folder, figure, series):
     result['typography'] = dict(version=VERSION, figure_inches=list(SIZE), axes=font_audit,
                                legend_pt=LEGEND if legend is not None else None,
                                legend_gap_pt=gap, fixed_pdf_width_pt=SIZE[0]*72.)
+    if matched_categories:
+        result['typography'].update(category_layout_revision='matched_rank_fu_v1', physical_panels=layout)
     return result
 
 

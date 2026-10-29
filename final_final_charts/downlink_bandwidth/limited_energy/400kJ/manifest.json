@@ -827,15 +827,15 @@
   "files": [
     {
       "file": "19_all_method_rank_boxplot_1x2.pdf",
-      "sha256": "b763fe69183acf973a59e0a2e600e4abac826bfc319062b2cd7a90ae83f61668"
+      "sha256": "d0b3466af13382bb02862487214f44ac2a5a229dee2e51e93099aa8302431b44"
     },
     {
       "file": "19_all_method_rank_boxplot_1x2.png",
-      "sha256": "30bedc6a97056cc0a55316aaf081d989ac783a6e83b8e8440743393b8ee0820b"
+      "sha256": "683ad41280f1af57b9d1941d7903460a528fe179dfc3480bb9c5c073fcde3c61"
     },
     {
       "file": "19_all_method_rank_boxplot_1x2.svg",
-      "sha256": "63d0b2bf055e2058e77c1f81ded9ec8d3a69e2894bf62f48cb072b6ec155d02a"
+      "sha256": "da6c8d43caf7701e8f570a3e56ff8365d1e8f02c1f2f81ce03a04984c347433d"
     }
   ],
   "display_revision": "title_free_full_range_v3",
@@ -956,13 +956,43 @@
     "version": "paper_typography_v1",
     "figure_inches": [
       7.4,
-      3.3615
+      3.735
     ],
     "legend_pt": null,
     "legend_gap_pt": null,
     "fixed_pdf_width_pt": 532.8,
     "title_removed": true,
-    "detail_panels_removed": true
+    "detail_panels_removed": true,
+    "category_layout_revision": "matched_rank_fu_v1",
+    "physical_panels": [
+      {
+        "width_pt": 205.128,
+        "height_pt": 174.798,
+        "category_gap_pt": [
+          9.791052631578937,
+          7.091052631578936,
+          8.441052631578936
+        ],
+        "category_pt": 12.0,
+        "one_line": true
+      },
+      {
+        "width_pt": 205.128,
+        "height_pt": 174.798,
+        "category_gap_pt": [
+          9.791052631578937,
+          7.091052631578978,
+          8.441052631578895
+        ],
+        "category_pt": 12.0,
+        "one_line": true
+      }
+    ]
   },
-  "folder": "final_final_charts/downlink_bandwidth/limited_energy/400kJ"
+  "folder": "final_final_charts/downlink_bandwidth/limited_energy/400kJ",
+  "presentation_source_sha256": {
+    "tools/uav_convergence_v2/match_rank_fu_layout_v1.py": "7052c5df8242d647d90af8488308bd6c546b5bf96110f4dc32eab32e4da20520",
+    "tools/uav_convergence_v2/paper_typography_v1.py": "b47b86688c232577b40680f06bd4836cf737997f2be10b810c3750a4a2cf2758",
+    "tools/uav_convergence_v2/paper_boxplot_refine_v2.py": "ad4d965c0822a3d4ebf56b78b87bd3550dceaa316ef88db159d6eddbb222a2c8"
+  }
 }

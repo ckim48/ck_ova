@@ -12,10 +12,12 @@
   "all_outliers_retained": true,
   "original_650kJ_figure_unchanged": true,
   "source_sha256": {
-    "tools/uav_convergence_v2/limited_energy_rank_report_v1.py": "bc911cbbecd2bfcf2eab3e760c6ae6cc089206aa5b43934341cc58780772338a",
+    "tools/uav_convergence_v2/limited_energy_rank_report_v1.py": "204385dda12b249e436d5873b221c8467e211f697828e39ca7a552c3b3e1223e",
     "tools/uav_convergence_v2/limited_energy_retrieval_v1.py": "c945e4eb020ff8768d552265e2ab349bb218d761001613458f705b6b45f8ce3d",
     "tools/uav_convergence_v2/limited_energy_checkpoints_v1.py": "95f22ad4f5119bd793b51fde8af3659778a53468db8136cbe43a6e144609ed80",
-    "tools/uav_convergence_v2/paper_boxplot_refine_v2.py": "d058e583c993121423dc82700d8c56ad6e61911d4dae5bc4d54f3e69c6ad824e"
+    "tools/uav_convergence_v2/paper_boxplot_refine_v2.py": "ad4d965c0822a3d4ebf56b78b87bd3550dceaa316ef88db159d6eddbb222a2c8",
+    "tools/uav_convergence_v2/match_rank_fu_layout_v1.py": "7052c5df8242d647d90af8488308bd6c546b5bf96110f4dc32eab32e4da20520",
+    "tools/uav_convergence_v2/paper_typography_v1.py": "b47b86688c232577b40680f06bd4836cf737997f2be10b810c3750a4a2cf2758"
   },
   "original_650kJ_sha256": {
     "final_final_charts/downlink_bandwidth/19_all_method_rank_boxplot_1x2.pdf": "7061257e371c838eb1b5d013c0e4e22e2df93d9d89061bb5759d0e0d4ba26215",
@@ -65,5 +67,6 @@
       "results/limited_energy_checkpoints_v1_20261028/checkpoints/400kJ/airscape/afl/model.pt": "e64ed63593a4263977adc2dfb90d45e2f648839e2ff46adef0d071941d0ca6b0",
       "results/limited_energy_checkpoints_v1_20261028/checkpoints/400kJ/airscape/salun/model.pt": "c53db911a235fce6de7b75d76d213e69e7a9e9b577fc9e654060e007060afe97"
     }
-  }
+  },
+  "presentation_revision": "matched_rank_fu_v1"
 }

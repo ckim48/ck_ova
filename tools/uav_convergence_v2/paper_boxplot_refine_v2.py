@@ -16,13 +16,14 @@ NAME = '19_all_method_rank_boxplot_1x2'
 
 
 def render(folder, figure):
+    import paper_typography_v1 as typography
     plt = report.prior.chart.plt
     fig = plt.figure(figsize=SIZE, facecolor='white')
     result = copy.deepcopy(figure)
     draw_checks = []
     for index, ds in enumerate(report.DATASETS):
-        left = [.115, .625][index]
-        main = fig.add_axes([left, .22, .34, .70])
+        rect = typography.CATEGORY_RECTS[index]
+        main = fig.add_axes(rect)
         panel = next(p for p in result['axes'] if p['dataset'] == ds)
         main.set_ylim(panel['y']['limits']); main.set_yticks(panel['y']['ticks'])
         main.set_xlim(-.4, 3.4)
@@ -31,7 +32,7 @@ def render(folder, figure):
         main.tick_params(axis='y', labelsize=12, direction='out', pad=3, length=2.5)
         main.yaxis.set_major_formatter(FormatStrFormatter('%.0f'))
         main.set_ylabel('GT rank', fontsize=14, labelpad=4)
-        main.set_xticks(range(4), [s.replace('-', '-\n', 1) for s in report.METHODS.values()], fontsize=14)
+        main.set_xticks(range(4), list(report.METHODS.values()), fontsize=typography.TICK)
         main.tick_params(axis='x', length=0, pad=6)
         for side in ['top', 'right']:
             main.spines[side].set_visible(False)
@@ -72,7 +73,8 @@ def render(folder, figure):
                 median_marker_y=s['median'], median_marker_size_pt=4.2))
         # bxp may adjust data bounds even with manage_ticks=False; restore them.
         main.set_xlim(-.4, 3.4); main.set_ylim(panel['y']['limits'])
-        fig.text(left+.17, .015, f'({chr(97+index)}) {ds}', ha='center', va='bottom', fontsize=14)
+        fig.text(rect[0]+rect[2]/2, typography.CATEGORY_CAPTION_Y,
+                 f'({chr(97+index)}) {ds}', ha='center', va='bottom', fontsize=14)
     fig.canvas.draw()
     renderer = fig.canvas.get_renderer()
     for ax in fig.axes:
@@ -82,6 +84,7 @@ def render(folder, figure):
                 assert bbox.x0 >= -1 and bbox.y0 >= -1 and bbox.x1 <= fig.bbox.width+1 and bbox.y1 <= fig.bbox.height+1, t.get_text()
     assert len(fig.axes) == 2 and fig._suptitle is None
     assert all(ax.get_ylabel() == 'GT rank' for ax in fig.axes)
+    layout = typography.category_layout_audit(fig)
     files = []
     for ext in ['pdf', 'png', 'svg']:
         path = folder/(figure['name']+'.'+ext)
@@ -95,7 +98,8 @@ def render(folder, figure):
     result.setdefault('typography', {}).pop('detail_numeric_tick_pt', None)
     result.setdefault('typography', {}).update(version='paper_typography_v1', figure_inches=list(SIZE),
         legend_pt=None, legend_gap_pt=None, fixed_pdf_width_pt=532.8, title_removed=True,
-        detail_panels_removed=True)
+        detail_panels_removed=True, category_layout_revision='matched_rank_fu_v1',
+        physical_panels=layout)
     return result
 
 

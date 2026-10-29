@@ -244,15 +244,15 @@
       "files": [
         {
           "file": "11_fu_steps_energy_1x2.pdf",
-          "sha256": "7b0d39d4447b473df49f83ebef8d44e74a25222d9156dced707749147bb36eba"
+          "sha256": "ee9541ab27243315bd9b8d7d8b03ebbfe7a222bdc794466ff284373986f2d94b"
         },
         {
           "file": "11_fu_steps_energy_1x2.png",
-          "sha256": "8a568ecc984f607dfeadca484fc1b77cc5e6e394b75ee1ae6c3b76dccbdacc11"
+          "sha256": "87459f1d4eed21d0e2cffa34e636124e8e007cf7da6eff95dab4c96a4d54d868"
         },
         {
           "file": "11_fu_steps_energy_1x2.svg",
-          "sha256": "32dd11443a9b081145cdd23b6e9f19821027e25d2975e27511f23c2c0361b82e"
+          "sha256": "ca06869cc8b2dc3a76853f79be52bc1f5b28e844801f3f09bfab9f1776f5ab73"
         }
       ],
       "kind": "paired_bar",
@@ -287,7 +287,32 @@
         ],
         "legend_pt": 12.0,
         "legend_gap_pt": 8.000000000000023,
-        "fixed_pdf_width_pt": 532.8000000000001
+        "fixed_pdf_width_pt": 532.8000000000001,
+        "category_layout_revision": "matched_rank_fu_v1",
+        "physical_panels": [
+          {
+            "width_pt": 205.128,
+            "height_pt": 174.798,
+            "category_gap_pt": [
+              9.791052631578937,
+              7.091052631578936,
+              8.441052631578936
+            ],
+            "category_pt": 12.0,
+            "one_line": true
+          },
+          {
+            "width_pt": 205.128,
+            "height_pt": 174.798,
+            "category_gap_pt": [
+              9.791052631578937,
+              7.091052631578978,
+              8.441052631578895
+            ],
+            "category_pt": 12.0,
+            "one_line": true
+          }
+        ]
       }
     },
     {
@@ -34577,8 +34602,9 @@
     "final_final_charts/downlink_bandwidth/data/retrieval_energy_airscape_query_ranks.json": "f2dbaaa65a9f4db49063ea2b6fa4c02697636dc7b15f7bf683970690a8318a78",
     "final_final_charts/downlink_bandwidth/data/retrieval_energy_airscape_paired_counts.json": "c41d3799bcbd7d46573241f78bcffee562206d7c9b3fe4f10069b0a1d8d5978b",
     "tools/uav_convergence_v2/tgcn_rank_comparison_v5.py": "a11e80372c1c70a1d1297640b727974a8f9f9a4175fe1f2616b2a72f741053e2",
-    "tools/uav_convergence_v2/paper_typography_v1.py": "e4ea3424942f929bd57ebe260495101ae27fe00ae3985104a7e68c5984fb7dcc",
-    "tools/uav_convergence_v2/paper_boxplot_refine_v2.py": "d058e583c993121423dc82700d8c56ad6e61911d4dae5bc4d54f3e69c6ad824e"
+    "tools/uav_convergence_v2/paper_typography_v1.py": "b47b86688c232577b40680f06bd4836cf737997f2be10b810c3750a4a2cf2758",
+    "tools/uav_convergence_v2/paper_boxplot_refine_v2.py": "ad4d965c0822a3d4ebf56b78b87bd3550dceaa316ef88db159d6eddbb222a2c8",
+    "tools/uav_convergence_v2/match_rank_fu_layout_v1.py": "7052c5df8242d647d90af8488308bd6c546b5bf96110f4dc32eab32e4da20520"
   },
   "fresh_FU_workload_arms": 40,
   "original_figures": {
