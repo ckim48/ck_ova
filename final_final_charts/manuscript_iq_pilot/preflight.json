@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "paper_gradient_matches_existing_equations": true,
+  "gradient_max_error": 2.086162567138672e-07,
+  "actual_HVP_finite": true,
+  "phase_alignment_and_complex_energy_verified": true,
+  "zero_and_single_task_verified": true,
+  "block_count": 160,
+  "source_sha256": {
+    "tools/uav_convergence_v2/manuscript_iq_study_v1.py": "166e921427307cf3a828f4447028b880746afd09362dcd876508eb0a5ac4d043",
+    "tools/uav_convergence_v2/manuscript_iq_radio_v1.py": "77e82d070a322f8572a3f5a6b333486c47772e313d06dc4d38117cad9b98ad74"
+  }
+}

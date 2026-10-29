@@ -1,0 +1,38 @@
+[
+  {
+    "dataset": "CapERA",
+    "method": "iq_only",
+    "mR_change_pp": 0.1953125,
+    "KL_change": -7.493048906326294e-05,
+    "KL_reduction_percent": 0.4109763415831691,
+    "energy_reduction_percent": -5.0442974065619595,
+    "delay_reduction_percent": -5.042186474530319
+  },
+  {
+    "dataset": "CapERA",
+    "method": "paper_iq",
+    "mR_change_pp": -0.5468751614292486,
+    "KL_change": -0.014891521306708455,
+    "KL_reduction_percent": 81.67653813218465,
+    "energy_reduction_percent": -4.765846404570828,
+    "delay_reduction_percent": -4.763811599523016
+  },
+  {
+    "dataset": "AirScape",
+    "method": "iq_only",
+    "mR_change_pp": 0.0,
+    "KL_change": 7.398892194032669e-06,
+    "KL_reduction_percent": -0.10108204676226862,
+    "energy_reduction_percent": -3.5217855122689157,
+    "delay_reduction_percent": -3.5193869209707573
+  },
+  {
+    "dataset": "AirScape",
+    "method": "paper_iq",
+    "mR_change_pp": -0.13020833333333393,
+    "KL_change": -0.00625810120254755,
+    "KL_reduction_percent": 85.49680976688339,
+    "energy_reduction_percent": -3.4988059302742958,
+    "delay_reduction_percent": -3.4965248147425854
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "phase_compensation": true,
+  "orthonormal_expansion_energy": true,
+  "separate_IQ_recovery": true,
+  "shared_power_verified": true,
+  "monte_carlo_trials": 4000,
+  "analytic_MSE": [
+    0.0010025307448052218,
+    0.00017985358338251564
+  ],
+  "observed_MSE": [
+    0.0010023649125902932,
+    0.0001796721188455328
+  ],
+  "zero_and_single_task": true,
+  "source_sha256": {
+    "tools/uav_convergence_v2/manuscript_iq_check_v1.py": "72bb5d91e41bb3c89337ea9902ee45432285f55a18bc4f0bbf217799d6b844ea",
+    "tools/uav_convergence_v2/manuscript_iq_radio_v1.py": "77e82d070a322f8572a3f5a6b333486c47772e313d06dc4d38117cad9b98ad74"
+  }
+}
