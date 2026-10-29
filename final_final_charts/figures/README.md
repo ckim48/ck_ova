@@ -7,6 +7,6 @@ Use every PDF with `width=\linewidth`. All four have the same 532.8 pt canvas wi
 - `01_round_loss_1x2`: current P-KS round validation loss.
 - `05_time_mr_1x2`: current P-KS retained mR under the shared time budget.
 
-The rank and FU bar figures have identical 7.4 × 3.735 inch canvases and 205.128 × 174.798 pt plotting panels. Both use single-line 12 pt algorithm names, with at least 6 pt between adjacent names. The FU legend remains 12 pt and 8 pt above the panels. All measured values and outliers are unchanged. The 200/400 kJ rank alternatives use the same layout; the historic 650 kJ export is unchanged.
+The rank and FU bar figures have identical 7.4 × 3.735 inch canvases and 205.128 × 174.798 pt plotting panels. Both use single-line 12 pt algorithm names, with at least 6 pt between adjacent names. Both figures show all four panel borders. The FU legend remains 12 pt and 8 pt above the panels. All measured values and outliers are unchanged. The 200/400 kJ rank alternatives use the same layout; the historic 650 kJ export is unchanged.
 
 Reapply this focused presentation pass after rebuilding plots: `.venv/bin/python tools/uav_convergence_v2/match_rank_fu_layout_v1.py`.

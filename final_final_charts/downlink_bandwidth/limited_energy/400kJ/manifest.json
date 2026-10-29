@@ -827,18 +827,18 @@
   "files": [
     {
       "file": "19_all_method_rank_boxplot_1x2.pdf",
-      "sha256": "d0b3466af13382bb02862487214f44ac2a5a229dee2e51e93099aa8302431b44"
+      "sha256": "936d05e07e11246b7fff2129898d24d66ad2c338f3957cf2af614eb72623204b"
     },
     {
       "file": "19_all_method_rank_boxplot_1x2.png",
-      "sha256": "683ad41280f1af57b9d1941d7903460a528fe179dfc3480bb9c5c073fcde3c61"
+      "sha256": "c6804585b111af19b4083c729b1e215ca2c5ae901180319a1d64964a07333d43"
     },
     {
       "file": "19_all_method_rank_boxplot_1x2.svg",
-      "sha256": "da6c8d43caf7701e8f570a3e56ff8365d1e8f02c1f2f81ce03a04984c347433d"
+      "sha256": "d07c8ac6bb52260ee03b9d9a3e8e35a5d718618f6a1b91d2759b97edcab87e44"
     }
   ],
-  "display_revision": "title_free_full_range_v3",
+  "display_revision": "title_free_full_range_v4",
   "title_removed": true,
   "detail_axes": [],
   "detail_panels_removed": true,
@@ -991,8 +991,9 @@
   },
   "folder": "final_final_charts/downlink_bandwidth/limited_energy/400kJ",
   "presentation_source_sha256": {
-    "tools/uav_convergence_v2/match_rank_fu_layout_v1.py": "7052c5df8242d647d90af8488308bd6c546b5bf96110f4dc32eab32e4da20520",
+    "tools/uav_convergence_v2/match_rank_fu_layout_v1.py": "c3e91cdbc04cdd682ca85b8add9b287d5bd6da720b2755177aba813bafbebc9f",
     "tools/uav_convergence_v2/paper_typography_v1.py": "b47b86688c232577b40680f06bd4836cf737997f2be10b810c3750a4a2cf2758",
-    "tools/uav_convergence_v2/paper_boxplot_refine_v2.py": "ad4d965c0822a3d4ebf56b78b87bd3550dceaa316ef88db159d6eddbb222a2c8"
-  }
+    "tools/uav_convergence_v2/paper_boxplot_refine_v2.py": "061fb9c52e09c92f18232c1338ea5867894f7d80512d0fdbbe963a4ca6fde0ee"
+  },
+  "all_four_spines_visible": true
 }

@@ -14,7 +14,7 @@ BAR = '11_fu_steps_energy_1x2'
 RANK = rank.NAME
 
 
-def main():
+def main(only_rank=False):
     report.setup()
     report.prior.chart.plt.rcParams.update({'savefig.bbox': None, 'hatch.linewidth': .55})
     rank.SIZE = typography.SIZE
@@ -49,10 +49,10 @@ def main():
     manifest = report.read(path)
     series = report.read(DEST/'data/tgcn_plot_series.json')
     other_figures = {f['file']: report.sha(DEST/f['file']) for figure in manifest['figures']
-                     if figure['name'] != BAR for f in figure['files']}
+                     if only_rank or figure['name'] != BAR for f in figure['files']}
     index = next(i for i, f in enumerate(manifest['figures']) if f['name'] == BAR)
     old = copy.deepcopy(manifest['figures'][index])
-    result = typography.render(DEST, old, series)
+    result = old if only_rank else typography.render(DEST, old, series)
     assert old['axes'] == result['axes']
     manifest['figures'][index] = result
     manifest['source_sha256'].update(sources)
@@ -117,14 +117,18 @@ def main():
         '- `05_time_mr_1x2`: current P-KS retained mR under the shared time budget.\n\n'
         'The rank and FU bar figures have identical 7.4 × 3.735 inch canvases and '
         '205.128 × 174.798 pt plotting panels. Both use single-line 12 pt algorithm names, '
-        'with at least 6 pt between adjacent names. The FU legend remains 12 pt and 8 pt '
+        'with at least 6 pt between adjacent names. Both figures show all four panel borders. '
+        'The FU legend remains 12 pt and 8 pt '
         'above the panels. All measured values and outliers are unchanged. The 200/400 kJ '
         'rank alternatives use the same layout; the historic 650 kJ export is unchanged.\n\n'
         'Reapply this focused presentation pass after rebuilding plots: '
         '`.venv/bin/python tools/uav_convergence_v2/match_rank_fu_layout_v1.py`.\n')
-    print(dict(passed=True, updated_figures=len(updated), physical_panels_pt=vector_panels[0],
+    print(dict(passed=True, updated_figures=3 if only_rank else len(updated), physical_panels_pt=vector_panels[0],
                measurement_files_unchanged=len(before)), flush=True)
 
 
 if __name__ == '__main__':
-    main()
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--only-rank', action='store_true')
+    main(only_rank=parser.parse_args().only_rank)

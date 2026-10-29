@@ -34,8 +34,8 @@ def render(folder, figure):
         main.set_ylabel('GT rank', fontsize=14, labelpad=4)
         main.set_xticks(range(4), list(report.METHODS.values()), fontsize=typography.TICK)
         main.tick_params(axis='x', length=0, pad=6)
-        for side in ['top', 'right']:
-            main.spines[side].set_visible(False)
+        for spine in main.spines.values():
+            spine.set_visible(True)
         for method_index, method in enumerate(report.METHODS):
             s = next(b for b in result['boxes'] if (b['dataset'], b['method']) == (ds, method))
             color, marker, _ = report.PALETTE[method_index]
@@ -84,6 +84,7 @@ def render(folder, figure):
                 assert bbox.x0 >= -1 and bbox.y0 >= -1 and bbox.x1 <= fig.bbox.width+1 and bbox.y1 <= fig.bbox.height+1, t.get_text()
     assert len(fig.axes) == 2 and fig._suptitle is None
     assert all(ax.get_ylabel() == 'GT rank' for ax in fig.axes)
+    assert all(spine.get_visible() for ax in fig.axes for spine in ax.spines.values())
     layout = typography.category_layout_audit(fig)
     files = []
     for ext in ['pdf', 'png', 'svg']:
@@ -91,7 +92,8 @@ def render(folder, figure):
         fig.savefig(path, dpi=350, bbox_inches=None)
         files.append(dict(file=path.name, sha256=report.sha(path)))
     plt.close(fig)
-    result.update(files=files, display_revision='title_free_full_range_v3', title_removed=True,
+    result.update(files=files, display_revision='title_free_full_range_v4', title_removed=True,
+        all_four_spines_visible=True,
         detail_axes=[], detail_panels_removed=True, y_label='GT rank', draw_checks=draw_checks,
         palette_revision='opaque_shared_palette_medians', lower_rank_is_better=True,
         caption='GT-rank distributions of all retained text queries at the same 650 kJ budget. Lower ranks are better. Both panels show the full 0--700 range with every outlier. Opaque box colors and median markers match the method palette in the bar and line charts. Every method uses the same median emphasis; hollow outlier markers receive deterministic horizontal spreading only. Boxes are query distributions, not confidence intervals over independent training seeds.')
