@@ -1,0 +1,35 @@
+{
+  "registered_unix": 1793371899.7038069,
+  "source_sha256": "cbe09c90f06b166dcaad0289b5c064f7f3e64baffb6c3cb32d363170881c1238",
+  "settings": {
+    "r1_p0.25": {
+      "retention": 1,
+      "progress": 0.25
+    },
+    "r1_p1": {
+      "retention": 1,
+      "progress": 1.0
+    },
+    "r0_p0.25": {
+      "retention": 0,
+      "progress": 0.25
+    },
+    "r0_p1": {
+      "retention": 0,
+      "progress": 1.0
+    }
+  },
+  "modes": [
+    "combined",
+    "combined_local",
+    "iq_progress"
+  ],
+  "motivation": "All four RMS candidates failed the joint mR/common-KL/matched-KL criterion. Preserve them and defer their planned physical confirmation because no qualifying candidate emerged. This is a new disclosed development hypothesis, not a hidden extension of the original grid.",
+  "learning": "Same manuscript cosine FU and uniform16 FL. Retained CE coefficient in FU is either1 (original) or0 (avoid duplicated retained training already performed by FL). Both comparators use exactly the same selected loss. No proxy or evaluation reference is a training teacher.",
+  "rule": "Minimize squared distance from the FL-only global step while preserving its first-order retained progress and requiring rho times the FU-only first-order progress. Restrict norm to ||L||+||U||. Analytic two-halfspace solution; if radius prevents the target, log the unmet FU progress explicitly. Estimates do not certify true loss decrease.",
+  "baselines": "combined transmits L+rho*U with rho known before transmission. combined_local applies the same progress rule independently at every UAV, then combines. iq_progress applies it to separately recovered GLOBAL updates. Equal data/steps/LR and actual waveform costs in any subsequent physical run.",
+  "grid": "4 settings x3 methods x2 datasets, seed0 exact pilot. Shared retention/rho choice across datasets. All outcomes retained. No RF/energy claims for the pilot.",
+  "evaluation": "Both fixed common and uniform/equal-policy matched retrains; all native forget/retained queries. FU terms are also compared to a paired FL-only control before interpreting forgetting quality.",
+  "selection": "Same worst-normalized-margin score as RMS pilot, using mR and common/matched KL against both Combined baselines on both datasets. No guaranteed winner. Any later selection/amendment must be explicit.",
+  "theoretical_scope": "A nonlinear head-side control changes the ideal update. The earlier linear-sum C8 distortion guarantee does not apply after this rule."
+}

@@ -1,0 +1,18 @@
+% Insert after the wireless settings paragraph.
+Unless otherwise specified, the uplink bandwidth is 1~MHz,
+the block coherence time is 10~ms, and the network RF
+transmission energy budget per round is 0.1~J.
+
+The computation delay and dynamic CPU energy are modeled
+using the executed CPU cycles and processor frequency
+\cite{Tang_TWC_2025,Liang_TWC_2025_Energy}.
+We set the processor frequency to 1.5~GHz, the effective
+switched capacitance to $10^{-27}$, and the active board
+power to 2~W for each UAV.
+The computation workload is estimated from the executed
+multiply--accumulate operations, assuming eight operations
+per CPU cycle.
+The hovering power is 168.49~W, corresponding to the sum
+of the blade-profile and induced powers of 79.86 and
+88.63~W, respectively \cite{Wang_TCOMM_2025_Rechargeable}.
+The power amplifier efficiency is set to 0.35.

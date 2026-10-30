@@ -1,0 +1,60 @@
+{
+  "registered_unix": 1793371270.2921157,
+  "settings": {
+    "block_slow": {
+      "group": 128,
+      "beta": 0.99,
+      "blend": 1.0
+    },
+    "block_blend": {
+      "group": 128,
+      "beta": 0.9,
+      "blend": 0.5
+    },
+    "diagonal_slow": {
+      "group": 1,
+      "beta": 0.99,
+      "blend": 1.0
+    },
+    "diagonal_blend": {
+      "group": 1,
+      "beta": 0.9,
+      "blend": 0.5
+    }
+  },
+  "modes": [
+    "combined",
+    "combined_reset",
+    "iq_separate"
+  ],
+  "source_sha256": {
+    "tools/uav_convergence_v2/adaptive_iq_pilot_v2.py": "fdb816ba807d67029b1b905de43c11c16fe74de5114316730586357590df3400",
+    "tools/uav_convergence_v2/adaptive_iq_pilot_v1.py": "db5475357efcf253ef3eb1f5b4c446dc04a50bc76210a3b5519feeb146ffed4b",
+    "tools/uav_convergence_v2/adaptive_iq_math_v2.py": "10b0d3975eb4837801d0a5b7a16e2b52171d7e6f8ce5202c49216302ccbd4324",
+    "tools/uav_convergence_v2/adaptive_iq_math_v1.py": "a5c92aca3a9fc7c715b1fb484e9a250cc7d62845fcfe099ad29bc9feb42a2594",
+    "tools/uav_convergence_v2/head_fusion_study_v1.py": "c43c352ba74b017e9bde6b50eff3196587d71642f6f5756534575a5c4bd657b7",
+    "tools/uav_convergence_v2/joint_quality_control_v1.py": "8ed896368ab70dbe656ddedd89825080a5acd46cbd3eca1a38eaba84697c8c29"
+  },
+  "design": "Four predeclared settings x three policies x two datasets, seed0. All24 complete200-round exact-aggregation development runs and8 policy-matched retained-only retrains are reported. No condition-specific parameter choice.",
+  "learning": "Supplied manuscript equations: uniform16 FL, actual minibatch-size weights;3 positive-pair cosine +1 retained CE+3 embedding-softmax request-start consistency KL. Same warm20, request timing,45 requests/225 FU steps. No future-deletion proxy is used by this objective.",
+  "head": "RMS-type second-moment adaptation, group128 or coordinate groups; predeclared beta/blend pairs. FL and FU have separate states only for iq_separate. FU state resets when request cohort changes. combined has one shared state; combined_reset also resets its state when the request cohort changes. Same per-round total update norm, no larger step budget.",
+  "selection": "Development mR and common/matched KL are already-inspected cohort metrics, NOT a hidden test. For each setting compare I/Q to BOTH Combined policies on BOTH datasets. Joint success requires mR no lower and both KLs no larger everywhere, with at least one strict gain. Select max worst normalized margin, tie-break by smaller state. If no joint winner, explicitly report that and select the best tradeoff for physical falsification, never call it a win.",
+  "score": "Minimum of mR difference/0.1 percentage point, common KL fractional reduction/0.01, matched KL fractional reduction/0.01, across both datasets and both baselines.",
+  "confirm": "One common selected setting is frozen before physical outcomes. Same-candidate physical comparisons use new minibatch/radio seeds1,2 plus development seed0, same data partition/warm start. These are stochastic repeats conditional on existing cohorts, not independent data validation. Report all three seeds and all baselines.",
+  "realism": "Exact pilot makes no radio/energy claim. Physical follow-up must include noisy observations, actual RF caps, head computation, and digital transfer of float32 optimizer statistics if the aggregation head changes. Reference predictions never enter optimization.",
+  "limitation": "New nonlinear optimizer; original linear-sum zero-mean distortion theorem does not certify post-optimizer output. Literature motivates adaptive OTA optimization but does not establish this FL/FU rule.",
+  "references": [
+    {
+      "title": "Adaptive Federated Learning Over the Air",
+      "venue": "IEEE TSP2025",
+      "doi": "10.1109/TSP.2025.3585002",
+      "url": "https://arxiv.org/pdf/2403.06528"
+    },
+    {
+      "title": "Adaptive Federated Optimization",
+      "venue": "ICLR2021",
+      "url": "https://research.google/pubs/adaptive-federated-optimization/"
+    }
+  ],
+  "correction": "v1 failed at reference round200 because cosine LR is exactly0. No candidate outcome was observed. Treat a zero-LR/zero-update/zero-noise endpoint as an exact no-op. Preserve v1 and restart identical candidates."
+}

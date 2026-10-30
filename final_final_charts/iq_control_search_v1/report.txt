@@ -1,0 +1,41 @@
+I/Q controller search: complete development results (2026-10-30/31)
+
+48 exact-aggregation development runs; eight fresh RMS-policy retrains; two paired FL-only controls.
+All eight candidate configurations failed the joint retained-mR/common-KL/matched-KL criterion.
+Existing Proposed and manuscript performance figures are unchanged. No candidate is promoted.
+
+60/61 show progress controller r1_p1, selected by the declared worst-margin rule.
+This rule changes the learning update: the head minimally changes the FL step subject to
+estimated FL preservation and an FU progress target, with a norm trust region.
+C-Sum has the same preknown FU scaling; C-Local uses the same rule locally before aggregation.
+The experiment uses the manuscript cosine FU loss (3 forget +1 retained CE +3 consistency).
+These are exact-aggregation pilots. No wireless/energy advantage or statistical significance is claimed.
+The existing linear-sum distortion guarantee does not apply to this nonlinear head rule.
+
+Quality tradeoffs for the selected progress rule:
+CapERA vs combined: matched-KL reduction 80.54%; retained-mR change -0.35156 percentage points.
+CapERA vs combined_local: matched-KL reduction 69.13%; retained-mR change -0.11719 percentage points.
+AirScape vs combined: matched-KL reduction 79.82%; retained-mR change -0.06510 percentage points.
+AirScape vs combined_local: matched-KL reduction 66.92%; retained-mR change -0.06510 percentage points.
+
+Additional paired-control finding:
+CapERA: r1_p0.25 I/Q is tensor-identical to FL-only: True. Selected r1_p1 KL is 9.372 times FL-only KL.
+AirScape: r1_p0.25 I/Q is tensor-identical to FL-only: True. Selected r1_p1 KL is 1.497 times FL-only KL.
+The weak progress target can therefore suppress every FU contribution: it is not evidence of better forgetting.
+
+FL-only control is included because closer retraining KL alone is not proof of successful forgetting.
+Its requests still exclude the same samples after arrival; FU gradients alone are disabled.
+All 48 outcomes, including less favorable configurations, are in all_48_pilot_results.csv.
+The same previously inspected cohorts are used for candidate development. There is no held-out test claim.
+Do not compare the absolute values to the old Proposed as if only the radio changed:
+this pilot uses the supplied manuscript objective, whereas earlier charts use a different FU policy.
+
+RMS failed startup attempts and reference zero-LR fix are preserved under results/adaptive_iq_pilot_v1_20261030.
+The subsequent progress protocol explicitly deferred RMS physical confirmation after failed selection.
+The eight frozen-update radio/accounting checks are under results/adaptive_iq_physical_v1_20261030.
+They validate implementation mechanics only; no physical training campaign was run.
+
+Reproduce controls/report: tools/uav_convergence_v2/iq_control_search_report_v1.py controls / report
+RMS motivation: Adaptive Federated Learning Over the Air, IEEE TSP 2025,
+https://doi.org/10.1109/TSP.2025.3585002 ; https://arxiv.org/pdf/2403.06528
+Our AWGN, FL/FU, reset and norm-preserving rule differs from that paper; its theorem is not imported.

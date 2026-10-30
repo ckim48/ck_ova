@@ -1,0 +1,3024 @@
+{
+  "hover": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          7
+        ]
+      ],
+      "date-time": "2026-10-07T15:25:07Z",
+      "timestamp": 1791386707150,
+      "version": "4.3.3"
+    },
+    "reference-count": 43,
+    "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+    "issue": "6",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              6,
+              1
+            ]
+          ],
+          "date-time": "2025-06-01T00:00:00Z",
+          "timestamp": 1748736000000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              6,
+              1
+            ]
+          ],
+          "date-time": "2025-06-01T00:00:00Z",
+          "timestamp": 1748736000000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              6,
+              1
+            ]
+          ],
+          "date-time": "2025-06-01T00:00:00Z",
+          "timestamp": 1748736000000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100014013",
+        "name": "UK Research and Innovation",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "EP/Y02785X/1"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "EP/Y02785X/1"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100014013",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100001809",
+        "name": "National Natural Science Foundation of China",
+        "doi-asserted-by": "crossref",
+        "award": [
+          "62101389"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "62101389"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100001809",
+            "id-type": "DOI",
+            "asserted-by": "crossref"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100012166",
+        "name": "National Key Research and Development Program of China",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "2023YFE0206600"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "2023YFE0206600"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100012166",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100001809",
+        "name": "Fundamental Research Funds for the Central Universities",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "2042024kf1006"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "2042024kf1006"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100001809",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "IEEE Trans. Commun."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2025,
+          6
+        ]
+      ]
+    },
+    "DOI": "10.1109/tcomm.2024.3493812",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2024,
+          11,
+          7
+        ]
+      ],
+      "date-time": "2024-11-07T14:52:52Z",
+      "timestamp": 1730991172000
+    },
+    "page": "4137-4152",
+    "source": "Crossref",
+    "is-referenced-by-count": 20,
+    "title": [
+      "Rechargeable UAV Trajectory Optimization for Real-Time Persistent Data Collection of Large-Scale Sensor Networks"
+    ],
+    "prefix": "10.1109",
+    "volume": "73",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-5716-1636",
+        "authenticated-orcid": false,
+        "given": "Rui",
+        "family": "Wang",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Electronic Information School, Wuhan University, Wuhan, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-8188-9379",
+        "authenticated-orcid": false,
+        "given": "Deshi",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Electronic Information School, Wuhan University, Wuhan, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-0043-3266",
+        "authenticated-orcid": false,
+        "given": "Qingqing",
+        "family": "Wu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Electronic Engineering, Shanghai Jiao Tong University, Shanghai, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-7479-2280",
+        "authenticated-orcid": false,
+        "given": "Kaitao",
+        "family": "Meng",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Electronic and Electrical Engineering, University College London, London, U.K."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Boning",
+        "family": "Feng",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Electronic Information School, Wuhan University, Wuhan, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0008-1288-249X",
+        "authenticated-orcid": false,
+        "given": "Lele",
+        "family": "Cong",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Electronic Information School, Wuhan University, Wuhan, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "key": "ref1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICCWorkshops59551.2024.10615844"
+      },
+      {
+        "key": "ref2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/COMST.2023.3317242"
+      },
+      {
+        "key": "ref3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JIOT.2023.3284813"
+      },
+      {
+        "key": "ref4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TWC.2022.3197623"
+      },
+      {
+        "key": "ref5",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TWC.2022.3224143"
+      },
+      {
+        "key": "ref6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TWC.2021.3131580"
+      },
+      {
+        "key": "ref7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JSAC.2020.3000879"
+      },
+      {
+        "key": "ref8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/LWC.2019.2895597"
+      },
+      {
+        "key": "ref9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TIE.2018.2823658"
+      },
+      {
+        "key": "ref10",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TCOMM.2019.2944911"
+      },
+      {
+        "key": "ref11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JIOT.2021.3078746"
+      },
+      {
+        "key": "ref12",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/COMST.2019.2902862"
+      },
+      {
+        "key": "ref13",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TVT.2019.2959808"
+      },
+      {
+        "key": "ref14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICCW.2019.8756751"
+      },
+      {
+        "key": "ref15",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JIOT.2022.3189214"
+      },
+      {
+        "key": "ref16",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.apenergy.2019.113823"
+      },
+      {
+        "key": "ref17",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JIOT.2018.2887086"
+      },
+      {
+        "key": "ref18",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JSEN.2018.2868327"
+      },
+      {
+        "key": "ref19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1155/2021/6687719"
+      },
+      {
+        "key": "ref20",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/s19061334"
+      },
+      {
+        "key": "ref21",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TIE.2018.2835378"
+      },
+      {
+        "key": "ref22",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/IECON.2017.8217215"
+      },
+      {
+        "key": "ref23",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TWC.2020.2971987"
+      },
+      {
+        "key": "ref24",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JIOT.2021.3097918"
+      },
+      {
+        "key": "ref25",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.optlastec.2021.107283"
+      },
+      {
+        "key": "ref26",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JIOT.2019.2943147"
+      },
+      {
+        "key": "ref27",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICCWorkshops53468.2022.9814650"
+      },
+      {
+        "key": "ref28",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TCOMM.2021.3124950"
+      },
+      {
+        "key": "ref29",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TGCN.2022.3164602"
+      },
+      {
+        "key": "ref30",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TMC.2021.3075083"
+      },
+      {
+        "key": "ref31",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TCOMM.2022.3199027"
+      },
+      {
+        "key": "ref32",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MCOMSTD.0001.1900021"
+      },
+      {
+        "key": "ref33",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TVT.2022.3175318"
+      },
+      {
+        "key": "ref34",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TWC.2019.2902559"
+      },
+      {
+        "key": "ref35",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.cie.2015.12.007"
+      },
+      {
+        "key": "ref36",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/LINDI.2011.6031159"
+      },
+      {
+        "key": "ref37",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0270-0255(87)90004-2"
+      },
+      {
+        "key": "ref38",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1287/opre.26.4.681"
+      },
+      {
+        "key": "ref39",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ejor.2012.11.040"
+      },
+      {
+        "key": "ref40",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TVT.2021.3061243"
+      },
+      {
+        "key": "ref41",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0167-6377(83)90048-2"
+      },
+      {
+        "key": "ref42",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0377-2217(99)00284-2"
+      },
+      {
+        "key": "ref43",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/LWC.2023.3309625"
+      }
+    ],
+    "container-title": [
+      "IEEE Transactions on Communications"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx8/26/11040057/10746547.pdf?arnumber=10746547",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          6,
+          19
+        ]
+      ],
+      "date-time": "2025-06-19T13:38:28Z",
+      "timestamp": 1750340308000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://ieeexplore.ieee.org/document/10746547/"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          6
+        ]
+      ]
+    },
+    "references-count": 43,
+    "journal-issue": {
+      "issue": "6"
+    },
+    "URL": "https://doi.org/10.1109/tcomm.2024.3493812",
+    "relation": {},
+    "ISSN": [
+      "0090-6778",
+      "1558-0857"
+    ],
+    "issn-type": [
+      {
+        "value": "0090-6778",
+        "type": "print"
+      },
+      {
+        "value": "1558-0857",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          6
+        ]
+      ]
+    }
+  },
+  "remoteclip": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          29
+        ]
+      ],
+      "date-time": "2026-10-29T18:25:20Z",
+      "timestamp": 1793298320615,
+      "version": "4.5.0"
+    },
+    "reference-count": 111,
+    "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2024-01-01T00:00:00Z",
+          "timestamp": 1704067200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2024-01-01T00:00:00Z",
+          "timestamp": 1704067200000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2024-01-01T00:00:00Z",
+          "timestamp": 1704067200000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100001809",
+        "name": "National Natural Science Foundation of China",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "62372155"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "62372155"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100001809",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100001809",
+        "name": "National Natural Science Foundation of China",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "32371877"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "32371877"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100001809",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100012130",
+        "name": "Chinese Aeronautical Establishment",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "2022Z071108001"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "2022Z071108001"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100012130",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "name": "Joint Fund of Ministry of Education for Equipment Pre-Research",
+        "award": [
+          "8091B022123"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "8091B022123"
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100018581",
+        "name": "Water Science and Technology Project of Jiangsu Province",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "2021063"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "2021063"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100018581",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "name": "Technology Winter Olympics Special Project",
+        "award": [
+          "201001D"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "201001D"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Forest Fire Comprehensive System Construction-Unmanned Aerial Patrol Monitoring System of Chongli",
+        "award": [
+          "DA2-20001"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "DA2-20001"
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100013088",
+        "name": "Qinglan Project of Jiangsu Province",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/501100013088",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "IEEE Trans. Geosci. Remote Sensing"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "DOI": "10.1109/tgrs.2024.3390838",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2024,
+          4,
+          18
+        ]
+      ],
+      "date-time": "2024-04-18T13:29:23Z",
+      "timestamp": 1713446963000
+    },
+    "page": "1-16",
+    "source": "Crossref",
+    "is-referenced-by-count": 479,
+    "title": [
+      "RemoteCLIP: A Vision Language Foundation Model for Remote Sensing"
+    ],
+    "prefix": "10.1109",
+    "volume": "62",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-8746-9845",
+        "authenticated-orcid": false,
+        "given": "Fan",
+        "family": "Liu",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "College of Computer Science and Software Engineering, Hohai University, Nanjing, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-8172-2894",
+        "authenticated-orcid": false,
+        "given": "Delong",
+        "family": "Chen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Electronic and Computer Engineering, The Hong Kong University of Science and Technology, Hong Kong, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Zhangqingyun",
+        "family": "Guan",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "College of Computer and Information, Hohai University, Nanjing, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Xiaocong",
+        "family": "Zhou",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "College of Computer and Information, Hohai University, Nanjing, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jiale",
+        "family": "Zhu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "College of Computer and Information, Hohai University, Nanjing, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-8793-8610",
+        "authenticated-orcid": false,
+        "given": "Qiaolin",
+        "family": "Ye",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "College of Information Science and Technology, Nanjing Forestry University, Nanjing, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-5794-9458",
+        "authenticated-orcid": false,
+        "given": "Liyong",
+        "family": "Fu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Forest Resource Information Techniques, Chinese Academy of Forestry, Beijing, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-5822-8233",
+        "authenticated-orcid": false,
+        "given": "Jun",
+        "family": "Zhou",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Information and Communication Technology, Griffith University, Nathan, QLD, Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "key": "ref1",
+        "article-title": "On the opportunities and risks of foundation models",
+        "author": "Bommasani",
+        "year": "2021",
+        "journal-title": "arXiv:2108.07258"
+      },
+      {
+        "key": "ref2",
+        "first-page": "1597",
+        "article-title": "A simple framework for contrastive learning of visual representations",
+        "volume-title": "Proc. 37th Int. Conf. Mach. Learn.",
+        "volume": "119",
+        "author": "Chen"
+      },
+      {
+        "key": "ref3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR52688.2022.01553"
+      },
+      {
+        "key": "ref4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICCV51070.2023.00371"
+      },
+      {
+        "key": "ref5",
+        "first-page": "4171",
+        "article-title": "BERT: Pre-training of deep bidirectional transformers for language understanding",
+        "volume-title": "Proc. Conf. North Amer. Chapter Assoc. Comput. Linguistics, Hum. Lang. Technol.",
+        "volume": "1",
+        "author": "Devlin"
+      },
+      {
+        "key": "ref6",
+        "first-page": "1",
+        "article-title": "Language models are few-shot learners",
+        "volume-title": "Proc. Adv. Neural Inf. Process. Syst., Annu. Conf. Neural Inf. Process. Syst.",
+        "author": "Brown"
+      },
+      {
+        "key": "ref7",
+        "article-title": "GPT-4 technical report",
+        "volume-title": "arXiv:2303.08774",
+        "author": "Achiam",
+        "year": "2023"
+      },
+      {
+        "key": "ref8",
+        "first-page": "8748",
+        "article-title": "Learning transferable visual models from natural language supervision",
+        "volume-title": "Proc. Int. Conf. Mach. Learn.",
+        "author": "Radford"
+      },
+      {
+        "key": "ref9",
+        "first-page": "23716",
+        "article-title": "Flamingo: A visual language model for few-shot learning",
+        "volume-title": "Proc. NeurIPS",
+        "author": "Alayrac"
+      },
+      {
+        "key": "ref10",
+        "first-page": "1",
+        "article-title": "BEiT: BERT pre-training of image transformers",
+        "volume-title": "Proc. 10th Int. Conf. Learn. Represent. (ICLR)",
+        "author": "Bao"
+      },
+      {
+        "key": "ref11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR52688.2022.00943"
+      },
+      {
+        "key": "ref12",
+        "first-page": "197",
+        "article-title": "SatMAE: Pre-training transformers for temporal and multi-spectral satellite imagery",
+        "volume-title": "Proc. NeurIPS",
+        "author": "Cong"
+      },
+      {
+        "key": "ref13",
+        "article-title": "Scale-MAE: A scale-aware masked autoencoder for multiscale geospatial representation learning",
+        "author": "Reed",
+        "year": "2022",
+        "journal-title": "arXiv:2212.14532"
+      },
+      {
+        "key": "ref14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TGRS.2022.3222818"
+      },
+      {
+        "key": "ref15",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/jstars.2024.3401772"
+      },
+      {
+        "key": "ref16",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TGRS.2022.3194732"
+      },
+      {
+        "key": "ref17",
+        "article-title": "GFM: Building geospatial foundation models via continual pretraining",
+        "author": "Mendieta",
+        "year": "2023",
+        "journal-title": "arXiv:2302.04476"
+      },
+      {
+        "key": "ref18",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/cvpr52729.2023.00604"
+      },
+      {
+        "key": "ref19",
+        "first-page": "20149",
+        "article-title": "Architecture-agnostic masked image modeling—From ViT back to CNN",
+        "volume-title": "Proc. Int. Conf. Mach. Learn. (ICML)",
+        "volume": "202",
+        "author": "Li"
+      },
+      {
+        "key": "ref20",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/cvpr52729.2023.00765"
+      },
+      {
+        "key": "ref21",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/cvpr52729.2023.01391"
+      },
+      {
+        "key": "ref22",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/cvpr52729.2023.00212"
+      },
+      {
+        "key": "ref23",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/cvpr52729.2023.01392"
+      },
+      {
+        "key": "ref24",
+        "article-title": "What do self-supervised vision transformers learn?",
+        "volume-title": "Proc. 11th Int. Conf. Learn. Represent. (ICLR)",
+        "author": "Park"
+      },
+      {
+        "key": "ref25",
+        "first-page": "1",
+        "article-title": "ImageNet-trained CNNs are biased towards texture; increasing shape bias improves accuracy and robustness",
+        "volume-title": "Proc. 7th Int. Conf. Learn. Represent. (ICLR)",
+        "author": "Geirhos"
+      },
+      {
+        "key": "ref26",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3557915.3561043"
+      },
+      {
+        "key": "ref27",
+        "article-title": "On the opportunities and challenges of foundation models for geospatial artificial intelligence",
+        "author": "Mai",
+        "year": "2023",
+        "journal-title": "arXiv:2304.06798"
+      },
+      {
+        "key": "ref28",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TGRS.2021.3078451"
+      },
+      {
+        "key": "ref29",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TGRS.2017.2776321"
+      },
+      {
+        "key": "ref30",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1869790.1869829"
+      },
+      {
+        "key": "ref31",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MGRS.2022.3198244"
+      },
+      {
+        "key": "ref32",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TGRS.2020.3007029"
+      },
+      {
+        "key": "ref33",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/LGRS.2021.3069799"
+      },
+      {
+        "key": "ref34",
+        "first-page": "3967",
+        "article-title": "Tile2vec: Unsupervised representation learning for spatially distributed data",
+        "volume-title": "Proc. AAAI Conf. Artif. Intell.",
+        "volume": "33",
+        "author": "Jean"
+      },
+      {
+        "key": "ref35",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/rs12203276"
+      },
+      {
+        "key": "ref36",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TGRS.2021.3115569"
+      },
+      {
+        "key": "ref37",
+        "first-page": "1182",
+        "article-title": "Self-supervised learning of remote sensing scene representations using contrastive multiview coding",
+        "volume-title": "Proc. IEEE/CVF Conf. Comput. Vis. Pattern Recognit. Workshops (CVPRW)",
+        "author": "Stojnic"
+      },
+      {
+        "key": "ref38",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.inffus.2023.03.021"
+      },
+      {
+        "key": "ref39",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICCV48922.2021.00928"
+      },
+      {
+        "key": "ref40",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.24963/ijcai.2022/762"
+      },
+      {
+        "key": "ref41",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.24963/ijcai.2022/773"
+      },
+      {
+        "key": "ref42",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1561/0600000105"
+      },
+      {
+        "key": "ref43",
+        "article-title": "Vision-language models for vision tasks: A survey",
+        "author": "Zhang",
+        "year": "2023",
+        "journal-title": "arXiv:2304.00685"
+      },
+      {
+        "key": "ref44",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/rs12030405"
+      },
+      {
+        "key": "ref45",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/app10248931"
+      },
+      {
+        "key": "ref46",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TGRS.2022.3163706"
+      },
+      {
+        "key": "ref47",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JSTARS.2022.3215803"
+      },
+      {
+        "key": "ref48",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/jstars.2022.3231851"
+      },
+      {
+        "key": "ref49",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/jstars.2022.3226325"
+      },
+      {
+        "key": "ref50",
+        "first-page": "14",
+        "article-title": "Knowledge-aware cross-modal text-image retrieval for remote sensing images",
+        "volume-title": "Proc. 2nd Workshop Complex Data Challenges Earth Observ. (CDCEO) Co-Located 31st Int. Joint Conf. Artif. Intell. 25th Eur. Conf. Artif. Intell. (IJCAI-ECAI)",
+        "volume": "3207",
+        "author": "Mi"
+      },
+      {
+        "key": "ref51",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/tgrs.2023.3318227"
+      },
+      {
+        "key": "ref52",
+        "first-page": "4904",
+        "article-title": "Scaling up visual and vision-language representation learning with noisy text supervision",
+        "volume-title": "Proc. Int. Conf. Mach. Learn.",
+        "author": "Jia"
+      },
+      {
+        "key": "ref53",
+        "article-title": "Reproducible scaling laws for contrastive language-image learning",
+        "author": "Cherti",
+        "year": "2022",
+        "journal-title": "arXiv:2212.07143"
+      },
+      {
+        "key": "ref54",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-031-19809-0_30"
+      },
+      {
+        "key": "ref55",
+        "first-page": "1",
+        "article-title": "Supervision exists everywhere: A data efficient contrastive language-image pre-training paradigm",
+        "volume-title": "Proc. 10th Int. Conf. Learn. Represent. (ICLR)",
+        "author": "Li"
+      },
+      {
+        "key": "ref56",
+        "first-page": "1",
+        "article-title": "CoCa: Contrastive captioners are image-text foundation models",
+        "volume": "2022",
+        "author": "Yu",
+        "year": "2022",
+        "journal-title": "Trans. Mach. Learn. Res."
+      },
+      {
+        "key": "ref57",
+        "article-title": "Scaling language-image pre-training via masking",
+        "author": "Li",
+        "year": "2022",
+        "journal-title": "arXiv:2212.00794"
+      },
+      {
+        "key": "ref58",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/tnnls.2023.3335859"
+      },
+      {
+        "key": "ref59",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11263-022-01653-1"
+      },
+      {
+        "key": "ref60",
+        "volume-title": "Few-shot adaptation of multi-modal foundation models: A survey",
+        "volume": "abs/2401.01736",
+        "author": "Liu",
+        "year": "2024"
+      },
+      {
+        "key": "ref61",
+        "first-page": "2",
+        "article-title": "Contrastive learning of medical visual representations from paired images and text",
+        "volume-title": "Proc. Mach. Learn. Healthcare Conf.",
+        "author": "Zhang"
+      },
+      {
+        "key": "ref62",
+        "article-title": "Does CLIP benefit visual question answering in the medical domain as much as it does in the general domain?",
+        "author": "Eslami",
+        "year": "2021",
+        "journal-title": "arXiv:2112.13906"
+      },
+      {
+        "key": "ref63",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.18653/v1/2022.emnlp-main.256"
+      },
+      {
+        "key": "ref64",
+        "article-title": "Large-scale domain-specific pretraining for biomedical vision-language processing",
+        "author": "Zhang",
+        "year": "2023",
+        "journal-title": "arXiv:2303.00915"
+      },
+      {
+        "key": "ref65",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR52688.2022.02057"
+      },
+      {
+        "key": "ref66",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.patcog.2023.109519"
+      },
+      {
+        "key": "ref67",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3511808.3557067"
+      },
+      {
+        "key": "ref68",
+        "article-title": "RS5M: A large scale vision-language dataset for remote sensing vision-language foundation model",
+        "author": "Zhang",
+        "year": "2023",
+        "journal-title": "arXiv:2306.11300"
+      },
+      {
+        "key": "ref69",
+        "article-title": "SATIN: A multi-task metadataset for classifying satellite imagery using vision-language models",
+        "author": "Roberts",
+        "year": "2023",
+        "journal-title": "arXiv:2304.11619"
+      },
+      {
+        "key": "ref70",
+        "article-title": "InstructBLIP: Towards general-purpose vision-language models with instruction tuning",
+        "author": "Dai",
+        "year": "2023",
+        "journal-title": "arXiv:2305.06500"
+      },
+      {
+        "key": "ref71",
+        "article-title": "PaLI-X: On scaling up a multilingual vision and language model",
+        "author": "Chen",
+        "year": "2023",
+        "journal-title": "arXiv:2305.18565"
+      },
+      {
+        "key": "ref72",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1609/aaai.v38i16.29727"
+      },
+      {
+        "key": "ref73",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0734-189x(85)90016-7"
+      },
+      {
+        "key": "ref74",
+        "volume-title": "Implementation and benchmarking of perceptual image hash functions",
+        "author": "Zauner",
+        "year": "2010"
+      },
+      {
+        "key": "ref75",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR.2018.00418"
+      },
+      {
+        "key": "ref76",
+        "article-title": "Object detection in optical remote sensing images: A survey and a new benchmark",
+        "author": "Li",
+        "year": "2019",
+        "journal-title": "arXiv:1909.00133"
+      },
+      {
+        "key": "ref77",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TGRS.2019.2900302"
+      },
+      {
+        "key": "ref78",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10489-021-02893-3"
+      },
+      {
+        "key": "ref79",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/rs12101662"
+      },
+      {
+        "key": "ref80",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5220/0006120603240331"
+      },
+      {
+        "key": "ref81",
+        "volume-title": "Vaihingen Dataset",
+        "year": "2012"
+      },
+      {
+        "key": "ref82",
+        "volume-title": "Potsdam Dataset",
+        "year": "2012"
+      },
+      {
+        "key": "ref83",
+        "first-page": "28",
+        "article-title": "iSAID: A large-scale dataset for instance segmentation in aerial images",
+        "volume-title": "Proc. CVPR Workshops",
+        "author": "Zamir"
+      },
+      {
+        "key": "ref84",
+        "first-page": "1",
+        "article-title": "LoveDA: A remote sensing land-cover dataset for domain adaptive semantic segmentation",
+        "volume-title": "Proc. Neural Inf. Process. Syst. Track Datasets Benchmarks 1, NeurIPS Datasets and Benchmarks",
+        "author": "Wang"
+      },
+      {
+        "key": "ref85",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/app10217622"
+      },
+      {
+        "key": "ref86",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICCV.2017.446"
+      },
+      {
+        "key": "ref87",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-319-46484-8_33"
+      },
+      {
+        "key": "ref88",
+        "article-title": "Vision meets drones: A challenge",
+        "author": "Zhu",
+        "year": "2018",
+        "journal-title": "arXiv:1804.07437"
+      },
+      {
+        "key": "ref89",
+        "first-page": "1",
+        "article-title": "VSE++: Improving visual-semantic embeddings with hard negatives",
+        "volume-title": "Proc. Brit. Mach. Vis. Conf.",
+        "author": "Faghri"
+      },
+      {
+        "key": "ref90",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-030-01225-0_13"
+      },
+      {
+        "key": "ref91",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3343031.3350875"
+      },
+      {
+        "key": "ref92",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JSTARS.2020.3013818"
+      },
+      {
+        "issue": "9",
+        "key": "ref93",
+        "doi-asserted-by": "crossref",
+        "first-page": "3359",
+        "DOI": "10.1080/01431161.2022.2091964",
+        "article-title": "A fusion-based contrastive learning model for cross-modal remote sensing retrieval",
+        "volume": "43",
+        "author": "Li",
+        "year": "2022",
+        "journal-title": "Int. J. Remote Sens."
+      },
+      {
+        "key": "ref94",
+        "article-title": "Direction-oriented visual-semantic embedding model for remote sensing image-text retrieval",
+        "author": "Ma",
+        "year": "2023",
+        "journal-title": "arXiv:2310.08276"
+      },
+      {
+        "key": "ref95",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3581783.3612374"
+      },
+      {
+        "key": "ref96",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICCV51070.2023.00294"
+      },
+      {
+        "key": "ref97",
+        "article-title": "PatternNet: A benchmark dataset for performance evaluation of remote sensing image retrieval",
+        "author": "Zhou",
+        "year": "2017",
+        "journal-title": "arXiv:1706.03424"
+      },
+      {
+        "key": "ref98",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JSTARS.2019.2918242"
+      },
+      {
+        "key": "ref99",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TGRS.2018.2864987"
+      },
+      {
+        "key": "ref100",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1117/1.JRS.10.035004"
+      },
+      {
+        "key": "ref101",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TGRS.2017.2685945"
+      },
+      {
+        "key": "ref102",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.isprsjprs.2020.09.020"
+      },
+      {
+        "key": "ref103",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/s20061594"
+      },
+      {
+        "key": "ref104",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JPROC.2017.2675998"
+      },
+      {
+        "key": "ref105",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TGRS.2015.2496185"
+      },
+      {
+        "key": "ref106",
+        "volume-title": "Structural high-resolution satellite image indexing",
+        "author": "Xia",
+        "year": "2010"
+      },
+      {
+        "key": "ref107",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/LGRS.2015.2475299"
+      },
+      {
+        "key": "ref108",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1273496.1273513"
+      },
+      {
+        "key": "ref109",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICCV51070.2023.01100"
+      },
+      {
+        "key": "ref110",
+        "first-page": "1849",
+        "article-title": "Improved deep metric learning with multi-class N-pair loss objective",
+        "volume-title": "Proc. Adv. Neural Inf. Process. Syst.",
+        "author": "Sohn"
+      },
+      {
+        "key": "ref111",
+        "first-page": "12310",
+        "article-title": "Barlow twins: Self-supervised learning via redundancy reduction",
+        "volume-title": "Proc. Int. Conf. Mach. Learn.",
+        "author": "Zbontar"
+      }
+    ],
+    "container-title": [
+      "IEEE Transactions on Geoscience and Remote Sensing"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx7/36/10354519/10504785.pdf?arnumber=10504785",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          9,
+          18
+        ]
+      ],
+      "date-time": "2025-09-18T17:46:03Z",
+      "timestamp": 1758217563000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://ieeexplore.ieee.org/document/10504785/"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "references-count": 111,
+    "URL": "https://doi.org/10.1109/tgrs.2024.3390838",
+    "relation": {},
+    "ISSN": [
+      "0196-2892",
+      "1558-0644"
+    ],
+    "issn-type": [
+      {
+        "value": "0196-2892",
+        "type": "print"
+      },
+      {
+        "value": "1558-0644",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    }
+  },
+  "airscape": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          14
+        ]
+      ],
+      "date-time": "2026-10-14T20:04:13Z",
+      "timestamp": 1792008253732,
+      "version": "4.4.0"
+    },
+    "publisher-location": "New York, NY, USA",
+    "reference-count": 76,
+    "publisher": "ACM",
+    "content-domain": {
+      "domain": [
+        "dl.acm.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2025,
+          10,
+          27
+        ]
+      ]
+    },
+    "DOI": "10.1145/3746027.3758180",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2025,
+          10,
+          25
+        ]
+      ],
+      "date-time": "2025-10-25T05:44:48Z",
+      "timestamp": 1761371088000
+    },
+    "page": "12519-12528",
+    "update-policy": "https://doi.org/10.1145/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 4,
+    "title": [
+      "AirScape: An Aerial Generative World Model with Motion Controllability"
+    ],
+    "prefix": "10.1145",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-9653-3316",
+        "authenticated-orcid": false,
+        "given": "Baining",
+        "family": "Zhao",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Shenzhen International Graduate School, Tsinghua University, Shenzhen, China and Pengcheng Laboratory, Shenzhen, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0004-4625-2315",
+        "authenticated-orcid": false,
+        "given": "Rongze",
+        "family": "Tang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Computer Science &amp; Technology, Beijing Institute of Technology, Beijing, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0007-4890-7794",
+        "authenticated-orcid": false,
+        "given": "Mingyuan",
+        "family": "Jia",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Automation, Tsinghua University, Beijing, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0005-2297-1830",
+        "authenticated-orcid": false,
+        "given": "Ziyou",
+        "family": "Wang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Computer and Communication Engineering College, Northeastern University, Qinhuangdao, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-5830-0685",
+        "authenticated-orcid": false,
+        "given": "Fanhang",
+        "family": "Man",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Shenzhen International Graduate School, Tsinghua University, Shenzhen, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-2506-7370",
+        "authenticated-orcid": false,
+        "given": "Xin",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Manifold AI, Beijing, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0005-9049-8483",
+        "authenticated-orcid": false,
+        "given": "Yu",
+        "family": "Shang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Electronic Engineering, Tsinghua University, Beijing, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0008-8892-9389",
+        "authenticated-orcid": false,
+        "given": "Weichen",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Shenzhen International Graduate School, Tsinghua University, Shenzhen, China and Pengcheng Laboratory, Shenzhen, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-5757-4476",
+        "authenticated-orcid": false,
+        "given": "Wei",
+        "family": "Wu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Manifold AI, Beijing, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7561-5646",
+        "authenticated-orcid": false,
+        "given": "Chen",
+        "family": "Gao",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "BNRist, Tsinghua University, Beijing, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-8271-5023",
+        "authenticated-orcid": false,
+        "given": "Xinlei",
+        "family": "Chen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Shenzhen International Graduate School, Tsinghua University, Shenzhen, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-5617-1659",
+        "authenticated-orcid": false,
+        "given": "Yong",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Electronic Engineering, Tsinghua University, Beijing, China and BNRist, Tsinghua University, Beijing, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "320",
+    "published-online": {
+      "date-parts": [
+        [
+          2025,
+          10,
+          27
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_3_2_2_1_1",
+        "unstructured": "Niket Agarwal Arslan Ali Maciej Bala Yogesh Balaji Erik Barker Tiffany Cai Prithvijit Chattopadhyay Yongxin Chen Yin Cui Yifan Ding et al. 2025. Cosmos world foundation model platform for physical ai. arXiv preprint arXiv:2501.03575 (2025)."
+      },
+      {
+        "key": "e_1_3_2_2_2_1",
+        "unstructured": "Google AI. 2023. Gemini-2.0-Flash. https://ai.google.dev/. Accessed: 2025-05-30."
+      },
+      {
+        "key": "e_1_3_2_2_3_1",
+        "volume-title": "Etpnav: Evolving topological planning for vision-language navigation in continuous environments",
+        "author": "An Dong",
+        "year": "2024",
+        "unstructured": "Dong An, Hanqing Wang, Wenguan Wang, Zun Wang, Yan Huang, Keji He, and Liang Wang. 2024. Etpnav: Evolving topological planning for vision-language navigation in continuous environments. IEEE Transactions on Pattern Analysis and Machine Intelligence (2024)."
+      },
+      {
+        "key": "e_1_3_2_2_4_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3680528.3687614"
+      },
+      {
+        "key": "e_1_3_2_2_5_1",
+        "unstructured": "Andreas Blattmann Tim Dockhorn Sumith Kulal Daniel Mendelevitch Maciej Kilian Dominik Lorenz Yam Levi Zion English Vikram Voleti Adam Letts et al. 2023. Stable video diffusion: Scaling latent video diffusion models to large datasets. arXiv preprint arXiv:2311.15127 (2023)."
+      },
+      {
+        "key": "e_1_3_2_2_6_1",
+        "volume-title": "Random forests. Machine learning",
+        "author": "Breiman Leo",
+        "year": "2001",
+        "unstructured": "Leo Breiman. 2001. Random forests. Machine learning, Vol. 45, 1 (2001), 5-32."
+      },
+      {
+        "key": "e_1_3_2_2_7_1",
+        "volume-title": "Forty-first International Conference on Machine Learning.",
+        "author": "Bruce Jake",
+        "year": "2024",
+        "unstructured": "Jake Bruce, Michael D Dennis, Ashley Edwards, Jack Parker-Holder, Yuge Shi, Edward Hughes, Matthew Lai, Aditi Mavalankar, Richie Steigerwald, Chris Apps, et al., 2024. Genie: Generative interactive environments. In Forty-first International Conference on Machine Learning."
+      },
+      {
+        "key": "e_1_3_2_2_8_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR42600.2020.01164"
+      },
+      {
+        "key": "e_1_3_2_2_9_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TKDE.2024.3361474"
+      },
+      {
+        "key": "e_1_3_2_2_10_1",
+        "volume-title": "International conference on machine learning. PMLR, 1691-1703",
+        "author": "Chen Mark",
+        "year": "2020",
+        "unstructured": "Mark Chen, Alec Radford, Rewon Child, Jeffrey Wu, Heewoo Jun, David Luan, and Ilya Sutskever. 2020. Generative pretraining from pixels. In International conference on machine learning. PMLR, 1691-1703."
+      },
+      {
+        "key": "e_1_3_2_2_11_1",
+        "volume-title": "Ddl: Empowering delivery drones with large-scale urban sensing capability",
+        "author": "Chen Xuecheng",
+        "year": "2024",
+        "unstructured": "Xuecheng Chen, Haoyang Wang, Yuhan Cheng, Haohao Fu, Yuxuan Liu, Fan Dang, Yunhao Liu, Jinqiang Cui, and Xinlei Chen. 2024a. Ddl: Empowering delivery drones with large-scale urban sensing capability. IEEE Journal of Selected Topics in Signal Processing (2024)."
+      },
+      {
+        "key": "e_1_3_2_2_12_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JIOT.2024.3389771"
+      },
+      {
+        "key": "e_1_3_2_2_13_1",
+        "unstructured": "Zesen Cheng Sicong Leng Hang Zhang Yifei Xin Xin Li Guanzheng Chen Yongxin Zhu Wenqi Zhang Ziyang Luo Deli Zhao et al. 2024. Videollama 2: Advancing spatial-temporal modeling and audio understanding in video-llms. arXiv preprint arXiv:2406.07476 (2024)."
+      },
+      {
+        "key": "e_1_3_2_2_14_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3386569.3392457"
+      },
+      {
+        "key": "e_1_3_2_2_15_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TPAMI.2023.3261988"
+      },
+      {
+        "key": "e_1_3_2_2_16_1",
+        "volume-title": "Robonet: Large-scale multi-robot learning. arXiv preprint arXiv:1910.11215",
+        "author": "Dasari Sudeep",
+        "year": "2019",
+        "unstructured": "Sudeep Dasari, Frederik Ebert, Stephen Tian, Suraj Nair, Bernadette Bucher, Karl Schmeckpeper, Siddharth Singh, Sergey Levine, and Chelsea Finn. 2019. Robonet: Large-scale multi-robot learning. arXiv preprint arXiv:1910.11215 (2019)."
+      },
+      {
+        "key": "e_1_3_2_2_17_1",
+        "unstructured": "Jingtao Ding Yunke Zhang Yu Shang Yuheng Zhang Zefang Zong Jie Feng Yuan Yuan Hongyuan Su Nian Li Nicholas Sukiennik et al. 2024. Understanding world or predicting future? a comprehensive survey of world models. Comput. Surveys (2024)."
+      },
+      {
+        "key": "e_1_3_2_2_18_1",
+        "unstructured": "Chen Gao Baining Zhao Weichen Zhang Jinzhu Mao Jun Zhang Zhiheng Zheng Fanhang Man Jianjie Fang Zile Zhou Jinqiang Cui et al. 2024c. EmbodiedCity: A Benchmark Platform for Embodied Agent in Real-world City Environment. arXiv preprint arXiv:2410.09604 (2024)."
+      },
+      {
+        "key": "e_1_3_2_2_19_1",
+        "volume-title": "Magicdrive3d: Controllable 3d generation for any-view rendering in street scenes. arXiv preprint arXiv:2405.14475",
+        "author": "Gao Ruiyuan",
+        "year": "2024",
+        "unstructured": "Ruiyuan Gao, Kai Chen, Zhihao Li, Lanqing Hong, Zhenguo Li, and Qiang Xu. 2024a. Magicdrive3d: Controllable 3d generation for any-view rendering in street scenes. arXiv preprint arXiv:2405.14475 (2024)."
+      },
+      {
+        "key": "e_1_3_2_2_20_1",
+        "volume-title": "Magicdrive: Street view generation with diverse 3d geometry control. arXiv preprint arXiv:2310.02601",
+        "author": "Gao Ruiyuan",
+        "year": "2023",
+        "unstructured": "Ruiyuan Gao, Kai Chen, Enze Xie, Lanqing Hong, Zhenguo Li, Dit-Yan Yeung, and Qiang Xu. 2023. Magicdrive: Street view generation with diverse 3d geometry control. arXiv preprint arXiv:2310.02601 (2023)."
+      },
+      {
+        "key": "e_1_3_2_2_21_1",
+        "volume-title": "Vista: A generalizable driving world model with high fidelity and versatile controllability. arXiv preprint arXiv:2405.17398",
+        "author": "Gao Shenyuan",
+        "year": "2024",
+        "unstructured": "Shenyuan Gao, Jiazhi Yang, Li Chen, Kashyap Chitta, Yihang Qiu, Andreas Geiger, Jun Zhang, and Hongyang Li. 2024b. Vista: A generalizable driving world model with high fidelity and versatile controllability. arXiv preprint arXiv:2405.17398 (2024)."
+      },
+      {
+        "key": "e_1_3_2_2_22_1",
+        "volume-title": "Advancing humanoid locomotion: Mastering challenging terrains with denoising world model learning. arXiv preprint arXiv:2408.14472",
+        "author": "Gu Xinyang",
+        "year": "2024",
+        "unstructured": "Xinyang Gu, Yen-Jen Wang, Xiang Zhu, Chengming Shi, Yanjiang Guo, Yichen Liu, and Jianyu Chen. 2024. Advancing humanoid locomotion: Mastering challenging terrains with denoising world model learning. arXiv preprint arXiv:2408.14472 (2024)."
+      },
+      {
+        "key": "e_1_3_2_2_23_1",
+        "volume-title": "World models for autonomous driving: An initial survey",
+        "author": "Guan Yanchen",
+        "year": "2024",
+        "unstructured": "Yanchen Guan, Haicheng Liao, Zhenning Li, Jia Hu, Runze Yuan, Guohui Zhang, and Chengzhong Xu. 2024. World models for autonomous driving: An initial survey. IEEE Transactions on Intelligent Vehicles (2024)."
+      },
+      {
+        "key": "e_1_3_2_2_24_1",
+        "volume-title": "Embodied intelligence via learning and evolution. Nature communications",
+        "author": "Gupta Agrim",
+        "year": "2021",
+        "unstructured": "Agrim Gupta, Silvio Savarese, Surya Ganguli, and Li Fei-Fei. 2021. Embodied intelligence via learning and evolution. Nature communications, Vol. 12, 1 (2021), 5721."
+      },
+      {
+        "key": "e_1_3_2_2_25_1",
+        "volume-title": "World models. arXiv preprint arXiv:1803.10122",
+        "author": "Ha David",
+        "year": "2018",
+        "unstructured": "David Ha and Jürgen Schmidhuber. 2018. World models. arXiv preprint arXiv:1803.10122 (2018)."
+      },
+      {
+        "key": "e_1_3_2_2_26_1",
+        "volume-title": "Ltx-video: Realtime video latent diffusion. arXiv preprint arXiv:2501.00103",
+        "author": "HaCohen Yoav",
+        "year": "2024",
+        "unstructured": "Yoav HaCohen, Nisan Chiprut, Benny Brazowski, Daniel Shalem, Dudu Moshe, Eitan Richardson, Eran Levin, Guy Shiran, Nir Zabari, Ori Gordon, et al., 2024. Ltx-video: Realtime video latent diffusion. arXiv preprint arXiv:2501.00103 (2024)."
+      },
+      {
+        "key": "e_1_3_2_2_27_1",
+        "volume-title": "Gans trained by a two time-scale update rule converge to a local nash equilibrium. Advances in neural information processing systems",
+        "author": "Heusel Martin",
+        "year": "2017",
+        "unstructured": "Martin Heusel, Hubert Ramsauer, Thomas Unterthiner, Bernhard Nessler, and Sepp Hochreiter. 2017. Gans trained by a two time-scale update rule converge to a local nash equilibrium. Advances in neural information processing systems, Vol. 30 (2017)."
+      },
+      {
+        "key": "e_1_3_2_2_28_1",
+        "first-page": "6840",
+        "volume-title": "Lin (Eds.)",
+        "volume": "33",
+        "author": "Ho Jonathan",
+        "year": "2020",
+        "unstructured": "Jonathan Ho, Ajay Jain, and Pieter Abbeel. 2020. Denoising Diffusion Probabilistic Models. In Advances in Neural Information Processing Systems, H. Larochelle, M. Ranzato, R. Hadsell, M.F. Balcan, and H. Lin (Eds.), Vol. 33. Curran Associates, Inc., 6840-6851. https://proceedings.neurips.cc/paper_files/paper/2020/file/4c5bcfec8584af0d967f1ab10179ca4b-Paper.pdf"
+      },
+      {
+        "key": "e_1_3_2_2_29_1",
+        "volume-title": "Video diffusion models. Advances in neural information processing systems",
+        "author": "Ho Jonathan",
+        "year": "2022",
+        "unstructured": "Jonathan Ho, Tim Salimans, Alexey Gritsenko, William Chan, Mohammad Norouzi, and David J Fleet. 2022. Video diffusion models. Advances in neural information processing systems, Vol. 35 (2022), 8633-8646."
+      },
+      {
+        "key": "e_1_3_2_2_30_1",
+        "volume-title": "Cogvideo: Large-scale pretraining for text-to-video generation via transformers. arXiv preprint arXiv:2205.15868",
+        "author": "Hong Wenyi",
+        "year": "2022",
+        "unstructured": "Wenyi Hong, Ming Ding, Wendi Zheng, Xinghan Liu, and Jie Tang. 2022. Cogvideo: Large-scale pretraining for text-to-video generation via transformers. arXiv preprint arXiv:2205.15868 (2022)."
+      },
+      {
+        "key": "e_1_3_2_2_31_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR52688.2022.01768"
+      },
+      {
+        "key": "e_1_3_2_2_32_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR52733.2024.02060"
+      },
+      {
+        "key": "e_1_3_2_2_33_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR52733.2024.00639"
+      },
+      {
+        "key": "e_1_3_2_2_34_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICCV48922.2021.00510"
+      },
+      {
+        "key": "e_1_3_2_2_35_1",
+        "volume-title": "Videopoet: A large language model for zero-shot video generation. arXiv preprint arXiv:2312.14125",
+        "author": "Kondratyuk Dan",
+        "year": "2023",
+        "unstructured": "Dan Kondratyuk, Lijun Yu, Xiuye Gu, José Lezama, Jonathan Huang, Grant Schindler, Rachel Hornung, Vighnesh Birodkar, Jimmy Yan, Ming-Chang Chiu, et al., 2023. Videopoet: A large language model for zero-shot video generation. arXiv preprint arXiv:2312.14125 (2023)."
+      },
+      {
+        "key": "e_1_3_2_2_36_1",
+        "volume-title": "Hunyuanvideo: A systematic framework for large video generative models. arXiv preprint arXiv:2412.03603",
+        "author": "Kong Weijie",
+        "year": "2024",
+        "unstructured": "Weijie Kong, Qi Tian, Zijian Zhang, Rox Min, Zuozhuo Dai, Jin Zhou, Jiangfeng Xiong, Xin Li, Bo Wu, Jianwei Zhang, et al., 2024. Hunyuanvideo: A systematic framework for large video generative models. arXiv preprint arXiv:2412.03603 (2024)."
+      },
+      {
+        "key": "e_1_3_2_2_37_1",
+        "unstructured": "LAION-AI. 2022. aesthetic-predictor. https://github.com/LAION-AI/aesthetic-predictor."
+      },
+      {
+        "key": "e_1_3_2_2_38_1",
+        "first-page": "1",
+        "article-title": "A path towards autonomous machine intelligence version 0.9. 2, 2022-06-27",
+        "volume": "62",
+        "author": "LeCun Yann",
+        "year": "2022",
+        "unstructured": "Yann LeCun. 2022. A path towards autonomous machine intelligence version 0.9. 2, 2022-06-27. Open Review, Vol. 62, 1 (2022), 1-62.",
+        "journal-title": "Open Review"
+      },
+      {
+        "key": "e_1_3_2_2_39_1",
+        "volume-title": "Robotic world model: A neural network simulator for robust policy optimization in robotics. arXiv preprint arXiv:2501.10100",
+        "author": "Li Chenhao",
+        "year": "2025",
+        "unstructured": "Chenhao Li, Andreas Krause, and Marco Hutter. 2025. Robotic world model: A neural network simulator for robust policy optimization in robotics. arXiv preprint arXiv:2501.10100 (2025)."
+      },
+      {
+        "key": "e_1_3_2_2_40_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR52729.2023.00945"
+      },
+      {
+        "key": "e_1_3_2_2_41_1",
+        "first-page": "413",
+        "article-title": "Isolation forest. In 2008 eighth ieee international conference on data mining",
+        "author": "Liu Fei Tony",
+        "year": "2008",
+        "unstructured": "Fei Tony Liu, Kai Ming Ting, and Zhi-Hua Zhou. 2008. Isolation forest. In 2008 eighth ieee international conference on data mining. IEEE, 413-422.",
+        "journal-title": "IEEE"
+      },
+      {
+        "key": "e_1_3_2_2_42_1",
+        "volume-title": "Mardini: Masked autoregressive diffusion for video generation at scale. arXiv preprint arXiv:2410.20280",
+        "author": "Liu Haozhe",
+        "year": "2024",
+        "unstructured": "Haozhe Liu, Shikun Liu, Zijian Zhou, Mengmeng Xu, Yanping Xie, Xiao Han, Juan C Pérez, Ding Liu, Kumara Kahatapitiya, Menglin Jia, et al., 2024a. Mardini: Masked autoregressive diffusion for video generation at scale. arXiv preprint arXiv:2410.20280 (2024)."
+      },
+      {
+        "key": "e_1_3_2_2_43_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3643832.3661872"
+      },
+      {
+        "key": "e_1_3_2_2_44_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TASE.2025.3534143"
+      },
+      {
+        "key": "e_1_3_2_2_45_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "NVIDIA. 2025. COSMOS Predict2. https://github.com/nvidia-cosmos/cosmos-predict2. Accessed: 2025-08-26.",
+        "DOI": "10.70558/COSMOS.2025.v2.i4.25434"
+      },
+      {
+        "key": "e_1_3_2_2_46_1",
+        "volume-title": "Sora: High-Fidelity Video Generation. https://openai.com/sora/. Accessed: 2025-05-30.",
+        "author": "AI.",
+        "year": "2023",
+        "unstructured": "OpenAI. 2023. Sora: High-Fidelity Video Generation. https://openai.com/sora/. Accessed: 2025-05-30."
+      },
+      {
+        "key": "e_1_3_2_2_47_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/drones8100572"
+      },
+      {
+        "key": "e_1_3_2_2_48_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICCV51070.2023.00387"
+      },
+      {
+        "key": "e_1_3_2_2_49_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.scitotenv.2020.136546"
+      },
+      {
+        "key": "e_1_3_2_2_50_1",
+        "volume-title": "Gaia-2: A controllable multi-view generative world model for autonomous driving. arXiv preprint arXiv:2503.20523",
+        "author": "Russell Lloyd",
+        "year": "2025",
+        "unstructured": "Lloyd Russell, Anthony Hu, Lorenzo Bertoni, George Fedoseev, Jamie Shotton, Elahe Arani, and Gianluca Corrado. 2025. Gaia-2: A controllable multi-view generative world model for autonomous driving. arXiv preprint arXiv:2503.20523 (2025)."
+      },
+      {
+        "key": "e_1_3_2_2_51_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/frobt.2023.1253049"
+      },
+      {
+        "key": "e_1_3_2_2_52_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/scirobotics.abg1188"
+      },
+      {
+        "key": "e_1_3_2_2_53_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR52733.2024.00723"
+      },
+      {
+        "key": "e_1_3_2_2_54_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-030-58536-5_24"
+      },
+      {
+        "key": "e_1_3_2_2_55_1",
+        "volume-title": "Tarun Gupta, Darren Gehring, et al.",
+        "author": "Tot Marko",
+        "year": "2025",
+        "unstructured": "Marko Tot, Shu Ishida, Abdelhak Lemkhenter, David Bignell, Pallavi Choudhury, Chris Lovett, Luis França, Matheus Ribeiro Furtado de Mendonça, Tarun Gupta, Darren Gehring, et al., 2025. Adapting a World Model for Trajectory Following in a 3D Game. arXiv preprint arXiv:2504.12299 (2025)."
+      },
+      {
+        "key": "e_1_3_2_2_56_1",
+        "volume-title": "Karol Kurach, Raphael Marinier, Marcin Michalski, and Sylvain Gelly.",
+        "author": "Unterthiner Thomas",
+        "year": "2018",
+        "unstructured": "Thomas Unterthiner, Sjoerd Van Steenkiste, Karol Kurach, Raphael Marinier, Marcin Michalski, and Sylvain Gelly. 2018. Towards accurate generative models of video: A new metric & challenges. arXiv preprint arXiv:1812.01717 (2018)."
+      },
+      {
+        "key": "e_1_3_2_2_57_1",
+        "volume-title": "Wan: Open and advanced large-scale video generative models. arXiv preprint arXiv:2503.20314",
+        "author": "Wan Team",
+        "year": "2025",
+        "unstructured": "Team Wan, Ang Wang, Baole Ai, Bin Wen, Chaojie Mao, Chen-Wei Xie, Di Chen, Feiwu Yu, Haiming Zhao, Jianxiao Yang, et al., 2025. Wan: Open and advanced large-scale video generative models. arXiv preprint arXiv:2503.20314 (2025)."
+      },
+      {
+        "key": "e_1_3_2_2_58_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3715014.3722048"
+      },
+      {
+        "key": "e_1_3_2_2_59_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/INFOCOM52122.2024.10621375"
+      },
+      {
+        "key": "e_1_3_2_2_60_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR52734.2025.00499"
+      },
+      {
+        "key": "e_1_3_2_2_61_1",
+        "volume-title": "Videofactory: Swap attention in spatiotemporal diffusions for text-to-video generation.",
+        "author": "Wang Wenjing",
+        "year": "2023",
+        "unstructured": "Wenjing Wang, Huan Yang, Zixi Tuo, Huiguo He, Junchen Zhu, Jianlong Fu, and Jiaying Liu. 2023. Videofactory: Swap attention in spatiotemporal diffusions for text-to-video generation. (2023)."
+      },
+      {
+        "key": "e_1_3_2_2_62_1",
+        "volume-title": "DriveDreamer: Towards Real-World-Drive World Models for Autonomous Driving. In European Conference on Computer Vision. Springer, 55-72",
+        "author": "Wang Xiaofeng",
+        "year": "2024",
+        "unstructured": "Xiaofeng Wang, Zheng Zhu, Guan Huang, Xinze Chen, Jiagang Zhu, and Jiwen Lu. 2024b. DriveDreamer: Towards Real-World-Drive World Models for Autonomous Driving. In European Conference on Computer Vision. Springer, 55-72."
+      },
+      {
+        "key": "e_1_3_2_2_63_1",
+        "volume-title": "Worlddreamer: Towards general world models for video generation via predicting masked tokens. arXiv preprint arXiv:2401.09985",
+        "author": "Wang Xiaofeng",
+        "year": "2024",
+        "unstructured": "Xiaofeng Wang, Zheng Zhu, Guan Huang, Boyuan Wang, Xinze Chen, and Jiwen Lu. 2024c. Worlddreamer: Towards general world models for video generation via predicting masked tokens. arXiv preprint arXiv:2401.09985 (2024)."
+      },
+      {
+        "key": "e_1_3_2_2_64_1",
+        "volume-title": "Conference on robot learning. PMLR, 2226-2240",
+        "author": "Wu Philipp",
+        "year": "2023",
+        "unstructured": "Philipp Wu, Alejandro Escontrela, Danijar Hafner, Pieter Abbeel, and Ken Goldberg. 2023. Daydreamer: World models for physical robot learning. In Conference on robot learning. PMLR, 2226-2240."
+      },
+      {
+        "key": "e_1_3_2_2_65_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3636534.3694730"
+      },
+      {
+        "key": "e_1_3_2_2_66_1",
+        "volume-title": "Cogvideox: Text-to-video diffusion models with an expert transformer. arXiv preprint arXiv:2408.06072",
+        "author": "Yang Zhuoyi",
+        "year": "2024",
+        "unstructured": "Zhuoyi Yang, Jiayan Teng, Wendi Zheng, Ming Ding, Shiyu Huang, Jiazheng Xu, Yuanming Yang, Wenyi Hong, Xiaohan Zhang, Guanyu Feng, et al., 2024. Cogvideox: Text-to-video diffusion models with an expert transformer. arXiv preprint arXiv:2408.06072 (2024)."
+      },
+      {
+        "key": "e_1_3_2_2_67_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR52688.2022.00869"
+      },
+      {
+        "key": "e_1_3_2_2_68_1",
+        "volume-title": "Thang Luong, Gunjan Baid, Zirui Wang, Vijay Vasudevan, Alexander Ku, Yinfei Yang, Burcu Karagol Ayan, et al.",
+        "author": "Yu Jiahui",
+        "year": "2022",
+        "unstructured": "Jiahui Yu, Yuanzhong Xu, Jing Yu Koh, Thang Luong, Gunjan Baid, Zirui Wang, Vijay Vasudevan, Alexander Ku, Yinfei Yang, Burcu Karagol Ayan, et al., 2022. Scaling autoregressive models for content-rich text-to-image generation. arXiv preprint arXiv:2206.10789, Vol. 2, 3 (2022), 5."
+      },
+      {
+        "key": "e_1_3_2_2_69_1",
+        "volume-title": "How to enable llm with 3d capacity? a survey of spatial reasoning in llm. arXiv preprint arXiv:2504.05786",
+        "author": "Zha Jirong",
+        "year": "2025",
+        "unstructured": "Jirong Zha, Yuxuan Fan, Xiao Yang, Chen Gao, and Xinlei Chen. 2025. How to enable llm with 3d capacity? a survey of spatial reasoning in llm. arXiv preprint arXiv:2504.05786 (2025)."
+      },
+      {
+        "key": "e_1_3_2_2_70_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TPAMI.2022.3232854"
+      },
+      {
+        "key": "e_1_3_2_2_71_1",
+        "volume-title": "CityNavAgent: Aerial Vision-and-Language Navigation with Hierarchical Semantic Planning and Global Memory. arXiv preprint arXiv:2505.05622",
+        "author": "Zhang Weichen",
+        "year": "2025",
+        "unstructured": "Weichen Zhang, Chen Gao, Shiquan Yu, Ruiying Peng, Baining Zhao, Qian Zhang, Jinqiang Cui, Xinlei Chen, and Yong Li. 2025. CityNavAgent: Aerial Vision-and-Language Navigation with Hierarchical Semantic Planning and Global Memory. arXiv preprint arXiv:2505.05622 (2025)."
+      },
+      {
+        "key": "e_1_3_2_2_72_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.18653/v1/2025.acl-long.1558"
+      },
+      {
+        "key": "e_1_3_2_2_73_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Baining Zhao Ziyou Wang Jianjie Fang Chen Gao Fanhang Man Jinqiang Cui Xin Wang Xinlei Chen Yong Li and Wenwu Zhu. 2025b. Embodied-R: Collaborative Framework for Activating Embodied Spatial Reasoning in Foundation Models via Reinforcement Learning. arXiv:2504.12680 [cs.AI] https://arxiv.org/abs/2504.12680",
+        "DOI": "10.1145/3746027.3755703"
+      },
+      {
+        "key": "e_1_3_2_2_74_1",
+        "volume-title": "Identifying and solving conditional image leakage in image-to-video diffusion model. arXiv preprint arXiv:2406.15735",
+        "author": "Zhao Min",
+        "year": "2024",
+        "unstructured": "Min Zhao, Hongzhou Zhu, Chendong Xiang, Kaiwen Zheng, Chongxuan Li, and Jun Zhu. 2024. Identifying and solving conditional image leakage in image-to-video diffusion model. arXiv preprint arXiv:2406.15735 (2024)."
+      },
+      {
+        "key": "e_1_3_2_2_75_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Nan Zhou Yuxuan Liu Haoyang Wang Fanhang Man Jingao Xu Fan Dang Chaopeng Hong Yunhao Liu Xiao-Ping Zhang Yali Song et al. 2025. CatUA: Catalyzing Urban Air Quality Intelligence through Mobile Crowd-sensing. IEEE Transactions on Mobile Computing (2025).",
+        "DOI": "10.1109/TMC.2025.3560120"
+      },
+      {
+        "key": "e_1_3_2_2_76_1",
+        "volume-title": "Robodreamer: Learning compositional world models for robot imagination. arXiv preprint arXiv:2404.12377",
+        "author": "Zhou Siyuan",
+        "year": "2024",
+        "unstructured": "Siyuan Zhou, Yilun Du, Jiaben Chen, Yandong Li, Dit-Yan Yeung, and Chuang Gan. 2024. Robodreamer: Learning compositional world models for robot imagination. arXiv preprint arXiv:2404.12377 (2024)."
+      }
+    ],
+    "event": {
+      "name": "MM '25: The 33rd ACM International Conference on Multimedia",
+      "location": "Dublin Ireland",
+      "acronym": "MM '25",
+      "sponsor": [
+        "SIGMM ACM Special Interest Group on Multimedia"
+      ]
+    },
+    "container-title": [
+      "Proceedings of the 33rd ACM International Conference on Multimedia"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://dl.acm.org/doi/pdf/10.1145/3746027.3758180",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          12,
+          9
+        ]
+      ],
+      "date-time": "2025-12-09T19:15:45Z",
+      "timestamp": 1765307745000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://dl.acm.org/doi/10.1145/3746027.3758180"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          10,
+          27
+        ]
+      ]
+    },
+    "references-count": 76,
+    "alternative-id": [
+      "10.1145/3746027.3758180",
+      "10.1145/3746027"
+    ],
+    "URL": "https://doi.org/10.1145/3746027.3758180",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          10,
+          27
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2025-10-27",
+        "order": 3,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  },
+  "capera": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          13
+        ]
+      ],
+      "date-time": "2026-10-13T17:17:52Z",
+      "timestamp": 1791911872278,
+      "version": "4.3.4"
+    },
+    "reference-count": 36,
+    "publisher": "MDPI AG",
+    "issue": "8",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              4,
+              18
+            ]
+          ],
+          "date-time": "2023-04-18T00:00:00Z",
+          "timestamp": 1681776000000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "name": "Ministry of Education in Saudi Arabia",
+        "award": [
+          "IFKSURG-2-585"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "IFKSURG-2-585"
+            ]
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Remote Sensing"
+    ],
+    "abstract": "<jats:p>In this paper, we introduce the CapERA dataset, which upgrades the Event Recognition in Aerial Videos (ERA) dataset to aerial video captioning. The newly proposed dataset aims to advance visual–language-understanding tasks for UAV videos by providing each video with diverse textual descriptions. To build the dataset, 2864 aerial videos are manually annotated with a caption that includes information such as the main event, object, place, action, numbers, and time. More captions are automatically generated from the manual annotation to take into account as much as possible the variation in describing the same video. Furthermore, we propose a captioning model for the CapERA dataset to provide benchmark results for UAV video captioning. The proposed model is based on the encoder–decoder paradigm with two configurations to encode the video. The first configuration encodes the video frames independently by an image encoder. Then, a temporal attention module is added on the top to consider the temporal dynamics between features derived from the video frames. In the second configuration, we directly encode the input video using a video encoder that employs factorized space–time attention to capture the dependencies within and between the frames. For generating captions, a language decoder is utilized to autoregressively produce the captions from the visual tokens. The experimental results under different evaluation criteria show the challenges of generating captions from aerial videos. We expect that the introduction of CapERA will open interesting new research avenues for integrating natural language processing (NLP) with UAV video understandings.</jats:p>",
+    "DOI": "10.3390/rs15082139",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2023,
+          4,
+          19
+        ]
+      ],
+      "date-time": "2023-04-19T01:09:22Z",
+      "timestamp": 1681866562000
+    },
+    "page": "2139",
+    "update-policy": "https://doi.org/10.3390/mdpi_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 16,
+    "title": [
+      "CapERA: Captioning Events in Aerial Videos"
+    ],
+    "prefix": "10.3390",
+    "volume": "15",
+    "author": [
+      {
+        "given": "Laila",
+        "family": "Bashmal",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Computer Engineering Department, College of Computer and Information Sciences, King Saud University, Riyadh 11543, Saudi Arabia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9287-0596",
+        "authenticated-orcid": false,
+        "given": "Yakoub",
+        "family": "Bazi",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Computer Engineering Department, College of Computer and Information Sciences, King Saud University, Riyadh 11543, Saudi Arabia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-8105-9746",
+        "authenticated-orcid": false,
+        "given": "Mohamad Mahmoud",
+        "family": "Al Rahhal",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Applied Computer Science Department, College of Applied Computer Science, King Saud University, Riyadh 11543, Saudi Arabia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-2490-5739",
+        "authenticated-orcid": false,
+        "given": "Mansour",
+        "family": "Zuair",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Computer Engineering Department, College of Computer and Information Sciences, King Saud University, Riyadh 11543, Saudi Arabia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9745-3732",
+        "authenticated-orcid": false,
+        "given": "Farid",
+        "family": "Melgani",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Information Engineering and Computer Science, University of Trento, 38123 Trento, Italy"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "1968",
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          4,
+          18
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "ref_1",
+        "unstructured": "Lin, T.-Y., Maire, M., Belongie, S., Bourdev, L., Girshick, R., Hays, J., Perona, P., Ramanan, D., Zitnick, C.L., and Dollár, P. (2015). Computer Vision—ECCV 2014, Springer."
+      },
+      {
+        "key": "ref_2",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Deng, J., Dong, W., Socher, R., Li, L.-J., Li, K., and Fei-Fei, L. (2009, January 20–25). ImageNet: A Large-Scale Hierarchical Image Database. Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, Miami, FL, USA.",
+        "DOI": "10.1109/CVPR.2009.5206848"
+      },
+      {
+        "key": "ref_3",
+        "doi-asserted-by": "crossref",
+        "first-page": "3107",
+        "DOI": "10.1109/TGRS.2018.2790926",
+        "article-title": "Convolutional SVM Networks for Object Detection in UAV Imagery",
+        "volume": "56",
+        "author": "Bazi",
+        "year": "2018",
+        "journal-title": "IEEE Trans. Geosci. Remote Sens."
+      },
+      {
+        "key": "ref_4",
+        "doi-asserted-by": "crossref",
+        "first-page": "108",
+        "DOI": "10.1016/j.isprsjprs.2020.05.009",
+        "article-title": "UAVid: A Semantic Segmentation Dataset for UAV Imagery",
+        "volume": "165",
+        "author": "Lyu",
+        "year": "2020",
+        "journal-title": "ISPRS J. Photogramm. Remote Sens."
+      },
+      {
+        "key": "ref_5",
+        "first-page": "1",
+        "article-title": "Anomaly Detection in Aerial Videos with Transformers",
+        "volume": "60",
+        "author": "Jin",
+        "year": "2022",
+        "journal-title": "IEEE Trans. Geosci. Remote Sens."
+      },
+      {
+        "key": "ref_6",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Xia, G.-S., Bai, X., Ding, J., Zhu, Z., Belongie, S., Luo, J., Datcu, M., Pelillo, M., and Zhang, L. (2018, January 18–23). DOTA: A Large-Scale Dataset for Object Detection in Aerial Images. Proceedings of the 2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition, Salt Lake City, UT, USA.",
+        "DOI": "10.1109/CVPR.2018.00418"
+      },
+      {
+        "key": "ref_7",
+        "doi-asserted-by": "crossref",
+        "first-page": "91",
+        "DOI": "10.1109/MGRS.2021.3115137",
+        "article-title": "Deep Learning for UAV-Based Object Detection and Tracking: A Survey",
+        "volume": "10",
+        "author": "Wu",
+        "year": "2022",
+        "journal-title": "IEEE Geosci. Remote Sens. Mag."
+      },
+      {
+        "key": "ref_8",
+        "doi-asserted-by": "crossref",
+        "first-page": "375",
+        "DOI": "10.1007/978-3-030-01249-6_23",
+        "article-title": "The Unmanned Aerial Vehicle Benchmark: Object Detection and Tracking",
+        "volume": "Volume 11214",
+        "author": "Ferrari",
+        "year": "2018",
+        "journal-title": "Computer Vision—ECCV 2018"
+      },
+      {
+        "key": "ref_9",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Wang, J., Teng, X., Li, Z., Yu, Q., Bian, Y., and Wei, J. (2022). VSAI: A Multi-View Dataset for Vehicle Detection in Complex Scenarios Using Aerial Images. Drones, 6.",
+        "DOI": "10.3390/drones6070161"
+      },
+      {
+        "key": "ref_10",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Yang, M.-D., Tseng, H.-H., Hsu, Y.-C., Yang, C.-Y., Lai, M.-H., and Wu, D.-H. (2021). A UAV Open Dataset of Rice Paddies for Deep Learning Practice. Remote Sens., 13.",
+        "DOI": "10.3390/rs13071358"
+      },
+      {
+        "key": "ref_11",
+        "doi-asserted-by": "crossref",
+        "first-page": "125",
+        "DOI": "10.1109/MGRS.2020.3005751",
+        "article-title": "ERA: A Data Set and Deep Learning Benchmark for Event Recognition in Aerial Videos [Software and Data Sets]",
+        "volume": "8",
+        "author": "Mou",
+        "year": "2020",
+        "journal-title": "IEEE Geosci. Remote Sens. Mag."
+      },
+      {
+        "key": "ref_12",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Bashmal, L., Bazi, Y., Al Rahhal, M.M., Alhichri, H., and Al Ajlan, N. (2021). UAV Image Multi-Labeling with Data-Efficient Transformers. Appl. Sci., 11.",
+        "DOI": "10.3390/app11093974"
+      },
+      {
+        "key": "ref_13",
+        "doi-asserted-by": "crossref",
+        "first-page": "119873",
+        "DOI": "10.1109/ACCESS.2019.2936616",
+        "article-title": "Deep Attention Neural Network for Multi-Label Classification in Unmanned Aerial Vehicle Imagery",
+        "volume": "7",
+        "author": "Alshehri",
+        "year": "2019",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "ref_14",
+        "doi-asserted-by": "crossref",
+        "first-page": "399",
+        "DOI": "10.1109/LGRS.2018.2790426",
+        "article-title": "Multilabel Conditional Random Field Classification for UAV Images",
+        "volume": "15",
+        "author": "Zeggada",
+        "year": "2018",
+        "journal-title": "IEEE Geosci. Remote Sens. Lett."
+      },
+      {
+        "key": "ref_15",
+        "doi-asserted-by": "crossref",
+        "first-page": "694",
+        "DOI": "10.1109/LGRS.2017.2671922",
+        "article-title": "A Deep Learning Approach to UAV Image Multilabeling",
+        "volume": "14",
+        "author": "Zeggada",
+        "year": "2017",
+        "journal-title": "IEEE Geosci. Remote Sens. Lett."
+      },
+      {
+        "key": "ref_16",
+        "doi-asserted-by": "crossref",
+        "first-page": "6394",
+        "DOI": "10.1109/TGRS.2015.2438400",
+        "article-title": "Multiclass Coarse Analysis for UAV Imagery",
+        "volume": "53",
+        "author": "Moranduzzo",
+        "year": "2015",
+        "journal-title": "IEEE Trans. Geosci. Remote Sens."
+      },
+      {
+        "key": "ref_17",
+        "doi-asserted-by": "crossref",
+        "first-page": "103116",
+        "DOI": "10.1016/j.autcon.2020.103116",
+        "article-title": "Context-Based Information Generation for Managing UAV-Acquired Data Using Image Captioning",
+        "volume": "112",
+        "author": "Bang",
+        "year": "2020",
+        "journal-title": "Autom. Constr."
+      },
+      {
+        "key": "ref_18",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Bashmal, L., Bazi, Y., and Alajlan, N. (2022, January 17–22). Space Time Attention Transformer for Non-Event Detection in UAV Videos. Proceedings of the IGARSS 2022—2022 IEEE International Geoscience and Remote Sensing Symposium, Kuala Lumpur, Malaysia.",
+        "DOI": "10.1109/IGARSS46834.2022.9884661"
+      },
+      {
+        "key": "ref_19",
+        "first-page": "1",
+        "article-title": "FuTH-Net: Fusing Temporal Relations and Holistic Features for Aerial Video Classification",
+        "volume": "60",
+        "author": "Jin",
+        "year": "2022",
+        "journal-title": "IEEE Trans. Geosci. Remote Sens."
+      },
+      {
+        "key": "ref_20",
+        "first-page": "1",
+        "article-title": "A Novel SVM-Based Decoder for Remote Sensing Image Captioning",
+        "volume": "60",
+        "author": "Hoxha",
+        "year": "2022",
+        "journal-title": "IEEE Trans. Geosci. Remote Sens."
+      },
+      {
+        "key": "ref_21",
+        "unstructured": "Zhang, J., Zhao, Y., Saleh, M., and Liu, P.J. (2020, January 13–18). PEGASUS: Pre-Training with Extracted Gap-Sentences for Abstractive Summarization. Proceedings of the 37th International Conference on Machine Learning, ICML 2020, Online."
+      },
+      {
+        "key": "ref_22",
+        "unstructured": "Papineni, K., Roukos, S., Ward, T., and Zhu, W.-J. BLEU: A Method for Automatic Evaluation of Machine Translation. Proceedings of the 40th Annual Meeting on Association for Computational Linguistics—ACL ’02, Philadelphia, PA, USA."
+      },
+      {
+        "key": "ref_23",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Avidan, S., Brostow, G., Cissé, M., Farinella, G.M., and Hassner, T. Proceedings of the Computer Vision—ECCV 2022, Springer Nature Switzerland.",
+        "DOI": "10.1007/978-3-031-20059-5"
+      },
+      {
+        "key": "ref_24",
+        "unstructured": "Hendrycks, D., and Gimpel, K. (2020). Gaussian Error Linear Units (GELUs). arXiv."
+      },
+      {
+        "key": "ref_25",
+        "unstructured": "Howard, A.G., Zhu, M., Chen, B., Kalenichenko, D., Wang, W., Weyand, T., Andreetto, M., and Adam, H. (2017). MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications. arXiv."
+      },
+      {
+        "key": "ref_26",
+        "unstructured": "Dosovitskiy, A., Beyer, L., Kolesnikov, A., Weissenborn, D., Zhai, X., Unterthiner, T., Dehghani, M., Minderer, M., Heigold, G., and Gelly, S. (2020). An Image Is Worth 16x16 Words: Transformers for Image Recognition at Scale. arXiv."
+      },
+      {
+        "key": "ref_27",
+        "unstructured": "Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A.N., Kaiser, Ł., and Polosukhin, I. (2017, January 4–9). Attention Is All You Need. Proceedings of the Advances in Neural Information Processing Systems, Long Beach, CA, USA."
+      },
+      {
+        "key": "ref_28",
+        "unstructured": "Bertasius, G., Wang, H., and Torresani, L. (2021). Is Space-Time Attention All You Need for Video Understanding?. arXiv."
+      },
+      {
+        "key": "ref_29",
+        "first-page": "9",
+        "article-title": "Language Models Are Unsupervised Multitask Learners",
+        "volume": "1",
+        "author": "Radford",
+        "year": "2019",
+        "journal-title": "Open AI. Blog"
+      },
+      {
+        "key": "ref_30",
+        "unstructured": "Kingma, D.P., and Ba, J. (2017). Adam: A Method for Stochastic Optimization. arXiv."
+      },
+      {
+        "key": "ref_31",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Denkowski, M., and Lavie, A. (2014, January 26–27). Meteor Universal: Language Specific Translation Evaluation for Any Target Language. Proceedings of the Ninth Workshop on Statistical Machine Translation, Baltimore, MD, USA.",
+        "DOI": "10.3115/v1/W14-3348"
+      },
+      {
+        "key": "ref_32",
+        "unstructured": "Lin, C.-Y. (2004, January 10–17). ROUGE: A Package for Automatic Evaluation of Summaries. Proceedings of the Workshop Text Summarization Branches out, Barcelona, Spain."
+      },
+      {
+        "key": "ref_33",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Vedantam, R., Zitnick, C.L., and Parikh, D. (2015, January 7–12). CIDEr: Consensus-Based Image Description Evaluation. Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, CVPR 2015, Boston, MA, USA.",
+        "DOI": "10.1109/CVPR.2015.7299087"
+      },
+      {
+        "key": "ref_34",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Miech, A., Zhukov, D., Alayrac, J.-B., Tapaswi, M., Laptev, I., and Sivic, J. (November, January 27). HowTo100M: Learning a Text-Video Embedding by Watching Hundred Million Narrated Video Clips. Proceedings of the 2019 IEEE/CVF International Conference on Computer Vision (ICCV), Seoul, Republic of Korea.",
+        "DOI": "10.1109/ICCV.2019.00272"
+      },
+      {
+        "key": "ref_35",
+        "unstructured": "Carreira, J., Noland, E., Banki-Horvath, A., Hillier, C., and Zisserman, A. (2018). A Short Note about Kinetics-600. arXiv."
+      },
+      {
+        "key": "ref_36",
+        "unstructured": "Kay, W., Carreira, J., Simonyan, K., Zhang, B., Hillier, C., Vijayanarasimhan, S., Viola, F., Green, T., Back, T., and Natsev, P. (2017). The Kinetics Human Action Video Dataset. arXiv."
+      }
+    ],
+    "container-title": [
+      "Remote Sensing"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.mdpi.com/2072-4292/15/8/2139/pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          10,
+          10
+        ]
+      ],
+      "date-time": "2025-10-10T19:18:31Z",
+      "timestamp": 1760123911000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.mdpi.com/2072-4292/15/8/2139"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          4,
+          18
+        ]
+      ]
+    },
+    "references-count": 36,
+    "journal-issue": {
+      "issue": "8",
+      "published-online": {
+        "date-parts": [
+          [
+            2023,
+            4
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "rs15082139"
+    ],
+    "URL": "https://doi.org/10.3390/rs15082139",
+    "relation": {},
+    "ISSN": [
+      "2072-4292"
+    ],
+    "issn-type": [
+      {
+        "value": "2072-4292",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          4,
+          18
+        ]
+      ]
+    }
+  }
+}

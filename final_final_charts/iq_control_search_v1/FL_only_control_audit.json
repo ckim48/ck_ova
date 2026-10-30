@@ -1,0 +1,20 @@
+[
+  {
+    "dataset": "CapERA",
+    "weak_progress_is_exact_FL_only": true,
+    "selected_to_FL_only_matched_KL_ratio": 9.371563167999398,
+    "selected_forget_positive_cosine": 0.27527102686351856,
+    "FL_only_forget_positive_cosine": 0.2753761501204892,
+    "selected_forget_mR": 0.16356275303643728,
+    "FL_only_forget_mR": 0.16410256410256416
+  },
+  {
+    "dataset": "AirScape",
+    "weak_progress_is_exact_FL_only": true,
+    "selected_to_FL_only_matched_KL_ratio": 1.4974715744157685,
+    "selected_forget_positive_cosine": 0.26296132206696127,
+    "FL_only_forget_positive_cosine": 0.2651649116322398,
+    "selected_forget_mR": 0.11219739292364991,
+    "FL_only_forget_mR": 0.11033519553072625
+  }
+]

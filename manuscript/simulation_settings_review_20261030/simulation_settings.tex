@@ -1,0 +1,70 @@
+% References and numerical settings checked against the recorded experiments.
+% The existing performance runs use Daejeon geometry. The current Yeouido map
+% is a separately generated illustration, not the geometry of those runs.
+% Restore the Yeouido sentence and map cross-reference only after corresponding
+% performance runs have actually used that geometry.
+\subsection{Simulation Settings}
+\label{subsec:simulation_settings}
+
+In the simulations, we consider $U=10$ UAVs operating over an
+$1800\times1800$~m$^2$ area in Daejeon, South Korea, at an altitude
+of 50~m to represent an environment with diverse IoT devices
+and large volumes of collected data.
+The UAVs follow prescribed trajectories and hover during each
+communication interval.
+For the UAV-to-UAV links, we adopt the free-space path-loss model
+used in UAV-assisted AirComp \cite{Zhai_TWC_2025}, with a reference
+channel power gain of $-60$~dB at 1~m, receiver noise power
+of $-90$~dBm, and maximum transmit power of 0.32~W.
+Channels remain constant within each transmission block,
+with synchronized transmission and perfect channel state
+information assumed.
+Unless otherwise specified, the uplink bandwidth is 1~MHz,
+the block coherence time is 10~ms, and the network RF
+transmission energy budget per round is 0.1~J.
+
+The computation delay and dynamic CPU energy are modeled
+using the executed CPU cycles and processor frequency
+\cite{Tang_TWC_2025,Liang_TWC_2025_Energy}.
+We set the processor frequency to 1.5~GHz, the effective
+switched capacitance to $10^{-27}$, and the active board
+power to 2~W for each UAV.
+The computation workload is estimated from the executed
+multiply--accumulate operations, assuming eight operations
+per CPU cycle.
+The hovering power is 168.49~W, corresponding to the sum
+of the blade-profile and induced powers of 79.86 and
+88.63~W, respectively \cite{Wang_TCOMM_2025_Rechargeable}.
+The power amplifier efficiency is set to 0.35.
+
+The UAVs perform video--text retrieval using CapERA as a UAV
+video-caption benchmark \cite{Bashmal_RS_2023_CapERA} and a
+WebUAV3M-source subset of AirScape as a UAV video-intention
+benchmark \cite{Zhao_ACMMM_2025_AirScape,Zhang_TPAMI_2023_WebUAV3M}.
+Training samples are distributed among the UAVs using a label-based
+Dirichlet partition with $\alpha_{\mathrm D}=0.1$
+\cite{Mora_TBD_2026,Liang_TWC_2025_Energy}.
+We use pretrained RemoteCLIP with a ViT-B/32
+visual backbone \cite{Liu_TGRS_2024_RemoteCLIP}, freeze both
+encoders and the shared logit-scale parameter, and train rank-10
+residual adapters for the visual and textual features,
+yielding 20,480 trainable parameters.
+The initial learning rate is $3.5\times10^{-3}$.
+All UAVs participate in each feasible FL round and perform
+one SGD step without momentum, using a mini-batch size of 16.
+The learning rate remains constant through round 40 and follows a cosine
+decay over rounds 41--200, and the same rate is used for unlearning.
+
+Each run comprises 20 initial learning rounds followed by 180 rounds
+with unlearning requests. Each UAV initially has access to its entire
+local dataset, with no subsequent data arrivals. Five UAVs are uniformly
+selected from eligible UAVs, each requesting the deletion of half of
+the samples used during the initial learning rounds. The selected
+samples are divided into nine unlearning requests per UAV, which are
+issued at predetermined rounds for each dataset.
+The deletion fraction follows~\cite{Mora_TBD_2026}, while the request
+schedules are selected for this study. Requested samples are unlearned
+over five update steps per request and excluded from subsequent learning
+upon request arrival.
+The following benchmark schemes are used to evaluate the performance
+of the proposed framework.

@@ -1,0 +1,272 @@
+{
+  "selected": "block_slow",
+  "rankings": [
+    {
+      "setting": "block_slow",
+      "worst_margin": -5.933463420259755,
+      "joint_winner": false,
+      "state_size": 160
+    },
+    {
+      "setting": "block_blend",
+      "worst_margin": -6.865851931869704,
+      "joint_winner": false,
+      "state_size": 160
+    },
+    {
+      "setting": "diagonal_blend",
+      "worst_margin": -15.04844621551824,
+      "joint_winner": false,
+      "state_size": 20480
+    },
+    {
+      "setting": "diagonal_slow",
+      "worst_margin": -47.53199484188553,
+      "joint_winner": false,
+      "state_size": 20480
+    }
+  ],
+  "results": [
+    {
+      "dataset": "AirScape",
+      "setting": "block_blend",
+      "mode": "combined",
+      "mR": 13.802083333333332,
+      "loss": 5.545911314124746,
+      "common_KL": 0.0016419331540711312,
+      "matched_KL": 0.0018404543463520072,
+      "wall_s": 6.377923488616943
+    },
+    {
+      "dataset": "AirScape",
+      "setting": "block_blend",
+      "mode": "combined_reset",
+      "mR": 13.802083333333332,
+      "loss": 5.546784596859052,
+      "common_KL": 0.0015757368112069056,
+      "matched_KL": 0.0017643469390032894,
+      "wall_s": 6.30814528465271
+    },
+    {
+      "dataset": "AirScape",
+      "setting": "block_blend",
+      "mode": "iq_separate",
+      "mR": 13.802083333333332,
+      "loss": 5.545281760046627,
+      "common_KL": 0.0016839245675003371,
+      "matched_KL": 0.0018812240631955368,
+      "wall_s": 6.376071453094482
+    },
+    {
+      "dataset": "AirScape",
+      "setting": "block_slow",
+      "mode": "combined",
+      "mR": 13.671875,
+      "loss": 5.552532929390633,
+      "common_KL": 0.0012220618460002915,
+      "matched_KL": 0.001766588607109725,
+      "wall_s": 6.306943655014038
+    },
+    {
+      "dataset": "AirScape",
+      "setting": "block_slow",
+      "mode": "combined_reset",
+      "mR": 13.671875,
+      "loss": 5.551715175373035,
+      "common_KL": 0.0012238327949766125,
+      "matched_KL": 0.0018024543743719603,
+      "wall_s": 6.282293081283569
+    },
+    {
+      "dataset": "AirScape",
+      "setting": "block_slow",
+      "mode": "iq_separate",
+      "mR": 13.671875,
+      "loss": 5.551209095737747,
+      "common_KL": 0.00129457243860567,
+      "matched_KL": 0.0018649452117545325,
+      "wall_s": 6.3681159019470215
+    },
+    {
+      "dataset": "AirScape",
+      "setting": "diagonal_blend",
+      "mode": "combined",
+      "mR": 13.541666666666666,
+      "loss": 5.571921012030819,
+      "common_KL": 0.0005504617976575986,
+      "matched_KL": 0.0011622746566680368,
+      "wall_s": 6.3118674755096436
+    },
+    {
+      "dataset": "AirScape",
+      "setting": "diagonal_blend",
+      "mode": "combined_reset",
+      "mR": 13.541666666666666,
+      "loss": 5.570645735750138,
+      "common_KL": 0.0006022593380640485,
+      "matched_KL": 0.0012522976742223523,
+      "wall_s": 6.300257205963135
+    },
+    {
+      "dataset": "AirScape",
+      "setting": "diagonal_blend",
+      "mode": "iq_separate",
+      "mR": 13.541666666666666,
+      "loss": 5.569461965293607,
+      "common_KL": 0.0006286481133117411,
+      "matched_KL": 0.0013360373362655328,
+      "wall_s": 6.401964426040649
+    },
+    {
+      "dataset": "AirScape",
+      "setting": "diagonal_slow",
+      "mode": "combined",
+      "mR": 13.671875,
+      "loss": 5.620877103925116,
+      "common_KL": 0.00230221076216913,
+      "matched_KL": 0.00045304638236272365,
+      "wall_s": 6.307443141937256
+    },
+    {
+      "dataset": "AirScape",
+      "setting": "diagonal_slow",
+      "mode": "combined_reset",
+      "mR": 13.671875,
+      "loss": 5.617445066900659,
+      "common_KL": 0.002201644125662838,
+      "matched_KL": 0.0006065907509260496,
+      "wall_s": 6.304069519042969
+    },
+    {
+      "dataset": "AirScape",
+      "setting": "diagonal_slow",
+      "mode": "iq_separate",
+      "mR": 13.541666666666668,
+      "loss": 5.616276317462708,
+      "common_KL": 0.0021251440007739614,
+      "matched_KL": 0.0006683883654587224,
+      "wall_s": 6.3212268352508545
+    },
+    {
+      "dataset": "CapERA",
+      "setting": "block_blend",
+      "mode": "combined",
+      "mR": 16.822916666666664,
+      "loss": 5.333159597435365,
+      "common_KL": 0.004180786882126245,
+      "matched_KL": 0.00320935653789756,
+      "wall_s": 6.697500467300415
+    },
+    {
+      "dataset": "CapERA",
+      "setting": "block_blend",
+      "mode": "combined_reset",
+      "mR": 16.888020833333332,
+      "loss": 5.3351297217608495,
+      "common_KL": 0.004028134725624679,
+      "matched_KL": 0.003088947723095632,
+      "wall_s": 6.723250865936279
+    },
+    {
+      "dataset": "CapERA",
+      "setting": "block_blend",
+      "mode": "iq_separate",
+      "mR": 17.018229166666668,
+      "loss": 5.332468400849857,
+      "common_KL": 0.004221870047218867,
+      "matched_KL": 0.0032540563990854816,
+      "wall_s": 6.752049684524536
+    },
+    {
+      "dataset": "CapERA",
+      "setting": "block_slow",
+      "mode": "combined",
+      "mR": 17.148437500000004,
+      "loss": 5.358005699117994,
+      "common_KL": 0.0031730178449356494,
+      "matched_KL": 0.002762124111838,
+      "wall_s": 6.8036048412323
+    },
+    {
+      "dataset": "CapERA",
+      "setting": "block_slow",
+      "mode": "combined_reset",
+      "mR": 17.174479166666668,
+      "loss": 5.357905082622221,
+      "common_KL": 0.003014773516930051,
+      "matched_KL": 0.0027719987477487318,
+      "wall_s": 6.722684383392334
+    },
+    {
+      "dataset": "CapERA",
+      "setting": "block_slow",
+      "mode": "iq_separate",
+      "mR": 17.096354166666668,
+      "loss": 5.356558035127502,
+      "common_KL": 0.0031827552859402465,
+      "matched_KL": 0.0028317633320601287,
+      "wall_s": 6.712208032608032
+    },
+    {
+      "dataset": "CapERA",
+      "setting": "diagonal_blend",
+      "mode": "combined",
+      "mR": 16.848958333333332,
+      "loss": 5.395253567897832,
+      "common_KL": 0.000955171987583878,
+      "matched_KL": 0.0018730012803638936,
+      "wall_s": 6.802515506744385
+    },
+    {
+      "dataset": "CapERA",
+      "setting": "diagonal_blend",
+      "mode": "combined_reset",
+      "mR": 16.848958333333332,
+      "loss": 5.393544461524446,
+      "common_KL": 0.0010002334112815836,
+      "matched_KL": 0.0019598740153601224,
+      "wall_s": 6.877905607223511
+    },
+    {
+      "dataset": "CapERA",
+      "setting": "diagonal_blend",
+      "mode": "iq_separate",
+      "mR": 16.65364583333333,
+      "loss": 5.390185167852284,
+      "common_KL": 0.0010989105304011343,
+      "matched_KL": 0.002124859566328163,
+      "wall_s": 6.772638559341431
+    },
+    {
+      "dataset": "CapERA",
+      "setting": "diagonal_slow",
+      "mode": "combined",
+      "mR": 16.432291666666664,
+      "loss": 5.512627306108307,
+      "common_KL": 0.0033897742974400005,
+      "matched_KL": 0.0004693555161837779,
+      "wall_s": 6.8130784034729
+    },
+    {
+      "dataset": "CapERA",
+      "setting": "diagonal_slow",
+      "mode": "combined_reset",
+      "mR": 16.249999999999996,
+      "loss": 5.509074383448933,
+      "common_KL": 0.003183375491776406,
+      "matched_KL": 0.0005562859107675653,
+      "wall_s": 6.7768473625183105
+    },
+    {
+      "dataset": "CapERA",
+      "setting": "diagonal_slow",
+      "mode": "iq_separate",
+      "mR": 16.263020833333332,
+      "loss": 5.505276206775589,
+      "common_KL": 0.003092551275645173,
+      "matched_KL": 0.0006402912166721971,
+      "wall_s": 6.815817832946777
+    }
+  ],
+  "interpretation": "Development selection only; physical repeats are required. A negative worst margin is an explicit failed joint-win criterion."
+}

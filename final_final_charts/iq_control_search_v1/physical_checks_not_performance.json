@@ -1,0 +1,151 @@
+{
+  "passed": true,
+  "math": {
+    "passed": true,
+    "checks": [
+      "FL-only equality",
+      "step-norm preservation",
+      "FU cohort reset retains FL state",
+      "serialized state bytes",
+      "zero-LR endpoint is an exact no-op"
+    ]
+  },
+  "cases": [
+    {
+      "setting": "block_slow",
+      "mode": "combined",
+      "head": 0,
+      "state_bytes": 648,
+      "conditional_handover_bytes": 776,
+      "conditional_handover_s": 0.0028467784180802717,
+      "actual_handover": {
+        "bytes": 0,
+        "duration_s": 0.0,
+        "RF_j": 0.0,
+        "draw_j": 0.0,
+        "old_head": 0,
+        "new_head": 0
+      },
+      "RF_j": 0.018357262042217704
+    },
+    {
+      "setting": "block_slow",
+      "mode": "combined_reset",
+      "head": 0,
+      "state_bytes": 648,
+      "conditional_handover_bytes": 776,
+      "conditional_handover_s": 0.0028467784180802717,
+      "actual_handover": {
+        "bytes": 0,
+        "duration_s": 0.0,
+        "RF_j": 0.0,
+        "draw_j": 0.0,
+        "old_head": 0,
+        "new_head": 0
+      },
+      "RF_j": 0.018357262042217704
+    },
+    {
+      "setting": "block_slow",
+      "mode": "iq_shared",
+      "head": 0,
+      "state_bytes": 648,
+      "conditional_handover_bytes": 776,
+      "conditional_handover_s": 0.0028467784180802717,
+      "actual_handover": {
+        "bytes": 0,
+        "duration_s": 0.0,
+        "RF_j": 0.0,
+        "draw_j": 0.0,
+        "old_head": 0,
+        "new_head": 0
+      },
+      "RF_j": 0.0298875865795432
+    },
+    {
+      "setting": "block_slow",
+      "mode": "iq_separate",
+      "head": 0,
+      "state_bytes": 1296,
+      "conditional_handover_bytes": 1424,
+      "conditional_handover_s": 0.005223985138332869,
+      "actual_handover": {
+        "bytes": 0,
+        "duration_s": 0.0,
+        "RF_j": 0.0,
+        "draw_j": 0.0,
+        "old_head": 0,
+        "new_head": 0
+      },
+      "RF_j": 0.0298875865795432
+    },
+    {
+      "setting": "diagonal_slow",
+      "mode": "combined",
+      "head": 0,
+      "state_bytes": 81928,
+      "conditional_handover_bytes": 82056,
+      "conditional_handover_s": 0.30102480653865304,
+      "actual_handover": {
+        "bytes": 0,
+        "duration_s": 0.0,
+        "RF_j": 0.0,
+        "draw_j": 0.0,
+        "old_head": 0,
+        "new_head": 0
+      },
+      "RF_j": 0.018357262042217704
+    },
+    {
+      "setting": "diagonal_slow",
+      "mode": "combined_reset",
+      "head": 0,
+      "state_bytes": 81928,
+      "conditional_handover_bytes": 82056,
+      "conditional_handover_s": 0.30102480653865304,
+      "actual_handover": {
+        "bytes": 0,
+        "duration_s": 0.0,
+        "RF_j": 0.0,
+        "draw_j": 0.0,
+        "old_head": 0,
+        "new_head": 0
+      },
+      "RF_j": 0.018357262042217704
+    },
+    {
+      "setting": "diagonal_slow",
+      "mode": "iq_shared",
+      "head": 0,
+      "state_bytes": 81928,
+      "conditional_handover_bytes": 82056,
+      "conditional_handover_s": 0.30102480653865304,
+      "actual_handover": {
+        "bytes": 0,
+        "duration_s": 0.0,
+        "RF_j": 0.0,
+        "draw_j": 0.0,
+        "old_head": 0,
+        "new_head": 0
+      },
+      "RF_j": 0.0298875865795432
+    },
+    {
+      "setting": "diagonal_slow",
+      "mode": "iq_separate",
+      "head": 0,
+      "state_bytes": 163856,
+      "conditional_handover_bytes": 163984,
+      "conditional_handover_s": 0.6015800413794784,
+      "actual_handover": {
+        "bytes": 0,
+        "duration_s": 0.0,
+        "RF_j": 0.0,
+        "draw_j": 0.0,
+        "old_head": 0,
+        "new_head": 0
+      },
+      "RF_j": 0.0298875865795432
+    }
+  ]
+}

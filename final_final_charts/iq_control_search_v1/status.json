@@ -1,0 +1,15 @@
+{
+  "completed": true,
+  "development_runs": 48,
+  "matched_RMS_retrains": 8,
+  "paired_FL_only_controls": 2,
+  "joint_winners": 0,
+  "adopted_method": null,
+  "physical_training_runs": 0,
+  "figures": [
+    "60_progress_mr_exact_1x2",
+    "61_progress_matched_kl_exact_1x2"
+  ],
+  "decision": "No candidate passed the shared two-dataset mR/common-KL/matched-KL criterion. Stop this bounded search and retain the existing Proposed. Physical optimizer checks are not end-to-end training or performance confirmation.",
+  "source_sha256": "60d25570a1e23c75ad49813411308a1778c7e51d93bcbface3039ea76d80169d"
+}

@@ -1,0 +1,109 @@
+Simulation Settings: 주요 파라미터 및 인용 점검 (2026-10-30)
+
+제공한 영어 문장 구조를 유지하면서 계산·호버·무선 자원 파라미터와 직접 출처를 보완했다.
+simulation_settings.tex는 기록된 실험에 맞춘 수정본이다. additional_references.bib에는
+이번 첨부 Bib에 없는 5개 항목만 들어 있다. CPU 상수 및 MAC 환산은 모델링 가정이다.
+
+1. 기존 Bib에서 활용
+
+Tang_TWC_2025 — IEEE TWC 2025, UAV-assisted FEEL.
+저자 원고 III-D Eq. (11): CPU cycles / CPU frequency 형태의 계산 시간.
+https://arxiv.org/pdf/2306.02990
+DOI: 10.1109/TWC.2024.3523381
+이 논문의 표에 있는 CPU frequency는 0.5 GHz이다. 현재 코드의 1.5 GHz를
+이 논문에서 그대로 가져왔다고 쓰지 않는다.
+
+Liang_TWC_2025_Energy — IEEE TWC 2025, OTA-FL.
+출판본 II-D Eqs. (12)–(13): 계산 시간 C/f, 동적 에너지 kappa*f^2*C.
+V-A: CPU 0.1–2 GHz, 에너지 계수 1e-28. V-B Fig. 13: label-skew Dirichlet non-IID.
+https://www.weizmann.ac.il/math/yonina/sites/math.yonina/files/Communication%20and%20Energy%20Efficient%20Over%20the%20Air%20Federated%20Learning.pdf
+DOI: 10.1109/TWC.2024.3501297
+현재 1.5 GHz는 위 범위 내지만, 현재 kappa=1e-27은 논문 수치와 다르다.
+따라서 두 참고문헌은 계산 모델 문장에 붙이고, 값은 'We set ...'으로 명시했다.
+2 W 보드 전력, 8 MAC/cycle, PA efficiency 0.35도 현재 시나리오 가정이다.
+이 논문은 UAV 논문이 아니라 무선 OTA-FL의 직접적인 계산 모델 근거다.
+
+Mora_TBD_2026 — IEEE TBD 2026.
+V-A: CIFAR-100에서 label-skew Dirichlet alpha=0.1; sample unlearning은 사용 데이터의 절반.
+https://arxiv.org/pdf/2504.05822
+DOI: 10.1109/TBDATA.2026.3705404
+UAV/VLM 데이터에 alpha=0.1을 채택한 것은 본 실험의 적용이다. 학습률, batch16,
+rank10 adapter, 20+180 라운드, 9개 요청, 5 FU steps까지 이 논문의 설정은 아니다.
+Non-IID 문장에는 Mora(0.1 직접 근거) + Liang(무선 OTA-FL의 Dirichlet 사용)을 붙였다.
+
+Zhong2026UAVOAFL / Zhai_TWC_2025 — UAV AirComp 모델의 관련 근거.
+https://ieeexplore.ieee.org/document/11271111/
+https://arxiv.org/pdf/2403.06653
+Zhong의 최종 원문 표는 이번 접근에서 확보하지 못했다. IEEE 웹 접근은 JS 검증 화면을
+반환했다. Zhai 저자 원고 VII-A는 -60 dB, -80 dBm, 0.1 W, 100 m를 사용한다.
+따라서 현 -60 dB / -90 dBm / 0.32 W / 50 m를 모두 'follow Zhong'라고 단정하는
+문장을 피하고, 원문 Eq. (7)을 확인한 Zhai만 채널 모델 문장에 인용했다.
+채널 모델의 근거와 현 실험 설정을 분리했으며, 수치는 변경하지 않았다.
+
+2. 추가한 직접 출처
+
+Wang_TCOMM_2025_Rechargeable — IEEE TCOM 73(6), 4137–4152, 2025.
+저자 원고 VI의 수치 설정: P0=79.86 W, Pi=88.63 W; Appendix A: Ph=P0+Pi.
+현재 hover power=168.49 W와 일치한다. 이는 원래 에너지 모델에 대한 최근 UAV 논문의
+교차 확인이며, 이 논문의 충전/경로 최적화 알고리즘을 사용했다는 뜻은 아니다.
+https://discovery.ucl.ac.uk/id/eprint/10200439/
+https://doi.org/10.1109/TCOMM.2024.3493812
+
+Liu_TGRS_2024_RemoteCLIP — IEEE TGRS 62, 1–16, 2024.
+RemoteCLIP 모델과 공개 ViT-B/32 checkpoint의 직접 출처.
+rank10 residual adapter 및 8-frame temporal mean pooling은 본 코드의 확장이다.
+https://github.com/ChenDelong1999/RemoteCLIP
+https://doi.org/10.1109/TGRS.2024.3390838
+
+Zhao_ACMMM_2025_AirScape — ACM MM 2025, 12519–12528.
+https://huggingface.co/datasets/EmbodiedCity/AirScape-Dataset
+https://doi.org/10.1145/3746027.3758180
+AirScape는 원래 world-model/video generation 데이터이다. 본 실험은 공식 train의
+WebUAV3M-source subset을 video–intention retrieval로 적용한 것이다.
+원 논문의 retrieval 성능 재현으로 표현하지 않는다.
+
+Zhang_TPAMI_2023_WebUAV3M — IEEE TPAMI 45(7), 9186–9205, 2023.
+WebUAV-3M 영상 원천의 직접 출처; 본 실험의 텍스트는 AirScape motion intention.
+https://ieeexplore.ieee.org/abstract/document/10004511/
+https://github.com/983632847/WebUAV-3M
+
+Bashmal_RS_2023_CapERA — Remote Sensing 15(8), 2139, 2023.
+데이터 원출처이므로 IEEE/ACM이 아니어도 인용을 유지해야 한다.
+https://doi.org/10.3390/rs15082139
+
+3. 코드에서 확인한 주요 값
+
+U=10; mission area=1800x1800 m; H=50 m; five service regions.
+Uplink symbol rate=1e6/s; base bandwidth=1 MHz; coherence time=10 ms.
+Pmax=0.32 W; noise=-90 dBm; beta0=-60 dB at 1 m.
+Network RF cap=0.1 J/round; per-UAV RF cap=0.5 J/round.
+f=1.5 GHz; kappa=1e-27; board=2 W; 8 MAC/cycle; PA efficiency=0.35.
+Hover=79.86+88.63=168.49 W/UAV.
+20480 trainable adapter coordinates; frozen logit scale excluded.
+Local batch16, rank10, Dirichlet alpha=.1, 45 requests x5 FU steps.
+모든 수치를 본문에 나열하지 않고 핵심 자원·계산·호버 값만 추가했다.
+현재 에너지 모형은 실측 UAV 하드웨어의 전력 캘리브레이션이 아니다.
+
+근거 파일:
+tools/uav_real_vlm_v1/energy.py
+tools/uav_real_vlm_v1/experiment.py (CapERA partition and seen-sample cohort)
+tools/uav_convergence_v2/airscape.py (source-category labels and native text)
+tools/iot_sensitivity_v1/prepare_extra.py (AirScape에서 재사용하는 partition registration)
+results/combined_iq_experiment_a_20261030/iq/cases/baseline/settings.json
+results/combined_iq_experiment_a_20261030/iq/cases/baseline/mission_spec.json
+
+4. 참고문헌으로 해결되지 않는 원문 불일치
+
+지도: final_final_charts/yeouido_map/deployment.json과 README.md는 새 여의도 geometry를
+명시하지만, 기존 성능 실험은 Daejeon geometry를 사용한다고 명시한다. 최신 I/Q 실험의
+mission_spec.json도 위도36.x/경도127.x의 대전 좌표다. 따라서 실제 결과를 설명하는
+수정본은 Daejeon으로 고쳤고, 다른 geometry의 Yeouido 지도 cross-reference를 뺐다.
+여의도 그림을 기존 수치 실험의 경로라고 쓰려면 실제 여의도 geometry로 재실행해야 한다.
+
+삭제 모수: 코드의 cohort는 초기20 rounds의 seen[u]에서 len(seen[u])//2를 선택한다.
+entire initial training samples의 절반이 아니다. 'samples used during the initial
+learning rounds'로 수정했다. 초기 전체 데이터는 접근 가능하지만 20 mini-batch steps에
+모든 샘플을 실제 학습한 것은 아니므로 'has access to'로 정정했다.
+
+여의도 위치 변경과 삭제 모수 정정 외에는 기존 문장 구조를 유지했다.
+예시 인용을 늘리기 위해 관련 없는 UAV 논문이나 검증되지 않은 수치를 붙이지 않았다.

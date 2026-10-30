@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/wnlab/Documents/Codex/2026-10-20/files-pasted-by-the-user-standalone/outputs/ova_CK/tools/uav_convergence_v2/adaptive_iq_pilot_v1.py", line 161, in <module>
+    {'register': register, 'run': run, 'select': select}[a.action]()
+  File "/home/wnlab/Documents/Codex/2026-10-20/files-pasted-by-the-user-standalone/outputs/ova_CK/tools/uav_convergence_v2/adaptive_iq_pilot_v1.py", line 87, in run
+    from train import update_theta
+ModuleNotFoundError: No module named 'train'

@@ -1,0 +1,7 @@
+{
+  "dataset": "CapERA",
+  "retained_mR_percent": 16.666666666666664,
+  "matched_KL": 6.15415352132556e-05,
+  "common_KL": 0.00021357534295514505,
+  "scope": "Paired exact FL-only control: identical warm20, uniform16 minibatches, request release/exclusion schedule, and 180 further FL rounds; zero FU gradients."
+}
