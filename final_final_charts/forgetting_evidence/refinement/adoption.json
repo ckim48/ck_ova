@@ -1,0 +1,41 @@
+{
+  "display_label": "Proposed",
+  "variant": "retain0.95",
+  "configuration": {
+    "batch": 16,
+    "rho": null,
+    "retention": 0.95,
+    "threshold": 0.01,
+    "consistency": 3.0,
+    "project": false,
+    "stop_when_satisfied": false,
+    "late_uniform": 100
+  },
+  "user_authorization": "User explicitly requested Proposed label and CapERA improvement for Figure34.",
+  "scope": "Figure34 uses this shared physical variant on both datasets. Older bundles and the FU-workload energy chart retain their original P-KS method; they are not automatically results of the new variant.",
+  "qualification": [
+    {
+      "dataset": "CapERA",
+      "matched_KL": 0.003115533748338484,
+      "retained_mR": 17.617187499999996,
+      "matched_KL_reduction_vs_best_comparator_percent": 6.585901944486194,
+      "matched_KL_rank": 1,
+      "worst_matched_KL_rank": 1,
+      "retained_mR_rank": 1,
+      "common_KL_rank": 3
+    },
+    {
+      "dataset": "AirScape",
+      "matched_KL": 0.00079571700297551,
+      "retained_mR": 13.802083333333334,
+      "matched_KL_reduction_vs_best_comparator_percent": 35.28804678016808,
+      "matched_KL_rank": 1,
+      "worst_matched_KL_rank": 1,
+      "retained_mR_rank": 1,
+      "common_KL_rank": 4
+    }
+  ],
+  "single_development_seed": true,
+  "primary_common_KL_lead": false,
+  "causal_FU_benefit": false
+}

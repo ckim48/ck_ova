@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "rows": 8,
+  "datasets": [
+    "CapERA",
+    "AirScape"
+  ],
+  "ranks": [
+    {
+      "dataset": "CapERA",
+      "matched_KL_rank": 3,
+      "common_KL_rank": 4,
+      "improvement_vs_best_baseline_percent": -3.742360051940774
+    },
+    {
+      "dataset": "AirScape",
+      "matched_KL_rank": 1,
+      "common_KL_rank": 4,
+      "improvement_vs_best_baseline_percent": 27.37033081048159
+    }
+  ],
+  "geometry": [
+    {
+      "figure": "34_forget_matched_retrain_1x2",
+      "panels": [
+        {
+          "width_pt": 205.128,
+          "height_pt": 174.798,
+          "category_font_pt": 12,
+          "ylabel_font_pt": 14,
+          "category_gaps_pt": [
+            6.506052631578936,
+            7.091052631578936,
+            8.441052631578936
+          ]
+        },
+        {
+          "width_pt": 205.128,
+          "height_pt": 174.798,
+          "category_font_pt": 12,
+          "ylabel_font_pt": 14,
+          "category_gaps_pt": [
+            6.506052631578936,
+            7.091052631578978,
+            8.441052631578895
+          ]
+        }
+      ],
+      "canvas_in": [
+        7.4,
+        3.735
+      ]
+    }
+  ],
+  "conclusion": "Controlled leads only AirScape policy-matched KL among the three unchanged comparison methods. Not a joint/common-reference forgetting lead; no established causal FU benefit.",
+  "source_sha256": {
+    "final_final_charts/joint_quality_control/data/original_physical.csv": "3bc9c2106f2582b7594c82d5bc2d9367688d9f0fa27ba61f53800512cfcc91f0",
+    "final_final_charts/joint_quality_control/data/all_physical_candidates.csv": "4f957ba03a450da68249bc85dd68298d7cda8ee4a492a0c5e8280661e7c167ed",
+    "final_final_charts/joint_quality_control/data/paired_controls.csv": "da364bffd1c40f850aeb31d51e9bd120ae91f86f8ac4760ff6c8542de27f8e53"
+  },
+  "script_sha256": "875bdaef5e6e1584b710d5d6d1390bc89478985dc97abf9e63c52a0de52215e5"
+}

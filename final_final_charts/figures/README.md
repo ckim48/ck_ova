@@ -1,5 +1,7 @@
 # Matching paper figures
 
+`34_forget_matched_retrain_1x2.pdf` uses the updated Proposed: uniform FL sampling after round100 and FU retention coefficient0.95. Both dataset panels lead policy-matched KL among the unchanged comparators; see [all outcomes and limits](../forgetting_evidence/refinement/README.md). Existing learning curves and FU-workload energy figures still refer to their original P-KS parameters and were not relabeled as this new variant.
+
 Figures `20_...` through `27_...` add [forgetting-quality validation](../forgetting_quality/README.md). [All eight in one PDF](forgetting_quality_all.pdf). They use the same 532.8 pt canvas width and 205.128 × 174.798 pt panels as the paired bars. The FU/no-FU diagnostics use exact aggregation at the same 200-round horizon; they are separate from the unchanged actual wireless results.
 
 Use every PDF with `width=\linewidth`. All four have the same 532.8 pt canvas width, 12 pt numeric ticks, and 14 pt axis titles and dataset labels.

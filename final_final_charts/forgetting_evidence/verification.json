@@ -8,15 +8,15 @@
   "ranks": [
     {
       "dataset": "CapERA",
-      "matched_KL_rank": 3,
-      "common_KL_rank": 4,
-      "improvement_vs_best_baseline_percent": -3.742360051940774
+      "matched_KL_rank": 1,
+      "common_KL_rank": 3,
+      "improvement_vs_best_baseline_percent": 6.585901944486194
     },
     {
       "dataset": "AirScape",
       "matched_KL_rank": 1,
       "common_KL_rank": 4,
-      "improvement_vs_best_baseline_percent": 27.37033081048159
+      "improvement_vs_best_baseline_percent": 35.28804678016808
     }
   ],
   "geometry": [
@@ -29,7 +29,7 @@
           "category_font_pt": 12,
           "ylabel_font_pt": 14,
           "category_gaps_pt": [
-            6.506052631578936,
+            9.791052631578937,
             7.091052631578936,
             8.441052631578936
           ]
@@ -40,7 +40,7 @@
           "category_font_pt": 12,
           "ylabel_font_pt": 14,
           "category_gaps_pt": [
-            6.506052631578936,
+            9.791052631578937,
             7.091052631578978,
             8.441052631578895
           ]
@@ -52,11 +52,22 @@
       ]
     }
   ],
-  "conclusion": "Controlled leads only AirScape policy-matched KL among the three unchanged comparison methods. Not a joint/common-reference forgetting lead; no established causal FU benefit.",
+  "conclusion": "Updated Proposed leads policy-matched KL on both datasets among the three unchanged comparators. It does not lead common-reference KL, and no positive causal FU benefit is established.",
+  "adopted_configuration": {
+    "batch": 16,
+    "rho": null,
+    "retention": 0.95,
+    "threshold": 0.01,
+    "consistency": 3.0,
+    "project": false,
+    "stop_when_satisfied": false,
+    "late_uniform": 100
+  },
   "source_sha256": {
     "final_final_charts/joint_quality_control/data/original_physical.csv": "3bc9c2106f2582b7594c82d5bc2d9367688d9f0fa27ba61f53800512cfcc91f0",
-    "final_final_charts/joint_quality_control/data/all_physical_candidates.csv": "4f957ba03a450da68249bc85dd68298d7cda8ee4a492a0c5e8280661e7c167ed",
-    "final_final_charts/joint_quality_control/data/paired_controls.csv": "da364bffd1c40f850aeb31d51e9bd120ae91f86f8ac4760ff6c8542de27f8e53"
+    "final_final_charts/forgetting_evidence/refinement/selected_physical.csv": "ac2b88bc2f9012730167463a8eecdea8a794cf4a0a797d72fac466312f317386",
+    "final_final_charts/forgetting_evidence/refinement/adoption.json": "4ce24920f69dba95b09566eea71a431d9833c709a17e8ddedf30fe4feaa542dc",
+    "final_final_charts/forgetting_evidence/refinement/paired_controls.csv": "66bb686a22aec4b6027b51317d32a061e24541267b3f9e10dbbdd56bf01b1aea"
   },
-  "script_sha256": "875bdaef5e6e1584b710d5d6d1390bc89478985dc97abf9e63c52a0de52215e5"
+  "script_sha256": "060911420063d2fd9d1780dc1be32f76a1c447aeb8d00804d466aa16e89e6d42"
 }

@@ -1,0 +1,94 @@
+{
+  "registered_unix": 1793334363.2114902,
+  "source_sha256": "8ebc2ff504a71e7049bdf34b44f6db4aec33baa3d51b105f7e1acce1f96c7ddc",
+  "inherited_source_sha256": "8ed896368ab70dbe656ddedd89825080a5acd46cbd3eca1a38eaba84697c8c29",
+  "variants": {
+    "control": {
+      "batch": 16,
+      "rho": null,
+      "retention": 1.0,
+      "threshold": 0.01,
+      "consistency": 3.0,
+      "project": false,
+      "stop_when_satisfied": false,
+      "late_uniform": null
+    },
+    "base100": {
+      "batch": 16,
+      "rho": null,
+      "retention": 1.0,
+      "threshold": 0.01,
+      "consistency": 3.0,
+      "project": false,
+      "stop_when_satisfied": false,
+      "late_uniform": 100
+    },
+    "retain0.95": {
+      "batch": 16,
+      "rho": null,
+      "retention": 0.95,
+      "threshold": 0.01,
+      "consistency": 3.0,
+      "project": false,
+      "stop_when_satisfied": false,
+      "late_uniform": 100
+    },
+    "retain0.9": {
+      "batch": 16,
+      "rho": null,
+      "retention": 0.9,
+      "threshold": 0.01,
+      "consistency": 3.0,
+      "project": false,
+      "stop_when_satisfied": false,
+      "late_uniform": 100
+    },
+    "retain0.85": {
+      "batch": 16,
+      "rho": null,
+      "retention": 0.85,
+      "threshold": 0.01,
+      "consistency": 3.0,
+      "project": false,
+      "stop_when_satisfied": false,
+      "late_uniform": 100
+    },
+    "retain0.75": {
+      "batch": 16,
+      "rho": null,
+      "retention": 0.75,
+      "threshold": 0.01,
+      "consistency": 3.0,
+      "project": false,
+      "stop_when_satisfied": false,
+      "late_uniform": 100
+    },
+    "retain0.5": {
+      "batch": 16,
+      "rho": null,
+      "retention": 0.5,
+      "threshold": 0.01,
+      "consistency": 3.0,
+      "project": false,
+      "stop_when_satisfied": false,
+      "late_uniform": 100
+    }
+  },
+  "seed": 0,
+  "datasets": [
+    "CapERA",
+    "AirScape"
+  ],
+  "purpose": "Investigate actual CapERA matched-KL improvement with retained-mR leadership preserved on both datasets. Not an instruction to force a winning curve.",
+  "design": "Seven declared configurations, same coefficient on both datasets. Original exact control and late-uniform100 control are included. Seed0 adaptive development after prior screens, not independent confirmation.",
+  "training": "Only the retained-CE coefficient inside the existing FU gradient changes. Priority16 through FL100 then uniform16. Keep proxy20, original gate0.01, consistency3, same rounds200/requests45/prescribed cycles225, native captions and fixed temperature. Reporting references/probabilities are never training teachers.",
+  "selection": "Prefer a shared setting maintaining at least original P-KS retained mR on both datasets and improving mean and worst-request matched KL. Validate up to two shortlisted settings under actual wireless caps before adoption; report every result. No condition guarantees leadership.",
+  "reference": "All late-uniform variants have the same FL-only policy, so use the previously trained uniform_after100 retained-only reference and exact-no-FU control. The common reference remains unchanged and is always reported. Original control uses the original priority matched reference.",
+  "scope": "Final matched KL is a secondary retraining-similarity metric. Do not equate a winning endpoint with a causal FU effect or common-reference lead. Carry paired no-FU results forward.",
+  "control_hashes": {
+    "results/joint_quality_audit_v1_20261030/capera/uniform_after100_reference/final.pt": "1296c3c12e541fa1ed6bf16834cc3a62b473ff8608311a787e0cee61d0b0fe6a",
+    "results/joint_quality_audit_v1_20261030/capera/uniform_after100_exact_no_fu/final.pt": "663d232dd703d2db4ce2f31838adcc3be508a6e9d6487b188d07d168f75cad84",
+    "results/joint_quality_audit_v1_20261030/airscape/uniform_after100_reference/final.pt": "7a8e730bd6169b870459dded20d28d5325fb5f0313412b91c2b67a0b5bef8a99",
+    "results/joint_quality_audit_v1_20261030/airscape/uniform_after100_exact_no_fu/final.pt": "468cf8e406335cc980efb81ed8de47b0bfffe0d339d8f71b18eeb510749520b7"
+  }
+}

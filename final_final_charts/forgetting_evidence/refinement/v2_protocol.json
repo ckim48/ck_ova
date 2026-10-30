@@ -1,0 +1,41 @@
+{
+  "registered_unix": 1793334555.5221066,
+  "source_sha256": "89fce69b238ee0c83f3f6ae432590d8f26ad4b7c606ab08d3a9e2efe0b882177",
+  "variants": {
+    "base100": {
+      "batch": 16,
+      "rho": null,
+      "retention": 1.0,
+      "threshold": 0.01,
+      "consistency": 3.0,
+      "project": false,
+      "stop_when_satisfied": false,
+      "late_uniform": 100
+    },
+    "retain0.97": {
+      "batch": 16,
+      "rho": null,
+      "retention": 0.97,
+      "threshold": 0.01,
+      "consistency": 3.0,
+      "project": false,
+      "stop_when_satisfied": false,
+      "late_uniform": 100
+    },
+    "retain0.98": {
+      "batch": 16,
+      "rho": null,
+      "retention": 0.98,
+      "threshold": 0.01,
+      "consistency": 3.0,
+      "project": false,
+      "stop_when_satisfied": false,
+      "late_uniform": 100
+    }
+  },
+  "inherited_source_sha256": "8ebc2ff504a71e7049bdf34b44f6db4aec33baa3d51b105f7e1acce1f96c7ddc",
+  "first_source_sha256": "8ed896368ab70dbe656ddedd89825080a5acd46cbd3eca1a38eaba84697c8c29",
+  "purpose": "Five-point screen decreased KL but lost retained mR. Test two smaller coefficient changes,0.97/0.98, plus unchanged late-uniform control. Finish this finite extension rather than assuming joint leadership.",
+  "design": "Same common setting on both datasets, seed0 development; same200 rounds/45 requests/225 cycles. All earlier failures preserved. Same frozen common and policy-matched references, full gallery and paired no-FU control; no evaluation model/probability enters training.",
+  "selection": "Maintain original P-KS retained mR on both datasets, then compare actual physical mean/worst matched KL against all unchanged comparators. Report common KL and no-FU findings regardless. No outcome is guaranteed."
+}
