@@ -52,6 +52,32 @@
       ]
     }
   ],
+  "detail": {
+    "dataset": "CapERA",
+    "main_axis_zero_baseline": true,
+    "main_axis_break": false,
+    "detail_y_limits": [
+      3.0,
+      3.5
+    ],
+    "detail_y_tick_interval": 0.1,
+    "display_scale": 1000,
+    "detail_markers": "Exact same values; points, not truncated bars.",
+    "detail_methods": [
+      "Proposed",
+      "ISCC-P2",
+      "AFL-OTA"
+    ],
+    "detail_values": [
+      0.003115533748338484,
+      0.0033351858158358443,
+      0.003337193054388752
+    ],
+    "F_SalUn_retained_in_main_panel": true,
+    "main_panel_count": 2,
+    "width_pt": 116.92295999999999,
+    "height_pt": 62.92727999999998
+  },
   "conclusion": "Updated Proposed leads policy-matched KL on both datasets among the three unchanged comparators. It does not lead common-reference KL, and no positive causal FU benefit is established.",
   "adopted_configuration": {
     "batch": 16,
@@ -69,5 +95,5 @@
     "final_final_charts/forgetting_evidence/refinement/adoption.json": "4ce24920f69dba95b09566eea71a431d9833c709a17e8ddedf30fe4feaa542dc",
     "final_final_charts/forgetting_evidence/refinement/paired_controls.csv": "66bb686a22aec4b6027b51317d32a061e24541267b3f9e10dbbdd56bf01b1aea"
   },
-  "script_sha256": "060911420063d2fd9d1780dc1be32f76a1c447aeb8d00804d466aa16e89e6d42"
+  "script_sha256": "665c5157237197b1864f1cbfcc61c862f282bf7053d720daea132b2da6185af5"
 }

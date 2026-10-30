@@ -6,6 +6,7 @@ import shutil
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.ticker import FormatStrFormatter
+from mpl_toolkits.axes_grid1.inset_locator import mark_inset
 import forgetting_quality_report_v1 as style
 
 ROOT=style.ROOT
@@ -16,6 +17,40 @@ NAME='34_forget_matched_retrain_1x2'
 
 def read_csv(name):
     with (SOURCE/name).open() as f:return list(csv.DictReader(f))
+
+
+def capera_detail(fig,ax,records):
+    """Magnify exact values with points while keeping zero-baseline bars visible."""
+    inset=ax.inset_axes([.20,.55,.57,.36],zorder=6)
+    selected=[r for r in records if r['dataset']=='CapERA'][:3]
+    for i,(r,color,marker) in enumerate(zip(selected,style.COLORS,['o','s','v'])):
+        point,=inset.plot(i,1000*r['matched_KL'],linestyle='None',marker=marker,
+            markersize=6.,markerfacecolor='white',markeredgecolor=color,markeredgewidth=1.3,zorder=3)
+        assert point.get_ydata().tolist()==[1000*r['matched_KL']]
+    inset.set_xlim(-.4,2.4);inset.set_ylim(3.,3.5)
+    inset.set_xticks([]);inset.set_yticks(np.linspace(3.,3.5,6))
+    inset.yaxis.set_major_formatter(FormatStrFormatter('%.1f'))
+    inset.tick_params(axis='y',labelsize=9.5,pad=2,length=2)
+    inset.set_facecolor('white');inset.set_axisbelow(True)
+    inset.grid(axis='y',color='#c7cbd1',ls=':',lw=.45)
+    for spine in inset.spines.values():spine.set_linewidth(.7)
+    rect,c1,c2=mark_inset(ax,inset,loc1=3,loc2=4,fc='none',ec='#656b74',lw=.65,zorder=5)
+    for artist in [rect,c1,c2]:artist.set_linestyle('--')
+    fig.canvas.draw();renderer=fig.canvas.get_renderer()
+    box=inset.get_window_extent(renderer)
+    assert ax.get_window_extent(renderer).contains(box.x0,box.y0)
+    assert ax.get_window_extent(renderer).contains(box.x1,box.y1)
+    for label in inset.get_yticklabels():
+        bound=label.get_window_extent(renderer)
+        assert bound.x0>=0 and bound.y0>=0 and bound.x1<=fig.bbox.x1 and bound.y1<=fig.bbox.y1
+    ticks=[t.get_window_extent(renderer) for t in inset.get_yticklabels()]
+    assert all(a.y1<b.y0 for a,b in zip(ticks,ticks[1:]))
+    return dict(dataset='CapERA',main_axis_zero_baseline=True,main_axis_break=False,
+        detail_y_limits=[3.,3.5],detail_y_tick_interval=.1,display_scale=1000,
+        detail_markers='Exact same values; points, not truncated bars.',
+        detail_methods=[r['label'] for r in selected],detail_values=[r['matched_KL'] for r in selected],
+        F_SalUn_retained_in_main_panel=True,main_panel_count=2,
+        width_pt=box.width*72/fig.dpi,height_pt=box.height*72/fig.dpi)
 
 
 def main():
@@ -50,10 +85,18 @@ def main():
         ticks=np.arange(0,10.1,2) if ds=='CapERA' else np.arange(0,5.1,1)
         ax.set_ylim(ticks[0],ticks[-1]);ax.set_yticks(ticks)
         ax.yaxis.set_major_formatter(FormatStrFormatter('%.1f'))
+    # Keep an export without the inset for a direct full-range comparison.
+    full_name=NAME+'_full_scale'
+    for suffix in ['pdf','png','svg']:
+        path=DEST/(full_name+'.'+suffix)
+        fig.savefig(path,dpi=220,facecolor='white',bbox_inches=None)
+        if suffix=='svg':path.write_text('\n'.join(line.rstrip() for line in path.read_text().splitlines())+'\n')
+    detail=capera_detail(fig,axes[0],records)
+    assert axes[0].get_ylim()==(0.,10.) and axes[1].get_ylim()==(0.,5.)
     style.save(fig,NAME)
     style.table(DEST/'values.csv',records)
     style.write(DEST/'verification.json',dict(passed=True,rows=8,datasets=list(style.DATASETS),
-        ranks=summaries,geometry=style.AUDITS,
+        ranks=summaries,geometry=style.AUDITS,detail=detail,
         conclusion='Updated Proposed leads policy-matched KL on both datasets among the three unchanged comparators. It does not lead common-reference KL, and no positive causal FU benefit is established.',
         adopted_configuration=adoption['configuration'],
         source_sha256={str(p.relative_to(ROOT)):style.sha(p) for p in [SOURCE/'original_physical.csv',selected_path,DEST/'refinement/adoption.json',DEST/'refinement/paired_controls.csv']},
@@ -62,11 +105,14 @@ def main():
     caption=(r'Forget-set KL divergence from policy-matched retained-only retraining references '
         r'after 200 FL rounds and 225 prescribed FU steps. Proposed uses uniform FL sampling after '
         r'round 100 and an FU retention coefficient of 0.95; each reference follows the corresponding learning policy. '
-        r'Lower values indicate closer prediction distributions. Results are from one development seed.')
+        r'Lower values indicate closer prediction distributions. The inset in (a) enlarges '
+        r'the interval $[3.0,3.5]\times10^{-3}$ using the same values. Results are from one development seed.')
     (DEST/'caption.tex').write_text('\\caption{'+caption+'}\n')
     (DEST/'README.md').write_text('''# Forgetting-quality evidence: one figure
 
-[PDF](34_forget_matched_retrain_1x2.pdf) · [PNG](34_forget_matched_retrain_1x2.png) · [All values, including common-reference KL](values.csv)
+[PDF](34_forget_matched_retrain_1x2.pdf) · [PNG](34_forget_matched_retrain_1x2.png) · [Full scale without inset](34_forget_matched_retrain_1x2_full_scale.pdf) · [All values, including common-reference KL](values.csv)
+
+Panel(a) includes a clearly bounded inset covering3.0–3.5 (in units of10^-3). It shows the exact Proposed/ISCC-P2/AFL-OTA values as points and connects to the corresponding main-panel interval. The full zero-baseline bars, including F-SalUn, remain visible; the main axes and panel(b) are unchanged. No values are adjusted, no middle interval is silently removed, and the inset does not change the measured6.6% CapERA reduction. The no-inset version remains available alongside the updated figure.
 
 This is a scoped comparison of forget-set prediction distributions to policy-matched retained-only retraining. It is not proof that Proposed has the best forgetting quality overall.
 
@@ -90,6 +136,7 @@ The refinement comprises20 new exact-aggregation development runs and two actual
 Rebuild with `MPLCONFIGDIR=/tmp/ova-mpl .venv/bin/python tools/uav_convergence_v2/forgetting_evidence_figure_v1.py`.
 ''')
     shutil.copyfile(DEST/(NAME+'.pdf'),ROOT/'final_final_charts/figures'/(NAME+'.pdf'))
+    shutil.copyfile(DEST/(full_name+'.pdf'),ROOT/'final_final_charts/figures'/(full_name+'.pdf'))
     print(json.dumps(dict(destination=str(DEST),ranks=summaries),indent=2))
 
 

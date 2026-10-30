@@ -1,6 +1,8 @@
 # Forgetting-quality evidence: one figure
 
-[PDF](34_forget_matched_retrain_1x2.pdf) · [PNG](34_forget_matched_retrain_1x2.png) · [All values, including common-reference KL](values.csv)
+[PDF](34_forget_matched_retrain_1x2.pdf) · [PNG](34_forget_matched_retrain_1x2.png) · [Full scale without inset](34_forget_matched_retrain_1x2_full_scale.pdf) · [All values, including common-reference KL](values.csv)
+
+Panel(a) includes a clearly bounded inset covering3.0–3.5 (in units of10^-3). It shows the exact Proposed/ISCC-P2/AFL-OTA values as points and connects to the corresponding main-panel interval. The full zero-baseline bars, including F-SalUn, remain visible; the main axes and panel(b) are unchanged. No values are adjusted, no middle interval is silently removed, and the inset does not change the measured6.6% CapERA reduction. The no-inset version remains available alongside the updated figure.
 
 This is a scoped comparison of forget-set prediction distributions to policy-matched retained-only retraining. It is not proof that Proposed has the best forgetting quality overall.
 
