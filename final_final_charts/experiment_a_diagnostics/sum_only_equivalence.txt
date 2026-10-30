@@ -1,0 +1,7 @@
+For each block, let v_L=nu/x_L and v_U=nu/x_U be the two I/Q noise variances. Set x_C=nu/(v_L+v_U), omitting inactive branches. Then the Combined noise variance equals v_L+v_U. Weighted Cauchy-Schwarz gives
+
+    x_C ||l_u+u_u||^2 <= x_L ||l_u||^2 + x_U ||u_u||^2.
+
+The channel factor1/|h_u|^2 is common. Thus every device/block has no greater RF energy and, at the same symbol count, no greater transmit power. The final-update noise covariance and the sum-based C9 distortion are unchanged. Both models apply the same final update when their Gaussian noise is coupled. The mapped control uses this construction; it is not a new optimized deployment algorithm.
+
+This argument applies to the present real local updates, perfect phase inversion, AWGN, block-isotropic independent I/Q noise, and a final linear sum. It does not provide separate FL/FU estimates for Combined, nor assert equivalence for nonlinear receiver processing, unknown phase, or different information constraints. Individual C8 limits are additional requirements for I/Q; they are not observable task errors of a one-stream combined estimate.

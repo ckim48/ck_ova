@@ -1,0 +1,228 @@
+{
+  "passed": true,
+  "snapshots": 10,
+  "checks": [
+    {
+      "dataset": "AirScape",
+      "joint_index": 0,
+      "physical_waveform_match": true,
+      "random_channel_phase": true,
+      "joint_power_inequality": true,
+      "independent_Combined_waveform_computed": true,
+      "max_update_difference": 1.6263032587282567e-19,
+      "IQ_RF_energy_j": 0.00889133962603567,
+      "Combined_RF_energy_j": 0.0052065488714261345,
+      "Monte_Carlo_trials": 2000,
+      "analytic_block_MSE": [
+        1.5850503558255457e-09,
+        2.306736218354644e-10,
+        5.822059782728616e-09
+      ],
+      "empirical_block_MSE": [
+        1.5912806261452364e-09,
+        2.313002584317121e-10,
+        5.831390049350302e-09
+      ]
+    },
+    {
+      "dataset": "AirScape",
+      "joint_index": 9,
+      "physical_waveform_match": true,
+      "random_channel_phase": true,
+      "joint_power_inequality": true,
+      "independent_Combined_waveform_computed": true,
+      "max_update_difference": 1.0842021724855044e-19,
+      "IQ_RF_energy_j": 0.010622664081845895,
+      "Combined_RF_energy_j": 0.007024533431856455,
+      "Monte_Carlo_trials": 2000,
+      "analytic_block_MSE": [
+        2.0851577962806494e-09,
+        3.8629138995704643e-10,
+        7.230787369640222e-09
+      ],
+      "empirical_block_MSE": [
+        2.0919445131995335e-09,
+        3.8768015356701275e-10,
+        7.228117743262947e-09
+      ]
+    },
+    {
+      "dataset": "AirScape",
+      "joint_index": 18,
+      "physical_waveform_match": true,
+      "random_channel_phase": true,
+      "joint_power_inequality": true,
+      "independent_Combined_waveform_computed": true,
+      "max_update_difference": 1.0842021724855044e-19,
+      "IQ_RF_energy_j": 0.00788329318851672,
+      "Combined_RF_energy_j": 0.004629574657820713,
+      "Monte_Carlo_trials": 2000,
+      "analytic_block_MSE": [
+        5.66783527084587e-09,
+        9.30707818336437e-10,
+        7.89688235518496e-09
+      ],
+      "empirical_block_MSE": [
+        5.66656277138467e-09,
+        9.333335084836862e-10,
+        7.891038916545351e-09
+      ]
+    },
+    {
+      "dataset": "AirScape",
+      "joint_index": 27,
+      "physical_waveform_match": true,
+      "random_channel_phase": true,
+      "joint_power_inequality": true,
+      "independent_Combined_waveform_computed": true,
+      "max_update_difference": 5.421010862427522e-20,
+      "IQ_RF_energy_j": 0.008246121814918775,
+      "Combined_RF_energy_j": 0.004792815292983998,
+      "Monte_Carlo_trials": 2000,
+      "analytic_block_MSE": [
+        1.3143461754924811e-09,
+        3.997755967009336e-10,
+        1.5171053738156012e-09
+      ],
+      "empirical_block_MSE": [
+        1.312119115517794e-09,
+        3.999033479011376e-10,
+        1.5092277391131778e-09
+      ]
+    },
+    {
+      "dataset": "AirScape",
+      "joint_index": 36,
+      "physical_waveform_match": true,
+      "random_channel_phase": true,
+      "joint_power_inequality": true,
+      "independent_Combined_waveform_computed": true,
+      "max_update_difference": 1.376428539288238e-20,
+      "IQ_RF_energy_j": 0.014410111601626724,
+      "Combined_RF_energy_j": 0.008357100196382037,
+      "Monte_Carlo_trials": 2000,
+      "analytic_block_MSE": [
+        1.3859442542097067e-10,
+        2.6849374790749126e-11,
+        1.3397816669713223e-10
+      ],
+      "empirical_block_MSE": [
+        1.3851905063950738e-10,
+        2.684355020904307e-11,
+        1.3437775002760872e-10
+      ]
+    },
+    {
+      "dataset": "CapERA",
+      "joint_index": 0,
+      "physical_waveform_match": true,
+      "random_channel_phase": true,
+      "joint_power_inequality": true,
+      "independent_Combined_waveform_computed": true,
+      "max_update_difference": 1.0842021724855044e-19,
+      "IQ_RF_energy_j": 0.007787143670643298,
+      "Combined_RF_energy_j": 0.0051250913713266144,
+      "Monte_Carlo_trials": 2000,
+      "analytic_block_MSE": [
+        2.065334657462283e-09,
+        4.390859678009541e-10,
+        6.51895265045706e-09
+      ],
+      "empirical_block_MSE": [
+        2.0719627246573524e-09,
+        4.406153746434623e-10,
+        6.478595677272202e-09
+      ]
+    },
+    {
+      "dataset": "CapERA",
+      "joint_index": 9,
+      "physical_waveform_match": true,
+      "random_channel_phase": true,
+      "joint_power_inequality": true,
+      "independent_Combined_waveform_computed": true,
+      "max_update_difference": 2.168404344971009e-19,
+      "IQ_RF_energy_j": 0.008321777000012857,
+      "Combined_RF_energy_j": 0.0051927045084188776,
+      "Monte_Carlo_trials": 2000,
+      "analytic_block_MSE": [
+        5.129012108436824e-09,
+        1.2896236316202214e-09,
+        8.474746693850948e-09
+      ],
+      "empirical_block_MSE": [
+        5.147673990973002e-09,
+        1.2897243087358723e-09,
+        8.444565371120811e-09
+      ]
+    },
+    {
+      "dataset": "CapERA",
+      "joint_index": 18,
+      "physical_waveform_match": true,
+      "random_channel_phase": true,
+      "joint_power_inequality": true,
+      "independent_Combined_waveform_computed": true,
+      "max_update_difference": 2.168404344971009e-19,
+      "IQ_RF_energy_j": 0.007383111642433608,
+      "Combined_RF_energy_j": 0.00450756093577321,
+      "Monte_Carlo_trials": 2000,
+      "analytic_block_MSE": [
+        6.6998747133970124e-09,
+        1.6896332672823219e-09,
+        6.10694468359509e-09
+      ],
+      "empirical_block_MSE": [
+        6.692334870117365e-09,
+        1.6983938344161114e-09,
+        6.091328624972573e-09
+      ]
+    },
+    {
+      "dataset": "CapERA",
+      "joint_index": 27,
+      "physical_waveform_match": true,
+      "random_channel_phase": true,
+      "joint_power_inequality": true,
+      "independent_Combined_waveform_computed": true,
+      "max_update_difference": 5.421010862427522e-20,
+      "IQ_RF_energy_j": 0.015167672483016922,
+      "Combined_RF_energy_j": 0.008647467204495787,
+      "Monte_Carlo_trials": 2000,
+      "analytic_block_MSE": [
+        1.1761050514713265e-09,
+        3.670887844675372e-10,
+        8.821440248240259e-10
+      ],
+      "empirical_block_MSE": [
+        1.1760813216130616e-09,
+        3.6601181807503553e-10,
+        8.841796122747881e-10
+      ]
+    },
+    {
+      "dataset": "CapERA",
+      "joint_index": 36,
+      "physical_waveform_match": true,
+      "random_channel_phase": true,
+      "joint_power_inequality": true,
+      "independent_Combined_waveform_computed": true,
+      "max_update_difference": 1.6940658945086007e-20,
+      "IQ_RF_energy_j": 0.009959174662244115,
+      "Combined_RF_energy_j": 0.005192570152965392,
+      "Monte_Carlo_trials": 2000,
+      "analytic_block_MSE": [
+        4.026167518488605e-11,
+        1.1178073985813765e-11,
+        3.602261840478205e-11
+      ],
+      "empirical_block_MSE": [
+        4.0282768612721615e-11,
+        1.1190515975917211e-11,
+        3.6041371003689415e-11
+      ]
+    }
+  ],
+  "source_sha256": "18f16258c355425ee77d97eacb00ec6e7ae351f7bb658c73c5450c6f9f92d0a8",
+  "interpretation": "The end-to-end mapped run deliberately couples the final Gaussian update to I/Q, so its tensor equality is a controlled consequence, not an independent quality win. This independent waveform computation verifies that the coupling corresponds to a physically valid single-stream Combined signal under the stated phase/noise model."
+}

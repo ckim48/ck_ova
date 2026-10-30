@@ -1,0 +1,602 @@
+[
+  {
+    "dataset": "AirScape",
+    "joint_index": 0,
+    "gain_db": 0.0,
+    "tolerance_ratio": 0.25,
+    "IQ_RF_energy_j": 0.03443109713755446,
+    "constructed_Combined_RF_energy_j": 0.005227283363266077,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "AirScape",
+    "joint_index": 0,
+    "gain_db": 0.0,
+    "tolerance_ratio": 1.0,
+    "IQ_RF_energy_j": 0.008891339576763654,
+    "constructed_Combined_RF_energy_j": 0.005206548851492316,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "AirScape",
+    "joint_index": 0,
+    "gain_db": 0.0,
+    "tolerance_ratio": 4.0,
+    "IQ_RF_energy_j": 0.011932607918183492,
+    "constructed_Combined_RF_energy_j": 0.005222259745647398,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "AirScape",
+    "joint_index": 0,
+    "gain_db": 0.0,
+    "tolerance_ratio": 10.0,
+    "IQ_RF_energy_j": 0.05263903353560627,
+    "constructed_Combined_RF_energy_j": 0.005223434144772743,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "AirScape",
+    "joint_index": 0,
+    "gain_db": -6.0,
+    "tolerance_ratio": 1.0,
+    "IQ_RF_energy_j": 0.035397060918812465,
+    "constructed_Combined_RF_energy_j": 0.020727644577925156,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "AirScape",
+    "joint_index": 0,
+    "gain_db": -6.0,
+    "tolerance_ratio": 4.0,
+    "IQ_RF_energy_j": 0.04750456727287759,
+    "constructed_Combined_RF_energy_j": 0.020790187794095236,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "AirScape",
+    "joint_index": 9,
+    "gain_db": 0.0,
+    "tolerance_ratio": 0.25,
+    "IQ_RF_energy_j": 0.04244068060656132,
+    "constructed_Combined_RF_energy_j": 0.007037918844421239,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "AirScape",
+    "joint_index": 9,
+    "gain_db": 0.0,
+    "tolerance_ratio": 1.0,
+    "IQ_RF_energy_j": 0.0106226639887564,
+    "constructed_Combined_RF_energy_j": 0.007024533356297586,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "AirScape",
+    "joint_index": 9,
+    "gain_db": 0.0,
+    "tolerance_ratio": 4.0,
+    "IQ_RF_energy_j": 0.013868315714800763,
+    "constructed_Combined_RF_energy_j": 0.007613744931994592,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "AirScape",
+    "joint_index": 9,
+    "gain_db": 0.0,
+    "tolerance_ratio": 10.0,
+    "IQ_RF_energy_j": 0.05533504124212435,
+    "constructed_Combined_RF_energy_j": 0.0076168828579382866,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "AirScape",
+    "joint_index": 9,
+    "gain_db": -6.0,
+    "tolerance_ratio": 1.0,
+    "IQ_RF_energy_j": 0.04228958601924213,
+    "constructed_Combined_RF_energy_j": 0.02796517033575043,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "AirScape",
+    "joint_index": 9,
+    "gain_db": -6.0,
+    "tolerance_ratio": 4.0,
+    "IQ_RF_energy_j": 0.055210757847705516,
+    "constructed_Combined_RF_energy_j": 0.030310863803948297,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "AirScape",
+    "joint_index": 18,
+    "gain_db": 0.0,
+    "tolerance_ratio": 0.25,
+    "IQ_RF_energy_j": 0.03755322826368708,
+    "constructed_Combined_RF_energy_j": 0.005649135828173212,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "AirScape",
+    "joint_index": 18,
+    "gain_db": 0.0,
+    "tolerance_ratio": 1.0,
+    "IQ_RF_energy_j": 0.007883293187542892,
+    "constructed_Combined_RF_energy_j": 0.004629574657428406,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "AirScape",
+    "joint_index": 18,
+    "gain_db": 0.0,
+    "tolerance_ratio": 4.0,
+    "IQ_RF_energy_j": 0.008885021820347859,
+    "constructed_Combined_RF_energy_j": 0.004644413698358035,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "AirScape",
+    "joint_index": 18,
+    "gain_db": 0.0,
+    "tolerance_ratio": 10.0,
+    "IQ_RF_energy_j": 0.033159069070121346,
+    "constructed_Combined_RF_energy_j": 0.004637483675988726,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "AirScape",
+    "joint_index": 18,
+    "gain_db": -6.0,
+    "tolerance_ratio": 1.0,
+    "IQ_RF_energy_j": 0.031383955512474235,
+    "constructed_Combined_RF_energy_j": 0.018430668710232453,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "AirScape",
+    "joint_index": 18,
+    "gain_db": -6.0,
+    "tolerance_ratio": 4.0,
+    "IQ_RF_energy_j": 0.03537190896549705,
+    "constructed_Combined_RF_energy_j": 0.018489743964721708,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "AirScape",
+    "joint_index": 27,
+    "gain_db": 0.0,
+    "tolerance_ratio": 0.25,
+    "IQ_RF_energy_j": 0.022746882042326947,
+    "constructed_Combined_RF_energy_j": 0.004829018334255473,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "AirScape",
+    "joint_index": 27,
+    "gain_db": 0.0,
+    "tolerance_ratio": 1.0,
+    "IQ_RF_energy_j": 0.008246121814747556,
+    "constructed_Combined_RF_energy_j": 0.004792815292884209,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "AirScape",
+    "joint_index": 27,
+    "gain_db": 0.0,
+    "tolerance_ratio": 4.0,
+    "IQ_RF_energy_j": 0.013170022444071257,
+    "constructed_Combined_RF_energy_j": 0.004814006123846155,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "AirScape",
+    "joint_index": 27,
+    "gain_db": 0.0,
+    "tolerance_ratio": 10.0,
+    "IQ_RF_energy_j": 0.06530933309499051,
+    "constructed_Combined_RF_energy_j": 0.006554906853827383,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "AirScape",
+    "joint_index": 27,
+    "gain_db": -6.0,
+    "tolerance_ratio": 0.25,
+    "IQ_RF_energy_j": 0.09055696878302436,
+    "constructed_Combined_RF_energy_j": 0.019224668746049157,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "AirScape",
+    "joint_index": 27,
+    "gain_db": -6.0,
+    "tolerance_ratio": 1.0,
+    "IQ_RF_energy_j": 0.03282840223484193,
+    "constructed_Combined_RF_energy_j": 0.019080541379402956,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "AirScape",
+    "joint_index": 27,
+    "gain_db": -6.0,
+    "tolerance_ratio": 4.0,
+    "IQ_RF_energy_j": 0.052430803731688715,
+    "constructed_Combined_RF_energy_j": 0.019164903581098867,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "AirScape",
+    "joint_index": 36,
+    "gain_db": 0.0,
+    "tolerance_ratio": 0.25,
+    "IQ_RF_energy_j": 0.03512868840934386,
+    "constructed_Combined_RF_energy_j": 0.008501412538326987,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "AirScape",
+    "joint_index": 36,
+    "gain_db": 0.0,
+    "tolerance_ratio": 1.0,
+    "IQ_RF_energy_j": 0.014410111603503998,
+    "constructed_Combined_RF_energy_j": 0.008357100197501537,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "AirScape",
+    "joint_index": 36,
+    "gain_db": 0.0,
+    "tolerance_ratio": 4.0,
+    "IQ_RF_energy_j": 0.021505605372313535,
+    "constructed_Combined_RF_energy_j": 0.008417853521809047,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "AirScape",
+    "joint_index": 36,
+    "gain_db": 0.0,
+    "tolerance_ratio": 10.0,
+    "IQ_RF_energy_j": 0.09240184145411255,
+    "constructed_Combined_RF_energy_j": 0.008427937640090078,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "AirScape",
+    "joint_index": 36,
+    "gain_db": -6.0,
+    "tolerance_ratio": 1.0,
+    "IQ_RF_energy_j": 0.05736768757999296,
+    "constructed_Combined_RF_energy_j": 0.033270215543443823,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "AirScape",
+    "joint_index": 36,
+    "gain_db": -6.0,
+    "tolerance_ratio": 4.0,
+    "IQ_RF_energy_j": 0.08561535709714069,
+    "constructed_Combined_RF_energy_j": 0.03351207848456796,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "CapERA",
+    "joint_index": 0,
+    "gain_db": 0.0,
+    "tolerance_ratio": 0.25,
+    "IQ_RF_energy_j": 0.03002728100691985,
+    "constructed_Combined_RF_energy_j": 0.005151261474694852,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "CapERA",
+    "joint_index": 0,
+    "gain_db": 0.0,
+    "tolerance_ratio": 1.0,
+    "IQ_RF_energy_j": 0.0077871437699015295,
+    "constructed_Combined_RF_energy_j": 0.0051250914367076674,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "CapERA",
+    "joint_index": 0,
+    "gain_db": 0.0,
+    "tolerance_ratio": 4.0,
+    "IQ_RF_energy_j": 0.00992159055946934,
+    "constructed_Combined_RF_energy_j": 0.005132576118980618,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "CapERA",
+    "joint_index": 0,
+    "gain_db": 0.0,
+    "tolerance_ratio": 10.0,
+    "IQ_RF_energy_j": 0.04188575734243111,
+    "constructed_Combined_RF_energy_j": 0.005136980863399636,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "CapERA",
+    "joint_index": 0,
+    "gain_db": -6.0,
+    "tolerance_ratio": 1.0,
+    "IQ_RF_energy_j": 0.031001177188482755,
+    "constructed_Combined_RF_energy_j": 0.020403356168785164,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "CapERA",
+    "joint_index": 0,
+    "gain_db": -6.0,
+    "tolerance_ratio": 4.0,
+    "IQ_RF_energy_j": 0.03949856355419001,
+    "constructed_Combined_RF_energy_j": 0.020433153464006384,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "CapERA",
+    "joint_index": 9,
+    "gain_db": 0.0,
+    "tolerance_ratio": 0.25,
+    "IQ_RF_energy_j": 0.030219101834397376,
+    "constructed_Combined_RF_energy_j": 0.005201948810983981,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "CapERA",
+    "joint_index": 9,
+    "gain_db": 0.0,
+    "tolerance_ratio": 1.0,
+    "IQ_RF_energy_j": 0.00832177700274469,
+    "constructed_Combined_RF_energy_j": 0.005192704500520912,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "CapERA",
+    "joint_index": 9,
+    "gain_db": 0.0,
+    "tolerance_ratio": 4.0,
+    "IQ_RF_energy_j": 0.010012134389099009,
+    "constructed_Combined_RF_energy_j": 0.0052762677300745,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "CapERA",
+    "joint_index": 9,
+    "gain_db": 0.0,
+    "tolerance_ratio": 10.0,
+    "IQ_RF_energy_j": 0.0418236125464156,
+    "constructed_Combined_RF_energy_j": 0.005269704719262679,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "CapERA",
+    "joint_index": 9,
+    "gain_db": -6.0,
+    "tolerance_ratio": 1.0,
+    "IQ_RF_energy_j": 0.03312959095880965,
+    "constructed_Combined_RF_energy_j": 0.020672528982827825,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "CapERA",
+    "joint_index": 9,
+    "gain_db": -6.0,
+    "tolerance_ratio": 4.0,
+    "IQ_RF_energy_j": 0.03985902492181274,
+    "constructed_Combined_RF_energy_j": 0.021005200581490524,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "CapERA",
+    "joint_index": 18,
+    "gain_db": 0.0,
+    "tolerance_ratio": 0.25,
+    "IQ_RF_energy_j": 0.028912469774176542,
+    "constructed_Combined_RF_energy_j": 0.004533994900695563,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "CapERA",
+    "joint_index": 18,
+    "gain_db": 0.0,
+    "tolerance_ratio": 1.0,
+    "IQ_RF_energy_j": 0.007383111642813785,
+    "constructed_Combined_RF_energy_j": 0.004507560935976893,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "CapERA",
+    "joint_index": 18,
+    "gain_db": 0.0,
+    "tolerance_ratio": 4.0,
+    "IQ_RF_energy_j": 0.009585448758583505,
+    "constructed_Combined_RF_energy_j": 0.004531534402412588,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "CapERA",
+    "joint_index": 18,
+    "gain_db": 0.0,
+    "tolerance_ratio": 10.0,
+    "IQ_RF_energy_j": 0.041953423645083095,
+    "constructed_Combined_RF_energy_j": 0.00453623814552208,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "CapERA",
+    "joint_index": 18,
+    "gain_db": -6.0,
+    "tolerance_ratio": 1.0,
+    "IQ_RF_energy_j": 0.029392696856930536,
+    "constructed_Combined_RF_energy_j": 0.017944923416134958,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "CapERA",
+    "joint_index": 18,
+    "gain_db": -6.0,
+    "tolerance_ratio": 4.0,
+    "IQ_RF_energy_j": 0.03816035883715449,
+    "constructed_Combined_RF_energy_j": 0.01804036344076751,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "CapERA",
+    "joint_index": 27,
+    "gain_db": 0.0,
+    "tolerance_ratio": 0.25,
+    "IQ_RF_energy_j": 0.03766804413037947,
+    "constructed_Combined_RF_energy_j": 0.009911095186749944,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "CapERA",
+    "joint_index": 27,
+    "gain_db": 0.0,
+    "tolerance_ratio": 1.0,
+    "IQ_RF_energy_j": 0.015167672483058852,
+    "constructed_Combined_RF_energy_j": 0.008647467204518398,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "CapERA",
+    "joint_index": 27,
+    "gain_db": 0.0,
+    "tolerance_ratio": 4.0,
+    "IQ_RF_energy_j": 0.025072451368844853,
+    "constructed_Combined_RF_energy_j": 0.009777378901887748,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "CapERA",
+    "joint_index": 27,
+    "gain_db": -6.0,
+    "tolerance_ratio": 1.0,
+    "IQ_RF_energy_j": 0.06038359176591201,
+    "constructed_Combined_RF_energy_j": 0.03442618695553382,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "CapERA",
+    "joint_index": 27,
+    "gain_db": -6.0,
+    "tolerance_ratio": 4.0,
+    "IQ_RF_energy_j": 0.09981522672715105,
+    "constructed_Combined_RF_energy_j": 0.03892444642432216,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "CapERA",
+    "joint_index": 36,
+    "gain_db": 0.0,
+    "tolerance_ratio": 0.25,
+    "IQ_RF_energy_j": 0.019772270724337727,
+    "constructed_Combined_RF_energy_j": 0.0052068646373744695,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "CapERA",
+    "joint_index": 36,
+    "gain_db": 0.0,
+    "tolerance_ratio": 1.0,
+    "IQ_RF_energy_j": 0.009959174662210118,
+    "constructed_Combined_RF_energy_j": 0.005192570152947553,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "CapERA",
+    "joint_index": 36,
+    "gain_db": 0.0,
+    "tolerance_ratio": 4.0,
+    "IQ_RF_energy_j": 0.022264342488879103,
+    "constructed_Combined_RF_energy_j": 0.005766610459172354,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "CapERA",
+    "joint_index": 36,
+    "gain_db": -6.0,
+    "tolerance_ratio": 0.25,
+    "IQ_RF_energy_j": 0.07871482771953717,
+    "constructed_Combined_RF_energy_j": 0.020728901207478986,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "CapERA",
+    "joint_index": 36,
+    "gain_db": -6.0,
+    "tolerance_ratio": 1.0,
+    "IQ_RF_energy_j": 0.03964818844552355,
+    "constructed_Combined_RF_energy_j": 0.020671994127856485,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  },
+  {
+    "dataset": "CapERA",
+    "joint_index": 36,
+    "gain_db": -6.0,
+    "tolerance_ratio": 4.0,
+    "IQ_RF_energy_j": 0.0886359438647718,
+    "constructed_Combined_RF_energy_j": 0.02295728901667267,
+    "same_aggregate_MSE": true,
+    "no_greater_RF_energy": true
+  }
+]

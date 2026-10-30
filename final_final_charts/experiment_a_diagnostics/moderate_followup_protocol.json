@@ -1,0 +1,121 @@
+{
+  "registered_unix": 1793365491.0659168,
+  "source_sha256": "4baf3833639eb778393fc8803dba29931ed11502998c26ac73f5333dd95621d6",
+  "parent_source_sha256": "e506e9da8208232ddfeb91ea9aefe6f2731d10d61ea9a4cb1ddc6529c0e13857",
+  "cases": {
+    "fu_moderate": {
+      "ratio": 0.25,
+      "channel_gain_db": 0.0,
+      "modes": [
+        "combined",
+        "iq"
+      ]
+    }
+  },
+  "parent_protocol": {
+    "registered_unix": 1793364870.1344278,
+    "source_sha256": "e506e9da8208232ddfeb91ea9aefe6f2731d10d61ea9a4cb1ddc6529c0e13857",
+    "parent_protocol": {
+      "registered_unix": 1793361948.1824298,
+      "methods": {
+        "combined": "Combined AirComp",
+        "iq": "I/Q AirComp"
+      },
+      "datasets": [
+        "CapERA",
+        "AirScape"
+      ],
+      "seed": 0,
+      "learning_configuration": {
+        "batch": 16,
+        "rho": null,
+        "retention": 0.95,
+        "threshold": 0.01,
+        "consistency": 3.0,
+        "project": false,
+        "stop_when_satisfied": false,
+        "late_uniform": 100
+      },
+      "source_sha256": {
+        "tools/uav_convergence_v2/combined_iq_experiment_a.py": "687fccf0dd3f2cdfbe4e5d39c5a78a709037eaa00e3408749a6fc11d6b731740",
+        "tools/uav_convergence_v2/joint_quality_control_v1.py": "8ed896368ab70dbe656ddedd89825080a5acd46cbd3eca1a38eaba84697c8c29",
+        "tools/uav_convergence_v2/joint_quality_physical_v2.py": "022dd85c48fb5a14d38ed9b7379afbc2afb32fdfb16ae688da85a6f59a3b189f",
+        "tools/uav_convergence_v2/manuscript_iq_study_v1.py": "166e921427307cf3a828f4447028b880746afd09362dcd876508eb0a5ac4d043",
+        "tools/uav_convergence_v2/manuscript_iq_radio_v1.py": "77e82d070a322f8572a3f5a6b333486c47772e313d06dc4d38117cad9b98ad74"
+      },
+      "fixed": "Same warm20 checkpoint, native features, data partitions, minibatch seeds, FL/FU objectives, LR, 200 FL rounds, 45 requests x 5 steps, five-region channels, bandwidth, head candidates, expansion grid, power0.32W and network RF0.1J. No outcome-dependent tuning.",
+      "shared_control": "Both arms estimate the same empirical task curvatures using identical HVP procedure and charge its executed computation. Both use the same joint-update MSE budget epsilon_L^2+epsilon_U^2 and task-distortion limits, head enumeration and BCD solver.",
+      "combined": "One real AirComp stream transmits g_L+g_U. Its per-device block energy uses ||g_L+g_U||^2, including the true cross term. One receiver noise stream. No invented separate FL/FU error measurements.",
+      "iq": "Two real updates occupy I and Q of one complex AirComp stream. Joint device block power and RF cap include BOTH branches. In addition to the common total-update constraints, individual component-MSE limits apply.",
+      "tolerances": "epsilon_a=max(1e-8,0.2*B_a) for active tasks. 2*delta_t=0.5*(epsilon_L^2+epsilon_U^2) after mean-normalizing empirical curvature, inherited from the prior manuscript pilot; not tuned for this comparison.",
+      "accounting": "Active FL/FU computation, uplink and broadcasts, circuits and hovering; fixed travel energy excluded. Same model for both. Head-optimizer wall time logged, not converted to hardware energy.",
+      "evaluation": "Report retained mR/loss, common-reference and policy-matched forget-set KL, total energy and active delay. Same uniform_after100 retained-only matched reference for both; neither evaluation reference is a training teacher.",
+      "limits": "One paired development seed. Empirical HVP curvature is not a certified bound. I/Q separation alone need not improve learning: both finally apply the sum. This isolates radio representation/controllability, not simultaneous versus serial scheduling. Both arms are parallel. No forgetting guarantee or forced winning outcome."
+    },
+    "cases": {
+      "balanced_replay": {
+        "ratio": 1.0,
+        "channel_gain_db": 0.0,
+        "modes": [
+          "iq"
+        ]
+      },
+      "mapped_noise_control": {
+        "ratio": 1.0,
+        "channel_gain_db": 0.0,
+        "modes": [
+          "combined"
+        ]
+      },
+      "fu_strict": {
+        "ratio": 0.1,
+        "channel_gain_db": 0.0,
+        "modes": [
+          "combined",
+          "iq"
+        ]
+      },
+      "fu_strict_weak": {
+        "ratio": 0.1,
+        "channel_gain_db": -12.0,
+        "modes": [
+          "combined",
+          "iq"
+        ]
+      }
+    },
+    "seed": 0,
+    "all_results_retained": true,
+    "motivation": "Original I/Q C8 component bounds were never >=99% active during joint rounds; C9 was active in all joint rounds. Test whether asymmetric requirements reveal a benefit, without withholding available controls from Combined.",
+    "asymmetry": "Hold epsilon_L^2+epsilon_U^2 and the two original C9 budgets fixed at each update. Multiply epsilon_U by ratio and renormalize both epsilons to the same total budget. Thus ratio specifies FU/FL RELATIVE tolerance ratio. Inactive tasks unchanged. Tight FU is ratio0.1 for both datasets.",
+    "channel": "Multiply complex channel amplitudes by10^(gain_db/20), identically for both arms. Keep noise, max power, RF caps, deadlines, count grid and all learning rules unchanged.",
+    "noise": "Original paired wireless seed; no new training-seed claim. All comparisons are development diagnostics, not statistically confirmed superiority.",
+    "replay": "Balanced I/Q must reproduce experiment-A final parameter tensors exactly. Save every joint-round scalar audit and five predetermined joint-update snapshots per dataset (joint indices0,9,18,27,36). No outcome-selected snapshots.",
+    "mapped_control": "Construct a single combined stream for EACH I/Q solution with the SAME head, duration and final-noise covariance. x_C=1/(1/x_L+1/x_U) over active branches. Weighted Cauchy-Schwarz gives ||l+u||^2*x_C <= ||l||^2*x_L+||u||^2*x_U per user/block. Couple its single Gaussian to the normalized sum of the two original Gaussians; no sample acceptance/rejection. It must reproduce the I/Q trajectory exactly while using no greater RF power. This is a constructive diagnostic, not an independently optimized deployment algorithm.",
+    "snapshot_grid": {
+      "tolerance_ratios": [
+        0.1,
+        0.25,
+        1.0,
+        4.0,
+        10.0
+      ],
+      "channel_gain_db": [
+        0.0,
+        -6.0,
+        -12.0
+      ]
+    },
+    "snapshot_scope": "Same real VLM gradients, curvature and geometry for both arms at every point. Frozen-update resource sensitivity only; no inference of end-to-end mR from snapshot data. Solver failure is no feasible design found, not proof of mathematical infeasibility.",
+    "primary_outputs": "All final retained mR, common/matched forget KL, active energy/delay; component/C9 constraint activity, all failures; constructive noise-equivalence checks. No requirement that I/Q win.",
+    "learning_unchanged": true,
+    "source_dependencies": {
+      "tools/uav_convergence_v2/combined_iq_experiment_a.py": "687fccf0dd3f2cdfbe4e5d39c5a78a709037eaa00e3408749a6fc11d6b731740",
+      "tools/uav_convergence_v2/manuscript_iq_radio_v1.py": "77e82d070a322f8572a3f5a6b333486c47772e313d06dc4d38117cad9b98ad74"
+    }
+  },
+  "reason": "Ratio0.1 had no feasible I/Q design at the first FU transaction on either dataset. The registered frozen-update grid showed ratio0.25 feasible for all five regional snapshots of both datasets at0dB. Run this same shared moderate setting end-to-end for BOTH methods. Selected using feasibility, before its mR/KL outcomes; adaptive development, not independent confirmation.",
+  "fixed": "Only FU relative tolerance ratio changes from the original balanced case; keep total MSE/C9 budgets, learning, hardware, geometry, seed and workload unchanged.",
+  "all_prior_failures_preserved": true,
+  "no_required_winning_outcome": true
+}

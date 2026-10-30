@@ -1,0 +1,153 @@
+{
+  "passed": true,
+  "source_sha256": "40e01e4bb52a4ace99d7702c501c1862f4888a5acca6705175a0391d07416c32",
+  "physical_limits_checked": true,
+  "all_conditions_retained": true,
+  "tensor_equivalence": [
+    {
+      "dataset": "CapERA",
+      "original_reproduced_bitwise": true,
+      "mapped_Combined_equals_IQ_bitwise": true,
+      "transactions": 180,
+      "same_head_duration_and_noise_covariance": true,
+      "no_greater_Combined_RF_power": true,
+      "IQ_checkpoint_sha256": "989295b541a1a84c50f4a33e2ecb868ece55019e616dcf41ba22585ce0231cb5",
+      "mapped_checkpoint_sha256": "989295b541a1a84c50f4a33e2ecb868ece55019e616dcf41ba22585ce0231cb5"
+    },
+    {
+      "dataset": "AirScape",
+      "original_reproduced_bitwise": true,
+      "mapped_Combined_equals_IQ_bitwise": true,
+      "transactions": 180,
+      "same_head_duration_and_noise_covariance": true,
+      "no_greater_Combined_RF_power": true,
+      "IQ_checkpoint_sha256": "66b76079b31583e78e5b7ebee69b04943d40f20be6f4f292d30b78370db1d11f",
+      "mapped_checkpoint_sha256": "66b76079b31583e78e5b7ebee69b04943d40f20be6f4f292d30b78370db1d11f"
+    }
+  ],
+  "independent_complex_waveform_checked": true,
+  "snapshot_designs": 300,
+  "constructive_checks": 60,
+  "figures": [
+    {
+      "name": "41_iq_tolerance_energy_1x2",
+      "caption": "Uplink-phase energy versus the FU-to-FL relative error tolerance ratio at channel-power offset 0 dB. Five fixed VLM updates per dataset; energy means plotted only where all five designs are feasible.",
+      "files": [
+        {
+          "file": "41_iq_tolerance_energy_1x2.pdf",
+          "sha256": "a99e94b84f64633d550adb9579555d10be83aabd5360e02986274dda8a110828"
+        },
+        {
+          "file": "41_iq_tolerance_energy_1x2.png",
+          "sha256": "ab1818537892b43fd5f08ba171a72aca32da837dd7a3f6447277470c2a42d11d"
+        },
+        {
+          "file": "41_iq_tolerance_energy_1x2.svg",
+          "sha256": "4ee0a793544b228da234df68f065492064c13c454c8cae7573915bff1e4bfc71"
+        }
+      ]
+    },
+    {
+      "name": "42_iq_tolerance_energy_1x2",
+      "caption": "Uplink-phase energy versus the FU-to-FL relative error tolerance ratio at channel-power offset -6 dB. Five fixed VLM updates per dataset; energy means plotted only where all five designs are feasible.",
+      "files": [
+        {
+          "file": "42_iq_tolerance_energy_1x2.pdf",
+          "sha256": "da5641e7c04ddf3f26133a3751c94a9dcd426ce5f7ca6ba4d0d18f71e9011aa2"
+        },
+        {
+          "file": "42_iq_tolerance_energy_1x2.png",
+          "sha256": "43137d761f9d124605b2fa7bab381c84f61949657d5d94706167b1807f3c31a8"
+        },
+        {
+          "file": "42_iq_tolerance_energy_1x2.svg",
+          "sha256": "b93e37b65315c0d6b4facde86c3358cd320a3fa635fe60ac07c9cbfef3050981"
+        }
+      ]
+    },
+    {
+      "name": "43_iq_tolerance_feasibility_1x2",
+      "caption": "Fraction of feasible radio designs under a -12 dB channel-power offset on five fixed VLM updates per dataset. Solver failures are not proofs of infeasibility.",
+      "axes": [
+        {
+          "width_pt": 205.12800000000001,
+          "height_pt": 174.798
+        },
+        {
+          "width_pt": 205.12800000000001,
+          "height_pt": 174.798
+        }
+      ],
+      "files": [
+        {
+          "file": "43_iq_tolerance_feasibility_1x2.pdf",
+          "sha256": "7a984880f20c5c64e787cb08ddc7276ea6110222914f41ef71138eaf78a6cda9"
+        },
+        {
+          "file": "43_iq_tolerance_feasibility_1x2.png",
+          "sha256": "1209f3f0b3463ed4df346b6772d22804dc8256f01128a209c8b49017899fc385"
+        },
+        {
+          "file": "43_iq_tolerance_feasibility_1x2.svg",
+          "sha256": "85e022a99c3d20ce81662eb0c9b9d5e5fdce2815f0dc35dd158129bf2b3dad5c"
+        }
+      ]
+    },
+    {
+      "name": "44_iq_diagnostic_matched_KL_1x2",
+      "caption": "Comparison of Forget-set KL ($\\times 10^{-3}$) after the same200 FL rounds and225 FU cycles. Balanced, tighter FU and strict FU use relative tolerance ratios1,0.25 and0.1, respectively. Incomplete runs have no final performance bar.",
+      "files": [
+        {
+          "file": "44_iq_diagnostic_matched_KL_1x2.pdf",
+          "sha256": "bff4776e2bf1270f63d62fb9eec5907693e9293069a33695ba53375f89b29bf8"
+        },
+        {
+          "file": "44_iq_diagnostic_matched_KL_1x2.png",
+          "sha256": "aca3f1e6070106fe1afb2cf592263ce55dd6b3cb4009338aee8739ab6f5b5f69"
+        },
+        {
+          "file": "44_iq_diagnostic_matched_KL_1x2.svg",
+          "sha256": "b6add1f96b4c805e8745059c3b4238f93307c9a3523209426f6c638bf49f98f4"
+        }
+      ]
+    },
+    {
+      "name": "45_iq_diagnostic_mR_1x2",
+      "caption": "Comparison of Retained mR (%) after the same200 FL rounds and225 FU cycles. Balanced, tighter FU and strict FU use relative tolerance ratios1,0.25 and0.1, respectively. Incomplete runs have no final performance bar.",
+      "files": [
+        {
+          "file": "45_iq_diagnostic_mR_1x2.pdf",
+          "sha256": "80dc6f3e703ebe85be1d687c841540f64a7fb22c98c1a865ea7d7565ffa87937"
+        },
+        {
+          "file": "45_iq_diagnostic_mR_1x2.png",
+          "sha256": "1d481216c3213b0b3a0eeb899514eb7bf516d214558095dd13f66c099c4bce92"
+        },
+        {
+          "file": "45_iq_diagnostic_mR_1x2.svg",
+          "sha256": "ff43a431dccdd06e4ae3179f1521681db1fc12d664a6a3325586f956d3c45687"
+        }
+      ]
+    },
+    {
+      "name": "46_iq_diagnostic_energy_kJ_1x2",
+      "caption": "Comparison of Total energy (kJ) after the same200 FL rounds and225 FU cycles. Balanced, tighter FU and strict FU use relative tolerance ratios1,0.25 and0.1, respectively. Incomplete runs have no final performance bar.",
+      "files": [
+        {
+          "file": "46_iq_diagnostic_energy_kJ_1x2.pdf",
+          "sha256": "26ede45db3aaafc97e7a9063ce3438e46f6fb03a641cc0e249624a13042db083"
+        },
+        {
+          "file": "46_iq_diagnostic_energy_kJ_1x2.png",
+          "sha256": "d6279c33ede798b4eee5d6a08b483e07a9e67083d2b319b08987b903f9af94d0"
+        },
+        {
+          "file": "46_iq_diagnostic_energy_kJ_1x2.svg",
+          "sha256": "424619e7cede2aa1ef3493030c7ea72cdd5dfb2d79d2e7e3bfefb39e61ea3b09"
+        }
+      ]
+    }
+  ],
+  "completed_arms": 14,
+  "total_arms": 20
+}

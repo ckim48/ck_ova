@@ -1,0 +1,22 @@
+[
+  {
+    "dataset": "CapERA",
+    "original_reproduced_bitwise": true,
+    "mapped_Combined_equals_IQ_bitwise": true,
+    "transactions": 180,
+    "same_head_duration_and_noise_covariance": true,
+    "no_greater_Combined_RF_power": true,
+    "IQ_checkpoint_sha256": "989295b541a1a84c50f4a33e2ecb868ece55019e616dcf41ba22585ce0231cb5",
+    "mapped_checkpoint_sha256": "989295b541a1a84c50f4a33e2ecb868ece55019e616dcf41ba22585ce0231cb5"
+  },
+  {
+    "dataset": "AirScape",
+    "original_reproduced_bitwise": true,
+    "mapped_Combined_equals_IQ_bitwise": true,
+    "transactions": 180,
+    "same_head_duration_and_noise_covariance": true,
+    "no_greater_Combined_RF_power": true,
+    "IQ_checkpoint_sha256": "66b76079b31583e78e5b7ebee69b04943d40f20be6f4f292d30b78370db1d11f",
+    "mapped_checkpoint_sha256": "66b76079b31583e78e5b7ebee69b04943d40f20be6f4f292d30b78370db1d11f"
+  }
+]
