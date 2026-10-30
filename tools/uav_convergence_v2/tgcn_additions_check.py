@@ -242,7 +242,7 @@ def main():
             assert recovered['evaluation']['retained']['mR']*100 == records[-1]['retained_mR_percent']
         else:
             assert s['figure'] == report.NAMES[1] and s['kind'] == 'paired_bar'
-            assert s['x'] == [1, 9]
+            assert s['x'] == [3, 9]
             assert len(s['bar_positions']) == len(s['hatches']) == 2
             assert math.isclose(s['bar_positions'][1]-s['bar_positions'][0], .37)
             assert s['y'] == [next(r['total_energy_j']*.001 for r in rows if (r['dataset'], r['method'], r['fu_steps_per_request']) == (s['dataset'], s['method'], x)) for x in s['x']]
@@ -267,7 +267,7 @@ def main():
         if precisions:
             assert precisions[0] == precisions[1]
         if figure['name'] == report.NAMES[1]:
-            assert figure['kind'] == 'paired_bar' and figure['steps_per_request'] == [1, 9]
+            assert figure['kind'] == 'paired_bar' and figure['steps_per_request'] == [3, 9]
             assert figure['bars_per_method'] == 2 and figure['bars_per_panel'] == 8
             assert not figure['bar_top_annotations']
         for item in figure['files']:

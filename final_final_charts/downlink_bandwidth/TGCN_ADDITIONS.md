@@ -14,7 +14,7 @@ Energy-to-target CSV requires all45 FU procedures finished; missing targets rema
 
 ## 11: Total energy versus FU steps per request
 
-The main figure uses two adjacent bars per algorithm: 1 versus 9 outer FU steps per request, the endpoints of the completed sweep. Method colors match the other resource plots; hatching identifies workload. Both panels use the same zero baseline, with no values above bars. All five measured workloads (1, 3, 5, 7, 9) remain in the full metrics files.
+The main figure uses two adjacent bars per algorithm: 3 versus 9 outer FU steps per request, two measured workloads from the completed sweep. Method colors match the other resource plots; hatching identifies workload. Both panels use the same zero baseline, with no values above bars. All five measured workloads (1, 3, 5, 7, 9) remain in the full metrics files.
 
 Forty fresh executions:1/3/5/7/9 outer FU steps per request × four methods × two datasets. Same45 requests, sample cohorts, release ordinals,10UAV, five regions,200 totalFL rounds, initial models, features, learning/radio/energy coefficients. Every prescribed FU step finishes. Eight fresh five-step controls exactly reproduce original final parameter tensors, quality, transaction clocks and radio decisions.
 
@@ -110,3 +110,7 @@ Reproduce with `.venv/bin/python tools/uav_convergence_v2/energy_target_comparis
 <!-- rank-detail-v2 -->
 
 Figure 19 has two full-height panels and no overall title or upper detail strips. Both axes retain the full 0–700 rank range and use the plain label GT rank. Every outlier is retained as a hollow marker, with only horizontal spreading to reduce overlap. Box fills now use the exact opaque colors from the method palette in the bar and line charts. Each method has the same median line emphasis and a matching line-chart marker; lower GT ranks are better. On AirScape, the Proposed and AFL-OTA medians are 35.5 and 37, while their 75th percentiles are 95.25 and 89.25; neither distribution is uniformly better. Figure 11 uses 12 pt method names on one line. Reapply these presentation changes with `.venv/bin/python tools/uav_convergence_v2/paper_boxplot_refine_v2.py`.
+
+<!-- fu-workload-3-9 -->
+
+Figure11 now displays the measured 3-step and9-step workloads. At3 steps, Proposed uses12.06%/12.16% less energy than AFL-OTA on CapERA/AirScape; at1 step the reductions are3.50%/3.63%. The full1/3/5/7/9 sweep remains in the metrics files, and the previous1/9 figure is archived at `archive/fu_steps_1_9_20261030/`. These are workload-cost comparisons, not equal-forgetting-quality comparisons; prescribed FU steps alone do not certify deletion. No new training, interpolated2-step results, changed method, or changed numerical measurement is used.

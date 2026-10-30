@@ -112,7 +112,7 @@ def main(only_rank=False):
         '- `all_method_rank_boxplot_1x2`: all retained-query ranks at **300 kJ**, copied from '
         '`../downlink_bandwidth/limited_energy/300kJ/19_all_method_rank_boxplot_1x2.pdf`. '
         'See the accompanying caption for the experiment conditions.\n'
-        '- `fu_steps_energy_1x2`: current Figure 11, paired 1-step and 9-step FU workloads.\n'
+        '- `fu_steps_energy_1x2`: current Figure 11, paired 3-step and 9-step FU workloads.\n'
         '- `01_round_loss_1x2`: current P-KS round validation loss.\n'
         '- `05_time_mr_1x2`: current P-KS retained mR under the shared time budget.\n\n'
         'The rank and FU bar figures have identical 7.4 × 3.735 inch canvases and '

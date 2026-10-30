@@ -149,9 +149,9 @@ def fu_metrics():
 
 
 def fu_bars(rows):
-    """Display the two measured workload endpoints; keep all five in the CSV."""
+    """Display measured 3/9-step workloads; keep all five in the CSV."""
     from matplotlib.patches import Patch
-    levels, hatches = [1, 9], ['//', '..']
+    levels, hatches = [3, 9], ['//', '..']
     prior.chart.plt.rcParams['hatch.linewidth'] = .55
     fig, axes = prior.chart.style.canvas('Total energy (kJ)')
     values = [r['total_energy_j']*.001 for r in rows if r['fu_steps_per_request'] in levels]
@@ -191,7 +191,7 @@ def fu_bars(rows):
         fig.savefig(path, dpi=350, bbox_inches='tight')
         files.append(dict(file=path.name, sha256=sha(path)))
     prior.chart.plt.close(fig)
-    prior.FIGURES.append(dict(name=NAMES[1], title='Total energy: paired 1-step and 9-step FU workloads',
+    prior.FIGURES.append(dict(name=NAMES[1], title='Total energy: paired 3-step and 9-step FU workloads',
         axes=panels, files=files, kind='paired_bar', steps_per_request=levels,
         bars_per_method=2, bars_per_panel=8, bar_top_annotations=False))
 
@@ -283,7 +283,7 @@ def documents():
         'All45 deletion procedures finish by650kJ for every method. Before completion, points reflect concurrent FL/FU progress; they do not imply that all requests have already finished. After the original200FL/225FU workload, every method continues retained-only FL with the same restarted0.0035 learning rate. No new deletion requests arrive. Curves show the last completed evaluated model using steps-post, with markers at the same energy budgets. No interpolation or unexecuted model updates. All recorded declines are retained.', '',
         'Energy-to-target CSV requires all45 FU procedures finished; missing targets remain unreached. Procedure completion and retained mR do not certify forgetting quality. Existing P-KS common-retrain KL limitations remain; this figure is an energy/retained-utility comparison, not an equal-certified-unlearning claim.', '',
         '## 11: Total energy versus FU steps per request', '',
-        'The main figure uses two adjacent bars per algorithm: 1 versus 9 outer FU steps per request, the endpoints of the completed sweep. Method colors match the other resource plots; hatching identifies workload. Both panels use the same zero baseline, with no values above bars. All five measured workloads (1, 3, 5, 7, 9) remain in the full metrics files.', '',
+        'The main figure uses two adjacent bars per algorithm: 3 versus 9 outer FU steps per request, two measured workloads from the completed sweep. Method colors match the other resource plots; hatching identifies workload. Both panels use the same zero baseline, with no values above bars. All five measured workloads (1, 3, 5, 7, 9) remain in the full metrics files.', '',
         'Forty fresh executions:1/3/5/7/9 outer FU steps per request × four methods × two datasets. Same45 requests, sample cohorts, release ordinals,10UAV, five regions,200 totalFL rounds, initial models, features, learning/radio/energy coefficients. Every prescribed FU step finishes. Eight fresh five-step controls exactly reproduce original final parameter tensors, quality, transaction clocks and radio decisions.', '',
         'GA→FT comparators retain two local optimizer substeps per outer FU cycle; both are charged. More steps do not necessarily improve mR or KL, so all quality values and physical-bound exceedances accompany the energy figure. Flat Proposed curves are retained: co-aggregation may absorb additional FU work within the unchanged180 mission-FL transmissions. Parallel refers to joint FL/FU aggregation/application, not simultaneous local CPU execution.', '',
         '## 12–13: Earlier fixed-round retrieval diagnostics', '',

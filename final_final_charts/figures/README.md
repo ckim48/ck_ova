@@ -5,7 +5,7 @@ Figures `20_...` through `27_...` add [forgetting-quality validation](../forgett
 Use every PDF with `width=\linewidth`. All four have the same 532.8 pt canvas width, 12 pt numeric ticks, and 14 pt axis titles and dataset labels.
 
 - `all_method_rank_boxplot_1x2`: all retained-query ranks at **300 kJ**, copied from `../downlink_bandwidth/limited_energy/300kJ/19_all_method_rank_boxplot_1x2.pdf`. See the accompanying caption for the experiment conditions.
-- `fu_steps_energy_1x2`: current Figure 11, paired 1-step and 9-step FU workloads.
+- `fu_steps_energy_1x2`: current Figure 11, paired 3-step and 9-step FU workloads.
 - `01_round_loss_1x2`: current P-KS round validation loss.
 - `05_time_mr_1x2`: current P-KS retained mR under the shared time budget.
 

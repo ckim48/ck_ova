@@ -154,7 +154,7 @@
     },
     {
       "name": "11_fu_steps_energy_1x2",
-      "title": "Total energy: paired 1-step and 9-step FU workloads",
+      "title": "Total energy: paired 3-step and 9-step FU workloads",
       "axes": [
         {
           "dataset": "CapERA",
@@ -243,21 +243,21 @@
       ],
       "files": [
         {
-          "file": "11_fu_steps_energy_1x2.pdf",
-          "sha256": "ee9541ab27243315bd9b8d7d8b03ebbfe7a222bdc794466ff284373986f2d94b"
+          "file": "11_fu_steps_energy_1x2.png",
+          "sha256": "9b7a6173e2b049f59e529a406d8b506ad1cf6408c8b5cf3395aeaec8d73f2373"
         },
         {
-          "file": "11_fu_steps_energy_1x2.png",
-          "sha256": "87459f1d4eed21d0e2cffa34e636124e8e007cf7da6eff95dab4c96a4d54d868"
+          "file": "11_fu_steps_energy_1x2.pdf",
+          "sha256": "8ebc642d7eb953edb83d871eca9eb3d13c039c266b54ddb440af39fa070e7856"
         },
         {
           "file": "11_fu_steps_energy_1x2.svg",
-          "sha256": "ca06869cc8b2dc3a76853f79be52bc1f5b28e844801f3f09bfab9f1776f5ab73"
+          "sha256": "6910e704eda0383d2e2dd6c7f53b6dbb751fcb2f42a2db6ef75021bf853e1aeb"
         }
       ],
       "kind": "paired_bar",
       "steps_per_request": [
-        1,
+        3,
         9
       ],
       "bars_per_method": 2,
@@ -313,7 +313,8 @@
             "one_line": true
           }
         ]
-      }
+      },
+      "display_revision": "measured_3_and_9_steps_v2"
     },
     {
       "name": "12_capera_text_video_examples",
@@ -34591,7 +34592,7 @@
     "results/tgcn_fu_workload_v1_20261028/salun/salun/cases/fu_steps_9/airscape_seed0/iscc_p2_gaft/service_completion.json": "b7fce8f228c8db8b032febdbe308210370e75f926737be71fdb59a4dd4c9175d",
     "results/tgcn_fu_workload_v1_20261028/salun/salun/cases/fu_steps_9/airscape_seed0/iscc_p2_gaft/mia.json": "c1d8c670aedf55429fdb4ea3b7a43dde09450d1c915d0e417a41e105cb2321a2",
     "results/tgcn_fu_workload_v1_20261028/salun/salun/cases/fu_steps_9/airscape_seed0/iscc_p2_gaft/request_records.json": "b48dacfa9e2fbd9b93858778b6b899976ddf12044b57e272a536342f3f01d1e6",
-    "tools/uav_convergence_v2/tgcn_additions_report.py": "256d370f6106f52a284a902df763c54bfcf1a69165cbb07f03f7ff9e505ae45c",
+    "tools/uav_convergence_v2/tgcn_additions_report.py": "4067b0f150c89a1b39270ead7b1bddecb2d9bb129e7c2e5b105272982d907c23",
     "tools/uav_convergence_v2/tgcn_fu_workload_v1.py": "e2778e46d39dd8e3a3453467e37acba6e9313bdd9c76c6f43823a46b128eb5a2",
     "tools/uav_convergence_v2/tgcn_retrieval_examples_v1.py": "ca2913dd6896a3e257f27e2dfeec5cc9909f9ca3b4d107de5c89df2346536c58",
     "tools/uav_convergence_v2/tgcn_success_examples_v2.py": "d345a150a94280df2c69ecb320af5232a3bf3e402ac2468248405b08097974da",
@@ -34602,9 +34603,11 @@
     "final_final_charts/downlink_bandwidth/data/retrieval_energy_airscape_query_ranks.json": "f2dbaaa65a9f4db49063ea2b6fa4c02697636dc7b15f7bf683970690a8318a78",
     "final_final_charts/downlink_bandwidth/data/retrieval_energy_airscape_paired_counts.json": "c41d3799bcbd7d46573241f78bcffee562206d7c9b3fe4f10069b0a1d8d5978b",
     "tools/uav_convergence_v2/tgcn_rank_comparison_v5.py": "a11e80372c1c70a1d1297640b727974a8f9f9a4175fe1f2616b2a72f741053e2",
-    "tools/uav_convergence_v2/paper_typography_v1.py": "b47b86688c232577b40680f06bd4836cf737997f2be10b810c3750a4a2cf2758",
+    "tools/uav_convergence_v2/paper_typography_v1.py": "1c2526ff6fac77ddabfaca5b9dbecb8f1d6f2679fd05cfad60aef97271d9b4ff",
     "tools/uav_convergence_v2/paper_boxplot_refine_v2.py": "061fb9c52e09c92f18232c1338ea5867894f7d80512d0fdbbe963a4ca6fde0ee",
-    "tools/uav_convergence_v2/match_rank_fu_layout_v1.py": "c3e91cdbc04cdd682ca85b8add9b287d5bd6da720b2755177aba813bafbebc9f"
+    "tools/uav_convergence_v2/match_rank_fu_layout_v1.py": "d07be5341fdba2ced7a8cbcebbfaf13f41824f1cbe18033b85751a76265f89a1",
+    "tools/uav_convergence_v2/fu_bar_workload_selection_v2.py": "5383f8111232cab39d0f9c2800d58428689d067e64dbd7042033833d1097ea59",
+    "tools/uav_convergence_v2/tgcn_additions_check.py": "1ae0fd8652a1d1cdd763a036ebb3848fd3a2ce135f6f70ed99ceef458db50773"
   },
   "fresh_FU_workload_arms": 40,
   "original_figures": {

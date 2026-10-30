@@ -126,7 +126,12 @@ def render(folder, figure, series):
                     assert b.get_height() == y and np.isclose(b.get_x()+b.get_width()/2, x)
             legend_handles = [Patch(facecolor='white', edgecolor='#202020', linewidth=.65, hatch=h)
                               for h in (['//', '..'] if paired else ['//', '..'])]
-            legend_labels = ['1 step / request', '9 steps / request'] if paired else ['1 MHz', '5 MHz']
+            if paired:
+                levels=selected[0]['x']
+                assert all(s['x']==levels for s in selected)
+                legend_labels=[f'{v} '+('step' if v==1 else 'steps')+' / request' for v in levels]
+            else:
+                legend_labels=['1 MHz','5 MHz']
         else:
             assert len(selected) == 4, (name, ds)
             for i, (method, method_label) in enumerate(report.METHODS.items()):
@@ -282,7 +287,7 @@ def main():
         'All three PDFs have the same 532.8 pt width, 12 pt numeric ticks and legends, and 14 pt axis titles. '
         'FU method names use 12 pt on one line; other four-method category names wrap at the hyphen at 14 pt. '
         'Legends sit 8 pt above the plots. Thus width=\\linewidth gives matching apparent font sizes.\n\n'
-        '- fu_steps_energy_1x2: current 11, paired 1-step and 9-step FU workloads.\n'
+        '- fu_steps_energy_1x2: current 11, paired 3-step and 9-step FU workloads.\n'
         '- 01_round_loss_1x2: current P-KS round validation loss.\n'
         '- 05_time_mr_1x2: current P-KS retained mR under the shared time budget.\n\n'
         'The active proposed_pks and downlink_bandwidth chart files have also been updated. '
