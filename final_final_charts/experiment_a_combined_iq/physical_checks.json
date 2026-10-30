@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "shared_joint_MSE_budget": true,
+  "shared_task_distortion_budget": true,
+  "single_task_equivalence": true,
+  "true_combined_cross_term": true,
+  "methods": [
+    {
+      "method": "combined",
+      "passed": true,
+      "exact_complex_waveform_recovery": true,
+      "joint_power_verified": true,
+      "analytic_MSE": [
+        0.001187535305456712,
+        0.0
+      ],
+      "observed_MSE": [
+        0.001187338448951177,
+        0.0
+      ],
+      "trials": 4000
+    },
+    {
+      "method": "iq",
+      "passed": true,
+      "exact_complex_waveform_recovery": true,
+      "joint_power_verified": true,
+      "analytic_MSE": [
+        0.0010025305877798061,
+        0.0001798535832517147
+      ],
+      "observed_MSE": [
+        0.0010016513252638726,
+        0.00017954980428936394
+      ],
+      "trials": 4000
+    }
+  ],
+  "source_sha256": "d6feea386214b034d1041e1564244c5c91ff5427a3d71cc0e580f4a56c6f2f85"
+}

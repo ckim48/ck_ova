@@ -1,0 +1,200 @@
+{
+  "passed": true,
+  "source_sha256": "678dac9293917fade7ec8b4db0472a1d4451987ed4e5ad8406dee2d16f2dbde4",
+  "pairs": 2,
+  "completed_arms": 4,
+  "all_transactions_checked": 720,
+  "changes": [
+    {
+      "dataset": "CapERA",
+      "mR_change_pp": 0.0651041666666714,
+      "matched_KL_reduction_percent": -0.27084956163465623,
+      "common_KL_reduction_percent": -0.1346291964170243,
+      "energy_reduction_percent": -0.9272228457638976,
+      "delay_reduction_percent": -0.9272322018806678
+    },
+    {
+      "dataset": "AirScape",
+      "mR_change_pp": 0.0,
+      "matched_KL_reduction_percent": -0.36987515257587145,
+      "common_KL_reduction_percent": -0.1792617190890189,
+      "energy_reduction_percent": -0.8072841120740692,
+      "delay_reduction_percent": -0.8072505517767947
+    }
+  ],
+  "figures": [
+    {
+      "name": "35_combined_iq_forget_kl_1x2",
+      "caption": "Comparison of forget-set KL divergence from matched retraining between combined and I/Q AirComp on CapERA and AirScape.",
+      "axes": [
+        {
+          "width_pt": 205.12800000000001,
+          "height_pt": 174.798
+        },
+        {
+          "width_pt": 205.12800000000001,
+          "height_pt": 174.798
+        }
+      ],
+      "files": [
+        {
+          "file": "35_combined_iq_forget_kl_1x2.pdf",
+          "sha256": "59f0f0575826af0d5889a118149ca2c0646e2e6328d6c44e2f03c4c051e0439b"
+        },
+        {
+          "file": "35_combined_iq_forget_kl_1x2.png",
+          "sha256": "0ce06c4f550738f9c068e19aaf359722127db51bc128ffb07dd7864c6c584c15"
+        },
+        {
+          "file": "35_combined_iq_forget_kl_1x2.svg",
+          "sha256": "f7411a5fa293ff3b78045ba7bfc42f1aa4820ec167f761f71c5c25b374dee09a"
+        }
+      ]
+    },
+    {
+      "name": "37_combined_iq_energy_1x2",
+      "caption": "Comparison of total energy consumption between combined and I/Q AirComp on CapERA and AirScape.",
+      "axes": [
+        {
+          "width_pt": 205.12800000000001,
+          "height_pt": 174.798
+        },
+        {
+          "width_pt": 205.12800000000001,
+          "height_pt": 174.798
+        }
+      ],
+      "files": [
+        {
+          "file": "37_combined_iq_energy_1x2.pdf",
+          "sha256": "ea497a611619e8d4babe43bc8ea69ba80d488327c1992ada6f14d0faa46a6c0a"
+        },
+        {
+          "file": "37_combined_iq_energy_1x2.png",
+          "sha256": "09c5fb675e057dcf8a281f4265ff59487ea67b43ba6b86148537c9984a2644d5"
+        },
+        {
+          "file": "37_combined_iq_energy_1x2.svg",
+          "sha256": "c988c2bfb6a9c6c169fb9b2bc3f2a75820cbb8e236e66b83a18bde23ef33455a"
+        }
+      ]
+    },
+    {
+      "name": "38_combined_iq_delay_1x2",
+      "caption": "Comparison of active FL/FU delay between combined and I/Q AirComp on CapERA and AirScape.",
+      "axes": [
+        {
+          "width_pt": 205.12800000000001,
+          "height_pt": 174.798
+        },
+        {
+          "width_pt": 205.12800000000001,
+          "height_pt": 174.798
+        }
+      ],
+      "files": [
+        {
+          "file": "38_combined_iq_delay_1x2.pdf",
+          "sha256": "754f85fa60232df476bcf557851fec94d2b25b29b80ddba4dd282e416c9dbbf0"
+        },
+        {
+          "file": "38_combined_iq_delay_1x2.png",
+          "sha256": "a79955ff4ecaac2d73be2e32246254b2318d10b0352e8aa5112189c0025bf863"
+        },
+        {
+          "file": "38_combined_iq_delay_1x2.svg",
+          "sha256": "985d32bec3573f1b15757e205d03ae12b7139ae75810f261050c5d5aed24dfc2"
+        }
+      ]
+    },
+    {
+      "name": "39_combined_iq_common_kl_1x2",
+      "caption": "Comparison of forget-set KL divergence from common retraining between combined and I/Q AirComp on CapERA and AirScape.",
+      "axes": [
+        {
+          "width_pt": 205.12800000000001,
+          "height_pt": 174.798
+        },
+        {
+          "width_pt": 205.12800000000001,
+          "height_pt": 174.798
+        }
+      ],
+      "files": [
+        {
+          "file": "39_combined_iq_common_kl_1x2.pdf",
+          "sha256": "d839a2b9d19e2dfd4c50f623f40ff4b45ace4e484d7ececed7eb24d0c801ff5a"
+        },
+        {
+          "file": "39_combined_iq_common_kl_1x2.png",
+          "sha256": "7bc0f727b64359704580b41f0fb37552458ec4c5a37fdaa200a3ef8817cd7f04"
+        },
+        {
+          "file": "39_combined_iq_common_kl_1x2.svg",
+          "sha256": "898af9eb14ac6bbd61c67c3f8da368acc8328a5994d1faf594fa9c95f6c06a56"
+        }
+      ]
+    },
+    {
+      "name": "36_combined_iq_round_mr_1x2",
+      "caption": "Comparison of retained mR over FL rounds between combined and I/Q AirComp on CapERA and AirScape.",
+      "axes": [
+        {
+          "width_pt": 205.12800000000001,
+          "height_pt": 174.798
+        },
+        {
+          "width_pt": 205.12800000000001,
+          "height_pt": 174.798
+        }
+      ],
+      "files": [
+        {
+          "file": "36_combined_iq_round_mr_1x2.pdf",
+          "sha256": "e23a4b23370109ae3fcd1997d2b6a5f79d3c89f621d5db491137b67b1dcacf6e"
+        },
+        {
+          "file": "36_combined_iq_round_mr_1x2.png",
+          "sha256": "28da5f1bb28a52a43c04100d9ae42b1987ff77873eca7e6dab7a4cb7cb6fcdd2"
+        },
+        {
+          "file": "36_combined_iq_round_mr_1x2.svg",
+          "sha256": "5080e664243f1e5c84cf6524dc6a2f6029f653944810b977dcb540b1c9417ac0"
+        }
+      ]
+    },
+    {
+      "name": "40_combined_iq_round_loss_1x2",
+      "caption": "Comparison of validation loss over FL rounds between combined and I/Q AirComp on CapERA and AirScape.",
+      "axes": [
+        {
+          "width_pt": 205.12800000000001,
+          "height_pt": 174.798
+        },
+        {
+          "width_pt": 205.12800000000001,
+          "height_pt": 174.798
+        }
+      ],
+      "files": [
+        {
+          "file": "40_combined_iq_round_loss_1x2.pdf",
+          "sha256": "90aa7c44f4b48b462f3a874e9b538ae3e1532e7778b7e0f823a707c9ff156f7f"
+        },
+        {
+          "file": "40_combined_iq_round_loss_1x2.png",
+          "sha256": "fa51e3e3ccb2eaa57ee239f6c38e85729e433cc854c547b6448564764893ac80"
+        },
+        {
+          "file": "40_combined_iq_round_loss_1x2.svg",
+          "sha256": "1da4400b13a18f39d5ce71ace5ca0daffc2bd2cd2b1bb84befea2f47b527c8d0"
+        }
+      ]
+    }
+  ],
+  "identical_initial_inputs": true,
+  "shared_retraining_reference": true,
+  "same_learning_policy": true,
+  "single_development_seed": true,
+  "all_outcomes_reported": true
+}

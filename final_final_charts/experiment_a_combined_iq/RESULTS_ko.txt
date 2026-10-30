@@ -1,0 +1,26 @@
+실험 A: Combined AirComp vs I/Q AirComp
+
+동일한 학습 정책(.95 retained-CE, 100라운드 이후 uniform sampling), 초기 모델, 삭제 요청, 채널, 전력 한도로 두 데이터셋을 각각 200 FL rounds / 225 FU steps까지 실행했다.
+두 방식 모두 FL/FU를 동시에 처리한다. I/Q 두 branch의 전력과 에너지를 합산했다.
+
+I/Q minus Combined 결과:
+- CapERA retained mR: +0.06510 percentage points (17.68229 vs 17.61719%).
+- AirScape retained mR: 동일 (13.80208%).
+- Matched forget KL: CapERA 0.27085%, AirScape 0.36988% 증가 (낮을수록 좋음).
+- Total energy: CapERA 0.92722%, AirScape 0.80728% 증가.
+- Active delay: CapERA 0.92723%, AirScape 0.80725% 증가.
+
+현재 조건에서는 I/Q 분리만으로 일관된 성능 우위를 보이지 않았다. 큰 성능 차이가 없는 결과이며, 한 development seed의 미세한 차이를 통계적 우위로 해석할 수 없다.
+각 방식이 최종적으로 FL+FU 합을 적용하므로 I/Q 분리 자체가 gradient conflict를 해결하는 것은 아니다.
+KL은 두 방식에 동일한 retained-only retrained model을 적용했다. 공통 reference KL 차트도 함께 보존했다.
+
+차트 번호:
+35: matched forget-set KL
+36: FL round vs retained mR
+37: total energy
+38: active FL/FU delay
+39: common-reference forget-set KL
+40: FL round vs validation loss
+
+에너지/지연은 공통 20라운드 warm start 이후의180 FL rounds+225 FU steps 처리 구간으로 계산했다. 연산, 통신 및 hovering을 포함하고 공통 이동 비행과 초기 warm start 비용은 제외했다.
+원시값: metrics.csv, curves.csv, transactions.csv. 동일 조건과 한계: protocol.json, README.txt.
