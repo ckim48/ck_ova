@@ -102,11 +102,8 @@ def main():
         source_sha256={str(p.relative_to(ROOT)):style.sha(p) for p in [SOURCE/'original_physical.csv',selected_path,DEST/'refinement/adoption.json',DEST/'refinement/paired_controls.csv']},
         script_sha256=style.sha(Path(__file__))))
     shutil.copyfile(DEST/'refinement/paired_controls.csv',DEST/'paired_controls.csv')
-    caption=(r'Forget-set KL divergence from policy-matched retained-only retraining references '
-        r'after 200 FL rounds and 225 prescribed FU steps. Proposed uses uniform FL sampling after '
-        r'round 100 and an FU retention coefficient of 0.95; each reference follows the corresponding learning policy. '
-        r'Lower values indicate closer prediction distributions. The inset in (a) enlarges '
-        r'the interval $[3.0,3.5]\times10^{-3}$ using the same values. Results are from one development seed.')
+    caption=('Comparison of forget-set KL divergence from matched '
+        'retraining on CapERA and AirScape.')
     (DEST/'caption.tex').write_text('\\caption{'+caption+'}\n')
     (DEST/'README.md').write_text('''# Forgetting-quality evidence: one figure
 
