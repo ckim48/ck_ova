@@ -1,0 +1,14 @@
+{
+  "checkpoint": "results/combined_iq_experiment_a_20261030/combined/cases/baseline/capera_seed0/adaptive_retrieval_fu/final.pt",
+  "checkpoint_sha256": "3d40ba22e6d0a48c27d11ce201dc4881715b38a5dc0e07863abed7310d397bf6",
+  "references": {
+    "common": {
+      "path": "results/learning_selection_fix_v2_20261028/gate_select16/cases/baseline/capera_seed0/reference200/final.pt",
+      "sha256": "851b460262378f081ec0f65beacc6239482e7e2bc67a688f93e99526305b2bf8"
+    },
+    "matched": {
+      "path": "results/joint_quality_audit_v1_20261030/capera/uniform_after100_reference/final.pt",
+      "sha256": "1296c3c12e541fa1ed6bf16834cc3a62b473ff8608311a787e0cee61d0b0fe6a"
+    }
+  }
+}

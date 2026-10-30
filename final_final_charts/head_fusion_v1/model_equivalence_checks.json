@@ -1,0 +1,85 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "family": "current",
+      "dataset": "CapERA",
+      "method": "iq_head_pc",
+      "head_corrections": 4,
+      "identical_to_iq_sum": false,
+      "maximum_parameter_difference": 1.634657382965088e-05,
+      "baseline_sha256": "989295b541a1a84c50f4a33e2ecb868ece55019e616dcf41ba22585ce0231cb5",
+      "candidate_sha256": "4b9e66152b75890686fde9bef116b7c4f52c37673ddfffdd5e589c644668be32"
+    },
+    {
+      "family": "current",
+      "dataset": "CapERA",
+      "method": "iq_head_nr",
+      "head_corrections": 4,
+      "identical_to_iq_sum": false,
+      "maximum_parameter_difference": 1.4722347259521484e-05,
+      "baseline_sha256": "989295b541a1a84c50f4a33e2ecb868ece55019e616dcf41ba22585ce0231cb5",
+      "candidate_sha256": "7223e80fea83d993202278a409b3a386f6ee72176ea964a350a3e5de9a84cf92"
+    },
+    {
+      "family": "current",
+      "dataset": "AirScape",
+      "method": "iq_head_pc",
+      "head_corrections": 5,
+      "identical_to_iq_sum": false,
+      "maximum_parameter_difference": 3.189364360878244e-05,
+      "baseline_sha256": "66b76079b31583e78e5b7ebee69b04943d40f20be6f4f292d30b78370db1d11f",
+      "candidate_sha256": "2b3b852c7f8f7e35d2ffbcb770a5eec8556128ecf15e37c597695b27f3ef616f"
+    },
+    {
+      "family": "current",
+      "dataset": "AirScape",
+      "method": "iq_head_nr",
+      "head_corrections": 5,
+      "identical_to_iq_sum": false,
+      "maximum_parameter_difference": 2.975281677208841e-05,
+      "baseline_sha256": "66b76079b31583e78e5b7ebee69b04943d40f20be6f4f292d30b78370db1d11f",
+      "candidate_sha256": "c7930f2106e53cf5b00eb1d9990ef26933c0a885c8a93c48f80adec1f7c47e9c"
+    },
+    {
+      "family": "manuscript",
+      "dataset": "CapERA",
+      "method": "iq_head_pc",
+      "head_corrections": 0,
+      "identical_to_iq_sum": true,
+      "maximum_parameter_difference": 0.0,
+      "baseline_sha256": "f137c8955c612da4e88e49e4c30d1e16b35a8881d8495ba38614d3db01f24851",
+      "candidate_sha256": "f137c8955c612da4e88e49e4c30d1e16b35a8881d8495ba38614d3db01f24851"
+    },
+    {
+      "family": "manuscript",
+      "dataset": "CapERA",
+      "method": "iq_head_nr",
+      "head_corrections": 0,
+      "identical_to_iq_sum": true,
+      "maximum_parameter_difference": 0.0,
+      "baseline_sha256": "f137c8955c612da4e88e49e4c30d1e16b35a8881d8495ba38614d3db01f24851",
+      "candidate_sha256": "f137c8955c612da4e88e49e4c30d1e16b35a8881d8495ba38614d3db01f24851"
+    },
+    {
+      "family": "manuscript",
+      "dataset": "AirScape",
+      "method": "iq_head_pc",
+      "head_corrections": 0,
+      "identical_to_iq_sum": true,
+      "maximum_parameter_difference": 0.0,
+      "baseline_sha256": "7f2b9349ba8d1fad9c0c669f0c85c642733c8c0372ff29873f0a2023c9e5c0c4",
+      "candidate_sha256": "7f2b9349ba8d1fad9c0c669f0c85c642733c8c0372ff29873f0a2023c9e5c0c4"
+    },
+    {
+      "family": "manuscript",
+      "dataset": "AirScape",
+      "method": "iq_head_nr",
+      "head_corrections": 0,
+      "identical_to_iq_sum": true,
+      "maximum_parameter_difference": 0.0,
+      "baseline_sha256": "7f2b9349ba8d1fad9c0c669f0c85c642733c8c0372ff29873f0a2023c9e5c0c4",
+      "candidate_sha256": "7f2b9349ba8d1fad9c0c669f0c85c642733c8c0372ff29873f0a2023c9e5c0c4"
+    }
+  ]
+}

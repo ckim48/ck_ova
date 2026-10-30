@@ -1,0 +1,110 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "dataset": "capera",
+      "method": "combined_sum",
+      "input_sha256": "adecfd6faa401846ad32e3b726c6d8865b1fcbdbd022f02196b3f7c1e6e8c741",
+      "received_max_abs_error": 0.0,
+      "RF_energy_j": 0.005189972523891374,
+      "raw_budget_preserved": true,
+      "head_corrected": false
+    },
+    {
+      "dataset": "capera",
+      "method": "iq_sum",
+      "input_sha256": "adecfd6faa401846ad32e3b726c6d8865b1fcbdbd022f02196b3f7c1e6e8c741",
+      "received_max_abs_error": 0.0,
+      "RF_energy_j": 0.009959174662210118,
+      "raw_budget_preserved": true,
+      "head_corrected": false
+    },
+    {
+      "dataset": "capera",
+      "method": "combined_local_pc",
+      "input_sha256": "adecfd6faa401846ad32e3b726c6d8865b1fcbdbd022f02196b3f7c1e6e8c741",
+      "received_max_abs_error": 0.0,
+      "RF_energy_j": 0.005322770279287646,
+      "raw_budget_preserved": true,
+      "head_corrected": false
+    },
+    {
+      "dataset": "capera",
+      "method": "iq_head_pc",
+      "input_sha256": "adecfd6faa401846ad32e3b726c6d8865b1fcbdbd022f02196b3f7c1e6e8c741",
+      "received_max_abs_error": 3.3881317890172014e-21,
+      "RF_energy_j": 0.009959174662210118,
+      "raw_budget_preserved": true,
+      "head_corrected": false
+    },
+    {
+      "dataset": "capera",
+      "method": "iq_head_nr",
+      "input_sha256": "adecfd6faa401846ad32e3b726c6d8865b1fcbdbd022f02196b3f7c1e6e8c741",
+      "received_max_abs_error": 3.3881317890172014e-21,
+      "RF_energy_j": 0.009959174662210118,
+      "raw_budget_preserved": true,
+      "head_corrected": false
+    },
+    {
+      "dataset": "airscape",
+      "method": "combined_sum",
+      "input_sha256": "64cf036671a786732514e2f938ab6f320ede12c02211c905550f4570b6ac8d98",
+      "received_max_abs_error": 0.0,
+      "RF_energy_j": 0.008327951026601773,
+      "raw_budget_preserved": true,
+      "head_corrected": false
+    },
+    {
+      "dataset": "airscape",
+      "method": "iq_sum",
+      "input_sha256": "64cf036671a786732514e2f938ab6f320ede12c02211c905550f4570b6ac8d98",
+      "received_max_abs_error": 0.0,
+      "RF_energy_j": 0.014410111603503998,
+      "raw_budget_preserved": true,
+      "head_corrected": false
+    },
+    {
+      "dataset": "airscape",
+      "method": "combined_local_pc",
+      "input_sha256": "64cf036671a786732514e2f938ab6f320ede12c02211c905550f4570b6ac8d98",
+      "received_max_abs_error": 0.0,
+      "RF_energy_j": 0.00863397098562814,
+      "raw_budget_preserved": true,
+      "head_corrected": false
+    },
+    {
+      "dataset": "airscape",
+      "method": "iq_head_pc",
+      "input_sha256": "64cf036671a786732514e2f938ab6f320ede12c02211c905550f4570b6ac8d98",
+      "received_max_abs_error": 6.776263578034403e-21,
+      "RF_energy_j": 0.014410111603503998,
+      "raw_budget_preserved": true,
+      "head_corrected": true
+    },
+    {
+      "dataset": "airscape",
+      "method": "iq_head_nr",
+      "input_sha256": "64cf036671a786732514e2f938ab6f320ede12c02211c905550f4570b6ac8d98",
+      "received_max_abs_error": 6.776263578034403e-21,
+      "RF_energy_j": 0.014410111603503998,
+      "raw_budget_preserved": true,
+      "head_corrected": true
+    }
+  ],
+  "identical_sum_counterexample": {
+    "combined_sum": [
+      1.0,
+      0.0
+    ],
+    "first_fused": [
+      1.0,
+      0.0
+    ],
+    "second_fused": [
+      1.5,
+      0.5
+    ]
+  },
+  "scope": "Frozen-update integration check, not additional independent training trials."
+}

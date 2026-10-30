@@ -1,0 +1,38 @@
+{
+  "registered_unix": 1793367784.4794252,
+  "seed": 0,
+  "datasets": [
+    "CapERA",
+    "AirScape"
+  ],
+  "methods": {
+    "combined_sum": "C-Sum",
+    "iq_sum": "IQ-Sum",
+    "combined_local_pc": "C-Local",
+    "iq_head_pc": "IQ-Head",
+    "iq_head_nr": "IQ-NR"
+  },
+  "families": [
+    "current",
+    "manuscript"
+  ],
+  "source_sha256": {
+    "tools/uav_convergence_v2/head_fusion_study_v1.py": "c43c352ba74b017e9bde6b50eff3196587d71642f6f5756534575a5c4bd657b7",
+    "tools/uav_convergence_v2/head_fusion_math_v1.py": "1b48c24171c577801c9a72d5c7f79fefa8d5504d670118109b45230e14ce8750",
+    "tools/uav_convergence_v2/combined_iq_experiment_a.py": "687fccf0dd3f2cdfbe4e5d39c5a78a709037eaa00e3408749a6fc11d6b731740",
+    "tools/uav_convergence_v2/joint_quality_control_v1.py": "8ed896368ab70dbe656ddedd89825080a5acd46cbd3eca1a38eaba84697c8c29",
+    "tools/uav_convergence_v2/manuscript_iq_study_v1.py": "166e921427307cf3a828f4447028b880746afd09362dcd876508eb0a5ac4d043",
+    "tools/uav_convergence_v2/manuscript_iq_radio_v1.py": "77e82d070a322f8572a3f5a6b333486c47772e313d06dc4d38117cad9b98ad74"
+  },
+  "design": "2 learning families x 5 arms x 2 datasets. Reuse only the four frozen current-family sum controls from experiment A. Sixteen fresh 200-round arms. No outcome-dependent parameter search or omitted losses.",
+  "current": "Unchanged priority16 FL through100 then uniform16, pool-size FL weights; 3 relu(forget proxy retrieval KL-.01)+.95 retained CE+3 request-start retrieval KL.",
+  "manuscript": "Uniform16 FL with actual minibatch-size weights; 3 positive-pair cosine +1 retained CE+3 embedding-softmax consistency KL against request-start teacher. Numerical weights are disclosed operational choices inherited from the earlier manuscript pilot, not supplied by the user equations.",
+  "controls": "C-Sum: one combined real stream. IQ-Sum: two branches and linear sum. C-Local: two-task PCGrad independently at each UAV, then one combined real stream. IQ-Head: two-task PCGrad on noisy global I/Q estimates. IQ-NR: same with fixed 1.645 dot-noise margin and variance-regularized denominators. Both AirComp transports use one simultaneous interval.",
+  "fusion": "For d=L dot U and q=max(0,-d), apply L+U+q*(L/||L||^2+U/||U||^2). IQ-NR replaces q by max(0,-d-1.645 estimated_dot_SD) and denominators by estimated-vector norm squared plus known noise variance. No claimed statistical confidence guarantee.",
+  "fairness": "Same warm20, native samples, request schedule, seeds,200 FL rounds,225 FU steps, channels, hard caps and empirical HVP procedure. Raw local updates define shared error budgets; actual transmitted vectors define RF costs. Unmodified baselines retained. Differences across learning families are not attributed to transport.",
+  "information": "Head uses only recovered branch vectors and designed noise variances. Clean vectors are diagnostic-only. No mR, evaluation KL or retrained-model output enters fusion. Current-family inherited known-future-forget-cohort proxy assumption remains.",
+  "accounting": "Local surgery charges32*d+128 scalar MAC equivalents per active UAV. Head PCGrad charges32*d+128; head NR64*d+10*M+128, after uplink and before broadcast on the selected head. Added time incurs hovering and added CPU energy is exported explicitly. Constants are conservative modeling choices, not measured UAV hardware profiling. Curvature and optimizer scope unchanged from experiment A.",
+  "theory": "Component-MSE and C8 curvature constraints are transport pre-fusion quantities. Nonlinear fusion may bias/amplify noise. Log post-fusion error; do not reuse the zero-mean linear-sum quality theorem. No forgetting certificate.",
+  "evaluation": "Full native gallery; retained mR/loss, common and policy-matched forget KL, energy, delay, conflict/correction rates. Same-family retained-only references are evaluation-only. One already-inspected development seed, not independent confirmation.",
+  "citation": "Tianhe Yu et al., Gradient Surgery for Multi-Task Learning, NeurIPS2020, https://proceedings.neurips.cc/paper_files/paper/2020/hash/3fe78a8acf5fda99de95303940a2420c-Abstract.html"
+}

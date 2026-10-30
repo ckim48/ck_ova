@@ -1,0 +1,14 @@
+{
+  "checkpoint": "results/head_fusion_v1_20261030/manuscript/combined_sum/cases/baseline/airscape_seed0/adaptive_retrieval_fu/final.pt",
+  "checkpoint_sha256": "aba0b513119aeec7f8d0a90c137375bb2728da69571b29f3fdc6b317587a37ee",
+  "references": {
+    "common": {
+      "path": "results/learning_selection_fix_v2_20261028/gate_select16/cases/baseline/airscape_seed0/reference200/final.pt",
+      "sha256": "3896a0b8add439c40b5692b0568c86ed893b7d73946cec31cec3823225f4d414"
+    },
+    "matched": {
+      "path": "results/forgetting_quality_v1_20261030/airscape/references/equal/final.pt",
+      "sha256": "d678220e58a87ed5b26ac59fd2cd8d392c4c6dc4542a30cc2278502d885628b5"
+    }
+  }
+}

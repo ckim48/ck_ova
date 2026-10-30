@@ -1,0 +1,366 @@
+[
+  {
+    "name": "47_head_fusion_current_matched_kl_1x2",
+    "caption": "Comparison of matched kl under the current learning policy on CapERA and AirScape.",
+    "axis_dimensions_pt": [
+      [
+        205.12800000000001,
+        174.798
+      ],
+      [
+        205.12800000000001,
+        174.798
+      ]
+    ],
+    "files": [
+      {
+        "file": "47_head_fusion_current_matched_kl_1x2.pdf",
+        "sha256": "fe2351dc8d641dfd686c79087806b4c33aeb2aaa69fedbe02116047ee8b6a2e1"
+      },
+      {
+        "file": "47_head_fusion_current_matched_kl_1x2.png",
+        "sha256": "150824b5e8496a1aede2ca17b8b964b052374086de8c6680aa52de9341718457"
+      },
+      {
+        "file": "47_head_fusion_current_matched_kl_1x2.svg",
+        "sha256": "c875c647a892db106c428674eb670a970833cb4d07fdb03a6f0362db0b944c01"
+      }
+    ]
+  },
+  {
+    "name": "48_head_fusion_current_common_kl_1x2",
+    "caption": "Comparison of common kl under the current learning policy on CapERA and AirScape.",
+    "axis_dimensions_pt": [
+      [
+        205.12800000000001,
+        174.798
+      ],
+      [
+        205.12800000000001,
+        174.798
+      ]
+    ],
+    "files": [
+      {
+        "file": "48_head_fusion_current_common_kl_1x2.pdf",
+        "sha256": "6cb85810bcba8b31d5d289af772602955a62e63e6245e38ccad37c6921c1fbfa"
+      },
+      {
+        "file": "48_head_fusion_current_common_kl_1x2.png",
+        "sha256": "29a29c10d6bd33feecd6479c55a859aca2142c02e70340951e2151f32010eb5f"
+      },
+      {
+        "file": "48_head_fusion_current_common_kl_1x2.svg",
+        "sha256": "23891ff3214b813cf83f142ca4d6503d08e3d3ecab77c59d0d3337b0764a0417"
+      }
+    ]
+  },
+  {
+    "name": "49_head_fusion_current_energy_1x2",
+    "caption": "Comparison of energy under the current learning policy on CapERA and AirScape.",
+    "axis_dimensions_pt": [
+      [
+        205.12800000000001,
+        174.798
+      ],
+      [
+        205.12800000000001,
+        174.798
+      ]
+    ],
+    "files": [
+      {
+        "file": "49_head_fusion_current_energy_1x2.pdf",
+        "sha256": "421f7458de9e02c5f3c092d67c2daf3d3d91f90127e325901c578d38d618962f"
+      },
+      {
+        "file": "49_head_fusion_current_energy_1x2.png",
+        "sha256": "56e19457cf7db81368645c7b8ebcd59482e915c083b7b239988d1be9ddcccde5"
+      },
+      {
+        "file": "49_head_fusion_current_energy_1x2.svg",
+        "sha256": "9cc04e274fa6f65005144482a2619b68a57e6e86c9b634f42dc4db47f29298c2"
+      }
+    ]
+  },
+  {
+    "name": "50_head_fusion_current_delay_1x2",
+    "caption": "Comparison of delay under the current learning policy on CapERA and AirScape.",
+    "axis_dimensions_pt": [
+      [
+        205.12800000000001,
+        174.798
+      ],
+      [
+        205.12800000000001,
+        174.798
+      ]
+    ],
+    "files": [
+      {
+        "file": "50_head_fusion_current_delay_1x2.pdf",
+        "sha256": "59a74a34610311a4ff56cc05cb7436459f046f5d82340cbac0068510b0e82c26"
+      },
+      {
+        "file": "50_head_fusion_current_delay_1x2.png",
+        "sha256": "29478849f708ee36db8114adaa5c5d421aadd36b02005714f06b71409b972d87"
+      },
+      {
+        "file": "50_head_fusion_current_delay_1x2.svg",
+        "sha256": "65d032a1eb5fafed960373d7696e8939eb91cc30e79138cc86130d7e3df46da1"
+      }
+    ]
+  },
+  {
+    "name": "51_head_fusion_current_mr_1x2",
+    "caption": "Comparison of retained mr (%) over FL rounds under the current learning policy on CapERA and AirScape.",
+    "axis_dimensions_pt": [
+      [
+        205.12800000000001,
+        174.798
+      ],
+      [
+        205.12800000000001,
+        174.798
+      ]
+    ],
+    "files": [
+      {
+        "file": "51_head_fusion_current_mr_1x2.pdf",
+        "sha256": "e28650a9736acb18b95ae21e27cdb5af3e34b329afe6f45bc3d3b2b262df0108"
+      },
+      {
+        "file": "51_head_fusion_current_mr_1x2.png",
+        "sha256": "c8d82894d3a5df9810ee76fb79dc3156d647ff535cca309415317659f77869d4"
+      },
+      {
+        "file": "51_head_fusion_current_mr_1x2.svg",
+        "sha256": "90fcad4d8f0ae91be453b98cbe4f3d8e4eb04bab845f435e7a453f7a6ca8d332"
+      }
+    ]
+  },
+  {
+    "name": "52_head_fusion_current_loss_1x2",
+    "caption": "Comparison of validation loss over FL rounds under the current learning policy on CapERA and AirScape.",
+    "axis_dimensions_pt": [
+      [
+        205.12800000000001,
+        174.798
+      ],
+      [
+        205.12800000000001,
+        174.798
+      ]
+    ],
+    "files": [
+      {
+        "file": "52_head_fusion_current_loss_1x2.pdf",
+        "sha256": "3662cda144a430ecc6dbb95723a23d68364ed4a7328fd811bd5ed3fd178050ff"
+      },
+      {
+        "file": "52_head_fusion_current_loss_1x2.png",
+        "sha256": "98e73063f44f6acbe5cd0fc28437367c0a2e9e52b2d5adec59a8d3d7ded0c7a8"
+      },
+      {
+        "file": "52_head_fusion_current_loss_1x2.svg",
+        "sha256": "d26331f6551d13974aa9d6db16ca579f6c551cafb9bdd24b7f75c2b7f65a1629"
+      }
+    ]
+  },
+  {
+    "name": "53_head_fusion_manuscript_matched_kl_1x2",
+    "caption": "Comparison of matched kl under the manuscript learning policy on CapERA and AirScape.",
+    "axis_dimensions_pt": [
+      [
+        205.12800000000001,
+        174.798
+      ],
+      [
+        205.12800000000001,
+        174.798
+      ]
+    ],
+    "files": [
+      {
+        "file": "53_head_fusion_manuscript_matched_kl_1x2.pdf",
+        "sha256": "35c1d8ca2746c13d02ff8b395e247360d5adb86b7b35c6a05f42c576a2480bce"
+      },
+      {
+        "file": "53_head_fusion_manuscript_matched_kl_1x2.png",
+        "sha256": "d2e0fb69f00189f8959b895acf10b091e9b78d12fc7d3494bb8ed75625e5de6a"
+      },
+      {
+        "file": "53_head_fusion_manuscript_matched_kl_1x2.svg",
+        "sha256": "2edbe0b2654cf9c7644b8e9261c6a307347e572095934f834344e4da7d3d77a3"
+      }
+    ]
+  },
+  {
+    "name": "54_head_fusion_manuscript_common_kl_1x2",
+    "caption": "Comparison of common kl under the manuscript learning policy on CapERA and AirScape.",
+    "axis_dimensions_pt": [
+      [
+        205.12800000000001,
+        174.798
+      ],
+      [
+        205.12800000000001,
+        174.798
+      ]
+    ],
+    "files": [
+      {
+        "file": "54_head_fusion_manuscript_common_kl_1x2.pdf",
+        "sha256": "4f4d3fbcf894ae2ac162a7fa2c7aa01af92160afcc25c92cfb82f1d13ea2a27f"
+      },
+      {
+        "file": "54_head_fusion_manuscript_common_kl_1x2.png",
+        "sha256": "e1f480bc5a8e07ca78674ffc160acaf6b18165aecea8d9d5f995d923ef45cefc"
+      },
+      {
+        "file": "54_head_fusion_manuscript_common_kl_1x2.svg",
+        "sha256": "4e6513d449dd7f405ec8eb3056ed541ad9d6c796769df2d992409aa11233456f"
+      }
+    ]
+  },
+  {
+    "name": "55_head_fusion_manuscript_energy_1x2",
+    "caption": "Comparison of energy under the manuscript learning policy on CapERA and AirScape.",
+    "axis_dimensions_pt": [
+      [
+        205.12800000000001,
+        174.798
+      ],
+      [
+        205.12800000000001,
+        174.798
+      ]
+    ],
+    "files": [
+      {
+        "file": "55_head_fusion_manuscript_energy_1x2.pdf",
+        "sha256": "ca02c73259ed256f0444a5a33b1fbe39ce045bb575007a610be466cb00876efb"
+      },
+      {
+        "file": "55_head_fusion_manuscript_energy_1x2.png",
+        "sha256": "7ae31cc529bbcb816c7f01f61fb1396c9f25b0e30f66e592bfd5be4408b6591a"
+      },
+      {
+        "file": "55_head_fusion_manuscript_energy_1x2.svg",
+        "sha256": "3c452e7b08eb8d98682cd08a0d987c860b654ba518853021e13c5d5f0c24d489"
+      }
+    ]
+  },
+  {
+    "name": "56_head_fusion_manuscript_delay_1x2",
+    "caption": "Comparison of delay under the manuscript learning policy on CapERA and AirScape.",
+    "axis_dimensions_pt": [
+      [
+        205.12800000000001,
+        174.798
+      ],
+      [
+        205.12800000000001,
+        174.798
+      ]
+    ],
+    "files": [
+      {
+        "file": "56_head_fusion_manuscript_delay_1x2.pdf",
+        "sha256": "f0ec5377d24e2e20bf3b52c75de54f2db9c71b3f127d136c6d7fa42c6311cb9a"
+      },
+      {
+        "file": "56_head_fusion_manuscript_delay_1x2.png",
+        "sha256": "29478849f708ee36db8114adaa5c5d421aadd36b02005714f06b71409b972d87"
+      },
+      {
+        "file": "56_head_fusion_manuscript_delay_1x2.svg",
+        "sha256": "c06d27cbb001cfdceeff60332afd7672e9de982247c7e9f2021ebb899d7abb92"
+      }
+    ]
+  },
+  {
+    "name": "57_head_fusion_manuscript_mr_1x2",
+    "caption": "Comparison of retained mr (%) over FL rounds under the manuscript learning policy on CapERA and AirScape.",
+    "axis_dimensions_pt": [
+      [
+        205.12800000000001,
+        174.798
+      ],
+      [
+        205.12800000000001,
+        174.798
+      ]
+    ],
+    "files": [
+      {
+        "file": "57_head_fusion_manuscript_mr_1x2.pdf",
+        "sha256": "07a1613d00d0468b501aa3a4a57a8147876437aa510e16ab0b99e5996f62935d"
+      },
+      {
+        "file": "57_head_fusion_manuscript_mr_1x2.png",
+        "sha256": "5b66a69dc3cb56858f55dd996948c627f4c502751a25aff32ada3b377ac226ea"
+      },
+      {
+        "file": "57_head_fusion_manuscript_mr_1x2.svg",
+        "sha256": "6c701a65363355e3b8949d1c544e0fa5afcf3002f448132e82b6e5af10cff190"
+      }
+    ]
+  },
+  {
+    "name": "58_head_fusion_manuscript_loss_1x2",
+    "caption": "Comparison of validation loss over FL rounds under the manuscript learning policy on CapERA and AirScape.",
+    "axis_dimensions_pt": [
+      [
+        205.12800000000001,
+        174.798
+      ],
+      [
+        205.12800000000001,
+        174.798
+      ]
+    ],
+    "files": [
+      {
+        "file": "58_head_fusion_manuscript_loss_1x2.pdf",
+        "sha256": "ac275b935246b586c155dceb58e92b4fd7fcc84621cef681327c7e5e9ae5ec33"
+      },
+      {
+        "file": "58_head_fusion_manuscript_loss_1x2.png",
+        "sha256": "91068934394bd741b12b10ac81059fbae9f8c002016535862fb55e8eb6b2cee7"
+      },
+      {
+        "file": "58_head_fusion_manuscript_loss_1x2.svg",
+        "sha256": "e99e99a8734412fa314538402999fbc7da0200c04f33b0cb3471b700d139d8a5"
+      }
+    ]
+  },
+  {
+    "name": "59_head_fusion_kl_change_1x2",
+    "caption": "Change in matched-retraining forget-set KL relative to IQ-Sum on CapERA and AirScape; a positive value denotes higher divergence.",
+    "axis_dimensions_pt": [
+      [
+        205.12800000000001,
+        174.798
+      ],
+      [
+        205.12800000000001,
+        174.798
+      ]
+    ],
+    "files": [
+      {
+        "file": "59_head_fusion_kl_change_1x2.pdf",
+        "sha256": "5ae8ae3847ed4b498b5b1b8d9cc2eca9195d5d3a751512ba517130d28697bbad"
+      },
+      {
+        "file": "59_head_fusion_kl_change_1x2.png",
+        "sha256": "d708f1a6f3e24dabdda7520891476a284a2805306835142bbeea5f17cc5baabe"
+      },
+      {
+        "file": "59_head_fusion_kl_change_1x2.svg",
+        "sha256": "96558efbeb1950b55855db06922f948726dc5bc77a74657149078c1e81e2cc1c"
+      }
+    ]
+  }
+]

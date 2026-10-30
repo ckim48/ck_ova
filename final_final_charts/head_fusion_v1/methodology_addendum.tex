@@ -1,0 +1,108 @@
+% Development addendum only. Not a replacement for the current manuscript.
+% Requires amsmath, amssymb, bm. No experimental superiority is asserted here.
+
+\subsection{Head-Side Fusion of Separately Recovered Updates}
+
+The linear update in the current manuscript adds the recovered FL and FU
+aggregates directly. The receive coefficients compensate for the channel
+and control the aggregation noise; they are not task-combination weights
+under exact channel alignment. We therefore evaluate an additional
+head-side fusion rule based on two-task gradient surgery
+\cite{Yu_NeurIPS_2020_PCGrad}.
+
+Let $\widehat{\mathbf L}_k$ and $\widehat{\mathbf U}_k$ collect all
+recovered FL and FU blocks, respectively. These vectors include both the
+visual and textual adapter coordinates. For two vectors $\mathbf L$
+and $\mathbf U$, define
+\begin{equation}
+q(\mathbf L,\mathbf U)=[-\mathbf L^{\mathsf T}\mathbf U]_+.
+\end{equation}
+The two-task PCGrad fusion is
+\begin{equation}
+\begin{aligned}
+\Phi_{\rm PC}(\mathbf L,\mathbf U)
+={}&\mathbf L+\mathbf U\\
+&+q(\mathbf L,\mathbf U)
+\left(\frac{\mathbf L}{\|\mathbf L\|_2^2}
++\frac{\mathbf U}{\|\mathbf U\|_2^2}\right).
+\end{aligned}
+\end{equation}
+If either task vector is zero, the correction is zero. Thus, the rule
+reduces to the original sum when the directions do not conflict or only
+one task is active. The head applies
+\begin{equation}
+\boldsymbol\theta_{k+1}=\boldsymbol\theta_k+
+\Phi_{\rm PC}(\widehat{\mathbf L}_k,\widehat{\mathbf U}_k).
+\end{equation}
+The separate estimates are necessary to evaluate their inner product
+and norms. A single combined aggregate does not generally identify
+these quantities. A fair combined-stream comparator applies the same
+two-task surgery independently at each UAV before transmission. Local
+surgery and surgery after global aggregation need not agree.
+
+This is a generic two-objective rule applied to joint visual--textual
+adapter updates. It is not a new VLM-specific gradient-surgery theorem,
+nor does the nonnegative alignment of the resulting direction imply
+successful unlearning or proximity to a retrained model.
+
+\paragraph{Noise-regularized variant.}
+Let $v_m^a=\mathbb E\|\mathbf e_m^a\|_2^2$ and
+$s_m^a=v_m^a/d_m$ be the designed block MSE and per-coordinate noise
+variance. Define $A_m=[\|\widehat{\mathbf L}_m\|_2^2-v_m^{\mathrm L}]_+$
+and $B_m=[\|\widehat{\mathbf U}_m\|_2^2-v_m^{\mathrm U}]_+$, and use
+\begin{equation}
+\widehat\sigma_{\rm dot}^2=
+\sum_m\left(s_m^{\mathrm U}A_m+s_m^{\mathrm L}B_m
++d_ms_m^{\mathrm L}s_m^{\mathrm U}\right).
+\end{equation}
+The registered variant replaces $q$ by
+$[-\widehat{\mathbf L}^{\mathsf T}\widehat{\mathbf U}
+-1.645\widehat\sigma_{\rm dot}]_+$ and replaces the two denominators
+by $\|\widehat{\mathbf L}\|_2^2+\sum_m v_m^{\mathrm L}$ and
+$\|\widehat{\mathbf U}\|_2^2+\sum_m v_m^{\mathrm U}$, respectively.
+This is a heuristic regularization, not a certified confidence bound.
+The head uses only received vectors and designed noise statistics.
+Evaluation data and retrained-model predictions are not control inputs.
+
+\paragraph{Effect on the distortion analysis.}
+For a selected fusion map $\Phi_k$, the ideal update must also be changed
+to $\overline{\boldsymbol\theta}_{k+1}=\boldsymbol\theta_k+
+\Phi_k(\mathbf L_k,\mathbf U_k)$, where the two arguments are the
+error-free global aggregates. The relevant output error is
+\begin{equation}
+\mathbf e_{\Phi,k}=\Phi_k(\widehat{\mathbf L}_k,
+\widehat{\mathbf U}_k)-\Phi_k(\mathbf L_k,\mathbf U_k).
+\end{equation}
+Even with zero-mean channel noise, this error need not have zero mean.
+Consequently, the existing curvature-weighted sum of component MSEs is
+only a pre-fusion transport constraint; its original zero-mean
+linear-update proof cannot be reused as a post-fusion quality bound.
+If a task objective is $L_J$-smooth along the relevant segment and
+$\|\nabla J(\overline{\boldsymbol\theta}_{k+1})\|_2\leq G_J$, a valid
+generic inequality is
+\begin{equation}
+\begin{aligned}
+\mathbb E[J(\boldsymbol\theta_{k+1})]
+-J(\overline{\boldsymbol\theta}_{k+1})
+\leq G_J\mathbb E\|\mathbf e_{\Phi,k}\|_2
++\frac{L_J}{2}\mathbb E\|\mathbf e_{\Phi,k}\|_2^2.
+\end{aligned}
+\end{equation}
+A certified relation between this post-fusion error and component MSEs
+requires additional analysis. The development experiment logs realized
+post-fusion errors and does not claim such a certificate. Similarly,
+optimizing communication subject to the old transport constraints is not
+an SOCP proof for a newly imposed nonlinear post-fusion constraint.
+
+\paragraph{Delay and energy.}
+Head fusion occurs after uplink reception and before the aggregate is
+broadcast. Its computation duration and energy must be included, along
+with the additional hovering time. They cannot be hidden inside the
+parallel local-computation interval. The development report explicitly
+adds these costs using the same processor model as the original study.
+
+% Other manuscript corrections relevant to this change:
+% C6, not C7, is exact alignment in the currently pasted constraint list.
+% C7 is component MSE; C8 is the pre-fusion curvature-weighted distortion.
+% Do not replace the old tables with results from a different learning
+% objective or transport rule without rerunning the stated comparison.

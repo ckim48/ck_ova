@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "completed_arms": 20,
+  "expected_arms": 20,
+  "missing": [],
+  "math_checks": {
+    "passed": true,
+    "checks": [
+      "two-task descent",
+      "one-task identity",
+      "nonconflict identity",
+      "zero-noise equivalence",
+      "local/global noncommutativity"
+    ]
+  },
+  "physical_checks": "physical_checks.json",
+  "scope": "Native cohorts, fixed matched references, executed schedule, RF caps, pre-fusion MSE/distortion and explicit post-uplink head CPU costs checked. No certified post-fusion distortion guarantee."
+}
