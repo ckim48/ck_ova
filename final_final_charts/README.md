@@ -1,5 +1,7 @@
 # Current UAV/VLM comparison: Proposed = P-KS
 
+**One scoped forgetting-quality figure:** [Policy-matched retraining KL](forgetting_evidence/34_forget_matched_retrain_1x2.pdf) · [Claim limits and all reference values](forgetting_evidence/README.md). The separate Controlled candidate leads on AirScape matched KL (27.4% below the best comparator), ranks third on CapERA, and does not lead common-reference KL. This is not proof of an overall forgetting-quality lead or a positive FU intervention effect.
+
 **2026-10-30 joint quality controls:** [Six figures, full search and physical comparisons](joint_quality_control/README.md) · [Combined PDF](joint_quality_control/joint_quality_control_all.pdf). A shared late-uniform FL schedule preserves retained mR leadership against the three unchanged comparators on both datasets and reduces common-reference KL by approximately45%/53%. It does not lead common KL; paired FU/no-FU controls still do not establish a forgetting benefit. This is seed0 development, and the current paper Proposed remains unchanged.
 
 **Forgetting validation:** [Eight new figures and full results](forgetting_quality/README.md) · [Combined PDF](forgetting_quality/forgetting_quality_all.pdf). Includes fresh adapter retraining, matched FU/no-FU controls, all deleted-query retrieval, association changes, and common/policy-matched KL. The current controls do **not** establish a clear forgetting benefit; retained mR and aggregation distortion alone must not be presented as evidence of deletion.
