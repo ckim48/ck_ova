@@ -1,0 +1,173 @@
+{
+  "registered_unix": 1793327510.8443098,
+  "source_sha256": "80acd3c95d8a1b840bc76b925241c2007277daca1bbaa398b319927b1f2e901e",
+  "first_source_sha256": "8ed896368ab70dbe656ddedd89825080a5acd46cbd3eca1a38eaba84697c8c29",
+  "variants": {
+    "control": {
+      "batch": 16,
+      "rho": null,
+      "retention": 1.0,
+      "threshold": 0.01,
+      "consistency": 3.0,
+      "project": false,
+      "stop_when_satisfied": false,
+      "late_uniform": null
+    },
+    "norm_b16_a0.25": {
+      "batch": 16,
+      "rho": null,
+      "retention": 1.0,
+      "threshold": 0.01,
+      "consistency": 3.0,
+      "project": false,
+      "stop_when_satisfied": false,
+      "late_uniform": null,
+      "mode": "norm",
+      "alpha": 0.25
+    },
+    "norm_b16_a0.5": {
+      "batch": 16,
+      "rho": null,
+      "retention": 1.0,
+      "threshold": 0.01,
+      "consistency": 3.0,
+      "project": false,
+      "stop_when_satisfied": false,
+      "late_uniform": null,
+      "mode": "norm",
+      "alpha": 0.5
+    },
+    "norm_b16_a1.0": {
+      "batch": 16,
+      "rho": null,
+      "retention": 1.0,
+      "threshold": 0.01,
+      "consistency": 3.0,
+      "project": false,
+      "stop_when_satisfied": false,
+      "late_uniform": null,
+      "mode": "norm",
+      "alpha": 1.0
+    },
+    "norm_b24_a0.25": {
+      "batch": 24,
+      "rho": null,
+      "retention": 1.0,
+      "threshold": 0.01,
+      "consistency": 3.0,
+      "project": false,
+      "stop_when_satisfied": false,
+      "late_uniform": null,
+      "mode": "norm",
+      "alpha": 0.25
+    },
+    "norm_b24_a0.5": {
+      "batch": 24,
+      "rho": null,
+      "retention": 1.0,
+      "threshold": 0.01,
+      "consistency": 3.0,
+      "project": false,
+      "stop_when_satisfied": false,
+      "late_uniform": null,
+      "mode": "norm",
+      "alpha": 0.5
+    },
+    "norm_b24_a1.0": {
+      "batch": 24,
+      "rho": null,
+      "retention": 1.0,
+      "threshold": 0.01,
+      "consistency": 3.0,
+      "project": false,
+      "stop_when_satisfied": false,
+      "late_uniform": null,
+      "mode": "norm",
+      "alpha": 1.0
+    },
+    "orthogonal_rho0.25": {
+      "batch": 16,
+      "rho": 0.25,
+      "retention": 1.0,
+      "threshold": 0.01,
+      "consistency": 3.0,
+      "project": false,
+      "stop_when_satisfied": false,
+      "late_uniform": null,
+      "mode": "orthogonal"
+    },
+    "orthogonal_rho0.5": {
+      "batch": 16,
+      "rho": 0.5,
+      "retention": 1.0,
+      "threshold": 0.01,
+      "consistency": 3.0,
+      "project": false,
+      "stop_when_satisfied": false,
+      "late_uniform": null,
+      "mode": "orthogonal"
+    },
+    "orthogonal_rho1.0": {
+      "batch": 16,
+      "rho": 1.0,
+      "retention": 1.0,
+      "threshold": 0.01,
+      "consistency": 3.0,
+      "project": false,
+      "stop_when_satisfied": false,
+      "late_uniform": null,
+      "mode": "orthogonal"
+    },
+    "batch24_bound50": {
+      "batch": 24,
+      "rho": 0.5,
+      "retention": 1.0,
+      "threshold": 0.01,
+      "consistency": 3.0,
+      "project": false,
+      "stop_when_satisfied": false,
+      "late_uniform": null
+    },
+    "batch24_bound100": {
+      "batch": 24,
+      "rho": 1.0,
+      "retention": 1.0,
+      "threshold": 0.01,
+      "consistency": 3.0,
+      "project": false,
+      "stop_when_satisfied": false,
+      "late_uniform": null
+    },
+    "bound100_retain75": {
+      "batch": 16,
+      "rho": 1.0,
+      "retention": 0.75,
+      "threshold": 0.01,
+      "consistency": 3.0,
+      "project": false,
+      "stop_when_satisfied": false,
+      "late_uniform": null
+    },
+    "uniform_after80": {
+      "batch": 16,
+      "rho": null,
+      "retention": 1.0,
+      "threshold": 0.01,
+      "consistency": 3.0,
+      "project": false,
+      "stop_when_satisfied": false,
+      "late_uniform": 80
+    }
+  },
+  "seed": 0,
+  "datasets": [
+    "CapERA",
+    "AirScape"
+  ],
+  "rationale": "Initial rho1/late-uniform candidates retained mR while reducing KL, but did not lead fixed-reference KL. Test whether the selected gradient magnitude, rather than its useful direction, drives distribution drift. The negative-context screen is also retained.",
+  "norm": "Compute uniform16 gU and priority gH. Normalize gH to norm(gU), then use (1-alpha)*gU+alpha*normalized(gH). Its norm is at most norm(gU), including zero-vector handling.",
+  "orthogonal": "Remove from gH-gU its component along gU; cap the orthogonal remainder at rho*norm(gU), and add it to gU. This changes only the extra priority direction, not the uniform descent component. It is not a KL or utility guarantee.",
+  "other": "Two intermediate batch24/bounded settings, one rho1 with retention0.75, and a predeclared middle FL-switch round80. All shared between datasets; no per-dataset selection.",
+  "evaluation": "Same exact-screen protocol, unchanged baseline/reference/gallery. All candidates reported. These are adaptive development stages, not preregistered independent confirmations.",
+  "compute": "Both gradient passes and direction/norm arithmetic charged if physically rerun."
+}

@@ -1,0 +1,146 @@
+{
+  "registered_unix": 1793327825.7427545,
+  "source_sha256": "65df454ae455868620000b32c9c3a78f8137ec7ec2bfdc960e66e7ac0178245d",
+  "first_source_sha256": "8ed896368ab70dbe656ddedd89825080a5acd46cbd3eca1a38eaba84697c8c29",
+  "variants": {
+    "control": {
+      "batch": 16,
+      "rho": null,
+      "retention": 1.0,
+      "threshold": 0.01,
+      "consistency": 3.0,
+      "project": false,
+      "stop_when_satisfied": false,
+      "late_uniform": null
+    },
+    "smooth0.02_rhoNone": {
+      "batch": 16,
+      "rho": null,
+      "retention": 1.0,
+      "threshold": 0.01,
+      "consistency": 3.0,
+      "project": false,
+      "stop_when_satisfied": false,
+      "late_uniform": null,
+      "smoothing": 0.02,
+      "rank_weight": 0.0
+    },
+    "smooth0.05_rhoNone": {
+      "batch": 16,
+      "rho": null,
+      "retention": 1.0,
+      "threshold": 0.01,
+      "consistency": 3.0,
+      "project": false,
+      "stop_when_satisfied": false,
+      "late_uniform": null,
+      "smoothing": 0.05,
+      "rank_weight": 0.0
+    },
+    "smooth0.1_rhoNone": {
+      "batch": 16,
+      "rho": null,
+      "retention": 1.0,
+      "threshold": 0.01,
+      "consistency": 3.0,
+      "project": false,
+      "stop_when_satisfied": false,
+      "late_uniform": null,
+      "smoothing": 0.1,
+      "rank_weight": 0.0
+    },
+    "smooth0.2_rhoNone": {
+      "batch": 16,
+      "rho": null,
+      "retention": 1.0,
+      "threshold": 0.01,
+      "consistency": 3.0,
+      "project": false,
+      "stop_when_satisfied": false,
+      "late_uniform": null,
+      "smoothing": 0.2,
+      "rank_weight": 0.0
+    },
+    "smooth0.02_rho1.0": {
+      "batch": 16,
+      "rho": 1.0,
+      "retention": 1.0,
+      "threshold": 0.01,
+      "consistency": 3.0,
+      "project": false,
+      "stop_when_satisfied": false,
+      "late_uniform": null,
+      "smoothing": 0.02,
+      "rank_weight": 0.0
+    },
+    "smooth0.05_rho1.0": {
+      "batch": 16,
+      "rho": 1.0,
+      "retention": 1.0,
+      "threshold": 0.01,
+      "consistency": 3.0,
+      "project": false,
+      "stop_when_satisfied": false,
+      "late_uniform": null,
+      "smoothing": 0.05,
+      "rank_weight": 0.0
+    },
+    "smooth0.1_rho1.0": {
+      "batch": 16,
+      "rho": 1.0,
+      "retention": 1.0,
+      "threshold": 0.01,
+      "consistency": 3.0,
+      "project": false,
+      "stop_when_satisfied": false,
+      "late_uniform": null,
+      "smoothing": 0.1,
+      "rank_weight": 0.0
+    },
+    "smooth0.2_rho1.0": {
+      "batch": 16,
+      "rho": 1.0,
+      "retention": 1.0,
+      "threshold": 0.01,
+      "consistency": 3.0,
+      "project": false,
+      "stop_when_satisfied": false,
+      "late_uniform": null,
+      "smoothing": 0.2,
+      "rank_weight": 0.0
+    },
+    "rank0.25": {
+      "batch": 16,
+      "rho": 1.0,
+      "retention": 1.0,
+      "threshold": 0.01,
+      "consistency": 3.0,
+      "project": false,
+      "stop_when_satisfied": false,
+      "late_uniform": null,
+      "smoothing": 0.0,
+      "rank_weight": 0.25
+    },
+    "rank0.5": {
+      "batch": 16,
+      "rho": 1.0,
+      "retention": 1.0,
+      "threshold": 0.01,
+      "consistency": 3.0,
+      "project": false,
+      "stop_when_satisfied": false,
+      "late_uniform": null,
+      "smoothing": 0.0,
+      "rank_weight": 0.5
+    }
+  },
+  "seed": 0,
+  "datasets": [
+    "CapERA",
+    "AirScape"
+  ],
+  "motivation": "Prior screens show excessive distribution drift with improved ranking. Test training loss smoothing or a hard-negative margin objective, rather than posthoc temperature fitting to a reporting reference. This changes actual adapter training; logit scale remains frozen.",
+  "smoothing": "Symmetric local contrastive cross entropy with identical fixed label smoothing in both retrieval directions. Original unsmoothed per-example training CE still updates the priority cache, so priority scores have the original meaning.",
+  "rank": "Mix symmetric CE with symmetric hardest-negative hinge at margin1 in original logit units. Weight0.25/0.5, with rho1 uniform-gradient bound.",
+  "protocol": "All11 settings shared by datasets; same exact200-round/225-FU protocol. Preserve all earlier screens. Adaptive seed0 development only; no test/reference data in updates, no guarantee of joint leadership. Extra scalar loss operations charged on physical rerun."
+}

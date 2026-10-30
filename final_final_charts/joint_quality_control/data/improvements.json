@@ -1,0 +1,24 @@
+[
+  {
+    "dataset": "CapERA",
+    "mR_change_pp": 0.06510416666666785,
+    "common_KL_reduction_percent": 44.8399073151594,
+    "worst_KL_reduction_percent": 46.621479602274306,
+    "matched_KL_reduction_percent": 22.253163459151203,
+    "loss_change": 0.050650994571491026,
+    "leads_three_baselines_mR": true,
+    "leads_three_baselines_common_KL": false,
+    "meets_common_KL_001": false
+  },
+  {
+    "dataset": "AirScape",
+    "mR_change_pp": 0.0,
+    "common_KL_reduction_percent": 53.497047797228916,
+    "worst_KL_reduction_percent": 54.917469317988,
+    "matched_KL_reduction_percent": 27.667256055825774,
+    "loss_change": 0.017844446204209774,
+    "leads_three_baselines_mR": true,
+    "leads_three_baselines_common_KL": false,
+    "meets_common_KL_001": true
+  }
+]

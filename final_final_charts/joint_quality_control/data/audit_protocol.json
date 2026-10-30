@@ -1,0 +1,14 @@
+{
+  "registered_unix": 1793328151.0713835,
+  "source_sha256": "1502500ddca3db108e34503f454a20eff63cbf87ea6ca6a81ee24a39ea4a2484",
+  "variant": "uniform_after100",
+  "design": "Seed0 exploratory follow-up of an adaptively selected shared setting; not independent confirmation.",
+  "primary": "Same fixed common retained-only200 reference and full gallery as original four methods.",
+  "secondary": "Fresh policy-matched retained-only200 retrain. No reference model/probability enters candidate training.",
+  "causal": "Exact-FU vs exact-no-FU using identical FL schedule, arrivals, seeds and warm20. Physical-FU vs exact-no-FU is not a pure FU intervention.",
+  "policy": "Priority16 through round100, uniform16 for101..200; unchanged original gated FU objective and parallel transport.",
+  "sources": {
+    "tools/uav_convergence_v2/joint_quality_control_v1.py": "8ed896368ab70dbe656ddedd89825080a5acd46cbd3eca1a38eaba84697c8c29",
+    "tools/uav_convergence_v2/joint_quality_audit_v1.py": "1502500ddca3db108e34503f454a20eff63cbf87ea6ca6a81ee24a39ea4a2484"
+  }
+}
